@@ -1,0 +1,7 @@
+html {
+	&._no-mix-blend-mode {
+		.c-image-feature:after, .c-image-feature\@large:after {
+			opacity: .1;
+		}
+	}
+}

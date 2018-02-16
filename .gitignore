@@ -1,0 +1,6 @@
+node_modules/*
+.sass-cache
+.DS_Store
+dist
+package-lock.json
+*.old

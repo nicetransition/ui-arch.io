@@ -1,0 +1,43 @@
+{
+	"name": "uiarchio",
+	"version": "0.0.0",
+	"description": "",
+	"license": "MIT",
+	"homepage": "http://discreetaf.com",
+	"main": "README.md",
+	"scripts": {
+		"gulp": "gulp",
+		"prestart": "npm install",
+		"start": "gulp --dev"
+	},
+	"keywords": [
+		"styleguide",
+		"framework",
+		"scaffold",
+		"patterns",
+		"library"
+	],
+	"author": "Kevin Mack",
+	"licenses": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kevinmack18/uiarchio.git"
+	},
+	"engines": {
+		"node": ">=0.12.0",
+		"npm": ">=2.0.0"
+	},
+	"devDependencies": {
+		"gulp": "3.9.1",
+		"gulp-if": "2.0.2",
+		"gulp-concat": "2.6.1",
+		"gulp-exec": "3.0.1",
+		"gulp-util": "3.0.8",
+		"run-sequence": "2.2.1",
+		"gulp-ruby-sass": "3.0.0",
+		"gulp-sourcemaps": "2.6.4",
+		"gulp-autoprefixer": "4.1.0",
+		"browser-sync": "2.23.6",
+		"gulp-watch": "5.0.0"
+	}
+}

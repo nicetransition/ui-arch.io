@@ -1,0 +1,202 @@
+@font-face {
+	font-family: 'webfont';
+	src:url('/assets/toolkit/fonts/webfont/fonts/webfont.eot');
+	src:url('/assets/toolkit/fonts/webfont/fonts/webfont.eot') format('embedded-opentype'),
+		url('/assets/toolkit/fonts/webfont/fonts/webfont.woff') format('woff'),
+		url('/assets/toolkit/fonts/webfont/fonts/webfont.ttf') format('truetype'),
+		url('/assets/toolkit/fonts/webfont/fonts/webfont.svg#webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+%glyph-shared {
+	@include suffixcate {
+		@include glyph;
+		white-space: nowrap;
+	}
+}
+
+%glyph-pseudo-shared {
+	@include suffixcate {
+		content: attr(data-icon);
+	}
+}
+
+%glyph-pseudo-no-speak {
+	@include suffixcate {
+		speak: none;
+	}
+}
+
+%u-glyph-circled {
+	@include allChange($property: background-color);
+	vertical-align: middle;
+	display: inline-block;
+	width: rem(26);
+	height: rem(26);
+	border-radius: 50%;
+	background-color: $color-primary;
+	color: $color-light-light;
+	font-size: rem(18);
+	transform: translateY(-#{rem(1)});
+	text-align: center;
+
+	&:hover {
+		&:before, &:after {
+			background-color: $color-secondary;
+		}
+
+		&:active {
+			background-color: $color-secondary-light;
+		}
+	}
+}
+
+.u-glyph {
+	@include suffixcateExtend(('%glyph-shared'));
+
+	&--animate {
+		&-before:before, &-after:after {
+			@include anchor-animate;
+		}
+	}
+
+	&--no-speak {
+		@extend %glyph-pseudo-no-speak;
+	}
+
+	&-before--circled, &-after--circled {
+		vertical-align: middle;
+	}
+
+	&-before--circled {
+		&:before {
+			@extend %u-glyph-circled;
+		}
+	}
+
+	&-after--circled {
+		&:after {
+			@extend %u-glyph-circled;
+		}
+	}
+
+	&-before {
+		&[data-icon] {
+			&:before {
+				@extend %glyph-pseudo-shared;
+			}
+		}
+
+		&:before {
+			@extend %glyph-shared;
+		}
+
+		&--no-speak {
+			&:before {
+				@extend %glyph-pseudo-no-speak;
+			}
+		}
+
+		&\@large {
+			&[data-icon] {
+				&:before {
+					@extend %glyph-pseudo-shared\@large !optional;
+				}
+			}
+
+			&:before {
+				@extend %glyph-shared\@large !optional;
+			}
+
+			&--no-speak {
+				&:before {
+					@extend %glyph-pseudo-no-speak\@large !optional;
+				}
+			}
+		}
+
+		&\@small {
+			&[data-icon] {
+				&:before {
+					@extend %glyph-pseudo-shared\@small !optional;
+				}
+			}
+
+			&:before {
+				@extend %glyph-shared\@small !optional;
+			}
+
+			&--no-speak {
+				&:before {
+					@extend %glyph-pseudo-no-speak\@small !optional;
+				}
+			}
+		}
+	}
+
+	&-after {
+		&[data-icon] {
+			&:after {
+				@extend %glyph-pseudo-shared;
+			}
+		}
+
+		&:after {
+			@extend %glyph-shared;
+		}
+
+		&--no-speak {
+			&:after {
+				@extend %glyph-pseudo-no-speak;
+			}
+		}
+
+		&\@large {
+			&[data-icon] {
+				&:after {
+					@extend %glyph-pseudo-shared\@large !optional;
+				}
+			}
+
+			&:after {
+				@extend %glyph-shared\@large !optional;
+			}
+
+			&--no-speak {
+				&:after {
+					@extend %glyph-pseudo-no-speak\@large !optional;
+				}
+			}
+		}
+
+		&\@small {
+			&[data-icon] {
+				&:after {
+					@extend %glyph-pseudo-shared\@small !optional;
+				}
+			}
+
+			&:after {
+				@extend %glyph-shared\@small !optional;
+			}
+
+			&--no-speak {
+				&:after {
+					@extend %glyph-pseudo-no-speak\@small !optional;
+				}
+			}
+		}
+	}
+}
+
+
+.c-calendar-icon {
+	&__base {
+		fill: currentColor;
+	}
+
+	&__accent {
+		fill: $color-primary;
+	}
+}

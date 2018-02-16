@@ -1,0 +1,131 @@
+// Variables for selector names
+$selector-name_percent: "u-percent";
+$selector-name_fraction: "u-width";
+$selector-name_fraction-min: "u-min-width";
+$selector-name_fraction-max: "u-max-width";
+// Create helper class for every percent
+// Create temp placeholder to be extended with just percent (without ".")
+@for $i from 1 through 100 {
+	$percent-with-decimals: str-replace("#{(($i / 100) * 100)}", ".", "");
+	$percent-output: percentage($i / 100);
+
+	%u-percent-min-width#{$percent-with-decimals} {
+		@include suffixcate($bp: $suffixcate_bp-all) {
+			min-width: $percent-output;
+		}
+	}
+
+	%u-percent-width#{$percent-with-decimals} {
+		@include suffixcate($bp: $suffixcate_bp-all) {
+			width: $percent-output;
+		}
+	}
+
+	%u-percent-max-width#{$percent-with-decimals} {
+		@include suffixcate($bp: $suffixcate_bp-all) {
+			max-width: $percent-output;
+		}
+	}
+
+	%flex-basis#{$percent-with-decimals} {
+		@include suffixcate($bp: $suffixcate_bp-all) {
+			flex-basis: $percent-output;
+		}
+	}
+}
+
+@mixin makeWidths($max-num: 12, $output-name: $selector-name_fraction, $include-max: true, $output-name-max: $selector-name_fraction-max, $include-min: true, $output-name-min: $selector-name_fraction-min, $make-to-100: true) {
+	// Loop through all variations and `@extend` when possible
+	// Create width selectors with ratios
+
+	@if ($make-to-100) {
+		@for $i from 1 through 100 {
+			$percent-with-decimals: str-replace("#{(($i / 100) * 100)}", ".", "");
+			$percent-output: percentage($i / 100);
+
+			.#{$selector-name_percent}-#{$i}, .#{$selector-name_fraction}-#{$i}-of-100, .#{$selector-name_fraction}-#{$i}\/100 {
+				@include suffixcateExtend(('%u-percent-width#{$percent-with-decimals}'));
+			}
+
+			.u-basis-#{$i}, .u-basis-#{$i}-of-100, .u-basis-#{$i}\/100 {
+				@include suffixcateExtend(('%flex-basis#{$percent-with-decimals}'));
+			}
+		}
+	}
+
+	@for $dividend from 1 through $max-num {
+		@for $divisor from 1 through $max-num {
+			$percentage: percentage($dividend / $divisor);
+
+			@if ($dividend <= $divisor) {
+				$quotient: ($dividend / $divisor) * 100;
+				$percent-with-decimals: str-replace("#{$quotient}", ".", "");
+				$has-decimal: str-index("#{$quotient}", ".");
+
+				%u-min-percent-and-fractions-#{$percent-with-decimals} {
+					@if ($has-decimal) {
+						@include suffixcate($bp: $suffixcate_bp-all) {
+							min-width: $percentage;
+						}
+					} @else {
+						@include suffixcateExtend(('%u-percent-min-width#{$percent-with-decimals}'));
+					}
+				}
+
+				%u-percent-and-fractions-#{$percent-with-decimals} {
+					@if ($has-decimal) {
+						@include suffixcate($bp: $suffixcate_bp-all) {
+							width: $percentage;
+						}
+					} @else {
+						@include suffixcateExtend(('%u-percent-width#{$percent-with-decimals}'));
+					}
+				}
+
+				%flex-percent-and-fractions-#{$percent-with-decimals} {
+					@if ($has-decimal) {
+						@include suffixcate($bp: $suffixcate_bp-all) {
+							flex-basis: $percentage;
+						}
+					} @else {
+						@include suffixcateExtend(('%flex-basis#{$percent-with-decimals}'));
+					}
+				}
+
+				%u-max-percent-and-fractions-#{$percent-with-decimals} {
+					@if ($has-decimal) {
+						@include suffixcate($bp: $suffixcate_bp-all) {
+							max-width: $percentage;
+						}
+					} @else {
+						@include suffixcateExtend(('%u-percent-max-width#{$percent-with-decimals}'));
+					}
+				}
+			}
+
+			@if ($dividend <= $divisor) {
+				$percent-with-decimals: str-replace("#{(($dividend / $divisor) * 100)}", ".", "");
+
+				@if ($include-min) {
+					.#{$output-name-min}-#{$dividend}-of-#{$divisor}, .#{$output-name-min}-#{$dividend}\/#{$divisor} {
+						@include suffixcateExtend(('%u-min-percent-and-fractions-#{$percent-with-decimals}'));
+					}
+				}
+
+				.#{$output-name}-#{$dividend}-of-#{$divisor}, .#{$output-name}-#{$dividend}\/#{$divisor} {
+					@include suffixcateExtend(('%u-percent-and-fractions-#{$percent-with-decimals}'));
+				}
+
+				.u-basis-#{$dividend}-of-#{$divisor}, .u-basis-#{$dividend}\/#{$divisor} {
+				    @include suffixcateExtend(('%flex-percent-and-fractions-#{$percent-with-decimals}'));
+				}
+
+				@if ($include-max) {
+					.#{$output-name-max}-#{$dividend}-of-#{$divisor}, .#{$output-name-max}-#{$dividend}\/#{$divisor} {
+						@include suffixcateExtend(('%u-max-percent-and-fractions-#{$percent-with-decimals}'));
+					}
+				}
+			}
+		}
+	}
+}

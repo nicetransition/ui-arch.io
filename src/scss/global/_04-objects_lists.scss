@@ -1,0 +1,18 @@
+// .c-link-list {
+// 	&__item {
+// 		& + .c-link-list__item {
+// 			@include units($property: "margin", $variation: (top: true));
+// 		}
+// 	}
+// }
+
+.o-child-line {
+	> * {
+		display: inline-block;
+	}
+}
+
+
+.o-list {
+	padding-left: 0;
+}

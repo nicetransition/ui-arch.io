@@ -1,0 +1,43 @@
+// <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,700|Roboto+Condensed:700" rel="stylesheet" />
+
+$font-family: 'ltc-bodoni-175', serif;
+$font-family-body: 'din-2014', sans-serif;
+$font-family-button: $font-family;
+$base-font-size: 1rem;
+$weight-light: 300;
+$weight-normal: $weight-light;
+$weight-bold: 600;
+$weight-ultra: 700;
+
+
+$h0: 3rem; // 42
+$em0: 3em;
+$rem0: $h0;
+
+$h1: 1.875rem; // 30px
+$em1: 1.875em;
+$rem1: $h1;
+
+$h2: 1.5rem; // 24px
+$em2: 1.5em;
+$rem2: $h2;
+
+$h3: 1.125rem; // 18px
+$em3: 1.125em;
+$rem3: $h3;
+
+$h4: 1rem; // 16px
+$em4: 1em;
+$rem4: $h4;
+
+$h5: 0.875rem; // 14px
+$em5: 0.875em;
+$rem5: $h5;
+
+$h6: 0.719rem; // 12px
+$em6: 0.719em;
+$rem6: $h6;
+
+
+$font-primary: $font-family-body;
+$font-secondary: $font-family;

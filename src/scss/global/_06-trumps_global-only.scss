@@ -1,0 +1,48 @@
+.c-logo, .c-logo-simple {
+	display: flex;
+
+	&__asset {
+		align-self: center;
+	}
+}
+
+.c-logo {
+	// padding: $default-space / 2;
+}
+
+.c-logo-simple {
+	padding: $default-space / 2;
+}
+
+
+a.c-logo, a.c-logo-simple  {
+	outline: none;
+}
+
+
+%prevent-scroll {
+	overflow: hidden;
+	-webkit-overflow-scrolling: auto;
+}
+
+[data-menu="open"] {
+	@extend %prevent-scroll;
+
+	> body {
+		@extend %prevent-scroll;
+	}
+
+	.c-menu-btn {
+		&:before {
+		}
+	}
+
+	.c-primary-nav__menu-list-container {
+		display: block;
+	}
+}
+
+[data-primarydom="true"] {
+	// remove from header on mobile
+	// remove from side on desktop
+}

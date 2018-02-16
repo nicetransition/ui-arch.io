@@ -1,0 +1,150 @@
+%content-space-tiny-max {
+	@media screen and (max-width: $bp-grid) {
+		padding-top: $default-space / 4;
+	}
+}
+
+%content-space-tiny-min {
+	@media screen and (min-width: $bp-grid) {
+		padding-top: $default-space / 4;
+	}
+}
+
+%content-space-tiny {
+	@extend %content-space-tiny-max;
+	@extend %content-space-tiny-min;
+}
+
+
+%content-space-sm-max {
+	@media screen and (max-width: $bp-grid) {
+		padding-top: $default-space / 2;
+	}
+}
+
+%content-space-sm-min {
+	@media screen and (min-width: $bp-grid) {
+		padding-top: $default-space / 2;
+	}
+}
+
+%header-to-paragraph-space, %content-space-sm {
+	@extend %content-space-sm-max;
+	@extend %content-space-sm-min;
+}
+
+%content-space-max {
+	@media screen and (max-width: $bp-grid) {
+		padding-top: $default-space;
+	}
+}
+
+%content-space-min {
+	@media screen and (min-width: $bp-grid) {
+		padding-top: $default-space;
+	}
+}
+
+%content-space {
+	@extend %content-space-max;
+	@extend %content-space-min;
+}
+
+%content-space-lg-max {
+	@media screen and (max-width: $bp-grid) {
+		padding-top: $default-space * 2;
+	}
+}
+
+%content-space-lg-min {
+	@media screen and (min-width: $bp-grid) {
+		padding-top: $default-space * 2;
+	}
+}
+
+%content-space-lg {
+	@extend %content-space-lg-max;
+	@extend %content-space-lg-min;
+}
+
+
+.c-content-zone {
+
+	p {
+		& + .c-page-header, & + .c-section-header {
+			@extend %content-space-lg;
+
+			&\@large {
+				@media screen and (min-width: $bp-grid) {
+					@extend %content-space-lg-min;
+				}
+			}
+
+			&\@small {
+				@media screen and (max-width: $bp-grid) {
+					@extend %content-space-lg-max;
+				}
+			}
+		}
+
+		& + .c-page-subheader, & + .c-section-subheader, & + .c-article-header, & + .c-article-subheader {
+			@extend %content-space;
+
+			&\@large {
+				@media screen and (min-width: $bp-grid) {
+					@extend %content-space-min;
+				}
+			}
+
+			&\@small {
+				@media screen and (max-width: $bp-grid) {
+					@extend %content-space-max;
+				}
+			}
+		}
+	}
+
+	.c-section-header, .c-section-subheader, .c-article-header, .c-article-subheader {
+		& + p {
+			@extend %content-space-tiny;
+		}
+
+		&\@large {
+			@media screen and (min-width: $bp-grid) {
+				& + p {
+					@extend %content-space-tiny-min;
+				}
+			}
+		}
+
+		&\@small {
+			@media screen and (max-width: $bp-grid) {
+				& + p {
+					@extend %content-space-tiny-max;
+				}
+			}
+		}
+	}
+
+	.c-page-header, .c-page-subheader, .c-page-header + .c-page-subheader {
+		& + p {
+			@extend %content-space-sm;
+		}
+
+		&\@large {
+			@media screen and (min-width: $bp-grid) {
+				& + p {
+					@extend %content-space-sm-min;
+				}
+			}
+		}
+
+		&\@small {
+			@media screen and (max-width: $bp-grid) {
+				& + p {
+					@extend %content-space-sm-max;
+				}
+			}
+		}
+	}
+}

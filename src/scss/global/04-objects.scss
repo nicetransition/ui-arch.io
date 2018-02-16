@@ -1,0 +1,511 @@
+// SETTINGS: Global variables, config switches
+@import "00-settings";
+
+// TOOLS: Default mixin and functions
+@import "01-tools";
+
+// OBJECTS: Cosmetic-free design patterns
+
+.o-sections {
+	@include suffixcate($bp: $suffixcate_bp-all) {
+		&__section {
+			& + & {
+				@include units($property: "margin", $version: "half-sized", $variation: (top: true));
+			}
+		}
+	}
+
+	&-lg {
+		@include suffixcate($bp: $suffixcate_bp-all) {
+			&__section {
+				& + & {
+					margin-top: $default-space;
+					//@include units($property: "margin", $variation: (top: true));
+				}
+			}
+		}
+	}
+
+	@include suffixcate {
+		&-2-4__section {
+			& + & {
+				@include units($property: "margin", $version: "half-sized", $variation: (left: true));
+			}
+		}
+
+		&-2-4-lg__section {
+			& + & {
+				@include units($property: "margin", $version: "two-times", $variation: (left: true));
+			}
+		}
+	}
+
+	@include suffixcate {
+		&-2-4-alt__section {
+			margin-left: $default-space / -2;
+
+			& + & {
+				@include units($property: "padding", $version: "half-sized", $variation: (left: true));
+			}
+		}
+	}
+
+	// @media screen and (min-width: $bp-grid) {
+	// 	&\@large__section + .o-sections\@large__section {
+	// 		@include units($property: "margin", $version: "half-sized", $variation: (top: true));
+	// 	}
+
+	// 	&-2-4\@large__section + .o-sections-2-4\@large__section {
+	// 		@include units($property: "margin", $version: "half-sized", $variation: (left: true));
+	// 	}
+	// }
+
+	// @media screen and (max-width: $bp-grid) {
+	// 	&\@small__section + .o-sections\@small__section {
+	// 		@include units($property: "margin", $version: "half-sized", $variation: (top: true));
+	// 	}
+
+	// 	&-2-4\@small__section + .o-sections-2-4\@small__section {
+	// 		@include units($property: "margin", $version: "half-sized", $variation: (left: true));
+	// 	}
+	// }
+}
+
+.o-container-global {
+	overflow: hidden;
+
+	@media screen and (min-width: $bp-header) {
+		// @include units($property: "margin", $variation: (bottom: true));
+	}
+
+	&--constraints {
+		// width: 90vw;
+	}
+}
+
+.o-container-full {
+	position: relative;
+}
+
+.o-container {
+	@include suffixcate($bp: $suffixcate_bp-all) {
+		&__wrap-full, &__wrap {
+			max-width: $max-width;
+		}
+
+		&__wrap-full {
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		&__wrap {;
+			@media screen and (min-width: $bp-1) {
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			@media screen and (max-width: $bp-1) {
+				margin-right: $default-space;
+				margin-left: $default-space;
+			}
+		}
+	}
+
+	&__inner {
+		max-width: $content-width;
+		
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	// &__wrap {
+	// 	@include suffixcate {
+	// 		@media screen and (min-width: $bp-1) {
+	// 			margin-right: auto;
+	// 			margin-left: auto;
+	// 		}
+
+	// 		@media screen and (max-width: $bp-1) {
+	// 			margin-right: $default-space;
+	// 			margin-left: $default-space;
+	// 		}
+	// 	}
+	// }
+}
+
+.o-container-content {
+	max-width: $content-max-width;
+	// width: percentage( $content-max-width / $max-width);
+
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.o-container-content {
+	@include units($variation: (right: true, left: true));
+}
+
+
+
+.o-media {
+	@include suffixcate {
+		@include clear-after;
+
+		&__asset {
+			float: left;
+		}
+
+		&__main {
+			overflow: hidden;
+		}
+	}
+}
+
+.o-flag {
+	@include suffixcate  {
+		display: table;
+
+		&__item {
+			display: table-cell;
+		}
+
+		&--full {
+			width: 100%;
+		}
+	}
+}
+
+
+.o-grid, .o-grid__row {
+	@include suffixcate {
+		&:after {
+			clear: both;
+			display: table;
+			content: "";
+		}
+	}
+}
+
+.o-grid {
+	@include suffixcate {
+		&__cell {
+			float: left;
+		}
+
+		&__cell-alt {
+			float: right;
+		}
+
+		&__row {
+
+		}
+	}
+}
+
+
+.o-flex {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+		// -js-display: flex;
+		display: flex;
+
+		&--end {
+			justify-content: flex-end;
+		}
+
+		&--start {
+			justify-content: flex-start;
+		}
+
+
+		&--equal > * {
+			flex: 1;
+		}
+
+		&--wrap {
+			flex-wrap: wrap;
+		}
+
+		&--justify {
+			justify-content: space-between;
+		}
+
+		&--stretch {
+			align-items: stretch;
+		}
+
+		&--v-c {
+			align-items: center;
+		}
+
+		&--grid {
+			flex-wrap: wrap;
+			align-content: stretch;
+			justify-content: space-between;
+			width: 100%;
+		}
+
+		&--wrap {
+			flex-wrap: wrap;
+			width: 100%;
+
+			> * {
+				width: 100%;
+			}
+		}
+
+		&--no-wrap {
+			flex-wrap: nowrap;
+		}
+	}
+
+	&-1 {
+		@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+			flex: 1;
+		}
+	}
+}
+
+
+.o-flex-column, .o-flex-row {
+    @include suffixcateExtend(('.o-flex'));
+}
+
+.o-flex-row {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    flex-direction: row;
+	}
+}
+
+.o-flex-column {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+    	flex-direction: column;
+	}
+}
+
+.o-flex-wrap {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    flex-wrap: wrap;
+    }
+}
+
+.o-flex-nowrap {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    flex-wrap: nowrap;
+    }
+}
+
+.o-flex-justify-content-start {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    justify-content: flex-start;
+    }
+}
+
+.o-flex-justify-content-end {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    justify-content: flex-end;
+    }
+}
+
+.o-flex-justify-content-center {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    justify-content: center;
+    }
+}
+
+.o-flex-justify-content-between {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    justify-content: space-between;
+    }
+}
+
+.o-flex-justify-content-around {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    justify-content: space-around;
+    }
+}
+
+.o-flex-align-items-start {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    align-items: flex-start;
+    }
+}
+
+.o-flex-align-items-end {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    align-items: flex-end;
+    }
+}
+
+.o-flex-align-items-center {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    align-items: center;
+    }
+}
+
+.o-flex-align-items-baseline {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    align-items: baseline;
+    }
+}
+
+.o-flex-align-items-stretch {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    align-items: stretch;
+    }
+}
+
+.o-flex-align-content-start {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    align-content: flex-start;
+    }
+}
+
+.o-flex-align-content-end {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    align-content: flex-end;
+    }
+}
+
+.o-flex-align-content-center {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    align-content: center;
+    }
+}
+
+.o-flex-align-content-between {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    align-content: space-between;
+    }
+}
+
+.o-flex-align-content-around {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    align-content: space-around;
+    }
+}
+
+.o-flex-align-content-stretch {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    align-content: stretch;
+    }
+}
+
+
+
+@for $i from 0 through 12 {
+	.o-flex__order-#{$i} {
+		@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	    	order: $i;
+		}
+	}
+
+	@if ($i != 0) {
+		.o-flex__order-#{$i}-neg {
+			@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+		    	order: -$i;
+			}
+		}
+
+		.o-flex__item-#{$i}, .o-flex__grow-#{$i} {
+			@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+		   		flex: $i;
+			}
+		}
+
+		.o-flex__shrink-#{$i} {
+			@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+		   		flex-shrink: $i;
+			}
+		}
+
+		.o-flex-items-#{$i} {
+			@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+		   		> * {
+		   			flex: $i;
+				}
+			}
+		}
+	}
+
+
+	// flex basis made in @mixin makeWidths();
+}
+
+.o-flex__align-self-start {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+		align-self: flex-start;
+	}
+}
+
+.o-flex__align-self-end {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+		align-self: flex-end;
+	}
+}
+
+.o-flex__align-self-center {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+		align-self: center;
+	}
+}
+
+.o-flex__align-self-baseline {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+		align-self: baseline;
+	}
+}
+
+.o-flex__align-self-stretch {
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+		align-self: stretch;
+	}
+}
+
+
+@import "_04-objects_lists";
+
+.o-tabular {
+	@include suffixcate($bp: $suffixcate_bp-all)  {
+		display: table;
+
+		&__header {
+			display: table-header-group;
+		}
+
+		&__footer {
+			display: table-footer-group;
+		}
+
+		&__row {
+			display: table-row;
+		}
+
+		&__cell {
+			display: table-cell;
+		}
+
+		&--full {
+			width: 100%;
+		}
+
+		&--fixed {
+			table-layout: fixed;
+		}
+	}
+}
+
+%content-columns {
+	@include suffixcate($bp: $suffixcate_bp-all) {
+		column-count: 2;
+	}
+}
+
+.c-content-column {
+	&-s p {
+		@include suffixcateExtend(('%content-columns'));
+	}
+
+	&-2 {
+		@include suffixcateExtend(('%content-columns'));
+	}
+}

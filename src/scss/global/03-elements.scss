@@ -1,0 +1,27 @@
+// SETTINGS: Global variables, config switches
+@import "00-settings";
+
+// TOOLS: Default mixin and functions
+@import "01-tools";
+
+// ELEMENTS: Unclassed HTML elements (Type selectors)
+
+body {
+	font-family: $font-family-body;
+	font-size: $base-font-size;
+	font-weight: $weight-normal;
+	line-height: (22/16);
+	overflow-x: hidden;
+	margin: 0;
+	-webkit-overflow-scrolling: touch;
+
+	@if ($color-base != #000) {
+		color: $color-base;
+	}
+}
+
+a {
+	word-wrap: break-word;
+}
+
+@import "03-elements_unit-resets";

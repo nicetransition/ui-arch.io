@@ -1,0 +1,233 @@
+// SETTINGS: Global variables, config switches
+@import "00-settings";
+
+// TOOLS: Default mixin and functions
+@import "01-tools";
+
+// COMPONENTS: Designed components
+
+
+
+
+%content-block-spacing-top {
+	padding-top: $default-space;
+}
+
+.c-content-block {
+
+
+	&__header {
+		& + .c-content-block__main {
+			@extend %content-block-spacing-top;
+		}
+	}
+
+	&__main {
+		// font-family: $font-secondary;
+
+		p:not([class*="reset"]) {
+			@include title-setup;
+			line-height: 1.5;
+		}
+
+		& + .c-content-block__main {
+			@extend %content-block-spacing-top;
+		}
+	}
+
+	&__footer {
+		padding-top: $default-space + ($default-space / 2);
+	}
+}
+
+
+.c-form-block {
+	&__main {
+
+	}
+
+	&__row {
+		& + & {
+			margin-top: $default-space;
+		}
+	}
+
+	&__footer {
+		padding-top: $default-space;
+	}
+
+}
+
+.c-image-block {
+	position: relative;
+
+	&__img {
+
+	}
+
+	&__text-block {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+a, span {
+	&.c-image-block, &.c-image-block__img, &.c-image-block__text-block {
+		display: block;
+	}
+}
+
+.c-content {
+	&__intro {
+
+	}
+
+	&__main {
+
+	}
+}
+
+.c-image-backing {
+}
+
+.c-list, .c-link-list {
+	@include suffixcate {
+		list-style: none;
+
+		> li {
+			position: relative;
+
+			&:before {
+				content: "\2022";
+				font-size: em(18);
+				position: absolute;
+				left: -1em;
+			}
+		}
+	}
+}
+
+.c-link-list, .c-list-children {
+	> li {
+		& + li {
+			padding-top: $default-space / 4;
+		}
+	}
+}
+
+.c-list {
+	@include suffixcate {
+		> li {
+			&:before {
+				color: $color-light-dark;
+			}
+		}
+	}
+}
+
+.c-link-list {
+	@include suffixcate {
+		> li {
+			&:before {
+				color: $color-primary;
+			}
+		}
+	}
+}
+
+.c-icon-callout {
+	// max-width: rem(270);
+}
+
+
+@media screen and (max-width: $bp-header) {
+	[data-title] {
+		&:before {
+			@include title-setup;
+			content: attr(data-title);
+		}
+	}
+}
+
+[data-title-before]:before {
+	content: attr(data-title-before);
+}
+
+[data-title-after]:after {
+	content: attr(data-title-after);
+}
+
+
+
+.c-side-nav {
+	@media screen and (min-width: $bp-grid) {
+		width: rem(240);
+	}
+}
+.c-section-blocks, .c-group-sections {
+	@include suffixcate {
+		&__section {
+			@include units($version: "two-times", $variation: (bottom: true));
+		}
+
+		&__section + &__section {
+			padding-top: $default-space + ($default-space / 2);
+			padding-bottom: $default-space + ($default-space / 2);
+			//@include units($version: "two-times", $variation: (top: true, bottom: true));
+		}
+	}
+
+	&__section {
+		&:first-child {
+			// padding-top: $default-space;
+		}
+	}
+}
+
+.c-section-blocks, .c-seperate-section {
+	@include suffixcate {
+		&__section + &__section {
+			border-top: 1px solid;
+		}
+	}
+}
+
+.c-section-blocks {
+	@include suffixcate {
+		&__section + &__section {
+			border-color: $color-alpha-10;
+		}
+	}
+}
+
+.c-hr {
+	margin: 0;
+
+	unicode-bidi: normal;
+
+	border: 0;
+	
+	position: relative;
+
+	&:after {
+		content: "";
+		display: block;
+
+		height: rem(3);
+		min-height: 3px;
+
+		background-color: $color-primary-light;
+		width: 100%;
+	}
+}
+
+
+@import "05-components_content-spacing";
+@import "05-components_popup-module";
+@import "05-components_intrinsic-ratios";
+@import "05-components_ctas";
+@import "05-components_forms";
+@import "05-components_headers-and-titles";
+@import "05-components_navigational";
+@import "05-components_accordion";

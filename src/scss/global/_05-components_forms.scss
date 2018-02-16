@@ -1,0 +1,524 @@
+%shared-across-all-form-items {
+	@include shared-across-all-form-items;
+}
+
+[class*="c-form-"], button {
+	//outline: none;
+}
+
+[class*="c-form-"] {
+	//@include allChange($property: "background-color, border-color");
+}
+
+
+/*
+---
+name: Label
+category: Form
+---
+
+Label can be used with `<label>` elements.
+
+Types of Loaders:
+- t1: Standard button
+- t2: Provides extra visual weight and identifies the primary action in a set of buttons
+
+```types.html
+	<label class="c-label">I'm a label</label>
+```
+*/
+
+%label-shared {
+	cursor: pointer;
+}
+
+.c-label {
+	@extend %label-shared;
+}
+
+@mixin placeholder-styles {
+	font-size: $em4;
+	font-family: $font-family-body;
+	font-weight: $weight-light;
+
+	line-height: 1;
+}
+
+@mixin placeholder-setup {
+	&::-webkit-input-placeholder {
+	   @include placeholder-styles;
+	}
+
+	&:-moz-placeholder {
+	   @include placeholder-styles;
+	}
+
+	&::-moz-placeholder {
+	   @include placeholder-styles;
+	}
+
+	&:-ms-input-placeholder {
+	   @include placeholder-styles;
+	}
+}
+
+.c-input, .c-textarea, .c-select {
+	@extend %shared-across-all-form-items;
+	@include placeholder-styles;
+	border-top: none;
+	border-right: none;
+	border-bottom: rem(2) solid;
+	border-left: none;
+	border-radius: 0;
+}
+
+.c-input, .c-textarea {
+	box-shadow: none;
+	appearance: none;
+}
+
+.c-datepicker-wrapper {
+	&:not(.u-char-before), &:not(.u-char-after) {
+		position: relative;
+	}
+
+	@extend %shared-across-all-form-items;
+}
+
+span.c-datepicker-wrapper {
+	display: inline-block;
+}
+
+
+@mixin placeholder-styles-input-and-text {
+	font-size: rem(14) !important;
+	line-height: 1.5 !important;
+	padding-top: rem(2);
+	color: red;
+}
+
+@mixin placeholder-styles-input-and-text-browsers  {
+	&::-webkit-input-placeholder {
+	   @include placeholder-styles-input-and-text;
+	}
+
+	&:-moz-placeholder {
+	   @include placeholder-styles-input-and-text;
+	}
+
+	&::-moz-placeholder {
+	   @include placeholder-styles-input-and-text;
+	}
+
+	&:-ms-input-placeholder {
+	   @include placeholder-styles-input-and-text;
+	}
+}
+
+.c-input {
+	padding: rem(10) 0 rem(9);
+	// text-indent: $default-space / 2;
+	line-height: 1;
+
+	@include placeholder-styles-input-and-text-browsers;
+}
+
+.c-select {
+	&:not(.u-char-before), &:not(.u-char-after) {
+		position: relative;
+	}
+
+	&:not(.u-full) {
+		display: inline-block;
+	}
+
+	&__text {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		z-index: 0;
+		text-align: center;
+		width: rem(40);
+
+		&:after {
+			content: "•";
+		}
+	}
+
+	&__input {
+		@extend %shared-across-all-form-items;
+		display: block;
+		width: 100%;
+		-webkit-appearance: none;
+		appearance: none;
+		background-color: transparent;
+		border: 0;
+		border-radius: 0;
+		padding: rem(9) rem(40) rem(10) rem(0);
+		position: relative;
+		z-index: 1;
+		cursor: pointer;
+
+		&::-ms-expand {
+			display: none;
+		}
+
+		&:active, &:focus {
+			& + .c-select__text {
+				&:after {
+					// content: "x";
+				}
+			}
+			& + .c-select--highlight {
+				height: 2px;
+				position: absolute;
+				bottom: -2px;
+				left: -1px;
+				right: -1px;
+				border-top-left-radius: 50%;
+				border-top-right-radius: 50%;
+				background-color: $color-secondary-accent;
+			}
+		}
+	}
+}
+
+.c-textarea {
+	min-height: rem(32);
+	line-height: 1.5;
+	padding-top: rem(20);
+	// padding-right: rem(10);
+	// padding-left: em(10);
+
+	&--default {
+		overflow: hidden;
+		resize: none;
+	}
+}
+
+
+.c-field-toggle {
+	position: relative;
+
+	&__input {
+		margin: 0;
+		opacity: 0;
+		width: 0;
+	}
+
+	&__text, &__label {
+		@extend %label-shared;
+
+		&:before, &:after {
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		&:before {
+			border: 1px solid;
+			content: "";
+		}
+
+		&:after {
+			opacity: 0;
+		}
+	}
+
+	&__text {
+		padding-left: rem(25);
+
+		&:before {
+			width: rem(20);
+			height: rem(20);
+		}
+	}
+
+	&__label {
+		&:before {
+			width: em(20);
+			height: em(20);
+		}
+	}
+
+	&__input:checked + &__text:before, &__input:checked + &__label:before {
+	}
+
+	&__input:checked + &__text:after, &__input:checked + &__label:after {
+		opacity: 1;
+	}
+
+	&__input[disabled], &__input[disabled]:checked, &__input[disabled] + &__text, &__input[disabled] + &__label {
+		@include disable-select;
+		cursor: default;
+		cursor: not-allowed;
+	}
+}
+
+.c-radio {
+	&__input {
+		@extend %shared-across-all-form-items;
+	}
+
+	&__text {
+		&:before, &:after {
+			border-radius: 50%;
+		}
+
+		&:before {
+
+		}
+
+		&:after {
+			content: "";
+			background-color: currentColor;
+			margin-top: rem(5);
+			margin-left: rem(5);
+			width: rem(10);
+			height: rem(10);
+		}
+	}
+}
+
+.c-checkbox {
+	&__input {
+		@extend %shared-across-all-form-items;
+	}
+
+	&__text {
+		&:before, &:after {
+		}
+
+		&:before {
+
+		}
+
+		&:after {
+			@include glyph;
+			content: "X";
+			text-align: center;
+			width: rem(20);
+		}
+	}
+}
+
+.c-datepicker {
+	&-wrapper {
+
+	}
+
+	&__icon {
+		height: 100%;
+		font-size: 1.5em;
+
+		.glyph {
+			max-width: 1em;
+			max-height: 1em;
+		}
+	}
+}
+
+.c-legend {
+	& + .c-fieldset {
+		margin-top: $default-space / 2;
+	}
+}
+
+
+.c-fieldset {
+	margin-right: 0;
+	margin-left: 0;
+	padding: 0;
+}
+
+
+.c-form-item {
+	&__label {
+		position: relative;
+	}
+
+	&__label {
+		// padding-bottom: $default-space / 4;
+		margin-bottom: $default-space / -2;
+		z-index: 1;
+	}
+
+	&__field {
+		z-index: 0;
+	}
+}
+
+
+.field-validation-valid {
+	speak: none;
+	display: none;
+}
+
+.field-validation-valid, .field-validation-error, .c-label__required {
+	font-size: $h6;
+}
+
+.field-validation-error, .c-label__required {
+	color: $color-primary;
+}
+
+.field-validation-error ~ label.c-label {
+	color: $color-primary;
+}
+
+.field-validation-error ~ input.c-input,
+.field-validation-error ~ input.c-input:focus,
+.field-validation-error ~ textarea.c-textarea,
+.field-validation-error ~ textarea.c-textarea:focus {
+	border-bottom-color: $color-primary;
+}
+
+.field-validation-error ~ select.c-select__input + .c-select--highlight,
+.field-validation-error ~ select.c-select__input:focus + .c-select--highlight {
+	background-color: $color-primary;
+}
+
+.field-validation-error ~ input.c-field-toggle__input + .c-field-toggle__text:before,
+.field-validation-error ~ input.c-field-toggle__input:focus + .c-field-toggle__text:before {
+	border-color: $color-primary;
+}
+
+.c-label__required {
+	vertical-align: top;
+}
+
+
+
+.c-form-tip {
+	position: relative;
+
+	&__label {
+		padding-left: rem(20);
+	}
+
+	&__tip {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: rem(20);
+		text-align: left;
+	}
+}
+
+.c-form-block__row {
+	.o-flex\@large--grid {
+		align-items: flex-start;
+	}
+}
+
+
+.validation-summary-errors {
+	background-color: #FFF;
+	border: 1px solid;
+	color: $color-primary-dark;
+	padding: $default-space / 2;
+	margin-bottom: $default-space + ($default-space / 2);
+
+	> ul {
+		list-style: none;
+		padding-left: 0;
+
+		> li {
+			& + li {
+				margin-top: $default-space / 2;
+			}
+		}
+	}
+}
+
+
+@mixin placeholder-styles-large {
+	font-size: $h3;
+	font-family: $font-family;
+	font-weight: $weight-light;
+
+	line-height: 1;
+	// font-size: rem(14) !important;
+	// padding-top: rem(2) !important;
+	// padding-bottom: rem(5) !important;
+}
+
+@mixin placeholder-setup-large {
+	&::-webkit-input-placeholder {
+	   @include placeholder-styles-large;
+	}
+
+	&:-moz-placeholder {
+	   @include placeholder-styles-large;
+	}
+
+	&::-moz-placeholder {
+	   @include placeholder-styles-large;
+	}
+
+	&:-ms-input-placeholder {
+	   @include placeholder-styles-large;
+	}
+}
+
+
+/*
+---
+name: Search Input
+category: Form
+---
+
+Loaders can be used with `<span>`, `<div>`, and any "block type" elements.
+
+Types of Loaders:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+	<input class="c-input-search" />
+```
+*/
+
+.c-input-search {
+	position: relative;
+
+	&__btn, &__btn:before, &--large .c-input-search__btn:before {
+		position: absolute;
+	}
+
+	&__btn {
+		top: 3px;
+		right: 3px;
+		bottom: 4px;
+
+		&:before {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&--large {
+		@include placeholder-setup-large;
+
+		.c-input {
+			padding-top: $default-space;
+			padding-bottom: $default-space;
+			text-indent: $default-space;
+		}
+
+		.c-input-search__btn {
+			padding-right: rem(30);
+			padding-left: rem(30);
+			border-left: 1px solid $color-light;
+
+			&:hover {
+				border-left-color: $color-secondary;
+			}
+		}
+	}
+}

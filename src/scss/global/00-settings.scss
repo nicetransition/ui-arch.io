@@ -1,0 +1,17 @@
+/// SETTINGS: Global variables, config switches
+$default-space: 1.250rem;
+// $max-width: 68.75rem; // 64 = 1024 // 68.750 = 1100 // 87.5 == 1400
+$max-width: 90rem; // 1440
+$content-max-width: 53.75rem;// 860px
+$content-width: 49.875rem - ($default-space * 2);// 758px (iPad width - gutters)
+$min-width: 18.438rem;
+$border-radius: 0rem;
+$global-header-mobile-height: 3.750rem;
+$global-header-height: 7.125rem; // 114px
+$utility-nav-height: 3.438rem; // 60px
+
+
+@import "00-settings_bps";
+@import "00-settings_colors"; // generated from `gulp colors` task in `./gulpfile.js`
+@import "00-settings_typography";
+@import "00-settings_unit-library";

@@ -1,0 +1,50 @@
+@mixin intrinsic-size-maker($width: 400, $height: 300, $name: false) {
+	$modifier: if(($name != false), $name, (#{$width}x#{$height}));
+
+	&--#{$modifier} {
+		@include suffixcate {
+			padding-bottom: percentage($height / $width);
+		}
+	}
+}
+
+
+.c-intrinsic {
+	@include suffixcate {
+		position: relative;
+		height: 0;
+
+		&__element {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+		}
+
+		@include intrinsic-size-maker(1, 1);
+		@include intrinsic-size-maker(2, 1);
+		@include intrinsic-size-maker(4, 3);
+		@include intrinsic-size-maker(16, 9);
+		@include intrinsic-size-maker(400, 150, "feature");
+
+		&--intro {
+			padding-bottom: percentage(200/1024);
+		}
+	}
+
+	&--square {
+		@include suffixcateExtend(('.c-intrinsic--1x1'));
+	}
+
+
+	@include intrinsic-size-maker(16, 9, "video");
+}
+
+span, a {
+	@include suffixcate {
+		&.c-intrinsic, &.c-intrinsic__element {
+			display: block;
+		}
+	}
+}

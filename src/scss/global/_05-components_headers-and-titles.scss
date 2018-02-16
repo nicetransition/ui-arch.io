@@ -1,0 +1,274 @@
+.c-title, .c-img {
+	@include title-setup;
+
+	&__outline {
+		display: inline-block;
+		position: relative;
+		padding-bottom: $default-space + ($default-space / 4);
+
+		&:after {
+			display: block;
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+
+			height: rem(1.5);
+
+			background-color: currentColor;
+			opacity: .3;
+		}
+	}
+}
+
+%header-font {
+	@include suffixcate {
+		font-family: $font-secondary;
+	}
+}
+
+%subheader-font {
+	@include suffixcate {
+		font-family: $font-primary;
+	}
+}
+
+%u-b-light {
+	@include suffixcate {
+		font-weight: $weight-light;
+	}
+}
+
+%u-b-normal {
+	@include suffixcate {
+		font-weight: $weight-normal;
+	}
+}
+
+%u-b-bold {
+	@include suffixcate {
+		font-weight: $weight-bold;
+	}
+}
+
+%u-b-ultra {
+	@include suffixcate {
+		font-weight: $weight-ultra;
+	}
+}
+
+%title-spacing-0 {
+	@include suffixcate {
+		letter-spacing: -0.022em;
+	}
+}
+
+%title-spacing-1 {
+	@include suffixcate {
+		letter-spacing: 0.167em;
+	}
+}
+
+%title-spacing-2 {
+	@include suffixcate {
+		letter-spacing: .125em;
+	}
+}
+
+%title-spacing-3 {
+	@include suffixcate {
+		letter-spacing: .26em;
+	}
+}
+
+.c-subtitle {
+}
+
+%title-emphasized {
+	@include suffixcate {
+		text-transform: uppercase;
+	}
+}
+
+%title-lh {
+	@include suffixcate {
+		line-height: .9;
+	}
+}
+
+%title-lh-2 {
+	@include suffixcate {
+		line-height: 1.1;
+	}
+}
+
+%title-h1 {
+	@include suffixcate {
+		font-size: $h1;
+		// @include scaleFontDown($bp-1, $h1, rem(32));
+	}
+}
+
+%title-h2 {
+	@include suffixcate {
+		font-size: $h2;
+		// @include scaleFontDown($bp-1, $h2, rem(26));
+	}
+}
+
+%title-h3 {
+	@include suffixcate {
+		font-size: $h3;
+		// @include scaleFontDown($bp-1, $h3, rem(22));
+	}
+}
+
+%title-h4 {
+	@include suffixcate {
+		font-size: $h4;
+		// @include scaleFontDown($bp-1, $h4, rem(17));
+	}
+}
+
+%title-h5 {
+	@include suffixcate {
+		font-size: $h4;
+		// @include scaleFontDown($bp-1, $h5, rem(14));
+	}
+}
+
+%title-h6 {
+	@include suffixcate {
+		font-size: $h4;
+		// @include scaleFontDown($bp-1, $h6, rem(12));
+	}
+}
+
+.c-page-header {
+	@include suffixcate {
+		font-family: $font-secondary;
+	}
+
+	@include suffixcate {
+		font-size: $h1;
+		line-height: 1;
+	}
+
+	@include suffixcate {
+		font-style: italic;
+	}
+
+	@include suffixcate {
+		font-weight: normal; // book
+	}
+}
+
+.c-page-subheader {
+	@include suffixcate {
+		font-family: $font-primary;
+	}
+
+	@include suffixcate {
+		font-size: $h2;
+	}
+
+	@include suffixcate {
+		font-weight: 300; // light
+	}
+}
+
+.c-section-header {
+	@include suffixcate {
+		font-family: $font-secondary;
+	}
+
+	@include suffixcate {
+		font-size: $h3;
+	}
+
+	@include suffixcate {
+		font-style: italic;
+	}
+
+	@include suffixcate {
+		font-weight: normal; // book
+	}
+
+	@include suffixcate {
+		text-transform: uppercase;
+	}
+}
+
+.c-section-subheader {
+	@include suffixcate {
+		font-family: $font-primary;
+	}
+
+	@include suffixcate {
+		font-size: $h4;
+	}
+
+	@include suffixcate {
+		font-weight: normal; // regular
+	}
+
+	@include suffixcate {
+		text-transform: uppercase;
+	}
+}
+
+.c-article-header {
+	@include suffixcate {
+		font-family: $font-primary;
+	}
+
+	@include suffixcate {
+		font-size: $h4;
+	}
+
+	@include suffixcate {
+		font-weight: normal; // regular
+	}
+}
+
+.c-article-subheader {
+	@include suffixcate {
+		font-family: $font-primary;
+	}
+
+	@include suffixcate {
+		font-size: $h5;
+	}
+
+	@include suffixcate {
+		font-weight: normal; // light
+	}
+}
+
+.c-paragraph-header {
+	@include suffixcate {
+		font-family: $font-primary;
+	}
+
+	@include suffixcate {
+		font-size: $h4;
+	}
+
+	@include suffixcate {
+		font-weight: 300; // light
+	}
+}
+
+
+.c-title-block {
+	&__header {
+		& + .c-title-block__subheader {
+			margin-top: $default-space / 2;
+		}
+	}
+
+	&__subheader {
+
+	}
+}

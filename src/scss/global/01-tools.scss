@@ -1,0 +1,79 @@
+// SETTINGS: Global variables, config switches
+@import "00-settings";
+
+// TOOLS: Default mixin and functions
+@import "01-tools_type-rems-to-ems";
+@import "01-tools_type-scale";
+@import "01-tools_unit-space";
+@import "01-tools_extendable-selectors";
+@import "01-tools_string-replace";
+@import "01-tools_width-generator";
+@import "01-tools_ctas";
+@import "01-tools_forms";
+
+@mixin clear {
+	clear: both;
+}
+
+@mixin clear-after {
+	&:after {
+		@include clear;
+		display: table;
+		content: "";
+	}
+}
+
+@mixin disable-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@mixin animation-base($duration: 150ms, $timing: ease-in-out, $delay: 0) {
+	transition-duration: $duration;
+	transition-timing-function: $timing;
+	transition-delay: $delay;
+}
+
+@mixin allChange($duration: 150ms, $timing: ease-in-out, $delay: 0, $property: all) {
+	@include animation-base($duration, $timing, $delay);
+	transition-property: $property;
+	will-change: $property;
+	//transition: if(($property == all),"", $property) if(($duration == 0),null, $duration) if(($delay == 0),null, $delay) if(($timing == ease),"", $timing);
+}
+
+@mixin title-setup {
+	font-kerning: normal;
+	-webkit-font-kerning: normal;
+ 	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin unlist {
+	padding-left: 0;
+	list-style: none;
+}
+
+@mixin glyph {
+	font-family: 'webfont';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+
+	// /* Enable Ligatures ================ */
+	// -webkit-font-feature-settings: "liga";
+	// -moz-font-feature-settings: "liga=1";
+	// -moz-font-feature-settings: "liga";
+	// -ms-font-feature-settings: "liga" 1;
+	// -o-font-feature-settings: "liga";
+	// font-feature-settings: "liga";
+
+	// /* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,677 @@
+// COMPONENTS: Designed components
+
+@mixin button-animate {
+	// @include allChange($duration: 150ms, $property: background-color);
+	// will-change: background-color;
+
+	transition-property: background-color color;
+	will-change: background-color color;
+	transition-duration: 200ms;
+	transition-timing-function: ease-out;
+	transition-delay: 0;
+
+	&:hover, &:focus  {
+		transition-timing-function: ease-in;
+		transition-duration: 100ms;
+	}
+
+	&:active, &:active:hover, &:active:focus {
+		transition-timing-function: ease-in-out;
+		transition-duration: 5ms;
+	}
+}
+
+@mixin anchor-animate {
+	transition-property: color;
+	will-change: color;
+	transition-duration: 500ms;
+	transition-timing-function: ease-out;
+	transition-delay: 0;
+
+	&:hover, &:focus  {
+		transition-timing-function: ease-in;
+		transition-duration: 150ms;
+	}
+
+	&:active, &:active:hover, &:active:focus {
+		transition-timing-function: ease-in-out;
+		transition-duration: 10ms;
+	}
+}
+
+
+%button-animate {
+	@include button-animate;
+}
+
+%button-disabled-state {
+	background-color: $color-dark-light !important;
+	border-color: $color-dark-light;
+	color: rgba($color-dark, .7) !important;
+	cursor: default;
+}
+
+
+%button-base {
+	font-family: $font-family-button;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+}
+
+.c-cta {
+	// @extend %button-base;
+	// border-radius: 0;
+	// line-height: 1;
+	// font-size: 1rem;
+
+	// &--button {
+	// 	@extend %button-cta;
+	// 	background-color: $color-light;
+	// 	font-size: 1.250rem;
+	// 	outline: none;
+	// 	color: $color-primary;
+
+	// 	> span {
+	// 		padding-bottom: 0.125rem;
+	// 		line-height: 1.1;
+	// 	}
+
+	// 	&:hover, &:focus {
+	// 		background-color: $color-primary;
+	// 		color: #FFF;
+	// 	}
+	// }
+
+	// &--arrow, &-arrow {
+	// 	position: relative;
+	// 	padding-right: 1.875rem;
+
+	// 	&:after {
+	// 		@include glyph;
+
+	// 		//@inclide units($property: "padding", $variation: (right: true));
+	// 		content: ">";
+	// 		display: inline-block;
+	// 		position: absolute;
+	// 		top: 50%;
+	// 		transform: translateY(-50%);
+	// 		width: 1.875rem;
+	// 		text-align: center;
+
+	// 		@media screen and (min-width: $units__default-breakpoint) {
+	// 			right: $default-space;
+	// 			padding-left: 1.875rem;
+	// 		}
+
+	// 		@media screen and (max-width: $units__default-breakpoint) {
+	// 			right: $default-space / 2;
+	// 			padding-left: 20px;
+	// 		}
+	// 	}
+	// }
+}
+
+.c-button {
+	@extend %button-base;
+	border-radius: 0;
+
+	&[disabled] {
+		@extend %button-disabled-state;
+
+		&:hover, &:focus, &:active {
+			@extend %button-disabled-state;
+		}
+	}
+
+	&.-disabled {
+		@extend %button-disabled-state;
+	}
+
+	&--animate {
+		@extend %button-animate;
+	}
+
+
+	&--base {
+		@include disable-select;
+		@include title-setup;
+
+		@extend %button-animate;
+		border: rem(1) solid;
+
+		// font-size: rem(18);
+
+		// &.u-glyph-before:active:before, &.u-glyph-after:active:after {
+		// 	position: relative;
+		// 	top: 0.125em;
+		// }
+
+		// > span {
+		// 	position: relative;
+		// }
+
+		// &:active {
+		// 	> span {
+		// 		top: 0.125em;
+		// 	}
+		// }
+	}
+
+
+	&--default {
+		text-align: center;
+
+		@include units($version: "half-sized", $variation: (top: true, bottom: true));
+		@include units($version: "two-times", $variation: (right: true, left: true));
+
+		font-weight: $weight-normal;
+		// border-radius: rem(3);
+		// font-size: rem(22);
+		display: inline-block;
+
+		> span {
+			display: block;
+			line-height: 1.3;
+			font-family: $font-primary;
+			font-weight: bold;
+		}
+	}
+
+	&--raised {
+		box-shadow: 0 0.063rem 0.125rem rgba(0,0,0,.2);
+	}
+
+	&--size {
+		&-1 {
+			min-width: 9.688rem;
+		}
+	}
+
+	&--primary {
+		background-color: rgba(0, 0, 0, .2);
+		color: $color-secondary-contrast;
+		border-color: $color-secondary;
+
+		position: relative;
+
+
+
+		&:before {
+			content: "";
+			background-color: rgba(255, 255, 255, .12);
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		&:hover, &:focus {
+			background-color: rgba(0, 0, 0, .9);
+		}
+
+		&:active {
+			background-color: $color-secondary;
+		}
+	}
+
+
+	&--secondary {
+		background-color: $color-secondary;
+		color: $color-secondary-contrast;
+		border-color: $color-secondary;
+
+		position: relative;
+
+
+
+		&:before {
+			content: "";
+			background-color: rgba(255, 255, 255, .12);
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		&:hover, &:focus {
+			border-color: $color-secondary;
+			background-color: $color-primary-dark;
+		}
+
+		&:active {
+			border-color: $color-secondary;
+			background-color: $color-secondary;
+		}
+	}
+
+	&--tertiary {
+		background-color: rgba(0, 0, 0, .2);
+		color: $color-secondary-light-contrast;
+		border-color: $color-secondary-light;
+
+		position: relative;
+
+
+		&:before {
+			content: "";
+			background-color: rgba(255, 255, 255, .12);
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		&:hover, &:focus {
+			background-color: rgba(0, 0, 0, .9);
+		}
+
+		&:active {
+			background-color: $color-secondary-light;
+		}
+	}
+
+// 	&--primary, &--secondary, &--tertiary {
+// 	}
+// 
+// 	&--secondary, &--tertiary:hover, &--tertiary:focus, &--tertiary:active {
+// 		color: $color-light-light;
+// 	}
+// 
+// 	&--primary {
+// 		background-color: $button-bg;
+// 
+// 		&:hover, &:focus {
+// 			background-color: $button-bg-hover;
+// 		}
+// 
+// 		&:active {
+// 			background-color: $button-bg-active;
+// 		}
+// 	}
+// 
+// 	&--secondary {
+// 		background-color: $button-secondary-bg;
+// 
+// 		&:hover, &:focus {
+// 			background-color: $button-secondary-bg-hover;
+// 		}
+// 
+// 		&:active {
+// 			background-color: $button-secondary-bg-active;
+// 		}
+// 	}
+// 
+// 	&--tertiary, &--tertiary:hover, &--tertiary:focus, &--tertiary:active {
+// 		border-color: $button-tertiary-bg;
+// 	}
+// 
+// 
+// 	&--tertiary {
+// 		background-color: $button-tertiary-bg;
+// 		color: $color-dark-dark;
+// 
+// 		&:hover, &:focus, &:active {
+// 			background-color: $button-tertiary-bg-hover;
+// 		}
+// 	}
+// 
+// 	&--alpha {
+// 		background-color: transparent;
+// 		// color: $color-light-light;
+// 
+// 		&:hover {
+// 			background-color: $color-light-light;
+// 		}
+// 	}
+// 
+// 	&--light, &--light:hover, &--light:active, &--light:focus {
+// 		border-color: $color-light;
+// 		background-color: $color-light-accent;
+// 	}
+// 
+// 	&--light {
+// 		background-color: $color-light-accent;
+// 		color: $color-secondary;
+// 
+// 		> span {
+// 			transition-property: color;
+// 			will-change: color;
+// 			transition-duration: 500ms;
+// 			transition-timing-function: ease-out;
+// 			transition-delay: 0;
+// 
+// 			color: $color-primary-dark;
+// 		}
+// 
+// 		&:hover, &:focus {
+// 			color: $color-secondary;
+// 
+// 			> span {
+// 				color: $color-primary;
+// 				transition-timing-function: ease-in;
+// 				transition-duration: 150ms;
+// 			}
+// 		}
+// 
+// 		&:active, &:active:hover, &:active:focus {
+// 			> span {
+// 				transition-timing-function: ease-in-out;
+// 				transition-duration: 10ms;
+// 			}
+// 		}
+// 	}
+// 
+// 	&--inherit, &--inherit-reverse {
+// 		opacity: .98;
+// 	}
+// 
+// 	&--inherit {
+// 		color: currentColor;
+// 		background-color: rgba($color-light-light, .3);
+// 
+// 		&:hover {
+// 			background-color: currentColor;
+// 
+// 			> span {
+// 				color: $color-light-light;
+// 			}
+// 		}
+// 	}
+// 
+// 	&--inherit-reverse {
+// 		background-color: currentColor;
+// 		border-color: $color-light-light;
+// 		color: inherit;
+// 
+// 		> span {
+// 			color: $color-light-light;
+// 		}
+// 
+// 		&:hover {
+// 			background-color: rgba($color-light-light, .98);
+// 
+// 			> span {
+// 				color: currentColor;
+// 			}
+// 		}
+// 	}
+// 
+// 	&--arrow {
+// 		// @extend .c-cta-arrow;
+// 	}
+
+
+	&--reset {
+		border: 0;
+	}
+}
+
+
+[style*="color:#FFF"]:not([style*="background-color"]), [style*="color: #FFF"]:not([style*="background-color"]) {
+	.c-button--inherit {
+		&:hover {
+			background-color: #FFF;
+
+			> span {
+				color: currentColor;
+			}
+		}
+	}
+}
+
+a.c-button--inherit-reverse {
+	color: inherit;
+}
+
+a.c-button {
+	text-decoration: none;
+}
+
+.u-anchor-animate {
+	@include allChange($property: color);
+	// will-change: color;
+}
+
+@mixin anchor-states {
+	&:focus, &:hover {
+		color: $anchor-hover;
+	}
+
+	&:active {
+		color: $anchor-active;
+	}
+}
+
+%anchor-states {
+	@include suffixcate {
+		@include anchor-states;
+	}
+}
+
+%anchor-text-decoration {
+	text-decoration: none;
+}
+
+%anchor-text-decoration-reset {
+	text-decoration: underline;
+}
+
+.c-anchor {
+	@include suffixcateExtend((".u-anchor-animate"));
+	text-decoration: none;
+
+	&--default {
+		// @extend %anchor-text-decoration-reset;
+	}
+
+	&[class*="u-glyph"] {
+		// @extend %anchor-text-decoration;
+
+		> span {
+			// @extend %anchor-text-decoration-reset;
+		}
+	}
+
+	&--cta, &--cta-alt {
+		// @extend %anchor-text-decoration;
+		position: relative;
+
+		> span {
+			line-height: 1;
+			@extend %anchor-text-decoration-reset;
+		}
+
+		&:before, &:after {
+			@include glyph;
+			@include allChange($property: "transform");
+			display: inline-block;
+			position: absolute;
+			transform: translate(0, 0);
+			width: 1em;
+			color: $color-primary;
+		}
+
+		&:before {
+			left: 0;
+			text-indent: em(5) * -1;
+		}
+
+		&:after {
+			right: 0;
+		}
+
+		&:hover {
+			&:before, &:after {
+				transform: translate(em(3), 0);
+			}
+		}
+
+		&:active {
+			&:before, &:after {
+				transform: translate(em(4), em(2));
+			}
+		}
+	}
+
+	&--cta {
+		> span {
+			margin-left: 1em;
+		}
+
+		&:before {
+			content: ">";
+		}
+	}
+
+	&--cta-alt {
+		> span {
+			padding-right: 1em + em(5);
+		}
+
+		&:after {
+			content: "–";
+		}
+	}
+
+	@include suffixcate {
+
+		&--primary {
+			color: $anchor-primary;
+
+			&:focus, &:hover {
+				color: inherit;
+			}
+
+			&:active {
+				color: $anchor-active;
+			}
+		}
+
+		&--secondary {
+			color: $anchor-secondary;
+
+			&:hover, &:active {
+				color: $color-accent;
+			}
+		}
+
+		&--tertiary {
+			color: $color-accent;
+
+			&:hover, &:active {
+				color: $color-accent-accent;
+			}
+		}
+	}
+
+	&--dark {
+		@extend %anchor-states;
+
+		@include suffixcate {
+			color: $color-dark-dark;
+		}
+	}
+	@include suffixcate {
+		&--light {
+			// @include suffixcate {
+				color: $color-light-light;
+
+				&:hover {
+					color: $color-accent;
+				}
+			// }
+		}
+	}
+
+	&--light-alt {
+		@include suffixcate {
+			color: $color-light;
+
+			&:hover {
+				color: $color-primary;
+			}
+		}
+	}
+
+	&--hover-primary {
+		@include suffixcate {
+			&:hover {
+				color: $anchor-hover;
+			}
+		}
+	}
+
+	&--hover-secondary {
+		@include suffixcate {
+			&:hover {
+				color: $anchor-hover;
+			}
+		}
+	}
+
+	&--hover-dark {
+		@include suffixcate {
+			&:hover {
+				color: $color-dark-dark;
+			}
+		}
+	}
+
+	&--hover-light {
+		@include suffixcate {
+			&:hover {
+				color: $color-light-light;
+			}
+		}
+	}
+
+	&--click-area {
+		display: inline-block;
+		min-height: 1.875rem;
+		line-height: 1.875rem;
+	}
+}
+
+a[class=""], a[class=" "], a:not([class]) {
+	@extend .c-anchor--primary;
+}
+
+.c-icon-btn {
+	// display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	cursor: pointer;
+
+	&--default, &--size-1, &--size-2 {
+		width: 3.125rem;
+		line-height: 1;
+	}
+
+	&--default, &--size-1 {
+		height: 3.125rem;
+		width: 3.125rem;
+	}
+
+	&--size-2 {
+		width: 3.75rem;
+
+		@media screen and (min-width: $bp-header) {
+			height: 3.125rem;
+		}
+
+		@media screen and (max-width: $bp-header) {
+			height: $global-header-mobile-height;
+		}
+	}
+
+	&--clear {
+		background-color: transparent;
+	}
+}
+

@@ -1,0 +1,22 @@
+name: UI-ARCH.io
+headHtml: |
+  <link rel="stylesheet" href="scss/ui-arch.css" />
+#logo: (optional) Relative filepath or absolute URL of your logo
+#assets: (optional) List of relative file/directory paths to copy and mirror in the generated style guide
+
+#excludeDir: (optional) Regex pattern (in double quotes) or list of directories to exclude; .git and node_modules are always excluded
+#match: (optional) Regex pattern or list of files to process; by default, common source files are included
+
+#sidebar:
+#  background: (optional) Background color of the sidebar; hex colors should be quoted
+#  textColor: (optional) Text color of the sidebar; hex colors should be quoted
+
+#doctypeTag: (optional) For example iframes, the HTML doctype to use; defaults to "<!doctype html>"
+#headHtml: (optional) For example iframes, HTML to insert before the closing </head> tag
+
+#bodyHtml: (optional) For example iframes, HTML to insert before the closing </body> tag
+
+#webpackAppPath: For React apps, this is the `output.library` value in your webpack config
+#emberAppName: For Ember apps, this is the name of the Ember app exported to the window object
+
+#order: (optional) See below

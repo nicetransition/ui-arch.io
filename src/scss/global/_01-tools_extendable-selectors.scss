@@ -1,0 +1,246 @@
+// *! * [Suffixcate - Responsive Suffixes](https://github.com/nicetransition/suffixcate) */
+ // * Github: https://github.com/kevinmack18/suffixcate
+ // * Demo: http://codepen.io/nicetransition/pen/BjgwER/?editors=1100
+ // * Released under the MIT license
+ // * https://github.com/kevinmack18/suffixcate/blob/master/LICENSE
+ // * Version: v0.2.0
+ // * Date: 2016-09-15
+
+// $suffixcate_bp: 700px;
+// $suffixcate_bp-medium: 500px 800px;
+// $suffixcate_bp-all: ($suffixcate_bp $suffixcate_bp-medium);
+$suffixcate_suffix-small: "small";
+$suffixcate_suffix-medium: "medium";
+$suffixcate_suffix-large: "large";
+
+
+@mixin suffixcate($small: $suffixcate_suffix-small, $medium: $suffixcate_suffix-medium, $large: $suffixcate_suffix-large, $bp: $suffixcate_bp, $base: true, $all: true) {
+	$bps: length($bp);
+	$bp-large: $bp;
+	$bp-medium: $bp-large;
+	$bp-small: $bp-large;
+
+	@if ($base != false) {
+		@content;
+	}
+
+	@if($bps > 1) {
+		$bp-large: nth($bp, 1);
+		$bp-medium: nth($bp, 2);
+		$bp-small: $bp-large;
+		$small-placeholder: if($small = false, $suffixcate_suffix-small, $small);
+		$medium-placeholder: if($large = false, $suffixcate_suffix-medium, $medium);
+		$large-placeholder: if($large = false, $suffixcate_suffix-large, $large);
+
+		@if ($all != false) {
+			&\@#{$large-placeholder} {
+				@media screen and (min-width: $bp-large) {
+					@content;
+				}
+			}
+		}
+
+		$bp-medium-1: #{nth($bp-medium, 1)};
+		$bp-medium-2: #{nth($bp-medium, 2)};
+
+		@if ($large != false) {
+
+			&\@#{$medium-placeholder} {
+				@media screen and (min-width: $bp-medium-1) and (max-width: $bp-medium-2) {
+					@content;
+				}
+			}
+
+			&\@#{$medium-placeholder}\+ {
+				@media screen and (min-width: $bp-medium-1) {
+					@content;
+				}
+			}
+
+			&\@#{$medium-placeholder}\+\+, &\@#{$large-placeholder}\-#{$medium-placeholder} {
+				@media screen and (min-width: $bp-medium-2) {
+					@content;
+				}
+			}
+
+			&\@#{$medium-placeholder}\-#{$large-placeholder} {
+				@media screen and (max-width: $bp-medium-2) and (min-width: $bp-large) {
+					@content;
+				}
+			}
+
+			&\@#{$medium-placeholder}\- {
+				@media screen and (max-width: $bp-medium-2) {
+					@content;
+				}
+			}
+
+			&\@#{$medium-placeholder}\-\-, &\@#{$small-placeholder}\-#{$medium-placeholder} {
+				@media screen and (max-width: $bp-medium-1) {
+					@content;
+				}
+			}
+
+			&\@#{$medium-placeholder}\-#{$small-placeholder} {
+				@media screen and (min-width: $bp-medium-1) and (max-width: $bp-small) {
+					@content;
+				}
+			}
+
+		}
+
+		@if ($all != false) {
+			&\@#{$small-placeholder} {
+				@media screen and (max-width: $bp-small) {
+					@content;
+				}
+			}
+		}
+
+	} @else {
+		@if ($large != false) {
+			&\@#{$large} {
+				@media screen and (min-width: $bp) {
+					@content;
+				}
+			}
+		}
+
+		@if ($small != false) {
+			&\@#{$small} {
+				@media screen and (max-width: $bp) {
+					@content;
+				}
+			}
+		}
+	}
+}
+
+@mixin suffixcateSmall($small: $suffixcate_suffix-small, $bp: $suffixcate_bp, $base: true) {
+	@include suffixcate($small, false, false, $bp, $base) {
+		@content;
+	}
+}
+
+@mixin suffixcateMedium($medium: $suffixcate_suffix-medium, $bp: $suffixcate_bp-all, $base: true, $all: true) {
+	@include suffixcate(false, $medium, false, $bp, $base, $all) {
+		@content;
+	}
+}
+
+@mixin suffixcateLarge($large: $suffixcate_suffix-large, $bp: $suffixcate_bp, $base: true) {
+	@include suffixcate(false, false, $large, $bp, $base) {
+		@content;
+	}
+}
+
+@mixin suffixcateExtend($selector, $suffix: ($suffixcate_suffix-small $suffixcate_suffix-medium $suffixcate_suffix-large), $base: true) {
+	@if ($base != false) {
+		@extend #{$selector} !optional;
+	}
+
+	@each $selectorSelector in $selector {
+
+		@each $name in $suffix {
+			&\@#{$name} {
+				@extend #{$selectorSelector}\@#{$name} !optional;
+			}
+
+			&\@#{$name}-#{nth($suffix, 1)} {
+				@extend #{$selectorSelector}\@#{$name}-#{nth($suffix, 1)} !optional;
+			}
+
+			&\@#{$name}-#{nth($suffix, 2)} {
+				@extend #{$selectorSelector}\@#{$name}-#{nth($suffix, 2)} !optional;
+			}
+
+			&\@#{$name}\+\+ {
+				@extend #{$selectorSelector}\@#{$name}\+\+ !optional;
+			}
+
+			&\@#{$name}\+ {
+				@extend #{$selectorSelector}\@#{$name}\+ !optional;
+			}
+
+			&\@#{$name}\-\- {
+				@extend #{$selectorSelector}\@#{$name}\-\- !optional;
+			}
+
+			&\@#{$name}\- {
+				@extend #{$selectorSelector}\@#{$name}\- !optional;
+			}
+
+			&\@#{nth($suffix, 2)}\-#{nth($suffix, 3)} {
+				@extend #{$selectorSelector}\@#{nth($suffix, 2)}\-#{nth($suffix, 3)} !optional;
+			}
+
+			&\@#{nth($suffix, 3)}\-#{nth($suffix, 2)} {
+				@extend #{$selectorSelector}\@#{nth($suffix, 3)}\-#{nth($suffix, 2)} !optional;
+			}
+
+			&\@#{nth($suffix, 2)}\-#{nth($suffix, 1)} {
+				@extend #{$selectorSelector}\@#{nth($suffix, 2)}\-#{nth($suffix, 1)} !optional;
+			}
+
+			&\@#{nth($suffix, 1)}\-#{nth($suffix, 2)} {
+				@extend #{$selectorSelector}\@#{nth($suffix, 1)}\-#{nth($suffix, 2)} !optional;
+			}
+
+			&\@#{$name}-#{nth($suffix, 3)} {
+				@extend #{$selectorSelector}\@#{$name}-#{nth($suffix, 3)} !optional;
+			}
+		}
+	}
+}
+
+
+// DEMOS
+// a {
+// 	color: inherit;
+// }
+
+// .o-table {
+// 	@include suffixcate {
+// 		display: table;
+
+// 		&__cell {
+// 			display: table-cell;
+// 		}
+// 	}
+// }
+
+// .u-full {
+// 	@include suffixcate($bp: $suffixcate_bp-all) {
+// 		width: 100%;
+// 	}
+// }
+
+// .u-color-primary {
+// 	@include suffixcate {
+// 		color: red;
+// 	}
+// }
+
+// .t-1 {
+// 	@include suffixcate($bp: $suffixcate_bp-all) {
+// 		background-color: #CCC;
+// 		color: #000;
+// 	}
+// }
+
+// .t-2 {
+// 	@include suffixcate($bp: $suffixcate_bp-all) {
+// 		background-color: #333;
+// 		color: #FFF;
+// 	}
+// }
+
+
+// .demo-1 {
+// 	@include suffixcate($bp: $suffixcate_bp-all) {
+// 		color: lime;
+// 	}
+// }
+
+
+

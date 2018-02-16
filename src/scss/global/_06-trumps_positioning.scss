@@ -1,0 +1,24 @@
+.u-pos-r {
+	@include suffixcate {
+		position: relative;
+	}
+}
+
+.u-pos-f {
+	@include suffixcate {
+		position: fixed;
+	}
+}
+
+.u-pos-a {
+	@include suffixcate {
+		position: absolute;
+	}
+}
+
+
+@for $i from 0 through 12 {
+	.u-index-#{$i} {
+		z-index: $i;
+	}
+}
