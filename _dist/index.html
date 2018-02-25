@@ -36,6 +36,12 @@
 							<optgroup label="Spacing Units">
 									<option value="padding">Padding</option>
 							</optgroup>
+							<optgroup label="Tools &gt; Functions">
+									<option value="pixel-to-em">Pixel to EM</option>
+									<option value="pixel-to-rem">Pixel to REM</option>
+									<option value="string-replace">String Replace</option>
+									<option value="string-to-number">String to Number</option>
+							</optgroup>
 							<optgroup label="Typography">
 									<option value="font-sizes">Font Sizes</option>
 							</optgroup>
@@ -77,7 +83,7 @@
 	<div><p>TODO:</p>
 <ul>
 <li>Add reference to theming and &quot;Style Guide Layers&quot;</li>
-<li>Link to YouTube video</li>
+<li><a href="https://youtu.be/WxGNTf84v58">Digital Branding in a Component Library: The Style Guide Layers</a></li>
 </ul>
 </div>
 </div>
@@ -299,6 +305,114 @@
 </div>
 
 				</div>
+				<div id="category-tools &gt; functions">
+						<div id="pixel-to-em" class="i-library">
+	<h1 class="display-4">Pixel to EM</h1>
+	<div><p>Converts <code>px</code> unit to <code>em</code> unit</p>
+<ul>
+<li>@param {String | Number} $pixels - Value to be parsed (do not include <code>px</code>)</li>
+<li>@param {String | Number} $context - Base root font size (do not include <code>px</code>)</li>
+<li>@return {Number}</li>
+</ul>
+<p>Usage:</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".selector-name {
+    font-size: em(18);
+}
+
+.demo-2 {
+    font-size: em(64) * 2;
+}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">.selector-name {
+    font-size: em(18);
+}
+
+.demo-2 {
+    font-size: em(64) * 2;
+}</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="pixel-to-rem" class="i-library">
+	<h1 class="display-4">Pixel to REM</h1>
+	<div><p>Converts <code>px</code> unit to <code>rem</code> unit</p>
+<ul>
+<li>@param {String | Number} $pixels - Value to be parsed (do not include <code>px</code>)</li>
+<li>@param {String | Number} $context - Base root font size (do not include <code>px</code>)</li>
+<li>@return {Number}</li>
+</ul>
+<p>Usage:</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".selector-name {
+    font-size: rem(18);
+}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">.selector-name {
+    font-size: rem(18);
+}</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="string-replace" class="i-library">
+	<h1 class="display-4">String Replace</h1>
+	<div><p>Sass provides a collection of handy functions to manipulate strings, however there is no function to replace a substring with another string. Here is a quick str-replace function if you ever need one.</p>
+<p>Source/Credit: <a href="https://css-tricks.com/snippets/sass/str-replace-function/">https://css-tricks.com/snippets/sass/str-replace-function/</a></p>
+<p>Replace <code>$search</code> with <code>$replace</code> in <code>$string</code></p>
+<ul>
+<li>@author Hugo Giraudel</li>
+<li>@param {String} $string - Initial string</li>
+<li>@param {String} $search - Substring to replace</li>
+<li>@param {String} $replace (&#39;&#39;) - New value</li>
+<li>@return {String} - Updated string</li>
+</ul>
+<p>Usage:</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".selector-name {
+    $string: &#39;The answer to life the universe and everything is 42.&#39;;
+    content: str-replace($string, &#39;e&#39;, &#39;xoxo&#39;);
+}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">.selector-name {
+    $string: &#39;The answer to life the universe and everything is 42.&#39;;
+    content: str-replace($string, &#39;e&#39;, &#39;xoxo&#39;);
+}</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="string-to-number" class="i-library">
+	<h1 class="display-4">String to Number</h1>
+	<div><p>Casts a string into a number.</p>
+<p>Source/Credit: <a href="http://sassmeister.com/gist/9fa19d254864f33d4a80">http://sassmeister.com/gist/9fa19d254864f33d4a80</a></p>
+<ul>
+<li>@param {String | Number} $value - Value to be parsed</li>
+<li>@return {Number}</li>
+</ul>
+<p>Usage:</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="@function foo(param: $some-string-that-may-not-be-a-number) {
+    @return to-number(unquote(&quot;param&quot;));
+}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">@function foo(param: $some-string-that-may-not-be-a-number) {
+    @return to-number(unquote(&quot;param&quot;));
+}</code></pre>
+	</div>
+</div></div>
+</div>
+
+				</div>
 				<div id="category-typography">
 						<div id="font-sizes" class="i-library">
 	<h1 class="display-4">Font Sizes</h1>
@@ -484,6 +598,49 @@ Font-size Reset on <h1>-<h6> are reset to to 1rem in <code>_02-generic_resets.sc
 								data-filter-value="Padding"
 							>
 								<span>Padding</span>
+							</a>
+					</div>
+			
+				</div>
+				<div class="i-sidebar-list-group">
+			
+					<h5
+						class="pt-4 mb-1"
+						data-filter-value=" Pixel to EM  Pixel to REM  String Replace  String to Number "
+					>
+						<a href="#category-tools &gt; functions" class="i-sidebar-list-item">
+							<b>Tools &gt; Functions</b>
+						</a>
+					</h5>
+			
+					<div>
+							<a
+								href="#pixel-to-em"
+								class="i-sidebar-list-item"
+								data-filter-value="Pixel to EM"
+							>
+								<span>Pixel to EM</span>
+							</a>
+							<a
+								href="#pixel-to-rem"
+								class="i-sidebar-list-item"
+								data-filter-value="Pixel to REM"
+							>
+								<span>Pixel to REM</span>
+							</a>
+							<a
+								href="#string-replace"
+								class="i-sidebar-list-item"
+								data-filter-value="String Replace"
+							>
+								<span>String Replace</span>
+							</a>
+							<a
+								href="#string-to-number"
+								class="i-sidebar-list-item"
+								data-filter-value="String to Number"
+							>
+								<span>String to Number</span>
 							</a>
 					</div>
 			

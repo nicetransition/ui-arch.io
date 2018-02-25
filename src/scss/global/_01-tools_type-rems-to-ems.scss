@@ -1,15 +1,30 @@
-$browser-context: 16;
+$browser-context: #{str-replace(#{$rootFontSize}, 'px', '')};
 
-/// String to number converter: `to-number()` and `to-length()` created by Hugo Giraudel
-/// http://sassmeister.com/gist/9fa19d254864f33d4a80
 
-///
-/// Casts a string into a number
-///
-/// @param {String | Number} $value - Value to be parsed
-///
-/// @return {Number}
-///
+/*
+---
+name: String to Number
+category: Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+
 @function to-number($value) {
 	@if type-of($value) == 'number' {
 		@return $value;
@@ -61,26 +76,66 @@ $browser-context: 16;
 	@return $value * map-get($units, $unit);
 }
 
-@function rem($pixels, $context: $browser-context, $em: false) {
+
+/*
+---
+name: Pixel to REM
+category: Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+
+
+
+@function rem(to-number(str-replace(#{$pixels}, 'px', '')), $context: to-number($browser-context), $em: false) {
 	@return to-number(unquote("#{$pixels / $context}#{if($em != true, "rem", "em")}"));
 }
 
-@function em($pixels, $context: $browser-context) {
-	@return rem($pixels, $context, true);
+
+/*
+---
+name: Pixel to EM
+category: Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
 }
 
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
 
-/// Demo:
-// .title {
-// 	font-size: rem(32);
-// }
+*/
 
-// .title-alt {
-// 	font-size: em(64);
-// }
-
-// .title-alt-2 {
-// 	font-size: em(64) * 2;
-// }
-
-
+@function em(to-number(str-replace(#{$pixels}, 'px', '')), $context: to-number($browser-context)) {
+	@return rem($pixels, $context, true);
+}
