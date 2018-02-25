@@ -63,7 +63,6 @@
 .c-accordion {
 	&__title {
 		position: relative;
-		font-weight: $weight-bold;
 
 		> span {
 			// width: 100%;
@@ -156,7 +155,7 @@
 // .js-toggle-content-items  {
 
 // 	&__item {
-// 		//@media screen and (min-width: $bp-header) {
+// 		//@media screen and (min-width: $bp-large) {
 // 			@include allChange($duration: 350ms, $timing: "ease-out");
 // 			position: relative;
 // 			overflow: hidden;
@@ -170,13 +169,13 @@
 // 				max-height: 0 !important;
 // 				speak: none;
 
-// 				@media screen and (min-width: $bp-header) {
+// 				@media screen and (min-width: $bp-large) {
 // 					background-color: transparent;
 // 					color: transparent;
 // 				}
 
 
-// 				@media screen and (max-width: $bp-header) {
+// 				@media screen and (max-width: $bp-large) {
 // 					background-color: $color-dark-light;
 // 					color: $color-dark;
 // 				}

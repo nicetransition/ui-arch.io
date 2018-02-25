@@ -842,12 +842,12 @@ $variations-spacing: (top: 1, right: 2, bottom: 3, left: 4);
 
 // .u-content-space, .u-content-space-alt {
 // 	@include suffixcate {
-// 		@media screen and (min-width: $bp-grid) {
+// 		@media screen and (min-width: $bp-large) {
 // 			padding-right: ($default-space / 2) + $default-space;
 // 			padding-left: ($default-space / 2) + $default-space;
 // 		}
 
-// 		@media screen and (max-width: $bp-grid) {
+// 		@media screen and (max-width: $bp-large) {
 // 			padding-right: $default-space;
 // 			padding-left: $default-space;
 // 		}

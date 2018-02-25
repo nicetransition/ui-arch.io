@@ -1,14 +1,65 @@
+/*
+---
+name: Sass structure
+category: Base
+---
+
+All `~/global/*.scss` for core styles and base of components:
+
+* `00-settings.scss` -  Global variables, config switches
+* `01-tools.scss` - Default mixin and functions
+* `02-generic.scss` - Ground-zero styles (normalize, resets, box-sizing)
+* `03-elements.scss` - Unclassed HTML elements (Type selectors)
+* `04-objects.scss` - Cosmetic-free design patterns, primarily structual components
+* `04-trumps.scss` - Utility helper classes to extend and override styles of designed components
+
+
+Follows methodology of ITCSS and each "layer" consists of Sass partials. It is recommended to make partials as specific as possible to allow for more easy of control.
+
+*/
+
+
+/*
+---
+name: Methodologies
+category: Base
+---
+
+* [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
+* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
+* [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
+* [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
+* [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
+* [Color Naming Convention](https://codepen.io/nicetransition/full/QjwbRg/) - Naming convention and organization of colors
+*/
+
+
+/*
+---
+name: Style Guide Layers
+category: Base
+---
+
+TODO:
+* Add reference to theming and "Style Guide Layers"
+* Link to YouTube video
+
+*/
+
+
+
+@import "01-tools_type-rems-to-ems"; // convert px to rem or em
+
+// Basic configurations
+$includeResets: false;
+
 /// SETTINGS: Global variables, config switches
 $default-space: 1.250rem;
-// $max-width: 68.75rem; // 64 = 1024 // 68.750 = 1100 // 87.5 == 1400
 $max-width: 90rem; // 1440
 $content-max-width: 53.75rem;// 860px
 $content-width: 49.875rem - ($default-space * 2);// 758px (iPad width - gutters)
 $min-width: 18.438rem;
-$border-radius: 0rem;
-$global-header-mobile-height: 3.750rem;
-$global-header-height: 7.125rem; // 114px
-$utility-nav-height: 3.438rem; // 60px
+$border-radius: 0;
 
 
 @import "00-settings_bps";

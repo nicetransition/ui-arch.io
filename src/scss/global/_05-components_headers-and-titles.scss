@@ -24,39 +24,16 @@
 
 %header-font {
 	@include suffixcate {
-		font-family: $font-secondary;
+		font-family: $seconary-font;
 	}
 }
 
 %subheader-font {
 	@include suffixcate {
-		font-family: $font-primary;
+		font-family: $primary-font;
 	}
 }
 
-%u-b-light {
-	@include suffixcate {
-		font-weight: $weight-light;
-	}
-}
-
-%u-b-normal {
-	@include suffixcate {
-		font-weight: $weight-normal;
-	}
-}
-
-%u-b-bold {
-	@include suffixcate {
-		font-weight: $weight-bold;
-	}
-}
-
-%u-b-ultra {
-	@include suffixcate {
-		font-weight: $weight-ultra;
-	}
-}
 
 %title-spacing-0 {
 	@include suffixcate {
@@ -91,63 +68,9 @@
 	}
 }
 
-%title-lh {
-	@include suffixcate {
-		line-height: .9;
-	}
-}
-
-%title-lh-2 {
-	@include suffixcate {
-		line-height: 1.1;
-	}
-}
-
-%title-h1 {
-	@include suffixcate {
-		font-size: $h1;
-		// @include scaleFontDown($bp-1, $h1, rem(32));
-	}
-}
-
-%title-h2 {
-	@include suffixcate {
-		font-size: $h2;
-		// @include scaleFontDown($bp-1, $h2, rem(26));
-	}
-}
-
-%title-h3 {
-	@include suffixcate {
-		font-size: $h3;
-		// @include scaleFontDown($bp-1, $h3, rem(22));
-	}
-}
-
-%title-h4 {
-	@include suffixcate {
-		font-size: $h4;
-		// @include scaleFontDown($bp-1, $h4, rem(17));
-	}
-}
-
-%title-h5 {
-	@include suffixcate {
-		font-size: $h4;
-		// @include scaleFontDown($bp-1, $h5, rem(14));
-	}
-}
-
-%title-h6 {
-	@include suffixcate {
-		font-size: $h4;
-		// @include scaleFontDown($bp-1, $h6, rem(12));
-	}
-}
-
 .c-page-header {
 	@include suffixcate {
-		font-family: $font-secondary;
+		font-family: $seconary-font;
 	}
 
 	@include suffixcate {
@@ -166,7 +89,7 @@
 
 .c-page-subheader {
 	@include suffixcate {
-		font-family: $font-primary;
+		font-family: $primary-font;
 	}
 
 	@include suffixcate {
@@ -180,7 +103,7 @@
 
 .c-section-header {
 	@include suffixcate {
-		font-family: $font-secondary;
+		font-family: $seconary-font;
 	}
 
 	@include suffixcate {
@@ -202,7 +125,7 @@
 
 .c-section-subheader {
 	@include suffixcate {
-		font-family: $font-primary;
+		font-family: $primary-font;
 	}
 
 	@include suffixcate {
@@ -220,7 +143,7 @@
 
 .c-article-header {
 	@include suffixcate {
-		font-family: $font-primary;
+		font-family: $primary-font;
 	}
 
 	@include suffixcate {
@@ -234,7 +157,7 @@
 
 .c-article-subheader {
 	@include suffixcate {
-		font-family: $font-primary;
+		font-family: $primary-font;
 	}
 
 	@include suffixcate {
@@ -248,7 +171,7 @@
 
 .c-paragraph-header {
 	@include suffixcate {
-		font-family: $font-primary;
+		font-family: $primary-font;
 	}
 
 	@include suffixcate {

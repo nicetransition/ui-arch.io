@@ -4,57 +4,6 @@
 // TOOLS: Default mixin and functions
 @import "01-tools";
 
-// GENERIC: Ground-zero styles (normalize, resets, box-sizing)
-//		html {
-//			// @include scaleFontUp($bp-1, 1rem, rem(18.5)); // 16 to...
-//		}
-//
-//		// :root {
-//		// 	@include scaleFontUp(rem(1250), 1.125rem, rem(30)); // 16 to...
-//		// }
-//
-//		// @media screen and (max-width: 69.44444rem) {
-//		@media screen and (max-width: 1111px) {
-//			:root {
-//				font-size: 1.125rem;
-//
-//				// background-color: yellow;
-//			}
-//		}
-//
-//		@media screen and (min-width: 1111px) and (max-width: 1647px) {
-//			:root {
-//				font-size: 1.62vw;
-//
-//
-//				// border: 10px solid red;
-//			}
-//		}
-//
-//		// @media screen and (min-width: 69.44444rem) and (min-width: 102.88086rem) {
-//		@media screen and (min-width: 1111px) and (min-width: 1647px) {
-//			:root {
-//				font-size: 1.66667rem;
-//				*, * * {
-//					// color: yellow !important;
-//				}
-//			}
-//		}
-//
-//
-//		@media screen and (max-width: 69.44444rem) {
-//			* {
-//				// outline: 1px solid blue !important;
-//			}
-//		}
-
-:root {
-	// font-size: 18px;
-}
-
-*, *:before, *:after {
-	box-sizing: border-box;
-}
 
 @mixin selection-styles {
     background: rgba($color-secondary-dark, .5);
@@ -68,36 +17,4 @@
 	@include selection-styles;
 }
 
-a, button, label, legend {
-	@include disable-select;
-}
-
-button, a {
-	-webkit-tap-highlight-color: transparent;
-}
-
-main {
-	display: block;
-}
-
-img {
-	border: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-size: 1rem;
-}
-
-legend, fieldset {
-	display: block;
-    padding: 0;
-    border: 0;
-}
-
-fieldset {
-	margin: 0;
-}
-
-// article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-// 	display: block;
-// }
+@import "02-generic_resets";

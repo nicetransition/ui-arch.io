@@ -1,91 +1,547 @@
 @charset "UTF-8";
-/*! v0.0.1 || 2016-10-25 14:37 */
-@import url(06-trumps_widths.css);
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+/*! v0.0.0 || 2018-02-14 XX:XX */
+/*
+---
+name: Sass structure
+category: Base
+---
 
+All `~/global/*.scss` for core styles and base of components:
+
+* `00-settings.scss` -  Global variables, config switches
+* `01-tools.scss` - Default mixin and functions
+* `02-generic.scss` - Ground-zero styles (normalize, resets, box-sizing)
+* `03-elements.scss` - Unclassed HTML elements (Type selectors)
+* `04-objects.scss` - Cosmetic-free design patterns, primarily structual components
+* `04-trumps.scss` - Utility helper classes to extend and override styles of designed components
+
+
+Follows methodology of ITCSS and each "layer" consists of Sass partials. It is recommended to make partials as specific as possible to allow for more easy of control.
+
+*/
+/*
+---
+name: Methodologies
+category: Base
+---
+
+* [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
+* [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - 
+* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
+* [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
+
+*/
+/*
+---
+name: Style Guide Layers
+category: Base
+---
+
+TODO:
+* Add reference to theming and "Style Guide Layers"
+* Link to YouTube video
+
+*/
+/*
+---
+name: Font Sizes
+category: Typography
+---
+
+@if ($includeResets == true) {
+Font-size Reset on <h1>-<h6> are reset to to 1rem in `_02-generic_resets.scss`
+}
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+```
+*/
+/*
+---
+name: Sass structure
+category: Base
+---
+
+All `~/global/*.scss` for core styles and base of components:
+
+* `00-settings.scss` -  Global variables, config switches
+* `01-tools.scss` - Default mixin and functions
+* `02-generic.scss` - Ground-zero styles (normalize, resets, box-sizing)
+* `03-elements.scss` - Unclassed HTML elements (Type selectors)
+* `04-objects.scss` - Cosmetic-free design patterns, primarily structual components
+* `04-trumps.scss` - Utility helper classes to extend and override styles of designed components
+
+
+Follows methodology of ITCSS and each "layer" consists of Sass partials. It is recommended to make partials as specific as possible to allow for more easy of control.
+
+*/
+/*
+---
+name: Methodologies
+category: Base
+---
+
+* [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
+* [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - 
+* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
+* [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
+
+*/
+/*
+---
+name: Style Guide Layers
+category: Base
+---
+
+TODO:
+* Add reference to theming and "Style Guide Layers"
+* Link to YouTube video
+
+*/
+/*
+---
+name: Font Sizes
+category: Typography
+---
+
+@if ($includeResets == true) {
+Font-size Reset on <h1>-<h6> are reset to to 1rem in `_02-generic_resets.scss`
+}
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+```
+*/
+@import url(06-trumps_widths.css);
+/*
+---
+name: Sass structure
+category: Base
+---
+
+All `~/global/*.scss` for core styles and base of components:
+
+* `00-settings.scss` -  Global variables, config switches
+* `01-tools.scss` - Default mixin and functions
+* `02-generic.scss` - Ground-zero styles (normalize, resets, box-sizing)
+* `03-elements.scss` - Unclassed HTML elements (Type selectors)
+* `04-objects.scss` - Cosmetic-free design patterns, primarily structual components
+* `04-trumps.scss` - Utility helper classes to extend and override styles of designed components
+
+
+Follows methodology of ITCSS and each "layer" consists of Sass partials. It is recommended to make partials as specific as possible to allow for more easy of control.
+
+*/
+/*
+---
+name: Methodologies
+category: Base
+---
+
+* [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
+* [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - 
+* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
+* [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
+
+*/
+/*
+---
+name: Style Guide Layers
+category: Base
+---
+
+TODO:
+* Add reference to theming and "Style Guide Layers"
+* Link to YouTube video
+
+*/
+/*
+---
+name: Font Sizes
+category: Typography
+---
+
+@if ($includeResets == true) {
+Font-size Reset on <h1>-<h6> are reset to to 1rem in `_02-generic_resets.scss`
+}
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+```
+*/
+/*
+---
+name: Sass structure
+category: Base
+---
+
+All `~/global/*.scss` for core styles and base of components:
+
+* `00-settings.scss` -  Global variables, config switches
+* `01-tools.scss` - Default mixin and functions
+* `02-generic.scss` - Ground-zero styles (normalize, resets, box-sizing)
+* `03-elements.scss` - Unclassed HTML elements (Type selectors)
+* `04-objects.scss` - Cosmetic-free design patterns, primarily structual components
+* `04-trumps.scss` - Utility helper classes to extend and override styles of designed components
+
+
+Follows methodology of ITCSS and each "layer" consists of Sass partials. It is recommended to make partials as specific as possible to allow for more easy of control.
+
+*/
+/*
+---
+name: Methodologies
+category: Base
+---
+
+* [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
+* [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - 
+* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
+* [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
+
+*/
+/*
+---
+name: Style Guide Layers
+category: Base
+---
+
+TODO:
+* Add reference to theming and "Style Guide Layers"
+* Link to YouTube video
+
+*/
+/*
+---
+name: Font Sizes
+category: Typography
+---
+
+@if ($includeResets == true) {
+Font-size Reset on <h1>-<h6> are reset to to 1rem in `_02-generic_resets.scss`
+}
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+```
+*/
 ::-moz-selection {
   background: rgba(157, 141, 116, 0.5); }
 
 ::selection {
   background: rgba(157, 141, 116, 0.5); }
 
-a, button, label, legend {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+:root {
+  font-size: 16px; }
 
-button, a {
-  -webkit-tap-highlight-color: transparent; }
+/*
+---
+name: Sass structure
+category: Base
+---
 
-main {
-  display: block; }
+All `~/global/*.scss` for core styles and base of components:
 
-img {
-  border: 0; }
+* `00-settings.scss` -  Global variables, config switches
+* `01-tools.scss` - Default mixin and functions
+* `02-generic.scss` - Ground-zero styles (normalize, resets, box-sizing)
+* `03-elements.scss` - Unclassed HTML elements (Type selectors)
+* `04-objects.scss` - Cosmetic-free design patterns, primarily structual components
+* `04-trumps.scss` - Utility helper classes to extend and override styles of designed components
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 1rem; }
 
-legend, fieldset {
-  display: block;
-  padding: 0;
-  border: 0; }
+Follows methodology of ITCSS and each "layer" consists of Sass partials. It is recommended to make partials as specific as possible to allow for more easy of control.
 
-fieldset {
-  margin: 0; }
+*/
+/*
+---
+name: Methodologies
+category: Base
+---
 
+* [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
+* [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - 
+* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
+* [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
+
+*/
+/*
+---
+name: Style Guide Layers
+category: Base
+---
+
+TODO:
+* Add reference to theming and "Style Guide Layers"
+* Link to YouTube video
+
+*/
+/*
+---
+name: Font Sizes
+category: Typography
+---
+
+@if ($includeResets == true) {
+Font-size Reset on <h1>-<h6> are reset to to 1rem in `_02-generic_resets.scss`
+}
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+```
+*/
+/*
+---
+name: Sass structure
+category: Base
+---
+
+All `~/global/*.scss` for core styles and base of components:
+
+* `00-settings.scss` -  Global variables, config switches
+* `01-tools.scss` - Default mixin and functions
+* `02-generic.scss` - Ground-zero styles (normalize, resets, box-sizing)
+* `03-elements.scss` - Unclassed HTML elements (Type selectors)
+* `04-objects.scss` - Cosmetic-free design patterns, primarily structual components
+* `04-trumps.scss` - Utility helper classes to extend and override styles of designed components
+
+
+Follows methodology of ITCSS and each "layer" consists of Sass partials. It is recommended to make partials as specific as possible to allow for more easy of control.
+
+*/
+/*
+---
+name: Methodologies
+category: Base
+---
+
+* [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
+* [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - 
+* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
+* [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
+
+*/
+/*
+---
+name: Style Guide Layers
+category: Base
+---
+
+TODO:
+* Add reference to theming and "Style Guide Layers"
+* Link to YouTube video
+
+*/
+/*
+---
+name: Font Sizes
+category: Typography
+---
+
+@if ($includeResets == true) {
+Font-size Reset on <h1>-<h6> are reset to to 1rem in `_02-generic_resets.scss`
+}
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+```
+*/
 body {
-  font-family: "din-2014", sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.375;
-  overflow-x: hidden;
-  margin: 0;
-  -webkit-overflow-scrolling: touch;
-  color: #010101; }
-
-a {
-  word-wrap: break-word; }
-
-h1, h2, h3, h4, h5, h6, p, ul, ol, .c-form-legend, .c-form-fieldset {
-  margin-top: 0;
-  margin-bottom: 0; }
-
-ul, ol, p {
-  line-height: 1.5; }
+  font-family: "Arial", sans-serif;
+  font-size: "Arial", sans-serif;
+  line-height: 1.375; }
 
 p + p {
   padding-top: 0.625rem; }
 
+/*
+---
+name: Sass structure
+category: Base
+---
+
+All `~/global/*.scss` for core styles and base of components:
+
+* `00-settings.scss` -  Global variables, config switches
+* `01-tools.scss` - Default mixin and functions
+* `02-generic.scss` - Ground-zero styles (normalize, resets, box-sizing)
+* `03-elements.scss` - Unclassed HTML elements (Type selectors)
+* `04-objects.scss` - Cosmetic-free design patterns, primarily structual components
+* `04-trumps.scss` - Utility helper classes to extend and override styles of designed components
+
+
+Follows methodology of ITCSS and each "layer" consists of Sass partials. It is recommended to make partials as specific as possible to allow for more easy of control.
+
+*/
+/*
+---
+name: Methodologies
+category: Base
+---
+
+* [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
+* [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - 
+* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
+* [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
+
+*/
+/*
+---
+name: Style Guide Layers
+category: Base
+---
+
+TODO:
+* Add reference to theming and "Style Guide Layers"
+* Link to YouTube video
+
+*/
+/*
+---
+name: Font Sizes
+category: Typography
+---
+
+@if ($includeResets == true) {
+Font-size Reset on <h1>-<h6> are reset to to 1rem in `_02-generic_resets.scss`
+}
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+```
+*/
+/*
+---
+name: Sass structure
+category: Base
+---
+
+All `~/global/*.scss` for core styles and base of components:
+
+* `00-settings.scss` -  Global variables, config switches
+* `01-tools.scss` - Default mixin and functions
+* `02-generic.scss` - Ground-zero styles (normalize, resets, box-sizing)
+* `03-elements.scss` - Unclassed HTML elements (Type selectors)
+* `04-objects.scss` - Cosmetic-free design patterns, primarily structual components
+* `04-trumps.scss` - Utility helper classes to extend and override styles of designed components
+
+
+Follows methodology of ITCSS and each "layer" consists of Sass partials. It is recommended to make partials as specific as possible to allow for more easy of control.
+
+*/
+/*
+---
+name: Methodologies
+category: Base
+---
+
+* [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
+* [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - 
+* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
+* [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
+
+*/
+/*
+---
+name: Style Guide Layers
+category: Base
+---
+
+TODO:
+* Add reference to theming and "Style Guide Layers"
+* Link to YouTube video
+
+*/
+/*
+---
+name: Font Sizes
+category: Typography
+---
+
+@if ($includeResets == true) {
+Font-size Reset on <h1>-<h6> are reset to to 1rem in `_02-generic_resets.scss`
+}
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+```
+*/
 .o-sections__section + .o-sections__section {
   margin-top: 0.625rem; }
 @media screen and (min-width: 47.5rem) {
   .o-sections\@large__section + .o-sections\@large__section {
-    margin-top: 0.625rem; } }
-@media screen and (min-width: 47.5rem) and (max-width: 87.5rem) {
-  .o-sections\@medium__section + .o-sections\@medium__section {
-    margin-top: 0.625rem; } }
-@media screen and (min-width: 47.5rem) {
-  .o-sections\@medium\+__section + .o-sections\@medium\+__section {
-    margin-top: 0.625rem; } }
-@media screen and (min-width: 87.5rem) {
-  .o-sections\@medium\+\+__section + .o-sections\@medium\+\+__section, .o-sections\@large\-medium__section + .o-sections\@medium\+\+__section, .o-sections\@medium\+\+__section + .o-sections\@large\-medium__section, .o-sections\@large\-medium__section + .o-sections\@large\-medium__section {
-    margin-top: 0.625rem; } }
-@media screen and (max-width: 87.5rem) and (min-width: 47.5rem) {
-  .o-sections\@medium\-large__section + .o-sections\@medium\-large__section {
-    margin-top: 0.625rem; } }
-@media screen and (max-width: 87.5rem) {
-  .o-sections\@medium\-__section + .o-sections\@medium\-__section {
-    margin-top: 0.625rem; } }
-@media screen and (max-width: 47.5rem) {
-  .o-sections\@medium\-\-__section + .o-sections\@medium\-\-__section, .o-sections\@small\-medium__section + .o-sections\@medium\-\-__section, .o-sections\@medium\-\-__section + .o-sections\@small\-medium__section, .o-sections\@small\-medium__section + .o-sections\@small\-medium__section {
-    margin-top: 0.625rem; } }
-@media screen and (min-width: 47.5rem) and (max-width: 47.5rem) {
-  .o-sections\@medium\-small__section + .o-sections\@medium\-small__section {
     margin-top: 0.625rem; } }
 @media screen and (max-width: 47.5rem) {
   .o-sections\@small__section + .o-sections\@small__section {
@@ -94,27 +550,6 @@ p + p {
   margin-top: 1.25rem; }
 @media screen and (min-width: 47.5rem) {
   .o-sections-lg\@large__section + .o-sections-lg\@large__section {
-    margin-top: 1.25rem; } }
-@media screen and (min-width: 47.5rem) and (max-width: 87.5rem) {
-  .o-sections-lg\@medium__section + .o-sections-lg\@medium__section {
-    margin-top: 1.25rem; } }
-@media screen and (min-width: 47.5rem) {
-  .o-sections-lg\@medium\+__section + .o-sections-lg\@medium\+__section {
-    margin-top: 1.25rem; } }
-@media screen and (min-width: 87.5rem) {
-  .o-sections-lg\@medium\+\+__section + .o-sections-lg\@medium\+\+__section, .o-sections-lg\@large\-medium__section + .o-sections-lg\@medium\+\+__section, .o-sections-lg\@medium\+\+__section + .o-sections-lg\@large\-medium__section, .o-sections-lg\@large\-medium__section + .o-sections-lg\@large\-medium__section {
-    margin-top: 1.25rem; } }
-@media screen and (max-width: 87.5rem) and (min-width: 47.5rem) {
-  .o-sections-lg\@medium\-large__section + .o-sections-lg\@medium\-large__section {
-    margin-top: 1.25rem; } }
-@media screen and (max-width: 87.5rem) {
-  .o-sections-lg\@medium\-__section + .o-sections-lg\@medium\-__section {
-    margin-top: 1.25rem; } }
-@media screen and (max-width: 47.5rem) {
-  .o-sections-lg\@medium\-\-__section + .o-sections-lg\@medium\-\-__section, .o-sections-lg\@small\-medium__section + .o-sections-lg\@medium\-\-__section, .o-sections-lg\@medium\-\-__section + .o-sections-lg\@small\-medium__section, .o-sections-lg\@small\-medium__section + .o-sections-lg\@small\-medium__section {
-    margin-top: 1.25rem; } }
-@media screen and (min-width: 47.5rem) and (max-width: 47.5rem) {
-  .o-sections-lg\@medium\-small__section + .o-sections-lg\@medium\-small__section {
     margin-top: 1.25rem; } }
 @media screen and (max-width: 47.5rem) {
   .o-sections-lg\@small__section + .o-sections-lg\@small__section {
@@ -193,111 +628,6 @@ p + p {
     margin-left: auto; } }
 @media screen and (min-width: 47.5rem) and (max-width: 92.5rem) {
   .o-container\@large__wrap {
-    margin-right: 1.25rem;
-    margin-left: 1.25rem; } }
-
-@media screen and (min-width: 47.5rem) and (max-width: 87.5rem) {
-  .o-container\@medium__wrap-full, .o-container\@medium__wrap {
-    max-width: 90rem; }
-  .o-container\@medium__wrap-full {
-    margin-right: auto;
-    margin-left: auto; } }
-@media screen and (min-width: 47.5rem) and (max-width: 87.5rem) and (min-width: 92.5rem) {
-  .o-container\@medium__wrap {
-    margin-right: auto;
-    margin-left: auto; } }
-@media screen and (min-width: 47.5rem) and (max-width: 87.5rem) and (max-width: 92.5rem) {
-  .o-container\@medium__wrap {
-    margin-right: 1.25rem;
-    margin-left: 1.25rem; } }
-
-@media screen and (min-width: 47.5rem) {
-  .o-container\@medium\+__wrap-full, .o-container\@medium\+__wrap {
-    max-width: 90rem; }
-  .o-container\@medium\+__wrap-full {
-    margin-right: auto;
-    margin-left: auto; } }
-@media screen and (min-width: 47.5rem) and (min-width: 92.5rem) {
-  .o-container\@medium\+__wrap {
-    margin-right: auto;
-    margin-left: auto; } }
-@media screen and (min-width: 47.5rem) and (max-width: 92.5rem) {
-  .o-container\@medium\+__wrap {
-    margin-right: 1.25rem;
-    margin-left: 1.25rem; } }
-
-@media screen and (min-width: 87.5rem) {
-  .o-container\@medium\+\+__wrap-full, .o-container\@medium\+\+__wrap, .o-container\@large\-medium__wrap-full, .o-container\@large\-medium__wrap {
-    max-width: 90rem; }
-  .o-container\@medium\+\+__wrap-full, .o-container\@large\-medium__wrap-full {
-    margin-right: auto;
-    margin-left: auto; } }
-@media screen and (min-width: 87.5rem) and (min-width: 92.5rem) {
-  .o-container\@medium\+\+__wrap, .o-container\@large\-medium__wrap {
-    margin-right: auto;
-    margin-left: auto; } }
-@media screen and (min-width: 87.5rem) and (max-width: 92.5rem) {
-  .o-container\@medium\+\+__wrap, .o-container\@large\-medium__wrap {
-    margin-right: 1.25rem;
-    margin-left: 1.25rem; } }
-
-@media screen and (max-width: 87.5rem) and (min-width: 47.5rem) {
-  .o-container\@medium\-large__wrap-full, .o-container\@medium\-large__wrap {
-    max-width: 90rem; }
-  .o-container\@medium\-large__wrap-full {
-    margin-right: auto;
-    margin-left: auto; } }
-@media screen and (max-width: 87.5rem) and (min-width: 47.5rem) and (min-width: 92.5rem) {
-  .o-container\@medium\-large__wrap {
-    margin-right: auto;
-    margin-left: auto; } }
-@media screen and (max-width: 87.5rem) and (min-width: 47.5rem) and (max-width: 92.5rem) {
-  .o-container\@medium\-large__wrap {
-    margin-right: 1.25rem;
-    margin-left: 1.25rem; } }
-
-@media screen and (max-width: 87.5rem) {
-  .o-container\@medium\-__wrap-full, .o-container\@medium\-__wrap {
-    max-width: 90rem; }
-  .o-container\@medium\-__wrap-full {
-    margin-right: auto;
-    margin-left: auto; } }
-@media screen and (max-width: 87.5rem) and (min-width: 92.5rem) {
-  .o-container\@medium\-__wrap {
-    margin-right: auto;
-    margin-left: auto; } }
-@media screen and (max-width: 87.5rem) and (max-width: 92.5rem) {
-  .o-container\@medium\-__wrap {
-    margin-right: 1.25rem;
-    margin-left: 1.25rem; } }
-
-@media screen and (max-width: 47.5rem) {
-  .o-container\@medium\-\-__wrap-full, .o-container\@medium\-\-__wrap, .o-container\@small\-medium__wrap-full, .o-container\@small\-medium__wrap {
-    max-width: 90rem; }
-  .o-container\@medium\-\-__wrap-full, .o-container\@small\-medium__wrap-full {
-    margin-right: auto;
-    margin-left: auto; } }
-@media screen and (max-width: 47.5rem) and (min-width: 92.5rem) {
-  .o-container\@medium\-\-__wrap, .o-container\@small\-medium__wrap {
-    margin-right: auto;
-    margin-left: auto; } }
-@media screen and (max-width: 47.5rem) and (max-width: 92.5rem) {
-  .o-container\@medium\-\-__wrap, .o-container\@small\-medium__wrap {
-    margin-right: 1.25rem;
-    margin-left: 1.25rem; } }
-
-@media screen and (min-width: 47.5rem) and (max-width: 47.5rem) {
-  .o-container\@medium\-small__wrap-full, .o-container\@medium\-small__wrap {
-    max-width: 90rem; }
-  .o-container\@medium\-small__wrap-full {
-    margin-right: auto;
-    margin-left: auto; } }
-@media screen and (min-width: 47.5rem) and (max-width: 47.5rem) and (min-width: 92.5rem) {
-  .o-container\@medium\-small__wrap {
-    margin-right: auto;
-    margin-left: auto; } }
-@media screen and (min-width: 47.5rem) and (max-width: 47.5rem) and (max-width: 92.5rem) {
-  .o-container\@medium\-small__wrap {
     margin-right: 1.25rem;
     margin-left: 1.25rem; } }
 
@@ -5061,111 +5391,6 @@ p + p {
         width: 100%; }
       .o-tabular\@large--fixed {
         table-layout: fixed; } }
-  @media screen and (min-width: 47.5rem) and (max-width: 87.5rem) {
-    .o-tabular\@medium {
-      display: table; }
-      .o-tabular\@medium__header {
-        display: table-header-group; }
-      .o-tabular\@medium__footer {
-        display: table-footer-group; }
-      .o-tabular\@medium__row {
-        display: table-row; }
-      .o-tabular\@medium__cell {
-        display: table-cell; }
-      .o-tabular\@medium--full {
-        width: 100%; }
-      .o-tabular\@medium--fixed {
-        table-layout: fixed; } }
-  @media screen and (min-width: 47.5rem) {
-    .o-tabular\@medium\+ {
-      display: table; }
-      .o-tabular\@medium\+__header {
-        display: table-header-group; }
-      .o-tabular\@medium\+__footer {
-        display: table-footer-group; }
-      .o-tabular\@medium\+__row {
-        display: table-row; }
-      .o-tabular\@medium\+__cell {
-        display: table-cell; }
-      .o-tabular\@medium\+--full {
-        width: 100%; }
-      .o-tabular\@medium\+--fixed {
-        table-layout: fixed; } }
-  @media screen and (min-width: 87.5rem) {
-    .o-tabular\@medium\+\+, .o-tabular\@large\-medium {
-      display: table; }
-      .o-tabular\@medium\+\+__header, .o-tabular\@large\-medium__header {
-        display: table-header-group; }
-      .o-tabular\@medium\+\+__footer, .o-tabular\@large\-medium__footer {
-        display: table-footer-group; }
-      .o-tabular\@medium\+\+__row, .o-tabular\@large\-medium__row {
-        display: table-row; }
-      .o-tabular\@medium\+\+__cell, .o-tabular\@large\-medium__cell {
-        display: table-cell; }
-      .o-tabular\@medium\+\+--full, .o-tabular\@large\-medium--full {
-        width: 100%; }
-      .o-tabular\@medium\+\+--fixed, .o-tabular\@large\-medium--fixed {
-        table-layout: fixed; } }
-  @media screen and (max-width: 87.5rem) and (min-width: 47.5rem) {
-    .o-tabular\@medium\-large {
-      display: table; }
-      .o-tabular\@medium\-large__header {
-        display: table-header-group; }
-      .o-tabular\@medium\-large__footer {
-        display: table-footer-group; }
-      .o-tabular\@medium\-large__row {
-        display: table-row; }
-      .o-tabular\@medium\-large__cell {
-        display: table-cell; }
-      .o-tabular\@medium\-large--full {
-        width: 100%; }
-      .o-tabular\@medium\-large--fixed {
-        table-layout: fixed; } }
-  @media screen and (max-width: 87.5rem) {
-    .o-tabular\@medium\- {
-      display: table; }
-      .o-tabular\@medium\-__header {
-        display: table-header-group; }
-      .o-tabular\@medium\-__footer {
-        display: table-footer-group; }
-      .o-tabular\@medium\-__row {
-        display: table-row; }
-      .o-tabular\@medium\-__cell {
-        display: table-cell; }
-      .o-tabular\@medium\---full {
-        width: 100%; }
-      .o-tabular\@medium\---fixed {
-        table-layout: fixed; } }
-  @media screen and (max-width: 47.5rem) {
-    .o-tabular\@medium\-\-, .o-tabular\@small\-medium {
-      display: table; }
-      .o-tabular\@medium\-\-__header, .o-tabular\@small\-medium__header {
-        display: table-header-group; }
-      .o-tabular\@medium\-\-__footer, .o-tabular\@small\-medium__footer {
-        display: table-footer-group; }
-      .o-tabular\@medium\-\-__row, .o-tabular\@small\-medium__row {
-        display: table-row; }
-      .o-tabular\@medium\-\-__cell, .o-tabular\@small\-medium__cell {
-        display: table-cell; }
-      .o-tabular\@medium\-\---full, .o-tabular\@small\-medium--full {
-        width: 100%; }
-      .o-tabular\@medium\-\---fixed, .o-tabular\@small\-medium--fixed {
-        table-layout: fixed; } }
-  @media screen and (min-width: 47.5rem) and (max-width: 47.5rem) {
-    .o-tabular\@medium\-small {
-      display: table; }
-      .o-tabular\@medium\-small__header {
-        display: table-header-group; }
-      .o-tabular\@medium\-small__footer {
-        display: table-footer-group; }
-      .o-tabular\@medium\-small__row {
-        display: table-row; }
-      .o-tabular\@medium\-small__cell {
-        display: table-cell; }
-      .o-tabular\@medium\-small--full {
-        width: 100%; }
-      .o-tabular\@medium\-small--fixed {
-        table-layout: fixed; } }
   @media screen and (max-width: 47.5rem) {
     .o-tabular\@small {
       display: table; }
@@ -5189,39 +5414,141 @@ p + p {
     .c-content-column-s p\@large, .c-content-column-2\@large {
       -webkit-column-count: 2;
               column-count: 2; } }
-  @media screen and (min-width: 47.5rem) and (max-width: 87.5rem) {
-    .c-content-column-s p\@medium, .c-content-column-2\@medium {
-      -webkit-column-count: 2;
-              column-count: 2; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-content-column-s p\@medium\+, .c-content-column-2\@medium\+ {
-      -webkit-column-count: 2;
-              column-count: 2; } }
-  @media screen and (min-width: 87.5rem) {
-    .c-content-column-s p\@medium\+\+, .c-content-column-2\@medium\+\+, .c-content-column-s p\@large\-medium, .c-content-column-2\@large\-medium {
-      -webkit-column-count: 2;
-              column-count: 2; } }
-  @media screen and (max-width: 87.5rem) and (min-width: 47.5rem) {
-    .c-content-column-s p\@medium\-large, .c-content-column-2\@medium\-large {
-      -webkit-column-count: 2;
-              column-count: 2; } }
-  @media screen and (max-width: 87.5rem) {
-    .c-content-column-s p\@medium\-, .c-content-column-2\@medium\- {
-      -webkit-column-count: 2;
-              column-count: 2; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-content-column-s p\@medium\-\-, .c-content-column-2\@medium\-\-, .c-content-column-s p\@small\-medium, .c-content-column-2\@small\-medium {
-      -webkit-column-count: 2;
-              column-count: 2; } }
-  @media screen and (min-width: 47.5rem) and (max-width: 47.5rem) {
-    .c-content-column-s p\@medium\-small, .c-content-column-2\@medium\-small {
-      -webkit-column-count: 2;
-              column-count: 2; } }
   @media screen and (max-width: 47.5rem) {
     .c-content-column-s p\@small, .c-content-column-2\@small {
       -webkit-column-count: 2;
               column-count: 2; } }
 
+/*
+---
+name: Sass structure
+category: Base
+---
+
+All `~/global/*.scss` for core styles and base of components:
+
+* `00-settings.scss` -  Global variables, config switches
+* `01-tools.scss` - Default mixin and functions
+* `02-generic.scss` - Ground-zero styles (normalize, resets, box-sizing)
+* `03-elements.scss` - Unclassed HTML elements (Type selectors)
+* `04-objects.scss` - Cosmetic-free design patterns, primarily structual components
+* `04-trumps.scss` - Utility helper classes to extend and override styles of designed components
+
+
+Follows methodology of ITCSS and each "layer" consists of Sass partials. It is recommended to make partials as specific as possible to allow for more easy of control.
+
+*/
+/*
+---
+name: Methodologies
+category: Base
+---
+
+* [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
+* [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - 
+* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
+* [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
+
+*/
+/*
+---
+name: Style Guide Layers
+category: Base
+---
+
+TODO:
+* Add reference to theming and "Style Guide Layers"
+* Link to YouTube video
+
+*/
+/*
+---
+name: Font Sizes
+category: Typography
+---
+
+@if ($includeResets == true) {
+Font-size Reset on <h1>-<h6> are reset to to 1rem in `_02-generic_resets.scss`
+}
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+```
+*/
+/*
+---
+name: Sass structure
+category: Base
+---
+
+All `~/global/*.scss` for core styles and base of components:
+
+* `00-settings.scss` -  Global variables, config switches
+* `01-tools.scss` - Default mixin and functions
+* `02-generic.scss` - Ground-zero styles (normalize, resets, box-sizing)
+* `03-elements.scss` - Unclassed HTML elements (Type selectors)
+* `04-objects.scss` - Cosmetic-free design patterns, primarily structual components
+* `04-trumps.scss` - Utility helper classes to extend and override styles of designed components
+
+
+Follows methodology of ITCSS and each "layer" consists of Sass partials. It is recommended to make partials as specific as possible to allow for more easy of control.
+
+*/
+/*
+---
+name: Methodologies
+category: Base
+---
+
+* [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
+* [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - 
+* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
+* [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
+
+*/
+/*
+---
+name: Style Guide Layers
+category: Base
+---
+
+TODO:
+* Add reference to theming and "Style Guide Layers"
+* Link to YouTube video
+
+*/
+/*
+---
+name: Font Sizes
+category: Typography
+---
+
+@if ($includeResets == true) {
+Font-size Reset on <h1>-<h6> are reset to to 1rem in `_02-generic_resets.scss`
+}
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+```
+*/
 .c-content-block__header + .c-content-block__main, .c-content-block__main + .c-content-block__main {
   padding-top: 1.25rem; }
 
@@ -5687,11 +6014,26 @@ span.c-intrinsic, span.c-intrinsic__element, a.c-intrinsic, a.c-intrinsic__eleme
   cursor: default; }
 
 .c-button {
-  font-family: "ltc-bodoni-175", serif;
+  font-family: "Arial", sans-serif;
   cursor: pointer;
   outline: none;
   text-decoration: none; }
 
+/*
+---
+name: Button2
+category: Components
+---
+
+Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
+
+Types of buttons:
+- Default: Standard button
+
+```types.html
+<button class="c-button c-button--default c-button--base c-button--primary">Primary</button>
+```
+*/
 .c-button {
   border-radius: 0; }
   .c-button--base {
@@ -5710,7 +6052,6 @@ span.c-intrinsic, span.c-intrinsic__element, a.c-intrinsic, a.c-intrinsic__eleme
     text-align: center;
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
-    font-weight: 300;
     display: inline-block; }
     @media screen and (min-width: 25.556rem) {
       .c-button--default {
@@ -5727,7 +6068,7 @@ span.c-intrinsic, span.c-intrinsic__element, a.c-intrinsic, a.c-intrinsic__eleme
     .c-button--default > span {
       display: block;
       line-height: 1.3;
-      font-family: "din-2014", sans-serif;
+      font-family: "Arial", sans-serif;
       font-weight: bold; }
   .c-button--raised {
     -webkit-box-shadow: 0 0.063rem 0.125rem rgba(0, 0, 0, 0.2);
@@ -5800,21 +6141,6 @@ a.c-button--inherit-reverse {
 
 a.c-button {
   text-decoration: none; }
-
-.u-anchor-animate, .c-anchor {
-  -webkit-transition-duration: 150ms;
-       -o-transition-duration: 150ms;
-          transition-duration: 150ms;
-  -webkit-transition-timing-function: ease-in-out;
-       -o-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0;
-       -o-transition-delay: 0;
-          transition-delay: 0;
-  -webkit-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
-  will-change: color; }
 
 .c-anchor--dark:focus, .c-anchor--dark:hover {
   color: #FFF; }
@@ -6019,17 +6345,13 @@ a.c-button {
     @media screen and (min-width: 47.5rem) {
       .c-icon-btn--size-2 {
         height: 3.125rem; } }
-    @media screen and (max-width: 47.5rem) {
-      .c-icon-btn--size-2 {
-        height: 3.75rem; } }
   .c-icon-btn--clear {
     background-color: transparent; }
 
 .c-input, .c-textarea, .c-select, .c-datepicker-wrapper, .c-select__input, .c-radio__input, .c-checkbox__input {
   outline: none;
   font-size: 1em;
-  font-family: "din-2014", sans-serif;
-  font-weight: 300;
+  font-family: "Arial", sans-serif;
   font-kerning: normal;
   -webkit-font-kerning: normal;
   text-rendering: optimizeLegibility;
@@ -6059,8 +6381,7 @@ Types of Loaders:
 
 .c-input, .c-textarea, .c-select {
   font-size: 1em;
-  font-family: "din-2014", sans-serif;
-  font-weight: 300;
+  font-family: "Arial", sans-serif;
   line-height: 1;
   border-top: none;
   border-right: none;
@@ -6326,23 +6647,19 @@ Types of Loaders:
               transform: translate(-50%, -50%); }
   .c-input-search--large::-webkit-input-placeholder {
     font-size: 1.125rem;
-    font-family: "ltc-bodoni-175", serif;
-    font-weight: 300;
+    font-family: "Arial", sans-serif;
     line-height: 1; }
   .c-input-search--large:-moz-placeholder {
     font-size: 1.125rem;
-    font-family: "ltc-bodoni-175", serif;
-    font-weight: 300;
+    font-family: "Arial", sans-serif;
     line-height: 1; }
   .c-input-search--large::-moz-placeholder {
     font-size: 1.125rem;
-    font-family: "ltc-bodoni-175", serif;
-    font-weight: 300;
+    font-family: "Arial", sans-serif;
     line-height: 1; }
   .c-input-search--large:-ms-input-placeholder {
     font-size: 1.125rem;
-    font-family: "ltc-bodoni-175", serif;
-    font-weight: 300;
+    font-family: "Arial", sans-serif;
     line-height: 1; }
   .c-input-search--large .c-input {
     padding-top: 1.25rem;
@@ -6377,17 +6694,17 @@ Types of Loaders:
       opacity: .3; }
 
 .c-page-header {
-  font-family: "ltc-bodoni-175", serif;
+  font-family: "Georgia", serif;
   font-size: 1.875rem;
   line-height: 1;
   font-style: italic;
   font-weight: normal; }
   @media screen and (min-width: 47.5rem) {
     .c-page-header\@large {
-      font-family: "ltc-bodoni-175", serif; } }
+      font-family: "Georgia", serif; } }
   @media screen and (max-width: 47.5rem) {
     .c-page-header\@small {
-      font-family: "ltc-bodoni-175", serif; } }
+      font-family: "Georgia", serif; } }
   @media screen and (min-width: 47.5rem) {
     .c-page-header\@large {
       font-size: 1.875rem;
@@ -6410,15 +6727,15 @@ Types of Loaders:
       font-weight: normal; } }
 
 .c-page-subheader {
-  font-family: "din-2014", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 1.5rem;
   font-weight: 300; }
   @media screen and (min-width: 47.5rem) {
     .c-page-subheader\@large {
-      font-family: "din-2014", sans-serif; } }
+      font-family: "Arial", sans-serif; } }
   @media screen and (max-width: 47.5rem) {
     .c-page-subheader\@small {
-      font-family: "din-2014", sans-serif; } }
+      font-family: "Arial", sans-serif; } }
   @media screen and (min-width: 47.5rem) {
     .c-page-subheader\@large {
       font-size: 1.5rem; } }
@@ -6433,17 +6750,17 @@ Types of Loaders:
       font-weight: 300; } }
 
 .c-section-header {
-  font-family: "ltc-bodoni-175", serif;
+  font-family: "Georgia", serif;
   font-size: 1.125rem;
   font-style: italic;
   font-weight: normal;
   text-transform: uppercase; }
   @media screen and (min-width: 47.5rem) {
     .c-section-header\@large {
-      font-family: "ltc-bodoni-175", serif; } }
+      font-family: "Georgia", serif; } }
   @media screen and (max-width: 47.5rem) {
     .c-section-header\@small {
-      font-family: "ltc-bodoni-175", serif; } }
+      font-family: "Georgia", serif; } }
   @media screen and (min-width: 47.5rem) {
     .c-section-header\@large {
       font-size: 1.125rem; } }
@@ -6470,16 +6787,16 @@ Types of Loaders:
       text-transform: uppercase; } }
 
 .c-section-subheader {
-  font-family: "din-2014", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 1rem;
   font-weight: normal;
   text-transform: uppercase; }
   @media screen and (min-width: 47.5rem) {
     .c-section-subheader\@large {
-      font-family: "din-2014", sans-serif; } }
+      font-family: "Arial", sans-serif; } }
   @media screen and (max-width: 47.5rem) {
     .c-section-subheader\@small {
-      font-family: "din-2014", sans-serif; } }
+      font-family: "Arial", sans-serif; } }
   @media screen and (min-width: 47.5rem) {
     .c-section-subheader\@large {
       font-size: 1rem; } }
@@ -6500,15 +6817,15 @@ Types of Loaders:
       text-transform: uppercase; } }
 
 .c-article-header {
-  font-family: "din-2014", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 1rem;
   font-weight: normal; }
   @media screen and (min-width: 47.5rem) {
     .c-article-header\@large {
-      font-family: "din-2014", sans-serif; } }
+      font-family: "Arial", sans-serif; } }
   @media screen and (max-width: 47.5rem) {
     .c-article-header\@small {
-      font-family: "din-2014", sans-serif; } }
+      font-family: "Arial", sans-serif; } }
   @media screen and (min-width: 47.5rem) {
     .c-article-header\@large {
       font-size: 1rem; } }
@@ -6523,15 +6840,15 @@ Types of Loaders:
       font-weight: normal; } }
 
 .c-article-subheader {
-  font-family: "din-2014", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 0.875rem;
   font-weight: normal; }
   @media screen and (min-width: 47.5rem) {
     .c-article-subheader\@large {
-      font-family: "din-2014", sans-serif; } }
+      font-family: "Arial", sans-serif; } }
   @media screen and (max-width: 47.5rem) {
     .c-article-subheader\@small {
-      font-family: "din-2014", sans-serif; } }
+      font-family: "Arial", sans-serif; } }
   @media screen and (min-width: 47.5rem) {
     .c-article-subheader\@large {
       font-size: 0.875rem; } }
@@ -6546,15 +6863,15 @@ Types of Loaders:
       font-weight: normal; } }
 
 .c-paragraph-header {
-  font-family: "din-2014", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 1rem;
   font-weight: 300; }
   @media screen and (min-width: 47.5rem) {
     .c-paragraph-header\@large {
-      font-family: "din-2014", sans-serif; } }
+      font-family: "Arial", sans-serif; } }
   @media screen and (max-width: 47.5rem) {
     .c-paragraph-header\@small {
-      font-family: "din-2014", sans-serif; } }
+      font-family: "Arial", sans-serif; } }
   @media screen and (min-width: 47.5rem) {
     .c-paragraph-header\@large {
       font-size: 1rem; } }
@@ -6674,8 +6991,7 @@ Types of Loaders:
         content: "-"; } }
 
 .c-accordion__title {
-  position: relative;
-  font-weight: 600; }
+  position: relative; }
   .c-accordion__title:after {
     content: ",";
     display: inline-block;
@@ -6748,6 +7064,136 @@ Types of Loaders:
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0); }
 
+/*
+---
+name: Sass structure
+category: Base
+---
+
+All `~/global/*.scss` for core styles and base of components:
+
+* `00-settings.scss` -  Global variables, config switches
+* `01-tools.scss` - Default mixin and functions
+* `02-generic.scss` - Ground-zero styles (normalize, resets, box-sizing)
+* `03-elements.scss` - Unclassed HTML elements (Type selectors)
+* `04-objects.scss` - Cosmetic-free design patterns, primarily structual components
+* `04-trumps.scss` - Utility helper classes to extend and override styles of designed components
+
+
+Follows methodology of ITCSS and each "layer" consists of Sass partials. It is recommended to make partials as specific as possible to allow for more easy of control.
+
+*/
+/*
+---
+name: Methodologies
+category: Base
+---
+
+* [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
+* [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - 
+* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
+* [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
+
+*/
+/*
+---
+name: Style Guide Layers
+category: Base
+---
+
+TODO:
+* Add reference to theming and "Style Guide Layers"
+* Link to YouTube video
+
+*/
+/*
+---
+name: Font Sizes
+category: Typography
+---
+
+@if ($includeResets == true) {
+Font-size Reset on <h1>-<h6> are reset to to 1rem in `_02-generic_resets.scss`
+}
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+```
+*/
+/*
+---
+name: Sass structure
+category: Base
+---
+
+All `~/global/*.scss` for core styles and base of components:
+
+* `00-settings.scss` -  Global variables, config switches
+* `01-tools.scss` - Default mixin and functions
+* `02-generic.scss` - Ground-zero styles (normalize, resets, box-sizing)
+* `03-elements.scss` - Unclassed HTML elements (Type selectors)
+* `04-objects.scss` - Cosmetic-free design patterns, primarily structual components
+* `04-trumps.scss` - Utility helper classes to extend and override styles of designed components
+
+
+Follows methodology of ITCSS and each "layer" consists of Sass partials. It is recommended to make partials as specific as possible to allow for more easy of control.
+
+*/
+/*
+---
+name: Methodologies
+category: Base
+---
+
+* [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
+* [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - 
+* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
+* [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
+
+*/
+/*
+---
+name: Style Guide Layers
+category: Base
+---
+
+TODO:
+* Add reference to theming and "Style Guide Layers"
+* Link to YouTube video
+
+*/
+/*
+---
+name: Font Sizes
+category: Typography
+---
+
+@if ($includeResets == true) {
+Font-size Reset on <h1>-<h6> are reset to to 1rem in `_02-generic_resets.scss`
+}
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+```
+*/
 @media screen and (min-width: 25.556rem) {
   .u-space-sections > * + * {
     margin-top: 1.25rem; } }
@@ -7888,34 +8334,6 @@ Types of buttons:
   .u-glyph-before--circled:hover:active:before, .u-glyph-after--circled:hover:active:after {
     background-color: #D9AE11; }
 
-.u-glyph--animate-before:before, .u-glyph--animate-after:after {
-  -webkit-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
-  will-change: color;
-  -webkit-transition-duration: 500ms;
-       -o-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-timing-function: ease-out;
-       -o-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-delay: 0;
-       -o-transition-delay: 0;
-          transition-delay: 0; }
-  .u-glyph--animate-before:before:hover, .u-glyph--animate-before:before:focus, .u-glyph--animate-after:after:hover, .u-glyph--animate-after:after:focus {
-    -webkit-transition-timing-function: ease-in;
-         -o-transition-timing-function: ease-in;
-            transition-timing-function: ease-in;
-    -webkit-transition-duration: 150ms;
-         -o-transition-duration: 150ms;
-            transition-duration: 150ms; }
-  .u-glyph--animate-before:before:active, .u-glyph--animate-before:before:active:hover, .u-glyph--animate-before:before:active:focus, .u-glyph--animate-after:after:active, .u-glyph--animate-after:after:active:hover, .u-glyph--animate-after:after:active:focus {
-    -webkit-transition-timing-function: ease-in-out;
-         -o-transition-timing-function: ease-in-out;
-            transition-timing-function: ease-in-out;
-    -webkit-transition-duration: 10ms;
-         -o-transition-duration: 10ms;
-            transition-duration: 10ms; }
 .u-glyph-before--circled, .u-glyph-after--circled {
   vertical-align: middle; }
 
@@ -9246,39 +9664,6 @@ Types of buttons:
 .u-bg--center {
   background-position: center center; }
 
-.u-b-light {
-  font-weight: 300; }
-  @media screen and (min-width: 47.5rem) {
-    .u-b-light\@large {
-      font-weight: 300; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-b-light\@small {
-      font-weight: 300; } }
-.u-b-normal {
-  font-weight: 300; }
-  @media screen and (min-width: 47.5rem) {
-    .u-b-normal\@large {
-      font-weight: 300; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-b-normal\@small {
-      font-weight: 300; } }
-.u-b-bold {
-  font-weight: 600; }
-  @media screen and (min-width: 47.5rem) {
-    .u-b-bold\@large {
-      font-weight: 600; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-b-bold\@small {
-      font-weight: 600; } }
-.u-b-ultra {
-  font-weight: 700; }
-  @media screen and (min-width: 47.5rem) {
-    .u-b-ultra\@large {
-      font-weight: 700; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-b-ultra\@small {
-      font-weight: 700; } }
-
 .u-lh-0 {
   line-height: 2em; }
   @media screen and (min-width: 47.5rem) {
@@ -9937,25 +10322,6 @@ Types of buttons:
     .u-a-j\@small {
       text-align: justify; } }
 
-.u-obj-fix {
-  display: block;
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%; }
-
-.u-a-vh-before, .u-a-vh-after {
-  position: relative; }
-
-.u-a-vh, .u-a-vh-before:before, .u-a-vh-after:after {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-
-.u-a-vh-before:before, .u-a-vh-after:after {
-  position: absolute; }
-
 .u-emphasize {
   text-transform: uppercase; }
   @media screen and (min-width: 47.5rem) {
@@ -9964,9 +10330,6 @@ Types of buttons:
   @media screen and (max-width: 47.5rem) {
     .u-emphasize\@small {
       text-transform: uppercase; } }
-
-.u-strong, strong, b {
-  font-weight: 600; }
 
 .u-italic {
   font-style: italic; }
@@ -10028,10 +10391,10 @@ img.u-full, textarea.u-full, span.u-full, label.u-full, aside.u-full, main.u-ful
       display: block; } }
 
 .u-font-primary {
-  font-family: "din-2014", sans-serif; }
+  font-family: "Arial", sans-serif; }
 
-.u-font-secondary {
-  font-family: "ltc-bodoni-175", serif; }
+.u-seconary-font {
+  font-family: "Georgia", serif; }
 
 .u-round {
   border-radius: 50%;

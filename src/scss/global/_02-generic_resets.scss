@@ -1,0 +1,64 @@
+@if ($rootFontSize != "16px") {
+	:root {
+		font-size: $rootFontSize;
+	}
+}
+
+@if ($includeResets == true) {
+	*, *:before, *:after {
+		box-sizing: border-box;
+	}
+	
+
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 1rem;
+	}
+
+	body, h1, h2, h3, h4, h5, h6, ol, ul, dl, p {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	body {
+		line-height: (22/16);
+		overflow-x: hidden;
+		margin-right: 0;
+		margin-left: 0;
+		-webkit-overflow-scrolling: touch;
+
+		@if ($color-base != #000) {
+			color: $color-base;
+		}
+	}
+
+	a {
+		word-wrap: break-word;
+	}
+
+
+	a, button, label, legend {
+		@include disable-select;
+	}
+
+	button, a {
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	main {
+		display: block;
+	}
+
+	img {
+		border: 0;
+	}
+
+	legend, fieldset {
+		display: block;
+	    padding: 0;
+	    border: 0;
+	}
+
+	fieldset {
+		margin: 0;
+	}
+}

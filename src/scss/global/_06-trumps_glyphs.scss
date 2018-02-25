@@ -55,12 +55,6 @@
 .u-glyph {
 	@include suffixcateExtend(('%glyph-shared'));
 
-	&--animate {
-		&-before:before, &-after:after {
-			@include anchor-animate;
-		}
-	}
-
 	&--no-speak {
 		@extend %glyph-pseudo-no-speak;
 	}

@@ -23,7 +23,7 @@
 	}
 
 	&__main {
-		// font-family: $font-secondary;
+		// font-family: $seconary-font;
 
 		p:not([class*="reset"]) {
 			@include title-setup;
@@ -141,7 +141,7 @@ a, span {
 }
 
 
-@media screen and (max-width: $bp-header) {
+@media screen and (max-width: $bp-large) {
 	[data-title] {
 		&:before {
 			@include title-setup;
@@ -161,7 +161,7 @@ a, span {
 
 
 .c-side-nav {
-	@media screen and (min-width: $bp-grid) {
+	@media screen and (min-width: $bp-large) {
 		width: rem(240);
 	}
 }

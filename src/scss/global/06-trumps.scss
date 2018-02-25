@@ -26,13 +26,13 @@
 		will-change: transform;
 	}
 
-	@media screen and (min-width: $bp-header) {
+	@media screen and (min-width: $bp-large) {
 		&:before {
 			position: fixed;
 		}
 	}
 
-	@media screen and (max-width: $bp-header) {
+	@media screen and (max-width: $bp-large) {
 		&:before {
 			position: absolute;
 		}
@@ -63,29 +63,29 @@
 }
 
 .u-b {
-	&-light {
-		@include suffixcate {
-			font-weight: $weight-light;
-		}
-	}
+	// &-light {
+	// 	@include suffixcate {
+	// 		
+	// 	}
+	// }
 
-	&-normal {
-		@include suffixcate {
-			font-weight: $weight-normal;
-		}
-	}
+	// &-normal {
+	// 	@include suffixcate {
+	// 		
+	// 	}
+	// }
 
-	&-bold {
-		@include suffixcate {
-			font-weight: $weight-bold;
-		}
-	}
+	// &-bold {
+	// 	@include suffixcate {
+	// 		
+	// 	}
+	// }
 
-	&-ultra {
-		@include suffixcate {
-			font-weight: $weight-ultra;
-		}
-	}
+	// &-ultra {
+	// 	@include suffixcate {
+	// 		font-weight: $weight-ultra;
+	// 	}
+	// }
 }
 
 .u-lh {
@@ -607,29 +607,6 @@
 	}
 }
 
-
-.u-obj-fix {
-	display: block;
-	position: absolute;
-	min-width: 100%;
-	min-height: 100%;
-}
-
-.u-a-vh-before, .u-a-vh-after {
-	position: relative;
-}
-
-.u-a-vh, .u-a-vh-before:before, .u-a-vh-after:after {
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.u-a-vh-before:before, .u-a-vh-after:after {
-	position: absolute;
-}
-
-
 .u-emphasize {
 	@include suffixcate {
 		text-transform: uppercase;
@@ -637,7 +614,7 @@
 }
 
 .u-strong, strong, b {
-	font-weight: $weight-bold;
+	
 }
 
 .u-italic {
@@ -725,13 +702,13 @@ img, textarea, span, label, aside, main {
 		display: block;
 
 		&\@large {
-			@media screen and (min-width: $bp-grid) {
+			@media screen and (min-width: $bp-large) {
 				display: block;
 			}
 		}
 
 		&\@small {
-			@media screen and (max-width: $bp-grid) {
+			@media screen and (max-width: $bp-large) {
 				display: block;
 			}
 		}
@@ -739,14 +716,14 @@ img, textarea, span, label, aside, main {
 }
 
 .u-font-primary {
-	font-family: $font-primary;
+	font-family: $primary-font;
 }
 
-.u-font-secondary {
-	font-family: $font-secondary;
+.u-seconary-font {
+	font-family: $seconary-font;
 }
 
-@mixin width-size-generator($value: 1, $bp: $bp-grid, $type: percent, $width: false) {
+@mixin width-size-generator($value: 1, $bp: $bp-large, $type: percent, $width: false) {
 	&-#{$value} {
 		@if ($type==fixed) {
 			@include suffixcate($bp: $suffixcate_bp-all) {
@@ -799,7 +776,7 @@ img, textarea, span, label, aside, main {
 		}
 
 		&-fixed-sm {
-			@include width-size-generator($i, $type: fixed, $width: $bp-grid);
+			@include width-size-generator($i, $type: fixed, $width: $bp-large);
 		}
 	}
 
@@ -1075,7 +1052,7 @@ img, textarea, span, label, aside, main {
 
 .u-divider\@large {
 	&__child ~ .u-divider\@large__child {
-		@media screen and (min-width: $bp-header) {
+		@media screen and (min-width: $bp-large) {
 			@include bracket-styles
 		}
 	}
@@ -1083,7 +1060,7 @@ img, textarea, span, label, aside, main {
 
 .u-divider\@small {
 	&__child ~ .u-divider\@small__child {
-		@media screen and (max-width: $bp-header) {
+		@media screen and (max-width: $bp-large) {
 			@include bracket-styles
 		}
 	}

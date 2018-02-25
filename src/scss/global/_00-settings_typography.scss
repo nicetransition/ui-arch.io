@@ -1,14 +1,38 @@
-// <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600,700|Roboto+Condensed:700" rel="stylesheet" />
+$rootFontSize: 16px;
 
-$font-family: 'ltc-bodoni-175', serif;
-$font-family-body: 'din-2014', sans-serif;
-$font-family-button: $font-family;
-$base-font-size: 1rem;
-$weight-light: 300;
-$weight-normal: $weight-light;
-$weight-bold: 600;
-$weight-ultra: 700;
+$primary-font: 'Arial', sans-serif;
+$primary-bold: bold;
+$primary-normal: bold;
+$primary-light: bold;
 
+$seconary-font: 'Georgia', serif;
+$seconary-bold: bold;
+$seconary-normal: bold;
+$seconary-light: bold;
+
+/*
+---
+name: Font Sizes
+category: Typography
+---
+
+@if ($includeResets == true) {
+Font-size Reset on <h1>-<h6> are reset to to 1rem in `_02-generic_resets.scss`
+}
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+- Success: Indicates a successful or positive action
+
+```types.html
+<button class="btn btn-default">Default</button>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+```
+*/
 
 $h0: 3rem; // 42
 $em0: 3em;
@@ -37,7 +61,3 @@ $rem5: $h5;
 $h6: 0.719rem; // 12px
 $em6: 0.719em;
 $rem6: $h6;
-
-
-$font-primary: $font-family-body;
-$font-secondary: $font-family;

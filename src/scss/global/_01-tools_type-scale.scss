@@ -5,6 +5,8 @@
  // * Version: v1.0.1
  // * Date: 2016-01-11
 
+$base-font-size: $rootFontSize;
+
 @mixin calcScalableFont($context-width, $base-font-size, $limit-font-size, $scale) {
 	$scaleFactor: if(($scale == down), true, false); // determine direction of scale
 	$scaleBoth: if(($scaleFactor == false and $scale != up), true, false); // scales "up and down"

@@ -1,8 +1,7 @@
 @mixin shared-across-all-form-items {
 	outline: none;
 	font-size: $em4;
-	font-family: $font-family-body;
-	font-weight: $weight-light;
+	font-family: $primary-font;
 	@include title-setup;
 	box-shadow: none;
 }

@@ -1,14 +1,15 @@
 $bp-1: $max-width + ($default-space * 2); // max-width + global gutters
-$bp-header: 47.500rem; // 760
-$bp-main: $bp-header;
-$bp-grid: $bp-header; // where grid has major change
+
+$bp-large: 47.500rem; // 760 - where grid has major change
+
 $bp-spaces: 25.556rem; // where default units get smaller from Unit Space library
-$grid-1: $bp-header;
+
 $bp-medium: $max-width - ($default-space * 2); // 1060 = atg bp#2 (mobile)
-$bp-medium-1: $bp-header; // 600px
+$bp-medium-1: $bp-large; // 600px
 $bp-medium-2: $max-width - ($default-space * 2); // 740
 $bp-2: $bp-medium;
 
-$suffixcate_bp: $bp-header;
+// Suffixcate variables
+$suffixcate_bp: $bp-large;
 $suffixcate_bp-medium: $bp-medium-1 $bp-medium-2;
 $suffixcate_bp-all: ($suffixcate_bp $suffixcate_bp-medium);

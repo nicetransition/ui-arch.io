@@ -31,23 +31,6 @@
 	}
 }
 
-@mixin anchor-animate {
-	transition-property: color;
-	will-change: color;
-	transition-duration: 500ms;
-	transition-timing-function: ease-out;
-	transition-delay: 0;
-
-	&:hover, &:focus  {
-		transition-timing-function: ease-in;
-		transition-duration: 150ms;
-	}
-
-	&:active, &:active:hover, &:active:focus {
-		transition-timing-function: ease-in-out;
-		transition-duration: 10ms;
-	}
-}
 
 @mixin anchor-states {
 	&:focus, &:hover {
@@ -60,7 +43,7 @@
 }
 
 @mixin button-core-reset {
-	font-family: $font-family-button;
+	font-family: $primary-font;
 	outline: none;
 }
 
@@ -72,7 +55,6 @@
 }
 
 @mixin c-button--base {
-	font-weight: $weight-bold;
 
 	> span {
 		display: block;

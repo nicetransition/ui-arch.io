@@ -1,11 +1,11 @@
 %content-space-tiny-max {
-	@media screen and (max-width: $bp-grid) {
+	@media screen and (max-width: $bp-large) {
 		padding-top: $default-space / 4;
 	}
 }
 
 %content-space-tiny-min {
-	@media screen and (min-width: $bp-grid) {
+	@media screen and (min-width: $bp-large) {
 		padding-top: $default-space / 4;
 	}
 }
@@ -17,13 +17,13 @@
 
 
 %content-space-sm-max {
-	@media screen and (max-width: $bp-grid) {
+	@media screen and (max-width: $bp-large) {
 		padding-top: $default-space / 2;
 	}
 }
 
 %content-space-sm-min {
-	@media screen and (min-width: $bp-grid) {
+	@media screen and (min-width: $bp-large) {
 		padding-top: $default-space / 2;
 	}
 }
@@ -34,13 +34,13 @@
 }
 
 %content-space-max {
-	@media screen and (max-width: $bp-grid) {
+	@media screen and (max-width: $bp-large) {
 		padding-top: $default-space;
 	}
 }
 
 %content-space-min {
-	@media screen and (min-width: $bp-grid) {
+	@media screen and (min-width: $bp-large) {
 		padding-top: $default-space;
 	}
 }
@@ -51,13 +51,13 @@
 }
 
 %content-space-lg-max {
-	@media screen and (max-width: $bp-grid) {
+	@media screen and (max-width: $bp-large) {
 		padding-top: $default-space * 2;
 	}
 }
 
 %content-space-lg-min {
-	@media screen and (min-width: $bp-grid) {
+	@media screen and (min-width: $bp-large) {
 		padding-top: $default-space * 2;
 	}
 }
@@ -75,13 +75,13 @@
 			@extend %content-space-lg;
 
 			&\@large {
-				@media screen and (min-width: $bp-grid) {
+				@media screen and (min-width: $bp-large) {
 					@extend %content-space-lg-min;
 				}
 			}
 
 			&\@small {
-				@media screen and (max-width: $bp-grid) {
+				@media screen and (max-width: $bp-large) {
 					@extend %content-space-lg-max;
 				}
 			}
@@ -91,13 +91,13 @@
 			@extend %content-space;
 
 			&\@large {
-				@media screen and (min-width: $bp-grid) {
+				@media screen and (min-width: $bp-large) {
 					@extend %content-space-min;
 				}
 			}
 
 			&\@small {
-				@media screen and (max-width: $bp-grid) {
+				@media screen and (max-width: $bp-large) {
 					@extend %content-space-max;
 				}
 			}
@@ -110,7 +110,7 @@
 		}
 
 		&\@large {
-			@media screen and (min-width: $bp-grid) {
+			@media screen and (min-width: $bp-large) {
 				& + p {
 					@extend %content-space-tiny-min;
 				}
@@ -118,7 +118,7 @@
 		}
 
 		&\@small {
-			@media screen and (max-width: $bp-grid) {
+			@media screen and (max-width: $bp-large) {
 				& + p {
 					@extend %content-space-tiny-max;
 				}
@@ -132,7 +132,7 @@
 		}
 
 		&\@large {
-			@media screen and (min-width: $bp-grid) {
+			@media screen and (min-width: $bp-large) {
 				& + p {
 					@extend %content-space-sm-min;
 				}
@@ -140,7 +140,7 @@
 		}
 
 		&\@small {
-			@media screen and (max-width: $bp-grid) {
+			@media screen and (max-width: $bp-large) {
 				& + p {
 					@extend %content-space-sm-max;
 				}
