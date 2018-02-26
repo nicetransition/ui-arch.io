@@ -32,6 +32,12 @@
 									<option value="label">Label</option>
 									<option value="search-input">Search Input</option>
 							</optgroup>
+							<optgroup label="Form &gt; Input">
+									<option value="placeholder-styles">Placeholder Styles</option>
+							</optgroup>
+							<optgroup label="Mixin">
+									<option value="disable-select">Disable Select</option>
+							</optgroup>
 							<optgroup label="Spacing Units">
 									<option value="padding">Padding</option>
 							</optgroup>
@@ -173,41 +179,37 @@
 
 						<div id="search-input" class="i-library">
 	<h1 class="display-4">Search Input</h1>
-	<div><p>Loaders can be used with <code>&lt;span&gt;</code>, <code>&lt;div&gt;</code>, and any &quot;block type&quot; elements.</p>
-<p>Types of Loaders:</p>
+	<div></div>
+</div>
+
+				</div>
+				<div id="category-form &gt; input">
+						<div id="placeholder-styles" class="i-library">
+	<h1 class="display-4">Placeholder Styles</h1>
+	<div><p><code>@mixin placeholder-styles-large</code> contains styles for inputs <code>@placeholder</code> attribute</p>
+</div>
+</div>
+
+				</div>
+				<div id="category-mixin">
+						<div id="disable-select" class="i-library">
+	<h1 class="display-4">Disable Select</h1>
+	<div><p>Removal of selecting an element on the page. </p>
 <ul>
-<li>Default: Standard button</li>
-<li>Primary: Provides extra visual weight and identifies the primary action in a set of buttons</li>
-<li>Success: Indicates a successful or positive action</li>
+<li><code>.u-disable-select</code> - Utility helper</li>
+<li><code>a</code>, <code>button</code>, <code>label</code>, <code>legend</code> - Default have disable select added if <code>$includeResets</code> is <code>true</code> (<code>~/global/00-settings.scss</code>)</li>
 </ul>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="search-input-types.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="search-input-types.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
+<p>Usage:</p>
 
 <div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="    &lt;input class=&quot;c-input-search&quot; /&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">    &lt;input class=&quot;c-input-search&quot; /&gt;</code></pre>
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".select-name {
+    @include disable-select;
+}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">.select-name {
+    @include disable-select;
+}</code></pre>
 	</div>
 </div></div>
 </div>
@@ -464,6 +466,50 @@
 								data-filter-value="Search Input"
 							>
 								<span>Search Input</span>
+							</a>
+					</div>
+			
+				</div>
+				<div class="i-sidebar-list-group">
+			
+					<h5
+						class="pt-4 mb-1"
+						data-filter-value=" Placeholder Styles "
+					>
+						<a href="#category-form &gt; input" class="i-sidebar-list-item">
+							<b>Form &gt; Input</b>
+						</a>
+					</h5>
+			
+					<div>
+							<a
+								href="#placeholder-styles"
+								class="i-sidebar-list-item"
+								data-filter-value="Placeholder Styles"
+							>
+								<span>Placeholder Styles</span>
+							</a>
+					</div>
+			
+				</div>
+				<div class="i-sidebar-list-group">
+			
+					<h5
+						class="pt-4 mb-1"
+						data-filter-value=" Disable Select "
+					>
+						<a href="#category-mixin" class="i-sidebar-list-item">
+							<b>Mixin</b>
+						</a>
+					</h5>
+			
+					<div>
+							<a
+								href="#disable-select"
+								class="i-sidebar-list-item"
+								data-filter-value="Disable Select"
+							>
+								<span>Disable Select</span>
 							</a>
 					</div>
 			

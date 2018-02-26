@@ -434,6 +434,16 @@ span.c-datepicker-wrapper {
 }
 
 
+/*
+---
+name: Placeholder Styles
+category: Form > Input
+---
+
+`@mixin placeholder-styles-large` contains styles for inputs `@placeholder` attribute
+
+*/
+
 @mixin placeholder-styles-large {
 	font-size: $h3;
 	font-family: $primary-font;
@@ -470,16 +480,6 @@ name: Search Input
 category: Form
 ---
 
-Loaders can be used with `<span>`, `<div>`, and any "block type" elements.
-
-Types of Loaders:
-- Default: Standard button
-- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
-- Success: Indicates a successful or positive action
-
-```types.html
-	<input class="c-input-search" />
-```
 */
 
 .c-input-search {
