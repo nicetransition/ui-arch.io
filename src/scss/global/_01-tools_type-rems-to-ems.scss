@@ -195,10 +195,11 @@ Usage:
 
 
 @function rem($pixels, $context: $browser-context, $em: false) {
-	$px: str-replace(to-string($pixels), 'px', '');
-	$base-size: str-replace(to-string($context), 'px', '');
 	
-	@return to-number(to-string("#{$px / $base-size}#{if($em != true, "rem", "em")}"));
+	$px: to-number(str-replace(to-string($pixels), "px", ""));
+	$base-size: to-number(str-replace(to-string($context), "px", ""));
+	
+	@return to-number("#{$px / $base-size}#{if($em != true, "rem", "em")}");
 }
 
 
