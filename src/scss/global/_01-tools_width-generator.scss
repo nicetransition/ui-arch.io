@@ -6,7 +6,7 @@ $selector-name_fraction-max: "u-max-width";
 // Create helper class for every percent
 // Create temp placeholder to be extended with just percent (without ".")
 @for $i from 1 through 100 {
-	$percent-with-decimals: str-replace("#{(($i / 100) * 100)}", ".", "");
+	$percent-with-decimals: str-replace(to-string((($i / 100) * 100)), ".", "");
 	$percent-output: percentage($i / 100);
 
 	%u-percent-min-width#{$percent-with-decimals} {
