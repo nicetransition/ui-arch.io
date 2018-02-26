@@ -2,12 +2,11 @@
 @import "00-settings";
 
 // TOOLS: Default mixin and functions
-@import "01-tools_str-replace";
+@import "01-tools_string-replace";
 @import "01-tools_type-rems-to-ems";
 @import "01-tools_type-scale";
 @import "01-tools_unit-space";
 @import "01-tools_extendable-selectors";
-@import "01-tools_string-replace";
 @import "01-tools_width-generator";
 @import "01-tools_ctas";
 @import "01-tools_forms";

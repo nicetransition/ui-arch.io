@@ -1,21 +1,74 @@
-///
- // "Str-replace Function" by UGO GIRAUDEL
- // 12/31/2015
- // https://css-tricks.com/snippets/sass/str-replace-function/
- ///
-/// Replace `$search` with `$replace` in `$string`
-/// @author Hugo Giraudel
-/// @param {String} $string - Initial string
-/// @param {String} $search - Substring to replace
-/// @param {String} $replace ('') - New value
-/// @return {String} - Updated string
+/*
+---
+name: To String 
+category: Tools > Functions
+---
+
+Casting to a string has to be the easiest type of all thanks to the brand new inspect function from Sass 3.3 which does exactly that: casting to string.
+
+It works with anything, even lists and maps. However it does some color conversions (hsl being converted to rgb and things like that) so if it’s important for you that the result of to-string is precisely the same as the input, you might want to opt for a proof quoting function instead. Same if you are running Sass 3.2 which doesn’t support inspect.
+
+Another way to cast to string without quoting is adding an unquoted empty string to the value like this `$value + unquote("")` however it has two pitfalls:
+
+* it doesn’t work with `null`: throws `Invalid null operation: "null plus """`.
+* it doesn’t make maps displayble as CSS values: still throws `"(a: 1, b: 2) isn't a valid CSS value."`
+
+
+Source/Credit: [https://hugogiraudel.com/2014/01/27/casting-types-in-sass/](https://hugogiraudel.com/2014/01/27/casting-types-in-sass/) - More casting available here too!
+
+
+Usage:
+
+```
+	to-string(value);
+```
+
+*/
+
+@function to-string($value) {
+	@return inspect($value);
+}
+
+
+
+/*
+---
+name: String Replace
+category: Tools > Functions
+---
+
+Sass provides a collection of handy functions to manipulate strings, however there is no function to replace a substring with another string. Here is a quick str-replace function if you ever need one.
+
+Source/Credit: [https://css-tricks.com/snippets/sass/str-replace-function/](https://css-tricks.com/snippets/sass/str-replace-function/)
+
+Replace `$search` with `$replace` in `$string`
+
+* @author Hugo Giraudel
+* @param {String} $string - Initial string
+* @param {String} $search - Substring to replace
+* @param {String} $replace ('') - New value
+* @return {String} - Updated string
+
+
+Usage:
+
+```
+.selector-name {
+	$string: 'The answer to life the universe and everything is 42.';
+	content: str-replace($string, 'e', 'xoxo');
+}
+```
+
+*/
+
 
 @function str-replace($string, $search, $replace: '') {
-  $index: str-index($string, $search);
+	$str: to-string($string);
+	$index: str-index($str, $search);
 
-  @if $index {
-    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
-  }
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($str, $index + str-length($search)), $search, $replace);
+	}
 
-  @return $string;
+	@return $str;
 }

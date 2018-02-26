@@ -16,22 +16,8 @@ name: Font Sizes
 category: Typography
 ---
 
-@if ($includeResets == true) {
-Font-size Reset on <h1>-<h6> are reset to to 1rem in `_02-generic_resets.scss`
-}
-
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
 
-Types of buttons:
-- Default: Standard button
-- Primary: Provides extra visual weight and identifies the primary action in a set of buttons
-- Success: Indicates a successful or positive action
-
-```types.html
-<button class="btn btn-default">Default</button>
-<button class="btn btn-primary">Primary</button>
-<button class="btn btn-success">Success</button>
-```
 */
 
 $h0: 3rem; // 42

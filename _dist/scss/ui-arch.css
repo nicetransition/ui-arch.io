@@ -1,45 +1,54 @@
 /*
-Error: Invalid CSS after "@function rem(": expected variable (e.g. $foo), was "to-number(str-r..."
-        on line 106 of src/scss/global/_01-tools_type-rems-to-ems.scss
-        from line 52 of src/scss/global/00-settings.scss
-        from line 9 of src/scss/_global.scss
+Error: Invalid CSS after "...rcent-min-width": expected selector, was ""1""
+        on line 12 of src/scss/global/_01-tools_width-generator.scss
+        from line 10 of src/scss/global/01-tools.scss
+        from line 12 of src/scss/_global.scss
         from line 1 of ./src/scss/ui-arch.scss
 
-101: 
-102: *\/
-103: 
-104: 
-105: 
-106: @function rem(to-number(str-replace(#{$pixels}, 'px', '')), $context: to-number($browser-context), $em: false) {
-107: 	@return to-number(unquote("#{$pixels / $context}#{if($em != true, "rem", "em")}"));
-108: }
-109: 
-110: 
-111: /*
+7: ---
+8: 
+9: Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
+10: 
+11: Types of buttons:
+12: - Default: Standard button
+13: - Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+14: - Success: Indicates a successful or positive action
+15: 
+16: ```types.html
+17: <button class="btn btn-default">Default</button>
 
 Backtrace:
-src/scss/global/_01-tools_type-rems-to-ems.scss:106
-src/scss/global/00-settings.scss:52
-src/scss/_global.scss:9
+src/scss/global/_01-tools_width-generator.scss:12
+src/scss/global/01-tools.scss:10
+src/scss/_global.scss:12
 ./src/scss/ui-arch.scss:1
 /Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/scss/parser.rb:1278:in `expected'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/script/lexer.rb:231:in `expected!'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/script/parser.rb:731:in `assert_tok'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/script/parser.rb:538:in `block in defn_arglist!'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/script/parser.rb:536:in `loop'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/script/parser.rb:536:in `defn_arglist!'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/script/parser.rb:175:in `parse_function_definition_arglist'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/scss/parser.rb:1134:in `sass_script'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/scss/parser.rb:270:in `function_directive'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/scss/parser.rb:234:in `special_directive'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/scss/parser.rb:209:in `directive'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/scss/parser.rb:696:in `block_child'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/scss/parser.rb:689:in `block_contents'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/scss/parser.rb:41:in `parse'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/engine.rb:414:in `_to_tree'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/engine.rb:321:in `to_tree'
-/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/scss/parser.rb:1208:in `expected'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/scss/static_parser.rb:21:in `parse_selector'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:274:in `block (3 levels) in visit_for'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:274:in `map'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:274:in `block (2 levels) in visit_for'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:270:in `each'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:270:in `map'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:270:in `block in visit_for'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:269:in `visit_for'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:329:in `map'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
 /Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:88:in `block in with_import'
 /Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
 /Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:88:in `with_import'
@@ -108,4 +117,4 @@ src/scss/_global.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"@function rem(\": expected variable (e.g. $foo), was \"to-number(str-r...\"\A         on line 106 of src/scss/global/_01-tools_type-rems-to-ems.scss\A         from line 52 of src/scss/global/00-settings.scss\A         from line 9 of src/scss/_global.scss\A         from line 1 of ./src/scss/ui-arch.scss\A \A 101: \A 102: */\A 103: \A 104: \A 105: \A 106: @function rem(to-number(str-replace(#{$pixels}, 'px', '')), $context: to-number($browser-context), $em: false) {\A 107: 	@return to-number(unquote(\"#{$pixels / $context}#{if($em != true, \"rem\", \"em\")}\"));\A 108: }\A 109: \A 110: \A 111: /*"; }
+  content: "Error: Invalid CSS after \"...rcent-min-width\": expected selector, was \"\"1\"\"\A         on line 12 of src/scss/global/_01-tools_width-generator.scss\A         from line 10 of src/scss/global/01-tools.scss\A         from line 12 of src/scss/_global.scss\A         from line 1 of ./src/scss/ui-arch.scss\A \A 7: ---\A 8: \A 9: Buttons can be used with `<a>`, `<button>`, and `<input>` elements.\A 10: \A 11: Types of buttons:\A 12: - Default: Standard button\A 13: - Primary: Provides extra visual weight and identifies the primary action in a set of buttons\A 14: - Success: Indicates a successful or positive action\A 15: \A 16: ```types.html\A 17: <button class=\"btn btn-default\">Default</button>"; }

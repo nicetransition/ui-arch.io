@@ -41,6 +41,7 @@
 									<option value="pixel-to-rem">Pixel to REM</option>
 									<option value="string-replace">String Replace</option>
 									<option value="string-to-number">String to Number</option>
+									<option value="to-string">To String</option>
 							</optgroup>
 							<optgroup label="Typography">
 									<option value="font-sizes">Font Sizes</option>
@@ -412,54 +413,33 @@
 </div></div>
 </div>
 
+						<div id="to-string" class="i-library">
+	<h1 class="display-4">To String</h1>
+	<div><p>Casting to a string has to be the easiest type of all thanks to the brand new inspect function from Sass 3.3 which does exactly that: casting to string.</p>
+<p>It works with anything, even lists and maps. However it does some color conversions (hsl being converted to rgb and things like that) so if it’s important for you that the result of to-string is precisely the same as the input, you might want to opt for a proof quoting function instead. Same if you are running Sass 3.2 which doesn’t support inspect.</p>
+<p>Another way to cast to string without quoting is adding an unquoted empty string to the value like this <code>$value + unquote(&quot;&quot;)</code> however it has two pitfalls:</p>
+<ul>
+<li>it doesn’t work with <code>null</code>: throws <code>Invalid null operation: &quot;null plus &quot;&quot;&quot;</code>.</li>
+<li>it doesn’t make maps displayble as CSS values: still throws <code>&quot;(a: 1, b: 2) isn&#39;t a valid CSS value.&quot;</code></li>
+</ul>
+<p>Source/Credit: <a href="https://hugogiraudel.com/2014/01/27/casting-types-in-sass/">https://hugogiraudel.com/2014/01/27/casting-types-in-sass/</a> - More casting available here too!</p>
+<p>Usage:</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="    to-string(value);" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">    to-string(value);</code></pre>
+	</div>
+</div></div>
+</div>
+
 				</div>
 				<div id="category-typography">
 						<div id="font-sizes" class="i-library">
 	<h1 class="display-4">Font Sizes</h1>
-	<div><p>@if ($includeResets == true) {
-Font-size Reset on <h1>-<h6> are reset to to 1rem in <code>_02-generic_resets.scss</code>
-}</p>
-<p>Read <a href="https://codepen.io/nicetransition/pen/qbNbOE">Object-Oriented Typography</a> for additional details</p>
-<p>Types of buttons:</p>
-<ul>
-<li>Default: Standard button</li>
-<li>Primary: Provides extra visual weight and identifies the primary action in a set of buttons</li>
-<li>Success: Indicates a successful or positive action</li>
-</ul>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="font-sizes-types.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="font-sizes-types.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
-&lt;button class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
-&lt;button class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
-&lt;button class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
-&lt;button class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;</code></pre>
-	</div>
-</div></div>
+	<div><p>Read <a href="https://codepen.io/nicetransition/pen/qbNbOE">Object-Oriented Typography</a> for additional details</p>
+</div>
 </div>
 
 				</div>
@@ -606,7 +586,7 @@ Font-size Reset on <h1>-<h6> are reset to to 1rem in <code>_02-generic_resets.sc
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Pixel to EM  Pixel to REM  String Replace  String to Number "
+						data-filter-value=" Pixel to EM  Pixel to REM  String Replace  String to Number  To String "
 					>
 						<a href="#category-tools &gt; functions" class="i-sidebar-list-item">
 							<b>Tools &gt; Functions</b>
@@ -641,6 +621,13 @@ Font-size Reset on <h1>-<h6> are reset to to 1rem in <code>_02-generic_resets.sc
 								data-filter-value="String to Number"
 							>
 								<span>String to Number</span>
+							</a>
+							<a
+								href="#to-string"
+								class="i-sidebar-list-item"
+								data-filter-value="To String"
+							>
+								<span>To String</span>
 							</a>
 					</div>
 			
