@@ -20,33 +20,40 @@
 				<form class="form">
 					<select class="form-control form-control-lg">
 						<option disabled selected>Go to…</option>
-							<optgroup label="Base">
+							<optgroup label="0. Base">
 									<option value="methodologies">Methodologies</option>
 									<option value="sass-structure">Sass structure</option>
 									<option value="style-guide-layers">Style Guide Layers</option>
+							</optgroup>
+							<optgroup label="1. Tools &gt; Functions">
+									<option value="pixel-to-em">Pixel to EM</option>
+									<option value="pixel-to-rem">Pixel to REM</option>
+									<option value="string-replace">String Replace</option>
+									<option value="string-to-number">String to Number</option>
+									<option value="to-string">To String</option>
 							</optgroup>
 							<optgroup label="Call to Actions">
 									<option value="button">Button</option>
 							</optgroup>
 							<optgroup label="Form">
+									<option value="checkbox">Checkbox</option>
+									<option value="fieldset">Fieldset</option>
+									<option value="form-base">Form Base</option>
+									<option value="input">Input</option>
+									<option value="input-placeholder-styles">Input > Placeholder Styles</option>
+									<option value="input-search">Input > Search</option>
 									<option value="label">Label</option>
-									<option value="search-input">Search Input</option>
-							</optgroup>
-							<optgroup label="Form &gt; Input">
-									<option value="placeholder-styles">Placeholder Styles</option>
+									<option value="label-required">Label > Required</option>
+									<option value="radio">Radio</option>
+									<option value="radio-toggle-field">Radio > Toggle Field</option>
+									<option value="select">Select</option>
+									<option value="textarea">Textarea</option>
 							</optgroup>
 							<optgroup label="Mixin">
 									<option value="disable-select">Disable Select</option>
 							</optgroup>
 							<optgroup label="Spacing Units">
 									<option value="padding">Padding</option>
-							</optgroup>
-							<optgroup label="Tools &gt; Functions">
-									<option value="pixel-to-em">Pixel to EM</option>
-									<option value="pixel-to-rem">Pixel to REM</option>
-									<option value="string-replace">String Replace</option>
-									<option value="string-to-number">String to Number</option>
-									<option value="to-string">To String</option>
 							</optgroup>
 							<optgroup label="Typography">
 									<option value="font-sizes">Font Sizes</option>
@@ -55,17 +62,20 @@
 				</form>
 			</div>
 
-				<div id="category-base">
+				<div id="category-0. base">
 						<div id="methodologies" class="i-library">
 	<h1 class="display-4">Methodologies</h1>
 	<div><ul>
+<li><a href="https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986">OOCSS</a> - Object-oriented CSS</li>
 <li><a href="http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/">Namespace</a> - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)</li>
 <li><a href="http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403">BEM</a> - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. </li>
 <li><a href="https://www.youtube.com/watch?v=1OKZOV-iLj4">ITCSS</a> - Core methodology to organize the CSS code. See &quot;<a href="/#display-4">Sass structure</a>&quot;</li>
 <li><a href="http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further">BEMIT</a> - BEM + ITCSS</li>
 <li><a href="https://codepen.io/nicetransition/full/qbNbOE/">Object-Oriented Typography</a> - Separate text-based elements by their structure, skin and context of text</li>
+<li><a href="https://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/">Pipes and Stars in @class</a> - Grouping related classes in your markup using <code>||</code> to group similar classes together and <code>**</code> to identify &quot;core&quot; classes for a component</li>
 <li><a href="https://codepen.io/nicetransition/full/QjwbRg/">Color Naming Convention</a> - Naming convention and organization of colors</li>
 </ul>
+<p><a href="https://csswizardry.com/2017/05/writing-tidy-code/">https://csswizardry.com/2017/05/writing-tidy-code/</a></p>
 </div>
 </div>
 
@@ -95,135 +105,7 @@
 </div>
 
 				</div>
-				<div id="category-call to actions">
-						<div id="button" class="i-library">
-	<h1 class="display-4">Button</h1>
-	<div><p>Buttons can be used with <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input&gt;</code> elements.</p>
-<p>Types of buttons:</p>
-<ul>
-<li>Default: Standard button</li>
-</ul>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="button-types.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="button-types.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button c-button--default c-button--base c-button--primary&quot;&gt;Primary&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button c-button--default c-button--base c-button--primary&quot;&gt;Primary&lt;/button&gt;</code></pre>
-	</div>
-</div></div>
-</div>
-
-				</div>
-				<div id="category-form">
-						<div id="label" class="i-library">
-	<h1 class="display-4">Label</h1>
-	<div><p>Label can be used with <code>&lt;label&gt;</code> elements.</p>
-<p>Types of Loaders:</p>
-<ul>
-<li>t1: Standard button</li>
-<li>t2: Provides extra visual weight and identifies the primary action in a set of buttons</li>
-</ul>
-<div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="label-types.html"
-                            target="_blank"
-                            class="fa fa-external-link-square fa-fw plain-link"
-                            title="Open in a new window"
-                        ></a>
-                        Example
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="label-types.html"
-                            data-initinview="true"
-                            data-title="Loading…"
-
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="    &lt;label class=&quot;c-label&quot;&gt;I&#39;m a label&lt;/label&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">    &lt;label class=&quot;c-label&quot;&gt;I&#39;m a label&lt;/label&gt;</code></pre>
-	</div>
-</div></div>
-</div>
-
-						<div id="search-input" class="i-library">
-	<h1 class="display-4">Search Input</h1>
-	<div></div>
-</div>
-
-				</div>
-				<div id="category-form &gt; input">
-						<div id="placeholder-styles" class="i-library">
-	<h1 class="display-4">Placeholder Styles</h1>
-	<div><p><code>@mixin placeholder-styles-large</code> contains styles for inputs <code>@placeholder</code> attribute</p>
-</div>
-</div>
-
-				</div>
-				<div id="category-mixin">
-						<div id="disable-select" class="i-library">
-	<h1 class="display-4">Disable Select</h1>
-	<div><p>Removal of selecting an element on the page. </p>
-<ul>
-<li><code>.u-disable-select</code> - Utility helper</li>
-<li><code>a</code>, <code>button</code>, <code>label</code>, <code>legend</code> - Default have disable select added if <code>$includeResets</code> is <code>true</code> (<code>~/global/00-settings.scss</code>)</li>
-</ul>
-<p>Usage:</p>
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> </button>
-	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".select-name {
-    @include disable-select;
-}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">.select-name {
-    @include disable-select;
-}</code></pre>
-	</div>
-</div></div>
-</div>
-
-				</div>
-				<div id="category-spacing units">
-						<div id="padding" class="i-library">
-	<h1 class="display-4">Padding</h1>
-	<div><p>Default spacing unit is defined <code>$default-space</code> in <code>~/global/00-settings.scss</code></p>
-</div>
-</div>
-
-				</div>
-				<div id="category-tools &gt; functions">
+				<div id="category-1. tools &gt; functions">
 						<div id="pixel-to-em" class="i-library">
 	<h1 class="display-4">Pixel to EM</h1>
 	<div><p>Converts <code>px</code> unit to <code>em</code> unit</p>
@@ -352,6 +234,391 @@
 </div>
 
 				</div>
+				<div id="category-call to actions">
+						<div id="button" class="i-library">
+	<h1 class="display-4">Button</h1>
+	<div><p>Buttons can be used with <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input&gt;</code> elements.</p>
+<p>Types of buttons:</p>
+<ul>
+<li>Default: Standard button</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-types.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-types.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button c-button--default c-button--base c-button--primary&quot;&gt;Primary&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button c-button--default c-button--base c-button--primary&quot;&gt;Primary&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+				</div>
+				<div id="category-form">
+						<div id="checkbox" class="i-library">
+	<h1 class="display-4">Checkbox</h1>
+	<div></div>
+</div>
+
+						<div id="fieldset" class="i-library">
+	<h1 class="display-4">Fieldset</h1>
+	<div><p>Reset for <code>&lt;fieldset&gt;</code> to reduce <code>margin</code>s on side and it&#39;s <code>padding</code>.</p>
+</div>
+</div>
+
+						<div id="form-base" class="i-library">
+	<h1 class="display-4">Form Base</h1>
+	<div></div>
+</div>
+
+						<div id="input" class="i-library">
+	<h1 class="display-4">Input</h1>
+	<div></div>
+</div>
+
+						<div id="input-placeholder-styles" class="i-library">
+	<h1 class="display-4">Input &gt; Placeholder Styles</h1>
+	<div><p><code>@mixin placeholder-styles-large</code> contains styles for inputs <code>@placeholder</code> attribute</p>
+<p>Types of placeholders:</p>
+<ul>
+<li>Default: No classes</li>
+<li>Base: <code>.c-input</code></li>
+<li>Theme 1: <code>.t-form-1</code></li>
+<li>Theme 2: <code>.t-form-2</code></li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="input-placeholder-styles-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="input-placeholder-styles-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="    &lt;input placeholder=&quot;Placeholder&quot; type=&quot;text&quot; /&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">    &lt;input placeholder=&quot;Placeholder&quot; type=&quot;text&quot; /&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="input-placeholder-styles-base.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="input-placeholder-styles-base.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="    &lt;input class=&quot;** c-input **&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot; /&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">    &lt;input class=&quot;** c-input **&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot; /&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="input-placeholder-styles-t-form-1.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="input-placeholder-styles-t-form-1.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="    &lt;input class=&quot;** c-input ** t-form-1&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot;  /&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">    &lt;input class=&quot;** c-input ** t-form-1&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot;  /&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="input-placeholder-styles-t-form-2.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="input-placeholder-styles-t-form-2.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="    &lt;input class=&quot;** c-input ** t-form-2&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot;  /&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">    &lt;input class=&quot;** c-input ** t-form-2&quot; placeholder=&quot;Placeholder&quot; type=&quot;text&quot;  /&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="input-search" class="i-library">
+	<h1 class="display-4">Input &gt; Search</h1>
+	<div></div>
+</div>
+
+						<div id="label" class="i-library">
+	<h1 class="display-4">Label</h1>
+	<div><p>Label can be used with <code>&lt;label&gt;</code> elements.</p>
+<p>Types of labels:</p>
+<ul>
+<li>Default: No classes</li>
+<li>Base: <code>.c-label</code></li>
+<li>Theme 1: <code>.t-form-1</code></li>
+<li>Theme 2: <code>.t-form-2</code></li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="label-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="label-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="    &lt;label&gt;Label&lt;/label&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">    &lt;label&gt;Label&lt;/label&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="label-base.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="label-base.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="    &lt;label class=&quot;** c-label **&quot;&gt;Label&lt;/label&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">    &lt;label class=&quot;** c-label **&quot;&gt;Label&lt;/label&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="label-t-form-1.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="label-t-form-1.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="    &lt;input class=&quot;** c-label ** t-form-1&quot;&gt;Label&lt;/label&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">    &lt;input class=&quot;** c-label ** t-form-1&quot;&gt;Label&lt;/label&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="label-t-form-2.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="label-t-form-2.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="    &lt;input class=&quot;** c-label ** t-form-2&quot;&gt;Label&lt;/label&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">    &lt;input class=&quot;** c-label ** t-form-2&quot;&gt;Label&lt;/label&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="label-required" class="i-library">
+	<h1 class="display-4">Label &gt; Required</h1>
+	<div></div>
+</div>
+
+						<div id="radio" class="i-library">
+	<h1 class="display-4">Radio</h1>
+	<div></div>
+</div>
+
+						<div id="radio-toggle-field" class="i-library">
+	<h1 class="display-4">Radio &gt; Toggle Field</h1>
+	<div><p>Intended to be used with <code>input[type=&quot;radio&quot;]</code> and <code>input[type=&quot;checkbox&quot;]</code>. Is the base styling to use with either form field types.</p>
+</div>
+</div>
+
+						<div id="select" class="i-library">
+	<h1 class="display-4">Select</h1>
+	<div></div>
+</div>
+
+						<div id="textarea" class="i-library">
+	<h1 class="display-4">Textarea</h1>
+	<div></div>
+</div>
+
+				</div>
+				<div id="category-mixin">
+						<div id="disable-select" class="i-library">
+	<h1 class="display-4">Disable Select</h1>
+	<div><p>Removal of selecting an element on the page. </p>
+<ul>
+<li><code>.u-disable-select</code> - Utility helper</li>
+<li><code>a</code>, <code>button</code>, <code>label</code>, <code>legend</code> - Default have disable select added if <code>$includeResets</code> is <code>true</code> (<code>~/global/00-settings.scss</code>)</li>
+</ul>
+<p>Usage:</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".select-name {
+    @include disable-select;
+}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">.select-name {
+    @include disable-select;
+}</code></pre>
+	</div>
+</div></div>
+</div>
+
+				</div>
+				<div id="category-spacing units">
+						<div id="padding" class="i-library">
+	<h1 class="display-4">Padding</h1>
+	<div><p>Default spacing unit is defined <code>$default-space</code> in <code>~/global/00-settings.scss</code></p>
+</div>
+</div>
+
+				</div>
 				<div id="category-typography">
 						<div id="font-sizes" class="i-library">
 	<h1 class="display-4">Font Sizes</h1>
@@ -389,8 +656,8 @@
 						class="pt-4 mb-1"
 						data-filter-value=" Methodologies  Sass structure  Style Guide Layers "
 					>
-						<a href="#category-base" class="i-sidebar-list-item">
-							<b>Base</b>
+						<a href="#category-0. base" class="i-sidebar-list-item">
+							<b>0. Base</b>
 						</a>
 					</h5>
 			
@@ -423,6 +690,56 @@
 			
 					<h5
 						class="pt-4 mb-1"
+						data-filter-value=" Pixel to EM  Pixel to REM  String Replace  String to Number  To String "
+					>
+						<a href="#category-1. tools &gt; functions" class="i-sidebar-list-item">
+							<b>1. Tools &gt; Functions</b>
+						</a>
+					</h5>
+			
+					<div>
+							<a
+								href="#pixel-to-em"
+								class="i-sidebar-list-item"
+								data-filter-value="Pixel to EM"
+							>
+								<span>Pixel to EM</span>
+							</a>
+							<a
+								href="#pixel-to-rem"
+								class="i-sidebar-list-item"
+								data-filter-value="Pixel to REM"
+							>
+								<span>Pixel to REM</span>
+							</a>
+							<a
+								href="#string-replace"
+								class="i-sidebar-list-item"
+								data-filter-value="String Replace"
+							>
+								<span>String Replace</span>
+							</a>
+							<a
+								href="#string-to-number"
+								class="i-sidebar-list-item"
+								data-filter-value="String to Number"
+							>
+								<span>String to Number</span>
+							</a>
+							<a
+								href="#to-string"
+								class="i-sidebar-list-item"
+								data-filter-value="To String"
+							>
+								<span>To String</span>
+							</a>
+					</div>
+			
+				</div>
+				<div class="i-sidebar-list-group">
+			
+					<h5
+						class="pt-4 mb-1"
 						data-filter-value=" Button "
 					>
 						<a href="#category-call to actions" class="i-sidebar-list-item">
@@ -445,7 +762,7 @@
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Label  Search Input "
+						data-filter-value=" Checkbox  Fieldset  Form Base  Input  Input &gt; Placeholder Styles  Input &gt; Search  Label  Label &gt; Required  Radio  Radio &gt; Toggle Field  Select  Textarea "
 					>
 						<a href="#category-form" class="i-sidebar-list-item">
 							<b>Form</b>
@@ -454,6 +771,48 @@
 			
 					<div>
 							<a
+								href="#checkbox"
+								class="i-sidebar-list-item"
+								data-filter-value="Checkbox"
+							>
+								<span>Checkbox</span>
+							</a>
+							<a
+								href="#fieldset"
+								class="i-sidebar-list-item"
+								data-filter-value="Fieldset"
+							>
+								<span>Fieldset</span>
+							</a>
+							<a
+								href="#form-base"
+								class="i-sidebar-list-item"
+								data-filter-value="Form Base"
+							>
+								<span>Form Base</span>
+							</a>
+							<a
+								href="#input"
+								class="i-sidebar-list-item"
+								data-filter-value="Input"
+							>
+								<span>Input</span>
+							</a>
+							<a
+								href="#input-placeholder-styles"
+								class="i-sidebar-list-item"
+								data-filter-value="Input &gt; Placeholder Styles"
+							>
+								<span>Input &gt; Placeholder Styles</span>
+							</a>
+							<a
+								href="#input-search"
+								class="i-sidebar-list-item"
+								data-filter-value="Input &gt; Search"
+							>
+								<span>Input &gt; Search</span>
+							</a>
+							<a
 								href="#label"
 								class="i-sidebar-list-item"
 								data-filter-value="Label"
@@ -461,33 +820,39 @@
 								<span>Label</span>
 							</a>
 							<a
-								href="#search-input"
+								href="#label-required"
 								class="i-sidebar-list-item"
-								data-filter-value="Search Input"
+								data-filter-value="Label &gt; Required"
 							>
-								<span>Search Input</span>
+								<span>Label &gt; Required</span>
 							</a>
-					</div>
-			
-				</div>
-				<div class="i-sidebar-list-group">
-			
-					<h5
-						class="pt-4 mb-1"
-						data-filter-value=" Placeholder Styles "
-					>
-						<a href="#category-form &gt; input" class="i-sidebar-list-item">
-							<b>Form &gt; Input</b>
-						</a>
-					</h5>
-			
-					<div>
 							<a
-								href="#placeholder-styles"
+								href="#radio"
 								class="i-sidebar-list-item"
-								data-filter-value="Placeholder Styles"
+								data-filter-value="Radio"
 							>
-								<span>Placeholder Styles</span>
+								<span>Radio</span>
+							</a>
+							<a
+								href="#radio-toggle-field"
+								class="i-sidebar-list-item"
+								data-filter-value="Radio &gt; Toggle Field"
+							>
+								<span>Radio &gt; Toggle Field</span>
+							</a>
+							<a
+								href="#select"
+								class="i-sidebar-list-item"
+								data-filter-value="Select"
+							>
+								<span>Select</span>
+							</a>
+							<a
+								href="#textarea"
+								class="i-sidebar-list-item"
+								data-filter-value="Textarea"
+							>
+								<span>Textarea</span>
 							</a>
 					</div>
 			
@@ -532,56 +897,6 @@
 								data-filter-value="Padding"
 							>
 								<span>Padding</span>
-							</a>
-					</div>
-			
-				</div>
-				<div class="i-sidebar-list-group">
-			
-					<h5
-						class="pt-4 mb-1"
-						data-filter-value=" Pixel to EM  Pixel to REM  String Replace  String to Number  To String "
-					>
-						<a href="#category-tools &gt; functions" class="i-sidebar-list-item">
-							<b>Tools &gt; Functions</b>
-						</a>
-					</h5>
-			
-					<div>
-							<a
-								href="#pixel-to-em"
-								class="i-sidebar-list-item"
-								data-filter-value="Pixel to EM"
-							>
-								<span>Pixel to EM</span>
-							</a>
-							<a
-								href="#pixel-to-rem"
-								class="i-sidebar-list-item"
-								data-filter-value="Pixel to REM"
-							>
-								<span>Pixel to REM</span>
-							</a>
-							<a
-								href="#string-replace"
-								class="i-sidebar-list-item"
-								data-filter-value="String Replace"
-							>
-								<span>String Replace</span>
-							</a>
-							<a
-								href="#string-to-number"
-								class="i-sidebar-list-item"
-								data-filter-value="String to Number"
-							>
-								<span>String to Number</span>
-							</a>
-							<a
-								href="#to-string"
-								class="i-sidebar-list-item"
-								data-filter-value="To String"
-							>
-								<span>To String</span>
 							</a>
 					</div>
 			

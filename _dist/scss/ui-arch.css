@@ -3,7 +3,7 @@
 /*
 ---
 name: Sass structure
-category: Base
+category: 0. Base
 ---
 
 All `~/global/*.scss` for core styles and base of components:
@@ -22,21 +22,24 @@ Follows methodology of ITCSS and each "layer" consists of Sass partials. It is r
 /*
 ---
 name: Methodologies
-category: Base
+category: 0. Base
 ---
-
+* [OOCSS](https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986) - Object-oriented CSS
 * [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
 * [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
 * [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
 * [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
+* [Pipes and Stars in @class](https://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/) - Grouping related classes in your markup using `||` to group similar classes together and `**` to identify "core" classes for a component
 * [Color Naming Convention](https://codepen.io/nicetransition/full/QjwbRg/) - Naming convention and organization of colors
+
+https://csswizardry.com/2017/05/writing-tidy-code/
 
 */
 /*
 ---
 name: Style Guide Layers
-category: Base
+category: 0. Base
 ---
 
 TODO:
@@ -56,7 +59,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -79,7 +82,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -102,7 +105,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -138,7 +141,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: Sass structure
-category: Base
+category: 0. Base
 ---
 
 All `~/global/*.scss` for core styles and base of components:
@@ -157,21 +160,24 @@ Follows methodology of ITCSS and each "layer" consists of Sass partials. It is r
 /*
 ---
 name: Methodologies
-category: Base
+category: 0. Base
 ---
-
+* [OOCSS](https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986) - Object-oriented CSS
 * [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
 * [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
 * [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
 * [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
+* [Pipes and Stars in @class](https://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/) - Grouping related classes in your markup using `||` to group similar classes together and `**` to identify "core" classes for a component
 * [Color Naming Convention](https://codepen.io/nicetransition/full/QjwbRg/) - Naming convention and organization of colors
+
+https://csswizardry.com/2017/05/writing-tidy-code/
 
 */
 /*
 ---
 name: Style Guide Layers
-category: Base
+category: 0. Base
 ---
 
 TODO:
@@ -191,7 +197,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -214,7 +220,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -237,7 +243,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -273,7 +279,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: To String 
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casting to a string has to be the easiest type of all thanks to the brand new inspect function from Sass 3.3 which does exactly that: casting to string.
@@ -299,7 +305,7 @@ Usage:
 /*
 ---
 name: String Replace
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Sass provides a collection of handy functions to manipulate strings, however there is no function to replace a substring with another string. Here is a quick str-replace function if you ever need one.
@@ -337,7 +343,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -360,7 +366,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -383,7 +389,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -410,8 +416,28 @@ Usage:
 @import url(06-trumps_widths.css);
 /*
 ---
+name: Disable Select
+category: Mixin
+---
+
+Removal of selecting an element on the page. 
+ 
+* `.u-disable-select` - Utility helper
+* `a`, `button`, `label`, `legend` - Default have disable select added if `$includeResets` is `true` (`~/global/00-settings.scss`)
+
+Usage:
+
+```
+.select-name {
+	@include disable-select;
+}
+```
+
+*/
+/*
+---
 name: Sass structure
-category: Base
+category: 0. Base
 ---
 
 All `~/global/*.scss` for core styles and base of components:
@@ -430,21 +456,24 @@ Follows methodology of ITCSS and each "layer" consists of Sass partials. It is r
 /*
 ---
 name: Methodologies
-category: Base
+category: 0. Base
 ---
-
+* [OOCSS](https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986) - Object-oriented CSS
 * [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
 * [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
 * [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
 * [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
+* [Pipes and Stars in @class](https://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/) - Grouping related classes in your markup using `||` to group similar classes together and `**` to identify "core" classes for a component
 * [Color Naming Convention](https://codepen.io/nicetransition/full/QjwbRg/) - Naming convention and organization of colors
+
+https://csswizardry.com/2017/05/writing-tidy-code/
 
 */
 /*
 ---
 name: Style Guide Layers
-category: Base
+category: 0. Base
 ---
 
 TODO:
@@ -464,7 +493,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -487,7 +516,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -510,7 +539,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -546,7 +575,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: Sass structure
-category: Base
+category: 0. Base
 ---
 
 All `~/global/*.scss` for core styles and base of components:
@@ -565,21 +594,24 @@ Follows methodology of ITCSS and each "layer" consists of Sass partials. It is r
 /*
 ---
 name: Methodologies
-category: Base
+category: 0. Base
 ---
-
+* [OOCSS](https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986) - Object-oriented CSS
 * [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
 * [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
 * [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
 * [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
+* [Pipes and Stars in @class](https://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/) - Grouping related classes in your markup using `||` to group similar classes together and `**` to identify "core" classes for a component
 * [Color Naming Convention](https://codepen.io/nicetransition/full/QjwbRg/) - Naming convention and organization of colors
+
+https://csswizardry.com/2017/05/writing-tidy-code/
 
 */
 /*
 ---
 name: Style Guide Layers
-category: Base
+category: 0. Base
 ---
 
 TODO:
@@ -599,7 +631,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -622,7 +654,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -645,7 +677,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -681,7 +713,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: To String 
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casting to a string has to be the easiest type of all thanks to the brand new inspect function from Sass 3.3 which does exactly that: casting to string.
@@ -707,7 +739,7 @@ Usage:
 /*
 ---
 name: String Replace
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Sass provides a collection of handy functions to manipulate strings, however there is no function to replace a substring with another string. Here is a quick str-replace function if you ever need one.
@@ -745,7 +777,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -768,7 +800,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -791,7 +823,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -811,6 +843,26 @@ Usage:
 
 .demo-2 {
 	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
+name: Disable Select
+category: Mixin
+---
+
+Removal of selecting an element on the page. 
+ 
+* `.u-disable-select` - Utility helper
+* `a`, `button`, `label`, `legend` - Default have disable select added if `$includeResets` is `true` (`~/global/00-settings.scss`)
+
+Usage:
+
+```
+.select-name {
+	@include disable-select;
 }
 ```
 
@@ -827,7 +879,7 @@ Usage:
 /*
 ---
 name: Sass structure
-category: Base
+category: 0. Base
 ---
 
 All `~/global/*.scss` for core styles and base of components:
@@ -846,21 +898,24 @@ Follows methodology of ITCSS and each "layer" consists of Sass partials. It is r
 /*
 ---
 name: Methodologies
-category: Base
+category: 0. Base
 ---
-
+* [OOCSS](https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986) - Object-oriented CSS
 * [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
 * [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
 * [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
 * [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
+* [Pipes and Stars in @class](https://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/) - Grouping related classes in your markup using `||` to group similar classes together and `**` to identify "core" classes for a component
 * [Color Naming Convention](https://codepen.io/nicetransition/full/QjwbRg/) - Naming convention and organization of colors
+
+https://csswizardry.com/2017/05/writing-tidy-code/
 
 */
 /*
 ---
 name: Style Guide Layers
-category: Base
+category: 0. Base
 ---
 
 TODO:
@@ -880,7 +935,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -903,7 +958,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -926,7 +981,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -962,7 +1017,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: Sass structure
-category: Base
+category: 0. Base
 ---
 
 All `~/global/*.scss` for core styles and base of components:
@@ -981,21 +1036,24 @@ Follows methodology of ITCSS and each "layer" consists of Sass partials. It is r
 /*
 ---
 name: Methodologies
-category: Base
+category: 0. Base
 ---
-
+* [OOCSS](https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986) - Object-oriented CSS
 * [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
 * [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
 * [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
 * [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
+* [Pipes and Stars in @class](https://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/) - Grouping related classes in your markup using `||` to group similar classes together and `**` to identify "core" classes for a component
 * [Color Naming Convention](https://codepen.io/nicetransition/full/QjwbRg/) - Naming convention and organization of colors
+
+https://csswizardry.com/2017/05/writing-tidy-code/
 
 */
 /*
 ---
 name: Style Guide Layers
-category: Base
+category: 0. Base
 ---
 
 TODO:
@@ -1015,7 +1073,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -1038,7 +1096,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -1061,7 +1119,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -1097,7 +1155,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: To String 
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casting to a string has to be the easiest type of all thanks to the brand new inspect function from Sass 3.3 which does exactly that: casting to string.
@@ -1123,7 +1181,7 @@ Usage:
 /*
 ---
 name: String Replace
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Sass provides a collection of handy functions to manipulate strings, however there is no function to replace a substring with another string. Here is a quick str-replace function if you ever need one.
@@ -1161,7 +1219,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -1184,7 +1242,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -1207,7 +1265,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -1227,6 +1285,26 @@ Usage:
 
 .demo-2 {
 	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
+name: Disable Select
+category: Mixin
+---
+
+Removal of selecting an element on the page. 
+ 
+* `.u-disable-select` - Utility helper
+* `a`, `button`, `label`, `legend` - Default have disable select added if `$includeResets` is `true` (`~/global/00-settings.scss`)
+
+Usage:
+
+```
+.select-name {
+	@include disable-select;
 }
 ```
 
@@ -1242,7 +1320,7 @@ p + p {
 /*
 ---
 name: Sass structure
-category: Base
+category: 0. Base
 ---
 
 All `~/global/*.scss` for core styles and base of components:
@@ -1261,21 +1339,24 @@ Follows methodology of ITCSS and each "layer" consists of Sass partials. It is r
 /*
 ---
 name: Methodologies
-category: Base
+category: 0. Base
 ---
-
+* [OOCSS](https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986) - Object-oriented CSS
 * [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
 * [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
 * [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
 * [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
+* [Pipes and Stars in @class](https://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/) - Grouping related classes in your markup using `||` to group similar classes together and `**` to identify "core" classes for a component
 * [Color Naming Convention](https://codepen.io/nicetransition/full/QjwbRg/) - Naming convention and organization of colors
+
+https://csswizardry.com/2017/05/writing-tidy-code/
 
 */
 /*
 ---
 name: Style Guide Layers
-category: Base
+category: 0. Base
 ---
 
 TODO:
@@ -1295,7 +1376,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -1318,7 +1399,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -1341,7 +1422,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -1377,7 +1458,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: Sass structure
-category: Base
+category: 0. Base
 ---
 
 All `~/global/*.scss` for core styles and base of components:
@@ -1396,21 +1477,24 @@ Follows methodology of ITCSS and each "layer" consists of Sass partials. It is r
 /*
 ---
 name: Methodologies
-category: Base
+category: 0. Base
 ---
-
+* [OOCSS](https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986) - Object-oriented CSS
 * [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
 * [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
 * [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
 * [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
+* [Pipes and Stars in @class](https://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/) - Grouping related classes in your markup using `||` to group similar classes together and `**` to identify "core" classes for a component
 * [Color Naming Convention](https://codepen.io/nicetransition/full/QjwbRg/) - Naming convention and organization of colors
+
+https://csswizardry.com/2017/05/writing-tidy-code/
 
 */
 /*
 ---
 name: Style Guide Layers
-category: Base
+category: 0. Base
 ---
 
 TODO:
@@ -1430,7 +1514,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -1453,7 +1537,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -1476,7 +1560,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -1512,7 +1596,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: To String 
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casting to a string has to be the easiest type of all thanks to the brand new inspect function from Sass 3.3 which does exactly that: casting to string.
@@ -1538,7 +1622,7 @@ Usage:
 /*
 ---
 name: String Replace
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Sass provides a collection of handy functions to manipulate strings, however there is no function to replace a substring with another string. Here is a quick str-replace function if you ever need one.
@@ -1576,7 +1660,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -1599,7 +1683,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -1622,7 +1706,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -1642,6 +1726,26 @@ Usage:
 
 .demo-2 {
 	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
+name: Disable Select
+category: Mixin
+---
+
+Removal of selecting an element on the page. 
+ 
+* `.u-disable-select` - Utility helper
+* `a`, `button`, `label`, `legend` - Default have disable select added if `$includeResets` is `true` (`~/global/00-settings.scss`)
+
+Usage:
+
+```
+.select-name {
+	@include disable-select;
 }
 ```
 
@@ -6530,7 +6634,7 @@ Usage:
 /*
 ---
 name: Sass structure
-category: Base
+category: 0. Base
 ---
 
 All `~/global/*.scss` for core styles and base of components:
@@ -6549,21 +6653,24 @@ Follows methodology of ITCSS and each "layer" consists of Sass partials. It is r
 /*
 ---
 name: Methodologies
-category: Base
+category: 0. Base
 ---
-
+* [OOCSS](https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986) - Object-oriented CSS
 * [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
 * [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
 * [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
 * [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
+* [Pipes and Stars in @class](https://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/) - Grouping related classes in your markup using `||` to group similar classes together and `**` to identify "core" classes for a component
 * [Color Naming Convention](https://codepen.io/nicetransition/full/QjwbRg/) - Naming convention and organization of colors
+
+https://csswizardry.com/2017/05/writing-tidy-code/
 
 */
 /*
 ---
 name: Style Guide Layers
-category: Base
+category: 0. Base
 ---
 
 TODO:
@@ -6583,7 +6690,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -6606,7 +6713,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -6629,7 +6736,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -6665,7 +6772,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: Sass structure
-category: Base
+category: 0. Base
 ---
 
 All `~/global/*.scss` for core styles and base of components:
@@ -6684,21 +6791,24 @@ Follows methodology of ITCSS and each "layer" consists of Sass partials. It is r
 /*
 ---
 name: Methodologies
-category: Base
+category: 0. Base
 ---
-
+* [OOCSS](https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986) - Object-oriented CSS
 * [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
 * [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
 * [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
 * [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
+* [Pipes and Stars in @class](https://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/) - Grouping related classes in your markup using `||` to group similar classes together and `**` to identify "core" classes for a component
 * [Color Naming Convention](https://codepen.io/nicetransition/full/QjwbRg/) - Naming convention and organization of colors
+
+https://csswizardry.com/2017/05/writing-tidy-code/
 
 */
 /*
 ---
 name: Style Guide Layers
-category: Base
+category: 0. Base
 ---
 
 TODO:
@@ -6718,7 +6828,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -6741,7 +6851,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -6764,7 +6874,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -6800,7 +6910,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: To String 
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casting to a string has to be the easiest type of all thanks to the brand new inspect function from Sass 3.3 which does exactly that: casting to string.
@@ -6826,7 +6936,7 @@ Usage:
 /*
 ---
 name: String Replace
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Sass provides a collection of handy functions to manipulate strings, however there is no function to replace a substring with another string. Here is a quick str-replace function if you ever need one.
@@ -6864,7 +6974,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -6887,7 +6997,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -6910,7 +7020,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -6930,6 +7040,26 @@ Usage:
 
 .demo-2 {
 	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
+name: Disable Select
+category: Mixin
+---
+
+Removal of selecting an element on the page. 
+ 
+* `.u-disable-select` - Utility helper
+* `a`, `button`, `label`, `legend` - Default have disable select added if `$includeResets` is `true` (`~/global/00-settings.scss`)
+
+Usage:
+
+```
+.select-name {
+	@include disable-select;
 }
 ```
 
@@ -7733,7 +7863,7 @@ a.c-button {
   .c-icon-btn--clear {
     background-color: transparent; }
 
-.c-input, .c-textarea, .c-select, .c-datepicker-wrapper, .c-select__input, .c-radio__input, .c-checkbox__input {
+.c-input, .c-textarea, .c-select, .c-select__input, .c-radio__input, .c-checkbox__input {
   outline: none;
   font-size: 1em;
   font-family: "Arial", sans-serif;
@@ -7753,17 +7883,50 @@ category: Form
 
 Label can be used with `<label>` elements.
 
-Types of Loaders:
-- t1: Standard button
-- t2: Provides extra visual weight and identifies the primary action in a set of buttons
+Types of labels:
+- Default: No classes
+- Base: `.c-label`
+- Theme 1: `.t-form-1`
+- Theme 2: `.t-form-2`
 
-```types.html
-	<label class="c-label">I'm a label</label>
+```default.html
+	<label>Label</label>
+```
+
+```base.html
+	<label class="** c-label **">Label</label>
+```
+
+```t-form-1.html
+	<input class="** c-label ** t-form-1">Label</label>
+```
+
+```t-form-2.html
+	<input class="** c-label ** t-form-2">Label</label>
+
 ```
 */
 .c-label, .c-field-toggle__text, .c-field-toggle__label {
   cursor: pointer; }
 
+/*
+---
+name: Input
+category: Form
+---
+*/
+/*
+---
+name: Textarea
+category: Form
+---
+*/
+/*
+---
+name: Select
+category: Form
+---
+*/
 .c-input, .c-textarea, .c-select {
   font-size: 1em;
   font-family: "Arial", sans-serif;
@@ -7780,12 +7943,6 @@ Types of Loaders:
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none; }
-
-.c-datepicker-wrapper:not(.u-char-before), .c-datepicker-wrapper:not(.u-char-after) {
-  position: relative; }
-
-span.c-datepicker-wrapper {
-  display: inline-block; }
 
 .c-input {
   padding: 0.625rem 0 0.5625rem;
@@ -7860,6 +8017,16 @@ span.c-datepicker-wrapper {
     overflow: hidden;
     resize: none; }
 
+/*
+---
+name: Radio > Toggle Field
+category: Form
+---
+
+
+Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is the base styling to use with either form field types.
+
+*/
 .c-field-toggle {
   position: relative; }
   .c-field-toggle__input {
@@ -7895,6 +8062,12 @@ span.c-datepicker-wrapper {
     cursor: default;
     cursor: not-allowed; }
 
+/*
+---
+name: Radio
+category: Form
+---
+*/
 .c-radio__text:before, .c-radio__text:after {
   border-radius: 50%; }
 .c-radio__text:after {
@@ -7905,6 +8078,12 @@ span.c-datepicker-wrapper {
   width: 0.625rem;
   height: 0.625rem; }
 
+/*
+---
+name: Checkbox
+category: Form
+---
+*/
 .c-checkbox__text:after {
   font-family: 'webfont';
   font-style: normal;
@@ -7917,21 +8096,27 @@ span.c-datepicker-wrapper {
   text-align: center;
   width: 1.25rem; }
 
-.c-datepicker__icon {
-  height: 100%;
-  font-size: 1.5em; }
-  .c-datepicker__icon .glyph {
-    max-width: 1em;
-    max-height: 1em; }
+/*
+---
+name: Fieldset
+category: Form
+---
 
-.c-legend + .c-fieldset {
-  margin-top: 0.625rem; }
 
+Reset for `<fieldset>` to reduce `margin`s on side and it's `padding`.
+
+*/
 .c-fieldset {
   margin-right: 0;
   margin-left: 0;
   padding: 0; }
 
+/*
+---
+name: Form Base
+category: Form
+---
+*/
 .c-form-item__label {
   position: relative; }
 .c-form-item__label {
@@ -8001,11 +8186,34 @@ span.c-datepicker-wrapper {
 
 /*
 ---
-name: Placeholder Styles
-category: Form > Input
+name: Input > Placeholder Styles
+category: Form
 ---
 
 `@mixin placeholder-styles-large` contains styles for inputs `@placeholder` attribute
+
+Types of placeholders:
+- Default: No classes
+- Base: `.c-input`
+- Theme 1: `.t-form-1`
+- Theme 2: `.t-form-2`
+
+```default.html
+	<input placeholder="Placeholder" type="text" />
+```
+
+```base.html
+	<input class="** c-input **" placeholder="Placeholder" type="text" />
+```
+
+```t-form-1.html
+	<input class="** c-input ** t-form-1" placeholder="Placeholder" type="text"  />
+```
+
+```t-form-2.html
+	<input class="** c-input ** t-form-2" placeholder="Placeholder" type="text"  />
+
+```
 
 */
 /*
@@ -8451,7 +8659,7 @@ category: Form
 /*
 ---
 name: Sass structure
-category: Base
+category: 0. Base
 ---
 
 All `~/global/*.scss` for core styles and base of components:
@@ -8470,21 +8678,24 @@ Follows methodology of ITCSS and each "layer" consists of Sass partials. It is r
 /*
 ---
 name: Methodologies
-category: Base
+category: 0. Base
 ---
-
+* [OOCSS](https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986) - Object-oriented CSS
 * [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
 * [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
 * [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
 * [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
+* [Pipes and Stars in @class](https://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/) - Grouping related classes in your markup using `||` to group similar classes together and `**` to identify "core" classes for a component
 * [Color Naming Convention](https://codepen.io/nicetransition/full/QjwbRg/) - Naming convention and organization of colors
+
+https://csswizardry.com/2017/05/writing-tidy-code/
 
 */
 /*
 ---
 name: Style Guide Layers
-category: Base
+category: 0. Base
 ---
 
 TODO:
@@ -8504,7 +8715,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -8527,7 +8738,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -8550,7 +8761,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -8586,7 +8797,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: Sass structure
-category: Base
+category: 0. Base
 ---
 
 All `~/global/*.scss` for core styles and base of components:
@@ -8605,21 +8816,24 @@ Follows methodology of ITCSS and each "layer" consists of Sass partials. It is r
 /*
 ---
 name: Methodologies
-category: Base
+category: 0. Base
 ---
-
+* [OOCSS](https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986) - Object-oriented CSS
 * [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
 * [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
 * [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
 * [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
+* [Pipes and Stars in @class](https://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/) - Grouping related classes in your markup using `||` to group similar classes together and `**` to identify "core" classes for a component
 * [Color Naming Convention](https://codepen.io/nicetransition/full/QjwbRg/) - Naming convention and organization of colors
+
+https://csswizardry.com/2017/05/writing-tidy-code/
 
 */
 /*
 ---
 name: Style Guide Layers
-category: Base
+category: 0. Base
 ---
 
 TODO:
@@ -8639,7 +8853,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -8662,7 +8876,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -8685,7 +8899,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -8721,7 +8935,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: To String 
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casting to a string has to be the easiest type of all thanks to the brand new inspect function from Sass 3.3 which does exactly that: casting to string.
@@ -8747,7 +8961,7 @@ Usage:
 /*
 ---
 name: String Replace
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Sass provides a collection of handy functions to manipulate strings, however there is no function to replace a substring with another string. Here is a quick str-replace function if you ever need one.
@@ -8785,7 +8999,7 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -8808,7 +9022,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -8831,7 +9045,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
@@ -8851,6 +9065,26 @@ Usage:
 
 .demo-2 {
 	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
+name: Disable Select
+category: Mixin
+---
+
+Removal of selecting an element on the page. 
+ 
+* `.u-disable-select` - Utility helper
+* `a`, `button`, `label`, `legend` - Default have disable select added if `$includeResets` is `true` (`~/global/00-settings.scss`)
+
+Usage:
+
+```
+.select-name {
+	@include disable-select;
 }
 ```
 
@@ -11186,12 +11420,12 @@ Default spacing unit is defined `$default-space` in `~/global/00-settings.scss`
   color: #474646; }
 .t-form-1.c-select .c-select__text:active {
   color: #193E6C; }
-.t-form-1.c-input, .t-form-1.c-textarea, .t-form-1.c-select, .t-form-1.c-datepicker {
+.t-form-1.c-input, .t-form-1.c-textarea, .t-form-1.c-select {
   background-color: #FFF;
   border-color: transparent;
   border-bottom-color: #999;
   color: #010101; }
-  .t-form-1.c-input:focus, .t-form-1.c-textarea:focus, .t-form-1.c-select:focus, .t-form-1.c-datepicker:focus {
+  .t-form-1.c-input:focus, .t-form-1.c-textarea:focus, .t-form-1.c-select:focus {
     border-bottom-color: #3D6460;
     color: #000; }
 .t-form-1 .u-char-before__item:after, .t-form-1 .u-char-after__item:after {
@@ -11229,7 +11463,7 @@ Default spacing unit is defined `$default-space` in `~/global/00-settings.scss`
     border-color: #999; }
   .t-form-1 .c-field-toggle__text:hover, .t-form-1 .c-field-toggle__text:focus, .t-form-1 .c-field-toggle__label:hover, .t-form-1 .c-field-toggle__label:focus {
     color: #000; }
-.t-form-1.c-input[disabled], .t-form-1 > .c-checkbox__input[disabled] + label:before, .t-form-1 > .c-radio__input[disabled] + label:before, .t-form-1.c-textarea[disabled], .t-form-1.c-select[disabled], .t-form-1.c-select > select[disabled], .t-form-1.c-datepicker[disabled], .t-form-1.c-radio > input[disabled] + label:before {
+.t-form-1.c-input[disabled], .t-form-1 > .c-checkbox__input[disabled] + label:before, .t-form-1 > .c-radio__input[disabled] + label:before, .t-form-1.c-textarea[disabled], .t-form-1.c-select[disabled], .t-form-1.c-select > select[disabled][disabled], .t-form-1.c-radio > input[disabled] + label:before {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -11247,14 +11481,14 @@ Default spacing unit is defined `$default-space` in `~/global/00-settings.scss`
 
 .t-form-2.c-label {
   color: #010101; }
-.t-form-2.c-input, .t-form-2.c-textarea, .t-form-2.c-select, .t-form-2.c-select > select, .t-form-2.c-datepicker {
+.t-form-2.c-input, .t-form-2.c-textarea, .t-form-2.c-select, .t-form-2.c-select > select {
   color: #F5F5F5; }
-  .t-form-2.c-input:focus, .t-form-2.c-textarea:focus, .t-form-2.c-select:focus, .t-form-2.c-select > select:focus, .t-form-2.c-datepicker:focus {
+  .t-form-2.c-input:focus, .t-form-2.c-textarea:focus, .t-form-2.c-select:focus, .t-form-2.c-select > select:focus {
     color: #FFF; }
-.t-form-2.c-input, .t-form-2.c-textarea, .t-form-2.c-select, .t-form-2.c-datepicker {
+.t-form-2.c-input, .t-form-2.c-textarea, .t-form-2.c-select {
   background-color: #010101;
   border-color: transparent; }
-  .t-form-2.c-input:focus, .t-form-2.c-textarea:focus, .t-form-2.c-select:focus, .t-form-2.c-datepicker:focus {
+  .t-form-2.c-input:focus, .t-form-2.c-textarea:focus, .t-form-2.c-select:focus {
     border-bottom-color: #D9AE11; }
 .t-form-2.c-select option {
   color: #F5F5F5;
@@ -11290,7 +11524,7 @@ Default spacing unit is defined `$default-space` in `~/global/00-settings.scss`
     border-color: transparent; }
   .t-form-2 .c-field-toggle__text:hover, .t-form-2 .c-field-toggle__text:focus, .t-form-2 .c-field-toggle__label:hover, .t-form-2 .c-field-toggle__label:focus {
     color: #000; }
-.t-form-2.c-input[disabled], .t-form-2.c-textarea[disabled], .t-form-2.c-select[disabled], .t-form-2.c-select > select[disabled], .t-form-2.c-datepicker[disabled], .t-form-2.c-radio > input[disabled] + label:before {
+.t-form-2.c-input[disabled], .t-form-2.c-textarea[disabled], .t-form-2.c-select[disabled], .t-form-2.c-select > select[disabled][disabled], .t-form-2.c-radio > input[disabled] + label:before {
   cursor: default;
   background-color: #010101;
   opacity: .7;

@@ -19,12 +19,27 @@ category: Form
 
 Label can be used with `<label>` elements.
 
-Types of Loaders:
-- t1: Standard button
-- t2: Provides extra visual weight and identifies the primary action in a set of buttons
+Types of labels:
+- Default: No classes
+- Base: `.c-label`
+- Theme 1: `.t-form-1`
+- Theme 2: `.t-form-2`
 
-```types.html
-	<label class="c-label">I'm a label</label>
+```default.html
+	<label>Label</label>
+```
+
+```base.html
+	<label class="** c-label **">Label</label>
+```
+
+```t-form-1.html
+	<input class="** c-label ** t-form-1">Label</label>
+```
+
+```t-form-2.html
+	<input class="** c-label ** t-form-2">Label</label>
+
 ```
 */
 
@@ -61,6 +76,110 @@ Types of Loaders:
 	}
 }
 
+/*
+---
+name: Input
+category: Form
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+
+/*
+---
+name: Textarea
+category: Form
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+
+/*
+---
+name: Select
+category: Form
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+
+
+
 .c-input, .c-textarea, .c-select {
 	@extend %shared-across-all-form-items;
 	@include placeholder-styles;
@@ -74,18 +193,6 @@ Types of Loaders:
 .c-input, .c-textarea {
 	box-shadow: none;
 	appearance: none;
-}
-
-.c-datepicker-wrapper {
-	&:not(.u-char-before), &:not(.u-char-after) {
-		position: relative;
-	}
-
-	@extend %shared-across-all-form-items;
-}
-
-span.c-datepicker-wrapper {
-	display: inline-block;
 }
 
 
@@ -197,6 +304,44 @@ span.c-datepicker-wrapper {
 }
 
 
+
+/*
+---
+name: Radio > Toggle Field
+category: Form
+---
+
+
+Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is the base styling to use with either form field types.
+
+*/
+
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+
 .c-field-toggle {
 	position: relative;
 
@@ -256,6 +401,39 @@ span.c-datepicker-wrapper {
 	}
 }
 
+/*
+---
+name: Radio
+category: Form
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
 .c-radio {
 	&__input {
 		@extend %shared-across-all-form-items;
@@ -281,6 +459,39 @@ span.c-datepicker-wrapper {
 	}
 }
 
+/*
+---
+name: Checkbox
+category: Form
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
 .c-checkbox {
 	&__input {
 		@extend %shared-across-all-form-items;
@@ -303,28 +514,41 @@ span.c-datepicker-wrapper {
 	}
 }
 
-.c-datepicker {
-	&-wrapper {
 
-	}
+/*
+---
+name: Fieldset
+category: Form
+---
 
-	&__icon {
-		height: 100%;
-		font-size: 1.5em;
 
-		.glyph {
-			max-width: 1em;
-			max-height: 1em;
-		}
-	}
-}
+Reset for `<fieldset>` to reduce `margin`s on side and it's `padding`.
 
-.c-legend {
-	& + .c-fieldset {
-		margin-top: $default-space / 2;
-	}
-}
-
+*/
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
 
 .c-fieldset {
 	margin-right: 0;
@@ -332,7 +556,38 @@ span.c-datepicker-wrapper {
 	padding: 0;
 }
 
+/*
+---
+name: Form Base
+category: Form
+---
+*/
 
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
 .c-form-item {
 	&__label {
 		position: relative;
@@ -349,40 +604,38 @@ span.c-datepicker-wrapper {
 	}
 }
 
+/*
+---
+name: Label > Required
+category: Form
+---
+*/
 
-.field-validation-valid {
-	speak: none;
-	display: none;
-}
-
-.field-validation-valid, .field-validation-error, .c-label__required {
-	font-size: $h6;
-}
-
-.field-validation-error, .c-label__required {
-	color: $color-primary;
-}
-
-.field-validation-error ~ label.c-label {
-	color: $color-primary;
-}
-
-.field-validation-error ~ input.c-input,
-.field-validation-error ~ input.c-input:focus,
-.field-validation-error ~ textarea.c-textarea,
-.field-validation-error ~ textarea.c-textarea:focus {
-	border-bottom-color: $color-primary;
-}
-
-.field-validation-error ~ select.c-select__input + .c-select--highlight,
-.field-validation-error ~ select.c-select__input:focus + .c-select--highlight {
-	background-color: $color-primary;
-}
-
-.field-validation-error ~ input.c-field-toggle__input + .c-field-toggle__text:before,
-.field-validation-error ~ input.c-field-toggle__input:focus + .c-field-toggle__text:before {
-	border-color: $color-primary;
-}
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
 
 .c-label__required {
 	vertical-align: top;
@@ -390,69 +643,43 @@ span.c-datepicker-wrapper {
 
 
 
-.c-form-tip {
-	position: relative;
-
-	&__label {
-		padding-left: rem(20);
-	}
-
-	&__tip {
-		position: absolute;
-		z-index: 1;
-		top: 0;
-		left: 0;
-		width: rem(20);
-		text-align: left;
-	}
-}
-
-.c-form-block__row {
-	.o-flex\@large--grid {
-		align-items: flex-start;
-	}
-}
-
-
-.validation-summary-errors {
-	background-color: #FFF;
-	border: 1px solid;
-	color: $color-primary-dark;
-	padding: $default-space / 2;
-	margin-bottom: $default-space + ($default-space / 2);
-
-	> ul {
-		list-style: none;
-		padding-left: 0;
-
-		> li {
-			& + li {
-				margin-top: $default-space / 2;
-			}
-		}
-	}
-}
-
-
 /*
 ---
-name: Placeholder Styles
-category: Form > Input
+name: Input > Placeholder Styles
+category: Form
 ---
 
 `@mixin placeholder-styles-large` contains styles for inputs `@placeholder` attribute
+
+Types of placeholders:
+- Default: No classes
+- Base: `.c-input`
+- Theme 1: `.t-form-1`
+- Theme 2: `.t-form-2`
+
+```default.html
+	<input placeholder="Placeholder" type="text" />
+```
+
+```base.html
+	<input class="** c-input **" placeholder="Placeholder" type="text" />
+```
+
+```t-form-1.html
+	<input class="** c-input ** t-form-1" placeholder="Placeholder" type="text"  />
+```
+
+```t-form-2.html
+	<input class="** c-input ** t-form-2" placeholder="Placeholder" type="text"  />
+
+```
 
 */
 
 @mixin placeholder-styles-large {
 	font-size: $h3;
 	font-family: $primary-font;
-	
-
 	line-height: 1;
-	// font-size: rem(14) !important;
-	// padding-top: rem(2) !important;
-	// padding-bottom: rem(5) !important;
 }
 
 @mixin placeholder-setup-large {
@@ -476,7 +703,7 @@ category: Form > Input
 
 /*
 ---
-name: Search Input
+name: Input > Search
 category: Form
 ---
 

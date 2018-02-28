@@ -242,7 +242,7 @@
 		}
 	}
 
-	&.c-input, &.c-textarea, &.c-select, &.c-datepicker {
+	&.c-input, &.c-textarea, &.c-select {
 		background-color: $color-light-light;
 		border-color: transparent;
 		border-bottom-color: $color-light-dark;
@@ -301,7 +301,7 @@
 		}
 	}
 
-	&.c-input[disabled], & > .c-checkbox__input[disabled] + label:before, & > .c-radio__input[disabled] + label:before, &.c-textarea[disabled], &.c-select[disabled], &.c-select > select[disabled], &.c-datepicker[disabled], &.c-radio > input[disabled] + label:before {
+	&.c-input[disabled], & > .c-checkbox__input[disabled] + label:before, & > .c-radio__input[disabled] + label:before, &.c-textarea[disabled], &.c-select[disabled], &.c-select > select[disabled][disabled], &.c-radio > input[disabled] + label:before {
 		@include disable-select;
 		cursor: default;
 		cursor: not-allowed;
@@ -347,7 +347,7 @@
 		color: $color-dark;
 	}
 
-	&.c-input, &.c-textarea, &.c-select, &.c-select > select, &.c-datepicker {
+	&.c-input, &.c-textarea, &.c-select, &.c-select > select {
 		color: $color-light;
 
 		&:focus {
@@ -355,7 +355,7 @@
 		}
 	}
 
-	&.c-input, &.c-textarea, &.c-select, &.c-datepicker {
+	&.c-input, &.c-textarea, &.c-select {
 		background-color: $color-dark;
 		border-color: transparent;
 
@@ -422,7 +422,7 @@
 	}
 
 
-	&.c-input[disabled], &.c-textarea[disabled], &.c-select[disabled], &.c-select > select[disabled], &.c-datepicker[disabled], &.c-radio > input[disabled] + label:before {
+	&.c-input[disabled], &.c-textarea[disabled], &.c-select[disabled], &.c-select > select[disabled][disabled], &.c-radio > input[disabled] + label:before {
 		cursor: default;
 		background-color: $color-dark;
 		opacity: .7;

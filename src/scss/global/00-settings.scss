@@ -1,7 +1,7 @@
 /*
 ---
 name: Sass structure
-category: Base
+category: 0. Base
 ---
 
 All `~/global/*.scss` for core styles and base of components:
@@ -22,15 +22,18 @@ Follows methodology of ITCSS and each "layer" consists of Sass partials. It is r
 /*
 ---
 name: Methodologies
-category: Base
+category: 0. Base
 ---
-
+* [OOCSS](https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986) - Object-oriented CSS
 * [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
 * [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
 * [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
 * [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
+* [Pipes and Stars in @class](https://csswizardry.com/2014/05/grouping-related-classes-in-your-markup/) - Grouping related classes in your markup using `||` to group similar classes together and `**` to identify "core" classes for a component
 * [Color Naming Convention](https://codepen.io/nicetransition/full/QjwbRg/) - Naming convention and organization of colors
+
+https://csswizardry.com/2017/05/writing-tidy-code/
 
 */
 
@@ -38,7 +41,7 @@ category: Base
 /*
 ---
 name: Style Guide Layers
-category: Base
+category: 0. Base
 ---
 
 TODO:

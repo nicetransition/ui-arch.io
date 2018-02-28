@@ -95,7 +95,7 @@ $browser-context: str-replace(to-string($rootFontSize), 'px', '');
 /*
 ---
 name: String to Number
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Casts a string into a number.
@@ -172,7 +172,7 @@ Usage:
 /*
 ---
 name: Pixel to REM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `rem` unit
@@ -207,7 +207,7 @@ Usage:
 /*
 ---
 name: Pixel to EM
-category: Tools > Functions
+category: 1. Tools > Functions
 ---
 
 Converts `px` unit to `em` unit
