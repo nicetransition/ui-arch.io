@@ -1,15 +1,15 @@
 name: UI-ARCH.io
 headHtml: |
   <link rel="stylesheet" href="scss/ui-arch.css" />
+sidebar:
+  background: "#000000"
+  textColor: "#FFFFFF"
+
 #logo: (optional) Relative filepath or absolute URL of your logo
 #assets: (optional) List of relative file/directory paths to copy and mirror in the generated style guide
 
 #excludeDir: (optional) Regex pattern (in double quotes) or list of directories to exclude; .git and node_modules are always excluded
 #match: (optional) Regex pattern or list of files to process; by default, common source files are included
-
-sidebar:
-  background: #000
-  textColor: #FFF
 
 #doctypeTag: (optional) For example iframes, the HTML doctype to use; defaults to "<!doctype html>"
 #headHtml: (optional) For example iframes, HTML to insert before the closing </head> tag
