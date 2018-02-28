@@ -7,9 +7,9 @@ headHtml: |
 #excludeDir: (optional) Regex pattern (in double quotes) or list of directories to exclude; .git and node_modules are always excluded
 #match: (optional) Regex pattern or list of files to process; by default, common source files are included
 
-#sidebar:
-#  background: (optional) Background color of the sidebar; hex colors should be quoted
-#  textColor: (optional) Text color of the sidebar; hex colors should be quoted
+sidebar:
+  background: #000
+  textColor: #FFF
 
 #doctypeTag: (optional) For example iframes, the HTML doctype to use; defaults to "<!doctype html>"
 #headHtml: (optional) For example iframes, HTML to insert before the closing </head> tag

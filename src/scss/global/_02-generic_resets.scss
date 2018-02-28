@@ -1,3 +1,38 @@
+
+/*
+---
+name: Resets
+category: 5. Generic
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+
 @if ($rootFontSize != "16px") {
 	:root {
 		font-size: $rootFontSize;
@@ -5,19 +40,153 @@
 }
 
 @if ($includeResets == true) {
+
+	/*
+	---
+	name: Resets > Box Sizing
+	category: 2. Generic
+	---
+	*/
+
+	// Input can be used with `<input>` elements and all its types.
+	// 
+	// Types of labels:
+	// - Default: No classes
+	// - Disabled: No classes
+	// - Base: `.c-input`
+	// - Theme 1: `.t-form-1`
+	// - Theme 2: `.t-form-2`
+	// 
+	// ```default.html
+	// 	<label>Label</label>
+	// ```
+	// 
+	// ```base.html
+	// 	<label class="** c-label **">Label</label>
+	// ```
+	// 
+	// ```t-form-1.html
+	// 	<input class="** c-label ** t-form-1">Label</label>
+	// ```
+	// 
+	// ```t-form-2.html
+	// 	<input class="** c-label ** t-form-2">Label</label>
+	// 
+	// ```
+
 	*, *:before, *:after {
 		box-sizing: border-box;
 	}
+
+
+	/*
+	---
+	name: Resets > Header Size
+	category: 2. Generic
+	---
+	*/
+
+	// Input can be used with `<input>` elements and all its types.
+	// 
+	// Types of labels:
+	// - Default: No classes
+	// - Disabled: No classes
+	// - Base: `.c-input`
+	// - Theme 1: `.t-form-1`
+	// - Theme 2: `.t-form-2`
+	// 
+	// ```default.html
+	// 	<label>Label</label>
+	// ```
+	// 
+	// ```base.html
+	// 	<label class="** c-label **">Label</label>
+	// ```
+	// 
+	// ```t-form-1.html
+	// 	<input class="** c-label ** t-form-1">Label</label>
+	// ```
+	// 
+	// ```t-form-2.html
+	// 	<input class="** c-label ** t-form-2">Label</label>
+	// 
+	// ```
 	
 
 	h1, h2, h3, h4, h5, h6 {
 		font-size: 1rem;
 	}
 
+	/*
+	---
+	name: Resets > Margins
+	category: 2. Generic
+	---
+	*/
+
+	// Input can be used with `<input>` elements and all its types.
+	// 
+	// Types of labels:
+	// - Default: No classes
+	// - Disabled: No classes
+	// - Base: `.c-input`
+	// - Theme 1: `.t-form-1`
+	// - Theme 2: `.t-form-2`
+	// 
+	// ```default.html
+	// 	<label>Label</label>
+	// ```
+	// 
+	// ```base.html
+	// 	<label class="** c-label **">Label</label>
+	// ```
+	// 
+	// ```t-form-1.html
+	// 	<input class="** c-label ** t-form-1">Label</label>
+	// ```
+	// 
+	// ```t-form-2.html
+	// 	<input class="** c-label ** t-form-2">Label</label>
+	// 
+	// ```
+
 	body, h1, h2, h3, h4, h5, h6, ol, ul, dl, p {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
+
+	/*
+	---
+	name: Resets > Body
+	category: 2. Generic
+	---
+	*/
+
+	// Input can be used with `<input>` elements and all its types.
+	// 
+	// Types of labels:
+	// - Default: No classes
+	// - Disabled: No classes
+	// - Base: `.c-input`
+	// - Theme 1: `.t-form-1`
+	// - Theme 2: `.t-form-2`
+	// 
+	// ```default.html
+	// 	<label>Label</label>
+	// ```
+	// 
+	// ```base.html
+	// 	<label class="** c-label **">Label</label>
+	// ```
+	// 
+	// ```t-form-1.html
+	// 	<input class="** c-label ** t-form-1">Label</label>
+	// ```
+	// 
+	// ```t-form-2.html
+	// 	<input class="** c-label ** t-form-2">Label</label>
+	// 
+	// ```
 
 	body {
 		line-height: (22/16);
@@ -30,6 +199,39 @@
 			color: $color-base;
 		}
 	}
+
+	/*
+	---
+	name: Resets > Anchors
+	category: 2. Generic
+	---
+	*/
+
+	// Input can be used with `<input>` elements and all its types.
+	// 
+	// Types of labels:
+	// - Default: No classes
+	// - Disabled: No classes
+	// - Base: `.c-input`
+	// - Theme 1: `.t-form-1`
+	// - Theme 2: `.t-form-2`
+	// 
+	// ```default.html
+	// 	<label>Label</label>
+	// ```
+	// 
+	// ```base.html
+	// 	<label class="** c-label **">Label</label>
+	// ```
+	// 
+	// ```t-form-1.html
+	// 	<input class="** c-label ** t-form-1">Label</label>
+	// ```
+	// 
+	// ```t-form-2.html
+	// 	<input class="** c-label ** t-form-2">Label</label>
+	// 
+	// ```
 
 	a {
 		word-wrap: break-word;
@@ -51,6 +253,39 @@
 	img {
 		border: 0;
 	}
+
+	/*
+	---
+	name: Resets > Forms
+	category: 2. Generic
+	---
+	*/
+
+	// Input can be used with `<input>` elements and all its types.
+	// 
+	// Types of labels:
+	// - Default: No classes
+	// - Disabled: No classes
+	// - Base: `.c-input`
+	// - Theme 1: `.t-form-1`
+	// - Theme 2: `.t-form-2`
+	// 
+	// ```default.html
+	// 	<label>Label</label>
+	// ```
+	// 
+	// ```base.html
+	// 	<label class="** c-label **">Label</label>
+	// ```
+	// 
+	// ```t-form-1.html
+	// 	<input class="** c-label ** t-form-1">Label</label>
+	// ```
+	// 
+	// ```t-form-2.html
+	// 	<input class="** c-label ** t-form-2">Label</label>
+	// 
+	// ```
 
 	legend, fieldset {
 		display: block;

@@ -50,7 +50,7 @@ TODO:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -132,7 +132,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -188,7 +188,7 @@ TODO:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -270,7 +270,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -334,7 +334,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -417,7 +417,7 @@ Usage:
 /*
 ---
 name: Disable Select
-category: Mixin
+category: 1. Tools > Mixin
 ---
 
 Removal of selecting an element on the page. 
@@ -484,7 +484,7 @@ TODO:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -566,7 +566,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -622,7 +622,7 @@ TODO:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -704,7 +704,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -768,7 +768,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -850,7 +850,7 @@ Usage:
 /*
 ---
 name: Disable Select
-category: Mixin
+category: 1. Tools > Mixin
 ---
 
 Removal of selecting an element on the page. 
@@ -867,12 +867,24 @@ Usage:
 ```
 
 */
+/*
+---
+name: Selection
+category: 2. Generic
+---
+*/
 ::-moz-selection {
   background: rgba(157, 141, 116, 0.5); }
 
 ::selection {
   background: rgba(157, 141, 116, 0.5); }
 
+/*
+---
+name: Resets
+category: 5. Generic
+---
+*/
 :root {
   font-size: 16px; }
 
@@ -926,7 +938,7 @@ TODO:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -1008,7 +1020,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -1064,7 +1076,7 @@ TODO:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -1146,7 +1158,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -1210,7 +1222,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -1292,7 +1304,7 @@ Usage:
 /*
 ---
 name: Disable Select
-category: Mixin
+category: 1. Tools > Mixin
 ---
 
 Removal of selecting an element on the page. 
@@ -1309,11 +1321,21 @@ Usage:
 ```
 
 */
-body {
-  font-family: "Arial", sans-serif;
-  font-size: "Arial", sans-serif;
-  line-height: 1.375; }
+/*
+---
+name: Base
+category: 3. Elements
+---
 
+Limit use of type selectors for styling for this framework.
+
+*/
+/*
+---
+name: Spacing > Paragraphs
+category: 3. Elements
+---
+*/
 p + p {
   padding-top: 0.625rem; }
 
@@ -1367,7 +1389,7 @@ TODO:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -1449,7 +1471,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -1505,7 +1527,7 @@ TODO:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -1587,7 +1609,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -1651,7 +1673,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -1733,7 +1755,7 @@ Usage:
 /*
 ---
 name: Disable Select
-category: Mixin
+category: 1. Tools > Mixin
 ---
 
 Removal of selecting an element on the page. 
@@ -1749,6 +1771,12 @@ Usage:
 }
 ```
 
+*/
+/*
+---
+name: Spacing > Sections
+category: 3. Objects
+---
 */
 .o-sections__section + .o-sections__section {
   margin-top: 0.625rem; }
@@ -1809,6 +1837,12 @@ Usage:
     .o-sections\@small-2-4-alt__section + .o-sections\@small-2-4-alt__section {
       padding-left: 0.625rem; } }
 
+/*
+---
+name: Containers
+category: 3. Objects
+---
+*/
 .o-container-global {
   overflow: hidden; }
 
@@ -1863,6 +1897,12 @@ Usage:
   margin-right: auto;
   margin-left: auto; }
 
+/*
+---
+name: Container > Content
+category: 3. Objects
+---
+*/
 .o-container-content {
   max-width: 53.75rem;
   margin-right: auto;
@@ -1881,6 +1921,12 @@ Usage:
   .o-container-content {
     padding-left: 0.625rem; } }
 
+/*
+---
+name: Media Object
+category: 3. Objects
+---
+*/
 .o-media:after {
   clear: both;
   display: table;
@@ -1908,6 +1954,12 @@ Usage:
   .o-media\@small__main {
     overflow: hidden; } }
 
+/*
+---
+name: Flag Object
+category: 3. Objects
+---
+*/
 .o-flag {
   display: table; }
   .o-flag__item {
@@ -1929,6 +1981,12 @@ Usage:
       .o-flag\@small--full {
         width: 100%; } }
 
+/*
+---
+name: Grid
+category: 3. Objects
+---
+*/
 .o-grid:after, .o-grid__row:after {
   clear: both;
   display: table;
@@ -1959,6 +2017,18 @@ Usage:
   .o-grid\@small__cell-alt {
     float: right; } }
 
+/*
+---
+name: Flex
+category: 3. Objects
+---
+*/
+/*
+---
+name: Flex > Wrap
+category: 3. Objects
+---
+*/
 .o-flex, .o-flex-column, .o-flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2508,6 +2578,12 @@ Usage:
             -ms-flex: 1;
                 flex: 1; } }
 
+/*
+---
+name: Flex > Direction
+category: 3. Objects
+---
+*/
 .o-flex-row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -2708,6 +2784,12 @@ Usage:
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; } }
 
+/*
+---
+name: Flex > Justify Content
+category: 3. Objects
+---
+*/
 .o-flex-justify-content-start {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -2948,6 +3030,12 @@ Usage:
       -ms-flex-pack: distribute;
           justify-content: space-around; } }
 
+/*
+---
+name: Flex > Align Items
+category: 3. Objects
+---
+*/
 .o-flex-align-items-start {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -3198,6 +3286,12 @@ Usage:
           -ms-flex-align: stretch;
               align-items: stretch; } }
 
+/*
+---
+name: Flex > Align Content
+category: 3. Objects
+---
+*/
 .o-flex-align-content-start {
   -ms-flex-line-pack: start;
       align-content: flex-start; }
@@ -3438,6 +3532,12 @@ Usage:
       -ms-flex-line-pack: stretch;
           align-content: stretch; } }
 
+/*
+---
+name: Flex > Order
+category: 3. Objects
+---
+*/
 .o-flex__order-0 {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
@@ -6368,6 +6468,12 @@ Usage:
         -ms-flex: 12;
             flex: 12; } }
 
+/*
+---
+name: Flex > Align Self
+category: 3. Objects
+---
+*/
 .o-flex__align-self-start {
   -ms-flex-item-align: start;
       align-self: flex-start; }
@@ -6574,6 +6680,12 @@ Usage:
 .o-list {
   padding-left: 0; }
 
+/*
+---
+name: Table
+category: 3. Objects
+---
+*/
 .o-tabular {
   display: table; }
   .o-tabular__header {
@@ -6633,6 +6745,12 @@ Usage:
 
 /*
 ---
+name: Content Columns
+category: 3. Objects
+---
+*/
+/*
+---
 name: Sass structure
 category: 0. Base
 ---
@@ -6681,7 +6799,7 @@ TODO:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -6763,7 +6881,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -6819,7 +6937,7 @@ TODO:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -6901,7 +7019,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -6965,7 +7083,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -7047,7 +7165,7 @@ Usage:
 /*
 ---
 name: Disable Select
-category: Mixin
+category: 1. Tools > Mixin
 ---
 
 Removal of selecting an element on the page. 
@@ -7493,35 +7611,6 @@ span.c-intrinsic, span.c-intrinsic__element, a.c-intrinsic, a.c-intrinsic__eleme
   span\@small.c-intrinsic, span\@small.c-intrinsic__element, a\@small.c-intrinsic, a\@small.c-intrinsic__element {
     display: block; } }
 
-.c-button--animate, .c-button--base {
-  -webkit-transition-property: background-color color;
-  -o-transition-property: background-color color;
-  transition-property: background-color color;
-  will-change: background-color color;
-  -webkit-transition-duration: 200ms;
-       -o-transition-duration: 200ms;
-          transition-duration: 200ms;
-  -webkit-transition-timing-function: ease-out;
-       -o-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
-  -webkit-transition-delay: 0;
-       -o-transition-delay: 0;
-          transition-delay: 0; }
-  .c-button--animate:hover, .c-button--base:hover, .c-button--animate:focus, .c-button--base:focus {
-    -webkit-transition-timing-function: ease-in;
-         -o-transition-timing-function: ease-in;
-            transition-timing-function: ease-in;
-    -webkit-transition-duration: 100ms;
-         -o-transition-duration: 100ms;
-            transition-duration: 100ms; }
-  .c-button--animate:active, .c-button--base:active, .c-button--animate:active:hover, .c-button--base:active:hover, .c-button--animate:active:focus, .c-button--base:active:focus {
-    -webkit-transition-timing-function: ease-in-out;
-         -o-transition-timing-function: ease-in-out;
-            transition-timing-function: ease-in-out;
-    -webkit-transition-duration: 5ms;
-         -o-transition-duration: 5ms;
-            transition-duration: 5ms; }
-
 .c-button[disabled], .c-button[disabled]:hover, .c-button[disabled]:focus, .c-button[disabled]:active, .c-button.-disabled {
   background-color: #CCC !important;
   border-color: #CCC;
@@ -7537,7 +7626,7 @@ span.c-intrinsic, span.c-intrinsic__element, a.c-intrinsic, a.c-intrinsic__eleme
 /*
 ---
 name: Button
-category: Call to Actions
+category: 5. Component > Call to Actions
 ---
 
 Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
@@ -7548,6 +7637,30 @@ Types of buttons:
 ```types.html
 <button class="c-button c-button--default c-button--base c-button--primary">Primary</button>
 ```
+*/
+/*
+---
+name: Button > Primary
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Button > Secondary
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Button > Dark
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Button > Light
+category: 5. Component > Call to Actions
+---
 */
 .c-button {
   border-radius: 0; }
@@ -7646,14 +7759,6 @@ Types of buttons:
   .c-button--reset {
     border: 0; }
 
-[style*="color:#FFF"]:not([style*="background-color"]) .c-button--inherit:hover, [style*="color: #FFF"]:not([style*="background-color"]) .c-button--inherit:hover {
-  background-color: #FFF; }
-  [style*="color:#FFF"]:not([style*="background-color"]) .c-button--inherit:hover > span, [style*="color: #FFF"]:not([style*="background-color"]) .c-button--inherit:hover > span {
-    color: currentColor; }
-
-a.c-button--inherit-reverse {
-  color: inherit; }
-
 a.c-button {
   text-decoration: none; }
 
@@ -7664,6 +7769,36 @@ a.c-button {
 .c-anchor--cta > span, .c-anchor--cta-alt > span {
   text-decoration: underline; }
 
+/*
+---
+name: Anchor
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Primary
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Secondary
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Dark
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Light
+category: 5. Component > Call to Actions
+---
+*/
 .c-anchor {
   text-decoration: none; }
   .c-anchor--cta, .c-anchor--cta-alt {
@@ -7837,6 +7972,12 @@ a.c-button {
     min-height: 1.875rem;
     line-height: 1.875rem; }
 
+/*
+---
+name: Button > Icon
+category: 5. Component > Call to Actions
+---
+*/
 .c-icon-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7878,7 +8019,7 @@ a.c-button {
 /*
 ---
 name: Label
-category: Form
+category: 5. Component > Form
 ---
 
 Label can be used with `<label>` elements.
@@ -7912,19 +8053,19 @@ Types of labels:
 /*
 ---
 name: Input
-category: Form
+category: 5. Component > Form
 ---
 */
 /*
 ---
 name: Textarea
-category: Form
+category: 5. Component > Form
 ---
 */
 /*
 ---
 name: Select
-category: Form
+category: 5. Component > Form
 ---
 */
 .c-input, .c-textarea, .c-select {
@@ -8020,7 +8161,7 @@ category: Form
 /*
 ---
 name: Radio > Toggle Field
-category: Form
+category: 5. Component > Form
 ---
 
 
@@ -8065,7 +8206,7 @@ Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is 
 /*
 ---
 name: Radio
-category: Form
+category: 5. Component > Form
 ---
 */
 .c-radio__text:before, .c-radio__text:after {
@@ -8081,7 +8222,7 @@ category: Form
 /*
 ---
 name: Checkbox
-category: Form
+category: 5. Component > Form
 ---
 */
 .c-checkbox__text:after {
@@ -8099,7 +8240,7 @@ category: Form
 /*
 ---
 name: Fieldset
-category: Form
+category: 5. Component > Form
 ---
 
 
@@ -8114,7 +8255,7 @@ Reset for `<fieldset>` to reduce `margin`s on side and it's `padding`.
 /*
 ---
 name: Form Base
-category: Form
+category: 5. Component > Form
 ---
 */
 .c-form-item__label {
@@ -8125,69 +8266,19 @@ category: Form
 .c-form-item__field {
   z-index: 0; }
 
-.field-validation-valid {
-  speak: none;
-  display: none; }
-
-.field-validation-valid, .field-validation-error, .c-label__required {
-  font-size: 0.719rem; }
-
-.field-validation-error, .c-label__required {
-  color: #0CA0DA; }
-
-.field-validation-error ~ label.c-label {
-  color: #0CA0DA; }
-
-.field-validation-error ~ input.c-input,
-.field-validation-error ~ input.c-input:focus,
-.field-validation-error ~ textarea.c-textarea,
-.field-validation-error ~ textarea.c-textarea:focus {
-  border-bottom-color: #0CA0DA; }
-
-.field-validation-error ~ select.c-select__input + .c-select--highlight,
-.field-validation-error ~ select.c-select__input:focus + .c-select--highlight {
-  background-color: #0CA0DA; }
-
-.field-validation-error ~ input.c-field-toggle__input + .c-field-toggle__text:before,
-.field-validation-error ~ input.c-field-toggle__input:focus + .c-field-toggle__text:before {
-  border-color: #0CA0DA; }
-
+/*
+---
+name: Label > Required
+category: 5. Component > Form
+---
+*/
 .c-label__required {
   vertical-align: top; }
-
-.c-form-tip {
-  position: relative; }
-  .c-form-tip__label {
-    padding-left: 1.25rem; }
-  .c-form-tip__tip {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 1.25rem;
-    text-align: left; }
-
-.c-form-block__row .o-flex\@large--grid {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-
-.validation-summary-errors {
-  background-color: #FFF;
-  border: 1px solid;
-  color: #193E6C;
-  padding: 0.625rem;
-  margin-bottom: 1.875rem; }
-  .validation-summary-errors > ul {
-    list-style: none;
-    padding-left: 0; }
-    .validation-summary-errors > ul > li + li {
-      margin-top: 0.625rem; }
 
 /*
 ---
 name: Input > Placeholder Styles
-category: Form
+category: 5. Component > Form
 ---
 
 `@mixin placeholder-styles-large` contains styles for inputs `@placeholder` attribute
@@ -8218,8 +8309,8 @@ Types of placeholders:
 */
 /*
 ---
-name: Search Input
-category: Form
+name: Input > Search
+category: 5. Component > Form
 ---
 
 */
@@ -8706,7 +8797,7 @@ TODO:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -8788,7 +8879,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -8844,7 +8935,7 @@ TODO:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -8926,7 +9017,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -8990,7 +9081,7 @@ Usage:
 /*
 ---
 name: Font Sizes
-category: Typography
+category: 5. Component > Typography
 ---
 
 Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
@@ -9072,7 +9163,7 @@ Usage:
 /*
 ---
 name: Disable Select
-category: Mixin
+category: 1. Tools > Mixin
 ---
 
 Removal of selecting an element on the page. 
@@ -9165,7 +9256,7 @@ Usage:
 /*
 ---
 name: Padding
-category: Spacing Units
+category: 6. Trumps > Spacing Units
 ---
 
 Default spacing unit is defined `$default-space` in `~/global/00-settings.scss`

@@ -6,12 +6,39 @@
 
 // ELEMENTS: Unclassed HTML elements (Type selectors)
 
-body {
-	font-family: $primary-font;
-	font-size: $primary-font;;
-	
-	line-height: (22/16);
-}
+/*
+---
+name: Base
+category: 3. Elements
+---
 
+Limit use of type selectors for styling for this framework.
 
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
 @import "03-elements_unit-resets";

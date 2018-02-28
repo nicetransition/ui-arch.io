@@ -32,10 +32,48 @@
 									<option value="string-to-number">String to Number</option>
 									<option value="to-string">To String</option>
 							</optgroup>
-							<optgroup label="Call to Actions">
-									<option value="button">Button</option>
+							<optgroup label="1. Tools &gt; Mixin">
+									<option value="disable-select">Disable Select</option>
 							</optgroup>
-							<optgroup label="Form">
+							<optgroup label="2. Generic">
+									<option value="selection">Selection</option>
+							</optgroup>
+							<optgroup label="3. Elements">
+									<option value="base">Base</option>
+									<option value="spacing-paragraphs">Spacing > Paragraphs</option>
+							</optgroup>
+							<optgroup label="3. Objects">
+									<option value="container-content">Container > Content</option>
+									<option value="containers">Containers</option>
+									<option value="content-columns">Content Columns</option>
+									<option value="flag-object">Flag Object</option>
+									<option value="flex">Flex</option>
+									<option value="flex-align-content">Flex > Align Content</option>
+									<option value="flex-align-items">Flex > Align Items</option>
+									<option value="flex-align-self">Flex > Align Self</option>
+									<option value="flex-direction">Flex > Direction</option>
+									<option value="flex-justify-content">Flex > Justify Content</option>
+									<option value="flex-order">Flex > Order</option>
+									<option value="flex-wrap">Flex > Wrap</option>
+									<option value="grid">Grid</option>
+									<option value="media-object">Media Object</option>
+									<option value="spacing-sections">Spacing > Sections</option>
+									<option value="table">Table</option>
+							</optgroup>
+							<optgroup label="5. Component &gt; Call to Actions">
+									<option value="anchor">Anchor</option>
+									<option value="anchor-dark">Anchor > Dark</option>
+									<option value="anchor-light">Anchor > Light</option>
+									<option value="anchor-primary">Anchor > Primary</option>
+									<option value="anchor-secondary">Anchor > Secondary</option>
+									<option value="button">Button</option>
+									<option value="button-dark">Button > Dark</option>
+									<option value="button-icon">Button > Icon</option>
+									<option value="button-light">Button > Light</option>
+									<option value="button-primary">Button > Primary</option>
+									<option value="button-secondary">Button > Secondary</option>
+							</optgroup>
+							<optgroup label="5. Component &gt; Form">
 									<option value="checkbox">Checkbox</option>
 									<option value="fieldset">Fieldset</option>
 									<option value="form-base">Form Base</option>
@@ -49,14 +87,14 @@
 									<option value="select">Select</option>
 									<option value="textarea">Textarea</option>
 							</optgroup>
-							<optgroup label="Mixin">
-									<option value="disable-select">Disable Select</option>
-							</optgroup>
-							<optgroup label="Spacing Units">
-									<option value="padding">Padding</option>
-							</optgroup>
-							<optgroup label="Typography">
+							<optgroup label="5. Component &gt; Typography">
 									<option value="font-sizes">Font Sizes</option>
+							</optgroup>
+							<optgroup label="5. Generic">
+									<option value="resets">Resets</option>
+							</optgroup>
+							<optgroup label="6. Trumps &gt; Spacing Units">
+									<option value="padding">Padding</option>
 							</optgroup>
 					</select>
 				</form>
@@ -234,7 +272,158 @@
 </div>
 
 				</div>
-				<div id="category-call to actions">
+				<div id="category-1. tools &gt; mixin">
+						<div id="disable-select" class="i-library">
+	<h1 class="display-4">Disable Select</h1>
+	<div><p>Removal of selecting an element on the page. </p>
+<ul>
+<li><code>.u-disable-select</code> - Utility helper</li>
+<li><code>a</code>, <code>button</code>, <code>label</code>, <code>legend</code> - Default have disable select added if <code>$includeResets</code> is <code>true</code> (<code>~/global/00-settings.scss</code>)</li>
+</ul>
+<p>Usage:</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".select-name {
+    @include disable-select;
+}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">.select-name {
+    @include disable-select;
+}</code></pre>
+	</div>
+</div></div>
+</div>
+
+				</div>
+				<div id="category-2. generic">
+						<div id="selection" class="i-library">
+	<h1 class="display-4">Selection</h1>
+	<div></div>
+</div>
+
+				</div>
+				<div id="category-3. elements">
+						<div id="base" class="i-library">
+	<h1 class="display-4">Base</h1>
+	<div><p>Limit use of type selectors for styling for this framework.</p>
+</div>
+</div>
+
+						<div id="spacing-paragraphs" class="i-library">
+	<h1 class="display-4">Spacing &gt; Paragraphs</h1>
+	<div></div>
+</div>
+
+				</div>
+				<div id="category-3. objects">
+						<div id="container-content" class="i-library">
+	<h1 class="display-4">Container &gt; Content</h1>
+	<div></div>
+</div>
+
+						<div id="containers" class="i-library">
+	<h1 class="display-4">Containers</h1>
+	<div></div>
+</div>
+
+						<div id="content-columns" class="i-library">
+	<h1 class="display-4">Content Columns</h1>
+	<div></div>
+</div>
+
+						<div id="flag-object" class="i-library">
+	<h1 class="display-4">Flag Object</h1>
+	<div></div>
+</div>
+
+						<div id="flex" class="i-library">
+	<h1 class="display-4">Flex</h1>
+	<div></div>
+</div>
+
+						<div id="flex-align-content" class="i-library">
+	<h1 class="display-4">Flex &gt; Align Content</h1>
+	<div></div>
+</div>
+
+						<div id="flex-align-items" class="i-library">
+	<h1 class="display-4">Flex &gt; Align Items</h1>
+	<div></div>
+</div>
+
+						<div id="flex-align-self" class="i-library">
+	<h1 class="display-4">Flex &gt; Align Self</h1>
+	<div></div>
+</div>
+
+						<div id="flex-direction" class="i-library">
+	<h1 class="display-4">Flex &gt; Direction</h1>
+	<div></div>
+</div>
+
+						<div id="flex-justify-content" class="i-library">
+	<h1 class="display-4">Flex &gt; Justify Content</h1>
+	<div></div>
+</div>
+
+						<div id="flex-order" class="i-library">
+	<h1 class="display-4">Flex &gt; Order</h1>
+	<div></div>
+</div>
+
+						<div id="flex-wrap" class="i-library">
+	<h1 class="display-4">Flex &gt; Wrap</h1>
+	<div></div>
+</div>
+
+						<div id="grid" class="i-library">
+	<h1 class="display-4">Grid</h1>
+	<div></div>
+</div>
+
+						<div id="media-object" class="i-library">
+	<h1 class="display-4">Media Object</h1>
+	<div></div>
+</div>
+
+						<div id="spacing-sections" class="i-library">
+	<h1 class="display-4">Spacing &gt; Sections</h1>
+	<div></div>
+</div>
+
+						<div id="table" class="i-library">
+	<h1 class="display-4">Table</h1>
+	<div></div>
+</div>
+
+				</div>
+				<div id="category-5. component &gt; call to actions">
+						<div id="anchor" class="i-library">
+	<h1 class="display-4">Anchor</h1>
+	<div></div>
+</div>
+
+						<div id="anchor-dark" class="i-library">
+	<h1 class="display-4">Anchor &gt; Dark</h1>
+	<div></div>
+</div>
+
+						<div id="anchor-light" class="i-library">
+	<h1 class="display-4">Anchor &gt; Light</h1>
+	<div></div>
+</div>
+
+						<div id="anchor-primary" class="i-library">
+	<h1 class="display-4">Anchor &gt; Primary</h1>
+	<div></div>
+</div>
+
+						<div id="anchor-secondary" class="i-library">
+	<h1 class="display-4">Anchor &gt; Secondary</h1>
+	<div></div>
+</div>
+
 						<div id="button" class="i-library">
 	<h1 class="display-4">Button</h1>
 	<div><p>Buttons can be used with <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input&gt;</code> elements.</p>
@@ -274,8 +463,33 @@
 </div></div>
 </div>
 
+						<div id="button-dark" class="i-library">
+	<h1 class="display-4">Button &gt; Dark</h1>
+	<div></div>
+</div>
+
+						<div id="button-icon" class="i-library">
+	<h1 class="display-4">Button &gt; Icon</h1>
+	<div></div>
+</div>
+
+						<div id="button-light" class="i-library">
+	<h1 class="display-4">Button &gt; Light</h1>
+	<div></div>
+</div>
+
+						<div id="button-primary" class="i-library">
+	<h1 class="display-4">Button &gt; Primary</h1>
+	<div></div>
+</div>
+
+						<div id="button-secondary" class="i-library">
+	<h1 class="display-4">Button &gt; Secondary</h1>
+	<div></div>
+</div>
+
 				</div>
-				<div id="category-form">
+				<div id="category-5. component &gt; form">
 						<div id="checkbox" class="i-library">
 	<h1 class="display-4">Checkbox</h1>
 	<div></div>
@@ -587,42 +801,25 @@
 </div>
 
 				</div>
-				<div id="category-mixin">
-						<div id="disable-select" class="i-library">
-	<h1 class="display-4">Disable Select</h1>
-	<div><p>Removal of selecting an element on the page. </p>
-<ul>
-<li><code>.u-disable-select</code> - Utility helper</li>
-<li><code>a</code>, <code>button</code>, <code>label</code>, <code>legend</code> - Default have disable select added if <code>$includeResets</code> is <code>true</code> (<code>~/global/00-settings.scss</code>)</li>
-</ul>
-<p>Usage:</p>
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang "> </button>
-	<div class="i-code-block__content ">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".select-name {
-    @include disable-select;
-}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">.select-name {
-    @include disable-select;
-}</code></pre>
-	</div>
-</div></div>
-</div>
-
-				</div>
-				<div id="category-spacing units">
-						<div id="padding" class="i-library">
-	<h1 class="display-4">Padding</h1>
-	<div><p>Default spacing unit is defined <code>$default-space</code> in <code>~/global/00-settings.scss</code></p>
-</div>
-</div>
-
-				</div>
-				<div id="category-typography">
+				<div id="category-5. component &gt; typography">
 						<div id="font-sizes" class="i-library">
 	<h1 class="display-4">Font Sizes</h1>
 	<div><p>Read <a href="https://codepen.io/nicetransition/pen/qbNbOE">Object-Oriented Typography</a> for additional details</p>
+</div>
+</div>
+
+				</div>
+				<div id="category-5. generic">
+						<div id="resets" class="i-library">
+	<h1 class="display-4">Resets</h1>
+	<div></div>
+</div>
+
+				</div>
+				<div id="category-6. trumps &gt; spacing units">
+						<div id="padding" class="i-library">
+	<h1 class="display-4">Padding</h1>
+	<div><p>Default spacing unit is defined <code>$default-space</code> in <code>~/global/00-settings.scss</code></p>
 </div>
 </div>
 
@@ -740,20 +937,290 @@
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Button "
+						data-filter-value=" Disable Select "
 					>
-						<a href="#category-call to actions" class="i-sidebar-list-item">
-							<b>Call to Actions</b>
+						<a href="#category-1. tools &gt; mixin" class="i-sidebar-list-item">
+							<b>1. Tools &gt; Mixin</b>
 						</a>
 					</h5>
 			
 					<div>
+							<a
+								href="#disable-select"
+								class="i-sidebar-list-item"
+								data-filter-value="Disable Select"
+							>
+								<span>Disable Select</span>
+							</a>
+					</div>
+			
+				</div>
+				<div class="i-sidebar-list-group">
+			
+					<h5
+						class="pt-4 mb-1"
+						data-filter-value=" Selection "
+					>
+						<a href="#category-2. generic" class="i-sidebar-list-item">
+							<b>2. Generic</b>
+						</a>
+					</h5>
+			
+					<div>
+							<a
+								href="#selection"
+								class="i-sidebar-list-item"
+								data-filter-value="Selection"
+							>
+								<span>Selection</span>
+							</a>
+					</div>
+			
+				</div>
+				<div class="i-sidebar-list-group">
+			
+					<h5
+						class="pt-4 mb-1"
+						data-filter-value=" Base  Spacing &gt; Paragraphs "
+					>
+						<a href="#category-3. elements" class="i-sidebar-list-item">
+							<b>3. Elements</b>
+						</a>
+					</h5>
+			
+					<div>
+							<a
+								href="#base"
+								class="i-sidebar-list-item"
+								data-filter-value="Base"
+							>
+								<span>Base</span>
+							</a>
+							<a
+								href="#spacing-paragraphs"
+								class="i-sidebar-list-item"
+								data-filter-value="Spacing &gt; Paragraphs"
+							>
+								<span>Spacing &gt; Paragraphs</span>
+							</a>
+					</div>
+			
+				</div>
+				<div class="i-sidebar-list-group">
+			
+					<h5
+						class="pt-4 mb-1"
+						data-filter-value=" Container &gt; Content  Containers  Content Columns  Flag Object  Flex  Flex &gt; Align Content  Flex &gt; Align Items  Flex &gt; Align Self  Flex &gt; Direction  Flex &gt; Justify Content  Flex &gt; Order  Flex &gt; Wrap  Grid  Media Object  Spacing &gt; Sections  Table "
+					>
+						<a href="#category-3. objects" class="i-sidebar-list-item">
+							<b>3. Objects</b>
+						</a>
+					</h5>
+			
+					<div>
+							<a
+								href="#container-content"
+								class="i-sidebar-list-item"
+								data-filter-value="Container &gt; Content"
+							>
+								<span>Container &gt; Content</span>
+							</a>
+							<a
+								href="#containers"
+								class="i-sidebar-list-item"
+								data-filter-value="Containers"
+							>
+								<span>Containers</span>
+							</a>
+							<a
+								href="#content-columns"
+								class="i-sidebar-list-item"
+								data-filter-value="Content Columns"
+							>
+								<span>Content Columns</span>
+							</a>
+							<a
+								href="#flag-object"
+								class="i-sidebar-list-item"
+								data-filter-value="Flag Object"
+							>
+								<span>Flag Object</span>
+							</a>
+							<a
+								href="#flex"
+								class="i-sidebar-list-item"
+								data-filter-value="Flex"
+							>
+								<span>Flex</span>
+							</a>
+							<a
+								href="#flex-align-content"
+								class="i-sidebar-list-item"
+								data-filter-value="Flex &gt; Align Content"
+							>
+								<span>Flex &gt; Align Content</span>
+							</a>
+							<a
+								href="#flex-align-items"
+								class="i-sidebar-list-item"
+								data-filter-value="Flex &gt; Align Items"
+							>
+								<span>Flex &gt; Align Items</span>
+							</a>
+							<a
+								href="#flex-align-self"
+								class="i-sidebar-list-item"
+								data-filter-value="Flex &gt; Align Self"
+							>
+								<span>Flex &gt; Align Self</span>
+							</a>
+							<a
+								href="#flex-direction"
+								class="i-sidebar-list-item"
+								data-filter-value="Flex &gt; Direction"
+							>
+								<span>Flex &gt; Direction</span>
+							</a>
+							<a
+								href="#flex-justify-content"
+								class="i-sidebar-list-item"
+								data-filter-value="Flex &gt; Justify Content"
+							>
+								<span>Flex &gt; Justify Content</span>
+							</a>
+							<a
+								href="#flex-order"
+								class="i-sidebar-list-item"
+								data-filter-value="Flex &gt; Order"
+							>
+								<span>Flex &gt; Order</span>
+							</a>
+							<a
+								href="#flex-wrap"
+								class="i-sidebar-list-item"
+								data-filter-value="Flex &gt; Wrap"
+							>
+								<span>Flex &gt; Wrap</span>
+							</a>
+							<a
+								href="#grid"
+								class="i-sidebar-list-item"
+								data-filter-value="Grid"
+							>
+								<span>Grid</span>
+							</a>
+							<a
+								href="#media-object"
+								class="i-sidebar-list-item"
+								data-filter-value="Media Object"
+							>
+								<span>Media Object</span>
+							</a>
+							<a
+								href="#spacing-sections"
+								class="i-sidebar-list-item"
+								data-filter-value="Spacing &gt; Sections"
+							>
+								<span>Spacing &gt; Sections</span>
+							</a>
+							<a
+								href="#table"
+								class="i-sidebar-list-item"
+								data-filter-value="Table"
+							>
+								<span>Table</span>
+							</a>
+					</div>
+			
+				</div>
+				<div class="i-sidebar-list-group">
+			
+					<h5
+						class="pt-4 mb-1"
+						data-filter-value=" Anchor  Anchor &gt; Dark  Anchor &gt; Light  Anchor &gt; Primary  Anchor &gt; Secondary  Button  Button &gt; Dark  Button &gt; Icon  Button &gt; Light  Button &gt; Primary  Button &gt; Secondary "
+					>
+						<a href="#category-5. component &gt; call to actions" class="i-sidebar-list-item">
+							<b>5. Component &gt; Call to Actions</b>
+						</a>
+					</h5>
+			
+					<div>
+							<a
+								href="#anchor"
+								class="i-sidebar-list-item"
+								data-filter-value="Anchor"
+							>
+								<span>Anchor</span>
+							</a>
+							<a
+								href="#anchor-dark"
+								class="i-sidebar-list-item"
+								data-filter-value="Anchor &gt; Dark"
+							>
+								<span>Anchor &gt; Dark</span>
+							</a>
+							<a
+								href="#anchor-light"
+								class="i-sidebar-list-item"
+								data-filter-value="Anchor &gt; Light"
+							>
+								<span>Anchor &gt; Light</span>
+							</a>
+							<a
+								href="#anchor-primary"
+								class="i-sidebar-list-item"
+								data-filter-value="Anchor &gt; Primary"
+							>
+								<span>Anchor &gt; Primary</span>
+							</a>
+							<a
+								href="#anchor-secondary"
+								class="i-sidebar-list-item"
+								data-filter-value="Anchor &gt; Secondary"
+							>
+								<span>Anchor &gt; Secondary</span>
+							</a>
 							<a
 								href="#button"
 								class="i-sidebar-list-item"
 								data-filter-value="Button"
 							>
 								<span>Button</span>
+							</a>
+							<a
+								href="#button-dark"
+								class="i-sidebar-list-item"
+								data-filter-value="Button &gt; Dark"
+							>
+								<span>Button &gt; Dark</span>
+							</a>
+							<a
+								href="#button-icon"
+								class="i-sidebar-list-item"
+								data-filter-value="Button &gt; Icon"
+							>
+								<span>Button &gt; Icon</span>
+							</a>
+							<a
+								href="#button-light"
+								class="i-sidebar-list-item"
+								data-filter-value="Button &gt; Light"
+							>
+								<span>Button &gt; Light</span>
+							</a>
+							<a
+								href="#button-primary"
+								class="i-sidebar-list-item"
+								data-filter-value="Button &gt; Primary"
+							>
+								<span>Button &gt; Primary</span>
+							</a>
+							<a
+								href="#button-secondary"
+								class="i-sidebar-list-item"
+								data-filter-value="Button &gt; Secondary"
+							>
+								<span>Button &gt; Secondary</span>
 							</a>
 					</div>
 			
@@ -764,8 +1231,8 @@
 						class="pt-4 mb-1"
 						data-filter-value=" Checkbox  Fieldset  Form Base  Input  Input &gt; Placeholder Styles  Input &gt; Search  Label  Label &gt; Required  Radio  Radio &gt; Toggle Field  Select  Textarea "
 					>
-						<a href="#category-form" class="i-sidebar-list-item">
-							<b>Form</b>
+						<a href="#category-5. component &gt; form" class="i-sidebar-list-item">
+							<b>5. Component &gt; Form</b>
 						</a>
 					</h5>
 			
@@ -861,54 +1328,10 @@
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Disable Select "
-					>
-						<a href="#category-mixin" class="i-sidebar-list-item">
-							<b>Mixin</b>
-						</a>
-					</h5>
-			
-					<div>
-							<a
-								href="#disable-select"
-								class="i-sidebar-list-item"
-								data-filter-value="Disable Select"
-							>
-								<span>Disable Select</span>
-							</a>
-					</div>
-			
-				</div>
-				<div class="i-sidebar-list-group">
-			
-					<h5
-						class="pt-4 mb-1"
-						data-filter-value=" Padding "
-					>
-						<a href="#category-spacing units" class="i-sidebar-list-item">
-							<b>Spacing Units</b>
-						</a>
-					</h5>
-			
-					<div>
-							<a
-								href="#padding"
-								class="i-sidebar-list-item"
-								data-filter-value="Padding"
-							>
-								<span>Padding</span>
-							</a>
-					</div>
-			
-				</div>
-				<div class="i-sidebar-list-group">
-			
-					<h5
-						class="pt-4 mb-1"
 						data-filter-value=" Font Sizes "
 					>
-						<a href="#category-typography" class="i-sidebar-list-item">
-							<b>Typography</b>
+						<a href="#category-5. component &gt; typography" class="i-sidebar-list-item">
+							<b>5. Component &gt; Typography</b>
 						</a>
 					</h5>
 			
@@ -919,6 +1342,50 @@
 								data-filter-value="Font Sizes"
 							>
 								<span>Font Sizes</span>
+							</a>
+					</div>
+			
+				</div>
+				<div class="i-sidebar-list-group">
+			
+					<h5
+						class="pt-4 mb-1"
+						data-filter-value=" Resets "
+					>
+						<a href="#category-5. generic" class="i-sidebar-list-item">
+							<b>5. Generic</b>
+						</a>
+					</h5>
+			
+					<div>
+							<a
+								href="#resets"
+								class="i-sidebar-list-item"
+								data-filter-value="Resets"
+							>
+								<span>Resets</span>
+							</a>
+					</div>
+			
+				</div>
+				<div class="i-sidebar-list-group">
+			
+					<h5
+						class="pt-4 mb-1"
+						data-filter-value=" Padding "
+					>
+						<a href="#category-6. trumps &gt; spacing units" class="i-sidebar-list-item">
+							<b>6. Trumps &gt; Spacing Units</b>
+						</a>
+					</h5>
+			
+					<div>
+							<a
+								href="#padding"
+								class="i-sidebar-list-item"
+								data-filter-value="Padding"
+							>
+								<span>Padding</span>
 							</a>
 					</div>
 			

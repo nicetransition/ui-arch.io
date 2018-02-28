@@ -1,27 +1,5 @@
 // COMPONENTS: Designed components
 
-@mixin button-animate {
-	transition-property: background-color color;
-	will-change: background-color color;
-	transition-duration: 200ms;
-	transition-timing-function: ease-out;
-	transition-delay: 0;
-
-	&:hover, &:focus  {
-		transition-timing-function: ease-in;
-		transition-duration: 100ms;
-	}
-
-	&:active, &:active:hover, &:active:focus {
-		transition-timing-function: ease-in-out;
-		transition-duration: 5ms;
-	}
-}
-
-
-%button-animate {
-	@include button-animate;
-}
 
 %button-disabled-state {
 	background-color: $color-dark-light !important;
@@ -30,7 +8,6 @@
 	cursor: default;
 }
 
-
 %button-base {
 	font-family: $primary-font;
 	cursor: pointer;
@@ -38,65 +15,11 @@
 	text-decoration: none;
 }
 
-.c-cta {
-	// @extend %button-base;
-	// border-radius: 0;
-	// line-height: 1;
-	// font-size: 1rem;
-
-	// &--button {
-	// 	@extend %button-cta;
-	// 	background-color: $color-light;
-	// 	font-size: 1.250rem;
-	// 	outline: none;
-	// 	color: $color-primary;
-
-	// 	> span {
-	// 		padding-bottom: 0.125rem;
-	// 		line-height: 1.1;
-	// 	}
-
-	// 	&:hover, &:focus {
-	// 		background-color: $color-primary;
-	// 		color: #FFF;
-	// 	}
-	// }
-
-	// &--arrow, &-arrow {
-	// 	position: relative;
-	// 	padding-right: 1.875rem;
-
-	// 	&:after {
-	// 		@include glyph;
-
-	// 		//@inclide units($property: "padding", $variation: (right: true));
-	// 		content: ">";
-	// 		display: inline-block;
-	// 		position: absolute;
-	// 		top: 50%;
-	// 		transform: translateY(-50%);
-	// 		width: 1.875rem;
-	// 		text-align: center;
-
-	// 		@media screen and (min-width: $units__default-breakpoint) {
-	// 			right: $default-space;
-	// 			padding-left: 1.875rem;
-	// 		}
-
-	// 		@media screen and (max-width: $units__default-breakpoint) {
-	// 			right: $default-space / 2;
-	// 			padding-left: 20px;
-	// 		}
-	// 	}
-	// }
-}
-
-
 
 /*
 ---
 name: Button
-category: Call to Actions
+category: 5. Component > Call to Actions
 ---
 
 Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
@@ -108,6 +31,139 @@ Types of buttons:
 <button class="c-button c-button--default c-button--base c-button--primary">Primary</button>
 ```
 */
+
+
+/*
+---
+name: Button > Primary
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+/*
+---
+name: Button > Secondary
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+/*
+---
+name: Button > Dark
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+/*
+---
+name: Button > Light
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
 
 .c-button {
 	@extend %button-base;
@@ -126,7 +182,7 @@ Types of buttons:
 	}
 
 	&--animate {
-		@extend %button-animate;
+		
 	}
 
 
@@ -134,7 +190,7 @@ Types of buttons:
 		@include disable-select;
 		@include title-setup;
 
-		@extend %button-animate;
+		
 		border: rem(1) solid;
 
 		// font-size: rem(18);
@@ -407,21 +463,6 @@ Types of buttons:
 }
 
 
-[style*="color:#FFF"]:not([style*="background-color"]), [style*="color: #FFF"]:not([style*="background-color"]) {
-	.c-button--inherit {
-		&:hover {
-			background-color: #FFF;
-
-			> span {
-				color: currentColor;
-			}
-		}
-	}
-}
-
-a.c-button--inherit-reverse {
-	color: inherit;
-}
 
 a.c-button {
 	text-decoration: none;
@@ -450,6 +491,174 @@ a.c-button {
 %anchor-text-decoration-reset {
 	text-decoration: underline;
 }
+
+/*
+---
+name: Anchor
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+
+/*
+---
+name: Anchor > Primary
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+
+/*
+---
+name: Anchor > Secondary
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+
+/*
+---
+name: Anchor > Dark
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+/*
+---
+name: Anchor > Light
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
 
 .c-anchor {
 	text-decoration: none;
@@ -629,6 +838,40 @@ a.c-button {
 a[class=""], a[class=" "], a:not([class]) {
 	@extend .c-anchor--primary;
 }
+
+
+/*
+---
+name: Button > Icon
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
 
 .c-icon-btn {
 	// display: inline-block;
