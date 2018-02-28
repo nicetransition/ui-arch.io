@@ -4,5 +4,4 @@ node_modules/*
 dist
 package-lock.json
 *.old
-
 todo.md
