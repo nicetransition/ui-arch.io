@@ -94,7 +94,10 @@
 									<option value="resets">Resets</option>
 							</optgroup>
 							<optgroup label="6. Trumps &gt; Spacing Units">
+									<option value="margin">Margin</option>
+									<option value="offsets">Offsets</option>
 									<option value="padding">Padding</option>
+									<option value="sections">Sections</option>
 							</optgroup>
 					</select>
 				</form>
@@ -817,10 +820,25 @@
 
 				</div>
 				<div id="category-6. trumps &gt; spacing units">
+						<div id="margin" class="i-library">
+	<h1 class="display-4">Margin</h1>
+	<div></div>
+</div>
+
+						<div id="offsets" class="i-library">
+	<h1 class="display-4">Offsets</h1>
+	<div></div>
+</div>
+
 						<div id="padding" class="i-library">
 	<h1 class="display-4">Padding</h1>
 	<div><p>Default spacing unit is defined <code>$default-space</code> in <code>~/global/00-settings.scss</code></p>
 </div>
+</div>
+
+						<div id="sections" class="i-library">
+	<h1 class="display-4">Sections</h1>
+	<div></div>
 </div>
 
 				</div>
@@ -1372,7 +1390,7 @@
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Padding "
+						data-filter-value=" Margin  Offsets  Padding  Sections "
 					>
 						<a href="#category-6. trumps &gt; spacing units" class="i-sidebar-list-item">
 							<b>6. Trumps &gt; Spacing Units</b>
@@ -1381,11 +1399,32 @@
 			
 					<div>
 							<a
+								href="#margin"
+								class="i-sidebar-list-item"
+								data-filter-value="Margin"
+							>
+								<span>Margin</span>
+							</a>
+							<a
+								href="#offsets"
+								class="i-sidebar-list-item"
+								data-filter-value="Offsets"
+							>
+								<span>Offsets</span>
+							</a>
+							<a
 								href="#padding"
 								class="i-sidebar-list-item"
 								data-filter-value="Padding"
 							>
 								<span>Padding</span>
+							</a>
+							<a
+								href="#sections"
+								class="i-sidebar-list-item"
+								data-filter-value="Sections"
+							>
+								<span>Sections</span>
 							</a>
 					</div>
 			
