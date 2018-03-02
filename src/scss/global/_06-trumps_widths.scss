@@ -1,12 +1,35 @@
-// NOTE: To improve performance, utilizing the .css output for this file (it only needs to run once)
-@import "06-trumps_widths.css";
+/*
+---
+name: Make Widths
+category: 6. Tools > Mixin
+---
+*/
 
-
-// // SETTINGS: Global variables, config switches
-// @import "00-settings";
-
-// // TOOLS: Default mixin and functions
-// @import "01-tools";
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
 
 // // Initialize mixin
-// @include makeWidths($make-to-100: false);
+@include makeWidths($make-to-100: false);
