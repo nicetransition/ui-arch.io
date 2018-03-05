@@ -102,6 +102,11 @@
 									<option value="padding">Padding</option>
 									<option value="sections">Sections</option>
 							</optgroup>
+							<optgroup label="Trumps &gt; Widths">
+									<option value="max-width-percent">Max Width > Percent</option>
+									<option value="min-width-percent">Min Width > Percent</option>
+									<option value="width-percent">Width > Percent</option>
+							</optgroup>
 					</select>
 				</form>
 			</div>
@@ -852,6 +857,410 @@
 </div>
 
 				</div>
+				<div id="category-trumps &gt; widths">
+						<div id="max-width-percent" class="i-library">
+	<h1 class="display-4">Max Width &gt; Percent</h1>
+	<div><p>Sets the maximum width for an element as a percent.</p>
+<p>Two selector variants:</p>
+<ul>
+<li><code>u-max-width-X-of-Y</code></li>
+<li><code>u-max-width-X/Y</code></li>
+</ul>
+<p>Suffixcate variants:</p>
+<ul>
+<li><code>u-max-width-X-of-Y@small</code></li>
+<li><code>u-max-width-X/Y@small</code></li>
+<li><code>u-max-width-X-of-Y@large</code></li>
+<li><code>u-max-width-X/Y@large</code></li>
+</ul>
+<p>Where &quot;X&quot; is a number between 1-12 and &quot;Y&quot; is a number 1-12. 12 is defined by <code>$max-num</code> from <code>makeWidths()</code> in <code>_06-trumps_widths.scss</code> and generated in <code>_01-tools_width-generator.scss</code>.</p>
+<p>Examples:</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="max-width-percent-u-max-width-X-of-Y.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="max-width-percent-u-max-width-X-of-Y.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;u-max-width-1-of-10&quot;&gt;
+    10%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-max-width-6-of-12&quot;&gt;
+    50%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-max-width-3-of-4&quot;&gt;
+    75%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-max-width-1-of-1&quot;&gt;
+    100%
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;u-max-width-1-of-10&quot;&gt;
+    10%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-max-width-6-of-12&quot;&gt;
+    50%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-max-width-3-of-4&quot;&gt;
+    75%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-max-width-1-of-1&quot;&gt;
+    100%
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="max-width-percent-u-min-width-XY.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="max-width-percent-u-min-width-XY.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;u-max-width-1/10&quot;&gt;
+    10%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-max-width-6/12&quot;&gt;
+    50%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-max-width-3/4&quot;&gt;
+    75%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-max-width-1/1&quot;&gt;
+    100%
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;u-max-width-1/10&quot;&gt;
+    10%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-max-width-6/12&quot;&gt;
+    50%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-max-width-3/4&quot;&gt;
+    75%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-max-width-1/1&quot;&gt;
+    100%
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="min-width-percent" class="i-library">
+	<h1 class="display-4">Min Width &gt; Percent</h1>
+	<div><p>Sets the minimum width for an element as a percent.</p>
+<p>Two selector variants:</p>
+<ul>
+<li><code>u-min-width-X-of-Y</code></li>
+<li><code>u-min-width-X/Y</code></li>
+</ul>
+<p>Suffixcate variants:</p>
+<ul>
+<li><code>u-min-width-X-of-Y@small</code></li>
+<li><code>u-min-width-X/Y@small</code></li>
+<li><code>u-min-width-X-of-Y@large</code></li>
+<li><code>u-min-width-X/Y@large</code></li>
+</ul>
+<p>Where &quot;X&quot; is a number between 1-12 and &quot;Y&quot; is a number 1-12. 12 is defined by <code>$max-num</code> from <code>makeWidths()</code> in <code>_06-trumps_widths.scss</code> and generated in <code>_01-tools_width-generator.scss</code>.</p>
+<p>Examples:</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="min-width-percent-u-min-width-X-of-Y.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="min-width-percent-u-min-width-X-of-Y.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;u-min-width-1-of-10&quot;&gt;
+    10%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-min-width-6-of-12&quot;&gt;
+    50%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-min-width-3-of-4&quot;&gt;
+    75%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-min-width-1-of-1&quot;&gt;
+    100%
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;u-min-width-1-of-10&quot;&gt;
+    10%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-min-width-6-of-12&quot;&gt;
+    50%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-min-width-3-of-4&quot;&gt;
+    75%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-min-width-1-of-1&quot;&gt;
+    100%
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="min-width-percent-u-min-width-XY.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="min-width-percent-u-min-width-XY.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;u-min-width-1/10&quot;&gt;
+    10%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-min-width-6/12&quot;&gt;
+    50%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-min-width-3/4&quot;&gt;
+    75%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-min-width-1/1&quot;&gt;
+    100%
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;u-min-width-1/10&quot;&gt;
+    10%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-min-width-6/12&quot;&gt;
+    50%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-min-width-3/4&quot;&gt;
+    75%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-min-width-1/1&quot;&gt;
+    100%
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="width-percent" class="i-library">
+	<h1 class="display-4">Width &gt; Percent</h1>
+	<div><p>Sets the  width for an element as a percent.</p>
+<p>Two selector variants:</p>
+<ul>
+<li><code>u-max-width-X-of-Y</code></li>
+<li><code>u-max-width-X/Y</code></li>
+</ul>
+<p>Suffixcate variants:</p>
+<ul>
+<li><code>u-max-width-X-of-Y@small</code></li>
+<li><code>u-max-width-X/Y@small</code></li>
+<li><code>u-max-width-X-of-Y@large</code></li>
+<li><code>u-max-width-X/Y@large</code></li>
+</ul>
+<p>Where &quot;X&quot; is a number between 1-12 and &quot;Y&quot; is a number 1-12. 12 is defined by <code>$max-num</code> from <code>makeWidths()</code> in <code>_06-trumps_widths.scss</code> and generated in <code>_01-tools_width-generator.scss</code>.</p>
+<p>Examples:</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="width-percent-u-max-width-X-of-Y.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="width-percent-u-max-width-X-of-Y.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;u-width-1-of-10&quot;&gt;
+    10%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-width-6-of-12&quot;&gt;
+    50%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-width-3-of-4&quot;&gt;
+    75%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-width-1-of-1&quot;&gt;
+    100%
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;u-width-1-of-10&quot;&gt;
+    10%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-width-6-of-12&quot;&gt;
+    50%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-width-3-of-4&quot;&gt;
+    75%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-width-1-of-1&quot;&gt;
+    100%
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="width-percent-u-min-width-XY.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="width-percent-u-min-width-XY.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;u-width-1/10&quot;&gt;
+    10%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-width-6/12&quot;&gt;
+    50%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-width-3/4&quot;&gt;
+    75%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-width-1/1&quot;&gt;
+    100%
+&lt;/div&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;u-width-1/10&quot;&gt;
+    10%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-width-6/12&quot;&gt;
+    50%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-width-3/4&quot;&gt;
+    75%
+&lt;/div&gt;
+
+&lt;div class=&quot;u-width-1/1&quot;&gt;
+    100%
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+				</div>
 		</div>
 		<div
 			class="i-page__sidebar"
@@ -1457,6 +1866,42 @@
 								data-filter-value="Sections"
 							>
 								<span>Sections</span>
+							</a>
+					</div>
+			
+				</div>
+				<div class="i-sidebar-list-group">
+			
+					<h5
+						class="pt-4 mb-1"
+						data-filter-value=" Max Width &gt; Percent  Min Width &gt; Percent  Width &gt; Percent "
+					>
+						<a href="#category-trumps &gt; widths" class="i-sidebar-list-item">
+							<b>Trumps &gt; Widths</b>
+						</a>
+					</h5>
+			
+					<div>
+							<a
+								href="#max-width-percent"
+								class="i-sidebar-list-item"
+								data-filter-value="Max Width &gt; Percent"
+							>
+								<span>Max Width &gt; Percent</span>
+							</a>
+							<a
+								href="#min-width-percent"
+								class="i-sidebar-list-item"
+								data-filter-value="Min Width &gt; Percent"
+							>
+								<span>Min Width &gt; Percent</span>
+							</a>
+							<a
+								href="#width-percent"
+								class="i-sidebar-list-item"
+								data-filter-value="Width &gt; Percent"
+							>
+								<span>Width &gt; Percent</span>
 							</a>
 					</div>
 			

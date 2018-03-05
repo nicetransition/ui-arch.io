@@ -32,4 +32,201 @@ category: 6. Tools > Mixin
 // ```
 
 // // Initialize mixin
-@include makeWidths($make-to-100: false);
+@include makeWidths($max-num: 12, $make-to-100: false);
+
+
+/*
+---
+name: Min Width > Percent
+category: Trumps > Widths
+---
+
+Sets the minimum width for an element as a percent.
+
+Two selector variants:
+- `u-min-width-X-of-Y`
+- `u-min-width-X/Y`
+
+Suffixcate variants:
+- `u-min-width-X-of-Y@small`
+- `u-min-width-X/Y@small`
+- `u-min-width-X-of-Y@large`
+- `u-min-width-X/Y@large`
+
+Where "X" is a number between 1-12 and "Y" is a number 1-12. 12 is defined by `$max-num` from `makeWidths()` in `_06-trumps_widths.scss` and generated in `_01-tools_width-generator.scss`.
+
+
+Examples:
+```u-min-width-X-of-Y.html
+<div class="u-min-width-1-of-10">
+    10%
+</div>
+
+<div class="u-min-width-6-of-12">
+    50%
+</div>
+
+<div class="u-min-width-3-of-4">
+    75%
+</div>
+
+<div class="u-min-width-1-of-1">
+    100%
+</div>
+
+```
+
+```u-min-width-XY.html
+<div class="u-min-width-1/10">
+    10%
+</div>
+
+<div class="u-min-width-6/12">
+    50%
+</div>
+
+<div class="u-min-width-3/4">
+    75%
+</div>
+
+<div class="u-min-width-1/1">
+    100%
+</div>
+
+```
+*/
+
+/*
+---
+name: Width > Percent
+category: Trumps > Widths
+---
+
+Sets the  width for an element as a percent.
+
+Two selector variants:
+- `u-max-width-X-of-Y`
+- `u-max-width-X/Y`
+
+Suffixcate variants:
+- `u-max-width-X-of-Y@small`
+- `u-max-width-X/Y@small`
+- `u-max-width-X-of-Y@large`
+- `u-max-width-X/Y@large`
+
+Where "X" is a number between 1-12 and "Y" is a number 1-12. 12 is defined by `$max-num` from `makeWidths()` in `_06-trumps_widths.scss` and generated in `_01-tools_width-generator.scss`.
+
+
+Examples:
+```u-max-width-X-of-Y.html
+<div class="u-width-1-of-10">
+    10%
+</div>
+
+<div class="u-width-6-of-12">
+    50%
+</div>
+
+<div class="u-width-3-of-4">
+    75%
+</div>
+
+<div class="u-width-1-of-1">
+    100%
+</div>
+
+```
+
+```u-min-width-XY.html
+<div class="u-width-1/10">
+    10%
+</div>
+
+<div class="u-width-6/12">
+    50%
+</div>
+
+<div class="u-width-3/4">
+    75%
+</div>
+
+<div class="u-width-1/1">
+    100%
+</div>
+
+```
+*/
+
+
+/*
+---
+name: Max Width > Percent
+category: Trumps > Widths
+---
+
+Sets the maximum width for an element as a percent.
+
+Two selector variants:
+- `u-max-width-X-of-Y`
+- `u-max-width-X/Y`
+
+Suffixcate variants:
+- `u-max-width-X-of-Y@small`
+- `u-max-width-X/Y@small`
+- `u-max-width-X-of-Y@large`
+- `u-max-width-X/Y@large`
+
+Where "X" is a number between 1-12 and "Y" is a number 1-12. 12 is defined by `$max-num` from `makeWidths()` in `_06-trumps_widths.scss` and generated in `_01-tools_width-generator.scss`.
+
+
+Examples:
+```u-max-width-X-of-Y.html
+<div class="u-max-width-1-of-10">
+    10%
+</div>
+
+<div class="u-max-width-6-of-12">
+    50%
+</div>
+
+<div class="u-max-width-3-of-4">
+    75%
+</div>
+
+<div class="u-max-width-1-of-1">
+    100%
+</div>
+
+```
+
+```u-min-width-XY.html
+<div class="u-max-width-1/10">
+    10%
+</div>
+
+<div class="u-max-width-6/12">
+    50%
+</div>
+
+<div class="u-max-width-3/4">
+    75%
+</div>
+
+<div class="u-max-width-1/1">
+    100%
+</div>
+
+```
+*/
+
+
+
+
+
+
+
+
+
+
+
+

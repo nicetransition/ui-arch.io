@@ -393,18 +393,6 @@ Usage:
     .u-max-width-1-of-10\@small, .u-max-width-1\/10\@small {
       max-width: 10%; } }
 
-.u-basis-1-of-10, .u-basis-1\/10 {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-10\@large, .u-basis-1\/10\@large {
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-10\@small, .u-basis-1\/10\@small {
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%; } }
-
 .u-min-width-1-of-5, .u-min-width-1\/5, .u-min-width-2-of-10, .u-min-width-2\/10 {
   min-width: 20%; }
   @media screen and (min-width: 47.5rem) {
@@ -431,18 +419,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-5\@small, .u-max-width-1\/5\@small, .u-max-width-2-of-10\@small, .u-max-width-2\/10\@small {
       max-width: 20%; } }
-
-.u-basis-1-of-5, .u-basis-1\/5, .u-basis-2-of-10, .u-basis-2\/10 {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-5\@large, .u-basis-1\/5\@large, .u-basis-2-of-10\@large, .u-basis-2\/10\@large {
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-5\@small, .u-basis-1\/5\@small, .u-basis-2-of-10\@small, .u-basis-2\/10\@small {
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; } }
 
 .u-min-width-1-of-4, .u-min-width-1\/4, .u-min-width-2-of-8, .u-min-width-2\/8, .u-min-width-3-of-12, .u-min-width-3\/12 {
   min-width: 25%; }
@@ -471,18 +447,6 @@ Usage:
     .u-max-width-1-of-4\@small, .u-max-width-1\/4\@small, .u-max-width-2-of-8\@small, .u-max-width-2\/8\@small, .u-max-width-3-of-12\@small, .u-max-width-3\/12\@small {
       max-width: 25%; } }
 
-.u-basis-1-of-4, .u-basis-1\/4, .u-basis-2-of-8, .u-basis-2\/8, .u-basis-3-of-12, .u-basis-3\/12 {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-4\@large, .u-basis-1\/4\@large, .u-basis-2-of-8\@large, .u-basis-2\/8\@large, .u-basis-3-of-12\@large, .u-basis-3\/12\@large {
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-4\@small, .u-basis-1\/4\@small, .u-basis-2-of-8\@small, .u-basis-2\/8\@small, .u-basis-3-of-12\@small, .u-basis-3\/12\@small {
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; } }
-
 .u-min-width-3-of-10, .u-min-width-3\/10 {
   min-width: 30%; }
   @media screen and (min-width: 47.5rem) {
@@ -509,18 +473,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-3-of-10\@small, .u-max-width-3\/10\@small {
       max-width: 30%; } }
-
-.u-basis-3-of-10, .u-basis-3\/10 {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-10\@large, .u-basis-3\/10\@large {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-10\@small, .u-basis-3\/10\@small {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; } }
 
 .u-min-width-2-of-5, .u-min-width-2\/5, .u-min-width-4-of-10, .u-min-width-4\/10 {
   min-width: 40%; }
@@ -549,18 +501,6 @@ Usage:
     .u-max-width-2-of-5\@small, .u-max-width-2\/5\@small, .u-max-width-4-of-10\@small, .u-max-width-4\/10\@small {
       max-width: 40%; } }
 
-.u-basis-2-of-5, .u-basis-2\/5, .u-basis-4-of-10, .u-basis-4\/10 {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-2-of-5\@large, .u-basis-2\/5\@large, .u-basis-4-of-10\@large, .u-basis-4\/10\@large {
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-2-of-5\@small, .u-basis-2\/5\@small, .u-basis-4-of-10\@small, .u-basis-4\/10\@small {
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%; } }
-
 .u-min-width-1-of-2, .u-min-width-1\/2, .u-min-width-2-of-4, .u-min-width-2\/4, .u-min-width-3-of-6, .u-min-width-3\/6, .u-min-width-4-of-8, .u-min-width-4\/8, .u-min-width-5-of-10, .u-min-width-5\/10, .u-min-width-6-of-12, .u-min-width-6\/12 {
   min-width: 50%; }
   @media screen and (min-width: 47.5rem) {
@@ -587,18 +527,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-2\@small, .u-max-width-1\/2\@small, .u-max-width-2-of-4\@small, .u-max-width-2\/4\@small, .u-max-width-3-of-6\@small, .u-max-width-3\/6\@small, .u-max-width-4-of-8\@small, .u-max-width-4\/8\@small, .u-max-width-5-of-10\@small, .u-max-width-5\/10\@small, .u-max-width-6-of-12\@small, .u-max-width-6\/12\@small {
       max-width: 50%; } }
-
-.u-basis-1-of-2, .u-basis-1\/2, .u-basis-2-of-4, .u-basis-2\/4, .u-basis-3-of-6, .u-basis-3\/6, .u-basis-4-of-8, .u-basis-4\/8, .u-basis-5-of-10, .u-basis-5\/10, .u-basis-6-of-12, .u-basis-6\/12 {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-2\@large, .u-basis-1\/2\@large, .u-basis-2-of-4\@large, .u-basis-2\/4\@large, .u-basis-3-of-6\@large, .u-basis-3\/6\@large, .u-basis-4-of-8\@large, .u-basis-4\/8\@large, .u-basis-5-of-10\@large, .u-basis-5\/10\@large, .u-basis-6-of-12\@large, .u-basis-6\/12\@large {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-2\@small, .u-basis-1\/2\@small, .u-basis-2-of-4\@small, .u-basis-2\/4\@small, .u-basis-3-of-6\@small, .u-basis-3\/6\@small, .u-basis-4-of-8\@small, .u-basis-4\/8\@small, .u-basis-5-of-10\@small, .u-basis-5\/10\@small, .u-basis-6-of-12\@small, .u-basis-6\/12\@small {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
 
 .u-min-width-3-of-5, .u-min-width-3\/5, .u-min-width-6-of-10, .u-min-width-6\/10 {
   min-width: 60%; }
@@ -627,18 +555,6 @@ Usage:
     .u-max-width-3-of-5\@small, .u-max-width-3\/5\@small, .u-max-width-6-of-10\@small, .u-max-width-6\/10\@small {
       max-width: 60%; } }
 
-.u-basis-3-of-5, .u-basis-3\/5, .u-basis-6-of-10, .u-basis-6\/10 {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-5\@large, .u-basis-3\/5\@large, .u-basis-6-of-10\@large, .u-basis-6\/10\@large {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-5\@small, .u-basis-3\/5\@small, .u-basis-6-of-10\@small, .u-basis-6\/10\@small {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%; } }
-
 .u-min-width-7-of-10, .u-min-width-7\/10 {
   min-width: 70%; }
   @media screen and (min-width: 47.5rem) {
@@ -665,18 +581,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-7-of-10\@small, .u-max-width-7\/10\@small {
       max-width: 70%; } }
-
-.u-basis-7-of-10, .u-basis-7\/10 {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-7-of-10\@large, .u-basis-7\/10\@large {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-7-of-10\@small, .u-basis-7\/10\@small {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; } }
 
 .u-min-width-3-of-4, .u-min-width-3\/4, .u-min-width-6-of-8, .u-min-width-6\/8, .u-min-width-9-of-12, .u-min-width-9\/12 {
   min-width: 75%; }
@@ -705,18 +609,6 @@ Usage:
     .u-max-width-3-of-4\@small, .u-max-width-3\/4\@small, .u-max-width-6-of-8\@small, .u-max-width-6\/8\@small, .u-max-width-9-of-12\@small, .u-max-width-9\/12\@small {
       max-width: 75%; } }
 
-.u-basis-3-of-4, .u-basis-3\/4, .u-basis-6-of-8, .u-basis-6\/8, .u-basis-9-of-12, .u-basis-9\/12 {
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-4\@large, .u-basis-3\/4\@large, .u-basis-6-of-8\@large, .u-basis-6\/8\@large, .u-basis-9-of-12\@large, .u-basis-9\/12\@large {
-      -ms-flex-preferred-size: 75%;
-          flex-basis: 75%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-4\@small, .u-basis-3\/4\@small, .u-basis-6-of-8\@small, .u-basis-6\/8\@small, .u-basis-9-of-12\@small, .u-basis-9\/12\@small {
-      -ms-flex-preferred-size: 75%;
-          flex-basis: 75%; } }
-
 .u-min-width-4-of-5, .u-min-width-4\/5, .u-min-width-8-of-10, .u-min-width-8\/10 {
   min-width: 80%; }
   @media screen and (min-width: 47.5rem) {
@@ -743,18 +635,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-4-of-5\@small, .u-max-width-4\/5\@small, .u-max-width-8-of-10\@small, .u-max-width-8\/10\@small {
       max-width: 80%; } }
-
-.u-basis-4-of-5, .u-basis-4\/5, .u-basis-8-of-10, .u-basis-8\/10 {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-4-of-5\@large, .u-basis-4\/5\@large, .u-basis-8-of-10\@large, .u-basis-8\/10\@large {
-      -ms-flex-preferred-size: 80%;
-          flex-basis: 80%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-4-of-5\@small, .u-basis-4\/5\@small, .u-basis-8-of-10\@small, .u-basis-8\/10\@small {
-      -ms-flex-preferred-size: 80%;
-          flex-basis: 80%; } }
 
 .u-min-width-9-of-10, .u-min-width-9\/10 {
   min-width: 90%; }
@@ -783,18 +663,6 @@ Usage:
     .u-max-width-9-of-10\@small, .u-max-width-9\/10\@small {
       max-width: 90%; } }
 
-.u-basis-9-of-10, .u-basis-9\/10 {
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-9-of-10\@large, .u-basis-9\/10\@large {
-      -ms-flex-preferred-size: 90%;
-          flex-basis: 90%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-9-of-10\@small, .u-basis-9\/10\@small {
-      -ms-flex-preferred-size: 90%;
-          flex-basis: 90%; } }
-
 .u-min-width-1-of-1, .u-min-width-1\/1, .u-min-width-2-of-2, .u-min-width-2\/2, .u-min-width-3-of-3, .u-min-width-3\/3, .u-min-width-4-of-4, .u-min-width-4\/4, .u-min-width-5-of-5, .u-min-width-5\/5, .u-min-width-6-of-6, .u-min-width-6\/6, .u-min-width-7-of-7, .u-min-width-7\/7, .u-min-width-8-of-8, .u-min-width-8\/8, .u-min-width-9-of-9, .u-min-width-9\/9, .u-min-width-10-of-10, .u-min-width-10\/10, .u-min-width-11-of-11, .u-min-width-11\/11, .u-min-width-12-of-12, .u-min-width-12\/12 {
   min-width: 100%; }
   @media screen and (min-width: 47.5rem) {
@@ -821,18 +689,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-1\@small, .u-max-width-1\/1\@small, .u-max-width-2-of-2\@small, .u-max-width-2\/2\@small, .u-max-width-3-of-3\@small, .u-max-width-3\/3\@small, .u-max-width-4-of-4\@small, .u-max-width-4\/4\@small, .u-max-width-5-of-5\@small, .u-max-width-5\/5\@small, .u-max-width-6-of-6\@small, .u-max-width-6\/6\@small, .u-max-width-7-of-7\@small, .u-max-width-7\/7\@small, .u-max-width-8-of-8\@small, .u-max-width-8\/8\@small, .u-max-width-9-of-9\@small, .u-max-width-9\/9\@small, .u-max-width-10-of-10\@small, .u-max-width-10\/10\@small, .u-max-width-11-of-11\@small, .u-max-width-11\/11\@small, .u-max-width-12-of-12\@small, .u-max-width-12\/12\@small {
       max-width: 100%; } }
-
-.u-basis-1-of-1, .u-basis-1\/1, .u-basis-2-of-2, .u-basis-2\/2, .u-basis-3-of-3, .u-basis-3\/3, .u-basis-4-of-4, .u-basis-4\/4, .u-basis-5-of-5, .u-basis-5\/5, .u-basis-6-of-6, .u-basis-6\/6, .u-basis-7-of-7, .u-basis-7\/7, .u-basis-8-of-8, .u-basis-8\/8, .u-basis-9-of-9, .u-basis-9\/9, .u-basis-10-of-10, .u-basis-10\/10, .u-basis-11-of-11, .u-basis-11\/11, .u-basis-12-of-12, .u-basis-12\/12 {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-1\@large, .u-basis-1\/1\@large, .u-basis-2-of-2\@large, .u-basis-2\/2\@large, .u-basis-3-of-3\@large, .u-basis-3\/3\@large, .u-basis-4-of-4\@large, .u-basis-4\/4\@large, .u-basis-5-of-5\@large, .u-basis-5\/5\@large, .u-basis-6-of-6\@large, .u-basis-6\/6\@large, .u-basis-7-of-7\@large, .u-basis-7\/7\@large, .u-basis-8-of-8\@large, .u-basis-8\/8\@large, .u-basis-9-of-9\@large, .u-basis-9\/9\@large, .u-basis-10-of-10\@large, .u-basis-10\/10\@large, .u-basis-11-of-11\@large, .u-basis-11\/11\@large, .u-basis-12-of-12\@large, .u-basis-12\/12\@large {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-1\@small, .u-basis-1\/1\@small, .u-basis-2-of-2\@small, .u-basis-2\/2\@small, .u-basis-3-of-3\@small, .u-basis-3\/3\@small, .u-basis-4-of-4\@small, .u-basis-4\/4\@small, .u-basis-5-of-5\@small, .u-basis-5\/5\@small, .u-basis-6-of-6\@small, .u-basis-6\/6\@small, .u-basis-7-of-7\@small, .u-basis-7\/7\@small, .u-basis-8-of-8\@small, .u-basis-8\/8\@small, .u-basis-9-of-9\@small, .u-basis-9\/9\@small, .u-basis-10-of-10\@small, .u-basis-10\/10\@small, .u-basis-11-of-11\@small, .u-basis-11\/11\@small, .u-basis-12-of-12\@small, .u-basis-12\/12\@small {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; } }
 
 /*
 ---
@@ -1200,18 +1056,6 @@ Usage:
     .u-max-width-1-of-10\@small, .u-max-width-1\/10\@small {
       max-width: 10%; } }
 
-.u-basis-1-of-10, .u-basis-1\/10 {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-10\@large, .u-basis-1\/10\@large {
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-10\@small, .u-basis-1\/10\@small {
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%; } }
-
 .u-min-width-1-of-5, .u-min-width-1\/5, .u-min-width-2-of-10, .u-min-width-2\/10 {
   min-width: 20%; }
   @media screen and (min-width: 47.5rem) {
@@ -1238,18 +1082,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-5\@small, .u-max-width-1\/5\@small, .u-max-width-2-of-10\@small, .u-max-width-2\/10\@small {
       max-width: 20%; } }
-
-.u-basis-1-of-5, .u-basis-1\/5, .u-basis-2-of-10, .u-basis-2\/10 {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-5\@large, .u-basis-1\/5\@large, .u-basis-2-of-10\@large, .u-basis-2\/10\@large {
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-5\@small, .u-basis-1\/5\@small, .u-basis-2-of-10\@small, .u-basis-2\/10\@small {
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; } }
 
 .u-min-width-1-of-4, .u-min-width-1\/4, .u-min-width-2-of-8, .u-min-width-2\/8, .u-min-width-3-of-12, .u-min-width-3\/12 {
   min-width: 25%; }
@@ -1278,18 +1110,6 @@ Usage:
     .u-max-width-1-of-4\@small, .u-max-width-1\/4\@small, .u-max-width-2-of-8\@small, .u-max-width-2\/8\@small, .u-max-width-3-of-12\@small, .u-max-width-3\/12\@small {
       max-width: 25%; } }
 
-.u-basis-1-of-4, .u-basis-1\/4, .u-basis-2-of-8, .u-basis-2\/8, .u-basis-3-of-12, .u-basis-3\/12 {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-4\@large, .u-basis-1\/4\@large, .u-basis-2-of-8\@large, .u-basis-2\/8\@large, .u-basis-3-of-12\@large, .u-basis-3\/12\@large {
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-4\@small, .u-basis-1\/4\@small, .u-basis-2-of-8\@small, .u-basis-2\/8\@small, .u-basis-3-of-12\@small, .u-basis-3\/12\@small {
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; } }
-
 .u-min-width-3-of-10, .u-min-width-3\/10 {
   min-width: 30%; }
   @media screen and (min-width: 47.5rem) {
@@ -1316,18 +1136,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-3-of-10\@small, .u-max-width-3\/10\@small {
       max-width: 30%; } }
-
-.u-basis-3-of-10, .u-basis-3\/10 {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-10\@large, .u-basis-3\/10\@large {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-10\@small, .u-basis-3\/10\@small {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; } }
 
 .u-min-width-2-of-5, .u-min-width-2\/5, .u-min-width-4-of-10, .u-min-width-4\/10 {
   min-width: 40%; }
@@ -1356,18 +1164,6 @@ Usage:
     .u-max-width-2-of-5\@small, .u-max-width-2\/5\@small, .u-max-width-4-of-10\@small, .u-max-width-4\/10\@small {
       max-width: 40%; } }
 
-.u-basis-2-of-5, .u-basis-2\/5, .u-basis-4-of-10, .u-basis-4\/10 {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-2-of-5\@large, .u-basis-2\/5\@large, .u-basis-4-of-10\@large, .u-basis-4\/10\@large {
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-2-of-5\@small, .u-basis-2\/5\@small, .u-basis-4-of-10\@small, .u-basis-4\/10\@small {
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%; } }
-
 .u-min-width-1-of-2, .u-min-width-1\/2, .u-min-width-2-of-4, .u-min-width-2\/4, .u-min-width-3-of-6, .u-min-width-3\/6, .u-min-width-4-of-8, .u-min-width-4\/8, .u-min-width-5-of-10, .u-min-width-5\/10, .u-min-width-6-of-12, .u-min-width-6\/12 {
   min-width: 50%; }
   @media screen and (min-width: 47.5rem) {
@@ -1394,18 +1190,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-2\@small, .u-max-width-1\/2\@small, .u-max-width-2-of-4\@small, .u-max-width-2\/4\@small, .u-max-width-3-of-6\@small, .u-max-width-3\/6\@small, .u-max-width-4-of-8\@small, .u-max-width-4\/8\@small, .u-max-width-5-of-10\@small, .u-max-width-5\/10\@small, .u-max-width-6-of-12\@small, .u-max-width-6\/12\@small {
       max-width: 50%; } }
-
-.u-basis-1-of-2, .u-basis-1\/2, .u-basis-2-of-4, .u-basis-2\/4, .u-basis-3-of-6, .u-basis-3\/6, .u-basis-4-of-8, .u-basis-4\/8, .u-basis-5-of-10, .u-basis-5\/10, .u-basis-6-of-12, .u-basis-6\/12 {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-2\@large, .u-basis-1\/2\@large, .u-basis-2-of-4\@large, .u-basis-2\/4\@large, .u-basis-3-of-6\@large, .u-basis-3\/6\@large, .u-basis-4-of-8\@large, .u-basis-4\/8\@large, .u-basis-5-of-10\@large, .u-basis-5\/10\@large, .u-basis-6-of-12\@large, .u-basis-6\/12\@large {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-2\@small, .u-basis-1\/2\@small, .u-basis-2-of-4\@small, .u-basis-2\/4\@small, .u-basis-3-of-6\@small, .u-basis-3\/6\@small, .u-basis-4-of-8\@small, .u-basis-4\/8\@small, .u-basis-5-of-10\@small, .u-basis-5\/10\@small, .u-basis-6-of-12\@small, .u-basis-6\/12\@small {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
 
 .u-min-width-3-of-5, .u-min-width-3\/5, .u-min-width-6-of-10, .u-min-width-6\/10 {
   min-width: 60%; }
@@ -1434,18 +1218,6 @@ Usage:
     .u-max-width-3-of-5\@small, .u-max-width-3\/5\@small, .u-max-width-6-of-10\@small, .u-max-width-6\/10\@small {
       max-width: 60%; } }
 
-.u-basis-3-of-5, .u-basis-3\/5, .u-basis-6-of-10, .u-basis-6\/10 {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-5\@large, .u-basis-3\/5\@large, .u-basis-6-of-10\@large, .u-basis-6\/10\@large {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-5\@small, .u-basis-3\/5\@small, .u-basis-6-of-10\@small, .u-basis-6\/10\@small {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%; } }
-
 .u-min-width-7-of-10, .u-min-width-7\/10 {
   min-width: 70%; }
   @media screen and (min-width: 47.5rem) {
@@ -1472,18 +1244,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-7-of-10\@small, .u-max-width-7\/10\@small {
       max-width: 70%; } }
-
-.u-basis-7-of-10, .u-basis-7\/10 {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-7-of-10\@large, .u-basis-7\/10\@large {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-7-of-10\@small, .u-basis-7\/10\@small {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; } }
 
 .u-min-width-3-of-4, .u-min-width-3\/4, .u-min-width-6-of-8, .u-min-width-6\/8, .u-min-width-9-of-12, .u-min-width-9\/12 {
   min-width: 75%; }
@@ -1512,18 +1272,6 @@ Usage:
     .u-max-width-3-of-4\@small, .u-max-width-3\/4\@small, .u-max-width-6-of-8\@small, .u-max-width-6\/8\@small, .u-max-width-9-of-12\@small, .u-max-width-9\/12\@small {
       max-width: 75%; } }
 
-.u-basis-3-of-4, .u-basis-3\/4, .u-basis-6-of-8, .u-basis-6\/8, .u-basis-9-of-12, .u-basis-9\/12 {
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-4\@large, .u-basis-3\/4\@large, .u-basis-6-of-8\@large, .u-basis-6\/8\@large, .u-basis-9-of-12\@large, .u-basis-9\/12\@large {
-      -ms-flex-preferred-size: 75%;
-          flex-basis: 75%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-4\@small, .u-basis-3\/4\@small, .u-basis-6-of-8\@small, .u-basis-6\/8\@small, .u-basis-9-of-12\@small, .u-basis-9\/12\@small {
-      -ms-flex-preferred-size: 75%;
-          flex-basis: 75%; } }
-
 .u-min-width-4-of-5, .u-min-width-4\/5, .u-min-width-8-of-10, .u-min-width-8\/10 {
   min-width: 80%; }
   @media screen and (min-width: 47.5rem) {
@@ -1550,18 +1298,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-4-of-5\@small, .u-max-width-4\/5\@small, .u-max-width-8-of-10\@small, .u-max-width-8\/10\@small {
       max-width: 80%; } }
-
-.u-basis-4-of-5, .u-basis-4\/5, .u-basis-8-of-10, .u-basis-8\/10 {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-4-of-5\@large, .u-basis-4\/5\@large, .u-basis-8-of-10\@large, .u-basis-8\/10\@large {
-      -ms-flex-preferred-size: 80%;
-          flex-basis: 80%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-4-of-5\@small, .u-basis-4\/5\@small, .u-basis-8-of-10\@small, .u-basis-8\/10\@small {
-      -ms-flex-preferred-size: 80%;
-          flex-basis: 80%; } }
 
 .u-min-width-9-of-10, .u-min-width-9\/10 {
   min-width: 90%; }
@@ -1590,18 +1326,6 @@ Usage:
     .u-max-width-9-of-10\@small, .u-max-width-9\/10\@small {
       max-width: 90%; } }
 
-.u-basis-9-of-10, .u-basis-9\/10 {
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-9-of-10\@large, .u-basis-9\/10\@large {
-      -ms-flex-preferred-size: 90%;
-          flex-basis: 90%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-9-of-10\@small, .u-basis-9\/10\@small {
-      -ms-flex-preferred-size: 90%;
-          flex-basis: 90%; } }
-
 .u-min-width-1-of-1, .u-min-width-1\/1, .u-min-width-2-of-2, .u-min-width-2\/2, .u-min-width-3-of-3, .u-min-width-3\/3, .u-min-width-4-of-4, .u-min-width-4\/4, .u-min-width-5-of-5, .u-min-width-5\/5, .u-min-width-6-of-6, .u-min-width-6\/6, .u-min-width-7-of-7, .u-min-width-7\/7, .u-min-width-8-of-8, .u-min-width-8\/8, .u-min-width-9-of-9, .u-min-width-9\/9, .u-min-width-10-of-10, .u-min-width-10\/10, .u-min-width-11-of-11, .u-min-width-11\/11, .u-min-width-12-of-12, .u-min-width-12\/12 {
   min-width: 100%; }
   @media screen and (min-width: 47.5rem) {
@@ -1628,18 +1352,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-1\@small, .u-max-width-1\/1\@small, .u-max-width-2-of-2\@small, .u-max-width-2\/2\@small, .u-max-width-3-of-3\@small, .u-max-width-3\/3\@small, .u-max-width-4-of-4\@small, .u-max-width-4\/4\@small, .u-max-width-5-of-5\@small, .u-max-width-5\/5\@small, .u-max-width-6-of-6\@small, .u-max-width-6\/6\@small, .u-max-width-7-of-7\@small, .u-max-width-7\/7\@small, .u-max-width-8-of-8\@small, .u-max-width-8\/8\@small, .u-max-width-9-of-9\@small, .u-max-width-9\/9\@small, .u-max-width-10-of-10\@small, .u-max-width-10\/10\@small, .u-max-width-11-of-11\@small, .u-max-width-11\/11\@small, .u-max-width-12-of-12\@small, .u-max-width-12\/12\@small {
       max-width: 100%; } }
-
-.u-basis-1-of-1, .u-basis-1\/1, .u-basis-2-of-2, .u-basis-2\/2, .u-basis-3-of-3, .u-basis-3\/3, .u-basis-4-of-4, .u-basis-4\/4, .u-basis-5-of-5, .u-basis-5\/5, .u-basis-6-of-6, .u-basis-6\/6, .u-basis-7-of-7, .u-basis-7\/7, .u-basis-8-of-8, .u-basis-8\/8, .u-basis-9-of-9, .u-basis-9\/9, .u-basis-10-of-10, .u-basis-10\/10, .u-basis-11-of-11, .u-basis-11\/11, .u-basis-12-of-12, .u-basis-12\/12 {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-1\@large, .u-basis-1\/1\@large, .u-basis-2-of-2\@large, .u-basis-2\/2\@large, .u-basis-3-of-3\@large, .u-basis-3\/3\@large, .u-basis-4-of-4\@large, .u-basis-4\/4\@large, .u-basis-5-of-5\@large, .u-basis-5\/5\@large, .u-basis-6-of-6\@large, .u-basis-6\/6\@large, .u-basis-7-of-7\@large, .u-basis-7\/7\@large, .u-basis-8-of-8\@large, .u-basis-8\/8\@large, .u-basis-9-of-9\@large, .u-basis-9\/9\@large, .u-basis-10-of-10\@large, .u-basis-10\/10\@large, .u-basis-11-of-11\@large, .u-basis-11\/11\@large, .u-basis-12-of-12\@large, .u-basis-12\/12\@large {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-1\@small, .u-basis-1\/1\@small, .u-basis-2-of-2\@small, .u-basis-2\/2\@small, .u-basis-3-of-3\@small, .u-basis-3\/3\@small, .u-basis-4-of-4\@small, .u-basis-4\/4\@small, .u-basis-5-of-5\@small, .u-basis-5\/5\@small, .u-basis-6-of-6\@small, .u-basis-6\/6\@small, .u-basis-7-of-7\@small, .u-basis-7\/7\@small, .u-basis-8-of-8\@small, .u-basis-8\/8\@small, .u-basis-9-of-9\@small, .u-basis-9\/9\@small, .u-basis-10-of-10\@small, .u-basis-10\/10\@small, .u-basis-11-of-11\@small, .u-basis-11\/11\@small, .u-basis-12-of-12\@small, .u-basis-12\/12\@small {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; } }
 
 /*
 ---
@@ -2028,18 +1740,6 @@ Usage:
     .u-max-width-1-of-10\@small, .u-max-width-1\/10\@small {
       max-width: 10%; } }
 
-.u-basis-1-of-10, .u-basis-1\/10 {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-10\@large, .u-basis-1\/10\@large {
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-10\@small, .u-basis-1\/10\@small {
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%; } }
-
 .u-min-width-1-of-5, .u-min-width-1\/5, .u-min-width-2-of-10, .u-min-width-2\/10 {
   min-width: 20%; }
   @media screen and (min-width: 47.5rem) {
@@ -2066,18 +1766,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-5\@small, .u-max-width-1\/5\@small, .u-max-width-2-of-10\@small, .u-max-width-2\/10\@small {
       max-width: 20%; } }
-
-.u-basis-1-of-5, .u-basis-1\/5, .u-basis-2-of-10, .u-basis-2\/10 {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-5\@large, .u-basis-1\/5\@large, .u-basis-2-of-10\@large, .u-basis-2\/10\@large {
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-5\@small, .u-basis-1\/5\@small, .u-basis-2-of-10\@small, .u-basis-2\/10\@small {
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; } }
 
 .u-min-width-1-of-4, .u-min-width-1\/4, .u-min-width-2-of-8, .u-min-width-2\/8, .u-min-width-3-of-12, .u-min-width-3\/12 {
   min-width: 25%; }
@@ -2106,18 +1794,6 @@ Usage:
     .u-max-width-1-of-4\@small, .u-max-width-1\/4\@small, .u-max-width-2-of-8\@small, .u-max-width-2\/8\@small, .u-max-width-3-of-12\@small, .u-max-width-3\/12\@small {
       max-width: 25%; } }
 
-.u-basis-1-of-4, .u-basis-1\/4, .u-basis-2-of-8, .u-basis-2\/8, .u-basis-3-of-12, .u-basis-3\/12 {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-4\@large, .u-basis-1\/4\@large, .u-basis-2-of-8\@large, .u-basis-2\/8\@large, .u-basis-3-of-12\@large, .u-basis-3\/12\@large {
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-4\@small, .u-basis-1\/4\@small, .u-basis-2-of-8\@small, .u-basis-2\/8\@small, .u-basis-3-of-12\@small, .u-basis-3\/12\@small {
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; } }
-
 .u-min-width-3-of-10, .u-min-width-3\/10 {
   min-width: 30%; }
   @media screen and (min-width: 47.5rem) {
@@ -2144,18 +1820,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-3-of-10\@small, .u-max-width-3\/10\@small {
       max-width: 30%; } }
-
-.u-basis-3-of-10, .u-basis-3\/10 {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-10\@large, .u-basis-3\/10\@large {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-10\@small, .u-basis-3\/10\@small {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; } }
 
 .u-min-width-2-of-5, .u-min-width-2\/5, .u-min-width-4-of-10, .u-min-width-4\/10 {
   min-width: 40%; }
@@ -2184,18 +1848,6 @@ Usage:
     .u-max-width-2-of-5\@small, .u-max-width-2\/5\@small, .u-max-width-4-of-10\@small, .u-max-width-4\/10\@small {
       max-width: 40%; } }
 
-.u-basis-2-of-5, .u-basis-2\/5, .u-basis-4-of-10, .u-basis-4\/10 {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-2-of-5\@large, .u-basis-2\/5\@large, .u-basis-4-of-10\@large, .u-basis-4\/10\@large {
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-2-of-5\@small, .u-basis-2\/5\@small, .u-basis-4-of-10\@small, .u-basis-4\/10\@small {
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%; } }
-
 .u-min-width-1-of-2, .u-min-width-1\/2, .u-min-width-2-of-4, .u-min-width-2\/4, .u-min-width-3-of-6, .u-min-width-3\/6, .u-min-width-4-of-8, .u-min-width-4\/8, .u-min-width-5-of-10, .u-min-width-5\/10, .u-min-width-6-of-12, .u-min-width-6\/12 {
   min-width: 50%; }
   @media screen and (min-width: 47.5rem) {
@@ -2222,18 +1874,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-2\@small, .u-max-width-1\/2\@small, .u-max-width-2-of-4\@small, .u-max-width-2\/4\@small, .u-max-width-3-of-6\@small, .u-max-width-3\/6\@small, .u-max-width-4-of-8\@small, .u-max-width-4\/8\@small, .u-max-width-5-of-10\@small, .u-max-width-5\/10\@small, .u-max-width-6-of-12\@small, .u-max-width-6\/12\@small {
       max-width: 50%; } }
-
-.u-basis-1-of-2, .u-basis-1\/2, .u-basis-2-of-4, .u-basis-2\/4, .u-basis-3-of-6, .u-basis-3\/6, .u-basis-4-of-8, .u-basis-4\/8, .u-basis-5-of-10, .u-basis-5\/10, .u-basis-6-of-12, .u-basis-6\/12 {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-2\@large, .u-basis-1\/2\@large, .u-basis-2-of-4\@large, .u-basis-2\/4\@large, .u-basis-3-of-6\@large, .u-basis-3\/6\@large, .u-basis-4-of-8\@large, .u-basis-4\/8\@large, .u-basis-5-of-10\@large, .u-basis-5\/10\@large, .u-basis-6-of-12\@large, .u-basis-6\/12\@large {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-2\@small, .u-basis-1\/2\@small, .u-basis-2-of-4\@small, .u-basis-2\/4\@small, .u-basis-3-of-6\@small, .u-basis-3\/6\@small, .u-basis-4-of-8\@small, .u-basis-4\/8\@small, .u-basis-5-of-10\@small, .u-basis-5\/10\@small, .u-basis-6-of-12\@small, .u-basis-6\/12\@small {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
 
 .u-min-width-3-of-5, .u-min-width-3\/5, .u-min-width-6-of-10, .u-min-width-6\/10 {
   min-width: 60%; }
@@ -2262,18 +1902,6 @@ Usage:
     .u-max-width-3-of-5\@small, .u-max-width-3\/5\@small, .u-max-width-6-of-10\@small, .u-max-width-6\/10\@small {
       max-width: 60%; } }
 
-.u-basis-3-of-5, .u-basis-3\/5, .u-basis-6-of-10, .u-basis-6\/10 {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-5\@large, .u-basis-3\/5\@large, .u-basis-6-of-10\@large, .u-basis-6\/10\@large {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-5\@small, .u-basis-3\/5\@small, .u-basis-6-of-10\@small, .u-basis-6\/10\@small {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%; } }
-
 .u-min-width-7-of-10, .u-min-width-7\/10 {
   min-width: 70%; }
   @media screen and (min-width: 47.5rem) {
@@ -2300,18 +1928,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-7-of-10\@small, .u-max-width-7\/10\@small {
       max-width: 70%; } }
-
-.u-basis-7-of-10, .u-basis-7\/10 {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-7-of-10\@large, .u-basis-7\/10\@large {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-7-of-10\@small, .u-basis-7\/10\@small {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; } }
 
 .u-min-width-3-of-4, .u-min-width-3\/4, .u-min-width-6-of-8, .u-min-width-6\/8, .u-min-width-9-of-12, .u-min-width-9\/12 {
   min-width: 75%; }
@@ -2340,18 +1956,6 @@ Usage:
     .u-max-width-3-of-4\@small, .u-max-width-3\/4\@small, .u-max-width-6-of-8\@small, .u-max-width-6\/8\@small, .u-max-width-9-of-12\@small, .u-max-width-9\/12\@small {
       max-width: 75%; } }
 
-.u-basis-3-of-4, .u-basis-3\/4, .u-basis-6-of-8, .u-basis-6\/8, .u-basis-9-of-12, .u-basis-9\/12 {
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-4\@large, .u-basis-3\/4\@large, .u-basis-6-of-8\@large, .u-basis-6\/8\@large, .u-basis-9-of-12\@large, .u-basis-9\/12\@large {
-      -ms-flex-preferred-size: 75%;
-          flex-basis: 75%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-4\@small, .u-basis-3\/4\@small, .u-basis-6-of-8\@small, .u-basis-6\/8\@small, .u-basis-9-of-12\@small, .u-basis-9\/12\@small {
-      -ms-flex-preferred-size: 75%;
-          flex-basis: 75%; } }
-
 .u-min-width-4-of-5, .u-min-width-4\/5, .u-min-width-8-of-10, .u-min-width-8\/10 {
   min-width: 80%; }
   @media screen and (min-width: 47.5rem) {
@@ -2378,18 +1982,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-4-of-5\@small, .u-max-width-4\/5\@small, .u-max-width-8-of-10\@small, .u-max-width-8\/10\@small {
       max-width: 80%; } }
-
-.u-basis-4-of-5, .u-basis-4\/5, .u-basis-8-of-10, .u-basis-8\/10 {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-4-of-5\@large, .u-basis-4\/5\@large, .u-basis-8-of-10\@large, .u-basis-8\/10\@large {
-      -ms-flex-preferred-size: 80%;
-          flex-basis: 80%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-4-of-5\@small, .u-basis-4\/5\@small, .u-basis-8-of-10\@small, .u-basis-8\/10\@small {
-      -ms-flex-preferred-size: 80%;
-          flex-basis: 80%; } }
 
 .u-min-width-9-of-10, .u-min-width-9\/10 {
   min-width: 90%; }
@@ -2418,18 +2010,6 @@ Usage:
     .u-max-width-9-of-10\@small, .u-max-width-9\/10\@small {
       max-width: 90%; } }
 
-.u-basis-9-of-10, .u-basis-9\/10 {
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-9-of-10\@large, .u-basis-9\/10\@large {
-      -ms-flex-preferred-size: 90%;
-          flex-basis: 90%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-9-of-10\@small, .u-basis-9\/10\@small {
-      -ms-flex-preferred-size: 90%;
-          flex-basis: 90%; } }
-
 .u-min-width-1-of-1, .u-min-width-1\/1, .u-min-width-2-of-2, .u-min-width-2\/2, .u-min-width-3-of-3, .u-min-width-3\/3, .u-min-width-4-of-4, .u-min-width-4\/4, .u-min-width-5-of-5, .u-min-width-5\/5, .u-min-width-6-of-6, .u-min-width-6\/6, .u-min-width-7-of-7, .u-min-width-7\/7, .u-min-width-8-of-8, .u-min-width-8\/8, .u-min-width-9-of-9, .u-min-width-9\/9, .u-min-width-10-of-10, .u-min-width-10\/10, .u-min-width-11-of-11, .u-min-width-11\/11, .u-min-width-12-of-12, .u-min-width-12\/12 {
   min-width: 100%; }
   @media screen and (min-width: 47.5rem) {
@@ -2456,18 +2036,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-1\@small, .u-max-width-1\/1\@small, .u-max-width-2-of-2\@small, .u-max-width-2\/2\@small, .u-max-width-3-of-3\@small, .u-max-width-3\/3\@small, .u-max-width-4-of-4\@small, .u-max-width-4\/4\@small, .u-max-width-5-of-5\@small, .u-max-width-5\/5\@small, .u-max-width-6-of-6\@small, .u-max-width-6\/6\@small, .u-max-width-7-of-7\@small, .u-max-width-7\/7\@small, .u-max-width-8-of-8\@small, .u-max-width-8\/8\@small, .u-max-width-9-of-9\@small, .u-max-width-9\/9\@small, .u-max-width-10-of-10\@small, .u-max-width-10\/10\@small, .u-max-width-11-of-11\@small, .u-max-width-11\/11\@small, .u-max-width-12-of-12\@small, .u-max-width-12\/12\@small {
       max-width: 100%; } }
-
-.u-basis-1-of-1, .u-basis-1\/1, .u-basis-2-of-2, .u-basis-2\/2, .u-basis-3-of-3, .u-basis-3\/3, .u-basis-4-of-4, .u-basis-4\/4, .u-basis-5-of-5, .u-basis-5\/5, .u-basis-6-of-6, .u-basis-6\/6, .u-basis-7-of-7, .u-basis-7\/7, .u-basis-8-of-8, .u-basis-8\/8, .u-basis-9-of-9, .u-basis-9\/9, .u-basis-10-of-10, .u-basis-10\/10, .u-basis-11-of-11, .u-basis-11\/11, .u-basis-12-of-12, .u-basis-12\/12 {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-1\@large, .u-basis-1\/1\@large, .u-basis-2-of-2\@large, .u-basis-2\/2\@large, .u-basis-3-of-3\@large, .u-basis-3\/3\@large, .u-basis-4-of-4\@large, .u-basis-4\/4\@large, .u-basis-5-of-5\@large, .u-basis-5\/5\@large, .u-basis-6-of-6\@large, .u-basis-6\/6\@large, .u-basis-7-of-7\@large, .u-basis-7\/7\@large, .u-basis-8-of-8\@large, .u-basis-8\/8\@large, .u-basis-9-of-9\@large, .u-basis-9\/9\@large, .u-basis-10-of-10\@large, .u-basis-10\/10\@large, .u-basis-11-of-11\@large, .u-basis-11\/11\@large, .u-basis-12-of-12\@large, .u-basis-12\/12\@large {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-1\@small, .u-basis-1\/1\@small, .u-basis-2-of-2\@small, .u-basis-2\/2\@small, .u-basis-3-of-3\@small, .u-basis-3\/3\@small, .u-basis-4-of-4\@small, .u-basis-4\/4\@small, .u-basis-5-of-5\@small, .u-basis-5\/5\@small, .u-basis-6-of-6\@small, .u-basis-6\/6\@small, .u-basis-7-of-7\@small, .u-basis-7\/7\@small, .u-basis-8-of-8\@small, .u-basis-8\/8\@small, .u-basis-9-of-9\@small, .u-basis-9\/9\@small, .u-basis-10-of-10\@small, .u-basis-10\/10\@small, .u-basis-11-of-11\@small, .u-basis-11\/11\@small, .u-basis-12-of-12\@small, .u-basis-12\/12\@small {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; } }
 
 /*
 ---
@@ -2853,18 +2421,6 @@ Usage:
     .u-max-width-1-of-10\@small, .u-max-width-1\/10\@small {
       max-width: 10%; } }
 
-.u-basis-1-of-10, .u-basis-1\/10 {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-10\@large, .u-basis-1\/10\@large {
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-10\@small, .u-basis-1\/10\@small {
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%; } }
-
 .u-min-width-1-of-5, .u-min-width-1\/5, .u-min-width-2-of-10, .u-min-width-2\/10 {
   min-width: 20%; }
   @media screen and (min-width: 47.5rem) {
@@ -2891,18 +2447,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-5\@small, .u-max-width-1\/5\@small, .u-max-width-2-of-10\@small, .u-max-width-2\/10\@small {
       max-width: 20%; } }
-
-.u-basis-1-of-5, .u-basis-1\/5, .u-basis-2-of-10, .u-basis-2\/10 {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-5\@large, .u-basis-1\/5\@large, .u-basis-2-of-10\@large, .u-basis-2\/10\@large {
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-5\@small, .u-basis-1\/5\@small, .u-basis-2-of-10\@small, .u-basis-2\/10\@small {
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; } }
 
 .u-min-width-1-of-4, .u-min-width-1\/4, .u-min-width-2-of-8, .u-min-width-2\/8, .u-min-width-3-of-12, .u-min-width-3\/12 {
   min-width: 25%; }
@@ -2931,18 +2475,6 @@ Usage:
     .u-max-width-1-of-4\@small, .u-max-width-1\/4\@small, .u-max-width-2-of-8\@small, .u-max-width-2\/8\@small, .u-max-width-3-of-12\@small, .u-max-width-3\/12\@small {
       max-width: 25%; } }
 
-.u-basis-1-of-4, .u-basis-1\/4, .u-basis-2-of-8, .u-basis-2\/8, .u-basis-3-of-12, .u-basis-3\/12 {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-4\@large, .u-basis-1\/4\@large, .u-basis-2-of-8\@large, .u-basis-2\/8\@large, .u-basis-3-of-12\@large, .u-basis-3\/12\@large {
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-4\@small, .u-basis-1\/4\@small, .u-basis-2-of-8\@small, .u-basis-2\/8\@small, .u-basis-3-of-12\@small, .u-basis-3\/12\@small {
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; } }
-
 .u-min-width-3-of-10, .u-min-width-3\/10 {
   min-width: 30%; }
   @media screen and (min-width: 47.5rem) {
@@ -2969,18 +2501,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-3-of-10\@small, .u-max-width-3\/10\@small {
       max-width: 30%; } }
-
-.u-basis-3-of-10, .u-basis-3\/10 {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-10\@large, .u-basis-3\/10\@large {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-10\@small, .u-basis-3\/10\@small {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; } }
 
 .u-min-width-2-of-5, .u-min-width-2\/5, .u-min-width-4-of-10, .u-min-width-4\/10 {
   min-width: 40%; }
@@ -3009,18 +2529,6 @@ Usage:
     .u-max-width-2-of-5\@small, .u-max-width-2\/5\@small, .u-max-width-4-of-10\@small, .u-max-width-4\/10\@small {
       max-width: 40%; } }
 
-.u-basis-2-of-5, .u-basis-2\/5, .u-basis-4-of-10, .u-basis-4\/10 {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-2-of-5\@large, .u-basis-2\/5\@large, .u-basis-4-of-10\@large, .u-basis-4\/10\@large {
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-2-of-5\@small, .u-basis-2\/5\@small, .u-basis-4-of-10\@small, .u-basis-4\/10\@small {
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%; } }
-
 .u-min-width-1-of-2, .u-min-width-1\/2, .u-min-width-2-of-4, .u-min-width-2\/4, .u-min-width-3-of-6, .u-min-width-3\/6, .u-min-width-4-of-8, .u-min-width-4\/8, .u-min-width-5-of-10, .u-min-width-5\/10, .u-min-width-6-of-12, .u-min-width-6\/12 {
   min-width: 50%; }
   @media screen and (min-width: 47.5rem) {
@@ -3047,18 +2555,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-2\@small, .u-max-width-1\/2\@small, .u-max-width-2-of-4\@small, .u-max-width-2\/4\@small, .u-max-width-3-of-6\@small, .u-max-width-3\/6\@small, .u-max-width-4-of-8\@small, .u-max-width-4\/8\@small, .u-max-width-5-of-10\@small, .u-max-width-5\/10\@small, .u-max-width-6-of-12\@small, .u-max-width-6\/12\@small {
       max-width: 50%; } }
-
-.u-basis-1-of-2, .u-basis-1\/2, .u-basis-2-of-4, .u-basis-2\/4, .u-basis-3-of-6, .u-basis-3\/6, .u-basis-4-of-8, .u-basis-4\/8, .u-basis-5-of-10, .u-basis-5\/10, .u-basis-6-of-12, .u-basis-6\/12 {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-2\@large, .u-basis-1\/2\@large, .u-basis-2-of-4\@large, .u-basis-2\/4\@large, .u-basis-3-of-6\@large, .u-basis-3\/6\@large, .u-basis-4-of-8\@large, .u-basis-4\/8\@large, .u-basis-5-of-10\@large, .u-basis-5\/10\@large, .u-basis-6-of-12\@large, .u-basis-6\/12\@large {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-2\@small, .u-basis-1\/2\@small, .u-basis-2-of-4\@small, .u-basis-2\/4\@small, .u-basis-3-of-6\@small, .u-basis-3\/6\@small, .u-basis-4-of-8\@small, .u-basis-4\/8\@small, .u-basis-5-of-10\@small, .u-basis-5\/10\@small, .u-basis-6-of-12\@small, .u-basis-6\/12\@small {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
 
 .u-min-width-3-of-5, .u-min-width-3\/5, .u-min-width-6-of-10, .u-min-width-6\/10 {
   min-width: 60%; }
@@ -3087,18 +2583,6 @@ Usage:
     .u-max-width-3-of-5\@small, .u-max-width-3\/5\@small, .u-max-width-6-of-10\@small, .u-max-width-6\/10\@small {
       max-width: 60%; } }
 
-.u-basis-3-of-5, .u-basis-3\/5, .u-basis-6-of-10, .u-basis-6\/10 {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-5\@large, .u-basis-3\/5\@large, .u-basis-6-of-10\@large, .u-basis-6\/10\@large {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-5\@small, .u-basis-3\/5\@small, .u-basis-6-of-10\@small, .u-basis-6\/10\@small {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%; } }
-
 .u-min-width-7-of-10, .u-min-width-7\/10 {
   min-width: 70%; }
   @media screen and (min-width: 47.5rem) {
@@ -3125,18 +2609,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-7-of-10\@small, .u-max-width-7\/10\@small {
       max-width: 70%; } }
-
-.u-basis-7-of-10, .u-basis-7\/10 {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-7-of-10\@large, .u-basis-7\/10\@large {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-7-of-10\@small, .u-basis-7\/10\@small {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; } }
 
 .u-min-width-3-of-4, .u-min-width-3\/4, .u-min-width-6-of-8, .u-min-width-6\/8, .u-min-width-9-of-12, .u-min-width-9\/12 {
   min-width: 75%; }
@@ -3165,18 +2637,6 @@ Usage:
     .u-max-width-3-of-4\@small, .u-max-width-3\/4\@small, .u-max-width-6-of-8\@small, .u-max-width-6\/8\@small, .u-max-width-9-of-12\@small, .u-max-width-9\/12\@small {
       max-width: 75%; } }
 
-.u-basis-3-of-4, .u-basis-3\/4, .u-basis-6-of-8, .u-basis-6\/8, .u-basis-9-of-12, .u-basis-9\/12 {
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-4\@large, .u-basis-3\/4\@large, .u-basis-6-of-8\@large, .u-basis-6\/8\@large, .u-basis-9-of-12\@large, .u-basis-9\/12\@large {
-      -ms-flex-preferred-size: 75%;
-          flex-basis: 75%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-4\@small, .u-basis-3\/4\@small, .u-basis-6-of-8\@small, .u-basis-6\/8\@small, .u-basis-9-of-12\@small, .u-basis-9\/12\@small {
-      -ms-flex-preferred-size: 75%;
-          flex-basis: 75%; } }
-
 .u-min-width-4-of-5, .u-min-width-4\/5, .u-min-width-8-of-10, .u-min-width-8\/10 {
   min-width: 80%; }
   @media screen and (min-width: 47.5rem) {
@@ -3203,18 +2663,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-4-of-5\@small, .u-max-width-4\/5\@small, .u-max-width-8-of-10\@small, .u-max-width-8\/10\@small {
       max-width: 80%; } }
-
-.u-basis-4-of-5, .u-basis-4\/5, .u-basis-8-of-10, .u-basis-8\/10 {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-4-of-5\@large, .u-basis-4\/5\@large, .u-basis-8-of-10\@large, .u-basis-8\/10\@large {
-      -ms-flex-preferred-size: 80%;
-          flex-basis: 80%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-4-of-5\@small, .u-basis-4\/5\@small, .u-basis-8-of-10\@small, .u-basis-8\/10\@small {
-      -ms-flex-preferred-size: 80%;
-          flex-basis: 80%; } }
 
 .u-min-width-9-of-10, .u-min-width-9\/10 {
   min-width: 90%; }
@@ -3243,18 +2691,6 @@ Usage:
     .u-max-width-9-of-10\@small, .u-max-width-9\/10\@small {
       max-width: 90%; } }
 
-.u-basis-9-of-10, .u-basis-9\/10 {
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-9-of-10\@large, .u-basis-9\/10\@large {
-      -ms-flex-preferred-size: 90%;
-          flex-basis: 90%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-9-of-10\@small, .u-basis-9\/10\@small {
-      -ms-flex-preferred-size: 90%;
-          flex-basis: 90%; } }
-
 .u-min-width-1-of-1, .u-min-width-1\/1, .u-min-width-2-of-2, .u-min-width-2\/2, .u-min-width-3-of-3, .u-min-width-3\/3, .u-min-width-4-of-4, .u-min-width-4\/4, .u-min-width-5-of-5, .u-min-width-5\/5, .u-min-width-6-of-6, .u-min-width-6\/6, .u-min-width-7-of-7, .u-min-width-7\/7, .u-min-width-8-of-8, .u-min-width-8\/8, .u-min-width-9-of-9, .u-min-width-9\/9, .u-min-width-10-of-10, .u-min-width-10\/10, .u-min-width-11-of-11, .u-min-width-11\/11, .u-min-width-12-of-12, .u-min-width-12\/12 {
   min-width: 100%; }
   @media screen and (min-width: 47.5rem) {
@@ -3281,18 +2717,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-1\@small, .u-max-width-1\/1\@small, .u-max-width-2-of-2\@small, .u-max-width-2\/2\@small, .u-max-width-3-of-3\@small, .u-max-width-3\/3\@small, .u-max-width-4-of-4\@small, .u-max-width-4\/4\@small, .u-max-width-5-of-5\@small, .u-max-width-5\/5\@small, .u-max-width-6-of-6\@small, .u-max-width-6\/6\@small, .u-max-width-7-of-7\@small, .u-max-width-7\/7\@small, .u-max-width-8-of-8\@small, .u-max-width-8\/8\@small, .u-max-width-9-of-9\@small, .u-max-width-9\/9\@small, .u-max-width-10-of-10\@small, .u-max-width-10\/10\@small, .u-max-width-11-of-11\@small, .u-max-width-11\/11\@small, .u-max-width-12-of-12\@small, .u-max-width-12\/12\@small {
       max-width: 100%; } }
-
-.u-basis-1-of-1, .u-basis-1\/1, .u-basis-2-of-2, .u-basis-2\/2, .u-basis-3-of-3, .u-basis-3\/3, .u-basis-4-of-4, .u-basis-4\/4, .u-basis-5-of-5, .u-basis-5\/5, .u-basis-6-of-6, .u-basis-6\/6, .u-basis-7-of-7, .u-basis-7\/7, .u-basis-8-of-8, .u-basis-8\/8, .u-basis-9-of-9, .u-basis-9\/9, .u-basis-10-of-10, .u-basis-10\/10, .u-basis-11-of-11, .u-basis-11\/11, .u-basis-12-of-12, .u-basis-12\/12 {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-1\@large, .u-basis-1\/1\@large, .u-basis-2-of-2\@large, .u-basis-2\/2\@large, .u-basis-3-of-3\@large, .u-basis-3\/3\@large, .u-basis-4-of-4\@large, .u-basis-4\/4\@large, .u-basis-5-of-5\@large, .u-basis-5\/5\@large, .u-basis-6-of-6\@large, .u-basis-6\/6\@large, .u-basis-7-of-7\@large, .u-basis-7\/7\@large, .u-basis-8-of-8\@large, .u-basis-8\/8\@large, .u-basis-9-of-9\@large, .u-basis-9\/9\@large, .u-basis-10-of-10\@large, .u-basis-10\/10\@large, .u-basis-11-of-11\@large, .u-basis-11\/11\@large, .u-basis-12-of-12\@large, .u-basis-12\/12\@large {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-1\@small, .u-basis-1\/1\@small, .u-basis-2-of-2\@small, .u-basis-2\/2\@small, .u-basis-3-of-3\@small, .u-basis-3\/3\@small, .u-basis-4-of-4\@small, .u-basis-4\/4\@small, .u-basis-5-of-5\@small, .u-basis-5\/5\@small, .u-basis-6-of-6\@small, .u-basis-6\/6\@small, .u-basis-7-of-7\@small, .u-basis-7\/7\@small, .u-basis-8-of-8\@small, .u-basis-8\/8\@small, .u-basis-9-of-9\@small, .u-basis-9\/9\@small, .u-basis-10-of-10\@small, .u-basis-10\/10\@small, .u-basis-11-of-11\@small, .u-basis-11\/11\@small, .u-basis-12-of-12\@small, .u-basis-12\/12\@small {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; } }
 
 /*
 ---
@@ -8637,18 +8061,6 @@ Usage:
     .u-max-width-1-of-10\@small, .u-max-width-1\/10\@small {
       max-width: 10%; } }
 
-.u-basis-1-of-10, .u-basis-1\/10 {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-10\@large, .u-basis-1\/10\@large {
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-10\@small, .u-basis-1\/10\@small {
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%; } }
-
 .u-min-width-1-of-5, .u-min-width-1\/5, .u-min-width-2-of-10, .u-min-width-2\/10 {
   min-width: 20%; }
   @media screen and (min-width: 47.5rem) {
@@ -8675,18 +8087,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-5\@small, .u-max-width-1\/5\@small, .u-max-width-2-of-10\@small, .u-max-width-2\/10\@small {
       max-width: 20%; } }
-
-.u-basis-1-of-5, .u-basis-1\/5, .u-basis-2-of-10, .u-basis-2\/10 {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-5\@large, .u-basis-1\/5\@large, .u-basis-2-of-10\@large, .u-basis-2\/10\@large {
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-5\@small, .u-basis-1\/5\@small, .u-basis-2-of-10\@small, .u-basis-2\/10\@small {
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; } }
 
 .u-min-width-1-of-4, .u-min-width-1\/4, .u-min-width-2-of-8, .u-min-width-2\/8, .u-min-width-3-of-12, .u-min-width-3\/12 {
   min-width: 25%; }
@@ -8715,18 +8115,6 @@ Usage:
     .u-max-width-1-of-4\@small, .u-max-width-1\/4\@small, .u-max-width-2-of-8\@small, .u-max-width-2\/8\@small, .u-max-width-3-of-12\@small, .u-max-width-3\/12\@small {
       max-width: 25%; } }
 
-.u-basis-1-of-4, .u-basis-1\/4, .u-basis-2-of-8, .u-basis-2\/8, .u-basis-3-of-12, .u-basis-3\/12 {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-4\@large, .u-basis-1\/4\@large, .u-basis-2-of-8\@large, .u-basis-2\/8\@large, .u-basis-3-of-12\@large, .u-basis-3\/12\@large {
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-4\@small, .u-basis-1\/4\@small, .u-basis-2-of-8\@small, .u-basis-2\/8\@small, .u-basis-3-of-12\@small, .u-basis-3\/12\@small {
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; } }
-
 .u-min-width-3-of-10, .u-min-width-3\/10 {
   min-width: 30%; }
   @media screen and (min-width: 47.5rem) {
@@ -8753,18 +8141,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-3-of-10\@small, .u-max-width-3\/10\@small {
       max-width: 30%; } }
-
-.u-basis-3-of-10, .u-basis-3\/10 {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-10\@large, .u-basis-3\/10\@large {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-10\@small, .u-basis-3\/10\@small {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; } }
 
 .u-min-width-2-of-5, .u-min-width-2\/5, .u-min-width-4-of-10, .u-min-width-4\/10 {
   min-width: 40%; }
@@ -8793,18 +8169,6 @@ Usage:
     .u-max-width-2-of-5\@small, .u-max-width-2\/5\@small, .u-max-width-4-of-10\@small, .u-max-width-4\/10\@small {
       max-width: 40%; } }
 
-.u-basis-2-of-5, .u-basis-2\/5, .u-basis-4-of-10, .u-basis-4\/10 {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-2-of-5\@large, .u-basis-2\/5\@large, .u-basis-4-of-10\@large, .u-basis-4\/10\@large {
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-2-of-5\@small, .u-basis-2\/5\@small, .u-basis-4-of-10\@small, .u-basis-4\/10\@small {
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%; } }
-
 .u-min-width-1-of-2, .u-min-width-1\/2, .u-min-width-2-of-4, .u-min-width-2\/4, .u-min-width-3-of-6, .u-min-width-3\/6, .u-min-width-4-of-8, .u-min-width-4\/8, .u-min-width-5-of-10, .u-min-width-5\/10, .u-min-width-6-of-12, .u-min-width-6\/12 {
   min-width: 50%; }
   @media screen and (min-width: 47.5rem) {
@@ -8831,18 +8195,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-2\@small, .u-max-width-1\/2\@small, .u-max-width-2-of-4\@small, .u-max-width-2\/4\@small, .u-max-width-3-of-6\@small, .u-max-width-3\/6\@small, .u-max-width-4-of-8\@small, .u-max-width-4\/8\@small, .u-max-width-5-of-10\@small, .u-max-width-5\/10\@small, .u-max-width-6-of-12\@small, .u-max-width-6\/12\@small {
       max-width: 50%; } }
-
-.u-basis-1-of-2, .u-basis-1\/2, .u-basis-2-of-4, .u-basis-2\/4, .u-basis-3-of-6, .u-basis-3\/6, .u-basis-4-of-8, .u-basis-4\/8, .u-basis-5-of-10, .u-basis-5\/10, .u-basis-6-of-12, .u-basis-6\/12 {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-2\@large, .u-basis-1\/2\@large, .u-basis-2-of-4\@large, .u-basis-2\/4\@large, .u-basis-3-of-6\@large, .u-basis-3\/6\@large, .u-basis-4-of-8\@large, .u-basis-4\/8\@large, .u-basis-5-of-10\@large, .u-basis-5\/10\@large, .u-basis-6-of-12\@large, .u-basis-6\/12\@large {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-2\@small, .u-basis-1\/2\@small, .u-basis-2-of-4\@small, .u-basis-2\/4\@small, .u-basis-3-of-6\@small, .u-basis-3\/6\@small, .u-basis-4-of-8\@small, .u-basis-4\/8\@small, .u-basis-5-of-10\@small, .u-basis-5\/10\@small, .u-basis-6-of-12\@small, .u-basis-6\/12\@small {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
 
 .u-min-width-3-of-5, .u-min-width-3\/5, .u-min-width-6-of-10, .u-min-width-6\/10 {
   min-width: 60%; }
@@ -8871,18 +8223,6 @@ Usage:
     .u-max-width-3-of-5\@small, .u-max-width-3\/5\@small, .u-max-width-6-of-10\@small, .u-max-width-6\/10\@small {
       max-width: 60%; } }
 
-.u-basis-3-of-5, .u-basis-3\/5, .u-basis-6-of-10, .u-basis-6\/10 {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-5\@large, .u-basis-3\/5\@large, .u-basis-6-of-10\@large, .u-basis-6\/10\@large {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-5\@small, .u-basis-3\/5\@small, .u-basis-6-of-10\@small, .u-basis-6\/10\@small {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%; } }
-
 .u-min-width-7-of-10, .u-min-width-7\/10 {
   min-width: 70%; }
   @media screen and (min-width: 47.5rem) {
@@ -8909,18 +8249,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-7-of-10\@small, .u-max-width-7\/10\@small {
       max-width: 70%; } }
-
-.u-basis-7-of-10, .u-basis-7\/10 {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-7-of-10\@large, .u-basis-7\/10\@large {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-7-of-10\@small, .u-basis-7\/10\@small {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; } }
 
 .u-min-width-3-of-4, .u-min-width-3\/4, .u-min-width-6-of-8, .u-min-width-6\/8, .u-min-width-9-of-12, .u-min-width-9\/12 {
   min-width: 75%; }
@@ -8949,18 +8277,6 @@ Usage:
     .u-max-width-3-of-4\@small, .u-max-width-3\/4\@small, .u-max-width-6-of-8\@small, .u-max-width-6\/8\@small, .u-max-width-9-of-12\@small, .u-max-width-9\/12\@small {
       max-width: 75%; } }
 
-.u-basis-3-of-4, .u-basis-3\/4, .u-basis-6-of-8, .u-basis-6\/8, .u-basis-9-of-12, .u-basis-9\/12 {
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-4\@large, .u-basis-3\/4\@large, .u-basis-6-of-8\@large, .u-basis-6\/8\@large, .u-basis-9-of-12\@large, .u-basis-9\/12\@large {
-      -ms-flex-preferred-size: 75%;
-          flex-basis: 75%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-4\@small, .u-basis-3\/4\@small, .u-basis-6-of-8\@small, .u-basis-6\/8\@small, .u-basis-9-of-12\@small, .u-basis-9\/12\@small {
-      -ms-flex-preferred-size: 75%;
-          flex-basis: 75%; } }
-
 .u-min-width-4-of-5, .u-min-width-4\/5, .u-min-width-8-of-10, .u-min-width-8\/10 {
   min-width: 80%; }
   @media screen and (min-width: 47.5rem) {
@@ -8987,18 +8303,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-4-of-5\@small, .u-max-width-4\/5\@small, .u-max-width-8-of-10\@small, .u-max-width-8\/10\@small {
       max-width: 80%; } }
-
-.u-basis-4-of-5, .u-basis-4\/5, .u-basis-8-of-10, .u-basis-8\/10 {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-4-of-5\@large, .u-basis-4\/5\@large, .u-basis-8-of-10\@large, .u-basis-8\/10\@large {
-      -ms-flex-preferred-size: 80%;
-          flex-basis: 80%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-4-of-5\@small, .u-basis-4\/5\@small, .u-basis-8-of-10\@small, .u-basis-8\/10\@small {
-      -ms-flex-preferred-size: 80%;
-          flex-basis: 80%; } }
 
 .u-min-width-9-of-10, .u-min-width-9\/10 {
   min-width: 90%; }
@@ -9027,18 +8331,6 @@ Usage:
     .u-max-width-9-of-10\@small, .u-max-width-9\/10\@small {
       max-width: 90%; } }
 
-.u-basis-9-of-10, .u-basis-9\/10 {
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-9-of-10\@large, .u-basis-9\/10\@large {
-      -ms-flex-preferred-size: 90%;
-          flex-basis: 90%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-9-of-10\@small, .u-basis-9\/10\@small {
-      -ms-flex-preferred-size: 90%;
-          flex-basis: 90%; } }
-
 .u-min-width-1-of-1, .u-min-width-1\/1, .u-min-width-2-of-2, .u-min-width-2\/2, .u-min-width-3-of-3, .u-min-width-3\/3, .u-min-width-4-of-4, .u-min-width-4\/4, .u-min-width-5-of-5, .u-min-width-5\/5, .u-min-width-6-of-6, .u-min-width-6\/6, .u-min-width-7-of-7, .u-min-width-7\/7, .u-min-width-8-of-8, .u-min-width-8\/8, .u-min-width-9-of-9, .u-min-width-9\/9, .u-min-width-10-of-10, .u-min-width-10\/10, .u-min-width-11-of-11, .u-min-width-11\/11, .u-min-width-12-of-12, .u-min-width-12\/12 {
   min-width: 100%; }
   @media screen and (min-width: 47.5rem) {
@@ -9065,18 +8357,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-1\@small, .u-max-width-1\/1\@small, .u-max-width-2-of-2\@small, .u-max-width-2\/2\@small, .u-max-width-3-of-3\@small, .u-max-width-3\/3\@small, .u-max-width-4-of-4\@small, .u-max-width-4\/4\@small, .u-max-width-5-of-5\@small, .u-max-width-5\/5\@small, .u-max-width-6-of-6\@small, .u-max-width-6\/6\@small, .u-max-width-7-of-7\@small, .u-max-width-7\/7\@small, .u-max-width-8-of-8\@small, .u-max-width-8\/8\@small, .u-max-width-9-of-9\@small, .u-max-width-9\/9\@small, .u-max-width-10-of-10\@small, .u-max-width-10\/10\@small, .u-max-width-11-of-11\@small, .u-max-width-11\/11\@small, .u-max-width-12-of-12\@small, .u-max-width-12\/12\@small {
       max-width: 100%; } }
-
-.u-basis-1-of-1, .u-basis-1\/1, .u-basis-2-of-2, .u-basis-2\/2, .u-basis-3-of-3, .u-basis-3\/3, .u-basis-4-of-4, .u-basis-4\/4, .u-basis-5-of-5, .u-basis-5\/5, .u-basis-6-of-6, .u-basis-6\/6, .u-basis-7-of-7, .u-basis-7\/7, .u-basis-8-of-8, .u-basis-8\/8, .u-basis-9-of-9, .u-basis-9\/9, .u-basis-10-of-10, .u-basis-10\/10, .u-basis-11-of-11, .u-basis-11\/11, .u-basis-12-of-12, .u-basis-12\/12 {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-1\@large, .u-basis-1\/1\@large, .u-basis-2-of-2\@large, .u-basis-2\/2\@large, .u-basis-3-of-3\@large, .u-basis-3\/3\@large, .u-basis-4-of-4\@large, .u-basis-4\/4\@large, .u-basis-5-of-5\@large, .u-basis-5\/5\@large, .u-basis-6-of-6\@large, .u-basis-6\/6\@large, .u-basis-7-of-7\@large, .u-basis-7\/7\@large, .u-basis-8-of-8\@large, .u-basis-8\/8\@large, .u-basis-9-of-9\@large, .u-basis-9\/9\@large, .u-basis-10-of-10\@large, .u-basis-10\/10\@large, .u-basis-11-of-11\@large, .u-basis-11\/11\@large, .u-basis-12-of-12\@large, .u-basis-12\/12\@large {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-1\@small, .u-basis-1\/1\@small, .u-basis-2-of-2\@small, .u-basis-2\/2\@small, .u-basis-3-of-3\@small, .u-basis-3\/3\@small, .u-basis-4-of-4\@small, .u-basis-4\/4\@small, .u-basis-5-of-5\@small, .u-basis-5\/5\@small, .u-basis-6-of-6\@small, .u-basis-6\/6\@small, .u-basis-7-of-7\@small, .u-basis-7\/7\@small, .u-basis-8-of-8\@small, .u-basis-8\/8\@small, .u-basis-9-of-9\@small, .u-basis-9\/9\@small, .u-basis-10-of-10\@small, .u-basis-10\/10\@small, .u-basis-11-of-11\@small, .u-basis-11\/11\@small, .u-basis-12-of-12\@small, .u-basis-12\/12\@small {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; } }
 
 /*
 ---
@@ -11009,18 +10289,6 @@ Usage:
     .u-max-width-1-of-10\@small, .u-max-width-1\/10\@small {
       max-width: 10%; } }
 
-.u-basis-1-of-10, .u-basis-1\/10 {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-10\@large, .u-basis-1\/10\@large {
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-10\@small, .u-basis-1\/10\@small {
-      -ms-flex-preferred-size: 10%;
-          flex-basis: 10%; } }
-
 .u-min-width-1-of-5, .u-min-width-1\/5, .u-min-width-2-of-10, .u-min-width-2\/10 {
   min-width: 20%; }
   @media screen and (min-width: 47.5rem) {
@@ -11047,18 +10315,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-5\@small, .u-max-width-1\/5\@small, .u-max-width-2-of-10\@small, .u-max-width-2\/10\@small {
       max-width: 20%; } }
-
-.u-basis-1-of-5, .u-basis-1\/5, .u-basis-2-of-10, .u-basis-2\/10 {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-5\@large, .u-basis-1\/5\@large, .u-basis-2-of-10\@large, .u-basis-2\/10\@large {
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-5\@small, .u-basis-1\/5\@small, .u-basis-2-of-10\@small, .u-basis-2\/10\@small {
-      -ms-flex-preferred-size: 20%;
-          flex-basis: 20%; } }
 
 .u-min-width-1-of-4, .u-min-width-1\/4, .u-min-width-2-of-8, .u-min-width-2\/8, .u-min-width-3-of-12, .u-min-width-3\/12 {
   min-width: 25%; }
@@ -11087,18 +10343,6 @@ Usage:
     .u-max-width-1-of-4\@small, .u-max-width-1\/4\@small, .u-max-width-2-of-8\@small, .u-max-width-2\/8\@small, .u-max-width-3-of-12\@small, .u-max-width-3\/12\@small {
       max-width: 25%; } }
 
-.u-basis-1-of-4, .u-basis-1\/4, .u-basis-2-of-8, .u-basis-2\/8, .u-basis-3-of-12, .u-basis-3\/12 {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-4\@large, .u-basis-1\/4\@large, .u-basis-2-of-8\@large, .u-basis-2\/8\@large, .u-basis-3-of-12\@large, .u-basis-3\/12\@large {
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-4\@small, .u-basis-1\/4\@small, .u-basis-2-of-8\@small, .u-basis-2\/8\@small, .u-basis-3-of-12\@small, .u-basis-3\/12\@small {
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; } }
-
 .u-min-width-3-of-10, .u-min-width-3\/10 {
   min-width: 30%; }
   @media screen and (min-width: 47.5rem) {
@@ -11125,18 +10369,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-3-of-10\@small, .u-max-width-3\/10\@small {
       max-width: 30%; } }
-
-.u-basis-3-of-10, .u-basis-3\/10 {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-10\@large, .u-basis-3\/10\@large {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-10\@small, .u-basis-3\/10\@small {
-      -ms-flex-preferred-size: 30%;
-          flex-basis: 30%; } }
 
 .u-min-width-2-of-5, .u-min-width-2\/5, .u-min-width-4-of-10, .u-min-width-4\/10 {
   min-width: 40%; }
@@ -11165,18 +10397,6 @@ Usage:
     .u-max-width-2-of-5\@small, .u-max-width-2\/5\@small, .u-max-width-4-of-10\@small, .u-max-width-4\/10\@small {
       max-width: 40%; } }
 
-.u-basis-2-of-5, .u-basis-2\/5, .u-basis-4-of-10, .u-basis-4\/10 {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-2-of-5\@large, .u-basis-2\/5\@large, .u-basis-4-of-10\@large, .u-basis-4\/10\@large {
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-2-of-5\@small, .u-basis-2\/5\@small, .u-basis-4-of-10\@small, .u-basis-4\/10\@small {
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%; } }
-
 .u-min-width-1-of-2, .u-min-width-1\/2, .u-min-width-2-of-4, .u-min-width-2\/4, .u-min-width-3-of-6, .u-min-width-3\/6, .u-min-width-4-of-8, .u-min-width-4\/8, .u-min-width-5-of-10, .u-min-width-5\/10, .u-min-width-6-of-12, .u-min-width-6\/12 {
   min-width: 50%; }
   @media screen and (min-width: 47.5rem) {
@@ -11203,18 +10423,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-2\@small, .u-max-width-1\/2\@small, .u-max-width-2-of-4\@small, .u-max-width-2\/4\@small, .u-max-width-3-of-6\@small, .u-max-width-3\/6\@small, .u-max-width-4-of-8\@small, .u-max-width-4\/8\@small, .u-max-width-5-of-10\@small, .u-max-width-5\/10\@small, .u-max-width-6-of-12\@small, .u-max-width-6\/12\@small {
       max-width: 50%; } }
-
-.u-basis-1-of-2, .u-basis-1\/2, .u-basis-2-of-4, .u-basis-2\/4, .u-basis-3-of-6, .u-basis-3\/6, .u-basis-4-of-8, .u-basis-4\/8, .u-basis-5-of-10, .u-basis-5\/10, .u-basis-6-of-12, .u-basis-6\/12 {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-2\@large, .u-basis-1\/2\@large, .u-basis-2-of-4\@large, .u-basis-2\/4\@large, .u-basis-3-of-6\@large, .u-basis-3\/6\@large, .u-basis-4-of-8\@large, .u-basis-4\/8\@large, .u-basis-5-of-10\@large, .u-basis-5\/10\@large, .u-basis-6-of-12\@large, .u-basis-6\/12\@large {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-2\@small, .u-basis-1\/2\@small, .u-basis-2-of-4\@small, .u-basis-2\/4\@small, .u-basis-3-of-6\@small, .u-basis-3\/6\@small, .u-basis-4-of-8\@small, .u-basis-4\/8\@small, .u-basis-5-of-10\@small, .u-basis-5\/10\@small, .u-basis-6-of-12\@small, .u-basis-6\/12\@small {
-      -ms-flex-preferred-size: 50%;
-          flex-basis: 50%; } }
 
 .u-min-width-3-of-5, .u-min-width-3\/5, .u-min-width-6-of-10, .u-min-width-6\/10 {
   min-width: 60%; }
@@ -11243,18 +10451,6 @@ Usage:
     .u-max-width-3-of-5\@small, .u-max-width-3\/5\@small, .u-max-width-6-of-10\@small, .u-max-width-6\/10\@small {
       max-width: 60%; } }
 
-.u-basis-3-of-5, .u-basis-3\/5, .u-basis-6-of-10, .u-basis-6\/10 {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-5\@large, .u-basis-3\/5\@large, .u-basis-6-of-10\@large, .u-basis-6\/10\@large {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-5\@small, .u-basis-3\/5\@small, .u-basis-6-of-10\@small, .u-basis-6\/10\@small {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%; } }
-
 .u-min-width-7-of-10, .u-min-width-7\/10 {
   min-width: 70%; }
   @media screen and (min-width: 47.5rem) {
@@ -11281,18 +10477,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-7-of-10\@small, .u-max-width-7\/10\@small {
       max-width: 70%; } }
-
-.u-basis-7-of-10, .u-basis-7\/10 {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-7-of-10\@large, .u-basis-7\/10\@large {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-7-of-10\@small, .u-basis-7\/10\@small {
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; } }
 
 .u-min-width-3-of-4, .u-min-width-3\/4, .u-min-width-6-of-8, .u-min-width-6\/8, .u-min-width-9-of-12, .u-min-width-9\/12 {
   min-width: 75%; }
@@ -11321,18 +10505,6 @@ Usage:
     .u-max-width-3-of-4\@small, .u-max-width-3\/4\@small, .u-max-width-6-of-8\@small, .u-max-width-6\/8\@small, .u-max-width-9-of-12\@small, .u-max-width-9\/12\@small {
       max-width: 75%; } }
 
-.u-basis-3-of-4, .u-basis-3\/4, .u-basis-6-of-8, .u-basis-6\/8, .u-basis-9-of-12, .u-basis-9\/12 {
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-4\@large, .u-basis-3\/4\@large, .u-basis-6-of-8\@large, .u-basis-6\/8\@large, .u-basis-9-of-12\@large, .u-basis-9\/12\@large {
-      -ms-flex-preferred-size: 75%;
-          flex-basis: 75%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-4\@small, .u-basis-3\/4\@small, .u-basis-6-of-8\@small, .u-basis-6\/8\@small, .u-basis-9-of-12\@small, .u-basis-9\/12\@small {
-      -ms-flex-preferred-size: 75%;
-          flex-basis: 75%; } }
-
 .u-min-width-4-of-5, .u-min-width-4\/5, .u-min-width-8-of-10, .u-min-width-8\/10 {
   min-width: 80%; }
   @media screen and (min-width: 47.5rem) {
@@ -11359,18 +10531,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-4-of-5\@small, .u-max-width-4\/5\@small, .u-max-width-8-of-10\@small, .u-max-width-8\/10\@small {
       max-width: 80%; } }
-
-.u-basis-4-of-5, .u-basis-4\/5, .u-basis-8-of-10, .u-basis-8\/10 {
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-4-of-5\@large, .u-basis-4\/5\@large, .u-basis-8-of-10\@large, .u-basis-8\/10\@large {
-      -ms-flex-preferred-size: 80%;
-          flex-basis: 80%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-4-of-5\@small, .u-basis-4\/5\@small, .u-basis-8-of-10\@small, .u-basis-8\/10\@small {
-      -ms-flex-preferred-size: 80%;
-          flex-basis: 80%; } }
 
 .u-min-width-9-of-10, .u-min-width-9\/10 {
   min-width: 90%; }
@@ -11399,18 +10559,6 @@ Usage:
     .u-max-width-9-of-10\@small, .u-max-width-9\/10\@small {
       max-width: 90%; } }
 
-.u-basis-9-of-10, .u-basis-9\/10 {
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-9-of-10\@large, .u-basis-9\/10\@large {
-      -ms-flex-preferred-size: 90%;
-          flex-basis: 90%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-9-of-10\@small, .u-basis-9\/10\@small {
-      -ms-flex-preferred-size: 90%;
-          flex-basis: 90%; } }
-
 .u-min-width-1-of-1, .u-min-width-1\/1, .u-min-width-2-of-2, .u-min-width-2\/2, .u-min-width-3-of-3, .u-min-width-3\/3, .u-min-width-4-of-4, .u-min-width-4\/4, .u-min-width-5-of-5, .u-min-width-5\/5, .u-min-width-6-of-6, .u-min-width-6\/6, .u-min-width-7-of-7, .u-min-width-7\/7, .u-min-width-8-of-8, .u-min-width-8\/8, .u-min-width-9-of-9, .u-min-width-9\/9, .u-min-width-10-of-10, .u-min-width-10\/10, .u-min-width-11-of-11, .u-min-width-11\/11, .u-min-width-12-of-12, .u-min-width-12\/12 {
   min-width: 100%; }
   @media screen and (min-width: 47.5rem) {
@@ -11437,18 +10585,6 @@ Usage:
   @media screen and (max-width: 47.5rem) {
     .u-max-width-1-of-1\@small, .u-max-width-1\/1\@small, .u-max-width-2-of-2\@small, .u-max-width-2\/2\@small, .u-max-width-3-of-3\@small, .u-max-width-3\/3\@small, .u-max-width-4-of-4\@small, .u-max-width-4\/4\@small, .u-max-width-5-of-5\@small, .u-max-width-5\/5\@small, .u-max-width-6-of-6\@small, .u-max-width-6\/6\@small, .u-max-width-7-of-7\@small, .u-max-width-7\/7\@small, .u-max-width-8-of-8\@small, .u-max-width-8\/8\@small, .u-max-width-9-of-9\@small, .u-max-width-9\/9\@small, .u-max-width-10-of-10\@small, .u-max-width-10\/10\@small, .u-max-width-11-of-11\@small, .u-max-width-11\/11\@small, .u-max-width-12-of-12\@small, .u-max-width-12\/12\@small {
       max-width: 100%; } }
-
-.u-basis-1-of-1, .u-basis-1\/1, .u-basis-2-of-2, .u-basis-2\/2, .u-basis-3-of-3, .u-basis-3\/3, .u-basis-4-of-4, .u-basis-4\/4, .u-basis-5-of-5, .u-basis-5\/5, .u-basis-6-of-6, .u-basis-6\/6, .u-basis-7-of-7, .u-basis-7\/7, .u-basis-8-of-8, .u-basis-8\/8, .u-basis-9-of-9, .u-basis-9\/9, .u-basis-10-of-10, .u-basis-10\/10, .u-basis-11-of-11, .u-basis-11\/11, .u-basis-12-of-12, .u-basis-12\/12 {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-1\@large, .u-basis-1\/1\@large, .u-basis-2-of-2\@large, .u-basis-2\/2\@large, .u-basis-3-of-3\@large, .u-basis-3\/3\@large, .u-basis-4-of-4\@large, .u-basis-4\/4\@large, .u-basis-5-of-5\@large, .u-basis-5\/5\@large, .u-basis-6-of-6\@large, .u-basis-6\/6\@large, .u-basis-7-of-7\@large, .u-basis-7\/7\@large, .u-basis-8-of-8\@large, .u-basis-8\/8\@large, .u-basis-9-of-9\@large, .u-basis-9\/9\@large, .u-basis-10-of-10\@large, .u-basis-10\/10\@large, .u-basis-11-of-11\@large, .u-basis-11\/11\@large, .u-basis-12-of-12\@large, .u-basis-12\/12\@large {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-1\@small, .u-basis-1\/1\@small, .u-basis-2-of-2\@small, .u-basis-2\/2\@small, .u-basis-3-of-3\@small, .u-basis-3\/3\@small, .u-basis-4-of-4\@small, .u-basis-4\/4\@small, .u-basis-5-of-5\@small, .u-basis-5\/5\@small, .u-basis-6-of-6\@small, .u-basis-6\/6\@small, .u-basis-7-of-7\@small, .u-basis-7\/7\@small, .u-basis-8-of-8\@small, .u-basis-8\/8\@small, .u-basis-9-of-9\@small, .u-basis-9\/9\@small, .u-basis-10-of-10\@small, .u-basis-10\/10\@small, .u-basis-11-of-11\@small, .u-basis-11\/11\@small, .u-basis-12-of-12\@small, .u-basis-12\/12\@small {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; } }
 
 /*
 ---
@@ -11494,18 +10630,6 @@ category: 6. Tools > Mixin
     .u-width-1-of-3\@small, .u-width-1\/3\@small, .u-width-2-of-6\@small, .u-width-2\/6\@small, .u-width-3-of-9\@small, .u-width-3\/9\@small, .u-width-4-of-12\@small, .u-width-4\/12\@small {
       width: 33.3333333333%; } }
 
-.u-basis-1-of-3, .u-basis-1\/3, .u-basis-2-of-6, .u-basis-2\/6, .u-basis-3-of-9, .u-basis-3\/9, .u-basis-4-of-12, .u-basis-4\/12 {
-  -ms-flex-preferred-size: 33.3333333333%;
-      flex-basis: 33.3333333333%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-3\@large, .u-basis-1\/3\@large, .u-basis-2-of-6\@large, .u-basis-2\/6\@large, .u-basis-3-of-9\@large, .u-basis-3\/9\@large, .u-basis-4-of-12\@large, .u-basis-4\/12\@large {
-      -ms-flex-preferred-size: 33.3333333333%;
-          flex-basis: 33.3333333333%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-3\@small, .u-basis-1\/3\@small, .u-basis-2-of-6\@small, .u-basis-2\/6\@small, .u-basis-3-of-9\@small, .u-basis-3\/9\@small, .u-basis-4-of-12\@small, .u-basis-4\/12\@small {
-      -ms-flex-preferred-size: 33.3333333333%;
-          flex-basis: 33.3333333333%; } }
-
 .u-max-width-1-of-3, .u-max-width-1\/3, .u-max-width-2-of-6, .u-max-width-2\/6, .u-max-width-3-of-9, .u-max-width-3\/9, .u-max-width-4-of-12, .u-max-width-4\/12 {
   max-width: 33.3333333333%; }
   @media screen and (min-width: 47.5rem) {
@@ -11532,18 +10656,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-1-of-6\@small, .u-width-1\/6\@small, .u-width-2-of-12\@small, .u-width-2\/12\@small {
       width: 16.6666666667%; } }
-
-.u-basis-1-of-6, .u-basis-1\/6, .u-basis-2-of-12, .u-basis-2\/12 {
-  -ms-flex-preferred-size: 16.6666666667%;
-      flex-basis: 16.6666666667%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-6\@large, .u-basis-1\/6\@large, .u-basis-2-of-12\@large, .u-basis-2\/12\@large {
-      -ms-flex-preferred-size: 16.6666666667%;
-          flex-basis: 16.6666666667%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-6\@small, .u-basis-1\/6\@small, .u-basis-2-of-12\@small, .u-basis-2\/12\@small {
-      -ms-flex-preferred-size: 16.6666666667%;
-          flex-basis: 16.6666666667%; } }
 
 .u-max-width-1-of-6, .u-max-width-1\/6, .u-max-width-2-of-12, .u-max-width-2\/12 {
   max-width: 16.6666666667%; }
@@ -11572,18 +10684,6 @@ category: 6. Tools > Mixin
     .u-width-1-of-7\@small, .u-width-1\/7\@small {
       width: 14.2857142857%; } }
 
-.u-basis-1-of-7, .u-basis-1\/7 {
-  -ms-flex-preferred-size: 14.2857142857%;
-      flex-basis: 14.2857142857%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-7\@large, .u-basis-1\/7\@large {
-      -ms-flex-preferred-size: 14.2857142857%;
-          flex-basis: 14.2857142857%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-7\@small, .u-basis-1\/7\@small {
-      -ms-flex-preferred-size: 14.2857142857%;
-          flex-basis: 14.2857142857%; } }
-
 .u-max-width-1-of-7, .u-max-width-1\/7 {
   max-width: 14.2857142857%; }
   @media screen and (min-width: 47.5rem) {
@@ -11610,18 +10710,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-1-of-8\@small, .u-width-1\/8\@small {
       width: 12.5%; } }
-
-.u-basis-1-of-8, .u-basis-1\/8 {
-  -ms-flex-preferred-size: 12.5%;
-      flex-basis: 12.5%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-8\@large, .u-basis-1\/8\@large {
-      -ms-flex-preferred-size: 12.5%;
-          flex-basis: 12.5%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-8\@small, .u-basis-1\/8\@small {
-      -ms-flex-preferred-size: 12.5%;
-          flex-basis: 12.5%; } }
 
 .u-max-width-1-of-8, .u-max-width-1\/8 {
   max-width: 12.5%; }
@@ -11650,18 +10738,6 @@ category: 6. Tools > Mixin
     .u-width-1-of-9\@small, .u-width-1\/9\@small {
       width: 11.1111111111%; } }
 
-.u-basis-1-of-9, .u-basis-1\/9 {
-  -ms-flex-preferred-size: 11.1111111111%;
-      flex-basis: 11.1111111111%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-9\@large, .u-basis-1\/9\@large {
-      -ms-flex-preferred-size: 11.1111111111%;
-          flex-basis: 11.1111111111%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-9\@small, .u-basis-1\/9\@small {
-      -ms-flex-preferred-size: 11.1111111111%;
-          flex-basis: 11.1111111111%; } }
-
 .u-max-width-1-of-9, .u-max-width-1\/9 {
   max-width: 11.1111111111%; }
   @media screen and (min-width: 47.5rem) {
@@ -11688,18 +10764,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-1-of-11\@small, .u-width-1\/11\@small {
       width: 9.0909090909%; } }
-
-.u-basis-1-of-11, .u-basis-1\/11 {
-  -ms-flex-preferred-size: 9.0909090909%;
-      flex-basis: 9.0909090909%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-11\@large, .u-basis-1\/11\@large {
-      -ms-flex-preferred-size: 9.0909090909%;
-          flex-basis: 9.0909090909%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-11\@small, .u-basis-1\/11\@small {
-      -ms-flex-preferred-size: 9.0909090909%;
-          flex-basis: 9.0909090909%; } }
 
 .u-max-width-1-of-11, .u-max-width-1\/11 {
   max-width: 9.0909090909%; }
@@ -11728,18 +10792,6 @@ category: 6. Tools > Mixin
     .u-width-1-of-12\@small, .u-width-1\/12\@small {
       width: 8.3333333333%; } }
 
-.u-basis-1-of-12, .u-basis-1\/12 {
-  -ms-flex-preferred-size: 8.3333333333%;
-      flex-basis: 8.3333333333%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-12\@large, .u-basis-1\/12\@large {
-      -ms-flex-preferred-size: 8.3333333333%;
-          flex-basis: 8.3333333333%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-12\@small, .u-basis-1\/12\@small {
-      -ms-flex-preferred-size: 8.3333333333%;
-          flex-basis: 8.3333333333%; } }
-
 .u-max-width-1-of-12, .u-max-width-1\/12 {
   max-width: 8.3333333333%; }
   @media screen and (min-width: 47.5rem) {
@@ -11767,18 +10819,6 @@ category: 6. Tools > Mixin
     .u-width-2-of-3\@small, .u-width-2\/3\@small, .u-width-4-of-6\@small, .u-width-4\/6\@small, .u-width-6-of-9\@small, .u-width-6\/9\@small, .u-width-8-of-12\@small, .u-width-8\/12\@small {
       width: 66.6666666667%; } }
 
-.u-basis-2-of-3, .u-basis-2\/3, .u-basis-4-of-6, .u-basis-4\/6, .u-basis-6-of-9, .u-basis-6\/9, .u-basis-8-of-12, .u-basis-8\/12 {
-  -ms-flex-preferred-size: 66.6666666667%;
-      flex-basis: 66.6666666667%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-2-of-3\@large, .u-basis-2\/3\@large, .u-basis-4-of-6\@large, .u-basis-4\/6\@large, .u-basis-6-of-9\@large, .u-basis-6\/9\@large, .u-basis-8-of-12\@large, .u-basis-8\/12\@large {
-      -ms-flex-preferred-size: 66.6666666667%;
-          flex-basis: 66.6666666667%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-2-of-3\@small, .u-basis-2\/3\@small, .u-basis-4-of-6\@small, .u-basis-4\/6\@small, .u-basis-6-of-9\@small, .u-basis-6\/9\@small, .u-basis-8-of-12\@small, .u-basis-8\/12\@small {
-      -ms-flex-preferred-size: 66.6666666667%;
-          flex-basis: 66.6666666667%; } }
-
 .u-max-width-2-of-3, .u-max-width-2\/3, .u-max-width-4-of-6, .u-max-width-4\/6, .u-max-width-6-of-9, .u-max-width-6\/9, .u-max-width-8-of-12, .u-max-width-8\/12 {
   max-width: 66.6666666667%; }
   @media screen and (min-width: 47.5rem) {
@@ -11805,18 +10845,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-1-of-3\@small, .u-width-1\/3\@small, .u-width-2-of-6\@small, .u-width-2\/6\@small, .u-width-3-of-9\@small, .u-width-3\/9\@small, .u-width-4-of-12\@small, .u-width-4\/12\@small {
       width: 33.3333333333%; } }
-
-.u-basis-1-of-3, .u-basis-1\/3, .u-basis-2-of-6, .u-basis-2\/6, .u-basis-3-of-9, .u-basis-3\/9, .u-basis-4-of-12, .u-basis-4\/12 {
-  -ms-flex-preferred-size: 33.3333333333%;
-      flex-basis: 33.3333333333%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-3\@large, .u-basis-1\/3\@large, .u-basis-2-of-6\@large, .u-basis-2\/6\@large, .u-basis-3-of-9\@large, .u-basis-3\/9\@large, .u-basis-4-of-12\@large, .u-basis-4\/12\@large {
-      -ms-flex-preferred-size: 33.3333333333%;
-          flex-basis: 33.3333333333%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-3\@small, .u-basis-1\/3\@small, .u-basis-2-of-6\@small, .u-basis-2\/6\@small, .u-basis-3-of-9\@small, .u-basis-3\/9\@small, .u-basis-4-of-12\@small, .u-basis-4\/12\@small {
-      -ms-flex-preferred-size: 33.3333333333%;
-          flex-basis: 33.3333333333%; } }
 
 .u-max-width-1-of-3, .u-max-width-1\/3, .u-max-width-2-of-6, .u-max-width-2\/6, .u-max-width-3-of-9, .u-max-width-3\/9, .u-max-width-4-of-12, .u-max-width-4\/12 {
   max-width: 33.3333333333%; }
@@ -11845,18 +10873,6 @@ category: 6. Tools > Mixin
     .u-width-2-of-7\@small, .u-width-2\/7\@small {
       width: 28.5714285714%; } }
 
-.u-basis-2-of-7, .u-basis-2\/7 {
-  -ms-flex-preferred-size: 28.5714285714%;
-      flex-basis: 28.5714285714%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-2-of-7\@large, .u-basis-2\/7\@large {
-      -ms-flex-preferred-size: 28.5714285714%;
-          flex-basis: 28.5714285714%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-2-of-7\@small, .u-basis-2\/7\@small {
-      -ms-flex-preferred-size: 28.5714285714%;
-          flex-basis: 28.5714285714%; } }
-
 .u-max-width-2-of-7, .u-max-width-2\/7 {
   max-width: 28.5714285714%; }
   @media screen and (min-width: 47.5rem) {
@@ -11883,18 +10899,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-2-of-9\@small, .u-width-2\/9\@small {
       width: 22.2222222222%; } }
-
-.u-basis-2-of-9, .u-basis-2\/9 {
-  -ms-flex-preferred-size: 22.2222222222%;
-      flex-basis: 22.2222222222%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-2-of-9\@large, .u-basis-2\/9\@large {
-      -ms-flex-preferred-size: 22.2222222222%;
-          flex-basis: 22.2222222222%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-2-of-9\@small, .u-basis-2\/9\@small {
-      -ms-flex-preferred-size: 22.2222222222%;
-          flex-basis: 22.2222222222%; } }
 
 .u-max-width-2-of-9, .u-max-width-2\/9 {
   max-width: 22.2222222222%; }
@@ -11923,18 +10927,6 @@ category: 6. Tools > Mixin
     .u-width-2-of-11\@small, .u-width-2\/11\@small {
       width: 18.1818181818%; } }
 
-.u-basis-2-of-11, .u-basis-2\/11 {
-  -ms-flex-preferred-size: 18.1818181818%;
-      flex-basis: 18.1818181818%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-2-of-11\@large, .u-basis-2\/11\@large {
-      -ms-flex-preferred-size: 18.1818181818%;
-          flex-basis: 18.1818181818%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-2-of-11\@small, .u-basis-2\/11\@small {
-      -ms-flex-preferred-size: 18.1818181818%;
-          flex-basis: 18.1818181818%; } }
-
 .u-max-width-2-of-11, .u-max-width-2\/11 {
   max-width: 18.1818181818%; }
   @media screen and (min-width: 47.5rem) {
@@ -11961,18 +10953,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-1-of-6\@small, .u-width-1\/6\@small, .u-width-2-of-12\@small, .u-width-2\/12\@small {
       width: 16.6666666667%; } }
-
-.u-basis-1-of-6, .u-basis-1\/6, .u-basis-2-of-12, .u-basis-2\/12 {
-  -ms-flex-preferred-size: 16.6666666667%;
-      flex-basis: 16.6666666667%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-6\@large, .u-basis-1\/6\@large, .u-basis-2-of-12\@large, .u-basis-2\/12\@large {
-      -ms-flex-preferred-size: 16.6666666667%;
-          flex-basis: 16.6666666667%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-6\@small, .u-basis-1\/6\@small, .u-basis-2-of-12\@small, .u-basis-2\/12\@small {
-      -ms-flex-preferred-size: 16.6666666667%;
-          flex-basis: 16.6666666667%; } }
 
 .u-max-width-1-of-6, .u-max-width-1\/6, .u-max-width-2-of-12, .u-max-width-2\/12 {
   max-width: 16.6666666667%; }
@@ -12001,18 +10981,6 @@ category: 6. Tools > Mixin
     .u-width-3-of-7\@small, .u-width-3\/7\@small {
       width: 42.8571428571%; } }
 
-.u-basis-3-of-7, .u-basis-3\/7 {
-  -ms-flex-preferred-size: 42.8571428571%;
-      flex-basis: 42.8571428571%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-7\@large, .u-basis-3\/7\@large {
-      -ms-flex-preferred-size: 42.8571428571%;
-          flex-basis: 42.8571428571%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-7\@small, .u-basis-3\/7\@small {
-      -ms-flex-preferred-size: 42.8571428571%;
-          flex-basis: 42.8571428571%; } }
-
 .u-max-width-3-of-7, .u-max-width-3\/7 {
   max-width: 42.8571428571%; }
   @media screen and (min-width: 47.5rem) {
@@ -12039,18 +11007,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-3-of-8\@small, .u-width-3\/8\@small {
       width: 37.5%; } }
-
-.u-basis-3-of-8, .u-basis-3\/8 {
-  -ms-flex-preferred-size: 37.5%;
-      flex-basis: 37.5%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-8\@large, .u-basis-3\/8\@large {
-      -ms-flex-preferred-size: 37.5%;
-          flex-basis: 37.5%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-8\@small, .u-basis-3\/8\@small {
-      -ms-flex-preferred-size: 37.5%;
-          flex-basis: 37.5%; } }
 
 .u-max-width-3-of-8, .u-max-width-3\/8 {
   max-width: 37.5%; }
@@ -12079,18 +11035,6 @@ category: 6. Tools > Mixin
     .u-width-1-of-3\@small, .u-width-1\/3\@small, .u-width-2-of-6\@small, .u-width-2\/6\@small, .u-width-3-of-9\@small, .u-width-3\/9\@small, .u-width-4-of-12\@small, .u-width-4\/12\@small {
       width: 33.3333333333%; } }
 
-.u-basis-1-of-3, .u-basis-1\/3, .u-basis-2-of-6, .u-basis-2\/6, .u-basis-3-of-9, .u-basis-3\/9, .u-basis-4-of-12, .u-basis-4\/12 {
-  -ms-flex-preferred-size: 33.3333333333%;
-      flex-basis: 33.3333333333%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-3\@large, .u-basis-1\/3\@large, .u-basis-2-of-6\@large, .u-basis-2\/6\@large, .u-basis-3-of-9\@large, .u-basis-3\/9\@large, .u-basis-4-of-12\@large, .u-basis-4\/12\@large {
-      -ms-flex-preferred-size: 33.3333333333%;
-          flex-basis: 33.3333333333%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-3\@small, .u-basis-1\/3\@small, .u-basis-2-of-6\@small, .u-basis-2\/6\@small, .u-basis-3-of-9\@small, .u-basis-3\/9\@small, .u-basis-4-of-12\@small, .u-basis-4\/12\@small {
-      -ms-flex-preferred-size: 33.3333333333%;
-          flex-basis: 33.3333333333%; } }
-
 .u-max-width-1-of-3, .u-max-width-1\/3, .u-max-width-2-of-6, .u-max-width-2\/6, .u-max-width-3-of-9, .u-max-width-3\/9, .u-max-width-4-of-12, .u-max-width-4\/12 {
   max-width: 33.3333333333%; }
   @media screen and (min-width: 47.5rem) {
@@ -12117,18 +11061,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-3-of-11\@small, .u-width-3\/11\@small {
       width: 27.2727272727%; } }
-
-.u-basis-3-of-11, .u-basis-3\/11 {
-  -ms-flex-preferred-size: 27.2727272727%;
-      flex-basis: 27.2727272727%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-3-of-11\@large, .u-basis-3\/11\@large {
-      -ms-flex-preferred-size: 27.2727272727%;
-          flex-basis: 27.2727272727%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-3-of-11\@small, .u-basis-3\/11\@small {
-      -ms-flex-preferred-size: 27.2727272727%;
-          flex-basis: 27.2727272727%; } }
 
 .u-max-width-3-of-11, .u-max-width-3\/11 {
   max-width: 27.2727272727%; }
@@ -12157,18 +11089,6 @@ category: 6. Tools > Mixin
     .u-width-2-of-3\@small, .u-width-2\/3\@small, .u-width-4-of-6\@small, .u-width-4\/6\@small, .u-width-6-of-9\@small, .u-width-6\/9\@small, .u-width-8-of-12\@small, .u-width-8\/12\@small {
       width: 66.6666666667%; } }
 
-.u-basis-2-of-3, .u-basis-2\/3, .u-basis-4-of-6, .u-basis-4\/6, .u-basis-6-of-9, .u-basis-6\/9, .u-basis-8-of-12, .u-basis-8\/12 {
-  -ms-flex-preferred-size: 66.6666666667%;
-      flex-basis: 66.6666666667%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-2-of-3\@large, .u-basis-2\/3\@large, .u-basis-4-of-6\@large, .u-basis-4\/6\@large, .u-basis-6-of-9\@large, .u-basis-6\/9\@large, .u-basis-8-of-12\@large, .u-basis-8\/12\@large {
-      -ms-flex-preferred-size: 66.6666666667%;
-          flex-basis: 66.6666666667%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-2-of-3\@small, .u-basis-2\/3\@small, .u-basis-4-of-6\@small, .u-basis-4\/6\@small, .u-basis-6-of-9\@small, .u-basis-6\/9\@small, .u-basis-8-of-12\@small, .u-basis-8\/12\@small {
-      -ms-flex-preferred-size: 66.6666666667%;
-          flex-basis: 66.6666666667%; } }
-
 .u-max-width-2-of-3, .u-max-width-2\/3, .u-max-width-4-of-6, .u-max-width-4\/6, .u-max-width-6-of-9, .u-max-width-6\/9, .u-max-width-8-of-12, .u-max-width-8\/12 {
   max-width: 66.6666666667%; }
   @media screen and (min-width: 47.5rem) {
@@ -12195,18 +11115,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-4-of-7\@small, .u-width-4\/7\@small {
       width: 57.1428571429%; } }
-
-.u-basis-4-of-7, .u-basis-4\/7 {
-  -ms-flex-preferred-size: 57.1428571429%;
-      flex-basis: 57.1428571429%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-4-of-7\@large, .u-basis-4\/7\@large {
-      -ms-flex-preferred-size: 57.1428571429%;
-          flex-basis: 57.1428571429%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-4-of-7\@small, .u-basis-4\/7\@small {
-      -ms-flex-preferred-size: 57.1428571429%;
-          flex-basis: 57.1428571429%; } }
 
 .u-max-width-4-of-7, .u-max-width-4\/7 {
   max-width: 57.1428571429%; }
@@ -12235,18 +11143,6 @@ category: 6. Tools > Mixin
     .u-width-4-of-9\@small, .u-width-4\/9\@small {
       width: 44.4444444444%; } }
 
-.u-basis-4-of-9, .u-basis-4\/9 {
-  -ms-flex-preferred-size: 44.4444444444%;
-      flex-basis: 44.4444444444%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-4-of-9\@large, .u-basis-4\/9\@large {
-      -ms-flex-preferred-size: 44.4444444444%;
-          flex-basis: 44.4444444444%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-4-of-9\@small, .u-basis-4\/9\@small {
-      -ms-flex-preferred-size: 44.4444444444%;
-          flex-basis: 44.4444444444%; } }
-
 .u-max-width-4-of-9, .u-max-width-4\/9 {
   max-width: 44.4444444444%; }
   @media screen and (min-width: 47.5rem) {
@@ -12273,18 +11169,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-4-of-11\@small, .u-width-4\/11\@small {
       width: 36.3636363636%; } }
-
-.u-basis-4-of-11, .u-basis-4\/11 {
-  -ms-flex-preferred-size: 36.3636363636%;
-      flex-basis: 36.3636363636%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-4-of-11\@large, .u-basis-4\/11\@large {
-      -ms-flex-preferred-size: 36.3636363636%;
-          flex-basis: 36.3636363636%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-4-of-11\@small, .u-basis-4\/11\@small {
-      -ms-flex-preferred-size: 36.3636363636%;
-          flex-basis: 36.3636363636%; } }
 
 .u-max-width-4-of-11, .u-max-width-4\/11 {
   max-width: 36.3636363636%; }
@@ -12313,18 +11197,6 @@ category: 6. Tools > Mixin
     .u-width-1-of-3\@small, .u-width-1\/3\@small, .u-width-2-of-6\@small, .u-width-2\/6\@small, .u-width-3-of-9\@small, .u-width-3\/9\@small, .u-width-4-of-12\@small, .u-width-4\/12\@small {
       width: 33.3333333333%; } }
 
-.u-basis-1-of-3, .u-basis-1\/3, .u-basis-2-of-6, .u-basis-2\/6, .u-basis-3-of-9, .u-basis-3\/9, .u-basis-4-of-12, .u-basis-4\/12 {
-  -ms-flex-preferred-size: 33.3333333333%;
-      flex-basis: 33.3333333333%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-1-of-3\@large, .u-basis-1\/3\@large, .u-basis-2-of-6\@large, .u-basis-2\/6\@large, .u-basis-3-of-9\@large, .u-basis-3\/9\@large, .u-basis-4-of-12\@large, .u-basis-4\/12\@large {
-      -ms-flex-preferred-size: 33.3333333333%;
-          flex-basis: 33.3333333333%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-1-of-3\@small, .u-basis-1\/3\@small, .u-basis-2-of-6\@small, .u-basis-2\/6\@small, .u-basis-3-of-9\@small, .u-basis-3\/9\@small, .u-basis-4-of-12\@small, .u-basis-4\/12\@small {
-      -ms-flex-preferred-size: 33.3333333333%;
-          flex-basis: 33.3333333333%; } }
-
 .u-max-width-1-of-3, .u-max-width-1\/3, .u-max-width-2-of-6, .u-max-width-2\/6, .u-max-width-3-of-9, .u-max-width-3\/9, .u-max-width-4-of-12, .u-max-width-4\/12 {
   max-width: 33.3333333333%; }
   @media screen and (min-width: 47.5rem) {
@@ -12351,18 +11223,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-5-of-6\@small, .u-width-5\/6\@small, .u-width-10-of-12\@small, .u-width-10\/12\@small {
       width: 83.3333333333%; } }
-
-.u-basis-5-of-6, .u-basis-5\/6, .u-basis-10-of-12, .u-basis-10\/12 {
-  -ms-flex-preferred-size: 83.3333333333%;
-      flex-basis: 83.3333333333%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-5-of-6\@large, .u-basis-5\/6\@large, .u-basis-10-of-12\@large, .u-basis-10\/12\@large {
-      -ms-flex-preferred-size: 83.3333333333%;
-          flex-basis: 83.3333333333%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-5-of-6\@small, .u-basis-5\/6\@small, .u-basis-10-of-12\@small, .u-basis-10\/12\@small {
-      -ms-flex-preferred-size: 83.3333333333%;
-          flex-basis: 83.3333333333%; } }
 
 .u-max-width-5-of-6, .u-max-width-5\/6, .u-max-width-10-of-12, .u-max-width-10\/12 {
   max-width: 83.3333333333%; }
@@ -12391,18 +11251,6 @@ category: 6. Tools > Mixin
     .u-width-5-of-7\@small, .u-width-5\/7\@small {
       width: 71.4285714286%; } }
 
-.u-basis-5-of-7, .u-basis-5\/7 {
-  -ms-flex-preferred-size: 71.4285714286%;
-      flex-basis: 71.4285714286%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-5-of-7\@large, .u-basis-5\/7\@large {
-      -ms-flex-preferred-size: 71.4285714286%;
-          flex-basis: 71.4285714286%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-5-of-7\@small, .u-basis-5\/7\@small {
-      -ms-flex-preferred-size: 71.4285714286%;
-          flex-basis: 71.4285714286%; } }
-
 .u-max-width-5-of-7, .u-max-width-5\/7 {
   max-width: 71.4285714286%; }
   @media screen and (min-width: 47.5rem) {
@@ -12429,18 +11277,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-5-of-8\@small, .u-width-5\/8\@small {
       width: 62.5%; } }
-
-.u-basis-5-of-8, .u-basis-5\/8 {
-  -ms-flex-preferred-size: 62.5%;
-      flex-basis: 62.5%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-5-of-8\@large, .u-basis-5\/8\@large {
-      -ms-flex-preferred-size: 62.5%;
-          flex-basis: 62.5%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-5-of-8\@small, .u-basis-5\/8\@small {
-      -ms-flex-preferred-size: 62.5%;
-          flex-basis: 62.5%; } }
 
 .u-max-width-5-of-8, .u-max-width-5\/8 {
   max-width: 62.5%; }
@@ -12469,18 +11305,6 @@ category: 6. Tools > Mixin
     .u-width-5-of-9\@small, .u-width-5\/9\@small {
       width: 55.5555555556%; } }
 
-.u-basis-5-of-9, .u-basis-5\/9 {
-  -ms-flex-preferred-size: 55.5555555556%;
-      flex-basis: 55.5555555556%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-5-of-9\@large, .u-basis-5\/9\@large {
-      -ms-flex-preferred-size: 55.5555555556%;
-          flex-basis: 55.5555555556%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-5-of-9\@small, .u-basis-5\/9\@small {
-      -ms-flex-preferred-size: 55.5555555556%;
-          flex-basis: 55.5555555556%; } }
-
 .u-max-width-5-of-9, .u-max-width-5\/9 {
   max-width: 55.5555555556%; }
   @media screen and (min-width: 47.5rem) {
@@ -12507,18 +11331,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-5-of-11\@small, .u-width-5\/11\@small {
       width: 45.4545454545%; } }
-
-.u-basis-5-of-11, .u-basis-5\/11 {
-  -ms-flex-preferred-size: 45.4545454545%;
-      flex-basis: 45.4545454545%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-5-of-11\@large, .u-basis-5\/11\@large {
-      -ms-flex-preferred-size: 45.4545454545%;
-          flex-basis: 45.4545454545%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-5-of-11\@small, .u-basis-5\/11\@small {
-      -ms-flex-preferred-size: 45.4545454545%;
-          flex-basis: 45.4545454545%; } }
 
 .u-max-width-5-of-11, .u-max-width-5\/11 {
   max-width: 45.4545454545%; }
@@ -12547,18 +11359,6 @@ category: 6. Tools > Mixin
     .u-width-5-of-12\@small, .u-width-5\/12\@small {
       width: 41.6666666667%; } }
 
-.u-basis-5-of-12, .u-basis-5\/12 {
-  -ms-flex-preferred-size: 41.6666666667%;
-      flex-basis: 41.6666666667%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-5-of-12\@large, .u-basis-5\/12\@large {
-      -ms-flex-preferred-size: 41.6666666667%;
-          flex-basis: 41.6666666667%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-5-of-12\@small, .u-basis-5\/12\@small {
-      -ms-flex-preferred-size: 41.6666666667%;
-          flex-basis: 41.6666666667%; } }
-
 .u-max-width-5-of-12, .u-max-width-5\/12 {
   max-width: 41.6666666667%; }
   @media screen and (min-width: 47.5rem) {
@@ -12585,18 +11385,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-6-of-7\@small, .u-width-6\/7\@small {
       width: 85.7142857143%; } }
-
-.u-basis-6-of-7, .u-basis-6\/7 {
-  -ms-flex-preferred-size: 85.7142857143%;
-      flex-basis: 85.7142857143%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-6-of-7\@large, .u-basis-6\/7\@large {
-      -ms-flex-preferred-size: 85.7142857143%;
-          flex-basis: 85.7142857143%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-6-of-7\@small, .u-basis-6\/7\@small {
-      -ms-flex-preferred-size: 85.7142857143%;
-          flex-basis: 85.7142857143%; } }
 
 .u-max-width-6-of-7, .u-max-width-6\/7 {
   max-width: 85.7142857143%; }
@@ -12625,18 +11413,6 @@ category: 6. Tools > Mixin
     .u-width-2-of-3\@small, .u-width-2\/3\@small, .u-width-4-of-6\@small, .u-width-4\/6\@small, .u-width-6-of-9\@small, .u-width-6\/9\@small, .u-width-8-of-12\@small, .u-width-8\/12\@small {
       width: 66.6666666667%; } }
 
-.u-basis-2-of-3, .u-basis-2\/3, .u-basis-4-of-6, .u-basis-4\/6, .u-basis-6-of-9, .u-basis-6\/9, .u-basis-8-of-12, .u-basis-8\/12 {
-  -ms-flex-preferred-size: 66.6666666667%;
-      flex-basis: 66.6666666667%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-2-of-3\@large, .u-basis-2\/3\@large, .u-basis-4-of-6\@large, .u-basis-4\/6\@large, .u-basis-6-of-9\@large, .u-basis-6\/9\@large, .u-basis-8-of-12\@large, .u-basis-8\/12\@large {
-      -ms-flex-preferred-size: 66.6666666667%;
-          flex-basis: 66.6666666667%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-2-of-3\@small, .u-basis-2\/3\@small, .u-basis-4-of-6\@small, .u-basis-4\/6\@small, .u-basis-6-of-9\@small, .u-basis-6\/9\@small, .u-basis-8-of-12\@small, .u-basis-8\/12\@small {
-      -ms-flex-preferred-size: 66.6666666667%;
-          flex-basis: 66.6666666667%; } }
-
 .u-max-width-2-of-3, .u-max-width-2\/3, .u-max-width-4-of-6, .u-max-width-4\/6, .u-max-width-6-of-9, .u-max-width-6\/9, .u-max-width-8-of-12, .u-max-width-8\/12 {
   max-width: 66.6666666667%; }
   @media screen and (min-width: 47.5rem) {
@@ -12663,18 +11439,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-6-of-11\@small, .u-width-6\/11\@small {
       width: 54.5454545455%; } }
-
-.u-basis-6-of-11, .u-basis-6\/11 {
-  -ms-flex-preferred-size: 54.5454545455%;
-      flex-basis: 54.5454545455%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-6-of-11\@large, .u-basis-6\/11\@large {
-      -ms-flex-preferred-size: 54.5454545455%;
-          flex-basis: 54.5454545455%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-6-of-11\@small, .u-basis-6\/11\@small {
-      -ms-flex-preferred-size: 54.5454545455%;
-          flex-basis: 54.5454545455%; } }
 
 .u-max-width-6-of-11, .u-max-width-6\/11 {
   max-width: 54.5454545455%; }
@@ -12703,18 +11467,6 @@ category: 6. Tools > Mixin
     .u-width-7-of-8\@small, .u-width-7\/8\@small {
       width: 87.5%; } }
 
-.u-basis-7-of-8, .u-basis-7\/8 {
-  -ms-flex-preferred-size: 87.5%;
-      flex-basis: 87.5%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-7-of-8\@large, .u-basis-7\/8\@large {
-      -ms-flex-preferred-size: 87.5%;
-          flex-basis: 87.5%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-7-of-8\@small, .u-basis-7\/8\@small {
-      -ms-flex-preferred-size: 87.5%;
-          flex-basis: 87.5%; } }
-
 .u-max-width-7-of-8, .u-max-width-7\/8 {
   max-width: 87.5%; }
   @media screen and (min-width: 47.5rem) {
@@ -12741,18 +11493,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-7-of-9\@small, .u-width-7\/9\@small {
       width: 77.7777777778%; } }
-
-.u-basis-7-of-9, .u-basis-7\/9 {
-  -ms-flex-preferred-size: 77.7777777778%;
-      flex-basis: 77.7777777778%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-7-of-9\@large, .u-basis-7\/9\@large {
-      -ms-flex-preferred-size: 77.7777777778%;
-          flex-basis: 77.7777777778%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-7-of-9\@small, .u-basis-7\/9\@small {
-      -ms-flex-preferred-size: 77.7777777778%;
-          flex-basis: 77.7777777778%; } }
 
 .u-max-width-7-of-9, .u-max-width-7\/9 {
   max-width: 77.7777777778%; }
@@ -12781,18 +11521,6 @@ category: 6. Tools > Mixin
     .u-width-7-of-11\@small, .u-width-7\/11\@small {
       width: 63.6363636364%; } }
 
-.u-basis-7-of-11, .u-basis-7\/11 {
-  -ms-flex-preferred-size: 63.6363636364%;
-      flex-basis: 63.6363636364%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-7-of-11\@large, .u-basis-7\/11\@large {
-      -ms-flex-preferred-size: 63.6363636364%;
-          flex-basis: 63.6363636364%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-7-of-11\@small, .u-basis-7\/11\@small {
-      -ms-flex-preferred-size: 63.6363636364%;
-          flex-basis: 63.6363636364%; } }
-
 .u-max-width-7-of-11, .u-max-width-7\/11 {
   max-width: 63.6363636364%; }
   @media screen and (min-width: 47.5rem) {
@@ -12819,18 +11547,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-7-of-12\@small, .u-width-7\/12\@small {
       width: 58.3333333333%; } }
-
-.u-basis-7-of-12, .u-basis-7\/12 {
-  -ms-flex-preferred-size: 58.3333333333%;
-      flex-basis: 58.3333333333%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-7-of-12\@large, .u-basis-7\/12\@large {
-      -ms-flex-preferred-size: 58.3333333333%;
-          flex-basis: 58.3333333333%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-7-of-12\@small, .u-basis-7\/12\@small {
-      -ms-flex-preferred-size: 58.3333333333%;
-          flex-basis: 58.3333333333%; } }
 
 .u-max-width-7-of-12, .u-max-width-7\/12 {
   max-width: 58.3333333333%; }
@@ -12859,18 +11575,6 @@ category: 6. Tools > Mixin
     .u-width-8-of-9\@small, .u-width-8\/9\@small {
       width: 88.8888888889%; } }
 
-.u-basis-8-of-9, .u-basis-8\/9 {
-  -ms-flex-preferred-size: 88.8888888889%;
-      flex-basis: 88.8888888889%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-8-of-9\@large, .u-basis-8\/9\@large {
-      -ms-flex-preferred-size: 88.8888888889%;
-          flex-basis: 88.8888888889%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-8-of-9\@small, .u-basis-8\/9\@small {
-      -ms-flex-preferred-size: 88.8888888889%;
-          flex-basis: 88.8888888889%; } }
-
 .u-max-width-8-of-9, .u-max-width-8\/9 {
   max-width: 88.8888888889%; }
   @media screen and (min-width: 47.5rem) {
@@ -12897,18 +11601,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-8-of-11\@small, .u-width-8\/11\@small {
       width: 72.7272727273%; } }
-
-.u-basis-8-of-11, .u-basis-8\/11 {
-  -ms-flex-preferred-size: 72.7272727273%;
-      flex-basis: 72.7272727273%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-8-of-11\@large, .u-basis-8\/11\@large {
-      -ms-flex-preferred-size: 72.7272727273%;
-          flex-basis: 72.7272727273%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-8-of-11\@small, .u-basis-8\/11\@small {
-      -ms-flex-preferred-size: 72.7272727273%;
-          flex-basis: 72.7272727273%; } }
 
 .u-max-width-8-of-11, .u-max-width-8\/11 {
   max-width: 72.7272727273%; }
@@ -12937,18 +11629,6 @@ category: 6. Tools > Mixin
     .u-width-2-of-3\@small, .u-width-2\/3\@small, .u-width-4-of-6\@small, .u-width-4\/6\@small, .u-width-6-of-9\@small, .u-width-6\/9\@small, .u-width-8-of-12\@small, .u-width-8\/12\@small {
       width: 66.6666666667%; } }
 
-.u-basis-2-of-3, .u-basis-2\/3, .u-basis-4-of-6, .u-basis-4\/6, .u-basis-6-of-9, .u-basis-6\/9, .u-basis-8-of-12, .u-basis-8\/12 {
-  -ms-flex-preferred-size: 66.6666666667%;
-      flex-basis: 66.6666666667%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-2-of-3\@large, .u-basis-2\/3\@large, .u-basis-4-of-6\@large, .u-basis-4\/6\@large, .u-basis-6-of-9\@large, .u-basis-6\/9\@large, .u-basis-8-of-12\@large, .u-basis-8\/12\@large {
-      -ms-flex-preferred-size: 66.6666666667%;
-          flex-basis: 66.6666666667%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-2-of-3\@small, .u-basis-2\/3\@small, .u-basis-4-of-6\@small, .u-basis-4\/6\@small, .u-basis-6-of-9\@small, .u-basis-6\/9\@small, .u-basis-8-of-12\@small, .u-basis-8\/12\@small {
-      -ms-flex-preferred-size: 66.6666666667%;
-          flex-basis: 66.6666666667%; } }
-
 .u-max-width-2-of-3, .u-max-width-2\/3, .u-max-width-4-of-6, .u-max-width-4\/6, .u-max-width-6-of-9, .u-max-width-6\/9, .u-max-width-8-of-12, .u-max-width-8\/12 {
   max-width: 66.6666666667%; }
   @media screen and (min-width: 47.5rem) {
@@ -12975,18 +11655,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-9-of-11\@small, .u-width-9\/11\@small {
       width: 81.8181818182%; } }
-
-.u-basis-9-of-11, .u-basis-9\/11 {
-  -ms-flex-preferred-size: 81.8181818182%;
-      flex-basis: 81.8181818182%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-9-of-11\@large, .u-basis-9\/11\@large {
-      -ms-flex-preferred-size: 81.8181818182%;
-          flex-basis: 81.8181818182%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-9-of-11\@small, .u-basis-9\/11\@small {
-      -ms-flex-preferred-size: 81.8181818182%;
-          flex-basis: 81.8181818182%; } }
 
 .u-max-width-9-of-11, .u-max-width-9\/11 {
   max-width: 81.8181818182%; }
@@ -13015,18 +11683,6 @@ category: 6. Tools > Mixin
     .u-width-10-of-11\@small, .u-width-10\/11\@small {
       width: 90.9090909091%; } }
 
-.u-basis-10-of-11, .u-basis-10\/11 {
-  -ms-flex-preferred-size: 90.9090909091%;
-      flex-basis: 90.9090909091%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-10-of-11\@large, .u-basis-10\/11\@large {
-      -ms-flex-preferred-size: 90.9090909091%;
-          flex-basis: 90.9090909091%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-10-of-11\@small, .u-basis-10\/11\@small {
-      -ms-flex-preferred-size: 90.9090909091%;
-          flex-basis: 90.9090909091%; } }
-
 .u-max-width-10-of-11, .u-max-width-10\/11 {
   max-width: 90.9090909091%; }
   @media screen and (min-width: 47.5rem) {
@@ -13053,18 +11709,6 @@ category: 6. Tools > Mixin
   @media screen and (max-width: 47.5rem) {
     .u-width-5-of-6\@small, .u-width-5\/6\@small, .u-width-10-of-12\@small, .u-width-10\/12\@small {
       width: 83.3333333333%; } }
-
-.u-basis-5-of-6, .u-basis-5\/6, .u-basis-10-of-12, .u-basis-10\/12 {
-  -ms-flex-preferred-size: 83.3333333333%;
-      flex-basis: 83.3333333333%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-5-of-6\@large, .u-basis-5\/6\@large, .u-basis-10-of-12\@large, .u-basis-10\/12\@large {
-      -ms-flex-preferred-size: 83.3333333333%;
-          flex-basis: 83.3333333333%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-5-of-6\@small, .u-basis-5\/6\@small, .u-basis-10-of-12\@small, .u-basis-10\/12\@small {
-      -ms-flex-preferred-size: 83.3333333333%;
-          flex-basis: 83.3333333333%; } }
 
 .u-max-width-5-of-6, .u-max-width-5\/6, .u-max-width-10-of-12, .u-max-width-10\/12 {
   max-width: 83.3333333333%; }
@@ -13093,18 +11737,6 @@ category: 6. Tools > Mixin
     .u-width-11-of-12\@small, .u-width-11\/12\@small {
       width: 91.6666666667%; } }
 
-.u-basis-11-of-12, .u-basis-11\/12 {
-  -ms-flex-preferred-size: 91.6666666667%;
-      flex-basis: 91.6666666667%; }
-  @media screen and (min-width: 47.5rem) {
-    .u-basis-11-of-12\@large, .u-basis-11\/12\@large {
-      -ms-flex-preferred-size: 91.6666666667%;
-          flex-basis: 91.6666666667%; } }
-  @media screen and (max-width: 47.5rem) {
-    .u-basis-11-of-12\@small, .u-basis-11\/12\@small {
-      -ms-flex-preferred-size: 91.6666666667%;
-          flex-basis: 91.6666666667%; } }
-
 .u-max-width-11-of-12, .u-max-width-11\/12 {
   max-width: 91.6666666667%; }
   @media screen and (min-width: 47.5rem) {
@@ -13114,6 +11746,186 @@ category: 6. Tools > Mixin
     .u-max-width-11-of-12\@small, .u-max-width-11\/12\@small {
       max-width: 91.6666666667%; } }
 
+/*
+---
+name: Min Width > Percent
+category: Trumps > Widths
+---
+
+Sets the minimum width for an element as a percent.
+
+Two selector variants:
+- `u-min-width-X-of-Y`
+- `u-min-width-X/Y`
+
+Suffixcate variants:
+- `u-min-width-X-of-Y@small`
+- `u-min-width-X/Y@small`
+- `u-min-width-X-of-Y@large`
+- `u-min-width-X/Y@large`
+
+Where "X" is a number between 1-12 and "Y" is a number 1-12. 12 is defined by `$max-num` from `makeWidths()` in `_06-trumps_widths.scss` and generated in `_01-tools_width-generator.scss`.
+
+
+Examples:
+```u-min-width-X-of-Y.html
+<div class="u-min-width-1-of-10">
+    10%
+</div>
+
+<div class="u-min-width-6-of-12">
+    50%
+</div>
+
+<div class="u-min-width-3-of-4">
+    75%
+</div>
+
+<div class="u-min-width-1-of-1">
+    100%
+</div>
+
+```
+
+```u-min-width-XY.html
+<div class="u-min-width-1/10">
+    10%
+</div>
+
+<div class="u-min-width-6/12">
+    50%
+</div>
+
+<div class="u-min-width-3/4">
+    75%
+</div>
+
+<div class="u-min-width-1/1">
+    100%
+</div>
+
+```
+*/
+/*
+---
+name: Width > Percent
+category: Trumps > Widths
+---
+
+Sets the  width for an element as a percent.
+
+Two selector variants:
+- `u-max-width-X-of-Y`
+- `u-max-width-X/Y`
+
+Suffixcate variants:
+- `u-max-width-X-of-Y@small`
+- `u-max-width-X/Y@small`
+- `u-max-width-X-of-Y@large`
+- `u-max-width-X/Y@large`
+
+Where "X" is a number between 1-12 and "Y" is a number 1-12. 12 is defined by `$max-num` from `makeWidths()` in `_06-trumps_widths.scss` and generated in `_01-tools_width-generator.scss`.
+
+
+Examples:
+```u-max-width-X-of-Y.html
+<div class="u-width-1-of-10">
+    10%
+</div>
+
+<div class="u-width-6-of-12">
+    50%
+</div>
+
+<div class="u-width-3-of-4">
+    75%
+</div>
+
+<div class="u-width-1-of-1">
+    100%
+</div>
+
+```
+
+```u-min-width-XY.html
+<div class="u-width-1/10">
+    10%
+</div>
+
+<div class="u-width-6/12">
+    50%
+</div>
+
+<div class="u-width-3/4">
+    75%
+</div>
+
+<div class="u-width-1/1">
+    100%
+</div>
+
+```
+*/
+/*
+---
+name: Max Width > Percent
+category: Trumps > Widths
+---
+
+Sets the maximum width for an element as a percent.
+
+Two selector variants:
+- `u-max-width-X-of-Y`
+- `u-max-width-X/Y`
+
+Suffixcate variants:
+- `u-max-width-X-of-Y@small`
+- `u-max-width-X/Y@small`
+- `u-max-width-X-of-Y@large`
+- `u-max-width-X/Y@large`
+
+Where "X" is a number between 1-12 and "Y" is a number 1-12. 12 is defined by `$max-num` from `makeWidths()` in `_06-trumps_widths.scss` and generated in `_01-tools_width-generator.scss`.
+
+
+Examples:
+```u-max-width-X-of-Y.html
+<div class="u-max-width-1-of-10">
+    10%
+</div>
+
+<div class="u-max-width-6-of-12">
+    50%
+</div>
+
+<div class="u-max-width-3-of-4">
+    75%
+</div>
+
+<div class="u-max-width-1-of-1">
+    100%
+</div>
+
+```
+
+```u-min-width-XY.html
+<div class="u-max-width-1/10">
+    10%
+</div>
+
+<div class="u-max-width-6/12">
+    50%
+</div>
+
+<div class="u-max-width-3/4">
+    75%
+</div>
+
+<div class="u-max-width-1/1">
+    100%
+</div>
+
+```
+*/
 /*
 ---
 name: Sections

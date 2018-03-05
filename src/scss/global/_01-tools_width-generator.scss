@@ -2,6 +2,7 @@
 // * Date: 2016-09-15
 
 
+
 // Variables for selector names
 $selector-name_percent: "u-percent";
 $selector-name_fraction: "u-width";
@@ -112,38 +113,3 @@ $selector-name_fraction-max: "u-max-width";
 		}
 	}
 }
-
-
-
-/*
----
-name: Select
-category: Trumps > Widths
----
-*/
-
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
