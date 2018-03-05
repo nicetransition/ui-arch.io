@@ -1,7 +1,11 @@
 // * Version: v0.1.0
 // * Date: 2016-09-15
 
-
+// Variables for selector names
+$selector-name_percent: "u-percent";
+$selector-name_fraction: "u-width";
+$selector-name_fraction-min: "u-min-width";
+$selector-name_fraction-max: "u-max-width";
 // Create helper class for every percent
 // Create temp placeholder to be extended with just percent (without ".")
 @for $i from 1 through 100 {
@@ -27,7 +31,7 @@
 	}
 }
 
-@mixin makeWidths($max-num: 12, $output-name: $selector-name_fraction, $include-max: true, $output-name-max: $selector-name_fraction-max, $include-min: true, $output-name-min: $selector-name_fraction-min, $make-to-100: true) {
+@mixin makeWidths($max-num: 12, $output-name: $selector-name_fraction, $include-max: true, $output-name-max: $selector-name_fraction-max, $include-min: true, $output-name-min: $selector-name_fraction-min, $make-to-100: false) {
 	// Loop through all variations and `@extend` when possible
 	// Create width selectors with ratios
 
