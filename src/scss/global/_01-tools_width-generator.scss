@@ -30,12 +30,6 @@ $selector-name_fraction-max: "u-max-width";
 			max-width: $percent-output;
 		}
 	}
-
-	%flex-basis#{$percent-with-decimals} {
-		@include suffixcate {
-			flex-basis: $percent-output;
-		}
-	}
 }
 
 @mixin makeWidths($max-num: 12, $output-name: $selector-name_fraction, $include-max: true, $output-name-max: $selector-name_fraction-max, $include-min: true, $output-name-min: $selector-name_fraction-min, $make-to-100: true) {
@@ -49,10 +43,6 @@ $selector-name_fraction-max: "u-max-width";
 
 			.#{$selector-name_percent}-#{$i}, .#{$selector-name_fraction}-#{$i}-of-100, .#{$selector-name_fraction}-#{$i}\/100 {
 				@include suffixcateExtend(('%u-percent-width#{$percent-with-decimals}'));
-			}
-
-			.u-basis-#{$i}, .u-basis-#{$i}-of-100, .u-basis-#{$i}\/100 {
-				@include suffixcateExtend(('%flex-basis#{$percent-with-decimals}'));
 			}
 		}
 	}
@@ -86,15 +76,6 @@ $selector-name_fraction-max: "u-max-width";
 					}
 				}
 
-				%flex-percent-and-fractions-#{$percent-with-decimals} {
-					@if ($has-decimal) {
-						@include suffixcate {
-							flex-basis: $percentage;
-						}
-					} @else {
-						@include suffixcateExtend(('%flex-basis#{$percent-with-decimals}'));
-					}
-				}
 
 				%u-max-percent-and-fractions-#{$percent-with-decimals} {
 					@if ($has-decimal) {
@@ -121,9 +102,6 @@ $selector-name_fraction-max: "u-max-width";
 					@include suffixcateExtend(('%u-percent-and-fractions-#{$percent-with-decimals}'));
 				}
 
-				.u-basis-#{$dividend}-of-#{$divisor}, .u-basis-#{$dividend}\/#{$divisor} {
-				    @include suffixcateExtend(('%flex-percent-and-fractions-#{$percent-with-decimals}'));
-				}
 
 				@if ($include-max) {
 					.#{$output-name-max}-#{$dividend}-of-#{$divisor}, .#{$output-name-max}-#{$dividend}\/#{$divisor} {
@@ -134,3 +112,38 @@ $selector-name_fraction-max: "u-max-width";
 		}
 	}
 }
+
+
+
+/*
+---
+name: Select
+category: Trumps > Widths
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
