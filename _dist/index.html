@@ -830,7 +830,37 @@
 				<div id="category-6. tools &gt; mixin">
 						<div id="make-widths" class="i-library">
 	<h1 class="display-4">Make Widths</h1>
-	<div></div>
+	<div><p>Generate widths for selectors. See <a href="/#category-trumps &gt; widths">Trumps &gt; Widths</a> for additional documentation and exmaples.</p>
+<p>Default variable definitions as defined in <code>_01-tools_width-generator.scss</code>:</p>
+<ul>
+<li><code>$selector-name_percent</code>: &quot;u-percent&quot;;</li>
+<li><code>$selector-name_fraction</code>: &quot;u-width&quot;;</li>
+<li><code>$selector-name_fraction-min</code>: &quot;u-min-width&quot;;</li>
+<li><code>$selector-name_fraction-max</code>: &quot;u-max-width&quot;;</li>
+</ul>
+<p>Mixin Arguments:</p>
+<ul>
+<li><code>$max-num</code>: Default <code>12</code>. Iterates through generating numbers, provides maximum number to loop through.</li>
+<li><code>$output-name</code>: Default <code>$selector-name_fraction</code>. Class prefix for width selectors that are &quot;percentage based&quot; and outputs <code>width</code>.</li>
+<li><code>$include-max</code>: Default <code>true</code>. Outputs all generated numbers, including the maximum number.</li>
+<li><code>$output-name-max</code>: Default <code>$selector-name_fraction-max</code>. Class prefix for width selectors that are &quot;percentage based&quot; and outputs <code>max-width</code>.</li>
+<li><code>$include-min</code>: Default <code>true</code>. Outputs all generated numbers, including the minimum number.</li>
+<li><code>$output-name-min</code>: Default <code>$selector-name_fraction-min</code>. Class prefix for width selectors that are &quot;percentage based&quot; and outputs <code>min-width</code>.</li>
+<li><code>$make-to-100</code>: Default <code>false</code>. Outputs <code>width</code>, <code>min-width</code> and <code>max-width</code> with values of <code>1%</code>-<code>100%</code></li>
+</ul>
+<p>Usage:</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".select-name {
+    @include makeWidths();
+}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">.select-name {
+    @include makeWidths();
+}</code></pre>
+	</div>
+</div></div>
 </div>
 
 				</div>

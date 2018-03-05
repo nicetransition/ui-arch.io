@@ -3,36 +3,39 @@
 name: Make Widths
 category: 6. Tools > Mixin
 ---
+
+Generate widths for selectors. See [Trumps > Widths](/#category-trumps > widths) for additional documentation and exmaples.
+
+Default variable definitions as defined in `_01-tools_width-generator.scss`:
+* `$selector-name_percent`: "u-percent";
+* `$selector-name_fraction`: "u-width";
+* `$selector-name_fraction-min`: "u-min-width";
+* `$selector-name_fraction-max`: "u-max-width";
+
+Mixin Arguments:
+* `$max-num`: Default `12`. Iterates through generating numbers, provides maximum number to loop through.
+* `$output-name`: Default `$selector-name_fraction`. Class prefix for width selectors that are "percentage based" and outputs `width`.
+* `$include-max`: Default `true`. Outputs all generated numbers, including the maximum number.
+* `$output-name-max`: Default `$selector-name_fraction-max`. Class prefix for width selectors that are "percentage based" and outputs `max-width`.
+* `$include-min`: Default `true`. Outputs all generated numbers, including the minimum number.
+* `$output-name-min`: Default `$selector-name_fraction-min`. Class prefix for width selectors that are "percentage based" and outputs `min-width`.
+* `$make-to-100`: Default `false`. Outputs `width`, `min-width` and `max-width` with values of `1%`-`100%`
+ 
+Usage:
+
+```
+.select-name {
+	@include makeWidths();
+}
+```
+
 */
 
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
 
-// // Initialize mixin
-@include makeWidths($max-num: 12, $make-to-100: false);
+
+
+// Initialize mixin
+@include makeWidths($max-num: 12);
 
 
 /*
