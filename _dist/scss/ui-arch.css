@@ -10615,7 +10615,7 @@ category: 2. Tools > Mixin
 Generate widths for selectors. See [Trumps > Widths](/#category-trumps > widths) for additional documentation and exmaples.
 
 Default variable definitions as defined in `_01-tools_width-generator.scss`:
-* `selector-name_percent`: "u-percent";
+* `selector-name_percent`: "u-percent" - only used if `make-to-100` is `true`
 * `selector-name_fraction`: "u-width";
 * `selector-name_fraction-min`: "u-min-width";
 * `selector-name_fraction-max`: "u-max-width";
@@ -13108,39 +13108,6 @@ category: 6. Trumps > Spacing Units
 .c-calendar-icon__accent {
   fill: #0CA0DA; }
 
-.u-stripe:nth-child(odd) {
-  background-color: #F5F5F5;
-  color: #000; }
-@media screen and (min-width: 47.5rem) {
-  .u-stripe\@large:nth-child(odd) {
-    background-color: #F5F5F5;
-    color: #000; } }
-@media screen and (max-width: 47.5rem) {
-  .u-stripe\@small:nth-child(odd) {
-    background-color: #F5F5F5;
-    color: #000; } }
-
-.u-stripe-alt__item:nth-child(even) {
-  background-color: #FFF;
-  color: #000; }
-.u-stripe-alt__item:nth-child(odd) {
-  background-color: #CCC;
-  color: #FFF; }
-@media screen and (min-width: 47.5rem) {
-  .u-stripe-alt\@large__item:nth-child(even) {
-    background-color: #FFF;
-    color: #000; }
-  .u-stripe-alt\@large__item:nth-child(odd) {
-    background-color: #CCC;
-    color: #FFF; } }
-@media screen and (max-width: 47.5rem) {
-  .u-stripe-alt\@small__item:nth-child(even) {
-    background-color: #FFF;
-    color: #000; }
-  .u-stripe-alt\@small__item:nth-child(odd) {
-    background-color: #CCC;
-    color: #FFF; } }
-
 .u-primary-dark, .u-color-primary-dark, .u-primary-dark-before:before, .u-color-primary-dark-before:before, .u-primary-dark-after:after, .u-color-primary-dark-after:after {
   color: #193E6C; }
   @media screen and (min-width: 47.5rem) {
@@ -13447,22 +13414,22 @@ category: 6. Trumps > Spacing Units
     .u-accent-accent\@small, .u-color-accent-accent\@small, .u-accent-accent-before::before\@small, .u-color-accent-accent-before::before\@small, .u-accent-accent-after::after\@small, .u-color-accent-accent-after::after\@small {
       color: #3D6460; } }
 
-.u-accent-accent-bg, .u-success-bg, .u-color-accent-accent-bg, .u-bg-accent-accent, .u-accent-accent-bg-before:before, .u-color-accent-accent-bg-before:before, .u-accent-accent-bg-after:after, .u-color-accent-accent-bg-after:after {
+.u-accent-accent-bg, .u-color-accent-accent-bg, .u-bg-accent-accent, .u-accent-accent-bg-before:before, .u-color-accent-accent-bg-before:before, .u-accent-accent-bg-after:after, .u-color-accent-accent-bg-after:after {
   background-color: #3D6460; }
   @media screen and (min-width: 47.5rem) {
-    .u-accent-accent-bg\@large, .u-success-bg\@large, .u-color-accent-accent-bg\@large, .u-bg-accent-accent\@large, .u-accent-accent-bg-before::before\@large, .u-color-accent-accent-bg-before::before\@large, .u-accent-accent-bg-after::after\@large, .u-color-accent-accent-bg-after::after\@large {
+    .u-accent-accent-bg\@large, .u-color-accent-accent-bg\@large, .u-bg-accent-accent\@large, .u-accent-accent-bg-before::before\@large, .u-color-accent-accent-bg-before::before\@large, .u-accent-accent-bg-after::after\@large, .u-color-accent-accent-bg-after::after\@large {
       background-color: #3D6460; } }
   @media screen and (max-width: 47.5rem) {
-    .u-accent-accent-bg\@small, .u-success-bg\@small, .u-color-accent-accent-bg\@small, .u-bg-accent-accent\@small, .u-accent-accent-bg-before::before\@small, .u-color-accent-accent-bg-before::before\@small, .u-accent-accent-bg-after::after\@small, .u-color-accent-accent-bg-after::after\@small {
+    .u-accent-accent-bg\@small, .u-color-accent-accent-bg\@small, .u-bg-accent-accent\@small, .u-accent-accent-bg-before::before\@small, .u-color-accent-accent-bg-before::before\@small, .u-accent-accent-bg-after::after\@small, .u-color-accent-accent-bg-after::after\@small {
       background-color: #3D6460; } }
 
-.u-accent-accent-bg, .u-success-bg {
+.u-accent-accent-bg {
   color: #000; }
   @media screen and (min-width: 47.5rem) {
-    .u-accent-accent-bg\@large, .u-success-bg\@large {
+    .u-accent-accent-bg\@large {
       color: #000; } }
   @media screen and (max-width: 47.5rem) {
-    .u-accent-accent-bg\@small, .u-success-bg\@small {
+    .u-accent-accent-bg\@small {
       color: #000; } }
 
 .u-dark-dark, .u-color-dark-dark, .u-dark-dark-before:before, .u-color-dark-dark-before:before, .u-dark-dark-after:after, .u-color-dark-dark-after:after {
@@ -13492,13 +13459,13 @@ category: 6. Trumps > Spacing Units
     .u-dark-dark-bg\@small {
       color: #FFF; } }
 
-.u-dark, .t-alpha, .t-alpha-2, .u-color-dark, .u-dark-before:before, .u-color-dark-before:before, .u-dark-after:after, .u-color-dark-after:after {
+.u-dark, .u-color-dark, .u-dark-before:before, .u-color-dark-before:before, .u-dark-after:after, .u-color-dark-after:after {
   color: #010101; }
   @media screen and (min-width: 47.5rem) {
-    .u-dark\@large, .t-alpha\@large, .t-alpha-2\@large, .u-color-dark\@large, .u-dark-before::before\@large, .u-color-dark-before::before\@large, .u-dark-after::after\@large, .u-color-dark-after::after\@large {
+    .u-dark\@large, .u-color-dark\@large, .u-dark-before::before\@large, .u-color-dark-before::before\@large, .u-dark-after::after\@large, .u-color-dark-after::after\@large {
       color: #010101; } }
   @media screen and (max-width: 47.5rem) {
-    .u-dark\@small, .t-alpha\@small, .t-alpha-2\@small, .u-color-dark\@small, .u-dark-before::before\@small, .u-color-dark-before::before\@small, .u-dark-after::after\@small, .u-color-dark-after::after\@small {
+    .u-dark\@small, .u-color-dark\@small, .u-dark-before::before\@small, .u-color-dark-before::before\@small, .u-dark-after::after\@small, .u-color-dark-after::after\@small {
       color: #010101; } }
 
 .u-dark-bg, .u-color-dark-bg, .u-bg-dark, .u-dark-bg-before:before, .u-color-dark-bg-before:before, .u-dark-bg-after:after, .u-color-dark-bg-after:after {
@@ -13528,22 +13495,22 @@ category: 6. Trumps > Spacing Units
     .u-dark-light\@small, .u-color-dark-light\@small, .u-dark-light-before::before\@small, .u-color-dark-light-before::before\@small, .u-dark-light-after::after\@small, .u-color-dark-light-after::after\@small {
       color: #CCC; } }
 
-.u-dark-light-bg, .u-stripe, .u-color-dark-light-bg, .u-bg-dark-light, .u-dark-light-bg-before:before, .u-color-dark-light-bg-before:before, .u-dark-light-bg-after:after, .u-color-dark-light-bg-after:after {
+.u-dark-light-bg, .u-color-dark-light-bg, .u-bg-dark-light, .u-dark-light-bg-before:before, .u-color-dark-light-bg-before:before, .u-dark-light-bg-after:after, .u-color-dark-light-bg-after:after {
   background-color: #CCC; }
   @media screen and (min-width: 47.5rem) {
-    .u-dark-light-bg\@large, .u-stripe\@large, .u-color-dark-light-bg\@large, .u-bg-dark-light\@large, .u-dark-light-bg-before::before\@large, .u-color-dark-light-bg-before::before\@large, .u-dark-light-bg-after::after\@large, .u-color-dark-light-bg-after::after\@large {
+    .u-dark-light-bg\@large, .u-color-dark-light-bg\@large, .u-bg-dark-light\@large, .u-dark-light-bg-before::before\@large, .u-color-dark-light-bg-before::before\@large, .u-dark-light-bg-after::after\@large, .u-color-dark-light-bg-after::after\@large {
       background-color: #CCC; } }
   @media screen and (max-width: 47.5rem) {
-    .u-dark-light-bg\@small, .u-stripe\@small, .u-color-dark-light-bg\@small, .u-bg-dark-light\@small, .u-dark-light-bg-before::before\@small, .u-color-dark-light-bg-before::before\@small, .u-dark-light-bg-after::after\@small, .u-color-dark-light-bg-after::after\@small {
+    .u-dark-light-bg\@small, .u-color-dark-light-bg\@small, .u-bg-dark-light\@small, .u-dark-light-bg-before::before\@small, .u-color-dark-light-bg-before::before\@small, .u-dark-light-bg-after::after\@small, .u-color-dark-light-bg-after::after\@small {
       background-color: #CCC; } }
 
-.u-dark-light-bg, .u-stripe {
+.u-dark-light-bg {
   color: #FFF; }
   @media screen and (min-width: 47.5rem) {
-    .u-dark-light-bg\@large, .u-stripe\@large {
+    .u-dark-light-bg\@large {
       color: #FFF; } }
   @media screen and (max-width: 47.5rem) {
-    .u-dark-light-bg\@small, .u-stripe\@small {
+    .u-dark-light-bg\@small {
       color: #FFF; } }
 
 .u-dark-accent, .u-color-dark-accent, .u-dark-accent-before:before, .u-color-dark-accent-before:before, .u-dark-accent-after:after, .u-color-dark-accent-after:after {
@@ -14221,30 +14188,6 @@ category: 6. Trumps > Spacing Units
     .u-alpha-dark-10-bg\@small {
       color: #FFF; } }
 
-.u-gradient-primary-bg {
-  background: -webkit-gradient(linear, left top, left bottom, from(#00539F), color-stop(80%, #003366));
-  background: -o-linear-gradient(top, #00539F 0%, #003366 80%);
-  background: linear-gradient(to bottom, #00539F 0%, #003366 80%);
-  background-size: cover; }
-
-.u-alpha, .t-alpha {
-  background-color: rgba(255, 255, 255, 0.85); }
-  @media screen and (min-width: 47.5rem) {
-    .u-alpha\@large, .t-alpha\@large {
-      background-color: rgba(255, 255, 255, 0.85); } }
-  @media screen and (max-width: 47.5rem) {
-    .u-alpha\@small, .t-alpha\@small {
-      background-color: rgba(255, 255, 255, 0.85); } }
-
-.t-alpha-2 {
-  background-color: rgba(255, 255, 255, 0.6); }
-  @media screen and (min-width: 47.5rem) {
-    .t-alpha-2\@large {
-      background-color: rgba(255, 255, 255, 0.6); } }
-  @media screen and (max-width: 47.5rem) {
-    .t-alpha-2\@small {
-      background-color: rgba(255, 255, 255, 0.6); } }
-
 .t-1, .t-dark {
   background-color: #9D8D74;
   color: #FFF; }
@@ -14292,131 +14235,6 @@ category: 6. Trumps > Spacing Units
     color: #0CA0DA; }
   .t-6 [class*="-subheader"], .t-light [class*="-subheader"] {
     color: #9D8D74; }
-
-.t-form-1.c-label {
-  color: #193E6C; }
-.t-form-1.c-select .c-select__text:after {
-  color: #0CA0DA; }
-.t-form-1.c-select .c-select__text:active, .t-form-1.c-select .c-select__text:hover {
-  color: #474646; }
-.t-form-1.c-select .c-select__text:active {
-  color: #193E6C; }
-.t-form-1.c-input, .t-form-1.c-textarea, .t-form-1.c-select {
-  background-color: #FFF;
-  border-color: transparent;
-  border-bottom-color: #999;
-  color: #010101; }
-  .t-form-1.c-input:focus, .t-form-1.c-textarea:focus, .t-form-1.c-select:focus {
-    border-bottom-color: #3D6460;
-    color: #000; }
-.t-form-1 .u-char-before__item:after, .t-form-1 .u-char-after__item:after {
-  color: #000; }
-.t-form-1.c-input::-webkit-input-placeholder, .t-form-1.c-textarea::-webkit-input-placeholder {
-  color: #999;
-  line-height: 1;
-  vertical-align: middle; }
-.t-form-1.c-input:-moz-placeholder, .t-form-1.c-textarea:-moz-placeholder {
-  color: #999;
-  line-height: 1;
-  vertical-align: middle; }
-.t-form-1.c-input::-moz-placeholder, .t-form-1.c-textarea::-moz-placeholder {
-  color: #999;
-  line-height: 1;
-  vertical-align: middle; }
-.t-form-1.c-input:-ms-input-placeholder, .t-form-1.c-textarea:-ms-input-placeholder {
-  color: #999;
-  line-height: 1;
-  vertical-align: middle; }
-.t-form-1 .c-field-toggle__input:checked + .c-field-toggle__text, .t-form-1 .c-field-toggle__input:checked + .c-field-toggle__label {
-  color: #000; }
-.t-form-1 .c-field-toggle__input:focus + .c-field-toggle__text, .t-form-1 .c-field-toggle__input:active + .c-field-toggle__text, .t-form-1 .c-field-toggle__input:active + .c-field-toggle__label {
-  color: #193E6C; }
-  .t-form-1 .c-field-toggle__input:focus + .c-field-toggle__text:before, .t-form-1 .c-field-toggle__input:active + .c-field-toggle__text:before, .t-form-1 .c-field-toggle__input:active + .c-field-toggle__label:before {
-    border-color: #D9AE11; }
-.t-form-1 .c-field-toggle__input[disabled]:checked + .c-field-toggle__text, .t-form-1 .c-field-toggle__input [disabled]:checked + .c-field-toggle__label {
-  color: #999; }
-.t-form-1 .c-field-toggle__text, .t-form-1 .c-field-toggle__label {
-  color: #010101; }
-  .t-form-1 .c-field-toggle__text:after, .t-form-1 .c-field-toggle__label:after {
-    color: #193E6C; }
-  .t-form-1 .c-field-toggle__text:before, .t-form-1 .c-field-toggle__label:before {
-    background-color: #FFF;
-    border-color: #999; }
-  .t-form-1 .c-field-toggle__text:hover, .t-form-1 .c-field-toggle__text:focus, .t-form-1 .c-field-toggle__label:hover, .t-form-1 .c-field-toggle__label:focus {
-    color: #000; }
-.t-form-1.c-input[disabled], .t-form-1 > .c-checkbox__input[disabled] + label:before, .t-form-1 > .c-radio__input[disabled] + label:before, .t-form-1.c-textarea[disabled], .t-form-1.c-select[disabled], .t-form-1.c-select > select[disabled][disabled], .t-form-1.c-radio > input[disabled] + label:before {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
-  cursor: not-allowed;
-  background-color: gainsboro;
-  opacity: .7; }
-.t-form-1 > .c-checkbox__input[disabled] + label:after, .t-form-1 > .c-radio__input[disabled] + label:after {
-  color: #c2c2c2;
-  text-shadow: 0 0.0625rem 0 rgba(255, 255, 255, 0.1), 0 -0.0625rem 0 rgba(0, 0, 0, 0.1); }
-.t-form-1.u-light-light {
-  color: #FFF; }
-
-.t-form-2.c-label {
-  color: #010101; }
-.t-form-2.c-input, .t-form-2.c-textarea, .t-form-2.c-select, .t-form-2.c-select > select {
-  color: #F5F5F5; }
-  .t-form-2.c-input:focus, .t-form-2.c-textarea:focus, .t-form-2.c-select:focus, .t-form-2.c-select > select:focus {
-    color: #FFF; }
-.t-form-2.c-input, .t-form-2.c-textarea, .t-form-2.c-select {
-  background-color: #010101;
-  border-color: transparent; }
-  .t-form-2.c-input:focus, .t-form-2.c-textarea:focus, .t-form-2.c-select:focus {
-    border-bottom-color: #D9AE11; }
-.t-form-2.c-select option {
-  color: #F5F5F5;
-  background-color: #010101; }
-.t-form-2 .u-char-before__item:after, .t-form-2 .u-char-after__item:after {
-  color: #999; }
-.t-form-2.c-input::-webkit-input-placeholder, .t-form-2.c-textarea::-webkit-input-placeholder {
-  color: #F5F5F5; }
-.t-form-2.c-input:-moz-placeholder, .t-form-2.c-textarea:-moz-placeholder {
-  color: #F5F5F5; }
-.t-form-2.c-input::-moz-placeholder, .t-form-2.c-textarea::-moz-placeholder {
-  color: #F5F5F5; }
-.t-form-2.c-input:-ms-input-placeholder, .t-form-2.c-textarea:-ms-input-placeholder {
-  color: #F5F5F5; }
-.t-form-2 .c-input-search__btn {
-  -webkit-box-shadow: 5rem 0 0 rgba(0, 0, 0, 0.2) inset;
-          box-shadow: 5rem 0 0 rgba(0, 0, 0, 0.2) inset; }
-  .t-form-2 .c-input-search__btn:active, .t-form-2 .c-input-search__btn:hover, .t-form-2 .c-input-search__btn:focus {
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-.t-form-2 .c-field-toggle__input:focus + .c-field-toggle__text, .t-form-2 .c-field-toggle__input:focus + .c-field-toggle__label {
-  color: #193E6C; }
-.t-form-2 .c-field-toggle__input:checked + .c-field-toggle__text, .t-form-2 .c-field-toggle__input:checked + .c-field-toggle__label {
-  color: #000; }
-.t-form-2 .c-field-toggle__input[disabled]:checked + .c-field-toggle__text, .t-form-2 .c-field-toggle__input[disabled]:checked + .c-field-toggle__label {
-  color: #999; }
-.t-form-2 .c-field-toggle__text, .t-form-2 .c-field-toggle__label {
-  color: currentColor; }
-  .t-form-2 .c-field-toggle__text:after, .t-form-2 .c-field-toggle__label:after {
-    color: #0CA0DA; }
-  .t-form-2 .c-field-toggle__text:before, .t-form-2 .c-field-toggle__label:before {
-    background-color: #010101;
-    border-color: transparent; }
-  .t-form-2 .c-field-toggle__text:hover, .t-form-2 .c-field-toggle__text:focus, .t-form-2 .c-field-toggle__label:hover, .t-form-2 .c-field-toggle__label:focus {
-    color: #000; }
-.t-form-2.c-input[disabled], .t-form-2.c-textarea[disabled], .t-form-2.c-select[disabled], .t-form-2.c-select > select[disabled][disabled], .t-form-2.c-radio > input[disabled] + label:before {
-  cursor: default;
-  background-color: #010101;
-  opacity: .7;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.t-form-light.c-label {
-  color: #FFF; }
 
 .u-bg--cover, .u-bg--full, .u-bg--top, .u-bg--center {
   background-repeat: no-repeat; }

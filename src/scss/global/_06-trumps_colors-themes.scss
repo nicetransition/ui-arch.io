@@ -1,0 +1,77 @@
+.t-1, .t-dark {
+	background-color: $color-secondary-dark;
+	color: $color-secondary-dark-contrast;
+
+	[class*="-header"] {
+		color: $color-light-light;
+	}
+	
+	[class*="-subheader"] {
+		color: $color-primary-accent;
+	}
+}
+
+.t-2 {
+	background-color: $color-secondary;
+	color: $color-secondary-contrast;
+
+	[class*="-header"] {
+		color: $color-light-light;
+	}
+	
+	[class*="-subheader"] {
+		color: $color-accent-accent;
+	}
+}
+
+.t-3 {
+	background-color: $color-primary;
+	color: $color-primary-contrast;
+
+	[class*="-header"] {
+		color: $color-secondary-dark;
+	}
+	
+	[class*="-subheader"] {
+		color: $color-light-accent;
+	}
+}
+
+.t-4 {
+	background-color: $color-primary-accent;
+	color: $color-primary-accent-contrast;
+
+	[class*="-header"] {
+		color: $color-light-light;
+	}
+	
+	[class*="-subheader"] {
+		color: $color-secondary-dark;
+	}
+}
+
+.t-5 {
+	background-color: $color-light-light;
+	color: $color-light-light-contrast;
+
+	[class*="-header"] {
+		color: $color-secondary;
+	}
+	
+	[class*="-subheader"] {
+		color: $color-secondary-accent;
+	}
+}
+
+.t-6, .t-light {
+	background-color: $color-light-light;
+	color: $color-light-light-contrast;
+
+	[class*="-header"] {
+		color: $color-primary;
+	}
+	
+	[class*="-subheader"] {
+		color: $color-secondary-dark;
+	}
+}

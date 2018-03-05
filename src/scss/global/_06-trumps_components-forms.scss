@@ -1,0 +1,238 @@
+@mixin placeholder-styles-1 {
+	color: $color-placeholder;
+	line-height: 1;
+	vertical-align: middle;
+}
+
+@mixin placeholder-setup-1 {
+	&::-webkit-input-placeholder {
+	   @include placeholder-styles-1;
+	}
+
+	&:-moz-placeholder {
+	   @include placeholder-styles-1;
+	}
+
+	&::-moz-placeholder {
+	   @include placeholder-styles-1;
+	}
+
+	&:-ms-input-placeholder {
+	   @include placeholder-styles-1;
+	}
+}
+
+.t-form-1  {
+	&.c-label {
+		color: $color-secondary;
+	}
+
+	&.c-select {
+		.c-select__text {
+			&:after {
+				color: $color-primary;
+			}
+
+			&:active, &:hover {
+				color: $color-primary-accent;
+			}
+
+			&:active {
+				color: $color-primary-dark;
+			}
+		}
+	}
+
+	&.c-input, &.c-textarea, &.c-select {
+		background-color: $color-light-light;
+		border-color: transparent;
+		border-bottom-color: $color-light-dark;
+		color: $color-dark;
+
+		&:focus {
+			border-bottom-color: $color-secondary-accent;
+			color: $color-dark-dark;
+		}
+	}
+
+	.u-char-before__item:after, .u-char-after__item:after {
+		color: $color-dark-dark;
+	}
+
+	&.c-input, &.c-textarea {
+		// border-color: red !important;
+		
+		@include placeholder-setup-1;
+	}
+
+	.c-field-toggle {
+		&__input {
+
+			&:checked + .c-field-toggle__text, &:checked + .c-field-toggle__label {
+				color: $color-dark-dark;
+			}
+
+			&:focus + .c-field-toggle__text, &:active + .c-field-toggle__text, , &:active + .c-field-toggle__label {
+				color: $color-secondary;
+				&:before {
+					border-color: $color-secondary-light;
+				}
+			}
+
+			&[disabled]:checked + .c-field-toggle__text, [disabled]:checked + .c-field-toggle__label {
+				color: $color-light-dark;
+			}
+		}
+
+		&__text, &__label {
+			color: $color-dark;
+
+			&:after {
+				color: $color-secondary;
+			}
+
+			&:before {
+				background-color: $color-light-light;
+				border-color: $color-light-dark;
+			}
+
+			&:hover, &:focus {
+				color: $color-dark-dark;
+			}
+		}
+	}
+
+	&.c-input[disabled], & > .c-checkbox__input[disabled] + label:before, & > .c-radio__input[disabled] + label:before, &.c-textarea[disabled], &.c-select[disabled], &.c-select > select[disabled][disabled], &.c-radio > input[disabled] + label:before {
+		@include disable-select;
+		cursor: default;
+		cursor: not-allowed;
+		background-color: darken($color-disabled, 10);
+
+		opacity: .7;
+	}
+
+	& > .c-checkbox__input[disabled] + label:after, & > .c-radio__input[disabled] + label:after {
+		color: darken($color-disabled, 20);
+		text-shadow: 0 rem(1) 0 rgba(255,255,255,.1), 0 rem(-1) 0 rgba(0,0,0,.1);
+	}
+
+	&.u-light-light {
+		color: $color-light-light;
+	}
+}
+
+@mixin placeholder-styles-2 {
+	color: $color-light;
+}
+
+@mixin placeholder-setup-2 {
+	&::-webkit-input-placeholder {
+	   @include placeholder-styles-2;
+	}
+
+	&:-moz-placeholder {
+	   @include placeholder-styles-2;
+	}
+
+	&::-moz-placeholder {
+	   @include placeholder-styles-2;
+	}
+
+	&:-ms-input-placeholder {
+	   @include placeholder-styles-2;
+	}
+}
+
+.t-form-2  {
+	&.c-label {
+		color: $color-dark;
+	}
+
+	&.c-input, &.c-textarea, &.c-select, &.c-select > select {
+		color: $color-light;
+
+		&:focus {
+			color: $color-light-light;
+		}
+	}
+
+	&.c-input, &.c-textarea, &.c-select {
+		background-color: $color-dark;
+		border-color: transparent;
+
+		&:focus {
+			border-bottom-color: $color-secondary-light;
+		}
+	}
+
+	&.c-select {
+		option {
+			color: $color-light;
+			background-color: $color-dark;
+		}
+	}
+
+	.u-char-before__item:after, .u-char-after__item:after {
+		color: $color-light-dark;
+	}
+
+	&.c-input, &.c-textarea {
+		@include placeholder-setup-2;
+	}
+
+	.c-input-search__btn {
+		box-shadow: rem(80) 0 0 rgba(0,0,0,.2) inset;
+
+		&:active, &:hover, &:focus {
+			box-shadow: none;
+		}
+	}
+
+	.c-field-toggle {
+		&__input {
+
+			&:focus + .c-field-toggle__text, &:focus + .c-field-toggle__label {
+				color: $color-secondary;
+			}
+
+			&:checked + .c-field-toggle__text, &:checked + .c-field-toggle__label{
+				color: $color-dark-dark;
+			}
+
+			&[disabled]:checked + .c-field-toggle__text, &[disabled]:checked + .c-field-toggle__label {
+				color: $color-light-dark;
+			}
+		}
+
+		&__text, &__label {
+			color: currentColor;
+
+			&:after {
+				color: $color-primary;
+			}
+
+			&:before {
+				background-color: $color-dark;
+				border-color: transparent;
+			}
+
+			&:hover, &:focus {
+				color: $color-dark-dark;
+			}
+		}
+	}
+
+
+	&.c-input[disabled], &.c-textarea[disabled], &.c-select[disabled], &.c-select > select[disabled][disabled], &.c-radio > input[disabled] + label:before {
+		cursor: default;
+		background-color: $color-dark;
+		opacity: .7;
+		@include disable-select;
+	}
+}
+
+.t-form-light {
+	&.c-label {
+		color: $color-light-light;
+	}
+}

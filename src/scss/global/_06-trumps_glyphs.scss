@@ -28,30 +28,6 @@
 	}
 }
 
-%u-glyph-circled {
-	@include allChange($property: background-color);
-	vertical-align: middle;
-	display: inline-block;
-	width: rem(26);
-	height: rem(26);
-	border-radius: 50%;
-	background-color: $color-primary;
-	color: $color-light-light;
-	font-size: rem(18);
-	transform: translateY(-#{rem(1)});
-	text-align: center;
-
-	&:hover {
-		&:before, &:after {
-			background-color: $color-secondary;
-		}
-
-		&:active {
-			background-color: $color-secondary-light;
-		}
-	}
-}
-
 .u-glyph {
 	@include suffixcateExtend(('%glyph-shared'));
 
@@ -181,16 +157,5 @@
 				}
 			}
 		}
-	}
-}
-
-
-.c-calendar-icon {
-	&__base {
-		fill: currentColor;
-	}
-
-	&__accent {
-		fill: $color-primary;
 	}
 }
