@@ -10,35 +10,6 @@
 @import "_06-trumps_glyphs";
 @import "_06-trumps_colors";
 
-
-%styles-ug-img {
-
-	&:before {
-		content: "";
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: cover;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		z-index: -3;
-		will-change: transform;
-	}
-
-	@media screen and (min-width: $bp-large) {
-		&:before {
-			position: fixed;
-		}
-	}
-
-	@media screen and (max-width: $bp-large) {
-		&:before {
-			position: absolute;
-		}
-	}
-}
-
 .u-bg {
 	&--cover, &--full, &--top, &--center {
 		background-repeat: no-repeat;

@@ -38,67 +38,54 @@ Types of buttons:
 name: Button > Primary
 category: 5. Component > Call to Actions
 ---
-*/
 
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
+Types of primary buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="** c-button c-button--primary **" data-component="global.button-primary">
+    <span>
+        Span is required
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button c-button--primary c-button--default **" data-component="global.button-primary">
+    <span>
+        Span is required
+    </span>
+</button>
+```
+*/
 
 /*
 ---
 name: Button > Secondary
 category: 5. Component > Call to Actions
 ---
+
+Types of secondary buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="** c-button c-button--secondary **" data-component="global.button-primary">
+    <span>
+        Span is required
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button c-button--secondary c-button--default **" data-component="global.button-primary">
+    <span>
+        Span is required
+    </span>
+</button>
+```
 */
-
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
-
 /*
 ---
 name: Button > Dark
