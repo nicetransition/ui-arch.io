@@ -14,25 +14,25 @@ $selector-name_fraction-max: "u-max-width";
 	$percent-output: percentage($i / 100);
 
 	%u-percent-min-width#{$percent-with-decimals} {
-		@include suffixcate($bp: $suffixcate_bp-all) {
+		@include suffixcate {
 			min-width: $percent-output;
 		}
 	}
 
 	%u-percent-width#{$percent-with-decimals} {
-		@include suffixcate($bp: $suffixcate_bp-all) {
+		@include suffixcate {
 			width: $percent-output;
 		}
 	}
 
 	%u-percent-max-width#{$percent-with-decimals} {
-		@include suffixcate($bp: $suffixcate_bp-all) {
+		@include suffixcate {
 			max-width: $percent-output;
 		}
 	}
 
 	%flex-basis#{$percent-with-decimals} {
-		@include suffixcate($bp: $suffixcate_bp-all) {
+		@include suffixcate {
 			flex-basis: $percent-output;
 		}
 	}
@@ -44,7 +44,7 @@ $selector-name_fraction-max: "u-max-width";
 
 	@if ($make-to-100) {
 		@for $i from 1 through 100 {
-			$percent-with-decimals: str-replace("#{(($i / 100) * 100)}", ".", "");
+			$percent-with-decimals: str-replace(to-string(($dividend / $divisor) * 100), ".", "");
 			$percent-output: percentage($i / 100);
 
 			.#{$selector-name_percent}-#{$i}, .#{$selector-name_fraction}-#{$i}-of-100, .#{$selector-name_fraction}-#{$i}\/100 {
@@ -63,12 +63,12 @@ $selector-name_fraction-max: "u-max-width";
 
 			@if ($dividend <= $divisor) {
 				$quotient: ($dividend / $divisor) * 100;
-				$percent-with-decimals: str-replace("#{$quotient}", ".", "");
-				$has-decimal: str-index("#{$quotient}", ".");
+				$percent-with-decimals: str-replace(to-string($quotient), ".", "");
+				$has-decimal: str-index(to-string($quotient), ".");
 
 				%u-min-percent-and-fractions-#{$percent-with-decimals} {
 					@if ($has-decimal) {
-						@include suffixcate($bp: $suffixcate_bp-all) {
+						@include suffixcate {
 							min-width: $percentage;
 						}
 					} @else {
@@ -78,7 +78,7 @@ $selector-name_fraction-max: "u-max-width";
 
 				%u-percent-and-fractions-#{$percent-with-decimals} {
 					@if ($has-decimal) {
-						@include suffixcate($bp: $suffixcate_bp-all) {
+						@include suffixcate {
 							width: $percentage;
 						}
 					} @else {
@@ -88,7 +88,7 @@ $selector-name_fraction-max: "u-max-width";
 
 				%flex-percent-and-fractions-#{$percent-with-decimals} {
 					@if ($has-decimal) {
-						@include suffixcate($bp: $suffixcate_bp-all) {
+						@include suffixcate {
 							flex-basis: $percentage;
 						}
 					} @else {
@@ -98,7 +98,7 @@ $selector-name_fraction-max: "u-max-width";
 
 				%u-max-percent-and-fractions-#{$percent-with-decimals} {
 					@if ($has-decimal) {
-						@include suffixcate($bp: $suffixcate_bp-all) {
+						@include suffixcate {
 							max-width: $percentage;
 						}
 					} @else {
@@ -107,8 +107,9 @@ $selector-name_fraction-max: "u-max-width";
 				}
 			}
 
+
 			@if ($dividend <= $divisor) {
-				$percent-with-decimals: str-replace("#{(($dividend / $divisor) * 100)}", ".", "");
+				$percent-with-decimals: str-replace(to-string(($dividend / $divisor) * 100), ".", "");
 
 				@if ($include-min) {
 					.#{$output-name-min}-#{$dividend}-of-#{$divisor}, .#{$output-name-min}-#{$dividend}\/#{$divisor} {
