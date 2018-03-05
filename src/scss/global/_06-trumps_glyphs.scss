@@ -1,3 +1,15 @@
+/*
+---
+name: Webfonts
+category: Glyphs
+---
+
+Webfonts are can be custom created using [Icomoon](http://icomoon.io/app/).
+
+Core glyphs are located in `~/src/fonts/webfont`. Update by uploading the `selection.json` to [Icomoon app](http://icomoon.io/app/).
+
+*/
+
 @font-face {
 	font-family: 'webfont';
 	src:url('/assets/toolkit/fonts/webfont/fonts/webfont.eot');
@@ -33,22 +45,6 @@
 
 	&--no-speak {
 		@extend %glyph-pseudo-no-speak;
-	}
-
-	&-before--circled, &-after--circled {
-		vertical-align: middle;
-	}
-
-	&-before--circled {
-		&:before {
-			@extend %u-glyph-circled;
-		}
-	}
-
-	&-after--circled {
-		&:after {
-			@extend %u-glyph-circled;
-		}
 	}
 
 	&-before {
