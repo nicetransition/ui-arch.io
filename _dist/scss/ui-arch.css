@@ -8840,11 +8840,11 @@ name: Button > Primary
 category: 5. Component > Call to Actions
 ---
 
-Types of buttons
+Types of primary buttons
 - Core: Base styles
 - Default: Spacing and alignment
 
-```default.html
+```core.html
 <button class="** c-button c-button--primary **" data-component="global.button-primary">
     <span>
         Span is required
@@ -8852,20 +8852,39 @@ Types of buttons
 </button>
 ```
 
-```spacing.html
+```default.html
 <button class="** c-button c-button--primary c-button--default **" data-component="global.button-primary">
     <span>
         Span is required
     </span>
 </button>
 ```
-
 */
 /*
 ---
 name: Button > Secondary
 category: 5. Component > Call to Actions
 ---
+
+Types of secondary buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="** c-button c-button--secondary **" data-component="global.button-primary">
+    <span>
+        Span is required
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button c-button--secondary c-button--default **" data-component="global.button-primary">
+    <span>
+        Span is required
+    </span>
+</button>
+```
 */
 /*
 ---
@@ -9383,6 +9402,25 @@ category: 5. Component > Form
 
 
 Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is the base styling to use with either form field types.
+
+
+```base.html
+<span class=" ** t-form-1 || u-dis-ib || c-field-toggle c-radio **  " data-component="global.radio">
+	<input class="c-field-toggle__input c-radio__input"  id="default" name="default" type="radio"  />
+	<label for="default" class="u-dis-ib c-field-toggle__text c-radio__text">
+		
+	</label>
+</span>
+```
+
+```base-checked.html
+<span class=" ** t-form-1 || u-dis-ib || c-field-toggle c-radio **  " data-component="global.radio">
+	<input checked class="c-field-toggle__input c-radio__input"  id="default" name="default" type="radio"  />
+	<label for="default" class="u-dis-ib c-field-toggle__text c-radio__text">
+		
+	</label>
+</span>
+```
 
 */
 .c-field-toggle {

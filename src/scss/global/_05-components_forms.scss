@@ -314,6 +314,25 @@ category: 5. Component > Form
 
 Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is the base styling to use with either form field types.
 
+
+```base.html
+<span class=" ** t-form-1 || u-dis-ib || c-field-toggle c-radio **  " data-component="global.radio">
+	<input class="c-field-toggle__input c-radio__input"  id="default" name="default" type="radio"  />
+	<label for="default" class="u-dis-ib c-field-toggle__text c-radio__text">
+		
+	</label>
+</span>
+```
+
+```base-checked.html
+<span class=" ** t-form-1 || u-dis-ib || c-field-toggle c-radio **  " data-component="global.radio">
+	<input checked class="c-field-toggle__input c-radio__input"  id="default" name="default" type="radio"  />
+	<label for="default" class="u-dis-ib c-field-toggle__text c-radio__text">
+		
+	</label>
+</span>
+```
+
 */
 
 // 
