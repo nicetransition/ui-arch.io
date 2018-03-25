@@ -1,24 +1,162 @@
 /*
----
-name: String to Number
-category: 1. Tools > Functions
----
+Error: Undefined mixin 'suffixcate'.
+        on line 5 of src/scss/01-brand/brand-core/_06-trumps_colors.scss, in `suffixcate'
+        from line 5 of src/scss/01-brand/brand-core/_06-trumps_colors.scss, in `makeColorHelpers'
+        from line 39 of src/scss/01-brand/brand-core/_06-trumps_colors.scss
+        from line 2 of src/scss/01-brand/brand-core/06-trumps.scss
+        from line 5 of src/scss/01-brand/brand-core.scss
+        from line 2 of ./src/scss/website.scss
 
-Casts a string into a number.
+1: // @import "ui-arch"; // include ui-arch.scss 
+2: @import "01-brand/brand-core"; // update to align to branding
+3: 
+4: /*! v0.0.0 || 2018-02-14 XX:XX *\/
+5: 
+6: // SETTINGS: Global variables, config switches
+7: @import "02-application/application-website/00-settings";
+8: 
+9: // TOOLS: Default mixin and functions
+10: @import "02-application/application-website/01-tools";
 
-Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
-
-* @param {String | Number} $value - Value to be parsed
-* @return {Number}
-
-
-Usage:
-
-```
-@function foo(param: $some-string-that-may-not-be-a-number) {
-	@return to-number(unquote("param"));
-}
-```
-
+Backtrace:
+src/scss/01-brand/brand-core/_06-trumps_colors.scss:5:in `suffixcate'
+src/scss/01-brand/brand-core/_06-trumps_colors.scss:5:in `makeColorHelpers'
+src/scss/01-brand/brand-core/_06-trumps_colors.scss:39
+src/scss/01-brand/brand-core/06-trumps.scss:2
+src/scss/01-brand/brand-core.scss:5
+./src/scss/website.scss:2
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:98:in `with_mixin'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:367:in `block (4 levels) in visit_mixin'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:367:in `map'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:367:in `block (3 levels) in visit_mixin'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:367:in `block (2 levels) in visit_mixin'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:86:in `perform_arguments'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:362:in `block in visit_mixin'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:98:in `with_mixin'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:302:in `block (2 levels) in visit_if'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:302:in `map'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:302:in `block in visit_if'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:301:in `visit_if'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:244:in `block (3 levels) in visit_each'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:244:in `map'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:244:in `block (2 levels) in visit_each'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:236:in `map'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:236:in `block in visit_each'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:235:in `visit_each'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:329:in `map'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:88:in `block in with_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:88:in `with_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:329:in `map'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:88:in `block in with_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:88:in `with_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:329:in `map'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:88:in `block in with_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:88:in `with_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/tree/root_node.rb:20:in `render'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/engine.rb:290:in `render'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:464:in `update_stylesheet'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
+/Users/kmack/.rvm/gems/ruby-2.4.1@global/gems/sass-3.5.5/bin/sass:13:in `<top (required)>'
+/Users/kmack/.rvm/gems/ruby-2.4.1/bin/sass:23:in `load'
+/Users/kmack/.rvm/gems/ruby-2.4.1/bin/sass:23:in `<main>'
+/Users/kmack/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `eval'
+/Users/kmack/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `<main>'
 */
-/*! v0.0.0 || 2018-02-14 XX:XX */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'suffixcate'.\A         on line 5 of src/scss/01-brand/brand-core/_06-trumps_colors.scss, in `suffixcate'\A         from line 5 of src/scss/01-brand/brand-core/_06-trumps_colors.scss, in `makeColorHelpers'\A         from line 39 of src/scss/01-brand/brand-core/_06-trumps_colors.scss\A         from line 2 of src/scss/01-brand/brand-core/06-trumps.scss\A         from line 5 of src/scss/01-brand/brand-core.scss\A         from line 2 of ./src/scss/website.scss\A \A 1: // @import \"ui-arch\"; // include ui-arch.scss \A 2: @import \"01-brand/brand-core\"; // update to align to branding\A 3: \A 4: /*! v0.0.0 || 2018-02-14 XX:XX */\A 5: \A 6: // SETTINGS: Global variables, config switches\A 7: @import \"02-application/application-website/00-settings\";\A 8: \A 9: // TOOLS: Default mixin and functions\A 10: @import \"02-application/application-website/01-tools\";"; }

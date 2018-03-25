@@ -1,0 +1,388 @@
+@mixin shared-across-all-form-items {
+	outline: none;
+	font-size: $em4;
+	font-family: $primary-font;
+	@include title-setup;
+	box-shadow: none;
+}
+
+%shared-across-all-form-items {
+	@include shared-across-all-form-items;
+}
+
+
+/*
+---
+name: Branded Label
+category: 5. Component > Form
+---
+
+Types of labels:
+- Theme 1: `.t-form-1`
+- Theme 2: `.t-form-2`
+
+```base.html
+	<label class="** c-label **">Label</label>
+```
+
+```t-form-1.html
+	<input class="** c-label ** t-form-1">Label</label>
+```
+
+```t-form-2.html
+	<input class="** c-label ** t-form-2">Label</label>
+
+```
+*/
+
+@mixin placeholder-styles {
+	font-size: $em4;
+	font-family: $primary-font;
+
+	line-height: 1;
+}
+
+@mixin placeholder-setup {
+	&::-webkit-input-placeholder {
+	   @include placeholder-styles;
+	}
+
+	&:-moz-placeholder {
+	   @include placeholder-styles;
+	}
+
+	&::-moz-placeholder {
+	   @include placeholder-styles;
+	}
+
+	&:-ms-input-placeholder {
+	   @include placeholder-styles;
+	}
+}
+
+/*
+---
+name: Input
+category: 5. Component > Form
+---
+*/
+
+
+/*
+---
+name: Textarea
+category: 5. Component > Form
+---
+*/
+
+
+/*
+---
+name: Select
+category: 5. Component > Form
+---
+*/
+
+
+
+
+.c-input, .c-textarea, .c-select {
+	@extend %shared-across-all-form-items;
+	@include placeholder-styles;
+	border-top: none;
+	border-right: none;
+	border-bottom: rem(2) solid;
+	border-left: none;
+	border-radius: 0;
+}
+
+@mixin placeholder-styles-input-and-text {
+	font-size: rem(14) !important;
+	line-height: 1.5 !important;
+	padding-top: rem(2);
+	color: red;
+}
+
+@mixin placeholder-styles-input-and-text-browsers  {
+	&::-webkit-input-placeholder {
+	   @include placeholder-styles-input-and-text;
+	}
+
+	&:-moz-placeholder {
+	   @include placeholder-styles-input-and-text;
+	}
+
+	&::-moz-placeholder {
+	   @include placeholder-styles-input-and-text;
+	}
+
+	&:-ms-input-placeholder {
+	   @include placeholder-styles-input-and-text;
+	}
+}
+
+.c-input {
+	@include placeholder-styles-input-and-text-browsers;
+	padding: rem(10) 0 rem(9);
+}
+
+.c-select {
+	&__text {
+		&:after {
+			content: "•";
+		}
+	}
+
+	&__input {
+		@extend %shared-across-all-form-items;
+		padding: rem(9) rem(40) rem(10) rem(0);
+
+		&:active, &:focus {
+			& + .c-select--highlight {
+				background-color: $color-secondary-accent;
+			}
+		}
+	}
+}
+
+.c-textarea {
+	min-height: rem(32);
+	padding-top: rem(20);
+}
+
+
+/*
+---
+name: Radio > Toggle Field
+category: 5. Component > Form
+---
+
+
+Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is the base styling to use with either form field types.
+
+
+```base.html
+<span class=" ** t-form-1 || u-dis-ib || c-field-toggle c-radio **  " data-component="global.radio">
+	<input class="c-field-toggle__input c-radio__input"  id="default" name="default" type="radio"  />
+	<label for="default" class="u-dis-ib c-field-toggle__text c-radio__text">
+		
+	</label>
+</span>
+```
+
+```base-checked.html
+<span class=" ** t-form-1 || u-dis-ib || c-field-toggle c-radio **  " data-component="global.radio">
+	<input checked class="c-field-toggle__input c-radio__input"  id="default" name="default" type="radio"  />
+	<label for="default" class="u-dis-ib c-field-toggle__text c-radio__text">
+		
+	</label>
+</span>
+```
+
+*/
+
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+
+.c-field-toggle {
+	&__text, &__label {
+		&:before {
+			border: 1px solid;
+		}
+	}
+
+	&__text {
+		padding-left: rem(25);
+
+		&:before {
+			width: rem(20);
+			height: rem(20);
+		}
+	}
+
+	&__label {
+		&:before {
+			width: em(20);
+			height: em(20);
+		}
+	}
+}
+
+/*
+---
+name: Radio
+category: 5. Component > Form
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+.c-radio {
+	&__input {
+		@extend %shared-across-all-form-items;
+	}
+
+	&__text {
+		&:after {
+			background-color: currentColor;
+			margin-top: rem(5);
+			margin-left: rem(5);
+			width: rem(10);
+			height: rem(10);
+		}
+	}
+}
+
+/*
+---
+name: Checkbox
+category: 5. Component > Form
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+.c-checkbox {
+	&__input {
+		@extend %shared-across-all-form-items;
+	}
+
+	&__text {
+		&:after {
+			content: "X";
+			width: rem(20);
+		}
+	}
+}
+
+
+
+/*
+---
+name: Input > Placeholder Styles
+category: 5. Component > Form
+---
+
+`@mixin placeholder-styles-large` contains styles for inputs `@placeholder` attribute
+
+Types of placeholders:
+- Default: No classes
+- Base: `.c-input`
+- Theme 1: `.t-form-1`
+- Theme 2: `.t-form-2`
+
+```default.html
+	<input placeholder="Placeholder" type="text" />
+```
+
+```base.html
+	<input class="** c-input **" placeholder="Placeholder" type="text" />
+```
+
+```t-form-1.html
+	<input class="** c-input ** t-form-1" placeholder="Placeholder" type="text"  />
+```
+
+```t-form-2.html
+	<input class="** c-input ** t-form-2" placeholder="Placeholder" type="text"  />
+
+```
+
+*/
+
+@mixin placeholder-styles-large {
+	font-size: $h3;
+	font-family: $primary-font;
+	line-height: 1;
+}
+
+@mixin placeholder-setup-large {
+	&::-webkit-input-placeholder {
+	   @include placeholder-styles-large;
+	}
+
+	&:-moz-placeholder {
+	   @include placeholder-styles-large;
+	}
+
+	&::-moz-placeholder {
+	   @include placeholder-styles-large;
+	}
+
+	&:-ms-input-placeholder {
+	   @include placeholder-styles-large;
+	}
+}
+
+
