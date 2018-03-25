@@ -28,7 +28,7 @@ var config = {
 			dist: './src/scss/01-brand/brand-core/_00-settings_colors.scss'
 		},
 		styles: {
-			core: './src/**/ui-arch.scss'
+			core: './src/scss/*.scss'
 			// core: './src/**/*.scss'
 		}
 	},
@@ -133,7 +133,8 @@ gulp.task('serve', ['stylemark', 'sass'], function() {
         server: "./_dist"
     });
 
-	gulp.watch("src/scss/**/*.scss", ['stylemark']);
+
+	gulp.watch("src/scss/*.scss", ['stylemark']);
 
 	// gulp.task('styles:static:watch', ['styles:static']);
 	// gulp.watch('src/assets/toolkit/styles/**/*.css', ['styles:static:watch']);

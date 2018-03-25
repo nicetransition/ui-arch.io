@@ -1,0 +1,24 @@
+/*
+---
+name: String to Number
+category: 1. Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+/*! v0.0.0 || 2018-02-14 XX:XX */

@@ -167,29 +167,6 @@ Usage:
 }
 
 
-/*
----
-name: Pixel to REM
-category: 1. Tools > Functions
----
-
-Converts `px` unit to `rem` unit
-
-
-* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
-* @param {String | Number} $context - Base root font size (do not include `px`)
-* @return {Number}
-
-
-Usage:
-
-```
-.selector-name {
-	font-size: rem(18);
-}
-```
-
-*/
 
 
 @function rem($pixels, $context: $browser-context, $em: false) {
@@ -200,35 +177,6 @@ Usage:
 	@return to-number("#{$px / $base-size}#{if($em != true, "rem", "em")}");
 }
 
-
-
-/*
----
-name: Pixel to EM
-category: 1. Tools > Functions
----
-
-Converts `px` unit to `em` unit
-
-
-* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
-* @param {String | Number} $context - Base root font size (do not include `px`)
-* @return {Number}
-
-
-Usage:
-
-```
-.selector-name {
-	font-size: em(18);
-}
-
-.demo-2 {
-	font-size: em(64) * 2;
-}
-```
-
-*/
 
 @function em($pixels, $context: $browser-context) {
 	@return rem($pixels, $context, true);

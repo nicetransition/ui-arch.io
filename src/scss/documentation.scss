@@ -1,0 +1,76 @@
+// /* DO NOT DELETE */
+
+
+/**
+	Free standing documentation and combination for files
+ */
+
+
+/*
+---
+name: Pixel to REM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+
+/*
+---
+name: Pixel to EM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
+}
+
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
+
+*/
+
+
+/*
+---
+name: Font Sizes
+category: 5. Component > Typography
+---
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+*/
+
+
+// Styles you want to public documentation for
+
+@import "ui-arch";
+@import "website";

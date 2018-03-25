@@ -1,2 +1,25 @@
-@import "00-global/global"; //  
+// @import "ui-arch"; // include ui-arch.scss 
 @import "01-brand/brand-core"; // update to align to branding
+
+/*! v0.0.0 || 2018-02-14 XX:XX */
+
+// SETTINGS: Global variables, config switches
+@import "02-application/application-website/00-settings";
+
+// TOOLS: Default mixin and functions
+@import "02-application/application-website/01-tools";
+
+// GENERIC: Ground-zero styles (normalize, resets, box-sizing)
+@import "02-application/application-website/02-generic";
+
+// ELEMENTS: Unclassed HTML elements (Type selectors)
+@import "02-application/application-website/03-elements";
+
+// OBJECTS: Cosmetic-free design patterns
+@import "02-application/application-website/04-objects";
+
+// COMPONENTS: Designed components
+@import "02-application/application-website/05-components";
+
+// TRUMPS: Helpers and overrides
+@import "02-application/application-website/06-trumps";

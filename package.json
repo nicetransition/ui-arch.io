@@ -39,5 +39,8 @@
 		"gulp-autoprefixer": "4.1.0",
 		"browser-sync": "2.23.6",
 		"gulp-watch": "5.0.0"
+	},
+	"dependencies": {
+		"stylemark": "file:../stylemark"
 	}
 }

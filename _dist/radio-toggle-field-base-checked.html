@@ -2,8 +2,11 @@
 <html>
 
 	<head>
-		<link rel="stylesheet" href="scss/ui-arch.css" />
+			<link rel="stylesheet" href="scss/ui-arch.css" />
 
+
+
+		
 
 		<style>
 		</style>
@@ -16,149 +19,180 @@
 		</style>
 
 		<script>
-			function getStylemarkBlock(language, defaultIfEmpty) {
-				defaultIfEmpty = defaultIfEmpty || '';
-				var script = document.querySelector('script[data-language="' + language + '"]');
-				return script ? script.innerText : defaultIfEmpty;
+			function findAndHandleStylemarkBlocks(languages, handler) {
+				var blocks = getStylemarkBlocks(languages);
+				handleStylemarkBlocks(blocks, handler);
+			}
+
+			function getStylemarkBlocks(languages) {
+				languages = typeof languages === 'string' ? [languages] : languages;
+
+				var selectors = [];
+
+				for (var i = 0; i < languages.length; i++) {
+					selectors.push('script[data-language="' + languages[i] + '"]');
+				}
+
+				var selector = selectors.join(',');
+				var scripts = document.querySelectorAll(selector);
+				var blocks = [];
+
+				for (var i = 0, length = scripts.length; i < length; i++) {
+					if (scripts[i].innerText) {
+						blocks.push(scripts[i].innerText);
+					}
+				}
+
+				return blocks;
+			}
+
+			function handleStylemarkBlocks(blocks, handler) {
+				for (var i = 0, length = blocks.length; i < length; i++) {
+					handler(blocks[i], i);
+				}
 			}
 		</script>
 	</head>
 
 	<body>
 
-		<main
-			role="main"
-			id="stylemark-root"
-			ng-controller="stylemark-radio-toggle-field-base-checked"
-			style="
-				display: block;
-				padding: ;
-				width: ;
-			"
-		><span class=" ** t-form-1 || u-dis-ib || c-field-toggle c-radio **  " data-component="global.radio">
-	<input checked class="c-field-toggle__input c-radio__input"  id="default" name="default" type="radio"  />
-	<label for="default" class="u-dis-ib c-field-toggle__text c-radio__text">
-		
-	</label>
-</span></main>
 
-		
-
-			<script type="text/x-stylemark" data-language="html"><span class=" ** t-form-1 || u-dis-ib || c-field-toggle c-radio **  " data-component="global.radio">
-	<input checked class="c-field-toggle__input c-radio__input"  id="default" name="default" type="radio"  />
-	<label for="default" class="u-dis-ib c-field-toggle__text c-radio__text">
-		
-	</label>
-</span></script>
+		<!--
+			Vanilla JS
+		-->
 
 		<script>
-			eval(getStylemarkBlock('js'));
+			findAndHandleStylemarkBlocks('js', function(block) {
+				eval(block);
+			});
 		</script>
+
+		<!--
+			AngularJS
+		-->
 
 		<script>
 			(function(angular) {
+
 				if (!angular) {
 					return;
 				}
 
-				var moduleElem = document.querySelector('[ng-app]');
-				var module;
+				findAndHandleStylemarkBlocks('angularjs', function(block, index) {
+					var moduleElem = document.querySelector('[ng-app]');
+					var module;
 
-				if (moduleElem) {
-					// Uses an existing module
-					module = angular.module(moduleElem.getAttribute('ng-app'));
-				}
-				else {
-					// Creates a new module
-					module = angular.module('stylemark-radio-toggle-field-base-checked', []);
-				}
+					if (moduleElem) {
+						// Uses an existing module
+						module = angular.module(moduleElem.getAttribute('ng-app'));
+					}
+					else {
+						// Creates a new module
+						module = angular.module('stylemark-radio-toggle-field-base-checked', []);
+					}
 
-				module.controller('stylemark-radio-toggle-field-base-checked', function($scope) {
-					$scope.$eval(getStylemarkBlock('angularjs'));
+					module.controller('stylemark-radio-toggle-field-base-checked-' + index, function($scope) {
+						$scope.$eval(block);
+					});
 				});
 			})(window.angular);
 		</script>
 
+		<!--
+			React / JSX
+		-->
+
 		<script>
 			(function(ReactDOM) {
+
 				if (!ReactDOM) {
 					return;
 				}
 
-				var Component = eval(getStylemarkBlock('jsx'));
-				var rootNode = document.getElementById('stylemark-root');
-				ReactDOM.render(Component, rootNode);
+				findAndHandleStylemarkBlocks('jsx', function(block, index) {
+					var rootNode = document.querySelectorAll('.stylemark-react-root')[index];
+					var Component = eval(block);
+					ReactDOM.render(Component, rootNode);
+				});
 			})(window.ReactDOM);
 		</script>
 
+		<!--
+			Ember
+		-->
+
 		<script>
 			(function(Ember) {
+
 				if (!Ember) {
 					return;
 				}
 
-				var render = function() {
-					var app = window.noop
-					var container = app.__container__;
-					var renderer = container.lookup('renderer:-dom');
-					var hbs = getStylemarkBlock('handlebars') || getStylemarkBlock('hbs');
-					var template = Ember.HTMLBars.compile(hbs);
+				findAndHandleStylemarkBlocks(['handlebars', 'hbs'], function(block, index) {
+					var render = function() {
+						var app = window.noop
+						var container = app.__container__;
+						var renderer = container.lookup('renderer:-dom');
+						var template = Ember.HTMLBars.compile(block);
 
-					var context;
-					eval('context = ' + getStylemarkBlock('js', '{}'));
+						var jsBlocks = getStylemarkBlocks('js');
+						var jsBlock = jsBlocks && jsBlocks[0] ? jsBlocks[0] : '{}';
+						var context;
+						eval('context = ' + jsBlock);
 
-					// Credit:
-					// http://stackoverflow.com/questions/27950413/render-ember-js-hbs-template-to-a-string#answer-35625858
-					var compile = function(container, template, context) {
-						return new Ember.RSVP.Promise(function(resolve) {
-							Ember.Component.extend(Ember.merge({
-								style: 'display:none;',
-								layout: template,
-								container: container,
-								renderer: renderer,
+						// Credit:
+						// http://stackoverflow.com/questions/27950413/render-ember-js-hbs-template-to-a-string#answer-35625858
+						var compile = function(container, template, context) {
+							return new Ember.RSVP.Promise(function(resolve) {
+								Ember.Component.extend(Ember.merge({
+									style: 'display:none;',
+									layout: template,
+									container: container,
+									renderer: renderer,
 
-								init: function() {
-									this._super.apply(this, arguments);
-									Ember.setOwner(this, container);
-								},
+									init: function() {
+										this._super.apply(this, arguments);
+										Ember.setOwner(this, container);
+									},
 
-								didRender: function() {
-									var elem = this.$();
-									resolve(elem);
-									this.destroy();
-								}
-							}, context))
-								.create()
-								.append();
+									didRender: function() {
+										var elem = this.$();
+										resolve(elem);
+										this.destroy();
+									}
+								}, context))
+									.create()
+									.append();
 
+							});
+						};
+
+						compile(container, template, context).then(function(elem) {
+							var node = document.querySelectorAll('.stylemark-ember-root')[index];
+							jQuery(node).append(elem);
 						});
 					};
 
-					compile(container, template, context).then(function(elem) {
-						jQuery('#stylemark-root').append(elem);
-					});
-				};
+					var isReady = function() {
+						return window.noop
+							&& window.noop.__container__;
+					};
 
-				var isReady = function() {
-					return window.noop
-						&& window.noop.__container__;
-				};
+					var checkReady = function() {
+						if (isReady()) {
+							render();
+						}
+						else {
+							setTimeout(checkReady, 20);
+						}
+					};
 
-				var checkReady = function() {
-					if (isReady()) {
-						render();
-					}
-					else {
-						setTimeout(checkReady, 20);
-					}
-				};
-
-				checkReady();
+					checkReady();
+				});
 
 			})(window.Ember);
 		</script>
 
 		<script src="_stylemark/js/vendor/iframeResizer.contentWindow.min.js"></script>
 	</body>
-
 </html>
