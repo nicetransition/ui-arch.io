@@ -1,187 +1,42 @@
-.c-title, .c-img {
+/*
+---
+name: Title Core Styles
+category: 5. Component > Typography
+---
+
+Provides better legibility and kerning across browsers. Can be used on any element that has text as content.
+
+```default.html
+<span class="c-title">Text styles</span>
+```
+*/
+
+
+.c-title {
 	@include title-setup;
-
-	&__outline {
-		display: inline-block;
-		position: relative;
-		padding-bottom: $default-space + ($default-space / 4);
-
-		&:after {
-			display: block;
-			content: "";
-			position: absolute;
-			left: 0;
-			right: 0;
-			bottom: 0;
-
-			height: rem(1.5);
-
-			background-color: currentColor;
-			opacity: .3;
-		}
-	}
-}
-
-%header-font {
-	@include suffixcate {
-		font-family: $seconary-font;
-	}
-}
-
-%subheader-font {
-	@include suffixcate {
-		font-family: $primary-font;
-	}
 }
 
 
-%title-spacing-0 {
-	@include suffixcate {
-		letter-spacing: -0.022em;
-	}
-}
+/*
+---
+name: Title Block
+category: 5. Component > Typography
+---
 
-%title-spacing-1 {
-	@include suffixcate {
-		letter-spacing: 0.167em;
-	}
-}
+Spacing for title blocks between headers and subheaders
 
-%title-spacing-2 {
-	@include suffixcate {
-		letter-spacing: .125em;
-	}
-}
+```default.html
+<hgroup class="c-title-block">
+	<h1 class="c-title-block__header">
+		Header
+	</h1>
+	<h2 class="c-title-block__subheader">
+		Subheader
+	</h2>
+</hgroup>
 
-%title-spacing-3 {
-	@include suffixcate {
-		letter-spacing: .26em;
-	}
-}
-
-.c-subtitle {
-}
-
-%title-emphasized {
-	@include suffixcate {
-		text-transform: uppercase;
-	}
-}
-
-.c-page-header {
-	@include suffixcate {
-		font-family: $seconary-font;
-	}
-
-	@include suffixcate {
-		font-size: $h1;
-		line-height: 1;
-	}
-
-	@include suffixcate {
-		font-style: italic;
-	}
-
-	@include suffixcate {
-		font-weight: normal; // book
-	}
-}
-
-.c-page-subheader {
-	@include suffixcate {
-		font-family: $primary-font;
-	}
-
-	@include suffixcate {
-		font-size: $h2;
-	}
-
-	@include suffixcate {
-		font-weight: 300; // light
-	}
-}
-
-.c-section-header {
-	@include suffixcate {
-		font-family: $seconary-font;
-	}
-
-	@include suffixcate {
-		font-size: $h3;
-	}
-
-	@include suffixcate {
-		font-style: italic;
-	}
-
-	@include suffixcate {
-		font-weight: normal; // book
-	}
-
-	@include suffixcate {
-		text-transform: uppercase;
-	}
-}
-
-.c-section-subheader {
-	@include suffixcate {
-		font-family: $primary-font;
-	}
-
-	@include suffixcate {
-		font-size: $h4;
-	}
-
-	@include suffixcate {
-		font-weight: normal; // regular
-	}
-
-	@include suffixcate {
-		text-transform: uppercase;
-	}
-}
-
-.c-article-header {
-	@include suffixcate {
-		font-family: $primary-font;
-	}
-
-	@include suffixcate {
-		font-size: $h4;
-	}
-
-	@include suffixcate {
-		font-weight: normal; // regular
-	}
-}
-
-.c-article-subheader {
-	@include suffixcate {
-		font-family: $primary-font;
-	}
-
-	@include suffixcate {
-		font-size: $h5;
-	}
-
-	@include suffixcate {
-		font-weight: normal; // light
-	}
-}
-
-.c-paragraph-header {
-	@include suffixcate {
-		font-family: $primary-font;
-	}
-
-	@include suffixcate {
-		font-size: $h4;
-	}
-
-	@include suffixcate {
-		font-weight: 300; // light
-	}
-}
+```
+*/
 
 
 .c-title-block {

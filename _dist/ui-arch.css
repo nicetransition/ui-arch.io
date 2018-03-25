@@ -8495,18 +8495,6 @@ category: 5. Component > Call to Actions
   .c-icon-btn--clear {
     background-color: transparent; }
 
-.c-input, .c-textarea, .c-select, .c-select__input, .c-radio__input, .c-checkbox__input {
-  outline: none;
-  font-size: 1em;
-  font-family: "Arial", sans-serif;
-  font-kerning: normal;
-  -webkit-font-kerning: normal;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
-
 /*
 ---
 name: Label
@@ -8515,27 +8503,12 @@ category: 5. Component > Form
 
 Label can be used with `<label>` elements.
 
-Types of labels:
-- Default: No classes
-- Base: `.c-label`
-- Theme 1: `.t-form-1`
-- Theme 2: `.t-form-2`
-
 ```default.html
 	<label>Label</label>
 ```
 
 ```base.html
 	<label class="** c-label **">Label</label>
-```
-
-```t-form-1.html
-	<input class="** c-label ** t-form-1">Label</label>
-```
-
-```t-form-2.html
-	<input class="** c-label ** t-form-2">Label</label>
-
 ```
 */
 .c-label, .c-field-toggle__text, .c-field-toggle__label {
@@ -8559,16 +8532,6 @@ name: Select
 category: 5. Component > Form
 ---
 */
-.c-input, .c-textarea, .c-select {
-  font-size: 1em;
-  font-family: "Arial", sans-serif;
-  line-height: 1;
-  border-top: none;
-  border-right: none;
-  border-bottom: 0.125rem solid;
-  border-left: none;
-  border-radius: 0; }
-
 .c-input, .c-textarea {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -8577,28 +8540,7 @@ category: 5. Component > Form
           appearance: none; }
 
 .c-input {
-  padding: 0.625rem 0 0.5625rem;
   line-height: 1; }
-  .c-input::-webkit-input-placeholder {
-    font-size: 0.875rem !important;
-    line-height: 1.5 !important;
-    padding-top: 0.125rem;
-    color: red; }
-  .c-input:-moz-placeholder {
-    font-size: 0.875rem !important;
-    line-height: 1.5 !important;
-    padding-top: 0.125rem;
-    color: red; }
-  .c-input::-moz-placeholder {
-    font-size: 0.875rem !important;
-    line-height: 1.5 !important;
-    padding-top: 0.125rem;
-    color: red; }
-  .c-input:-ms-input-placeholder {
-    font-size: 0.875rem !important;
-    line-height: 1.5 !important;
-    padding-top: 0.125rem;
-    color: red; }
 
 .c-select:not(.u-char-before), .c-select:not(.u-char-after) {
   position: relative; }
@@ -8614,8 +8556,6 @@ category: 5. Component > Form
   z-index: 0;
   text-align: center;
   width: 2.5rem; }
-  .c-select__text:after {
-    content: "•"; }
 .c-select__input {
   display: block;
   width: 100%;
@@ -8625,26 +8565,22 @@ category: 5. Component > Form
   background-color: transparent;
   border: 0;
   border-radius: 0;
-  padding: 0.5625rem 2.5rem 0.625rem 0rem;
   position: relative;
   z-index: 1;
   cursor: pointer; }
   .c-select__input::-ms-expand {
     display: none; }
   .c-select__input:active + .c-select--highlight, .c-select__input:focus + .c-select--highlight {
-    height: 2px;
+    height: 0.125rem;
     position: absolute;
-    bottom: -2px;
-    left: -1px;
-    right: -1px;
+    bottom: -0.125rem;
+    left: -0.0625rem;
+    right: -0.0625rem;
     border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    background-color: #3D6460; }
+    border-top-right-radius: 50%; }
 
 .c-textarea {
-  min-height: 2rem;
-  line-height: 1.5;
-  padding-top: 1.25rem; }
+  line-height: 1.5; }
   .c-textarea--default {
     overflow: hidden;
     resize: none; }
@@ -8690,18 +8626,9 @@ Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is 
     top: 0;
     left: 0; }
   .c-field-toggle__text:before, .c-field-toggle__label:before {
-    border: 1px solid;
     content: ""; }
   .c-field-toggle__text:after, .c-field-toggle__label:after {
     opacity: 0; }
-  .c-field-toggle__text {
-    padding-left: 1.5625rem; }
-    .c-field-toggle__text:before {
-      width: 1.25rem;
-      height: 1.25rem; }
-  .c-field-toggle__label:before {
-    width: 1.25em;
-    height: 1.25em; }
   .c-field-toggle__input:checked + .c-field-toggle__text:after, .c-field-toggle__input:checked + .c-field-toggle__label:after {
     opacity: 1; }
   .c-field-toggle__input[disabled], .c-field-toggle__input[disabled]:checked, .c-field-toggle__input[disabled] + .c-field-toggle__text, .c-field-toggle__input[disabled] + .c-field-toggle__label {
@@ -8722,12 +8649,7 @@ category: 5. Component > Form
 .c-radio__text:before, .c-radio__text:after {
   border-radius: 50%; }
 .c-radio__text:after {
-  content: "";
-  background-color: currentColor;
-  margin-top: 0.3125rem;
-  margin-left: 0.3125rem;
-  width: 0.625rem;
-  height: 0.625rem; }
+  content: ""; }
 
 /*
 ---
@@ -8742,10 +8664,7 @@ category: 5. Component > Form
   font-variant: normal;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "X";
-  text-align: center;
-  width: 1.25rem; }
+  -moz-osx-font-smoothing: grayscale; }
 
 /*
 ---
@@ -8787,297 +8706,43 @@ category: 5. Component > Form
 
 /*
 ---
-name: Input > Placeholder Styles
-category: 5. Component > Form
+name: Title Core Styles
+category: 5. Component > Typography
 ---
 
-`@mixin placeholder-styles-large` contains styles for inputs `@placeholder` attribute
-
-Types of placeholders:
-- Default: No classes
-- Base: `.c-input`
-- Theme 1: `.t-form-1`
-- Theme 2: `.t-form-2`
+Provides better legibility and kerning across browsers. Can be used on any element that has text as content.
 
 ```default.html
-	<input placeholder="Placeholder" type="text" />
+<span class="c-title">Text styles</span>
 ```
-
-```base.html
-	<input class="** c-input **" placeholder="Placeholder" type="text" />
-```
-
-```t-form-1.html
-	<input class="** c-input ** t-form-1" placeholder="Placeholder" type="text"  />
-```
-
-```t-form-2.html
-	<input class="** c-input ** t-form-2" placeholder="Placeholder" type="text"  />
-
-```
-
 */
-/*
----
-name: Input > Search
-category: 5. Component > Form
----
-
-*/
-.c-input-search {
-  position: relative; }
-  .c-input-search__btn, .c-input-search__btn:before, .c-input-search--large .c-input-search__btn:before {
-    position: absolute; }
-  .c-input-search__btn {
-    top: 3px;
-    right: 3px;
-    bottom: 4px; }
-    .c-input-search__btn:before {
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
-  .c-input-search--large::-webkit-input-placeholder {
-    font-size: 1.125rem;
-    font-family: "Arial", sans-serif;
-    line-height: 1; }
-  .c-input-search--large:-moz-placeholder {
-    font-size: 1.125rem;
-    font-family: "Arial", sans-serif;
-    line-height: 1; }
-  .c-input-search--large::-moz-placeholder {
-    font-size: 1.125rem;
-    font-family: "Arial", sans-serif;
-    line-height: 1; }
-  .c-input-search--large:-ms-input-placeholder {
-    font-size: 1.125rem;
-    font-family: "Arial", sans-serif;
-    line-height: 1; }
-  .c-input-search--large .c-input {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    text-indent: 1.25rem; }
-  .c-input-search--large .c-input-search__btn {
-    padding-right: 1.875rem;
-    padding-left: 1.875rem;
-    border-left: 1px solid #F5F5F5; }
-    .c-input-search--large .c-input-search__btn:hover {
-      border-left-color: #193E6C; }
-
-.c-title, .c-img {
+.c-title {
   font-kerning: normal;
   -webkit-font-kerning: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  .c-title__outline, .c-img__outline {
-    display: inline-block;
-    position: relative;
-    padding-bottom: 1.5625rem; }
-    .c-title__outline:after, .c-img__outline:after {
-      display: block;
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 0.09375rem;
-      background-color: currentColor;
-      opacity: .3; }
 
-.c-page-header {
-  font-family: "Georgia", serif;
-  font-size: 1.875rem;
-  line-height: 1;
-  font-style: italic;
-  font-weight: normal; }
-  @media screen and (min-width: 47.5rem) {
-    .c-page-header\@large {
-      font-family: "Georgia", serif; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-page-header\@small {
-      font-family: "Georgia", serif; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-page-header\@large {
-      font-size: 1.875rem;
-      line-height: 1; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-page-header\@small {
-      font-size: 1.875rem;
-      line-height: 1; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-page-header\@large {
-      font-style: italic; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-page-header\@small {
-      font-style: italic; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-page-header\@large {
-      font-weight: normal; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-page-header\@small {
-      font-weight: normal; } }
+/*
+---
+name: Title Block
+category: 5. Component > Typography
+---
 
-.c-page-subheader {
-  font-family: "Arial", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300; }
-  @media screen and (min-width: 47.5rem) {
-    .c-page-subheader\@large {
-      font-family: "Arial", sans-serif; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-page-subheader\@small {
-      font-family: "Arial", sans-serif; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-page-subheader\@large {
-      font-size: 1.5rem; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-page-subheader\@small {
-      font-size: 1.5rem; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-page-subheader\@large {
-      font-weight: 300; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-page-subheader\@small {
-      font-weight: 300; } }
+Spacing for title blocks between headers and subheaders
 
-.c-section-header {
-  font-family: "Georgia", serif;
-  font-size: 1.125rem;
-  font-style: italic;
-  font-weight: normal;
-  text-transform: uppercase; }
-  @media screen and (min-width: 47.5rem) {
-    .c-section-header\@large {
-      font-family: "Georgia", serif; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-section-header\@small {
-      font-family: "Georgia", serif; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-section-header\@large {
-      font-size: 1.125rem; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-section-header\@small {
-      font-size: 1.125rem; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-section-header\@large {
-      font-style: italic; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-section-header\@small {
-      font-style: italic; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-section-header\@large {
-      font-weight: normal; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-section-header\@small {
-      font-weight: normal; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-section-header\@large {
-      text-transform: uppercase; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-section-header\@small {
-      text-transform: uppercase; } }
+```default.html
+<hgroup class="c-title-block">
+	<h1 class="c-title-block__header">
+		Header
+	</h1>
+	<h2 class="c-title-block__subheader">
+		Subheader
+	</h2>
+</hgroup>
 
-.c-section-subheader {
-  font-family: "Arial", sans-serif;
-  font-size: 1rem;
-  font-weight: normal;
-  text-transform: uppercase; }
-  @media screen and (min-width: 47.5rem) {
-    .c-section-subheader\@large {
-      font-family: "Arial", sans-serif; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-section-subheader\@small {
-      font-family: "Arial", sans-serif; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-section-subheader\@large {
-      font-size: 1rem; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-section-subheader\@small {
-      font-size: 1rem; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-section-subheader\@large {
-      font-weight: normal; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-section-subheader\@small {
-      font-weight: normal; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-section-subheader\@large {
-      text-transform: uppercase; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-section-subheader\@small {
-      text-transform: uppercase; } }
-
-.c-article-header {
-  font-family: "Arial", sans-serif;
-  font-size: 1rem;
-  font-weight: normal; }
-  @media screen and (min-width: 47.5rem) {
-    .c-article-header\@large {
-      font-family: "Arial", sans-serif; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-article-header\@small {
-      font-family: "Arial", sans-serif; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-article-header\@large {
-      font-size: 1rem; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-article-header\@small {
-      font-size: 1rem; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-article-header\@large {
-      font-weight: normal; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-article-header\@small {
-      font-weight: normal; } }
-
-.c-article-subheader {
-  font-family: "Arial", sans-serif;
-  font-size: 0.875rem;
-  font-weight: normal; }
-  @media screen and (min-width: 47.5rem) {
-    .c-article-subheader\@large {
-      font-family: "Arial", sans-serif; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-article-subheader\@small {
-      font-family: "Arial", sans-serif; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-article-subheader\@large {
-      font-size: 0.875rem; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-article-subheader\@small {
-      font-size: 0.875rem; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-article-subheader\@large {
-      font-weight: normal; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-article-subheader\@small {
-      font-weight: normal; } }
-
-.c-paragraph-header {
-  font-family: "Arial", sans-serif;
-  font-size: 1rem;
-  font-weight: 300; }
-  @media screen and (min-width: 47.5rem) {
-    .c-paragraph-header\@large {
-      font-family: "Arial", sans-serif; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-paragraph-header\@small {
-      font-family: "Arial", sans-serif; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-paragraph-header\@large {
-      font-size: 1rem; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-paragraph-header\@small {
-      font-size: 1rem; } }
-  @media screen and (min-width: 47.5rem) {
-    .c-paragraph-header\@large {
-      font-weight: 300; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-paragraph-header\@small {
-      font-weight: 300; } }
-
+```
+*/
 .c-title-block__header + .c-title-block__subheader {
   margin-top: 0.625rem; }
 
