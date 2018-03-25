@@ -24,8 +24,8 @@ var config = {
 	dev: gutil.env.dev,
 	src: {
 		colors: {
-			src: './src/data/colors.json',
-			dist: './src/scss/global/_00-settings_colors.scss'
+			src: './src/scss/01-brand/colors.json',
+			dist: './src/scss/01-brand/brand-core/_00-settings_colors.scss'
 		},
 		styles: {
 			core: './src/**/ui-arch.scss'

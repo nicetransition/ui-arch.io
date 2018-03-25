@@ -87,8 +87,6 @@
 
 
 
-@import "00-settings_typography";
-
 $browser-context: str-replace(to-string($rootFontSize), 'px', '');
 // $browser-context: 16;
 

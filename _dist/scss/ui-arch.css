@@ -140,6 +140,79 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 */
 /*
 ---
+name: String to Number
+category: 1. Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+/*
+---
+name: Pixel to REM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+/*
+---
+name: Pixel to EM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
+}
+
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
 name: Font Sizes
 category: 5. Component > Typography
 ---
@@ -231,6 +304,79 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 */
 /*
 ---
+name: String to Number
+category: 1. Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+/*
+---
+name: Pixel to REM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+/*
+---
+name: Pixel to EM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
+}
+
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
 name: To String 
 category: 1. Tools > Functions
 ---
@@ -282,15 +428,6 @@ Usage:
 	content: str-replace($string, 'e', 'xoxo');
 }
 ```
-
-*/
-/*
----
-name: Font Sizes
-category: 5. Component > Typography
----
-
-Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
 
 */
 /*
@@ -803,6 +940,79 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 */
 /*
 ---
+name: String to Number
+category: 1. Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+/*
+---
+name: Pixel to REM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+/*
+---
+name: Pixel to EM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
+}
+
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
 name: Font Sizes
 category: 5. Component > Typography
 ---
@@ -894,6 +1104,79 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 */
 /*
 ---
+name: String to Number
+category: 1. Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+/*
+---
+name: Pixel to REM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+/*
+---
+name: Pixel to EM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
+}
+
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
 name: To String 
 category: 1. Tools > Functions
 ---
@@ -945,15 +1228,6 @@ Usage:
 	content: str-replace($string, 'e', 'xoxo');
 }
 ```
-
-*/
-/*
----
-name: Font Sizes
-category: 5. Component > Typography
----
-
-Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
 
 */
 /*
@@ -1487,6 +1761,79 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 */
 /*
 ---
+name: String to Number
+category: 1. Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+/*
+---
+name: Pixel to REM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+/*
+---
+name: Pixel to EM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
+}
+
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
 name: Font Sizes
 category: 5. Component > Typography
 ---
@@ -1578,6 +1925,79 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 */
 /*
 ---
+name: String to Number
+category: 1. Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+/*
+---
+name: Pixel to REM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+/*
+---
+name: Pixel to EM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
+}
+
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
 name: To String 
 category: 1. Tools > Functions
 ---
@@ -1629,15 +2049,6 @@ Usage:
 	content: str-replace($string, 'e', 'xoxo');
 }
 ```
-
-*/
-/*
----
-name: Font Sizes
-category: 5. Component > Typography
----
-
-Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
 
 */
 /*
@@ -2168,6 +2579,79 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 */
 /*
 ---
+name: String to Number
+category: 1. Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+/*
+---
+name: Pixel to REM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+/*
+---
+name: Pixel to EM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
+}
+
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
 name: Font Sizes
 category: 5. Component > Typography
 ---
@@ -2259,6 +2743,79 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 */
 /*
 ---
+name: String to Number
+category: 1. Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+/*
+---
+name: Pixel to REM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+/*
+---
+name: Pixel to EM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
+}
+
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
 name: To String 
 category: 1. Tools > Functions
 ---
@@ -2310,15 +2867,6 @@ Usage:
 	content: str-replace($string, 'e', 'xoxo');
 }
 ```
-
-*/
-/*
----
-name: Font Sizes
-category: 5. Component > Typography
----
-
-Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
 
 */
 /*
@@ -7808,6 +8356,79 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 */
 /*
 ---
+name: String to Number
+category: 1. Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+/*
+---
+name: Pixel to REM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+/*
+---
+name: Pixel to EM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
+}
+
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
 name: Font Sizes
 category: 5. Component > Typography
 ---
@@ -7899,6 +8520,79 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 */
 /*
 ---
+name: String to Number
+category: 1. Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+/*
+---
+name: Pixel to REM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+/*
+---
+name: Pixel to EM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
+}
+
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
 name: To String 
 category: 1. Tools > Functions
 ---
@@ -7950,15 +8644,6 @@ Usage:
 	content: str-replace($string, 'e', 'xoxo');
 }
 ```
-
-*/
-/*
----
-name: Font Sizes
-category: 5. Component > Typography
----
-
-Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
 
 */
 /*
@@ -10095,6 +10780,79 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 */
 /*
 ---
+name: String to Number
+category: 1. Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+/*
+---
+name: Pixel to REM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+/*
+---
+name: Pixel to EM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
+}
+
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
 name: Font Sizes
 category: 5. Component > Typography
 ---
@@ -10186,6 +10944,79 @@ Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) 
 */
 /*
 ---
+name: String to Number
+category: 1. Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+/*
+---
+name: Pixel to REM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+/*
+---
+name: Pixel to EM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
+}
+
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
+
+*/
+/*
+---
 name: To String 
 category: 1. Tools > Functions
 ---
@@ -10237,15 +11068,6 @@ Usage:
 	content: str-replace($string, 'e', 'xoxo');
 }
 ```
-
-*/
-/*
----
-name: Font Sizes
-category: 5. Component > Typography
----
-
-Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
 
 */
 /*
@@ -20410,7 +21232,85 @@ html._no-mix-blend-mode .c-image-feature:after, html._no-mix-blend-mode .c-image
 .u-index-12 {
   z-index: 12; }
 
-.btn {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle; }
+/*
+---
+name: Font Sizes
+category: 5. Component > Typography
+---
+
+Read [Object-Oriented Typography](https://codepen.io/nicetransition/pen/qbNbOE) for additional details
+
+*/
+/*
+---
+name: String to Number
+category: 1. Tools > Functions
+---
+
+Casts a string into a number.
+
+Source/Credit: [http://sassmeister.com/gist/9fa19d254864f33d4a80](http://sassmeister.com/gist/9fa19d254864f33d4a80)
+
+* @param {String | Number} $value - Value to be parsed
+* @return {Number}
+
+
+Usage:
+
+```
+@function foo(param: $some-string-that-may-not-be-a-number) {
+	@return to-number(unquote("param"));
+}
+```
+
+*/
+/*
+---
+name: Pixel to REM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `rem` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: rem(18);
+}
+```
+
+*/
+/*
+---
+name: Pixel to EM
+category: 1. Tools > Functions
+---
+
+Converts `px` unit to `em` unit
+
+
+* @param {String | Number} $pixels - Value to be parsed (do not include `px`)
+* @param {String | Number} $context - Base root font size (do not include `px`)
+* @return {Number}
+
+
+Usage:
+
+```
+.selector-name {
+	font-size: em(18);
+}
+
+.demo-2 {
+	font-size: em(64) * 2;
+}
+```
+
+*/
