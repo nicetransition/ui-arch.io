@@ -65,6 +65,43 @@ Types of labels:
 name: Input
 category: 5. Component > Form
 ---
+
+Types of inputs:
+- Base
+- Theme 1: `.t-form-1`
+- Theme 2: `.t-form-2`
+- Disabled states
+
+
+```base.html
+<input class=" ** c-input **   " id="" name="" type="text" />
+```
+
+```t-form-1.html
+<input class=" ** c-input || t-form-1 **   " id="" name="" type="text" />
+
+```
+
+```t-form-2.html
+<input class=" ** c-input || t-form-2 **   " id="" name="" type="text" />
+
+```
+
+
+```base-disabled.html
+<input class=" ** c-input **   " id="" name="" type="text" disabled/>
+```
+
+```t-form-1-disabled.html
+<input class=" ** c-input || t-form-1 **   " id="" name="" type="text" disabled />
+
+```
+
+```t-form-2-disabled.html
+<input class=" ** c-input || t-form-2 **   " id="" name="" type="text" disabled />
+
+```
+
 */
 
 
@@ -73,6 +110,51 @@ category: 5. Component > Form
 name: Textarea
 category: 5. Component > Form
 ---
+
+Types of textarea:
+- Base
+- Default: Defined height
+- Theme 1: `.t-form-1`
+- Theme 2: `.t-form-2`
+- Disabled states
+
+
+```base.html
+<textarea class=" ** c-textarea ** " id="" name=""></textarea>
+```
+
+```default.html
+<textarea class=" ** c-textarea c-textarea--default ** " id="" name=""></textarea>
+```
+
+```t-form-1.html
+<textarea class=" ** c-textarea || t-form-1 ** " id="" name=""></textarea>
+
+```
+
+```t-form-2.html
+<textarea class=" ** c-textarea || t-form-2 ** " id="" name=""></textarea>
+
+```
+
+```base-disabled.html
+<textarea class=" ** c-textarea ** " id="" name="" disabled></textarea>
+```
+
+```default-disabled.html
+<textarea class=" ** c-textarea c-textarea--default ** " id="" name="" disabled></textarea>
+```
+
+```t-form-1-disabled.html
+<textarea class=" ** c-textarea || t-form-1 ** " id="" name="" disabled></textarea>
+
+```
+
+```t-form-2-disabled.html
+<textarea class=" ** c-textarea || t-form-2 ** " id="" name="" disabled></textarea>
+
+```
+
 */
 
 
@@ -81,6 +163,99 @@ category: 5. Component > Form
 name: Select
 category: 5. Component > Form
 ---
+
+Types of selects:
+- Base
+- Default: Defined height
+- Theme 1: `.t-form-1`
+- Theme 2: `.t-form-2`
+- Disabled states
+
+
+```core.html
+<select id="" name=""><option>Select<option><option>Option<option></select>
+```
+
+```base.html
+<span class="**  c-select ** u-dis-ib">
+	<select class="u-full || c-select__input"  id="" name="" >
+		<option value="1">Option 1</option>
+		<option value="2">Option 2</option>
+	</select>
+	<span class="c-select--highlight"></span>
+	<label class="c-select__text || u-glyph-after u-char-after__item u-char-after__item--default" for="" data-icon="•">
+		<span class="u-dis-none">Select</span>
+	</label>
+</span>
+```
+
+```disabled.html
+<span class="**  c-select ** u-dis-ib">
+	<select class="u-full || c-select__input"  id="" name="" disabled>
+		<option value="1">Option 1</option>
+		<option value="2">Option 2</option>
+	</select>
+	<span class="c-select--highlight"></span>
+	<label class="c-select__text || u-glyph-after u-char-after__item u-char-after__item--default" for="" data-icon="•">
+		<span class="u-dis-none">Select</span>
+	</label>
+</span>
+```
+
+
+```t-form-1.html
+<span class="**  c-select || t-form-1 ** u-dis-ib">
+	<select class="u-full || c-select__input"  id="" name="" >
+		<option value="1">Option 1</option>
+		<option value="2">Option 2</option>
+	</select>
+	<span class="c-select--highlight"></span>
+	<label class="c-select__text || u-glyph-after u-char-after__item u-char-after__item--default" for="" data-icon="•">
+		<span class="u-dis-none">Select</span>
+	</label>
+</span>
+
+```
+
+```t-form-2.html
+<span class="**  c-select || t-form-2 ** u-dis-ib">
+	<select class="u-full || c-select__input"  id="" name="" >
+		<option value="1">Option 1</option>
+		<option value="2">Option 2</option>
+	</select>
+	<span class="c-select--highlight"></span>
+	<label class="c-select__text || u-glyph-after u-char-after__item u-char-after__item--default" for="" data-icon="•">
+		<span class="u-dis-none">Select</span>
+	</label
+
+```
+
+```t-form-1-disabled.html
+<span class="**  c-select || t-form-1 ** u-dis-ib">
+	<select class="u-full || c-select__input"  id="" name="" disabled>
+		<option value="1">Option 1</option>
+		<option value="2">Option 2</option>
+	</select>
+	<span class="c-select--highlight"></span>
+	<label class="c-select__text || u-glyph-after u-char-after__item u-char-after__item--default" for="" data-icon="•">
+		<span class="u-dis-none">Select</span>
+	</label>
+</span>
+
+```
+
+```t-form-2-disabled.html
+<span class="**  c-select || t-form-2 ** u-dis-ib">
+	<select class="u-full || c-select__input"  id="" name="" disabled>
+		<option value="1">Option 1</option>
+		<option value="2">Option 2</option>
+	</select>
+	<span class="c-select--highlight"></span>
+	<label class="c-select__text || u-glyph-after u-char-after__item u-char-after__item--default" for="" data-icon="•">
+		<span class="u-dis-none">Select</span>
+	</label
+
+```
 */
 
 
@@ -181,31 +356,6 @@ Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is 
 
 */
 
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
-
 
 .c-field-toggle {
 	&__text, &__label {
@@ -236,33 +386,127 @@ Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is 
 name: Radio
 category: 5. Component > Form
 ---
+
+
+Types of radio:
+- Base
+- Default: Defined height
+- Theme 1: `.t-form-1`
+- Theme 2: `.t-form-2`
+- Disabled states
+
+
+```core.html
+<input  id="radio-core-demo" name="radio-core-demo" type="radio"  />
+<label for="radio-core-demo">
+	Label
+</label>
+```
+
+```base.html
+<span class=" ** c-field-toggle c-radio **  u-dis-ib">
+	<input class="c-field-toggle__input c-radio__input"  id="radio-core-base" name="radio-core-base" type="radio"  />
+	<label for="radio-core-base" class="u-dis-ib c-field-toggle__text c-radio__text">
+		Radio
+	</label>
+</span>
+```
+
+```disabled.html
+<span class=" ** c-field-toggle c-radio **  u-dis-ib">
+	<input class="c-field-toggle__input c-radio__input"  id="radio-core-disabled" name="radio-core-disabled" type="radio" disabled />
+	<label for="radio-core-disabled" class="u-dis-ib c-field-toggle__text c-radio__text">
+		Radio
+	</label>
+</span>
+```
+
+
+```t-form-1.html
+<span class=" ** c-field-toggle c-radio || t-form-1 **  u-dis-ib">
+	<input class="c-field-toggle__input c-radio__input"  id="radio-core-theme-1" name="radio-core-theme-1" type="radio" />
+	<label for="radio-core-theme-1" class="u-dis-ib c-field-toggle__text c-radio__text">
+		Radio
+	</label>
+</span>
+
+```
+
+```t-form-2.html
+<span class=" ** c-field-toggle c-radio || t-form-2 **  u-dis-ib">
+	<input class="c-field-toggle__input c-radio__input"  id="radio-core-theme-2" name="radio-core-theme-2" type="radio" />
+	<label for="radio-core-theme-2" class="u-dis-ib c-field-toggle__text c-radio__text">
+		Radio
+	</label>
+</span>
+
+```
+
+
+```t-form-1-checked.html
+<span class=" ** c-field-toggle c-radio || t-form-1 **  u-dis-ib">
+	<input class="c-field-toggle__input c-radio__input"  id="radio-core-theme-1-checked" name="radio-core-theme-1-checked" type="radio" checked />
+	<label for="radio-core-theme-1-checked" class="u-dis-ib c-field-toggle__text c-radio__text">
+		Radio
+	</label>
+</span>
+
+```
+
+```t-form-2-checked.html
+<span class=" ** c-field-toggle c-radio || t-form-2 **  u-dis-ib">
+	<input class="c-field-toggle__input c-radio__input"  id="radio-core-theme-2-checked" name="radio-core-theme-2-checked" type="radio" checked />
+	<label for="radio-core-theme-2-checked" class="u-dis-ib c-field-toggle__text c-radio__text">
+		Radio
+	</label>
+</span>
+
+```
+
+```t-form-1-disabled.html
+<span class=" ** c-field-toggle c-radio || t-form-1 **  u-dis-ib">
+	<input class="c-field-toggle__input c-radio__input"  id="radio-core-theme-1" name="radio-core-theme-1" type="radio" disabled />
+	<label for="radio-core-theme-1" class="u-dis-ib c-field-toggle__text c-radio__text">
+		Radio
+	</label>
+</span>
+
+```
+
+```t-form-2-disabled.html
+<span class=" ** c-field-toggle c-radio || t-form-2 **  u-dis-ib">
+	<input class="c-field-toggle__input c-radio__input"  id="radio-core-theme-2" name="radio-core-theme-2" type="radio" disabled />
+	<label for="radio-core-theme-2" class="u-dis-ib c-field-toggle__text c-radio__text">
+		Radio
+	</label>
+</span>
+
+```
+
+
+```t-form-1-checked-disabled.html
+<span class=" ** c-field-toggle c-radio || t-form-1 **  u-dis-ib">
+	<input class="c-field-toggle__input c-radio__input"  id="radio-core-theme-1-checked" name="radio-core-theme-1-checked" type="radio" checked disabled />
+	<label for="radio-core-theme-1-checked" class="u-dis-ib c-field-toggle__text c-radio__text">
+		Radio
+	</label>
+</span>
+
+```
+
+```t-form-2-checked-disabled.html
+<span class=" ** c-field-toggle c-radio || t-form-2 **  u-dis-ib">
+	<input class="c-field-toggle__input c-radio__input"  id="radio-core-theme-2-checked" name="radio-core-theme-2-checked" type="radio" checked disabled />
+	<label for="radio-core-theme-2-checked" class="u-dis-ib c-field-toggle__text c-radio__text">
+		Radio
+	</label>
+</span>
+
+```
+
 */
 
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
+
 
 .c-radio {
 	&__input {
@@ -280,38 +524,132 @@ category: 5. Component > Form
 	}
 }
 
+
 /*
 ---
 name: Checkbox
 category: 5. Component > Form
 ---
+
+
+Types of checkbox:
+- Base
+- Default: Defined height
+- Theme 1: `.t-form-1`
+- Theme 2: `.t-form-2`
+- Disabled states
+
+
+```core.html
+<input  id="checkbox-core-demo" name="checkbox-core-demo" type="checkbox"  />
+<label for="checkbox-core-demo">
+	Label
+</label>
+```
+
+```base.html
+<span class=" ** c-field-toggle c-checkbox **  u-dis-ib">
+	<input class="c-field-toggle__input c-checkbox__input"  id="checkbox-core-base" name="checkbox-core-base" type="checkbox"  />
+	<label for="checkbox-core-base" class="u-dis-ib c-field-toggle__text c-checkbox__text">
+		Checkbox
+	</label>
+</span>
+```
+
+```disabled.html
+<span class=" ** c-field-toggle c-checkbox **  u-dis-ib">
+	<input class="c-field-toggle__input c-checkbox__input"  id="checkbox-core-disabled" name="checkbox-core-disabled" type="checkbox" disabled />
+	<label for="checkbox-core-disabled" class="u-dis-ib c-field-toggle__text c-checkbox__text">
+		Checkbox
+	</label>
+</span>
+```
+
+
+```t-form-1.html
+<span class=" ** c-field-toggle c-checkbox || t-form-1 **  u-dis-ib">
+	<input class="c-field-toggle__input c-checkbox__input"  id="checkbox-core-theme-1" name="checkbox-core-theme-1" type="checkbox" />
+	<label for="checkbox-core-theme-1" class="u-dis-ib c-field-toggle__text c-checkbox__text">
+		Checkbox
+	</label>
+</span>
+
+```
+
+```t-form-2.html
+<span class=" ** c-field-toggle c-checkbox || t-form-2 **  u-dis-ib">
+	<input class="c-field-toggle__input c-checkbox__input"  id="checkbox-core-theme-2" name="checkbox-core-theme-2" type="checkbox" />
+	<label for="checkbox-core-theme-2" class="u-dis-ib c-field-toggle__text c-checkbox__text">
+		Checkbox
+	</label>
+</span>
+
+```
+
+
+```t-form-1-checked.html
+<span class=" ** c-field-toggle c-checkbox || t-form-1 **  u-dis-ib">
+	<input class="c-field-toggle__input c-checkbox__input"  id="checkbox-core-theme-1-checked" name="checkbox-core-theme-1-checked" type="checkbox" checked />
+	<label for="checkbox-core-theme-1-checked" class="u-dis-ib c-field-toggle__text c-checkbox__text">
+		Checkbox
+	</label>
+</span>
+
+```
+
+```t-form-2-checked.html
+<span class=" ** c-field-toggle c-checkbox || t-form-2 **  u-dis-ib">
+	<input class="c-field-toggle__input c-checkbox__input"  id="checkbox-core-theme-2-checked" name="checkbox-core-theme-2-checked" type="checkbox" checked />
+	<label for="checkbox-core-theme-2-checked" class="u-dis-ib c-field-toggle__text c-checkbox__text">
+		Checkbox
+	</label>
+</span>
+
+```
+
+```t-form-1-disabled.html
+<span class=" ** c-field-toggle c-checkbox || t-form-1 **  u-dis-ib">
+	<input class="c-field-toggle__input c-checkbox__input"  id="checkbox-core-theme-1" name="checkbox-core-theme-1" type="checkbox" disabled />
+	<label for="checkbox-core-theme-1" class="u-dis-ib c-field-toggle__text c-checkbox__text">
+		Checkbox
+	</label>
+</span>
+
+```
+
+```t-form-2-disabled.html
+<span class=" ** c-field-toggle c-checkbox || t-form-2 **  u-dis-ib">
+	<input class="c-field-toggle__input c-checkbox__input"  id="checkbox-core-theme-2" name="checkbox-core-theme-2" type="checkbox" disabled />
+	<label for="checkbox-core-theme-2" class="u-dis-ib c-field-toggle__text c-checkbox__text">
+		Checkbox
+	</label>
+</span>
+
+```
+
+
+```t-form-1-checked-disabled.html
+<span class=" ** c-field-toggle c-checkbox || t-form-1 **  u-dis-ib">
+	<input class="c-field-toggle__input c-checkbox__input"  id="checkbox-core-theme-1-checked" name="checkbox-core-theme-1-checked" type="checkbox" checked disabled />
+	<label for="checkbox-core-theme-1-checked" class="u-dis-ib c-field-toggle__text c-checkbox__text">
+		Checkbox
+	</label>
+</span>
+
+```
+
+```t-form-2-checked-disabled.html
+<span class=" ** c-field-toggle c-checkbox || t-form-2 **  u-dis-ib">
+	<input class="c-field-toggle__input c-checkbox__input"  id="checkbox-core-theme-2-checked" name="checkbox-core-theme-2-checked" type="checkbox" checked disabled />
+	<label for="checkbox-core-theme-2-checked" class="u-dis-ib c-field-toggle__text c-checkbox__text">
+		Checkbox
+	</label>
+</span>
+
+```
+
 */
 
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
 
 .c-checkbox {
 	&__input {

@@ -124,62 +124,6 @@ category: 5. Component > Form
 
 
 
-/*
----
-name: Radio > Toggle Field
-category: 5. Component > Form
----
-
-
-Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is the base styling to use with either form field types.
-
-
-```base.html
-<span class=" ** t-form-1 || u-dis-ib || c-field-toggle c-radio **  " data-component="global.radio">
-	<input class="c-field-toggle__input c-radio__input"  id="default" name="default" type="radio"  />
-	<label for="default" class="u-dis-ib c-field-toggle__text c-radio__text">
-		
-	</label>
-</span>
-```
-
-```base-checked.html
-<span class=" ** t-form-1 || u-dis-ib || c-field-toggle c-radio **  " data-component="global.radio">
-	<input checked class="c-field-toggle__input c-radio__input"  id="default" name="default" type="radio"  />
-	<label for="default" class="u-dis-ib c-field-toggle__text c-radio__text">
-		
-	</label>
-</span>
-```
-
-*/
-
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
-
-
 .c-field-toggle {
 	position: relative;
 
@@ -222,38 +166,6 @@ Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is 
 	}
 }
 
-/*
----
-name: Radio
-category: 5. Component > Form
----
-*/
-
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
 
 .c-radio {
 	&__input {
@@ -274,38 +186,6 @@ category: 5. Component > Form
 	}
 }
 
-/*
----
-name: Checkbox
-category: 5. Component > Form
----
-*/
-
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
 
 .c-checkbox {
 	&__input {
@@ -369,43 +249,36 @@ Reset for `<fieldset>` to reduce `margin`s on side and it's `padding`.
 
 /*
 ---
-name: Form Base
+name: Form Item
 category: 5. Component > Form
 ---
+
+Can be used with any structural element
+
+```demo-1.html
+<div class="c-form-item">
+	<div class="c-form-item__label">
+		<label for="demo-field-set">Label</label>
+	</div>
+	<div class="c-form-item__field">
+		<input name="demo-field-set" id="name="demo-field-set"" />
+	</div>
+</div>
+
+```
+
+```demo-2.html
+<div class="c-form-item">
+	<label for="demo-field-set">Label</label>
+	<input class="c-form-item__field" name="demo-field-set" id="name="demo-field-set"" />
+</div>
+
+```
 */
 
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
 .c-form-item {
 	&__label {
 		position: relative;
-	}
-
-	&__label {
-		// padding-bottom: $default-space / 4;
 		margin-bottom: $default-space / -2;
 		z-index: 1;
 	}
