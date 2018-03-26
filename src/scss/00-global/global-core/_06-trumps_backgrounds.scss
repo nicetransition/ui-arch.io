@@ -1,0 +1,22 @@
+.u-bg {
+	&--cover, &--full, &--top, &--center {
+		background-repeat: no-repeat;
+	}
+
+	&--cover {
+		background-size: cover;
+		background-position: center center;
+	}
+
+	&--full {
+		background-size: 100% auto;
+	}
+
+	&--top {
+		background-position: top center;
+	}
+
+	&--center {
+		background-position: center center;
+	}
+}

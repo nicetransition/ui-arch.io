@@ -1,0 +1,45 @@
+.u-dis-i {
+	display: inline;
+}
+
+.u-dis-ib {
+	@include suffixcate {
+		display: inline-block;
+	}
+}
+
+.u-dis-b {
+	@include suffixcate($bp: $suffixcate_bp-all) {
+		display: block;
+	}
+}
+
+.u-dis-t {
+	@include suffixcate {
+		display: table;
+	}
+}
+
+.u-dis-tc {
+	@include suffixcate {
+		display: table-cell;
+	}
+}
+
+
+%display-hidden {
+	@include suffixcate {
+		display: none;
+	}
+}
+
+.u-dis-none {
+	@extend %u-speak-none;
+	@extend %display-hidden;
+
+	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: false) {
+		speak: none;
+		display: none;
+	}
+}
+

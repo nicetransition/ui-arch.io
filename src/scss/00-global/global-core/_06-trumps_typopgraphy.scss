@@ -1,0 +1,41 @@
+.u-text-shad {
+	text-shadow: 0 0 rem(50) rgba($color-secondary-dark,.6), 0 0 rem(5) rgba($color-secondary-dark,.2);
+}
+
+
+.u-a-l {
+	@include suffixcate {
+		text-align: left;
+	}
+}
+
+.u-a-c {
+	@include suffixcate($bp: $suffixcate_bp-all)  {
+		text-align: center;
+	}
+}
+
+.u-a-r {
+	@include suffixcate {
+		text-align: right;
+	}
+}
+.u-a-j {
+	@include suffixcate {
+		text-align: justify;
+	}
+}
+
+.u-emphasize {
+	@include suffixcate {
+		text-transform: uppercase;
+	}
+}
+
+.u-strong, strong, b {
+	
+}
+
+.u-italic {
+	font-style: italic;
+}

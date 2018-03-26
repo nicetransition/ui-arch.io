@@ -1,3 +1,44 @@
+
+@mixin width-size-generator($value: 1, $bp: $bp-large, $type: percent, $width: false) {
+    &-#{$value} {
+        @if ($type==fixed) {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                width: $width / $value;
+            }
+
+            &-alt, &-max {
+                @include suffixcate($bp: $suffixcate_bp-all) {
+                    max-width: $width / $value;
+                }
+            }
+
+            &-alt-2, &-min {
+                @include suffixcate($bp: $suffixcate_bp-all) {
+                    min-width: $width / $value;
+                }
+            }
+        } @else {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                width: percentage(1 / $value);
+            }
+
+            &-alt, &-max {
+                @include suffixcate($bp: $suffixcate_bp-all) {
+                    max-width: percentage(1 / $value);
+                }
+            }
+
+            &-alt-2, &-min {
+                @include suffixcate($bp: $suffixcate_bp-all) {
+                    min-width: percentage(1 / $value);
+                }
+            }
+        }
+    }
+}
+
+
+
 /*
 ---
 name: Make Widths
@@ -34,6 +75,211 @@ Usage:
 
 // Initialize mixin
 @include makeWidths($max-num: 12);
+
+
+
+.u-size {
+    @for $i from 1 through 12 {
+        @include width-size-generator($i, $type: percent);
+
+        &-fixed {
+            @include width-size-generator($i, $type: fixed, $width: $max-width);
+        }
+
+        &-fixed-sm {
+            @include width-size-generator($i, $type: fixed, $width: $bp-large);
+        }
+    }
+
+    &-sm {
+        max-width: 1em;
+        max-height: 1em;
+    }
+
+    &-cta {
+        min-width: rem(40);
+        min-height: rem(40);
+    }
+}
+
+.u-width {
+    &-0 {
+        @include suffixcate($bp: $suffixcate_bp-all) {
+            width: rem(40);
+        }
+
+        &-max {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                max-width: rem(40);
+            }
+        }
+
+        &-min {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                min-width: rem(40);
+            }
+        }
+    }
+
+    &-1 {
+        @include suffixcate($bp: $suffixcate_bp-all) {
+            width: rem(50);
+        }
+
+        &-max {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                max-width: rem(50);
+            }
+        }
+
+        &-min {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                min-width: rem(50);
+            }
+        }
+    }
+
+    &-2 {
+        @include suffixcate($bp: $suffixcate_bp-all) {
+            width: rem(75);
+        }
+
+        &-max {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                max-width: rem(75);
+            }
+        }
+
+        &-min {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                min-width: rem(75);
+            }
+        }
+    }
+
+    &-3 {
+        @include suffixcate($bp: $suffixcate_bp-all) {
+            width: rem(100);
+        }
+
+        &-max {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                max-width: rem(100);
+            }
+        }
+
+        &-min {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                min-width: rem(100);
+            }
+        }
+    }
+
+    &-4 {
+        @include suffixcate($bp: $suffixcate_bp-all) {
+            width: rem(200);
+        }
+
+        &-max {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                max-width: rem(200);
+            }
+        }
+
+        &-min {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                min-width: rem(200);
+            }
+        }
+    }
+
+    &-5 {
+        @include suffixcate($bp: $suffixcate_bp-all) {
+            width: rem(300);
+        }
+
+        &-max {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                max-width: rem(300);
+            }
+        }
+
+        &-min {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                min-width: rem(300);
+            }
+        }
+    }
+
+    &-6 {
+        @include suffixcate($bp: $suffixcate_bp-all) {
+            width: rem(420);
+        }
+
+        &-max {
+
+
+
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                max-width: rem(420);
+            }
+        }
+
+        &-min {
+            @include suffixcate($bp: $suffixcate_bp-all) {
+                min-width: rem(420);
+            }
+        }
+    }
+
+    &-1-alt {
+        @include suffixcateExtend(('.u-width-1-max'));
+    }
+
+    &-2-alt {
+        @include suffixcateExtend(('.u-width-2-max'));
+    }
+
+    &-3-alt {
+        @include suffixcateExtend(('.u-width-3-max'));
+    }
+
+    &-4-alt {
+        @include suffixcateExtend(('.u-width-4-max'));
+    }
+
+    &-5-alt {
+        @include suffixcateExtend(('.u-width-5-max'));
+    }
+
+    &-6-alt {
+        @include suffixcateExtend(('.u-width-6-max'));
+    }
+
+    &-1-alt-2 {
+        @include suffixcateExtend(('.u-width-1-min'));
+    }
+
+    &-2-alt-2 {
+        @include suffixcateExtend(('.u-width-2-min'));
+    }
+
+    &-3-alt-2 {
+        @include suffixcateExtend(('.u-width-3-min'));
+    }
+
+    &-4-alt-2 {
+        @include suffixcateExtend(('.u-width-4-min'));
+    }
+
+    &-5-alt-2 {
+        @include suffixcateExtend(('.u-width-5-min'));
+    }
+
+    &-6-alt-2 {
+        @include suffixcateExtend(('.u-width-6-min'));
+    }
+}
 
 
 /*
