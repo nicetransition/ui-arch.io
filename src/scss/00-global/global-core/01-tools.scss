@@ -22,26 +22,6 @@
 	}
 }
 
-/*
----
-name: Disable Select
-category: 1. Tools > Mixin
----
-
-Removal of selecting an element on the page. 
- 
-* `.u-disable-select` - Utility helper
-* `a`, `button`, `label`, `legend` - Default have disable select added if `$includeResets` is `true` (`~/global/00-settings.scss`)
-
-Usage:
-
-```
-.select-name {
-	@include disable-select;
-}
-```
-
-*/
 
 @mixin disable-select {
     -webkit-touch-callout: none;
