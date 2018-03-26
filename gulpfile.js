@@ -12,7 +12,8 @@ var gulp = require('gulp'),
 	sourcemaps = require('gulp-sourcemaps'),
 	prefix = require('gulp-autoprefixer'),
 	browserSync = require('browser-sync').create(),
-	exec = require('child_process').exec;
+	exec = require('child_process').exec,
+	stylemark = require('stylemark');
 // var exec = require('child_process').exec;
 // var replace = require('gulp-replace');
 // var cssimport = require("gulp-cssimport");
@@ -99,12 +100,22 @@ gulp.task('colors', function() {
 });
 
 
-gulp.task('stylemark', function () {
+gulp.task('Xstylemarkz', function () {
 	exec('stylemark -i src/scss -o _dist -c .stylemark.yml', function () {
 		console.log("Success of stylemark");
 		browserSync.reload();
 	});
 })
+
+
+gulp.task('stylemark', function () {
+	stylemark({
+	    input: 'src/scss',
+	    output: '_dist',
+	    configPath: '.stylemark.yml',
+	});
+})
+
 
 
 // make CSS from Sass  

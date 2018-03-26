@@ -54,10 +54,18 @@
 		</script>
 	</head>
 
-	<body>					<label class="** c-label **">Label</label>
+	<body>				
+<fieldset class="c-fieldset">
+••• form elements here •••
+</fieldset>
 
 
-			<script type="text/x-stylemark" data-language="html">	<label class="** c-label **">Label</label></script>
+
+			<script type="text/x-stylemark" data-language="html">
+<fieldset class="c-fieldset">
+••• form elements here •••
+</fieldset>
+</script>
 
 		<!--
 			Vanilla JS
@@ -90,10 +98,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-label-base', []);
+						module = angular.module('stylemark-fieldset-default', []);
 					}
 
-					module.controller('stylemark-label-base-' + index, function($scope) {
+					module.controller('stylemark-fieldset-default-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
