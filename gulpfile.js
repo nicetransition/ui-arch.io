@@ -140,7 +140,7 @@ gulp.task('fonts', function() {
 
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['stylemark', 'sass'], function() {
+gulp.task('serve', ['fonts', 'stylemark', 'sass'], function() {
 
     browserSync.init({
         server: "./_dist"
@@ -148,6 +148,9 @@ gulp.task('serve', ['stylemark', 'sass'], function() {
 
 
 	gulp.watch("src/scss/*.scss", ['stylemark']);
+
+
+	gulp.watch("./src/assets/fonts/**/*", ['fonts']);
 
 	// gulp.task('styles:static:watch', ['styles:static']);
 	// gulp.watch('src/assets/toolkit/styles/**/*.css', ['styles:static:watch']);
@@ -162,6 +165,7 @@ gulp.task('serve', ['stylemark', 'sass'], function() {
 gulp.task('default', function () {
 	// define build tasks
 	var tasks = [
+		'fonts',
 		'colors'
 	];
 
