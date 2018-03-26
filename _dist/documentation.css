@@ -18984,21 +18984,6 @@ category: 5. Component > Call to Actions
 
 /*
 ---
-name: Button
-category: 5. Component > Call to Actions
----
-
-Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
-
-Types of buttons:
-- Default: Standard button
-
-```types.html
-<button class="c-button c-button--default c-button--base c-button--primary">Primary</button>
-```
-*/
-/*
----
 name: Button Large
 category: 5. Component > Call to Actions
 ---
@@ -22060,21 +22045,6 @@ category: 5. Component > Call to Actions
   outline: none;
   text-decoration: none; }
 
-/*
----
-name: Button
-category: 5. Component > Call to Actions
----
-
-Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
-
-Types of buttons:
-- Default: Standard button
-
-```types.html
-<button class="c-button c-button--default c-button--base c-button--primary">Primary</button>
-```
-*/
 /*
 ---
 name: Button Large

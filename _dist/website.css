@@ -361,6 +361,131 @@ Usage:
 .c-title-block__header + .c-title-block__subheader {
   margin-top: 0.625rem; }
 
+/*
+---
+name: Anchor
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Primary
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Secondary
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Dark
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Light
+category: 5. Component > Call to Actions
+---
+*/
+.c-anchor {
+  text-decoration: none; }
+  .c-anchor--primary {
+    color: #0CA0DA; }
+    .c-anchor--primary:focus, .c-anchor--primary:hover {
+      color: #193E6C; }
+    .c-anchor--primary:active {
+      color: #474646; }
+  .c-anchor--secondary {
+    color: #193E6C; }
+    .c-anchor--secondary:focus, .c-anchor--secondary:hover {
+      color: #9D8D74; }
+    .c-anchor--secondary:active {
+      color: #3D6460; }
+  .c-anchor--tertiary {
+    color: #FBAC50; }
+    .c-anchor--tertiary:focus, .c-anchor--tertiary:hover {
+      color: #9D8D74; }
+    .c-anchor--tertiary:active {
+      color: #3D6460; }
+  .c-anchor--dark {
+    color: #010101; }
+    .c-anchor--dark:hover, .c-anchor--dark:active {
+      color: #000; }
+    .c-anchor--dark:active {
+      color: #130A4F; }
+  .c-anchor--light {
+    color: #F5F5F5; }
+    .c-anchor--light:hover, .c-anchor--light:active {
+      color: #999; }
+    .c-anchor--light:active {
+      color: #F9F9F9; }
+  @media screen and (min-width: 47.5rem) {
+    .c-anchor\@large--primary {
+      color: #0CA0DA; }
+      .c-anchor\@large--primary:focus, .c-anchor\@large--primary:hover {
+        color: #193E6C; }
+      .c-anchor\@large--primary:active {
+        color: #474646; }
+    .c-anchor\@large--secondary {
+      color: #193E6C; }
+      .c-anchor\@large--secondary:focus, .c-anchor\@large--secondary:hover {
+        color: #9D8D74; }
+      .c-anchor\@large--secondary:active {
+        color: #3D6460; }
+    .c-anchor\@large--tertiary {
+      color: #FBAC50; }
+      .c-anchor\@large--tertiary:focus, .c-anchor\@large--tertiary:hover {
+        color: #9D8D74; }
+      .c-anchor\@large--tertiary:active {
+        color: #3D6460; }
+    .c-anchor\@large--dark {
+      color: #010101; }
+      .c-anchor\@large--dark:hover, .c-anchor\@large--dark:active {
+        color: #000; }
+      .c-anchor\@large--dark:active {
+        color: #130A4F; }
+    .c-anchor\@large--light {
+      color: #F5F5F5; }
+      .c-anchor\@large--light:hover, .c-anchor\@large--light:active {
+        color: #999; }
+      .c-anchor\@large--light:active {
+        color: #F9F9F9; } }
+  @media screen and (max-width: 47.5rem) {
+    .c-anchor\@small--primary {
+      color: #0CA0DA; }
+      .c-anchor\@small--primary:focus, .c-anchor\@small--primary:hover {
+        color: #193E6C; }
+      .c-anchor\@small--primary:active {
+        color: #474646; }
+    .c-anchor\@small--secondary {
+      color: #193E6C; }
+      .c-anchor\@small--secondary:focus, .c-anchor\@small--secondary:hover {
+        color: #9D8D74; }
+      .c-anchor\@small--secondary:active {
+        color: #3D6460; }
+    .c-anchor\@small--tertiary {
+      color: #FBAC50; }
+      .c-anchor\@small--tertiary:focus, .c-anchor\@small--tertiary:hover {
+        color: #9D8D74; }
+      .c-anchor\@small--tertiary:active {
+        color: #3D6460; }
+    .c-anchor\@small--dark {
+      color: #010101; }
+      .c-anchor\@small--dark:hover, .c-anchor\@small--dark:active {
+        color: #000; }
+      .c-anchor\@small--dark:active {
+        color: #130A4F; }
+    .c-anchor\@small--light {
+      color: #F5F5F5; }
+      .c-anchor\@small--light:hover, .c-anchor\@small--light:active {
+        color: #999; }
+      .c-anchor\@small--light:active {
+        color: #F9F9F9; } }
+
 .c-button[disabled], .c-button[disabled]:hover, .c-button[disabled]:focus, .c-button[disabled]:active, .c-button.-disabled {
   background-color: #CCC !important;
   border-color: #CCC;
@@ -373,21 +498,6 @@ Usage:
   outline: none;
   text-decoration: none; }
 
-/*
----
-name: Button
-category: 5. Component > Call to Actions
----
-
-Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
-
-Types of buttons:
-- Default: Standard button
-
-```types.html
-<button class="c-button c-button--default c-button--base c-button--primary">Primary</button>
-```
-*/
 /*
 ---
 name: Button Large
@@ -771,667 +881,6 @@ Types of light buttons
       .c-button\@small--dark:active {
         background-color: #130A4F;
         color: #FFF; } }
-
-/*
----
-name: Anchor
-category: 5. Component > Call to Actions
----
-*/
-/*
----
-name: Anchor > Primary
-category: 5. Component > Call to Actions
----
-*/
-/*
----
-name: Anchor > Secondary
-category: 5. Component > Call to Actions
----
-*/
-/*
----
-name: Anchor > Dark
-category: 5. Component > Call to Actions
----
-*/
-/*
----
-name: Anchor > Light
-category: 5. Component > Call to Actions
----
-*/
-.c-anchor {
-  text-decoration: none; }
-  .c-anchor--primary {
-    color: #0CA0DA; }
-    .c-anchor--primary:focus, .c-anchor--primary:hover {
-      color: #193E6C; }
-    .c-anchor--primary:active {
-      color: #474646; }
-  .c-anchor--secondary {
-    color: #193E6C; }
-    .c-anchor--secondary:focus, .c-anchor--secondary:hover {
-      color: #9D8D74; }
-    .c-anchor--secondary:active {
-      color: #3D6460; }
-  .c-anchor--tertiary {
-    color: #FBAC50; }
-    .c-anchor--tertiary:focus, .c-anchor--tertiary:hover {
-      color: #9D8D74; }
-    .c-anchor--tertiary:active {
-      color: #3D6460; }
-  .c-anchor--dark {
-    color: #010101; }
-    .c-anchor--dark:hover, .c-anchor--dark:active {
-      color: #000; }
-    .c-anchor--dark:active {
-      color: #130A4F; }
-  .c-anchor--light {
-    color: #F5F5F5; }
-    .c-anchor--light:hover, .c-anchor--light:active {
-      color: #999; }
-    .c-anchor--light:active {
-      color: #F9F9F9; }
-  @media screen and (min-width: 47.5rem) {
-    .c-anchor\@large--primary {
-      color: #0CA0DA; }
-      .c-anchor\@large--primary:focus, .c-anchor\@large--primary:hover {
-        color: #193E6C; }
-      .c-anchor\@large--primary:active {
-        color: #474646; }
-    .c-anchor\@large--secondary {
-      color: #193E6C; }
-      .c-anchor\@large--secondary:focus, .c-anchor\@large--secondary:hover {
-        color: #9D8D74; }
-      .c-anchor\@large--secondary:active {
-        color: #3D6460; }
-    .c-anchor\@large--tertiary {
-      color: #FBAC50; }
-      .c-anchor\@large--tertiary:focus, .c-anchor\@large--tertiary:hover {
-        color: #9D8D74; }
-      .c-anchor\@large--tertiary:active {
-        color: #3D6460; }
-    .c-anchor\@large--dark {
-      color: #010101; }
-      .c-anchor\@large--dark:hover, .c-anchor\@large--dark:active {
-        color: #000; }
-      .c-anchor\@large--dark:active {
-        color: #130A4F; }
-    .c-anchor\@large--light {
-      color: #F5F5F5; }
-      .c-anchor\@large--light:hover, .c-anchor\@large--light:active {
-        color: #999; }
-      .c-anchor\@large--light:active {
-        color: #F9F9F9; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-anchor\@small--primary {
-      color: #0CA0DA; }
-      .c-anchor\@small--primary:focus, .c-anchor\@small--primary:hover {
-        color: #193E6C; }
-      .c-anchor\@small--primary:active {
-        color: #474646; }
-    .c-anchor\@small--secondary {
-      color: #193E6C; }
-      .c-anchor\@small--secondary:focus, .c-anchor\@small--secondary:hover {
-        color: #9D8D74; }
-      .c-anchor\@small--secondary:active {
-        color: #3D6460; }
-    .c-anchor\@small--tertiary {
-      color: #FBAC50; }
-      .c-anchor\@small--tertiary:focus, .c-anchor\@small--tertiary:hover {
-        color: #9D8D74; }
-      .c-anchor\@small--tertiary:active {
-        color: #3D6460; }
-    .c-anchor\@small--dark {
-      color: #010101; }
-      .c-anchor\@small--dark:hover, .c-anchor\@small--dark:active {
-        color: #000; }
-      .c-anchor\@small--dark:active {
-        color: #130A4F; }
-    .c-anchor\@small--light {
-      color: #F5F5F5; }
-      .c-anchor\@small--light:hover, .c-anchor\@small--light:active {
-        color: #999; }
-      .c-anchor\@small--light:active {
-        color: #F9F9F9; } }
-
-.c-button[disabled], .c-button[disabled]:hover, .c-button[disabled]:focus, .c-button[disabled]:active, .c-button.-disabled {
-  background-color: #CCC !important;
-  border-color: #CCC;
-  color: rgba(1, 1, 1, 0.7) !important;
-  cursor: default; }
-
-.c-button {
-  font-family: "Arial", sans-serif;
-  cursor: pointer;
-  outline: none;
-  text-decoration: none; }
-
-/*
----
-name: Button
-category: 5. Component > Call to Actions
----
-
-Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
-
-Types of buttons:
-- Default: Standard button
-
-```types.html
-<button class="c-button c-button--default c-button--base c-button--primary">Primary</button>
-```
-*/
-/*
----
-name: Button Large
-category: 5. Component > Call to Actions
----
-
-Styles for buttons at large screens Buttons can be used with `<a>`, `<button>`, and `<input>` elements. See [Suffixcate](/#suffixcate) for details.
-
-Can be applied to:
-- Default
-- Base
-- Primary
-- Secondary
-- Teritary
-- Dark
-- Light
-
-```base-and-default.html
-<button class="c-button@large c-button@large--default c-button@large--base">Button</button>
-```
-
-```primary.html
-<button class="c-button@large c-button@large--default c-button@large--base c-button@large--primary">Button</button>
-```
-
-```secondary.html
-<button class="c-button@large c-button@large--default c-button@large--base c-button@large--secondary">Button</button>
-```
-
-```tertiary.html
-<button class="c-button@large c-button@large--default c-button@large--base c-button@large--tertiary">Button</button>
-```
-
-```dark.html
-<button class="c-button@large c-button@large--default c-button@large--base c-button@large--dark">Button</button>
-```
-
-```light.html
-<button class="c-button@large c-button@large--default c-button@large--base c-button@large--light">Button</button>
-```
-
-*/
-/*
----
-name: Button Small
-category: 5. Component > Call to Actions
----
-
-Styles for buttons at small screens Buttons can be used with `<a>`, `<button>`, and `<input>` elements. See [Suffixcate](/#suffixcate) for details.
-
-Can be applied to:
-- Default
-- Base
-- Primary
-- Secondary
-- Teritary
-- Dark
-- Light
-
-```base-and-default.html
-<button class="c-button@small c-button@small--default c-button@small--base">Button</button>
-```
-
-```primary.html
-<button class="c-button@small c-button@small--default c-button@small--base c-button@small--primary">Button</button>
-```
-
-```secondary.html
-<button class="c-button@small c-button@small--default c-button@small--base c-button@small--secondary">Button</button>
-```
-
-```tertiary.html
-<button class="c-button@small c-button@small--default c-button@small--base c-button@small--tertiary">Button</button>
-```
-
-```dark.html
-<button class="c-button@small c-button@small--default c-button@small--base c-button@small--dark">Button</button>
-```
-
-```light.html
-<button class="c-button@small c-button@small--default c-button@small--base c-button@small--light">Button</button>
-```
-
-*/
-/*
----
-name: Button > Primary
-category: 5. Component > Call to Actions
----
-
-Types of primary buttons
-- Core: Base styles
-- Default: Spacing and alignment
-
-```core.html
-<button class="**-button c-button--primary **" data-component="global.button-primary">
-    <span>
-       Button
-    </span>
-</button>
-```
-
-```default.html
-<button class="** c-button  c-button--base c-button--default c-button--primary **" data-component="global.button-primary">
-    <span>
-        Button
-    </span>
-</button>
-```
-*/
-/*
----
-name: Button > Secondary
-category: 5. Component > Call to Actions
----
-
-Types of secondary buttons
-- Core: Base styles
-- Default: Spacing and alignment
-
-```core.html
-<button class="**-button c-button--secondary **" data-component="global.button-secondary">
-    <span>
-       Button
-    </span>
-</button>
-```
-
-```default.html
-<button class="** c-button  c-button--base c-button--default c-button--secondary **" data-component="global.button-secondary">
-    <span>
-        Button
-    </span>
-</button>
-```
-*/
-/*
----
-name: Button > Tertiary
-category: 5. Component > Call to Actions
----
-
-Types of tertiary buttons
-- Core: Base styles
-- Default: Spacing and alignment
-
-```core.html
-<button class="**-button c-button--tertiary **" data-component="global.button-tertiary">
-    <span>
-       Button
-    </span>
-</button>
-```
-
-```default.html
-<button class="** c-button  c-button--base c-button--default c-button--tertiary **" data-component="global.button-tertiary">
-    <span>
-        Button
-    </span>
-</button>
-```
-*/
-/*
----
-name: Button > Dark
-category: 5. Component > Call to Actions
----
-
-Types of dark buttons
-- Core: Base styles
-- Default: Spacing and alignment
-
-```core.html
-<button class="**-button c-button--dark **" data-component="global.button-dark">
-    <span>
-       Button
-    </span>
-</button>
-```
-
-```default.html
-<button class="** c-button  c-button--base c-button--default c-button--dark **" data-component="global.button-dark">
-    <span>
-        Button
-    </span>
-</button>
-```
-*/
-/*
----
-name: Button > Light
-category: 5. Component > Call to Actions
----
-
-Types of light buttons
-- Core: Base styles
-- Default: Spacing and alignment
-
-```core.html
-<button class="**-button c-button--light **" data-component="global.button-light">
-    <span>
-       Button
-    </span>
-</button>
-```
-
-```default.html
-<button class="** c-button  c-button--base c-button--default c-button--light **" data-component="global.button-light">
-    <span>
-        Button
-    </span>
-</button>
-```
-*/
-.c-button {
-  border-radius: 0; }
-  .c-button--base {
-    border: 0.0625rem solid; }
-  .c-button--default > span {
-    font-family: "Arial", sans-serif;
-    font-weight: bold; }
-  .c-button--primary {
-    background-color: #0CA0DA;
-    color: #FFF;
-    border-color: #0CA0DA; }
-    .c-button--primary:hover, .c-button--primary:focus {
-      background-color: #193E6C;
-      color: #F9F9F9; }
-    .c-button--primary:active {
-      background-color: #474646;
-      color: #000; }
-  .c-button--secondary {
-    background-color: #193E6C;
-    color: #FFF;
-    border-color: #193E6C; }
-    .c-button--secondary:hover, .c-button--secondary:focus {
-      background-color: #9D8D74;
-      color: #FFF; }
-    .c-button--secondary:active {
-      background-color: #3D6460;
-      color: #000; }
-  .c-button--tertiary {
-    background-color: #FBAC50;
-    color: #000;
-    border-color: #FBAC50; }
-    .c-button--tertiary:hover, .c-button--tertiary:focus {
-      background-color: #9D8D74;
-      color: #FFF; }
-    .c-button--tertiary:active {
-      background-color: #3D6460;
-      color: #000; }
-  .c-button--light {
-    background-color: #F5F5F5;
-    color: #000;
-    border-color: #F5F5F5; }
-    .c-button--light:hover, .c-button--light:focus {
-      background-color: #FFF;
-      color: #000; }
-    .c-button--light:active {
-      background-color: #F9F9F9;
-      color: #000; }
-  .c-button--dark {
-    background-color: #010101;
-    color: #FFF;
-    border-color: #010101; }
-    .c-button--dark:hover, .c-button--dark:focus {
-      background-color: #000;
-      color: #FFF; }
-    .c-button--dark:active {
-      background-color: #130A4F;
-      color: #FFF; }
-  @media screen and (min-width: 47.5rem) {
-    .c-button\@large--base {
-      border: 0.0625rem solid; }
-    .c-button\@large--default > span {
-      font-family: "Arial", sans-serif;
-      font-weight: bold; }
-    .c-button\@large--primary {
-      background-color: #0CA0DA;
-      color: #FFF;
-      border-color: #0CA0DA; }
-      .c-button\@large--primary:hover, .c-button\@large--primary:focus {
-        background-color: #193E6C;
-        color: #F9F9F9; }
-      .c-button\@large--primary:active {
-        background-color: #474646;
-        color: #000; }
-    .c-button\@large--secondary {
-      background-color: #193E6C;
-      color: #FFF;
-      border-color: #193E6C; }
-      .c-button\@large--secondary:hover, .c-button\@large--secondary:focus {
-        background-color: #9D8D74;
-        color: #FFF; }
-      .c-button\@large--secondary:active {
-        background-color: #3D6460;
-        color: #000; }
-    .c-button\@large--tertiary {
-      background-color: #FBAC50;
-      color: #000;
-      border-color: #FBAC50; }
-      .c-button\@large--tertiary:hover, .c-button\@large--tertiary:focus {
-        background-color: #9D8D74;
-        color: #FFF; }
-      .c-button\@large--tertiary:active {
-        background-color: #3D6460;
-        color: #000; }
-    .c-button\@large--light {
-      background-color: #F5F5F5;
-      color: #000;
-      border-color: #F5F5F5; }
-      .c-button\@large--light:hover, .c-button\@large--light:focus {
-        background-color: #FFF;
-        color: #000; }
-      .c-button\@large--light:active {
-        background-color: #F9F9F9;
-        color: #000; }
-    .c-button\@large--dark {
-      background-color: #010101;
-      color: #FFF;
-      border-color: #010101; }
-      .c-button\@large--dark:hover, .c-button\@large--dark:focus {
-        background-color: #000;
-        color: #FFF; }
-      .c-button\@large--dark:active {
-        background-color: #130A4F;
-        color: #FFF; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-button\@small--base {
-      border: 0.0625rem solid; }
-    .c-button\@small--default > span {
-      font-family: "Arial", sans-serif;
-      font-weight: bold; }
-    .c-button\@small--primary {
-      background-color: #0CA0DA;
-      color: #FFF;
-      border-color: #0CA0DA; }
-      .c-button\@small--primary:hover, .c-button\@small--primary:focus {
-        background-color: #193E6C;
-        color: #F9F9F9; }
-      .c-button\@small--primary:active {
-        background-color: #474646;
-        color: #000; }
-    .c-button\@small--secondary {
-      background-color: #193E6C;
-      color: #FFF;
-      border-color: #193E6C; }
-      .c-button\@small--secondary:hover, .c-button\@small--secondary:focus {
-        background-color: #9D8D74;
-        color: #FFF; }
-      .c-button\@small--secondary:active {
-        background-color: #3D6460;
-        color: #000; }
-    .c-button\@small--tertiary {
-      background-color: #FBAC50;
-      color: #000;
-      border-color: #FBAC50; }
-      .c-button\@small--tertiary:hover, .c-button\@small--tertiary:focus {
-        background-color: #9D8D74;
-        color: #FFF; }
-      .c-button\@small--tertiary:active {
-        background-color: #3D6460;
-        color: #000; }
-    .c-button\@small--light {
-      background-color: #F5F5F5;
-      color: #000;
-      border-color: #F5F5F5; }
-      .c-button\@small--light:hover, .c-button\@small--light:focus {
-        background-color: #FFF;
-        color: #000; }
-      .c-button\@small--light:active {
-        background-color: #F9F9F9;
-        color: #000; }
-    .c-button\@small--dark {
-      background-color: #010101;
-      color: #FFF;
-      border-color: #010101; }
-      .c-button\@small--dark:hover, .c-button\@small--dark:focus {
-        background-color: #000;
-        color: #FFF; }
-      .c-button\@small--dark:active {
-        background-color: #130A4F;
-        color: #FFF; } }
-
-/*
----
-name: Anchor
-category: 5. Component > Call to Actions
----
-*/
-/*
----
-name: Anchor > Primary
-category: 5. Component > Call to Actions
----
-*/
-/*
----
-name: Anchor > Secondary
-category: 5. Component > Call to Actions
----
-*/
-/*
----
-name: Anchor > Dark
-category: 5. Component > Call to Actions
----
-*/
-/*
----
-name: Anchor > Light
-category: 5. Component > Call to Actions
----
-*/
-.c-anchor {
-  text-decoration: none; }
-  .c-anchor--primary {
-    color: #0CA0DA; }
-    .c-anchor--primary:focus, .c-anchor--primary:hover {
-      color: #193E6C; }
-    .c-anchor--primary:active {
-      color: #474646; }
-  .c-anchor--secondary {
-    color: #193E6C; }
-    .c-anchor--secondary:focus, .c-anchor--secondary:hover {
-      color: #9D8D74; }
-    .c-anchor--secondary:active {
-      color: #3D6460; }
-  .c-anchor--tertiary {
-    color: #FBAC50; }
-    .c-anchor--tertiary:focus, .c-anchor--tertiary:hover {
-      color: #9D8D74; }
-    .c-anchor--tertiary:active {
-      color: #3D6460; }
-  .c-anchor--dark {
-    color: #010101; }
-    .c-anchor--dark:hover, .c-anchor--dark:active {
-      color: #000; }
-    .c-anchor--dark:active {
-      color: #130A4F; }
-  .c-anchor--light {
-    color: #F5F5F5; }
-    .c-anchor--light:hover, .c-anchor--light:active {
-      color: #999; }
-    .c-anchor--light:active {
-      color: #F9F9F9; }
-  @media screen and (min-width: 47.5rem) {
-    .c-anchor\@large--primary {
-      color: #0CA0DA; }
-      .c-anchor\@large--primary:focus, .c-anchor\@large--primary:hover {
-        color: #193E6C; }
-      .c-anchor\@large--primary:active {
-        color: #474646; }
-    .c-anchor\@large--secondary {
-      color: #193E6C; }
-      .c-anchor\@large--secondary:focus, .c-anchor\@large--secondary:hover {
-        color: #9D8D74; }
-      .c-anchor\@large--secondary:active {
-        color: #3D6460; }
-    .c-anchor\@large--tertiary {
-      color: #FBAC50; }
-      .c-anchor\@large--tertiary:focus, .c-anchor\@large--tertiary:hover {
-        color: #9D8D74; }
-      .c-anchor\@large--tertiary:active {
-        color: #3D6460; }
-    .c-anchor\@large--dark {
-      color: #010101; }
-      .c-anchor\@large--dark:hover, .c-anchor\@large--dark:active {
-        color: #000; }
-      .c-anchor\@large--dark:active {
-        color: #130A4F; }
-    .c-anchor\@large--light {
-      color: #F5F5F5; }
-      .c-anchor\@large--light:hover, .c-anchor\@large--light:active {
-        color: #999; }
-      .c-anchor\@large--light:active {
-        color: #F9F9F9; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-anchor\@small--primary {
-      color: #0CA0DA; }
-      .c-anchor\@small--primary:focus, .c-anchor\@small--primary:hover {
-        color: #193E6C; }
-      .c-anchor\@small--primary:active {
-        color: #474646; }
-    .c-anchor\@small--secondary {
-      color: #193E6C; }
-      .c-anchor\@small--secondary:focus, .c-anchor\@small--secondary:hover {
-        color: #9D8D74; }
-      .c-anchor\@small--secondary:active {
-        color: #3D6460; }
-    .c-anchor\@small--tertiary {
-      color: #FBAC50; }
-      .c-anchor\@small--tertiary:focus, .c-anchor\@small--tertiary:hover {
-        color: #9D8D74; }
-      .c-anchor\@small--tertiary:active {
-        color: #3D6460; }
-    .c-anchor\@small--dark {
-      color: #010101; }
-      .c-anchor\@small--dark:hover, .c-anchor\@small--dark:active {
-        color: #000; }
-      .c-anchor\@small--dark:active {
-        color: #130A4F; }
-    .c-anchor\@small--light {
-      color: #F5F5F5; }
-      .c-anchor\@small--light:hover, .c-anchor\@small--light:active {
-        color: #999; }
-      .c-anchor\@small--light:active {
-        color: #F9F9F9; } }
 
 .c-input, .c-textarea, .c-select, .c-select__input, .c-radio__input, .c-checkbox__input {
   outline: none;
