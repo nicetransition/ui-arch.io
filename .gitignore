@@ -5,3 +5,4 @@ dist
 package-lock.json
 *.old
 todo.md
+_dist/
