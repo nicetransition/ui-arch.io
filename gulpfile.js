@@ -31,6 +31,10 @@ var config = {
 		styles: {
 			core: './src/scss/*.scss'
 			// core: './src/**/*.scss'
+		},
+		fonts: {
+			src: './src/assets/fonts/**/*.{svg,eot,ttf,woff}',
+			dist: '_dist/assets/'
 		}
 	},
 	dest: '_dist'
@@ -100,14 +104,6 @@ gulp.task('colors', function() {
 });
 
 
-gulp.task('Xstylemarkz', function () {
-	exec('stylemark -i src/scss -o _dist -c .stylemark.yml', function () {
-		console.log("Success of stylemark");
-		browserSync.reload();
-	});
-})
-
-
 gulp.task('stylemark', function () {
 	stylemark({
 	    input: 'src/scss',
@@ -115,8 +111,6 @@ gulp.task('stylemark', function () {
 	    configPath: '.stylemark.yml',
 	});
 })
-
-
 
 // make CSS from Sass  
 gulp.task('sass', function () {
@@ -134,6 +128,14 @@ gulp.task('sass', function () {
    		// .pipe(gulpif(!config.dev, csscomb()))
         .pipe(gulp.dest('_dist'));
         // .pipe(gulpif(config.dev, reload({stream:true})));
+});
+
+
+
+// fonts
+gulp.task('fonts', function() {
+	return gulp.src(config.src.fonts.src)
+		.pipe(gulp.dest(config.src.fonts.dist + "/"));
 });
 
 

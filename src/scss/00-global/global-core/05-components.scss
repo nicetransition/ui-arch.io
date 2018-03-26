@@ -5,6 +5,11 @@
 @import "01-tools";
 
 // COMPONENTS: Designed components
+@import "05-components_intrinsic-ratios";
+@import "05-components_ctas";
+@import "05-components_forms";
+@import "05-components_headers-and-titles";
+@import "05-components_navigational";
 
 
 /*
@@ -73,7 +78,7 @@ name: List > Link List
 category: 5. Component > Content
 ---
 
-A nice structure for a list of links
+A nice structure for a list of links or content blocks
 
 ```default.html
 <ul class="c-link-list">
@@ -161,11 +166,3 @@ Space out sections
 		}
 	}
 }
-
-
-
-@import "05-components_intrinsic-ratios";
-@import "05-components_ctas";
-@import "05-components_forms";
-@import "05-components_headers-and-titles";
-@import "05-components_navigational";

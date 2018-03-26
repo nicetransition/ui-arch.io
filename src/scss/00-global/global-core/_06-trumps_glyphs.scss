@@ -12,11 +12,11 @@ Core glyphs are located in `~/src/fonts/webfont`. Update by uploading the `selec
 
 @font-face {
 	font-family: 'webfont';
-	src:url('/assets/toolkit/fonts/webfont/fonts/webfont.eot');
-	src:url('/assets/toolkit/fonts/webfont/fonts/webfont.eot') format('embedded-opentype'),
-		url('/assets/toolkit/fonts/webfont/fonts/webfont.woff') format('woff'),
-		url('/assets/toolkit/fonts/webfont/fonts/webfont.ttf') format('truetype'),
-		url('/assets/toolkit/fonts/webfont/fonts/webfont.svg#webfont') format('svg');
+	src:url('/assets/fonts/webfont/fonts/webfont.eot');
+	src:url('/assets/fonts/webfont/fonts/webfont.eot') format('embedded-opentype'),
+		url('/assets/fonts/webfont/fonts/webfont.woff') format('woff'),
+		url('/assets/fonts/webfont/fonts/webfont.ttf') format('truetype'),
+		url('/assets/fonts/webfont/fonts/webfont.svg#webfont') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
