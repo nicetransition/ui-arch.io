@@ -19789,6 +19789,131 @@ Types of placeholders:
     .u-alpha-dark-10-bg\@small {
       color: #FFF; } }
 
+.t-form-1.c-label {
+  color: #193E6C; }
+.t-form-1.c-select .c-select__text:after {
+  color: #0CA0DA; }
+.t-form-1.c-select .c-select__text:active, .t-form-1.c-select .c-select__text:hover {
+  color: #474646; }
+.t-form-1.c-select .c-select__text:active {
+  color: #193E6C; }
+.t-form-1.c-input, .t-form-1.c-textarea, .t-form-1.c-select {
+  background-color: #FFF;
+  border-color: transparent;
+  border-bottom-color: #999;
+  color: #010101; }
+  .t-form-1.c-input:focus, .t-form-1.c-textarea:focus, .t-form-1.c-select:focus {
+    border-bottom-color: #3D6460;
+    color: #000; }
+.t-form-1 .u-char-before__item:after, .t-form-1 .u-char-after__item:after {
+  color: #000; }
+.t-form-1.c-input::-webkit-input-placeholder, .t-form-1.c-textarea::-webkit-input-placeholder {
+  color: #999;
+  line-height: 1;
+  vertical-align: middle; }
+.t-form-1.c-input:-moz-placeholder, .t-form-1.c-textarea:-moz-placeholder {
+  color: #999;
+  line-height: 1;
+  vertical-align: middle; }
+.t-form-1.c-input::-moz-placeholder, .t-form-1.c-textarea::-moz-placeholder {
+  color: #999;
+  line-height: 1;
+  vertical-align: middle; }
+.t-form-1.c-input:-ms-input-placeholder, .t-form-1.c-textarea:-ms-input-placeholder {
+  color: #999;
+  line-height: 1;
+  vertical-align: middle; }
+.t-form-1 .c-field-toggle__input:checked + .c-field-toggle__text, .t-form-1 .c-field-toggle__input:checked + .c-field-toggle__label {
+  color: #000; }
+.t-form-1 .c-field-toggle__input:focus + .c-field-toggle__text, .t-form-1 .c-field-toggle__input:active + .c-field-toggle__text, .t-form-1 .c-field-toggle__input:active + .c-field-toggle__label {
+  color: #193E6C; }
+  .t-form-1 .c-field-toggle__input:focus + .c-field-toggle__text:before, .t-form-1 .c-field-toggle__input:active + .c-field-toggle__text:before, .t-form-1 .c-field-toggle__input:active + .c-field-toggle__label:before {
+    border-color: #D9AE11; }
+.t-form-1 .c-field-toggle__input[disabled]:checked + .c-field-toggle__text, .t-form-1 .c-field-toggle__input [disabled]:checked + .c-field-toggle__label {
+  color: #999; }
+.t-form-1 .c-field-toggle__text, .t-form-1 .c-field-toggle__label {
+  color: #010101; }
+  .t-form-1 .c-field-toggle__text:after, .t-form-1 .c-field-toggle__label:after {
+    color: #193E6C; }
+  .t-form-1 .c-field-toggle__text:before, .t-form-1 .c-field-toggle__label:before {
+    background-color: #FFF;
+    border-color: #999; }
+  .t-form-1 .c-field-toggle__text:hover, .t-form-1 .c-field-toggle__text:focus, .t-form-1 .c-field-toggle__label:hover, .t-form-1 .c-field-toggle__label:focus {
+    color: #000; }
+.t-form-1.c-input[disabled], .t-form-1 > .c-checkbox__input[disabled] + label:before, .t-form-1 > .c-radio__input[disabled] + label:before, .t-form-1.c-textarea[disabled], .t-form-1.c-select[disabled], .t-form-1.c-select > select[disabled][disabled], .t-form-1.c-radio > input[disabled] + label:before {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  cursor: not-allowed;
+  background-color: gainsboro;
+  opacity: .7; }
+.t-form-1 > .c-checkbox__input[disabled] + label:after, .t-form-1 > .c-radio__input[disabled] + label:after {
+  color: #c2c2c2;
+  text-shadow: 0 0.0625rem 0 rgba(255, 255, 255, 0.1), 0 -0.0625rem 0 rgba(0, 0, 0, 0.1); }
+.t-form-1.u-light-light {
+  color: #FFF; }
+
+.t-form-2.c-label {
+  color: #010101; }
+.t-form-2.c-input, .t-form-2.c-textarea, .t-form-2.c-select, .t-form-2.c-select > select {
+  color: #F5F5F5; }
+  .t-form-2.c-input:focus, .t-form-2.c-textarea:focus, .t-form-2.c-select:focus, .t-form-2.c-select > select:focus {
+    color: #FFF; }
+.t-form-2.c-input, .t-form-2.c-textarea, .t-form-2.c-select {
+  background-color: #010101;
+  border-color: transparent; }
+  .t-form-2.c-input:focus, .t-form-2.c-textarea:focus, .t-form-2.c-select:focus {
+    border-bottom-color: #D9AE11; }
+.t-form-2.c-select option {
+  color: #F5F5F5;
+  background-color: #010101; }
+.t-form-2 .u-char-before__item:after, .t-form-2 .u-char-after__item:after {
+  color: #999; }
+.t-form-2.c-input::-webkit-input-placeholder, .t-form-2.c-textarea::-webkit-input-placeholder {
+  color: #F5F5F5; }
+.t-form-2.c-input:-moz-placeholder, .t-form-2.c-textarea:-moz-placeholder {
+  color: #F5F5F5; }
+.t-form-2.c-input::-moz-placeholder, .t-form-2.c-textarea::-moz-placeholder {
+  color: #F5F5F5; }
+.t-form-2.c-input:-ms-input-placeholder, .t-form-2.c-textarea:-ms-input-placeholder {
+  color: #F5F5F5; }
+.t-form-2 .c-input-search__btn {
+  -webkit-box-shadow: 5rem 0 0 rgba(0, 0, 0, 0.2) inset;
+          box-shadow: 5rem 0 0 rgba(0, 0, 0, 0.2) inset; }
+  .t-form-2 .c-input-search__btn:active, .t-form-2 .c-input-search__btn:hover, .t-form-2 .c-input-search__btn:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+.t-form-2 .c-field-toggle__input:focus + .c-field-toggle__text, .t-form-2 .c-field-toggle__input:focus + .c-field-toggle__label {
+  color: #193E6C; }
+.t-form-2 .c-field-toggle__input:checked + .c-field-toggle__text, .t-form-2 .c-field-toggle__input:checked + .c-field-toggle__label {
+  color: #000; }
+.t-form-2 .c-field-toggle__input[disabled]:checked + .c-field-toggle__text, .t-form-2 .c-field-toggle__input[disabled]:checked + .c-field-toggle__label {
+  color: #999; }
+.t-form-2 .c-field-toggle__text, .t-form-2 .c-field-toggle__label {
+  color: currentColor; }
+  .t-form-2 .c-field-toggle__text:after, .t-form-2 .c-field-toggle__label:after {
+    color: #0CA0DA; }
+  .t-form-2 .c-field-toggle__text:before, .t-form-2 .c-field-toggle__label:before {
+    background-color: #010101;
+    border-color: transparent; }
+  .t-form-2 .c-field-toggle__text:hover, .t-form-2 .c-field-toggle__text:focus, .t-form-2 .c-field-toggle__label:hover, .t-form-2 .c-field-toggle__label:focus {
+    color: #000; }
+.t-form-2.c-input[disabled], .t-form-2.c-textarea[disabled], .t-form-2.c-select[disabled], .t-form-2.c-select > select[disabled][disabled], .t-form-2.c-radio > input[disabled] + label:before {
+  cursor: default;
+  background-color: #010101;
+  opacity: .7;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.t-form-light.c-label {
+  color: #FFF; }
+
 .t-1, .t-dark {
   background-color: #9D8D74;
   color: #FFF; }
