@@ -9,7 +9,7 @@
 
 /*
 ---
-name: Content Block
+name: Zones > Content Block
 category: 5. Component > Content
 ---
 
@@ -67,6 +67,46 @@ A nice container for content
 }
 
 
+/*
+---
+name: List > Link List
+category: 5. Component > Content
+---
+
+A nice structure for a list of links
+
+```default.html
+<ul class="c-link-list">
+	<li>
+		<a href="#">Link</a>
+	</li>
+	<li>
+		<a href="#">Link</a>
+	</li>
+	<li>
+		<a href="#">Link</a>
+	</li>
+</ul>
+```
+
+Alternative name:
+
+```default.html
+<ul class="c-list">
+	<li>
+		<a href="#">Link</a>
+	</li>
+	<li>
+		<a href="#">Link</a>
+	</li>
+	<li>
+		<a href="#">Link</a>
+	</li>
+</ul>
+```
+*/
+
+
 .c-list, .c-link-list {
 	@include suffixcate {
 		list-style: none;
@@ -80,79 +120,48 @@ A nice container for content
 				position: absolute;
 				left: -1em;
 			}
-		}
-	}
-}
 
-.c-link-list, .c-list-children {
-	> li {
-		& + li {
-			padding-top: $default-space / 4;
-		}
-	}
-}
-
-.c-list {
-	@include suffixcate {
-		> li {
-			&:before {
-				color: $color-light-dark;
+			& + li {
+				padding-top: $default-space / 4;
 			}
-		}
-	}
-}
 
-.c-link-list {
-	@include suffixcate {
-		> li {
-			&:before {
-				color: $color-primary;
-			}
 		}
 	}
 }
 
 
-.c-side-nav {
-	@media screen and (min-width: $bp-large) {
-		width: rem(240);
-	}
-}
-.c-section-blocks, .c-group-sections {
+/*
+---
+name: Zones > Section Blocks
+category: 5. Component > Content
+---
+
+Space out sections
+
+```default.html
+<div class="c-section-blocks">
+	<div class="c-section-blocks__section">
+		••• Section here •••
+	</div>
+	<div class="c-section-blocks__section">
+		••• Section here •••
+	</div>
+</div>
+```
+*/
+
+.c-section-blocks {
 	@include suffixcate {
 		&__section {
 			@include units($version: "two-times", $variation: (bottom: true));
 		}
 
 		&__section + &__section {
-			padding-top: $default-space + ($default-space / 2);
-			padding-bottom: $default-space + ($default-space / 2);
-			//@include units($version: "two-times", $variation: (top: true, bottom: true));
-		}
-	}
-
-	&__section {
-		&:first-child {
-			// padding-top: $default-space;
+			@include units($version: "two-times", $variation: (top: true));
 		}
 	}
 }
 
-.c-section-blocks, .c-seperate-section {
-	@include suffixcate {
-		&__section + &__section {
-			border-top: 1px solid;
-		}
-	}
-}
-
-.c-section-blocks {
-	@include suffixcate {
-		&__section + &__section {
-			border-color: $color-alpha-10;
-		}
-	}
-}
 
 
 @import "05-components_intrinsic-ratios";
