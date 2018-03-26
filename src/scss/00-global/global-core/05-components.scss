@@ -13,8 +13,9 @@
 	padding-top: $default-space;
 }
 
-.c-content-block {
 
+
+.c-content-block {
 
 	&__header {
 		& + .c-content-block__main {
@@ -40,56 +41,6 @@
 	}
 }
 
-
-.c-form-block {
-	&__main {
-
-	}
-
-	&__row {
-		& + & {
-			margin-top: $default-space;
-		}
-	}
-
-	&__footer {
-		padding-top: $default-space;
-	}
-
-}
-
-.c-image-block {
-	position: relative;
-
-	&__img {
-
-	}
-
-	&__text-block {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-	}
-}
-
-a, span {
-	&.c-image-block, &.c-image-block__img, &.c-image-block__text-block {
-		display: block;
-	}
-}
-
-.c-content {
-	&__intro {
-
-	}
-
-	&__main {
-
-	}
-}
-
-.c-image-backing {
-}
 
 .c-list, .c-link-list {
 	@include suffixcate {
@@ -136,29 +87,6 @@ a, span {
 	}
 }
 
-.c-icon-callout {
-	// max-width: rem(270);
-}
-
-
-@media screen and (max-width: $bp-large) {
-	[data-title] {
-		&:before {
-			@include title-setup;
-			content: attr(data-title);
-		}
-	}
-}
-
-[data-title-before]:before {
-	content: attr(data-title-before);
-}
-
-[data-title-after]:after {
-	content: attr(data-title-after);
-}
-
-
 
 .c-side-nav {
 	@media screen and (min-width: $bp-large) {
@@ -198,27 +126,6 @@ a, span {
 		&__section + &__section {
 			border-color: $color-alpha-10;
 		}
-	}
-}
-
-.c-hr {
-	margin: 0;
-
-	unicode-bidi: normal;
-
-	border: 0;
-	
-	position: relative;
-
-	&:after {
-		content: "";
-		display: block;
-
-		height: rem(3);
-		min-height: 3px;
-
-		background-color: $color-primary-light;
-		width: 100%;
 	}
 }
 

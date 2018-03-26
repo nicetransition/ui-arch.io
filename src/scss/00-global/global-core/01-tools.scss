@@ -78,6 +78,16 @@ Usage:
 	list-style: none;
 }
 
+@mixin intrinsic-size-maker($width: 400, $height: 300, $name: false) {
+	$modifier: if(($name != false), $name, (#{$width}x#{$height}));
+
+	&--#{$modifier} {
+		@include suffixcate {
+			padding-bottom: percentage($height / $width);
+		}
+	}
+}
+
 @mixin glyph {
 	font-family: 'webfont';
 	font-style: normal;
