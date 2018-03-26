@@ -7,12 +7,37 @@
 // COMPONENTS: Designed components
 
 
+/*
+---
+name: Content Block
+category: 5. Component > Content
+---
 
+A nice container for content
+
+```default.html
+<article class="c-content-block">
+	<header class="c-content-block__header">
+		<h2>
+			Header
+		</h2>
+	</header>
+	<div class="c-content-block__main">
+		<p>
+			content here
+		</p>
+	</div>
+	<footer class="c-content-block__footer">
+		<a href="#">Link</a>
+	</footer>
+</article>
+```
+
+*/
 
 %content-block-spacing-top {
 	padding-top: $default-space;
 }
-
 
 
 .c-content-block {
