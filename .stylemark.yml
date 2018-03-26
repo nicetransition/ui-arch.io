@@ -1,6 +1,6 @@
 name: UI-ARCH.io
 headHtml: |
-  <link rel="stylesheet" href="scss/ui-arch.css" />
+  <link rel="stylesheet" href="ui-arch.css" />
 sidebar:
   background: "#000000"
   textColor: "#FFFFFF"

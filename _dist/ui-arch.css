@@ -8062,438 +8062,87 @@ span.c-intrinsic, span.c-intrinsic__element, a.c-intrinsic, a.c-intrinsic__eleme
   span\@small.c-intrinsic, span\@small.c-intrinsic__element, a\@small.c-intrinsic, a\@small.c-intrinsic__element {
     display: block; } }
 
-.c-button[disabled], .c-button[disabled]:hover, .c-button[disabled]:focus, .c-button[disabled]:active, .c-button.-disabled {
-  background-color: #CCC !important;
-  border-color: #CCC;
-  color: rgba(1, 1, 1, 0.7) !important;
-  cursor: default; }
-
-.c-button {
-  font-family: "Arial", sans-serif;
-  cursor: pointer;
-  outline: none;
-  text-decoration: none; }
-
 /*
 ---
-name: Button
+name: Button Base
 category: 5. Component > Call to Actions
 ---
 
-Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
+Basic setup of a button, applied to "all buttons". Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
 
 Types of buttons:
 - Default: Standard button
 
-```types.html
-<button class="c-button c-button--default c-button--base c-button--primary">Primary</button>
+```base.html
+<button class="c-button c-button--base">Base</button>
 ```
 */
 /*
 ---
-name: Button > Primary
+name: Button Default
 category: 5. Component > Call to Actions
 ---
 
-Types of primary buttons
-- Core: Base styles
-- Default: Spacing and alignment
+Default settings for a traditional button - including spacing. Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
 
-```core.html
-<button class="** c-button c-button--primary **" data-component="global.button-primary">
-    <span>
-        Span is required
-    </span>
-</button>
-```
+Types of buttons:
+- Default: Standard button
 
-```default.html
-<button class="** c-button c-button--primary c-button--default **" data-component="global.button-primary">
-    <span>
-        Span is required
-    </span>
-</button>
+```base.html
+<button class="c-button c-button--base">Base</button>
 ```
 */
-/*
----
-name: Button > Secondary
-category: 5. Component > Call to Actions
----
-
-Types of secondary buttons
-- Core: Base styles
-- Default: Spacing and alignment
-
-```core.html
-<button class="** c-button c-button--secondary **" data-component="global.button-primary">
-    <span>
-        Span is required
-    </span>
-</button>
-```
-
-```default.html
-<button class="** c-button c-button--secondary c-button--default **" data-component="global.button-primary">
-    <span>
-        Span is required
-    </span>
-</button>
-```
-*/
-/*
----
-name: Button > Dark
-category: 5. Component > Call to Actions
----
-*/
-/*
----
-name: Button > Light
-category: 5. Component > Call to Actions
----
-*/
-.c-button {
-  border-radius: 0; }
-  .c-button--base {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-kerning: normal;
-    -webkit-font-kerning: normal;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    border: 0.0625rem solid; }
-  .c-button--default {
-    text-align: center;
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
-    display: inline-block; }
-    @media screen and (min-width: 25.556rem) {
-      .c-button--default {
-        padding-right: 2.5rem; } }
-    @media screen and (max-width: 25.556rem) {
-      .c-button--default {
-        padding-right: 1.25rem; } }
-    @media screen and (min-width: 25.556rem) {
-      .c-button--default {
-        padding-left: 2.5rem; } }
-    @media screen and (max-width: 25.556rem) {
-      .c-button--default {
-        padding-left: 1.25rem; } }
-    .c-button--default > span {
-      display: block;
-      line-height: 1.3;
-      font-family: "Arial", sans-serif;
-      font-weight: bold; }
-  .c-button--raised {
-    -webkit-box-shadow: 0 0.063rem 0.125rem rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0.063rem 0.125rem rgba(0, 0, 0, 0.2); }
-  .c-button--size-1 {
-    min-width: 9.688rem; }
-  .c-button--primary {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #FFF;
-    border-color: #193E6C;
-    position: relative; }
-    .c-button--primary:before {
-      content: "";
-      background-color: rgba(255, 255, 255, 0.12);
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0; }
-    .c-button--primary:hover, .c-button--primary:focus {
-      background-color: rgba(0, 0, 0, 0.9); }
-    .c-button--primary:active {
-      background-color: #193E6C; }
-  .c-button--secondary {
-    background-color: #193E6C;
-    color: #FFF;
-    border-color: #193E6C;
-    position: relative; }
-    .c-button--secondary:before {
-      content: "";
-      background-color: rgba(255, 255, 255, 0.12);
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0; }
-    .c-button--secondary:hover, .c-button--secondary:focus {
-      border-color: #193E6C;
-      background-color: #193E6C; }
-    .c-button--secondary:active {
-      border-color: #193E6C;
-      background-color: #193E6C; }
-  .c-button--tertiary {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #FFF;
-    border-color: #D9AE11;
-    position: relative; }
-    .c-button--tertiary:before {
-      content: "";
-      background-color: rgba(255, 255, 255, 0.12);
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0; }
-    .c-button--tertiary:hover, .c-button--tertiary:focus {
-      background-color: rgba(0, 0, 0, 0.9); }
-    .c-button--tertiary:active {
-      background-color: #D9AE11; }
-  .c-button--reset {
-    border: 0; }
+.c-button--base {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-kerning: normal;
+  -webkit-font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+.c-button--default {
+  text-align: center;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  display: inline-block; }
+  @media screen and (min-width: 25.556rem) {
+    .c-button--default {
+      padding-right: 2.5rem; } }
+  @media screen and (max-width: 25.556rem) {
+    .c-button--default {
+      padding-right: 1.25rem; } }
+  @media screen and (min-width: 25.556rem) {
+    .c-button--default {
+      padding-left: 2.5rem; } }
+  @media screen and (max-width: 25.556rem) {
+    .c-button--default {
+      padding-left: 1.25rem; } }
+  .c-button--default > span {
+    display: block;
+    line-height: 1.3; }
 
 a.c-button {
   text-decoration: none; }
 
-.c-anchor--dark:focus, .c-anchor--dark:hover {
-  color: #FFF; }
-.c-anchor--dark:active {
-  color: #474646; }
-.c-anchor--cta > span, .c-anchor--cta-alt > span {
-  text-decoration: underline; }
+/*
+---
+name: Click area
+category: 5. Component > Call to Actions
+---
 
-/*
----
-name: Anchor
-category: 5. Component > Call to Actions
----
-*/
-/*
----
-name: Anchor > Primary
-category: 5. Component > Call to Actions
----
-*/
-/*
----
-name: Anchor > Secondary
-category: 5. Component > Call to Actions
----
-*/
-/*
----
-name: Anchor > Dark
-category: 5. Component > Call to Actions
----
-*/
-/*
----
-name: Anchor > Light
-category: 5. Component > Call to Actions
----
-*/
-.c-anchor {
-  text-decoration: none; }
-  .c-anchor--cta, .c-anchor--cta-alt {
-    position: relative; }
-    .c-anchor--cta > span, .c-anchor--cta-alt > span {
-      line-height: 1; }
-    .c-anchor--cta:before, .c-anchor--cta:after, .c-anchor--cta-alt:before, .c-anchor--cta-alt:after {
-      font-family: 'webfont';
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-transition-duration: 150ms;
-           -o-transition-duration: 150ms;
-              transition-duration: 150ms;
-      -webkit-transition-timing-function: ease-in-out;
-           -o-transition-timing-function: ease-in-out;
-              transition-timing-function: ease-in-out;
-      -webkit-transition-delay: 0;
-           -o-transition-delay: 0;
-              transition-delay: 0;
-      -webkit-transition-property: "transform", "transform";
-      transition-property: "transform", "transform";
-      -o-transition-property: "transform", "transform";
-      transition-property: "transform";
-      will-change: "transform";
-      display: inline-block;
-      position: absolute;
-      -webkit-transform: translate(0, 0);
-          -ms-transform: translate(0, 0);
-              transform: translate(0, 0);
-      width: 1em;
-      color: #0CA0DA; }
-    .c-anchor--cta:before, .c-anchor--cta-alt:before {
-      left: 0;
-      text-indent: -0.3125em; }
-    .c-anchor--cta:after, .c-anchor--cta-alt:after {
-      right: 0; }
-    .c-anchor--cta:hover:before, .c-anchor--cta:hover:after, .c-anchor--cta-alt:hover:before, .c-anchor--cta-alt:hover:after {
-      -webkit-transform: translate(0.1875em, 0);
-          -ms-transform: translate(0.1875em, 0);
-              transform: translate(0.1875em, 0); }
-    .c-anchor--cta:active:before, .c-anchor--cta:active:after, .c-anchor--cta-alt:active:before, .c-anchor--cta-alt:active:after {
-      -webkit-transform: translate(0.25em, 0.125em);
-          -ms-transform: translate(0.25em, 0.125em);
-              transform: translate(0.25em, 0.125em); }
-  .c-anchor--cta > span {
-    margin-left: 1em; }
-  .c-anchor--cta:before {
-    content: ">"; }
-  .c-anchor--cta-alt > span {
-    padding-right: 1.3125em; }
-  .c-anchor--cta-alt:after {
-    content: "–"; }
-  .c-anchor--primary, a[class=""], a[class=" "], a:not([class]) {
-    color: #0CA0DA; }
-    .c-anchor--primary:focus, a[class=""]:focus, a[class=" "]:focus, a:focus:not([class]), .c-anchor--primary:hover, a[class=""]:hover, a[class=" "]:hover, a:hover:not([class]) {
-      color: inherit; }
-    .c-anchor--primary:active, a[class=""]:active, a[class=" "]:active, a:active:not([class]) {
-      color: #474646; }
-  .c-anchor--secondary {
-    color: #193E6C; }
-    .c-anchor--secondary:hover, .c-anchor--secondary:active {
-      color: #FBAC50; }
-  .c-anchor--tertiary {
-    color: #FBAC50; }
-    .c-anchor--tertiary:hover, .c-anchor--tertiary:active {
-      color: #3D6460; }
-  @media screen and (min-width: 47.5rem) {
-    .c-anchor\@large--primary {
-      color: #0CA0DA; }
-      .c-anchor\@large--primary:focus, .c-anchor\@large--primary:hover {
-        color: inherit; }
-      .c-anchor\@large--primary:active {
-        color: #474646; }
-    .c-anchor\@large--secondary {
-      color: #193E6C; }
-      .c-anchor\@large--secondary:hover, .c-anchor\@large--secondary:active {
-        color: #FBAC50; }
-    .c-anchor\@large--tertiary {
-      color: #FBAC50; }
-      .c-anchor\@large--tertiary:hover, .c-anchor\@large--tertiary:active {
-        color: #3D6460; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-anchor\@small--primary {
-      color: #0CA0DA; }
-      .c-anchor\@small--primary:focus, .c-anchor\@small--primary:hover {
-        color: inherit; }
-      .c-anchor\@small--primary:active {
-        color: #474646; }
-    .c-anchor\@small--secondary {
-      color: #193E6C; }
-      .c-anchor\@small--secondary:hover, .c-anchor\@small--secondary:active {
-        color: #FBAC50; }
-    .c-anchor\@small--tertiary {
-      color: #FBAC50; }
-      .c-anchor\@small--tertiary:hover, .c-anchor\@small--tertiary:active {
-        color: #3D6460; } }
-  .c-anchor--dark {
-    color: #000; }
-    @media screen and (min-width: 47.5rem) {
-      .c-anchor--dark\@large {
-        color: #000; } }
-    @media screen and (max-width: 47.5rem) {
-      .c-anchor--dark\@small {
-        color: #000; } }
-  .c-anchor--light {
-    color: #FFF; }
-    .c-anchor--light:hover {
-      color: #FBAC50; }
-  @media screen and (min-width: 47.5rem) {
-    .c-anchor\@large--light {
-      color: #FFF; }
-      .c-anchor\@large--light:hover {
-        color: #FBAC50; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-anchor\@small--light {
-      color: #FFF; }
-      .c-anchor\@small--light:hover {
-        color: #FBAC50; } }
-  .c-anchor--light-alt {
-    color: #F5F5F5; }
-    .c-anchor--light-alt:hover {
-      color: #0CA0DA; }
-    @media screen and (min-width: 47.5rem) {
-      .c-anchor--light-alt\@large {
-        color: #F5F5F5; }
-        .c-anchor--light-alt\@large:hover {
-          color: #0CA0DA; } }
-    @media screen and (max-width: 47.5rem) {
-      .c-anchor--light-alt\@small {
-        color: #F5F5F5; }
-        .c-anchor--light-alt\@small:hover {
-          color: #0CA0DA; } }
-  .c-anchor--hover-primary:hover {
-    color: #FFF; }
-  @media screen and (min-width: 47.5rem) {
-    .c-anchor--hover-primary\@large:hover {
-      color: #FFF; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-anchor--hover-primary\@small:hover {
-      color: #FFF; } }
-  .c-anchor--hover-secondary:hover {
-    color: #FFF; }
-  @media screen and (min-width: 47.5rem) {
-    .c-anchor--hover-secondary\@large:hover {
-      color: #FFF; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-anchor--hover-secondary\@small:hover {
-      color: #FFF; } }
-  .c-anchor--hover-dark:hover {
-    color: #000; }
-  @media screen and (min-width: 47.5rem) {
-    .c-anchor--hover-dark\@large:hover {
-      color: #000; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-anchor--hover-dark\@small:hover {
-      color: #000; } }
-  .c-anchor--hover-light:hover {
-    color: #FFF; }
-  @media screen and (min-width: 47.5rem) {
-    .c-anchor--hover-light\@large:hover {
-      color: #FFF; } }
-  @media screen and (max-width: 47.5rem) {
-    .c-anchor--hover-light\@small:hover {
-      color: #FFF; } }
-  .c-anchor--click-area {
-    display: inline-block;
-    min-height: 1.875rem;
-    line-height: 1.875rem; }
+Minimum click area being `40x40`
 
-/*
----
-name: Button > Icon
-category: 5. Component > Call to Actions
----
+```base.html
+<button class="c-click-area || u-dis-ib">40x40</button>
+```
+
 */
-.c-icon-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  cursor: pointer; }
-  .c-icon-btn--default, .c-icon-btn--size-1, .c-icon-btn--size-2 {
-    width: 3.125rem;
-    line-height: 1; }
-  .c-icon-btn--default, .c-icon-btn--size-1 {
-    height: 3.125rem;
-    width: 3.125rem; }
-  .c-icon-btn--size-2 {
-    width: 3.75rem; }
-    @media screen and (min-width: 47.5rem) {
-      .c-icon-btn--size-2 {
-        height: 3.125rem; } }
-  .c-icon-btn--clear {
-    background-color: transparent; }
+.c-click-area {
+  min-width: 2.5rem;
+  min-height: 2.5rem; }
 
 /*
 ---
@@ -18738,6 +18387,1078 @@ Usage:
 
 .c-title-block__header + .c-title-block__subheader {
   margin-top: 0.625rem; }
+
+.c-button[disabled], .c-button[disabled]:hover, .c-button[disabled]:focus, .c-button[disabled]:active, .c-button.-disabled {
+  background-color: #CCC !important;
+  border-color: #CCC;
+  color: rgba(1, 1, 1, 0.7) !important;
+  cursor: default; }
+
+.c-button {
+  font-family: "Arial", sans-serif;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none; }
+
+/*
+---
+name: Button
+category: 5. Component > Call to Actions
+---
+
+Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
+
+Types of buttons:
+- Default: Standard button
+
+```types.html
+<button class="c-button c-button--default c-button--base c-button--primary">Primary</button>
+```
+*/
+/*
+---
+name: Button Large
+category: 5. Component > Call to Actions
+---
+
+Styles for buttons at large screens Buttons can be used with `<a>`, `<button>`, and `<input>` elements. See [Suffixcate](/#suffixcate) for details.
+
+Can be applied to:
+- Default
+- Base
+- Primary
+- Secondary
+- Teritary
+- Dark
+- Light
+
+```base-and-default.html
+<button class="c-button@large c-button@large--default c-button@large--base">Button</button>
+```
+
+```primary.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--primary">Button</button>
+```
+
+```secondary.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--secondary">Button</button>
+```
+
+```tertiary.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--tertiary">Button</button>
+```
+
+```dark.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--dark">Button</button>
+```
+
+```light.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--light">Button</button>
+```
+
+*/
+/*
+---
+name: Button Small
+category: 5. Component > Call to Actions
+---
+
+Styles for buttons at small screens Buttons can be used with `<a>`, `<button>`, and `<input>` elements. See [Suffixcate](/#suffixcate) for details.
+
+Can be applied to:
+- Default
+- Base
+- Primary
+- Secondary
+- Teritary
+- Dark
+- Light
+
+```base-and-default.html
+<button class="c-button@small c-button@small--default c-button@small--base">Button</button>
+```
+
+```primary.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--primary">Button</button>
+```
+
+```secondary.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--secondary">Button</button>
+```
+
+```tertiary.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--tertiary">Button</button>
+```
+
+```dark.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--dark">Button</button>
+```
+
+```light.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--light">Button</button>
+```
+
+*/
+/*
+---
+name: Button > Primary
+category: 5. Component > Call to Actions
+---
+
+Types of primary buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--primary **" data-component="global.button-primary">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--primary **" data-component="global.button-primary">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+/*
+---
+name: Button > Secondary
+category: 5. Component > Call to Actions
+---
+
+Types of secondary buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--secondary **" data-component="global.button-secondary">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--secondary **" data-component="global.button-secondary">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+/*
+---
+name: Button > Tertiary
+category: 5. Component > Call to Actions
+---
+
+Types of tertiary buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--tertiary **" data-component="global.button-tertiary">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--tertiary **" data-component="global.button-tertiary">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+/*
+---
+name: Button > Dark
+category: 5. Component > Call to Actions
+---
+
+Types of dark buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--dark **" data-component="global.button-dark">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--dark **" data-component="global.button-dark">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+/*
+---
+name: Button > Light
+category: 5. Component > Call to Actions
+---
+
+Types of light buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--light **" data-component="global.button-light">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--light **" data-component="global.button-light">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+.c-button {
+  border-radius: 0; }
+  .c-button--base {
+    border: 0.0625rem solid; }
+  .c-button--default > span {
+    font-family: "Arial", sans-serif;
+    font-weight: bold; }
+  .c-button--primary {
+    background-color: #0CA0DA;
+    color: #FFF;
+    border-color: #0CA0DA; }
+    .c-button--primary:hover, .c-button--primary:focus {
+      background-color: #193E6C;
+      color: #F9F9F9; }
+    .c-button--primary:active {
+      background-color: #474646;
+      color: #000; }
+  .c-button--secondary {
+    background-color: #193E6C;
+    color: #FFF;
+    border-color: #193E6C; }
+    .c-button--secondary:hover, .c-button--secondary:focus {
+      background-color: #9D8D74;
+      color: #FFF; }
+    .c-button--secondary:active {
+      background-color: #3D6460;
+      color: #000; }
+  .c-button--tertiary {
+    background-color: #FBAC50;
+    color: #000;
+    border-color: #FBAC50; }
+    .c-button--tertiary:hover, .c-button--tertiary:focus {
+      background-color: #9D8D74;
+      color: #FFF; }
+    .c-button--tertiary:active {
+      background-color: #3D6460;
+      color: #000; }
+  .c-button--light {
+    background-color: #F5F5F5;
+    color: #000;
+    border-color: #F5F5F5; }
+    .c-button--light:hover, .c-button--light:focus {
+      background-color: #FFF;
+      color: #000; }
+    .c-button--light:active {
+      background-color: #F9F9F9;
+      color: #000; }
+  .c-button--dark {
+    background-color: #010101;
+    color: #FFF;
+    border-color: #010101; }
+    .c-button--dark:hover, .c-button--dark:focus {
+      background-color: #000;
+      color: #FFF; }
+    .c-button--dark:active {
+      background-color: #130A4F;
+      color: #FFF; }
+  @media screen and (min-width: 47.5rem) {
+    .c-button\@large--base {
+      border: 0.0625rem solid; }
+    .c-button\@large--default > span {
+      font-family: "Arial", sans-serif;
+      font-weight: bold; }
+    .c-button\@large--primary {
+      background-color: #0CA0DA;
+      color: #FFF;
+      border-color: #0CA0DA; }
+      .c-button\@large--primary:hover, .c-button\@large--primary:focus {
+        background-color: #193E6C;
+        color: #F9F9F9; }
+      .c-button\@large--primary:active {
+        background-color: #474646;
+        color: #000; }
+    .c-button\@large--secondary {
+      background-color: #193E6C;
+      color: #FFF;
+      border-color: #193E6C; }
+      .c-button\@large--secondary:hover, .c-button\@large--secondary:focus {
+        background-color: #9D8D74;
+        color: #FFF; }
+      .c-button\@large--secondary:active {
+        background-color: #3D6460;
+        color: #000; }
+    .c-button\@large--tertiary {
+      background-color: #FBAC50;
+      color: #000;
+      border-color: #FBAC50; }
+      .c-button\@large--tertiary:hover, .c-button\@large--tertiary:focus {
+        background-color: #9D8D74;
+        color: #FFF; }
+      .c-button\@large--tertiary:active {
+        background-color: #3D6460;
+        color: #000; }
+    .c-button\@large--light {
+      background-color: #F5F5F5;
+      color: #000;
+      border-color: #F5F5F5; }
+      .c-button\@large--light:hover, .c-button\@large--light:focus {
+        background-color: #FFF;
+        color: #000; }
+      .c-button\@large--light:active {
+        background-color: #F9F9F9;
+        color: #000; }
+    .c-button\@large--dark {
+      background-color: #010101;
+      color: #FFF;
+      border-color: #010101; }
+      .c-button\@large--dark:hover, .c-button\@large--dark:focus {
+        background-color: #000;
+        color: #FFF; }
+      .c-button\@large--dark:active {
+        background-color: #130A4F;
+        color: #FFF; } }
+  @media screen and (max-width: 47.5rem) {
+    .c-button\@small--base {
+      border: 0.0625rem solid; }
+    .c-button\@small--default > span {
+      font-family: "Arial", sans-serif;
+      font-weight: bold; }
+    .c-button\@small--primary {
+      background-color: #0CA0DA;
+      color: #FFF;
+      border-color: #0CA0DA; }
+      .c-button\@small--primary:hover, .c-button\@small--primary:focus {
+        background-color: #193E6C;
+        color: #F9F9F9; }
+      .c-button\@small--primary:active {
+        background-color: #474646;
+        color: #000; }
+    .c-button\@small--secondary {
+      background-color: #193E6C;
+      color: #FFF;
+      border-color: #193E6C; }
+      .c-button\@small--secondary:hover, .c-button\@small--secondary:focus {
+        background-color: #9D8D74;
+        color: #FFF; }
+      .c-button\@small--secondary:active {
+        background-color: #3D6460;
+        color: #000; }
+    .c-button\@small--tertiary {
+      background-color: #FBAC50;
+      color: #000;
+      border-color: #FBAC50; }
+      .c-button\@small--tertiary:hover, .c-button\@small--tertiary:focus {
+        background-color: #9D8D74;
+        color: #FFF; }
+      .c-button\@small--tertiary:active {
+        background-color: #3D6460;
+        color: #000; }
+    .c-button\@small--light {
+      background-color: #F5F5F5;
+      color: #000;
+      border-color: #F5F5F5; }
+      .c-button\@small--light:hover, .c-button\@small--light:focus {
+        background-color: #FFF;
+        color: #000; }
+      .c-button\@small--light:active {
+        background-color: #F9F9F9;
+        color: #000; }
+    .c-button\@small--dark {
+      background-color: #010101;
+      color: #FFF;
+      border-color: #010101; }
+      .c-button\@small--dark:hover, .c-button\@small--dark:focus {
+        background-color: #000;
+        color: #FFF; }
+      .c-button\@small--dark:active {
+        background-color: #130A4F;
+        color: #FFF; } }
+
+/*
+---
+name: Anchor
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Primary
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Secondary
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Dark
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Light
+category: 5. Component > Call to Actions
+---
+*/
+.c-anchor {
+  text-decoration: none; }
+  .c-anchor--primary {
+    color: #0CA0DA; }
+    .c-anchor--primary:focus, .c-anchor--primary:hover {
+      color: #193E6C; }
+    .c-anchor--primary:active {
+      color: #474646; }
+  .c-anchor--secondary {
+    color: #193E6C; }
+    .c-anchor--secondary:focus, .c-anchor--secondary:hover {
+      color: #9D8D74; }
+    .c-anchor--secondary:active {
+      color: #3D6460; }
+  .c-anchor--tertiary {
+    color: #FBAC50; }
+    .c-anchor--tertiary:focus, .c-anchor--tertiary:hover {
+      color: #9D8D74; }
+    .c-anchor--tertiary:active {
+      color: #3D6460; }
+  .c-anchor--dark {
+    color: #010101; }
+    .c-anchor--dark:hover, .c-anchor--dark:active {
+      color: #000; }
+    .c-anchor--dark:active {
+      color: #130A4F; }
+  .c-anchor--light {
+    color: #F5F5F5; }
+    .c-anchor--light:hover, .c-anchor--light:active {
+      color: #999; }
+    .c-anchor--light:active {
+      color: #F9F9F9; }
+  @media screen and (min-width: 47.5rem) {
+    .c-anchor\@large--primary {
+      color: #0CA0DA; }
+      .c-anchor\@large--primary:focus, .c-anchor\@large--primary:hover {
+        color: #193E6C; }
+      .c-anchor\@large--primary:active {
+        color: #474646; }
+    .c-anchor\@large--secondary {
+      color: #193E6C; }
+      .c-anchor\@large--secondary:focus, .c-anchor\@large--secondary:hover {
+        color: #9D8D74; }
+      .c-anchor\@large--secondary:active {
+        color: #3D6460; }
+    .c-anchor\@large--tertiary {
+      color: #FBAC50; }
+      .c-anchor\@large--tertiary:focus, .c-anchor\@large--tertiary:hover {
+        color: #9D8D74; }
+      .c-anchor\@large--tertiary:active {
+        color: #3D6460; }
+    .c-anchor\@large--dark {
+      color: #010101; }
+      .c-anchor\@large--dark:hover, .c-anchor\@large--dark:active {
+        color: #000; }
+      .c-anchor\@large--dark:active {
+        color: #130A4F; }
+    .c-anchor\@large--light {
+      color: #F5F5F5; }
+      .c-anchor\@large--light:hover, .c-anchor\@large--light:active {
+        color: #999; }
+      .c-anchor\@large--light:active {
+        color: #F9F9F9; } }
+  @media screen and (max-width: 47.5rem) {
+    .c-anchor\@small--primary {
+      color: #0CA0DA; }
+      .c-anchor\@small--primary:focus, .c-anchor\@small--primary:hover {
+        color: #193E6C; }
+      .c-anchor\@small--primary:active {
+        color: #474646; }
+    .c-anchor\@small--secondary {
+      color: #193E6C; }
+      .c-anchor\@small--secondary:focus, .c-anchor\@small--secondary:hover {
+        color: #9D8D74; }
+      .c-anchor\@small--secondary:active {
+        color: #3D6460; }
+    .c-anchor\@small--tertiary {
+      color: #FBAC50; }
+      .c-anchor\@small--tertiary:focus, .c-anchor\@small--tertiary:hover {
+        color: #9D8D74; }
+      .c-anchor\@small--tertiary:active {
+        color: #3D6460; }
+    .c-anchor\@small--dark {
+      color: #010101; }
+      .c-anchor\@small--dark:hover, .c-anchor\@small--dark:active {
+        color: #000; }
+      .c-anchor\@small--dark:active {
+        color: #130A4F; }
+    .c-anchor\@small--light {
+      color: #F5F5F5; }
+      .c-anchor\@small--light:hover, .c-anchor\@small--light:active {
+        color: #999; }
+      .c-anchor\@small--light:active {
+        color: #F9F9F9; } }
+
+.c-button[disabled], .c-button[disabled]:hover, .c-button[disabled]:focus, .c-button[disabled]:active, .c-button.-disabled {
+  background-color: #CCC !important;
+  border-color: #CCC;
+  color: rgba(1, 1, 1, 0.7) !important;
+  cursor: default; }
+
+.c-button {
+  font-family: "Arial", sans-serif;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none; }
+
+/*
+---
+name: Button
+category: 5. Component > Call to Actions
+---
+
+Buttons can be used with `<a>`, `<button>`, and `<input>` elements.
+
+Types of buttons:
+- Default: Standard button
+
+```types.html
+<button class="c-button c-button--default c-button--base c-button--primary">Primary</button>
+```
+*/
+/*
+---
+name: Button Large
+category: 5. Component > Call to Actions
+---
+
+Styles for buttons at large screens Buttons can be used with `<a>`, `<button>`, and `<input>` elements. See [Suffixcate](/#suffixcate) for details.
+
+Can be applied to:
+- Default
+- Base
+- Primary
+- Secondary
+- Teritary
+- Dark
+- Light
+
+```base-and-default.html
+<button class="c-button@large c-button@large--default c-button@large--base">Button</button>
+```
+
+```primary.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--primary">Button</button>
+```
+
+```secondary.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--secondary">Button</button>
+```
+
+```tertiary.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--tertiary">Button</button>
+```
+
+```dark.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--dark">Button</button>
+```
+
+```light.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--light">Button</button>
+```
+
+*/
+/*
+---
+name: Button Small
+category: 5. Component > Call to Actions
+---
+
+Styles for buttons at small screens Buttons can be used with `<a>`, `<button>`, and `<input>` elements. See [Suffixcate](/#suffixcate) for details.
+
+Can be applied to:
+- Default
+- Base
+- Primary
+- Secondary
+- Teritary
+- Dark
+- Light
+
+```base-and-default.html
+<button class="c-button@small c-button@small--default c-button@small--base">Button</button>
+```
+
+```primary.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--primary">Button</button>
+```
+
+```secondary.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--secondary">Button</button>
+```
+
+```tertiary.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--tertiary">Button</button>
+```
+
+```dark.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--dark">Button</button>
+```
+
+```light.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--light">Button</button>
+```
+
+*/
+/*
+---
+name: Button > Primary
+category: 5. Component > Call to Actions
+---
+
+Types of primary buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--primary **" data-component="global.button-primary">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--primary **" data-component="global.button-primary">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+/*
+---
+name: Button > Secondary
+category: 5. Component > Call to Actions
+---
+
+Types of secondary buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--secondary **" data-component="global.button-secondary">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--secondary **" data-component="global.button-secondary">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+/*
+---
+name: Button > Tertiary
+category: 5. Component > Call to Actions
+---
+
+Types of tertiary buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--tertiary **" data-component="global.button-tertiary">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--tertiary **" data-component="global.button-tertiary">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+/*
+---
+name: Button > Dark
+category: 5. Component > Call to Actions
+---
+
+Types of dark buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--dark **" data-component="global.button-dark">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--dark **" data-component="global.button-dark">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+/*
+---
+name: Button > Light
+category: 5. Component > Call to Actions
+---
+
+Types of light buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--light **" data-component="global.button-light">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--light **" data-component="global.button-light">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+.c-button {
+  border-radius: 0; }
+  .c-button--base {
+    border: 0.0625rem solid; }
+  .c-button--default > span {
+    font-family: "Arial", sans-serif;
+    font-weight: bold; }
+  .c-button--primary {
+    background-color: #0CA0DA;
+    color: #FFF;
+    border-color: #0CA0DA; }
+    .c-button--primary:hover, .c-button--primary:focus {
+      background-color: #193E6C;
+      color: #F9F9F9; }
+    .c-button--primary:active {
+      background-color: #474646;
+      color: #000; }
+  .c-button--secondary {
+    background-color: #193E6C;
+    color: #FFF;
+    border-color: #193E6C; }
+    .c-button--secondary:hover, .c-button--secondary:focus {
+      background-color: #9D8D74;
+      color: #FFF; }
+    .c-button--secondary:active {
+      background-color: #3D6460;
+      color: #000; }
+  .c-button--tertiary {
+    background-color: #FBAC50;
+    color: #000;
+    border-color: #FBAC50; }
+    .c-button--tertiary:hover, .c-button--tertiary:focus {
+      background-color: #9D8D74;
+      color: #FFF; }
+    .c-button--tertiary:active {
+      background-color: #3D6460;
+      color: #000; }
+  .c-button--light {
+    background-color: #F5F5F5;
+    color: #000;
+    border-color: #F5F5F5; }
+    .c-button--light:hover, .c-button--light:focus {
+      background-color: #FFF;
+      color: #000; }
+    .c-button--light:active {
+      background-color: #F9F9F9;
+      color: #000; }
+  .c-button--dark {
+    background-color: #010101;
+    color: #FFF;
+    border-color: #010101; }
+    .c-button--dark:hover, .c-button--dark:focus {
+      background-color: #000;
+      color: #FFF; }
+    .c-button--dark:active {
+      background-color: #130A4F;
+      color: #FFF; }
+  @media screen and (min-width: 47.5rem) {
+    .c-button\@large--base {
+      border: 0.0625rem solid; }
+    .c-button\@large--default > span {
+      font-family: "Arial", sans-serif;
+      font-weight: bold; }
+    .c-button\@large--primary {
+      background-color: #0CA0DA;
+      color: #FFF;
+      border-color: #0CA0DA; }
+      .c-button\@large--primary:hover, .c-button\@large--primary:focus {
+        background-color: #193E6C;
+        color: #F9F9F9; }
+      .c-button\@large--primary:active {
+        background-color: #474646;
+        color: #000; }
+    .c-button\@large--secondary {
+      background-color: #193E6C;
+      color: #FFF;
+      border-color: #193E6C; }
+      .c-button\@large--secondary:hover, .c-button\@large--secondary:focus {
+        background-color: #9D8D74;
+        color: #FFF; }
+      .c-button\@large--secondary:active {
+        background-color: #3D6460;
+        color: #000; }
+    .c-button\@large--tertiary {
+      background-color: #FBAC50;
+      color: #000;
+      border-color: #FBAC50; }
+      .c-button\@large--tertiary:hover, .c-button\@large--tertiary:focus {
+        background-color: #9D8D74;
+        color: #FFF; }
+      .c-button\@large--tertiary:active {
+        background-color: #3D6460;
+        color: #000; }
+    .c-button\@large--light {
+      background-color: #F5F5F5;
+      color: #000;
+      border-color: #F5F5F5; }
+      .c-button\@large--light:hover, .c-button\@large--light:focus {
+        background-color: #FFF;
+        color: #000; }
+      .c-button\@large--light:active {
+        background-color: #F9F9F9;
+        color: #000; }
+    .c-button\@large--dark {
+      background-color: #010101;
+      color: #FFF;
+      border-color: #010101; }
+      .c-button\@large--dark:hover, .c-button\@large--dark:focus {
+        background-color: #000;
+        color: #FFF; }
+      .c-button\@large--dark:active {
+        background-color: #130A4F;
+        color: #FFF; } }
+  @media screen and (max-width: 47.5rem) {
+    .c-button\@small--base {
+      border: 0.0625rem solid; }
+    .c-button\@small--default > span {
+      font-family: "Arial", sans-serif;
+      font-weight: bold; }
+    .c-button\@small--primary {
+      background-color: #0CA0DA;
+      color: #FFF;
+      border-color: #0CA0DA; }
+      .c-button\@small--primary:hover, .c-button\@small--primary:focus {
+        background-color: #193E6C;
+        color: #F9F9F9; }
+      .c-button\@small--primary:active {
+        background-color: #474646;
+        color: #000; }
+    .c-button\@small--secondary {
+      background-color: #193E6C;
+      color: #FFF;
+      border-color: #193E6C; }
+      .c-button\@small--secondary:hover, .c-button\@small--secondary:focus {
+        background-color: #9D8D74;
+        color: #FFF; }
+      .c-button\@small--secondary:active {
+        background-color: #3D6460;
+        color: #000; }
+    .c-button\@small--tertiary {
+      background-color: #FBAC50;
+      color: #000;
+      border-color: #FBAC50; }
+      .c-button\@small--tertiary:hover, .c-button\@small--tertiary:focus {
+        background-color: #9D8D74;
+        color: #FFF; }
+      .c-button\@small--tertiary:active {
+        background-color: #3D6460;
+        color: #000; }
+    .c-button\@small--light {
+      background-color: #F5F5F5;
+      color: #000;
+      border-color: #F5F5F5; }
+      .c-button\@small--light:hover, .c-button\@small--light:focus {
+        background-color: #FFF;
+        color: #000; }
+      .c-button\@small--light:active {
+        background-color: #F9F9F9;
+        color: #000; }
+    .c-button\@small--dark {
+      background-color: #010101;
+      color: #FFF;
+      border-color: #010101; }
+      .c-button\@small--dark:hover, .c-button\@small--dark:focus {
+        background-color: #000;
+        color: #FFF; }
+      .c-button\@small--dark:active {
+        background-color: #130A4F;
+        color: #FFF; } }
+
+/*
+---
+name: Anchor
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Primary
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Secondary
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Dark
+category: 5. Component > Call to Actions
+---
+*/
+/*
+---
+name: Anchor > Light
+category: 5. Component > Call to Actions
+---
+*/
+.c-anchor {
+  text-decoration: none; }
+  .c-anchor--primary {
+    color: #0CA0DA; }
+    .c-anchor--primary:focus, .c-anchor--primary:hover {
+      color: #193E6C; }
+    .c-anchor--primary:active {
+      color: #474646; }
+  .c-anchor--secondary {
+    color: #193E6C; }
+    .c-anchor--secondary:focus, .c-anchor--secondary:hover {
+      color: #9D8D74; }
+    .c-anchor--secondary:active {
+      color: #3D6460; }
+  .c-anchor--tertiary {
+    color: #FBAC50; }
+    .c-anchor--tertiary:focus, .c-anchor--tertiary:hover {
+      color: #9D8D74; }
+    .c-anchor--tertiary:active {
+      color: #3D6460; }
+  .c-anchor--dark {
+    color: #010101; }
+    .c-anchor--dark:hover, .c-anchor--dark:active {
+      color: #000; }
+    .c-anchor--dark:active {
+      color: #130A4F; }
+  .c-anchor--light {
+    color: #F5F5F5; }
+    .c-anchor--light:hover, .c-anchor--light:active {
+      color: #999; }
+    .c-anchor--light:active {
+      color: #F9F9F9; }
+  @media screen and (min-width: 47.5rem) {
+    .c-anchor\@large--primary {
+      color: #0CA0DA; }
+      .c-anchor\@large--primary:focus, .c-anchor\@large--primary:hover {
+        color: #193E6C; }
+      .c-anchor\@large--primary:active {
+        color: #474646; }
+    .c-anchor\@large--secondary {
+      color: #193E6C; }
+      .c-anchor\@large--secondary:focus, .c-anchor\@large--secondary:hover {
+        color: #9D8D74; }
+      .c-anchor\@large--secondary:active {
+        color: #3D6460; }
+    .c-anchor\@large--tertiary {
+      color: #FBAC50; }
+      .c-anchor\@large--tertiary:focus, .c-anchor\@large--tertiary:hover {
+        color: #9D8D74; }
+      .c-anchor\@large--tertiary:active {
+        color: #3D6460; }
+    .c-anchor\@large--dark {
+      color: #010101; }
+      .c-anchor\@large--dark:hover, .c-anchor\@large--dark:active {
+        color: #000; }
+      .c-anchor\@large--dark:active {
+        color: #130A4F; }
+    .c-anchor\@large--light {
+      color: #F5F5F5; }
+      .c-anchor\@large--light:hover, .c-anchor\@large--light:active {
+        color: #999; }
+      .c-anchor\@large--light:active {
+        color: #F9F9F9; } }
+  @media screen and (max-width: 47.5rem) {
+    .c-anchor\@small--primary {
+      color: #0CA0DA; }
+      .c-anchor\@small--primary:focus, .c-anchor\@small--primary:hover {
+        color: #193E6C; }
+      .c-anchor\@small--primary:active {
+        color: #474646; }
+    .c-anchor\@small--secondary {
+      color: #193E6C; }
+      .c-anchor\@small--secondary:focus, .c-anchor\@small--secondary:hover {
+        color: #9D8D74; }
+      .c-anchor\@small--secondary:active {
+        color: #3D6460; }
+    .c-anchor\@small--tertiary {
+      color: #FBAC50; }
+      .c-anchor\@small--tertiary:focus, .c-anchor\@small--tertiary:hover {
+        color: #9D8D74; }
+      .c-anchor\@small--tertiary:active {
+        color: #3D6460; }
+    .c-anchor\@small--dark {
+      color: #010101; }
+      .c-anchor\@small--dark:hover, .c-anchor\@small--dark:active {
+        color: #000; }
+      .c-anchor\@small--dark:active {
+        color: #130A4F; }
+    .c-anchor\@small--light {
+      color: #F5F5F5; }
+      .c-anchor\@small--light:hover, .c-anchor\@small--light:active {
+        color: #999; }
+      .c-anchor\@small--light:active {
+        color: #F9F9F9; } }
 
 .c-input, .c-textarea, .c-select, .c-select__input, .c-radio__input, .c-checkbox__input {
   outline: none;

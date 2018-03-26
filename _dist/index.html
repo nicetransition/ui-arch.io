@@ -30,9 +30,11 @@
 									<option value="pixel-to-rem">Pixel to REM</option>
 									<option value="string-replace">String Replace</option>
 									<option value="string-to-number">String to Number</option>
+									<option value="suffixcate">Suffixcate</option>
 									<option value="to-string">To String</option>
 							</optgroup>
 							<optgroup label="1. Tools &gt; Mixin">
+									<option value="disable-select">Disable Select</option>
 									<option value="disable-select">Disable Select</option>
 							</optgroup>
 							<optgroup label="2. Generic">
@@ -65,16 +67,34 @@
 							</optgroup>
 							<optgroup label="5. Component &gt; Call to Actions">
 									<option value="anchor">Anchor</option>
+									<option value="anchor">Anchor</option>
+									<option value="anchor-dark">Anchor > Dark</option>
 									<option value="anchor-dark">Anchor > Dark</option>
 									<option value="anchor-light">Anchor > Light</option>
+									<option value="anchor-light">Anchor > Light</option>
+									<option value="anchor-primary">Anchor > Primary</option>
 									<option value="anchor-primary">Anchor > Primary</option>
 									<option value="anchor-secondary">Anchor > Secondary</option>
+									<option value="anchor-secondary">Anchor > Secondary</option>
+									<option value="button">Button</option>
 									<option value="button">Button</option>
 									<option value="button-dark">Button > Dark</option>
-									<option value="button-icon">Button > Icon</option>
+									<option value="button-dark">Button > Dark</option>
+									<option value="button-light">Button > Light</option>
 									<option value="button-light">Button > Light</option>
 									<option value="button-primary">Button > Primary</option>
+									<option value="button-primary">Button > Primary</option>
 									<option value="button-secondary">Button > Secondary</option>
+									<option value="button-secondary">Button > Secondary</option>
+									<option value="button-tertiary">Button > Tertiary</option>
+									<option value="button-tertiary">Button > Tertiary</option>
+									<option value="button-base">Button Base</option>
+									<option value="button-default">Button Default</option>
+									<option value="button-large">Button Large</option>
+									<option value="button-large">Button Large</option>
+									<option value="button-small">Button Small</option>
+									<option value="button-small">Button Small</option>
+									<option value="click-area">Click area</option>
 							</optgroup>
 							<optgroup label="5. Component &gt; Form">
 									<option value="branded-label">Branded Label</option>
@@ -98,6 +118,8 @@
 							</optgroup>
 							<optgroup label="5. Component &gt; Typography">
 									<option value="font-sizes">Font Sizes</option>
+									<option value="title-block">Title Block</option>
+									<option value="title-core-styles">Title Core Styles</option>
 							</optgroup>
 							<optgroup label="5. Generic">
 									<option value="resets">Resets</option>
@@ -270,6 +292,69 @@
 </div></div>
 </div>
 
+						<div id="suffixcate" class="i-library">
+	<h1 class="display-4">Suffixcate</h1>
+	<div><p>Extends selectos to target small and large screens.</p>
+<p><a href="https://codepen.io/nicetransition/pen/BjgwER">See details</a>.</p>
+<ul>
+<li><code>@large</code>: Suffix applied to your targeted &quot;larger&quot; viewports.</li>
+<li><code>@small</code>: Suffix applied to your targeted &quot;small&quot; viewports.</li>
+</ul>
+<p>Usage:</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".selector-name {
+    @suffixcate {
+        color: red;
+    }
+}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">.selector-name {
+    @suffixcate {
+        color: red;
+    }
+}</code></pre>
+	</div>
+</div><p>Output:</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".selector-name {
+  color: red;
+}
+
+@media screen and (min-width: #{$bp-large}) {
+  .selector-name\@large {
+    color: red;
+  }
+}
+
+@media screen and (max-width: #{$bp-large}) {
+  .selector-name\@small {
+    color: red;
+  }
+}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">.selector-name {
+  color: red;
+}
+
+@media screen and (min-width: #{$bp-large}) {
+  .selector-name\@large {
+    color: red;
+  }
+}
+
+@media screen and (max-width: #{$bp-large}) {
+  .selector-name\@small {
+    color: red;
+  }
+}</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="to-string" class="i-library">
 	<h1 class="display-4">To String</h1>
 	<div><p>Casting to a string has to be the easiest type of all thanks to the brand new inspect function from Sass 3.3 which does exactly that: casting to string.</p>
@@ -293,6 +378,28 @@
 
 				</div>
 				<div id="category-1. tools &gt; mixin">
+						<div id="disable-select" class="i-library">
+	<h1 class="display-4">Disable Select</h1>
+	<div><p>Removal of selecting an element on the page. </p>
+<ul>
+<li><code>.u-disable-select</code> - Utility helper</li>
+<li><code>a</code>, <code>button</code>, <code>label</code>, <code>legend</code> - Default have disable select added if <code>$includeResets</code> is <code>true</code> (<code>~/global/00-settings.scss</code>)</li>
+</ul>
+<p>Usage:</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> </button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text=".select-name {
+    @include disable-select;
+}" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">.select-name {
+    @include disable-select;
+}</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="disable-select" class="i-library">
 	<h1 class="display-4">Disable Select</h1>
 	<div><p>Removal of selecting an element on the page. </p>
@@ -461,6 +568,16 @@
 	<div></div>
 </div>
 
+						<div id="anchor" class="i-library">
+	<h1 class="display-4">Anchor</h1>
+	<div></div>
+</div>
+
+						<div id="anchor-dark" class="i-library">
+	<h1 class="display-4">Anchor &gt; Dark</h1>
+	<div></div>
+</div>
+
 						<div id="anchor-dark" class="i-library">
 	<h1 class="display-4">Anchor &gt; Dark</h1>
 	<div></div>
@@ -471,8 +588,23 @@
 	<div></div>
 </div>
 
+						<div id="anchor-light" class="i-library">
+	<h1 class="display-4">Anchor &gt; Light</h1>
+	<div></div>
+</div>
+
 						<div id="anchor-primary" class="i-library">
 	<h1 class="display-4">Anchor &gt; Primary</h1>
+	<div></div>
+</div>
+
+						<div id="anchor-primary" class="i-library">
+	<h1 class="display-4">Anchor &gt; Primary</h1>
+	<div></div>
+</div>
+
+						<div id="anchor-secondary" class="i-library">
+	<h1 class="display-4">Anchor &gt; Secondary</h1>
 	<div></div>
 </div>
 
@@ -520,19 +652,379 @@
 </div></div>
 </div>
 
-						<div id="button-dark" class="i-library">
-	<h1 class="display-4">Button &gt; Dark</h1>
-	<div></div>
+						<div id="button" class="i-library">
+	<h1 class="display-4">Button</h1>
+	<div><p>Buttons can be used with <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input&gt;</code> elements.</p>
+<p>Types of buttons:</p>
+<ul>
+<li>Default: Standard button</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-types.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-types.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button c-button--default c-button--base c-button--primary&quot;&gt;Primary&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button c-button--default c-button--base c-button--primary&quot;&gt;Primary&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
 </div>
 
-						<div id="button-icon" class="i-library">
-	<h1 class="display-4">Button &gt; Icon</h1>
-	<div></div>
+						<div id="button-dark" class="i-library">
+	<h1 class="display-4">Button &gt; Dark</h1>
+	<div><p>Types of dark buttons</p>
+<ul>
+<li>Core: Base styles</li>
+<li>Default: Spacing and alignment</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-dark-core.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-dark-core.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;**-button c-button--dark **&quot; data-component=&quot;global.button-dark&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;**-button c-button--dark **&quot; data-component=&quot;global.button-dark&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-dark-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-dark-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--dark **&quot; data-component=&quot;global.button-dark&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--dark **&quot; data-component=&quot;global.button-dark&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="button-dark" class="i-library">
+	<h1 class="display-4">Button &gt; Dark</h1>
+	<div><p>Types of dark buttons</p>
+<ul>
+<li>Core: Base styles</li>
+<li>Default: Spacing and alignment</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-dark-core.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-dark-core.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;**-button c-button--dark **&quot; data-component=&quot;global.button-dark&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;**-button c-button--dark **&quot; data-component=&quot;global.button-dark&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-dark-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-dark-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--dark **&quot; data-component=&quot;global.button-dark&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--dark **&quot; data-component=&quot;global.button-dark&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
 </div>
 
 						<div id="button-light" class="i-library">
 	<h1 class="display-4">Button &gt; Light</h1>
-	<div></div>
+	<div><p>Types of light buttons</p>
+<ul>
+<li>Core: Base styles</li>
+<li>Default: Spacing and alignment</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-light-core.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-light-core.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;**-button c-button--light **&quot; data-component=&quot;global.button-light&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;**-button c-button--light **&quot; data-component=&quot;global.button-light&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-light-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-light-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--light **&quot; data-component=&quot;global.button-light&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--light **&quot; data-component=&quot;global.button-light&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="button-light" class="i-library">
+	<h1 class="display-4">Button &gt; Light</h1>
+	<div><p>Types of light buttons</p>
+<ul>
+<li>Core: Base styles</li>
+<li>Default: Spacing and alignment</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-light-core.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-light-core.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;**-button c-button--light **&quot; data-component=&quot;global.button-light&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;**-button c-button--light **&quot; data-component=&quot;global.button-light&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-light-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-light-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--light **&quot; data-component=&quot;global.button-light&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--light **&quot; data-component=&quot;global.button-light&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
 </div>
 
 						<div id="button-primary" class="i-library">
@@ -568,14 +1060,14 @@
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;** c-button c-button--primary **&quot; data-component=&quot;global.button-primary&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;**-button c-button--primary **&quot; data-component=&quot;global.button-primary&quot;&gt;
     &lt;span&gt;
-        Span is required
+       Button
     &lt;/span&gt;
 &lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;** c-button c-button--primary **&quot; data-component=&quot;global.button-primary&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;**-button c-button--primary **&quot; data-component=&quot;global.button-primary&quot;&gt;
     &lt;span&gt;
-        Span is required
+       Button
     &lt;/span&gt;
 &lt;/button&gt;</code></pre>
 	</div>
@@ -605,14 +1097,98 @@
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;** c-button c-button--primary c-button--default **&quot; data-component=&quot;global.button-primary&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--primary **&quot; data-component=&quot;global.button-primary&quot;&gt;
     &lt;span&gt;
-        Span is required
+        Button
     &lt;/span&gt;
 &lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;** c-button c-button--primary c-button--default **&quot; data-component=&quot;global.button-primary&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--primary **&quot; data-component=&quot;global.button-primary&quot;&gt;
     &lt;span&gt;
-        Span is required
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="button-primary" class="i-library">
+	<h1 class="display-4">Button &gt; Primary</h1>
+	<div><p>Types of primary buttons</p>
+<ul>
+<li>Core: Base styles</li>
+<li>Default: Spacing and alignment</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-primary-core.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-primary-core.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;**-button c-button--primary **&quot; data-component=&quot;global.button-primary&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;**-button c-button--primary **&quot; data-component=&quot;global.button-primary&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-primary-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-primary-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--primary **&quot; data-component=&quot;global.button-primary&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--primary **&quot; data-component=&quot;global.button-primary&quot;&gt;
+    &lt;span&gt;
+        Button
     &lt;/span&gt;
 &lt;/button&gt;</code></pre>
 	</div>
@@ -652,14 +1228,14 @@
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;** c-button c-button--secondary **&quot; data-component=&quot;global.button-primary&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;**-button c-button--secondary **&quot; data-component=&quot;global.button-secondary&quot;&gt;
     &lt;span&gt;
-        Span is required
+       Button
     &lt;/span&gt;
 &lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;** c-button c-button--secondary **&quot; data-component=&quot;global.button-primary&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;**-button c-button--secondary **&quot; data-component=&quot;global.button-secondary&quot;&gt;
     &lt;span&gt;
-        Span is required
+       Button
     &lt;/span&gt;
 &lt;/button&gt;</code></pre>
 	</div>
@@ -689,16 +1265,1141 @@
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;** c-button c-button--secondary c-button--default **&quot; data-component=&quot;global.button-primary&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--secondary **&quot; data-component=&quot;global.button-secondary&quot;&gt;
     &lt;span&gt;
-        Span is required
+        Button
     &lt;/span&gt;
 &lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;** c-button c-button--secondary c-button--default **&quot; data-component=&quot;global.button-primary&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--secondary **&quot; data-component=&quot;global.button-secondary&quot;&gt;
     &lt;span&gt;
-        Span is required
+        Button
     &lt;/span&gt;
 &lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="button-secondary" class="i-library">
+	<h1 class="display-4">Button &gt; Secondary</h1>
+	<div><p>Types of secondary buttons</p>
+<ul>
+<li>Core: Base styles</li>
+<li>Default: Spacing and alignment</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-secondary-core.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-secondary-core.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;**-button c-button--secondary **&quot; data-component=&quot;global.button-secondary&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;**-button c-button--secondary **&quot; data-component=&quot;global.button-secondary&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-secondary-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-secondary-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--secondary **&quot; data-component=&quot;global.button-secondary&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--secondary **&quot; data-component=&quot;global.button-secondary&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="button-tertiary" class="i-library">
+	<h1 class="display-4">Button &gt; Tertiary</h1>
+	<div><p>Types of tertiary buttons</p>
+<ul>
+<li>Core: Base styles</li>
+<li>Default: Spacing and alignment</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-tertiary-core.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-tertiary-core.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;**-button c-button--tertiary **&quot; data-component=&quot;global.button-tertiary&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;**-button c-button--tertiary **&quot; data-component=&quot;global.button-tertiary&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-tertiary-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-tertiary-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--tertiary **&quot; data-component=&quot;global.button-tertiary&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--tertiary **&quot; data-component=&quot;global.button-tertiary&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="button-tertiary" class="i-library">
+	<h1 class="display-4">Button &gt; Tertiary</h1>
+	<div><p>Types of tertiary buttons</p>
+<ul>
+<li>Core: Base styles</li>
+<li>Default: Spacing and alignment</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-tertiary-core.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-tertiary-core.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;**-button c-button--tertiary **&quot; data-component=&quot;global.button-tertiary&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;**-button c-button--tertiary **&quot; data-component=&quot;global.button-tertiary&quot;&gt;
+    &lt;span&gt;
+       Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-tertiary-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-tertiary-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--tertiary **&quot; data-component=&quot;global.button-tertiary&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;** c-button  c-button--base c-button--default c-button--tertiary **&quot; data-component=&quot;global.button-tertiary&quot;&gt;
+    &lt;span&gt;
+        Button
+    &lt;/span&gt;
+&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="button-base" class="i-library">
+	<h1 class="display-4">Button Base</h1>
+	<div><p>Basic setup of a button, applied to &quot;all buttons&quot;. Buttons can be used with <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input&gt;</code> elements.</p>
+<p>Types of buttons:</p>
+<ul>
+<li>Default: Standard button</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-base-base.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-base-base.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button c-button--base&quot;&gt;Base&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button c-button--base&quot;&gt;Base&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="button-default" class="i-library">
+	<h1 class="display-4">Button Default</h1>
+	<div><p>Default settings for a traditional button - including spacing. Buttons can be used with <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input&gt;</code> elements.</p>
+<p>Types of buttons:</p>
+<ul>
+<li>Default: Standard button</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-default-base.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-default-base.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button c-button--base&quot;&gt;Base&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button c-button--base&quot;&gt;Base&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="button-large" class="i-library">
+	<h1 class="display-4">Button Large</h1>
+	<div><p>Styles for buttons at large screens Buttons can be used with <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input&gt;</code> elements. See <a href="/#suffixcate">Suffixcate</a> for details.</p>
+<p>Can be applied to:</p>
+<ul>
+<li>Default</li>
+<li>Base</li>
+<li>Primary</li>
+<li>Secondary</li>
+<li>Teritary</li>
+<li>Dark</li>
+<li>Light</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-large-base-and-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-large-base-and-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-large-primary.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-large-primary.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--primary&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--primary&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-large-secondary.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-large-secondary.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--secondary&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--secondary&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-large-tertiary.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-large-tertiary.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--tertiary&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--tertiary&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-large-dark.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-large-dark.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--dark&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--dark&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-large-light.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-large-light.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--light&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--light&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="button-large" class="i-library">
+	<h1 class="display-4">Button Large</h1>
+	<div><p>Styles for buttons at large screens Buttons can be used with <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input&gt;</code> elements. See <a href="/#suffixcate">Suffixcate</a> for details.</p>
+<p>Can be applied to:</p>
+<ul>
+<li>Default</li>
+<li>Base</li>
+<li>Primary</li>
+<li>Secondary</li>
+<li>Teritary</li>
+<li>Dark</li>
+<li>Light</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-large-base-and-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-large-base-and-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-large-primary.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-large-primary.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--primary&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--primary&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-large-secondary.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-large-secondary.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--secondary&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--secondary&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-large-tertiary.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-large-tertiary.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--tertiary&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--tertiary&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-large-dark.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-large-dark.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--dark&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--dark&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-large-light.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-large-light.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--light&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@large c-button@large--default c-button@large--base c-button@large--light&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="button-small" class="i-library">
+	<h1 class="display-4">Button Small</h1>
+	<div><p>Styles for buttons at small screens Buttons can be used with <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input&gt;</code> elements. See <a href="/#suffixcate">Suffixcate</a> for details.</p>
+<p>Can be applied to:</p>
+<ul>
+<li>Default</li>
+<li>Base</li>
+<li>Primary</li>
+<li>Secondary</li>
+<li>Teritary</li>
+<li>Dark</li>
+<li>Light</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-small-base-and-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-small-base-and-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-small-primary.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-small-primary.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--primary&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--primary&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-small-secondary.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-small-secondary.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--secondary&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--secondary&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-small-tertiary.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-small-tertiary.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--tertiary&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--tertiary&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-small-dark.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-small-dark.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--dark&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--dark&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-small-light.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-small-light.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--light&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--light&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="button-small" class="i-library">
+	<h1 class="display-4">Button Small</h1>
+	<div><p>Styles for buttons at small screens Buttons can be used with <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;input&gt;</code> elements. See <a href="/#suffixcate">Suffixcate</a> for details.</p>
+<p>Can be applied to:</p>
+<ul>
+<li>Default</li>
+<li>Base</li>
+<li>Primary</li>
+<li>Secondary</li>
+<li>Teritary</li>
+<li>Dark</li>
+<li>Light</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-small-base-and-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-small-base-and-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-small-primary.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-small-primary.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--primary&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--primary&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-small-secondary.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-small-secondary.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--secondary&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--secondary&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-small-tertiary.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-small-tertiary.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--tertiary&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--tertiary&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-small-dark.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-small-dark.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--dark&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--dark&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div><div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="button-small-light.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="button-small-light.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--light&quot;&gt;Button&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-button@small c-button@small--default c-button@small--base c-button@small--light&quot;&gt;Button&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="click-area" class="i-library">
+	<h1 class="display-4">Click area</h1>
+	<div><p>Minimum click area being <code>40x40</code></p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="click-area-base.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="click-area-base.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;c-click-area || u-dis-ib&quot;&gt;40x40&lt;/button&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;c-click-area || u-dis-ib&quot;&gt;40x40&lt;/button&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -1237,6 +2938,90 @@
 </div>
 </div>
 
+						<div id="title-block" class="i-library">
+	<h1 class="display-4">Title Block</h1>
+	<div><p>Spacing for title blocks between headers and subheaders</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="title-block-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="title-block-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;hgroup class=&quot;c-title-block&quot;&gt;
+    &lt;h1 class=&quot;c-title-block__header&quot;&gt;
+        Header
+    &lt;/h1&gt;
+    &lt;h2 class=&quot;c-title-block__subheader&quot;&gt;
+        Subheader
+    &lt;/h2&gt;
+&lt;/hgroup&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;hgroup class=&quot;c-title-block&quot;&gt;
+    &lt;h1 class=&quot;c-title-block__header&quot;&gt;
+        Header
+    &lt;/h1&gt;
+    &lt;h2 class=&quot;c-title-block__subheader&quot;&gt;
+        Subheader
+    &lt;/h2&gt;
+&lt;/hgroup&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="title-core-styles" class="i-library">
+	<h1 class="display-4">Title Core Styles</h1>
+	<div><p>Provides better legibility and kerning across browsers. Can be used on any element that has text as content.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="title-core-styles-default.html"
+                            target="_blank"
+                            class="fa fa-external-link-square fa-fw plain-link"
+                            title="Open in a new window"
+                        ></a>
+                        Example
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="title-core-styles-default.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;c-title&quot;&gt;Text styles&lt;/span&gt;" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;c-title&quot;&gt;Text styles&lt;/span&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 				</div>
 				<div id="category-5. generic">
 						<div id="resets" class="i-library">
@@ -1744,7 +3529,7 @@
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Pixel to EM  Pixel to REM  String Replace  String to Number  To String "
+						data-filter-value=" Pixel to EM  Pixel to REM  String Replace  String to Number  Suffixcate  To String "
 					>
 						<a href="#category-1. tools &gt; functions" class="i-sidebar-list-item">
 							<b>1. Tools &gt; Functions</b>
@@ -1781,6 +3566,13 @@
 								<span>String to Number</span>
 							</a>
 							<a
+								href="#suffixcate"
+								class="i-sidebar-list-item"
+								data-filter-value="Suffixcate"
+							>
+								<span>Suffixcate</span>
+							</a>
+							<a
 								href="#to-string"
 								class="i-sidebar-list-item"
 								data-filter-value="To String"
@@ -1794,7 +3586,7 @@
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Disable Select "
+						data-filter-value=" Disable Select  Disable Select "
 					>
 						<a href="#category-1. tools &gt; mixin" class="i-sidebar-list-item">
 							<b>1. Tools &gt; Mixin</b>
@@ -1802,6 +3594,13 @@
 					</h5>
 			
 					<div>
+							<a
+								href="#disable-select"
+								class="i-sidebar-list-item"
+								data-filter-value="Disable Select"
+							>
+								<span>Disable Select</span>
+							</a>
 							<a
 								href="#disable-select"
 								class="i-sidebar-list-item"
@@ -2016,7 +3815,7 @@
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Anchor  Anchor &gt; Dark  Anchor &gt; Light  Anchor &gt; Primary  Anchor &gt; Secondary  Button  Button &gt; Dark  Button &gt; Icon  Button &gt; Light  Button &gt; Primary  Button &gt; Secondary "
+						data-filter-value=" Anchor  Anchor  Anchor &gt; Dark  Anchor &gt; Dark  Anchor &gt; Light  Anchor &gt; Light  Anchor &gt; Primary  Anchor &gt; Primary  Anchor &gt; Secondary  Anchor &gt; Secondary  Button  Button  Button &gt; Dark  Button &gt; Dark  Button &gt; Light  Button &gt; Light  Button &gt; Primary  Button &gt; Primary  Button &gt; Secondary  Button &gt; Secondary  Button &gt; Tertiary  Button &gt; Tertiary  Button Base  Button Default  Button Large  Button Large  Button Small  Button Small  Click area "
 					>
 						<a href="#category-5. component &gt; call to actions" class="i-sidebar-list-item">
 							<b>5. Component &gt; Call to Actions</b>
@@ -2030,6 +3829,20 @@
 								data-filter-value="Anchor"
 							>
 								<span>Anchor</span>
+							</a>
+							<a
+								href="#anchor"
+								class="i-sidebar-list-item"
+								data-filter-value="Anchor"
+							>
+								<span>Anchor</span>
+							</a>
+							<a
+								href="#anchor-dark"
+								class="i-sidebar-list-item"
+								data-filter-value="Anchor &gt; Dark"
+							>
+								<span>Anchor &gt; Dark</span>
 							</a>
 							<a
 								href="#anchor-dark"
@@ -2046,11 +3859,32 @@
 								<span>Anchor &gt; Light</span>
 							</a>
 							<a
+								href="#anchor-light"
+								class="i-sidebar-list-item"
+								data-filter-value="Anchor &gt; Light"
+							>
+								<span>Anchor &gt; Light</span>
+							</a>
+							<a
 								href="#anchor-primary"
 								class="i-sidebar-list-item"
 								data-filter-value="Anchor &gt; Primary"
 							>
 								<span>Anchor &gt; Primary</span>
+							</a>
+							<a
+								href="#anchor-primary"
+								class="i-sidebar-list-item"
+								data-filter-value="Anchor &gt; Primary"
+							>
+								<span>Anchor &gt; Primary</span>
+							</a>
+							<a
+								href="#anchor-secondary"
+								class="i-sidebar-list-item"
+								data-filter-value="Anchor &gt; Secondary"
+							>
+								<span>Anchor &gt; Secondary</span>
 							</a>
 							<a
 								href="#anchor-secondary"
@@ -2067,6 +3901,13 @@
 								<span>Button</span>
 							</a>
 							<a
+								href="#button"
+								class="i-sidebar-list-item"
+								data-filter-value="Button"
+							>
+								<span>Button</span>
+							</a>
+							<a
 								href="#button-dark"
 								class="i-sidebar-list-item"
 								data-filter-value="Button &gt; Dark"
@@ -2074,11 +3915,18 @@
 								<span>Button &gt; Dark</span>
 							</a>
 							<a
-								href="#button-icon"
+								href="#button-dark"
 								class="i-sidebar-list-item"
-								data-filter-value="Button &gt; Icon"
+								data-filter-value="Button &gt; Dark"
 							>
-								<span>Button &gt; Icon</span>
+								<span>Button &gt; Dark</span>
+							</a>
+							<a
+								href="#button-light"
+								class="i-sidebar-list-item"
+								data-filter-value="Button &gt; Light"
+							>
+								<span>Button &gt; Light</span>
 							</a>
 							<a
 								href="#button-light"
@@ -2095,11 +3943,88 @@
 								<span>Button &gt; Primary</span>
 							</a>
 							<a
+								href="#button-primary"
+								class="i-sidebar-list-item"
+								data-filter-value="Button &gt; Primary"
+							>
+								<span>Button &gt; Primary</span>
+							</a>
+							<a
 								href="#button-secondary"
 								class="i-sidebar-list-item"
 								data-filter-value="Button &gt; Secondary"
 							>
 								<span>Button &gt; Secondary</span>
+							</a>
+							<a
+								href="#button-secondary"
+								class="i-sidebar-list-item"
+								data-filter-value="Button &gt; Secondary"
+							>
+								<span>Button &gt; Secondary</span>
+							</a>
+							<a
+								href="#button-tertiary"
+								class="i-sidebar-list-item"
+								data-filter-value="Button &gt; Tertiary"
+							>
+								<span>Button &gt; Tertiary</span>
+							</a>
+							<a
+								href="#button-tertiary"
+								class="i-sidebar-list-item"
+								data-filter-value="Button &gt; Tertiary"
+							>
+								<span>Button &gt; Tertiary</span>
+							</a>
+							<a
+								href="#button-base"
+								class="i-sidebar-list-item"
+								data-filter-value="Button Base"
+							>
+								<span>Button Base</span>
+							</a>
+							<a
+								href="#button-default"
+								class="i-sidebar-list-item"
+								data-filter-value="Button Default"
+							>
+								<span>Button Default</span>
+							</a>
+							<a
+								href="#button-large"
+								class="i-sidebar-list-item"
+								data-filter-value="Button Large"
+							>
+								<span>Button Large</span>
+							</a>
+							<a
+								href="#button-large"
+								class="i-sidebar-list-item"
+								data-filter-value="Button Large"
+							>
+								<span>Button Large</span>
+							</a>
+							<a
+								href="#button-small"
+								class="i-sidebar-list-item"
+								data-filter-value="Button Small"
+							>
+								<span>Button Small</span>
+							</a>
+							<a
+								href="#button-small"
+								class="i-sidebar-list-item"
+								data-filter-value="Button Small"
+							>
+								<span>Button Small</span>
+							</a>
+							<a
+								href="#click-area"
+								class="i-sidebar-list-item"
+								data-filter-value="Click area"
+							>
+								<span>Click area</span>
 							</a>
 					</div>
 			
@@ -2249,7 +4174,7 @@
 			
 					<h5
 						class="pt-4 mb-1"
-						data-filter-value=" Font Sizes "
+						data-filter-value=" Font Sizes  Title Block  Title Core Styles "
 					>
 						<a href="#category-5. component &gt; typography" class="i-sidebar-list-item">
 							<b>5. Component &gt; Typography</b>
@@ -2263,6 +4188,20 @@
 								data-filter-value="Font Sizes"
 							>
 								<span>Font Sizes</span>
+							</a>
+							<a
+								href="#title-block"
+								class="i-sidebar-list-item"
+								data-filter-value="Title Block"
+							>
+								<span>Title Block</span>
+							</a>
+							<a
+								href="#title-core-styles"
+								class="i-sidebar-list-item"
+								data-filter-value="Title Core Styles"
+							>
+								<span>Title Core Styles</span>
 							</a>
 					</div>
 			
