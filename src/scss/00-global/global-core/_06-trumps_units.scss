@@ -1,47 +1,298 @@
-// .u-space-sections {
-// 	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: false) {
-// 		> * + * {
-// 			@include units($property: "margin", $variation: (top: true));
-// 		}
-// 	}
-// }
+/*
+---
+name: Space Sections
+category: 6. Trumps > Spacing Units
+---
+
+Space sections next to eachother using `padding`, can be applied to all elements
+
+*  Contains [Suffixcate](/#suffixcate) options (`@small` and `@large` suffixes) for `Default`, `Fixed`, `Large`, and `Large (fixed)`.
+
+Versions:
+* Default - Default unit (`$default-space`) above `$bp-space` and .5 the default unit (`$default-space` * .5) below `$bp-space`
+* Fixed - Suffix: `-fixed`: Maintains default unit (`$default-space`)
+* Large - Suffix: `-lg`: 2x the default unit (`$default-space` * 2) above `$bp-space` and default unit (`$default-space`) below `$bp-space`
+* Large (fixed) - Suffix: `-lg-fixed`:  Maintains 2x default unit (`$default-space` * 2)
+* Small - Suffix: `-sm`: .5 the default unit (`$default-space` * .5)
+* Tiny - Suffix: `-tiny`: .25 the default unit (`$default-space` * .25)
+
+```demo.html
+
+<div class="u-space-sections">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+```
+
+```small.html
+
+<div class="u-space-sections@small">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+```
+
+```large.html
+
+<div class="u-space-sections@large">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+```
+
+```fixed.html
+
+<div class="u-space-sections-fixed">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+```
+
+```2x.html
+
+<div class="u-space-sections-lg">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+```
+
+```2x-fixed.html
+
+<div class="u-space-sections-lg-fixed">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+```
+
+```half.html
+
+<div class="u-space-sections-sm">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+```
+
+```tiny.html
+
+<div class="u-space-sections-tiny">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+*/
+
+
+.u-space-sections {
+	@include suffixcate {
+		> * + * {
+			@include units($property: "margin", $variation: (top: true));
+		}
+	}
+
+	&-lg {
+		@include suffixcate {
+			> * + * {
+				@include units($property: "padding", $version: "two-times", $variation: (top: true));
+			}
+		}
+
+		&-fixed {
+			@include suffixcate {
+				> * + * {
+					margin-top: $default-space * 2;
+				}
+			}
+		}
+	}
+
+	&-fixed {
+		@include suffixcate {
+			> * + * {
+				margin-top: $default-space;
+			}
+		}
+	}
+
+	&-sm {
+		@include suffixcate {
+			> * + * {
+				@include units($property: "padding", $version: "half-sized", $variation: (top: true));
+			}
+		}
+	}
+
+	&-tiny {
+		@include suffixcate {
+			> * + * {
+				margin-top: $default-space / 4;
+			}
+		}
+	}
+}
 
 
 /*
 ---
-name: Sections
+name: Space Sections (Alt)
 category: 6. Trumps > Spacing Units
 ---
+
+Space sections next to eachother using `margin`, can be applied to all elements
+
+*  Contains [Suffixcate](/#suffixcate) options (`@small` and `@large` suffixes) for `Default`, `Fixed`, `Large`, and `Large (fixed)`.
+
+Versions:
+* Default - Default unit (`$default-space`) above `$bp-space` and .5 the default unit (`$default-space` * .5) below `$bp-space`
+* Fixed - Suffix: `-fixed`: Maintains default unit (`$default-space`)
+* Large - Suffix: `-lg`: 2x the default unit (`$default-space` * 2) above `$bp-space` and default unit (`$default-space`) below `$bp-space`
+* Large (fixed) - Suffix: `-lg-fixed`:  Maintains 2x default unit (`$default-space` * 2)
+* Small - Suffix: `-sm`: .5 the default unit (`$default-space` * .5)
+* Tiny - Suffix: `-tiny`: .25 the default unit (`$default-space` * .25)
+
+```demo.html
+
+<div class="u-gutt-sections">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+```
+
+```small.html
+
+<div class="u-gutt-sections@small">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+```
+
+```large.html
+
+<div class="u-gutt-sections@large">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+```
+
+```fixed.html
+
+<div class="u-gutt-sections-fixed">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+```
+
+```2x.html
+
+<div class="u-gutt-sections-lg">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+```
+
+```2x-fixed.html
+
+<div class="u-gutt-sections-lg-fixed">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+```
+
+```half.html
+
+<div class="u-gutt-sections-sm">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
+```
+
+```tiny.html
+
+<div class="u-gutt-sections-tiny">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+
 */
 
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
-
-
-.u-space-sections {
+.u-gutt-sections {
 	@include suffixcate {
 		> * + * {
 			@include units($property: "margin", $variation: (top: true));
