@@ -1,3 +1,119 @@
+/*
+---
+name: Display > Inline
+category: 6. Trumps > Displays
+---
+
+Add `display: inline` to any element
+
+*  Contains [Suffixcate](/#suffixcate) option.
+
+```demo.html
+<div class="u-dis-i">
+	•••
+</div>
+```
+*/
+
+/*
+---
+name: Display > Inline Block
+category: 6. Trumps > Displays
+---
+
+Add `display: inline-block` to any element
+
+*  Contains [Suffixcate](/#suffixcate) option.
+
+```demo.html
+<div class="u-dis-ib">
+	•••
+</div>
+```
+*/
+
+/*
+---
+name: Display > Block
+category: 6. Trumps > Displays
+---
+
+Add `display: block` to any element
+
+*  Contains [Suffixcate](/#suffixcate) option.
+
+```demo.html
+<div class="u-dis-b">
+	•••
+</div>
+```
+*/
+
+/*
+---
+name: Display > Table
+category: 6. Trumps > Displays
+---
+
+Add `display: table` to any element
+
+*  Contains [Suffixcate](/#suffixcate) option.
+
+```demo.html
+<div class="u-dis-t">
+	<div class="u-dis-tc">
+		•••
+	</div>
+	<div class="u-dis-tc">
+		•••
+	</div>
+</div>
+```
+*/
+
+/*
+---
+name: Display > Table Cell
+category: 6. Trumps > Displays
+---
+
+Add `display: inline` to any element
+
+*  Contains [Suffixcate](/#suffixcate) option.
+
+```demo.html
+<div class="u-dis-t">
+	<div class="u-dis-tc">
+		•••
+	</div>
+	<div class="u-dis-tc">
+		•••
+	</div>
+</div>
+```
+*/
+
+
+/*
+---
+name: Display > None
+category: 6. Trumps > Displays
+---
+
+Add `display: none` and `speak: none` to any element
+
+*  Contains [Suffixcate](/#suffixcate) option.
+
+```demo.html
+<div class="u-dis-none">
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+
 .u-dis-i {
 	display: inline;
 }
