@@ -3,33 +3,10 @@
 name: Spacing > Paragraphs
 category: 3. Elements
 ---
-*/
 
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
+Margins are reset if `$includeResets` is `true` in `_00-settings.scss`, spacing of two `<p>` next to eachother get spaced by `$default-space` between
+
+*/
 
 p {
 	& + p {
