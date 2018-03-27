@@ -1,18 +1,60 @@
-// .c-link-list {
-// 	&__item {
-// 		& + .c-link-list__item {
-// 			@include units($property: "margin", $variation: (top: true));
-// 		}
-// 	}
-// }
+/*
+---
+name: Children Inline
+category: 5. Component > Content
+---
+
+Makes list or an `"block`-style " children `inline-block`
+
+*  Contains [Suffixcate](/#suffixcate) option.
+
+```demo.html
+<ul class="o-child-line">
+	<li>
+		•••
+	</li>
+	<li>
+		•••
+	</li>
+</ul>
+
+```
+*/
 
 .o-child-line {
-	> * {
-		display: inline-block;
+	@include suffixcate {
+		> * {
+			display: inline-block;
+		}
 	}
 }
 
+/*
+---
+name: List Inline
+category: 5. Component > Content
+---
+
+Removes padding from `<ul>`
+
+*  Contains [Suffixcate](/#suffixcate) option.
+
+```demo.html
+<ul class="o-list">
+	<li>
+		•••
+	</li>
+	<li>
+		•••
+	</li>
+</ul>
+
+```
+*/
+
 
 .o-list {
-	padding-left: 0;
+	@include suffixcate {
+		padding-left: 0;
+	}
 }
