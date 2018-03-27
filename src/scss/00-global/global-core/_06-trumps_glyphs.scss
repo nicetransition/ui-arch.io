@@ -43,6 +43,102 @@ Core glyphs are located in `~/assets/fonts/webfont`. Update by uploading the `se
 }
 
 
+/*
+---
+name: Glyph
+category: Trumps > Glyphs
+---
+
+Utilizing [Webfont](/#webfonts). 
+
+*  Contains [Suffixcate](/#suffixcate) option.
+
+Versions
+* Default: `.u-glyph` - Replaces character with glyph, add `.u-glyph--no-speak` to prevent readers speaking the character
+* Default Small: `.u-glyph@small` - Replaces character with glyph for small screens
+* Default Large: `.u-glyph@large` - Replaces character with glyph for large screens
+* Before: `.u-glyph-before` - Replaces character with glyph, add `.u-glyph-before--no-speak` to prevent readers speaking the character. Add `data-icon` with a value equal to the character you want to replace with a glyph.
+* Before Small: `.u-glyph-before@small` - Replaces character with glyph for small screens. Add `data-icon` with a value equal to the character you want to replace with a glyph.
+* Before Large: `.u-glyph-before@large` - Replaces character with glyph for large screens. Add `data-icon` with a value equal to the character you want to replace with a glyph.
+* After: `.u-glyph-after` - Replaces character with glyph, add `.u-glyph-after--no-speak` to prevent readers speaking the character. Add `data-icon` with a value equal to the character you want to replace with a glyph.
+* After Small: `.u-glyph-after@small` - Replaces character with glyph for small screens. Add `data-icon` with a value equal to the character you want to replace with a glyph.
+* After Large: `.u-glyph-after@large` - Replaces character with glyph for large screens. Add `data-icon` with a value equal to the character you want to replace with a glyph.
+
+
+```demo.html
+<div class="u-glyph">
+	<div>
+		X
+	</div>
+</div>
+```
+
+```small.html
+<div class="u-glyph@small">
+	<div>
+		X
+	</div>
+</div>
+```
+
+```large.html
+<div class="u-glyph@large">
+	<div>
+		X
+	</div>
+</div>
+```
+
+```before.html
+<div class="u-glyph-before" data-icon="X">
+	<div>
+		X
+	</div>
+</div>
+```
+
+```before-small.html
+<div class="u-glyph-before@small" data-icon="X">
+	<div>
+		X
+	</div>
+</div>
+```
+
+```before-large.html
+<div class="u-glyph-before@large" data-icon="X">
+	<div>
+		X
+	</div>
+</div>
+```
+
+```after.html
+<div class="u-glyph-after" data-icon="X">
+	<div>
+		X
+	</div>
+</div>
+```
+
+```after-small.html
+<div class="u-glyph-after@small" data-icon="X">
+	<div>
+		X
+	</div>
+</div>
+```
+
+```after-large.html
+<div class="u-glyph-after@large" data-icon="X">
+	<div>
+		X
+	</div>
+</div>
+```
+
+*/
+
 .u-glyph {
 	@include suffixcateExtend(('%glyph-shared'));
 
