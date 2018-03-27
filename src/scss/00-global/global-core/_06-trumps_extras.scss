@@ -309,10 +309,6 @@ img, textarea, span, label, aside, main {
 	}
 }
 
-.o-sections__section > .u-space-children {
-	@include units($property: "margin", $version: "neg", $variation: (top: true));
-}
-
 %u-char-glyph {
 	@include glyph;
 }

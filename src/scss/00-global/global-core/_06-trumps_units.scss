@@ -123,7 +123,7 @@ Versions:
 		&-fixed {
 			@include suffixcate {
 				> * + * {
-					margin-top: $default-space * 2;
+					padding-top: $default-space * 2;
 				}
 			}
 		}
@@ -132,7 +132,7 @@ Versions:
 	&-fixed {
 		@include suffixcate {
 			> * + * {
-				margin-top: $default-space;
+				padding-top: $default-space;
 			}
 		}
 	}
@@ -148,7 +148,7 @@ Versions:
 	&-tiny {
 		@include suffixcate {
 			> * + * {
-				margin-top: $default-space / 4;
+				padding-top: $default-space / 4;
 			}
 		}
 	}
@@ -310,6 +310,324 @@ Versions:
 		}
 	}
 }
+
+
+
+/*
+---
+name: Space Children
+category: 6. Trumps > Spacing Units
+---
+
+Space  children with `padding` between them, can be applied to all elements
+
+*  Contains [Suffixcate](/#suffixcate) options (`@small` and `@large` suffixes) for `Default`, `Fixed`, `Large`, and `Large (fixed)`.
+
+Versions:
+* Default - `.u-space-children`: Default unit (`$default-space`) above `$bp-space` and .5 the default unit (`$default-space` * .5) below `$bp-space`
+* Fixed - Suffix: `-fixed`: Maintains default unit (`$default-space`)
+* Large - Suffix: `-lg`: 2x the default unit (`$default-space` * 2) above `$bp-space` and default unit (`$default-space`) below `$bp-space`
+* Large (fixed) - Suffix: `-lg-fixed`:  Maintains 2x default unit (`$default-space` * 2)
+* Small - Suffix: `-sm`: .5 the default unit (`$default-space` * .5)
+* Tiny - Suffix: `-tiny`: .25 the default unit (`$default-space` * .25)
+
+```demo.html
+<div class="u-space-children">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```small.html
+<div class="u-space-children@small">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```large.html
+<div class="u-space-children@large">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```fixed.html
+<div class="u-space-children-fixed">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```twotimes.html
+<div class="u-space-children-lg">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```twotimesfixed..html
+<div class="u-space-children-lg-fixed">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```half.html
+<div class="u-space-children-sm">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```tiny.html
+<div class="u-space-children-tiny">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+*/
+
+
+.u-space-children {
+	@include suffixcate {
+		> * + * {
+			@include units($property: "margin", $variation: (left: true));
+		}
+	}
+
+	&-lg {
+		@include suffixcate {
+			> * + * {
+				@include units($property: "padding", $version: "two-times", $variation: (left: true));
+			}
+		}
+
+		&-fixed {
+			@include suffixcate {
+				> * + * {
+					padding-left: $default-space * 2;
+				}
+			}
+		}
+	}
+
+	&-fixed {
+		@include suffixcate {
+			> * + * {
+				padding-left: $default-space;
+			}
+		}
+	}
+
+	&-sm {
+		@include suffixcate {
+			> * + * {
+				@include units($property: "padding", $version: "half-sized", $variation: (left: true));
+			}
+		}
+	}
+
+	&-tiny {
+		@include suffixcate {
+			> * + * {
+				padding-left: $default-space / 4;
+			}
+		}
+	}
+}
+
+/*
+---
+name: Space Children (Alt)
+category: 6. Trumps > Spacing Units
+---
+
+Space  children with `margin` between them, can be applied to all elements
+
+*  Contains [Suffixcate](/#suffixcate) options (`@small` and `@large` suffixes) for `Default`, `Fixed`, `Large`, and `Large (fixed)`.
+
+Versions:
+* Default - `.u-gutt-children`: Default unit (`$default-space`) above `$bp-gutt` and .5 the default unit (`$default-space` * .5) below `$bp-gutt`
+* Fixed - Suffix: `-fixed`: Maintains default unit (`$default-space`)
+* Large - Suffix: `-lg`: 2x the default unit (`$default-space` * 2) above `$bp-gutt` and default unit (`$default-space`) below `$bp-gutt`
+* Large (fixed) - Suffix: `-lg-fixed`:  Maintains 2x default unit (`$default-space` * 2)
+* Small - Suffix: `-sm`: .5 the default unit (`$default-space` * .5)
+* Tiny - Suffix: `-tiny`: .25 the default unit (`$default-space` * .25)
+
+```demo.html
+<div class="u-gutt-children">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```small.html
+<div class="u-gutt-children@small">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```large.html
+<div class="u-gutt-children@large">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```fixed.html
+<div class="u-gutt-children-fixed">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```twotimes.html
+<div class="u-gutt-children-lg">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```twotimesfixed..html
+<div class="u-gutt-children-lg-fixed">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```half.html
+<div class="u-gutt-children-sm">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```tiny.html
+<div class="u-gutt-children-tiny">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+*/
+
+
+.u-gutt-children {
+	@include suffixcate {
+		> * + * {
+			@include units($property: "margin", $variation: (left: true));
+		}
+	}
+
+	&-lg {
+		@include suffixcate {
+			> * + * {
+				@include units($property: "margin", $version: "two-times", $variation: (left: true));
+			}
+		}
+
+		&-fixed {
+			@include suffixcate {
+				> * + * {
+					margin-left: $default-space * 2;
+				}
+			}
+		}
+	}
+
+	&-fixed {
+		@include suffixcate {
+			> * + * {
+				margin-left: $default-space;
+			}
+		}
+	}
+
+	&-sm {
+		@include suffixcate {
+			> * + * {
+				@include units($property: "margin", $version: "half-sized", $variation: (left: true));
+			}
+		}
+	}
+
+	&-tiny {
+		@include suffixcate {
+			> * + * {
+				margin-left: $default-space / 4;
+			}
+		}
+	}
+}
+
+
 
 
 // SETTINGS: Global variables, config switches
