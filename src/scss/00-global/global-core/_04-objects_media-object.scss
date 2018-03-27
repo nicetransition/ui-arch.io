@@ -1,0 +1,162 @@
+/*
+---
+name: Media Object
+category: 3. Objects > Patterns
+---
+
+Core of OOCSS, image on the left and content right
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+*  `.o-flag--full`: Expand full width of container, variation for suffixcate: `o-flag@small--full` and `o-flag@large--full`
+
+```demo.html
+<div class="o-media">
+	<div class="o-media__asset">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-media__main">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+
+```small.html
+<div class="o-media@small">
+	<div class="o-media@small__asset">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-media@small__main">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+```large.html
+<div class="o-media@large">
+	<div class="o-media@large__asset">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-media@large__main">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+*/
+
+.o-media {
+	@include suffixcate {
+		@include clear-after;
+
+		&__asset {
+			float: left;
+		}
+
+		&__main {
+			overflow: hidden;
+		}
+	}
+}
+
+/*
+---
+name: Media Object > Flag Object
+category: 3. Objects > Patterns
+---
+
+Like the media object but "table-based" and allows for additional columns
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+*  `.o-flag--full`: Expand full width of container, variation for suffixcate: `o-flag@small--full` and `o-flag@large--full`
+
+```demo.html
+<div class="o-flag">
+	<div class="o-flag__item">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-flag__item">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+
+```demo-2.html
+<div class="o-flag">
+	<div class="o-flag__item">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+	<div class="o-flag__item">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+</div>
+```
+
+```demo-full.html
+<div class="o-flag o-flag--full">
+	<div class="o-flag__item">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-flag__item">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+```small.html
+<div class="o-flag@small">
+	<div class="o-flag@small__item">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-flag@small__item">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+```large.html
+<div class="o-flag@large">
+	<div class="o-flag@large__item">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-flag@large__item">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+*/
+
+
+.o-flag {
+	@include suffixcate  {
+		display: table;
+
+		&__item {
+			display: table-cell;
+		}
+
+		&--full {
+			width: 100%;
+		}
+	}
+}

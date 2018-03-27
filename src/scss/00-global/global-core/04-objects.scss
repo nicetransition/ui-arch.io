@@ -250,35 +250,56 @@ category: 3. Objects
 /*
 ---
 name: Media Object
-category: 3. Objects
+category: 3. Objects > Patterns
 ---
-*/
 
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
+Core of OOCSS, image on the left and content right
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+*  `.o-flag--full`: Expand full width of container, variation for suffixcate: `o-flag@small--full` and `o-flag@large--full`
+
+```demo.html
+<div class="o-media">
+	<div class="o-media__asset">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-media__main">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+
+```small.html
+<div class="o-media@small">
+	<div class="o-media@small__asset">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-media@small__main">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+```large.html
+<div class="o-media@large">
+	<div class="o-media@large__asset">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-media@large__main">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+*/
 
 .o-media {
 	@include suffixcate {
@@ -296,36 +317,84 @@ category: 3. Objects
 
 /*
 ---
-name: Flag Object
-category: 3. Objects
+name: Media Object > Flag Object
+category: 3. Objects > Patterns
 ---
+
+Like the media object but "table-based" and allows for additional columns
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+*  `.o-flag--full`: Expand full width of container, variation for suffixcate: `o-flag@small--full` and `o-flag@large--full`
+
+```demo.html
+<div class="o-flag">
+	<div class="o-flag__item">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-flag__item">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+
+```demo-2.html
+<div class="o-flag">
+	<div class="o-flag__item">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+	<div class="o-flag__item">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+</div>
+```
+
+```demo-full.html
+<div class="o-flag o-flag--full">
+	<div class="o-flag__item">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-flag__item">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+```small.html
+<div class="o-flag@small">
+	<div class="o-flag@small__item">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-flag@small__item">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+```large.html
+<div class="o-flag@large">
+	<div class="o-flag@large__item">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-flag@large__item">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
 */
 
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
 
 .o-flag {
 	@include suffixcate  {
@@ -1052,3 +1121,6 @@ category: 3. Objects
 		@include suffixcateExtend(('%content-columns'));
 	}
 }
+
+
+@import "04-objects_media-object";
