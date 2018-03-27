@@ -1,0 +1,59 @@
+
+/*
+---
+name: Grid
+category: 3. Objects
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+.o-grid, .o-grid__row {
+	@include suffixcate {
+		&:after {
+			clear: both;
+			display: table;
+			content: "";
+		}
+	}
+}
+
+.o-grid {
+	@include suffixcate {
+		&__cell {
+			float: left;
+		}
+
+		&__cell-alt {
+			float: right;
+		}
+
+		&__row {
+
+		}
+	}
+}
