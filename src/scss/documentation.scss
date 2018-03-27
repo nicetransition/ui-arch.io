@@ -32,6 +32,37 @@ Usage:
 */
 
 
+/*
+---
+name: Clear Floats
+category: 1. Tools > Mixin
+---
+
+Adds a `clear: both;` as an `:after` pseudo element
+ 
+
+Usage:
+
+```
+.select-name {
+	@include clear-after;
+}
+```
+
+
+outputs:
+
+```
+.select-name: {
+	clear: both;
+	display: table;
+	content: "";
+}
+```
+
+*/
+
+
 
 /**
 	Free standing documentation and combination for files
