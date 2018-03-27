@@ -126,23 +126,22 @@ gulp.task('colors', function() {
 				nameOnly = color.name.replace("color-","");
 
 
-			obj += "$" + color.name +
-				   ": " + color.value + ";\n";
+			obj = "";
 
 			if (childrenlength > 0) {
+				obj += `
+Extended variables:
+`;
 				for (var x = 0; x < childrenlength; x++) {
-					obj += '$' + children[x] + ": " + "$" + color.name + ";\n";
-
-					if (x >= (childrenlength - 1)) {
-						obj += "\n"
-					}
+					obj += `
+* `+"`$" + children[x]+"`";
 				}
-			} else {
-				obj += "\n"
+
+				obj += `
+`;
 			}
 
-
-
+			 
 			documentation += `
 /*
 
@@ -154,8 +153,7 @@ category: 6. Trumps > Color
 * Color: `+"`"+color.value+"`"+`
 * Color variable: `+"`$"+color.name+"`"+`
 * Contrast variable: `+"`$"+color.name+"-contrast`"+`
-
-
+`+obj+`
 Versions:
 
 * Background class: `+"`"+`.u-`+nameOnly+`-bg`+"`"+`

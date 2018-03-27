@@ -20,7 +20,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-primary-dark`
 * Contrast variable: `$color-primary-dark-contrast`
 
-
 Versions:
 
 * Background class: `.u-primary-dark-bg`
@@ -72,6 +71,11 @@ category: 6. Trumps > Color
 * Color variable: `$color-primary`
 * Contrast variable: `$color-primary-contrast`
 
+Extended variables:
+
+* `$anchor-primary`
+* `$mobile-menu-bg`
+* `$anchor-tertiary-hover`
 
 Versions:
 
@@ -124,7 +128,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-primary-light`
 * Contrast variable: `$color-primary-light-contrast`
 
-
 Versions:
 
 * Background class: `.u-primary-light-bg`
@@ -176,6 +179,10 @@ category: 6. Trumps > Color
 * Color variable: `$color-primary-accent`
 * Contrast variable: `$color-primary-accent-contrast`
 
+Extended variables:
+
+* `$anchor-tertiary`
+* `$anchor-active`
 
 Versions:
 
@@ -228,6 +235,9 @@ category: 6. Trumps > Color
 * Color variable: `$color-secondary-dark`
 * Contrast variable: `$color-secondary-dark-contrast`
 
+Extended variables:
+
+* `$color-error`
 
 Versions:
 
@@ -280,6 +290,10 @@ category: 6. Trumps > Color
 * Color variable: `$color-secondary`
 * Contrast variable: `$color-secondary-contrast`
 
+Extended variables:
+
+* `$anchor-secondary`
+* `$anchor-tertiary-active`
 
 Versions:
 
@@ -332,7 +346,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-secondary-light`
 * Contrast variable: `$color-secondary-light-contrast`
 
-
 Versions:
 
 * Background class: `.u-secondary-light-bg`
@@ -383,7 +396,6 @@ category: 6. Trumps > Color
 * Color: `#3D6460`
 * Color variable: `$color-secondary-accent`
 * Contrast variable: `$color-secondary-accent-contrast`
-
 
 Versions:
 
@@ -436,7 +448,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-accent-dark`
 * Contrast variable: `$color-accent-dark-contrast`
 
-
 Versions:
 
 * Background class: `.u-accent-dark-bg`
@@ -487,7 +498,6 @@ category: 6. Trumps > Color
 * Color: `#FBAC50`
 * Color variable: `$color-accent`
 * Contrast variable: `$color-accent-contrast`
-
 
 Versions:
 
@@ -540,7 +550,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-accent-light`
 * Contrast variable: `$color-accent-light-contrast`
 
-
 Versions:
 
 * Background class: `.u-accent-light-bg`
@@ -591,7 +600,6 @@ category: 6. Trumps > Color
 * Color: `#3D6460`
 * Color variable: `$color-accent-accent`
 * Contrast variable: `$color-accent-accent-contrast`
-
 
 Versions:
 
@@ -644,6 +652,17 @@ category: 6. Trumps > Color
 * Color variable: `$color-dark-dark`
 * Contrast variable: `$color-dark-dark-contrast`
 
+Extended variables:
+
+* `$color-primary-accent-contrast`
+* `$color-secondary-accent-contrast`
+* `$color-light-dark-contrast`
+* `$color-light-contrast`
+* `$color-light-light-contrast`
+* `$color-light-accent-contrast`
+* `$color-accent-contrast`
+* `$color-accent-light-contrast`
+* `$color-accent-accent-contrast`
 
 Versions:
 
@@ -696,6 +715,22 @@ category: 6. Trumps > Color
 * Color variable: `$color-dark`
 * Contrast variable: `$color-dark-contrast`
 
+Extended variables:
+
+* `$color-base`
+* `$color-label`
+* `$color-zone-accent-contrast`
+* `$color-primary-light-contrast`
+* `$color-alpha-90-contrast`
+* `$color-alpha-80-contrast`
+* `$color-alpha-75-contrast`
+* `$color-alpha-70-contrast`
+* `$color-alpha-60-contrast`
+* `$color-alpha-50-contrast`
+* `$color-alpha-40-contrast`
+* `$color-alpha-30-contrast`
+* `$color-alpha-20-contrast`
+* `$color-alpha-10-contrast`
 
 Versions:
 
@@ -748,7 +783,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-dark-light`
 * Contrast variable: `$color-dark-light-contrast`
 
-
 Versions:
 
 * Background class: `.u-dark-light-bg`
@@ -799,7 +833,6 @@ category: 6. Trumps > Color
 * Color: `#130A4F`
 * Color variable: `$color-dark-accent`
 * Contrast variable: `$color-dark-accent-contrast`
-
 
 Versions:
 
@@ -852,6 +885,9 @@ category: 6. Trumps > Color
 * Color variable: `$color-light-dark`
 * Contrast variable: `$color-light-dark-contrast`
 
+Extended variables:
+
+* `$color-placeholder`
 
 Versions:
 
@@ -904,6 +940,10 @@ category: 6. Trumps > Color
 * Color variable: `$color-light`
 * Contrast variable: `$color-light-contrast`
 
+Extended variables:
+
+* `$color-disabled`
+* `$bg-content-zones`
 
 Versions:
 
@@ -956,6 +996,30 @@ category: 6. Trumps > Color
 * Color variable: `$color-light-light`
 * Contrast variable: `$color-light-light-contrast`
 
+Extended variables:
+
+* `$color-primary-contrast`
+* `$color-secondary-light-contrast`
+* `$anchor-hover`
+* `$header-color`
+* `$color-dark-dark-contrast`
+* `$color-secondary-contrast`
+* `$color-secondary-dark-contrast`
+* `$color-dark-contrast`
+* `$color-dark-accent-contrast`
+* `$color-dark-light-contrast`
+* `$color-accent-dark-contrast`
+* `$light-gradient-dark-contrast`
+* `$color-alpha-dark-90-contrast`
+* `$color-alpha-dark-80-contrast`
+* `$color-alpha-dark-75-contrast`
+* `$color-alpha-dark-70-contrast`
+* `$color-alpha-dark-60-contrast`
+* `$color-alpha-dark-50-contrast`
+* `$color-alpha-dark-40-contrast`
+* `$color-alpha-dark-30-contrast`
+* `$color-alpha-dark-20-contrast`
+* `$color-alpha-dark-10-contrast`
 
 Versions:
 
@@ -1008,6 +1072,9 @@ category: 6. Trumps > Color
 * Color variable: `$color-light-accent`
 * Contrast variable: `$color-light-accent-contrast`
 
+Extended variables:
+
+* `$color-primary-dark-contrast`
 
 Versions:
 
@@ -1060,6 +1127,9 @@ category: 6. Trumps > Color
 * Color variable: `$light-gradient-dark`
 * Contrast variable: `$light-gradient-dark-contrast`
 
+Extended variables:
+
+* `$page-intro-gradient`
 
 Versions:
 
@@ -1112,6 +1182,9 @@ category: 6. Trumps > Color
 * Color variable: `$light-gradient`
 * Contrast variable: `$light-gradient-contrast`
 
+Extended variables:
+
+* `$header-gradient-mobile`
 
 Versions:
 
@@ -1164,6 +1237,9 @@ category: 6. Trumps > Color
 * Color variable: `$light-gradient-dark`
 * Contrast variable: `$light-gradient-dark-contrast`
 
+Extended variables:
+
+* `$page-intro-gradient`
 
 Versions:
 
@@ -1216,6 +1292,9 @@ category: 6. Trumps > Color
 * Color variable: `$light-gradient`
 * Contrast variable: `$light-gradient-contrast`
 
+Extended variables:
+
+* `$header-gradient-mobile`
 
 Versions:
 
@@ -1268,7 +1347,6 @@ category: 6. Trumps > Color
 * Color variable: `$light-gradient-primary`
 * Contrast variable: `$light-gradient-primary-contrast`
 
-
 Versions:
 
 * Background class: `.u-light-gradient-primary-bg`
@@ -1319,7 +1397,6 @@ category: 6. Trumps > Color
 * Color: `#E5EDF5`
 * Color variable: `$color-zone-accent`
 * Contrast variable: `$color-zone-accent-contrast`
-
 
 Versions:
 
@@ -1372,7 +1449,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-alpha-90`
 * Contrast variable: `$color-alpha-90-contrast`
 
-
 Versions:
 
 * Background class: `.u-alpha-90-bg`
@@ -1423,7 +1499,6 @@ category: 6. Trumps > Color
 * Color: `rgba(255, 255, 255, .7)`
 * Color variable: `$color-alpha-80`
 * Contrast variable: `$color-alpha-80-contrast`
-
 
 Versions:
 
@@ -1476,7 +1551,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-alpha-75`
 * Contrast variable: `$color-alpha-75-contrast`
 
-
 Versions:
 
 * Background class: `.u-alpha-75-bg`
@@ -1527,7 +1601,6 @@ category: 6. Trumps > Color
 * Color: `rgba(255, 255, 255, .7)`
 * Color variable: `$color-alpha-70`
 * Contrast variable: `$color-alpha-70-contrast`
-
 
 Versions:
 
@@ -1580,7 +1653,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-alpha-50`
 * Contrast variable: `$color-alpha-50-contrast`
 
-
 Versions:
 
 * Background class: `.u-alpha-50-bg`
@@ -1631,7 +1703,6 @@ category: 6. Trumps > Color
 * Color: `rgba(255, 255, 255, .3)`
 * Color variable: `$color-alpha-40`
 * Contrast variable: `$color-alpha-40-contrast`
-
 
 Versions:
 
@@ -1684,7 +1755,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-alpha-30`
 * Contrast variable: `$color-alpha-30-contrast`
 
-
 Versions:
 
 * Background class: `.u-alpha-30-bg`
@@ -1735,7 +1805,6 @@ category: 6. Trumps > Color
 * Color: `rgba(255, 255, 255, .2)`
 * Color variable: `$color-alpha-20`
 * Contrast variable: `$color-alpha-20-contrast`
-
 
 Versions:
 
@@ -1788,7 +1857,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-alpha-10`
 * Contrast variable: `$color-alpha-10-contrast`
 
-
 Versions:
 
 * Background class: `.u-alpha-10-bg`
@@ -1839,7 +1907,6 @@ category: 6. Trumps > Color
 * Color: `rgba(0, 0, 0, .9)`
 * Color variable: `$color-alpha-dark-90`
 * Contrast variable: `$color-alpha-dark-90-contrast`
-
 
 Versions:
 
@@ -1892,7 +1959,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-alpha-dark-80`
 * Contrast variable: `$color-alpha-dark-80-contrast`
 
-
 Versions:
 
 * Background class: `.u-alpha-dark-80-bg`
@@ -1943,7 +2009,6 @@ category: 6. Trumps > Color
 * Color: `rgba(0, 0, 0, .75)`
 * Color variable: `$color-alpha-dark-75`
 * Contrast variable: `$color-alpha-dark-75-contrast`
-
 
 Versions:
 
@@ -1996,7 +2061,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-alpha-dark-70`
 * Contrast variable: `$color-alpha-dark-70-contrast`
 
-
 Versions:
 
 * Background class: `.u-alpha-dark-70-bg`
@@ -2047,7 +2111,6 @@ category: 6. Trumps > Color
 * Color: `rgba(0, 0, 0, .5)`
 * Color variable: `$color-alpha-dark-50`
 * Contrast variable: `$color-alpha-dark-50-contrast`
-
 
 Versions:
 
@@ -2100,7 +2163,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-alpha-dark-40`
 * Contrast variable: `$color-alpha-dark-40-contrast`
 
-
 Versions:
 
 * Background class: `.u-alpha-dark-40-bg`
@@ -2151,7 +2213,6 @@ category: 6. Trumps > Color
 * Color: `rgba(0, 0, 0, .3)`
 * Color variable: `$color-alpha-dark-30`
 * Contrast variable: `$color-alpha-dark-30-contrast`
-
 
 Versions:
 
@@ -2204,7 +2265,6 @@ category: 6. Trumps > Color
 * Color variable: `$color-alpha-dark-20`
 * Contrast variable: `$color-alpha-dark-20-contrast`
 
-
 Versions:
 
 * Background class: `.u-alpha-dark-20-bg`
@@ -2255,7 +2315,6 @@ category: 6. Trumps > Color
 * Color: `rgba(0, 0, 0, .1)`
 * Color variable: `$color-alpha-dark-10`
 * Contrast variable: `$color-alpha-dark-10-contrast`
-
 
 Versions:
 
