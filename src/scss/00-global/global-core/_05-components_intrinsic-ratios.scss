@@ -1,3 +1,105 @@
+
+/*
+---
+name: Intrinsic
+category: 6. Components
+---
+
+Apply [intrinsic ratios](https://alistapart.com/d/creating-intrinsic-ratios-for-video/example2.html) to elements
+
+*  Contains [Suffixcate](/#suffixcate) option.
+
+
+Default options:
+
+* `1x1` - add `.c-intrinsic--1x1` or `.c-intrinsic--square` 
+* `2x1` - add `.c-intrinsic--2x1`
+* `4x3` - add `.c-intrinsic--4x3`
+* `16x9` - add `.c-intrinsic--16x9` or `.c-intrinsic--video` 
+
+```1x1.html
+<div class="c-intrinsic c-intrinsic--1x1">
+	<div class="c-intrinsic__element">
+		•••
+	</div>
+</div>
+```
+
+```1x1large.html
+<div class="c-intrinsic@large c-intrinsic@large--1x1">
+	<div class="c-intrinsic@large__element">
+		•••
+	</div>
+</div>
+```
+
+```1x1small.html
+<div class="c-intrinsic@small c-intrinsic@small--1x1">
+	<div class="c-intrinsic@small">
+		•••
+	</div>
+</div>
+```
+
+```2x1.html
+<div class="c-intrinsic c-intrinsic--2x1">
+	<div class="c-intrinsic__element">
+		•••
+	</div>
+</div>
+```
+
+```4x3.html
+<div class="c-intrinsic c-intrinsic--4x3">
+	<div class="c-intrinsic__element">
+		•••
+	</div>
+</div>
+```
+
+```16x9.html
+<div class="c-intrinsic c-intrinsic--16x9">
+	<div class="c-intrinsic__element">
+		•••
+	</div>
+</div>
+```
+
+Make a new aspect ratio:
+
+```new-version
+.c-intrinsic {
+	@include intrinsic-size-maker(740, 200);
+}
+```
+
+output:
+
+```new-version-output
+.c-intrinsic--740-200 {
+	padding-bottom: 27.027027%;
+}
+```
+
+Make a new aspect ratio (Demo 2):
+
+```new-version
+.c-intrinsic {
+	@include intrinsic-size-maker(600, 300, "demo");
+}
+```
+
+output (Demo 2):
+
+```new-version-output
+.c-intrinsic--demo {
+	padding-bottom: 50%;
+}
+```
+
+*/
+
+
 .c-intrinsic {
 	@include suffixcate {
 		position: relative;
@@ -15,11 +117,6 @@
 		@include intrinsic-size-maker(2, 1);
 		@include intrinsic-size-maker(4, 3);
 		@include intrinsic-size-maker(16, 9);
-		@include intrinsic-size-maker(400, 150, "feature");
-
-		&--intro {
-			padding-bottom: percentage(200/1024);
-		}
 	}
 
 	&--square {
