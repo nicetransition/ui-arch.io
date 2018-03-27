@@ -4,11 +4,6 @@
 // TOOLS: Default mixin and functions
 @import "01-tools";
 
-// COMPONENTS: Designed components
-@import "05-components_intrinsic-ratios";
-@import "05-components_ctas";
-@import "05-components_forms";
-@import "05-components_headers-and-titles";
 
 
 /*
@@ -165,3 +160,11 @@ Space out sections
 		}
 	}
 }
+
+
+// COMPONENTS: Designed components
+@import "05-components_intrinsic-ratios";
+@import "05-components_ctas";
+@import "05-components_forms";
+@import "05-components_headers-and-titles";
+@import "../global-plugins/plugins";
