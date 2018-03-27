@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'webfont';
-  src:  url('fonts/webfont.eot?rp4mcg');
-  src:  url('fonts/webfont.eot?rp4mcg#iefix') format('embedded-opentype'),
-    url('fonts/webfont.ttf?rp4mcg') format('truetype'),
-    url('fonts/webfont.woff?rp4mcg') format('woff'),
-    url('fonts/webfont.svg?rp4mcg#webfont') format('svg');
+  src:  url('fonts/webfont.eot?q3mrmm');
+  src:  url('fonts/webfont.eot?q3mrmm#iefix') format('embedded-opentype'),
+    url('fonts/webfont.ttf?q3mrmm') format('truetype'),
+    url('fonts/webfont.woff?q3mrmm') format('woff'),
+    url('fonts/webfont.svg?q3mrmm#webfont') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -78,10 +78,10 @@
   content: "\59";
 }
 .icon-close:before {
-  content: "\79";
+  content: "\58";
 }
 .icon-remove:before {
-  content: "\79";
+  content: "\58";
 }
 .icon-map-marker:before {
   content: "\4c";

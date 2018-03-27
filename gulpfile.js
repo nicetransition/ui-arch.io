@@ -35,7 +35,7 @@ var config = {
 		fonts: {
 			// src: './src/assets/fonts/**/*.{svg,eot,ttf,woff}',
 			src: './src/assets/fonts/**/*',
-			dist: '_dist/assets/'
+			dist: '_dist/assets/fonts/'
 		}
 	},
 	dest: '_dist'
