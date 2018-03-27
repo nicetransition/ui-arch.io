@@ -1,3 +1,84 @@
+/*
+---
+name: Position > Relative
+category: 6. Trumps > Positioning
+---
+
+Add `position: relative` to an element
+
+*  Contains [Suffixcate](/#suffixcate) option.
+
+```demo.html
+<div class="u-pos-r">
+</div>
+```
+*/
+
+/*
+---
+name: Position > Fixed
+category: 6. Trumps > Positioning
+---
+
+Add `position: fixed` to an element
+
+*  Contains [Suffixcate](/#suffixcate) option.
+
+```demo.html
+<div class="u-pos-f">
+</div>
+```
+*/
+
+/*
+---
+name: Position > Absolute
+category: 6. Trumps > Positioning
+---
+
+Add `position: absolute` to an element
+
+*  Contains [Suffixcate](/#suffixcate) option.
+
+```demo.html
+<div class="u-pos-a">
+</div>
+```
+*/
+
+
+/*
+---
+name: Position > Indexes
+category: 6. Trumps > Positioning
+---
+
+Add `index` to an element, options available are `0` - `12`
+
+Variants: 
+
+* `u-index-0`
+* `u-index-1`
+* `u-index-2`
+* `u-index-3`
+* `u-index-4`
+* `u-index-5`
+* `u-index-6`
+* `u-index-7`
+* `u-index-8`
+* `u-index-9`
+* `u-index-10`
+* `u-index-11`
+* `u-index-12`
+
+```demo.html
+<div class="u-index-5">
+</div>
+```
+*/
+
+
+
 .u-pos-r {
 	@include suffixcate {
 		position: relative;
