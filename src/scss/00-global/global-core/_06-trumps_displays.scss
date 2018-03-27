@@ -125,7 +125,7 @@ Add `display: none` and `speak: none` to any element
 }
 
 .u-dis-b {
-	@include suffixcate($bp: $suffixcate_bp-all) {
+	@include suffixcate {
 		display: block;
 	}
 }
@@ -142,18 +142,8 @@ Add `display: none` and `speak: none` to any element
 	}
 }
 
-
-%display-hidden {
-	@include suffixcate {
-		display: none;
-	}
-}
-
 .u-dis-none {
-	@extend %u-speak-none;
-	@extend %display-hidden;
-
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: false) {
+	@include suffixcate {
 		speak: none;
 		display: none;
 	}
