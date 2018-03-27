@@ -33,7 +33,8 @@ var config = {
 			// core: './src/**/*.scss'
 		},
 		fonts: {
-			src: './src/assets/fonts/**/*.{svg,eot,ttf,woff}',
+			// src: './src/assets/fonts/**/*.{svg,eot,ttf,woff}',
+			src: './src/assets/fonts/**/*',
 			dist: '_dist/assets/'
 		}
 	},
@@ -147,7 +148,7 @@ gulp.task('serve', ['fonts', 'stylemark', 'sass'], function() {
     });
 
 
-	gulp.watch("src/scss/*.scss", ['stylemark']);
+	gulp.watch("src/**/*", ['stylemark']);
 
 
 	gulp.watch("./src/assets/fonts/**/*", ['fonts']);
