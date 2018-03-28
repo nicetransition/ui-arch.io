@@ -1,0 +1,223 @@
+/*
+---
+name: Container Global
+category: 3. Objects > Containers
+---
+
+Container for outer-most DOM element (root node), should be used on outside
+
+
+```demo.html
+<div class="o-container-global">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsum optio rem, quo veniam placeat, ducimus, illum voluptas quae quas harum. Labore magni odit possimus maiores suscipit voluptatum officia numquam.
+</div>
+```
+*/
+
+.o-container-global {
+	overflow: hidden;
+}
+
+
+/*
+---
+name: Container Full
+category: 3. Objects > Containers
+---
+
+Container that expands full width and applies `position: relative`
+
+
+```demo.html
+<div class="o-container-full">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsum optio rem, quo veniam placeat, ducimus, illum voluptas quae quas harum. Labore magni odit possimus maiores suscipit voluptatum officia numquam.
+</div>
+```
+*/
+
+.o-container-full {
+	position: relative;
+}
+
+// Provides a `max-width` as defined by `$content-max-width` in `_00-settings.scss`.
+
+/*
+---
+name: Container
+category: 3. Objects > Containers
+---
+
+Container for majority of content.
+
+Options:
+* `.o-container`: Parent class for container
+* `.o-container__wrap`: Child of `.o-container` that expands only to `$max-width` is centered when space is available, when screen is smaller than `$max-width` it has gutters of `$default-space` on both sides
+* `.o-container__wrap-full`: Child of `.o-container` that expands only to `$max-width` is centered when space is available, does not have gutters below `$max-width`
+* `.o-container__inner`: Child of `.o-container` that expands only to `$content-width` is centered when space is available`
+
+
+```demo.html
+<div class="o-container">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsum optio rem, quo veniam placeat, ducimus, illum voluptas quae quas harum. Labore magni odit possimus maiores suscipit voluptatum officia numquam.
+</div>
+```
+
+```wrap.html
+<div class="o-container">
+	<div class="o-container__wrap">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsum optio rem, quo veniam placeat, ducimus, illum voluptas quae quas harum. Labore magni odit possimus maiores suscipit voluptatum officia numquam.
+	</div>
+</div>
+```
+
+```wrap-full.html
+<div class="o-container">
+	<div class="o-container__wrap-full">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsum optio rem, quo veniam placeat, ducimus, illum voluptas quae quas harum. Labore magni odit possimus maiores suscipit voluptatum officia numquam.
+	</div>
+</div>
+```
+
+```inner.html
+<div class="o-container">
+	<div class="o-container__inner">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsum optio rem, quo veniam placeat, ducimus, illum voluptas quae quas harum. Labore magni odit possimus maiores suscipit voluptatum officia numquam.
+	</div>
+</div>
+```
+
+
+```inner-alt.html
+<div class="o-container">
+	<div class="o-container__wrap">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsum optio rem, quo veniam placeat, ducimus, illum voluptas quae quas harum. Labore magni odit possimus maiores suscipit voluptatum officia numquam.
+	
+		<div class="o-container__inner">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsum optio rem, quo veniam placeat, ducimus, illum voluptas quae quas harum. Labore magni odit possimus maiores suscipit voluptatum officia numquam.
+		</div>
+	</div>
+</div>
+```
+*/
+
+
+.o-container {
+	@include suffixcate {
+		&__wrap-full, &__wrap {
+			max-width: $max-width;
+		}
+
+		&__wrap-full {
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		&__wrap {
+			@media screen and (min-width: $bp-1) {
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			@media screen and (max-width: $bp-1) {
+				margin-right: $default-space;
+				margin-left: $default-space;
+			}
+		}
+	}
+
+	&__inner {
+		max-width: $content-width;
+		
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+/*
+---
+name: Container > Content
+category: 3. Objects > Containers
+---
+
+Provides a `max-width` as defined by `$content-max-width` in `_00-settings.scss`.
+
+
+```demo.html
+<div class="o-container-content">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sunt at corporis iure veritatis eum nesciunt debitis eaque fuga provident.
+</div>
+```
+
+```demo-2.html
+<div class="o-container">
+	<div class="o-container__wrap">
+		<div class="o-container-content">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sunt at corporis iure veritatis eum nesciunt debitis eaque fuga provident.
+		</div>
+	</div>
+</div>
+```
+
+*/
+
+
+.o-container-content {
+	max-width: $content-max-width;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/*
+---
+name: Content Columns
+category: 3. Objects > Containers
+---
+
+Creates `column-count` for content, can be applied to any element with content. Options range up to 12
+
+*  Contains [Suffixcate](/#suffixcate) options available for all options and utility versions;
+
+Options:
+• `.c-content-column-1`: `.c-content-column-1@small` `.c-content-column-1@large`
+• `.c-content-column-2`: `.c-content-column-2@small` `.c-content-column-2@large`
+• `.c-content-column-3`: `.c-content-column-3@small` `.c-content-column-3@large`
+• `.c-content-column-4`: `.c-content-column-4@small` `.c-content-column-4@large`
+• `.c-content-column-5`: `.c-content-column-5@small` `.c-content-column-5@large`
+• `.c-content-column-6`: `.c-content-column-6@small` `.c-content-column-6@large`
+• `.c-content-column-7`: `.c-content-column-7@small` `.c-content-column-7@large`
+• `.c-content-column-8`: `.c-content-column-8@small` `.c-content-column-8@large`
+• `.c-content-column-9`: `.c-content-column-9@small` `.c-content-column-9@large`
+• `.c-content-column-10`: `.c-content-column-10@small` `.c-content-column-10@large`
+• `.c-content-column-11`: `.c-content-column-11@small` `.c-content-column-11@large`
+• `.c-content-column-12`: `.c-content-column-12@small` `.c-content-column-12@large`
+
+```default.html
+	<label>Label</label>
+```
+
+```base.html
+	<label class="** c-label **">Label</label>
+```
+
+```t-form-1.html
+	<input class="** c-label ** t-form-1">Label</label>
+```
+
+```t-form-2.html
+	<input class="** c-label ** t-form-2">Label</label>
+
+```
+
+*/
+
+.c-content-column {
+	@for $i from 1 through 12 {
+		&-#{$i} {
+			@include suffixcate {
+				column-count: $i;
+			}
+		}
+	}
+}
+
