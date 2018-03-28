@@ -1,36 +1,63 @@
-
 /*
 ---
 name: Float
 category: 3. Objects > Grid
 ---
-*/
 
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
+Applies `display: float` to children of the container and container has a `clear` `:after`.
+
+*  Contains [Suffixcate](/#suffixcate) options.
+
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+* `.o-float`: parent class
+* `.o-float__cell`: children class (applied `float: left`)
+* `.o-float__left`: children class that's alternative to `.o-float__cell`
+* `.o-float__right`: children class (applied `float: right`)
+
+
+```demo.html
+<div class="o-float">
+	<div class="float__cell">
+		•••
+	</div>
+	<div class="float__cell">
+		•••
+	</div>
+</div>
+```
+
+Large Suffixcate:
+
+```large.html
+<div class="o-float@large">
+	<div class="o-float@large__cell">
+		•••
+	</div>
+	<div class="o-float@large__left">
+		•••
+	</div>
+	<div class="o-float@large__right">
+		•••
+	</div>
+</div>
+```
+
+
+Small Suffixcate:
+
+```small.html
+<div class="o-float@large">
+	<div class="o-float@small__cell">
+		•••
+	</div>
+	<div class="o-float@small__cell">
+		•••
+	</div>
+</div>
+```
+*/
 
 .o-float {
 	@include suffixcate {
@@ -39,11 +66,7 @@ category: 3. Objects > Grid
 			display: table;
 			content: "";
 		}
-	}
-}
 
-.o-float {
-	@include suffixcate {
 		&__cell, &__left {
 			float: left;
 		}
