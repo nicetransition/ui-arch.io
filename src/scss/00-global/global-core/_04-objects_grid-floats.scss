@@ -1,8 +1,8 @@
 
 /*
 ---
-name: Grid
-category: 3. Objects
+name: Float
+category: 3. Objects > Float
 ---
 */
 
@@ -32,7 +32,7 @@ category: 3. Objects
 // 
 // ```
 
-.o-grid, .o-grid__row {
+.o-float {
 	@include suffixcate {
 		&:after {
 			clear: both;
@@ -42,18 +42,14 @@ category: 3. Objects
 	}
 }
 
-.o-grid {
+.o-float {
 	@include suffixcate {
-		&__cell {
+		&__cell, &__left {
 			float: left;
 		}
 
-		&__cell-alt {
+		&__cell-alt, &__right {
 			float: right;
-		}
-
-		&__row {
-
 		}
 	}
 }
