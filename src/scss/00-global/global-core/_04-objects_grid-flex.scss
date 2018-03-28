@@ -1,532 +1,1063 @@
-/*
----
-name: Flex
-category: 3. Objects
----
-*/
-
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
-
-
-
-
-/*
----
-name: Flex > Wrap
-category: 3. Objects
----
-*/
-
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
-
-
 .o-flex {
 	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-		// -js-display: flex;
 		display: flex;
 
-		&--end {
+		&--end, &--justify-content-end {
 			justify-content: flex-end;
 		}
 
-		&--start {
+		&--start, &--justify-content-start {
 			justify-content: flex-start;
 		}
-
 
 		&--equal > * {
 			flex: 1;
 		}
 
+		&--flex-direction-row, &--row {
+			flex-direction: row;
+		}
+
+		&--flex-direction-row-reverse, &--row-reverse {
+			flex-direction: row-reverse;
+		}
+
+		&--flex-direction-column, &--column {
+			flex-direction: column;
+		}
+
+		&--flex-direction-column-reverse, &--column-reverse {
+			flex-direction: column-reverse;
+		}
+
 		&--wrap {
 			flex-wrap: wrap;
 		}
 
-		&--justify {
+		&--nowrap {
+			flex-wrap: nowrap;
+		}
+
+		&--justify-content-start {
+			justify-content: flex-start;
+		}
+
+		&--justify-content-end {
+			justify-content: flex-end;
+		}
+
+		&--justify-content-center {
+			justify-content: center;
+		}
+
+		&--justify-content-between {
 			justify-content: space-between;
 		}
 
-		&--stretch {
-			align-items: stretch;
+		&--justify-content-around {
+			justify-content: space-around;
 		}
 
-		&--v-c {
+		&--align-items-start {
+			align-items: flex-start;
+		}
+
+		&--align-items-end {
+			align-items: flex-end;
+		}
+
+		&--align-items-center {
 			align-items: center;
 		}
 
-		&--grid {
-			flex-wrap: wrap;
+		&--align-items-baseline {
+			align-items: baseline;
+		}
+
+		&--align-items-stretch {
+			align-items: stretch;
+		}
+
+		&--align-content-start {
+			align-content: flex-start;
+		}
+
+		&--align-content-end {
+			align-content: flex-end;
+		}
+
+		&--align-content-center {
+			align-content: center;
+		}
+
+		&--align-content-between {
+			align-content: space-between;
+		}
+
+		&--align-content-around {
+			align-content: space-around;
+		}
+
+		&--align-content-stretch {
 			align-content: stretch;
-			justify-content: space-between;
-			width: 100%;
 		}
 
-		&--wrap {
-			flex-wrap: wrap;
-			width: 100%;
+		@for $i from 0 through 12 {
+			&__order-#{$i} {
+				order: $i;
+			}
 
-			> * {
-				width: 100%;
+			@if ($i != 0) {
+				&__order-#{$i}-neg {
+					order: -$i;
+				}
 			}
 		}
 
-		&--no-wrap {
-			flex-wrap: nowrap;
+		&__align-self-start, &__start {
+			align-self: flex-start;
 		}
-	}
 
-	&-1 {
-		@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-			flex: 1;
+		&__align-self-end, &__end {
+			align-self: flex-end;
 		}
-	}
-}
 
-
-
-/*
----
-name: Flex > Direction
-category: 3. Objects
----
-*/
-
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
-
-
-.o-flex-column, .o-flex-row {
-    @include suffixcateExtend(('.o-flex'));
-}
-
-.o-flex-row {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    flex-direction: row;
-	}
-}
-
-.o-flex-column {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-    	flex-direction: column;
-	}
-}
-
-.o-flex-wrap {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    flex-wrap: wrap;
-    }
-}
-
-.o-flex-nowrap {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    flex-wrap: nowrap;
-    }
-}
-
-
-
-/*
----
-name: Flex > Justify Content
-category: 3. Objects
----
-*/
-
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
-
-.o-flex-justify-content-start {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    justify-content: flex-start;
-    }
-}
-
-.o-flex-justify-content-end {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    justify-content: flex-end;
-    }
-}
-
-.o-flex-justify-content-center {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    justify-content: center;
-    }
-}
-
-.o-flex-justify-content-between {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    justify-content: space-between;
-    }
-}
-
-.o-flex-justify-content-around {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    justify-content: space-around;
-    }
-}
-
-
-
-/*
----
-name: Flex > Align Items
-category: 3. Objects
----
-*/
-
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
-
-.o-flex-align-items-start {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    align-items: flex-start;
-    }
-}
-
-.o-flex-align-items-end {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    align-items: flex-end;
-    }
-}
-
-.o-flex-align-items-center {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    align-items: center;
-    }
-}
-
-.o-flex-align-items-baseline {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    align-items: baseline;
-    }
-}
-
-.o-flex-align-items-stretch {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    align-items: stretch;
-    }
-}
-
-
-
-/*
----
-name: Flex > Align Content
-category: 3. Objects
----
-*/
-
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
-
-.o-flex-align-content-start {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    align-content: flex-start;
-    }
-}
-
-.o-flex-align-content-end {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    align-content: flex-end;
-    }
-}
-
-.o-flex-align-content-center {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    align-content: center;
-    }
-}
-
-.o-flex-align-content-between {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    align-content: space-between;
-    }
-}
-
-.o-flex-align-content-around {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    align-content: space-around;
-    }
-}
-
-.o-flex-align-content-stretch {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    align-content: stretch;
-    }
-}
-
-/*
----
-name: Flex > Order
-category: 3. Objects
----
-*/
-
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
-
-
-@for $i from 0 through 12 {
-	.o-flex__order-#{$i} {
-		@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-	    	order: $i;
+		&__align-self-center, &__center {
+			align-self: center;
 		}
-	}
 
-	@if ($i != 0) {
-		.o-flex__order-#{$i}-neg {
-			@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-		    	order: -$i;
+		&__align-self-baseline, &__baseline {
+			align-self: baseline;
+		}
+
+		&__align-self-stretch,  &__stretch {
+			align-self: stretch;
+		}
+
+		@for $i from 1 through 12 {
+			&__grow-#{$i} {
+				flex-grow: $i;
 			}
-		}
 
-		.o-flex__item-#{$i}, .o-flex__grow-#{$i} {
-			@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-		   		flex: $i;
+			&__shrink-#{$i} {
+				flex-shrink: $i;
 			}
-		}
 
-		.o-flex__shrink-#{$i} {
-			@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-		   		flex-shrink: $i;
-			}
-		}
-
-		.o-flex-items-#{$i} {
-			@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-		   		> * {
+			&--#{$i} {
+				> * {
 		   			flex: $i;
 				}
 			}
 		}
 	}
 
-
-	// flex basis made in @mixin makeWidths();
+	@for $i from 1 through 12 {
+		&-#{$i} {
+			@include suffixcate {
+				flex: $i;
+			}
+		}
+	}
 }
 
 /*
 ---
-name: Flex > Align Self
-category: 3. Objects
+name: Flex
+category: 3. Objects > Flex
 ---
+
+Applies `display: flex` to container. Don't know flex? Check out [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+```demo.html
+<div class="o-flex">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+
+```small.html
+<div class="o-flex@small">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```large.html
+<div class="o-flex@large">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
 */
 
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
 
-.o-flex__align-self-start {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-		align-self: flex-start;
-	}
-}
+/*
+---
+name: Flex Expand
+category: 3. Objects > Flex
+---
 
-.o-flex__align-self-end {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-		align-self: flex-end;
-	}
-}
+Applies `flex: 1` to element;
 
-.o-flex__align-self-center {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-		align-self: center;
-	}
-}
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
 
-.o-flex__align-self-baseline {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-		align-self: baseline;
-	}
-}
+```demo.html
+<div class="o-flex o-flex-1">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
 
-.o-flex__align-self-stretch {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
-		align-self: stretch;
-	}
-}
+
+```small.html
+<div class="o-flex@small o-flex-1@small">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```large.html
+<div class="o-flex@large o-flex-1@large">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+
+/*
+---
+name: Flex Start
+category: 3. Objects > Flex 
+---
+
+Applies `justify-content: flex-start` to flex, requires and extends `.o-flex`.
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options: `.o-flex@small--start`, `.o-flex@large--start`
+* 2 variations on selector: `.o-flex--start`, `.o-flex--justify-content-start`
+
+
+```demo.html
+<div class="o-flex o-flex--start">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```demo-alt.html
+<div class="o-flex o-flex--justify-content-start">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+
+/*
+---
+name: Flex End
+category: 3. Objects > Flex
+---
+
+Applies `justify-content: flex-end` to flex, requires and extends `.o-flex`.
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options: `.o-flex@small--end`, `.o-flex@large--end`
+* 2 variations on selector: `.o-flex--end`, `.o-flex--justify-content-end`
+
+
+```demo.html
+<div class="o-flex o-flex--end">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```demo-alt.html
+<div class="o-flex o-flex--justify-content-end">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+
+/*
+---
+name: Flex Children Equal
+category: 3. Objects > Flex 
+---
+
+Applies `flex: 1` to direct descendent children making them equal spanned widths, requires and extends `.o-flex`.
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options: `.o-flex@small--equal`, `.o-flex@large--equal`
+
+```demo.html
+<div class="o-flex o-flex--equal">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+/*
+---
+name: Flex Wrap
+category: 3. Objects > Flex
+---
+
+Applies `flex-wrap` property to flex, requires and extends `.o-flex`.
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options
+* Wrap: Applies `flex-wrap: wrap;` - `.o-flex--wrap`, `.o-flex@small--wrap`, `.o-flex@large--wrap`
+* nowrap: Applies `flex-wrap: nowrap;` - `.o-flex--nowrap`, `.o-flex@small--nowrap`, `.o-flex@large--nowrap`
+
+
+```wrap.html
+<div class="o-flex o-flex--wrap">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```nowrap.html
+<div class="o-flex o-flex--nowrap">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+
+
+/*
+---
+name: Flex Direction
+category: 3. Objects > Flex
+---
+
+Applies `flex-direction` property to flex container, requires and extends `.o-flex`.
+*  Contains [Suffixcate](/#suffixcate) options
+
+Options:
+* Row: Applies `flex-direction: row;` - `.o-flex--flex-direction-row`, `.o-flex@small--flex-direction-row`, `.o-flex@large--flex-direction-row`, `.o-flex--row`, `.o-flex@small--row`, `.o-flex@large--row`
+* row-reverse Reverse: Applies `flex-direction: row-reverse;` - `.o-flex--flex-direction-row-reverse`, `.o-flex@small--flex-direction-row-reverse`, `.o-flex@large--flex-direction-row-reverse`, `.o-flex--row-reverse`, `.o-flex@small--row-reverse`, `.o-flex@large--row-reverse`
+* Column: Applies `flex-direction: column;` - `.o-flex--flex-direction-column`, `.o-flex@small--flex-direction-column`, `.o-flex@large--flex-direction-column`, `.o-flex--column`, `.o-flex@small--column`, `.o-flex@large--column`
+* Column Reverse: Applies `flex-direction: column-reverse;` - `.o-flex--flex-direction-column-reverse`, `.o-flex@small--flex-direction-column-reverse`, `.o-flex@large--flex-direction-column-reverse`, `.o-flex--column-reverse`, `.o-flex@small--column-reverse`, `.o-flex@large--column-reverse`
+
+```row.html
+<div class="o-flex o-flex--row">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```column.html
+<div class="o-flex o-flex--column">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+
+/*
+---
+name: Flex Justify
+category: 3. Objects > Flex
+---
+
+Applies `justify-content` property to flex, requires and extends `.o-flex`.
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+Options:
+* `.o-flex--justify-content-start`: `.o-flex@small--justify-content-start`, `.o-flex@large--justify-content-start`
+* `.o-flex--justify-content-end`: `.o-flex@small--justify-content-end`, `.o-flex@large--justify-content-end`
+* `.o-flex--justify-content-center`: `.o-flex@small--justify-content-center`, `.o-flex@large--justify-content-center`
+* `.o-flex--justify-content-between`: `.o-flex@small--justify-content-between`, `.o-flex@large--justify-content-between`
+* `.o-flex--justify-content-around`: `.o-flex@small--justify-content-around`, `.o-flex@large--justify-content-around`
+
+
+```justify-content-start.html
+<div class="o-flex o-flex--justify-content-start">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```justify-content-end.html
+<div class="o-flex o-flex--justify-content-end">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```justify-content-center.html
+<div class="o-flex o-flex--justify-content-center">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```justify-content-between.html
+<div class="o-flex o-flex--justify-content-between">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```justify-content-around.html
+<div class="o-flex o-flex--justify-content-around">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+
+/*
+---
+name: Flex Align Items
+category: 3. Objects > Flex
+---
+
+Applies `align-items` property to flex, requires and extends `.o-flex`.
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+Options:
+* `.o-flex--align-items-start`: `.o-flex@small--align-items-start`, `.o-flex@large--align-items-start`
+* `.o-flex--align-items-end`: `.o-flex@small--align-items-end`, `.o-flex@large--align-items-end`
+* `.o-flex--align-items-center`: `.o-flex@small--align-items-center`, `.o-flex@large--align-items-center`
+* `.o-flex--align-items-baseline`: `.o-flex@small--align-items-baseline`, `.o-flex@large--align-items-baseline`
+* `.o-flex--align-items-stetch`: `.o-flex@small--align-items-stetch`, `.o-flex@large--align-items-stetch`
+
+
+```align-items-start.html
+<div class="o-flex o-flex--align-items-start">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-items-end.html
+<div class="o-flex o-flex--align-items-end">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-items-center.html
+<div class="o-flex o-flex--align-items-center">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-items-baseline.html
+<div class="o-flex o-flex--align-items-baseline">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-items-stretch.html
+<div class="o-flex o-flex--align-items-stretch">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+
+/*
+---
+name: Flex Align Items
+category: 3. Objects > Flex
+---
+
+Applies `align-items` property to flex, requires and extends `.o-flex`.
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+Options:
+* `.o-flex--align-items-start`: `.o-flex@small--align-items-start`, `.o-flex@large--align-items-start`
+* `.o-flex--align-items-end`: `.o-flex@small--align-items-end`, `.o-flex@large--align-items-end`
+* `.o-flex--align-items-center`: `.o-flex@small--align-items-center`, `.o-flex@large--align-items-center`
+* `.o-flex--align-items-baseline`: `.o-flex@small--align-items-baseline`, `.o-flex@large--align-items-baseline`
+* `.o-flex--align-items-stetch`: `.o-flex@small--align-items-stetch`, `.o-flex@large--align-items-stetch`
+
+
+```align-items-start.html
+<div class="o-flex o-flex--align-items-start">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-items-end.html
+<div class="o-flex o-flex--align-items-end">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-items-center.html
+<div class="o-flex o-flex--align-items-center">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-items-baseline.html
+<div class="o-flex o-flex--align-items-baseline">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-items-stretch.html
+<div class="o-flex o-flex--align-items-stretch">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+
+
+/*
+---
+name: Flex Align Content
+category: 3. Objects > Flex
+---
+
+Applies `align-content` property to flex, requires and extends `.o-flex`.
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+Options:
+* `.o-flex--align-content-start`: `.o-flex@small--align-content-start`, `.o-flex@large--align-content-start`
+* `.o-flex--align-content-end`: `.o-flex@small--align-content-end`, `.o-flex@large--align-content-end`
+* `.o-flex--align-content-center`: `.o-flex@small--align-content-center`, `.o-flex@large--align-content-center`
+* `.o-flex--align-content-between`: `.o-flex@small--align-content-between`, `.o-flex@large--align-content-between`
+* `.o-flex--align-content-around`: `.o-flex@small--align-content-around`, `.o-flex@large--align-content-around`
+* `.o-flex--align-content-stetch`: `.o-flex@small--align-content-stetch`, `.o-flex@large--align-content-stetch`
+
+
+```align-content-start.html
+<div class="o-flex o-flex--align-content-start">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-content-end.html
+<div class="o-flex o-flex--align-content-end">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-content-center.html
+<div class="o-flex o-flex--align-content-center">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-content-between.html
+<div class="o-flex o-flex--align-content-between">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-content-around.html
+<div class="o-flex o-flex--align-content-around">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-content-stretch.html
+<div class="o-flex o-flex--align-content-stretch">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+
+/*
+---
+name: Flex > Children Order
+category: 3. Objects > Flex
+---
+
+Applies `order` property to element, requires parent to be `.o-flex`. Utility version also available for `display: flex;` and `display: grid;` direct descendants.
+
+*  Contains [Suffixcate](/#suffixcate) options available for all options and utility versions;
+
+Options:
+* `.o-flex__order-0`: `order: 0;`
+* `.o-flex__order-1`: `order: 1;`
+* `.o-flex__order-1-neg`: `order: -1;`
+* `.o-flex__order-2`: `order: 2;`
+* `.o-flex__order-2-neg`: `order: -2;`
+* `.o-flex__order-3`: `order: 3;`
+* `.o-flex__order-3-neg`: `order: -3;`
+* `.o-flex__order-4`: `order: 4;`
+* `.o-flex__order-4-neg`: `order: -4;`
+* `.o-flex__order-5`: `order: 5;`
+* `.o-flex__order-5-neg`: `order: -5;`
+* `.o-flex__order-6`: `order: 6;`
+* `.o-flex__order-6-neg`: `order: -6;`
+* `.o-flex__order-7`: `order: 7;`
+* `.o-flex__order-7-neg`: `order: -7;`
+* `.o-flex__order-8`: `order: 8;`
+* `.o-flex__order-8-neg`: `order: -8;`
+* `.o-flex__order-9`: `order: 9;`
+* `.o-flex__order-9-neg`: `order: -9`
+* `.o-flex__order-10`: `order: 10;`
+* `.o-flex__order-10-neg`: `order: -10;`
+* `.o-flex__order-11`: `order: 11;`
+* `.o-flex__order-11-neg`: `order: -11;`
+* `.o-flex__order-12`: `order: 12;`
+* `.o-flex__order-12-neg`: `order: -12;`
+
+* Utility versions:
+* `.u-order-0`: `order: 0;`
+* `.u-order-1`: `order: 1;`
+* `.u-order-1-neg`: `order: -1;`
+* `.u-order-2`: `order: 2;`
+* `.u-order-2-neg`: `order: -2;`
+* `.u-order-3`: `order: 3;`
+* `.u-order-3-neg`: `order: -3;`
+* `.u-order-4`: `order: 4;`
+* `.u-order-4-neg`: `order: -4;`
+* `.u-order-5`: `order: 5;`
+* `.u-order-5-neg`: `order: -5;`
+* `.u-order-6`: `order: 6;`
+* `.u-order-6-neg`: `order: -6;`
+* `.u-order-7`: `order: 7;`
+* `.u-order-7-neg`: `order: -7;`
+* `.u-order-8`: `order: 8;`
+* `.u-order-8-neg`: `order: -8;`
+* `.u-order-9`: `order: 9;`
+* `.u-order-9-neg`: `order: -9`
+* `.u-order-10`: `order: 10;`
+* `.u-order-10-neg`: `order: -10;`
+* `.u-order-11`: `order: 11;`
+* `.u-order-11-neg`: `order: -11;`
+* `.u-order-12`: `order: 12;`
+* `.u-order-12-neg`: `order: -12;`
+
+
+```demo.html
+<div class="o-flex>
+	<div class="o-flex__order-12">
+		1
+	</div>
+	<div class="o-flex__order-0">
+		2
+	</div>
+	<div>
+		3
+	</div>
+	<div>
+		4
+	</div>
+</div>
+```
+
+*/
+
+/*
+---
+name: Flex > Children Align Self
+category: 3. Objects > Flex
+---
+
+Applies `align-self` property to element, requires parent to be `.o-flex`. 
+
+*  Contains [Suffixcate](/#suffixcate) options available for all options and utility versions;
+
+Options:
+* `.o-flex__align-self-start`: `.o-flex@small__align-self-start`, `.o-flex@large__align-self-start`
+* `.o-flex__align-self-end`: `.o-flex@small__align-self-end`, `.o-flex@large__align-self-end`
+* `.o-flex__align-self-center`: `.o-flex@small__align-self-center`, `.o-flex@large__align-self-center`
+* `.o-flex__align-self-baseline`: `.o-flex@small__align-self-baseline`, `.o-flex@large__align-self-baseline`
+* `.o-flex__align-self-stetch`: `.o-flex@small__align-self-stetch`, `.o-flex@large__align-self-stetch`
+
+*/
+

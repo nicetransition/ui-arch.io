@@ -620,3 +620,77 @@ $u-outline-styles: ($default-space / 2) solid #FFF;
 	object-fit: cover;
 }
 
+
+/*
+---
+name: Order
+category: 3. Trumps > Extras
+---
+
+Requires parent container to have either `display: flex;` or `display: grid;`.
+
+*  Contains [Suffixcate](/#suffixcate) options available for all options and utility versions;
+
+Options:
+* `.u-order-0`: `order: 0;`
+* `.u-order-1`: `order: 1;`
+* `.u-order-1-neg`: `order: -1;`
+* `.u-order-2`: `order: 2;`
+* `.u-order-2-neg`: `order: -2;`
+* `.u-order-3`: `order: 3;`
+* `.u-order-3-neg`: `order: -3;`
+* `.u-order-4`: `order: 4;`
+* `.u-order-4-neg`: `order: -4;`
+* `.u-order-5`: `order: 5;`
+* `.u-order-5-neg`: `order: -5;`
+* `.u-order-6`: `order: 6;`
+* `.u-order-6-neg`: `order: -6;`
+* `.u-order-7`: `order: 7;`
+* `.u-order-7-neg`: `order: -7;`
+* `.u-order-8`: `order: 8;`
+* `.u-order-8-neg`: `order: -8;`
+* `.u-order-9`: `order: 9;`
+* `.u-order-9-neg`: `order: -9`
+* `.u-order-10`: `order: 10;`
+* `.u-order-10-neg`: `order: -10;`
+* `.u-order-11`: `order: 11;`
+* `.u-order-11-neg`: `order: -11;`
+* `.u-order-12`: `order: 12;`
+* `.u-order-12-neg`: `order: -12;`
+
+
+```demo.html
+<div class="o-flex>
+	<div class="u-order-12">
+		1
+	</div>
+	<div class="u-order-2-neg@large">
+		2
+	</div>
+	<div>
+		3
+	</div>
+	<div class="u-order-2@small">
+		4
+	</div>
+</div>
+```
+
+*/
+
+@for $i from 0 through 12 {
+	.u-order-#{$i} {
+		@include suffixcate {
+			order: $i;
+		}
+	}
+
+	@if ($i != 0) {
+		.u-order-#{$i}-neg {
+			@include suffixcate {
+				order: -$i;
+			}
+		}
+		
+	}
+}
