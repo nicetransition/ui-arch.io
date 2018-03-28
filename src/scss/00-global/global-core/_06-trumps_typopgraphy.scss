@@ -10,7 +10,7 @@
 }
 
 .u-a-c {
-	@include suffixcate($bp: $suffixcate_bp-all)  {
+	@include suffixcate  {
 		text-align: center;
 	}
 }

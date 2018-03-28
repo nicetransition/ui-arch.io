@@ -2,34 +2,34 @@
 @mixin width-size-generator($value: 1, $bp: $bp-large, $type: percent, $width: false) {
     &-#{$value} {
         @if ($type==fixed) {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 width: $width / $value;
             }
 
             &-alt, &-max {
-                @include suffixcate($bp: $suffixcate_bp-all) {
+                @include suffixcate {
                     max-width: $width / $value;
                 }
             }
 
             &-alt-2, &-min {
-                @include suffixcate($bp: $suffixcate_bp-all) {
+                @include suffixcate {
                     min-width: $width / $value;
                 }
             }
         } @else {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 width: percentage(1 / $value);
             }
 
             &-alt, &-max {
-                @include suffixcate($bp: $suffixcate_bp-all) {
+                @include suffixcate {
                     max-width: percentage(1 / $value);
                 }
             }
 
             &-alt-2, &-min {
-                @include suffixcate($bp: $suffixcate_bp-all) {
+                @include suffixcate {
                     min-width: percentage(1 / $value);
                 }
             }
@@ -104,115 +104,115 @@ Usage:
 
 .u-width {
     &-0 {
-        @include suffixcate($bp: $suffixcate_bp-all) {
+        @include suffixcate {
             width: rem(40);
         }
 
         &-max {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 max-width: rem(40);
             }
         }
 
         &-min {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 min-width: rem(40);
             }
         }
     }
 
     &-1 {
-        @include suffixcate($bp: $suffixcate_bp-all) {
+        @include suffixcate {
             width: rem(50);
         }
 
         &-max {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 max-width: rem(50);
             }
         }
 
         &-min {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 min-width: rem(50);
             }
         }
     }
 
     &-2 {
-        @include suffixcate($bp: $suffixcate_bp-all) {
+        @include suffixcate {
             width: rem(75);
         }
 
         &-max {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 max-width: rem(75);
             }
         }
 
         &-min {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 min-width: rem(75);
             }
         }
     }
 
     &-3 {
-        @include suffixcate($bp: $suffixcate_bp-all) {
+        @include suffixcate {
             width: rem(100);
         }
 
         &-max {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 max-width: rem(100);
             }
         }
 
         &-min {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 min-width: rem(100);
             }
         }
     }
 
     &-4 {
-        @include suffixcate($bp: $suffixcate_bp-all) {
+        @include suffixcate {
             width: rem(200);
         }
 
         &-max {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 max-width: rem(200);
             }
         }
 
         &-min {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 min-width: rem(200);
             }
         }
     }
 
     &-5 {
-        @include suffixcate($bp: $suffixcate_bp-all) {
+        @include suffixcate {
             width: rem(300);
         }
 
         &-max {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 max-width: rem(300);
             }
         }
 
         &-min {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 min-width: rem(300);
             }
         }
     }
 
     &-6 {
-        @include suffixcate($bp: $suffixcate_bp-all) {
+        @include suffixcate {
             width: rem(420);
         }
 
@@ -220,13 +220,13 @@ Usage:
 
 
 
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 max-width: rem(420);
             }
         }
 
         &-min {
-            @include suffixcate($bp: $suffixcate_bp-all) {
+            @include suffixcate {
                 min-width: rem(420);
             }
         }

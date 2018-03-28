@@ -147,7 +147,7 @@
 	@extend %u-speak-none;
 	@extend %display-hidden;
 
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: false) {
+	@include suffixcate {
 		speak: none;
 		display: none;
 	}
@@ -256,25 +256,25 @@ img, textarea, span, label, aside, main {
 
 
 .u-auto-t {
-	@include suffixcate($bp: $suffixcate_bp-all) {
+	@include suffixcate {
 		margin-top: auto;
 	}
 }
 
 .u-auto-r {
-	@include suffixcate($bp: $suffixcate_bp-all) {
+	@include suffixcate {
 		margin-right: auto;
 	}
 }
 
 .u-auto-b {
-	@include suffixcate($bp: $suffixcate_bp-all) {
+	@include suffixcate {
 		margin-bottom: auto;
 	}
 }
 
 .u-auto-l {
-	@include suffixcate($bp: $suffixcate_bp-all) {
+	@include suffixcate {
 		margin-left: auto;
 	}
 }
@@ -422,7 +422,7 @@ $u-outline-styles: ($default-space / 2) solid #FFF;
 	}
 
 	&-2 {
-		@include suffixcate($bp: $suffixcate_bp-all) {
+		@include suffixcate {
 			border-right: $u-outline-styles-base;
 		}
 

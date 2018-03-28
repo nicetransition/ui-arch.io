@@ -1,5 +1,5 @@
 .o-flex {
-	@include suffixcate($bp: $suffixcate_bp-all, $all: true, $base: true)  {
+	@include suffixcate {
 		display: flex;
 
 		&--end, &--justify-content-end {
