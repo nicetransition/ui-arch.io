@@ -1,0 +1,69 @@
+// coming soon....
+
+/*
+---
+name: Grid
+category: 3. Objects > Grid
+---
+
+Applies `display: grid` to container. Don't know Grid? Check out [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+```demo.html
+<div class="o-grid">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+
+```small.html
+<div class="o-grid@small">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```large.html
+<div class="o-grid@large">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+.o-grid {
+	display: grid;
+}
