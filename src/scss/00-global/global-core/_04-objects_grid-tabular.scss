@@ -1,35 +1,128 @@
 /*
 ---
 name: Table
-category: 3. Objects
+category: 3. Objects > Grid
 ---
+
+Applies `display: table` to container, requires children elements to have related classes (will apply `display: table-cell`).
+
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+* `.u-table--full`: Make it full width
+* `.u-table--fixed`: Makes cells fixed widths (equal to eachother)
+* `.o-tabular__header`: Optional header (kind of unnecessary for most use cases these days), `<thead>` render
+* `.o-tabular__row`: Optional row (kind of unnecessary for most use cases these days)
+* `.o-tabular__footer`: Optional footer (kind of unnecessary for most use cases these days), `<tfoot>` render
+
+
+```demo.html
+<div class="o-tabular">
+	<div class="o-tabular__cell">
+		•••
+	</div>
+	<div class="o-tabular__cell">
+		•••
+	</div>
+	<div class="o-tabular__cell">
+		•••
+	</div>
+</div>
+```
+
+With row:
+
+```row.html
+<div class="o-tabular">
+	<div class="o-tabular__row">
+		<div class="o-tabular__cell">
+			•••
+		</div>
+		<div class="o-tabular__cell">
+			•••
+		</div>
+		<div class="o-tabular__cell">
+			•••
+		</div>
+	</div>
+</div>
+```
+
+
+With header and footer options:
+
+```header-fotoer.html
+<div class="o-tabular">
+	<div class="o-tabular__header">
+		<div class="o-tabular__cell">
+			•••
+		</div>
+		<div class="o-tabular__cell">
+			•••
+		</div>
+		<div class="o-tabular__cell">
+			•••
+		</div>
+	</div>
+	<div class="o-tabular__row">
+		<div class="o-tabular__cell">
+			•••
+		</div>
+		<div class="o-tabular__cell">
+			•••
+		</div>
+		<div class="o-tabular__cell">
+			•••
+		</div>
+	</div>
+	<div class="o-tabular__footer">
+		<div class="o-tabular__cell">
+			•••
+		</div>
+		<div class="o-tabular__cell">
+			•••
+		</div>
+		<div class="o-tabular__cell">
+			•••
+		</div>
+	</div>
+</div>
+```
+
+Large Suffixcate:
+
+```large.html
+<div class="o-tabular@large">
+	<div class="o-tabular@large__cell">
+		•••
+	</div>
+	<div class="o-tabular@large__cell">
+		•••
+	</div>
+	<div class="o-tabular@large__cell">
+		•••
+	</div>
+</div>
+```
+
+
+Small Suffixcate:
+
+```Small.html
+<div class="o-tabular@small">
+	<div class="o-tabular@small__cell">
+		•••
+	</div>
+	<div class="o-tabular@small__cell">
+		•••
+	</div>
+	<div class="o-tabular@small__cell">
+		•••
+	</div>
+</div>
+```
 */
 
-// Input can be used with `<input>` elements and all its types.
-// 
-// Types of labels:
-// - Default: No classes
-// - Disabled: No classes
-// - Base: `.c-input`
-// - Theme 1: `.t-form-1`
-// - Theme 2: `.t-form-2`
-// 
-// ```default.html
-// 	<label>Label</label>
-// ```
-// 
-// ```base.html
-// 	<label class="** c-label **">Label</label>
-// ```
-// 
-// ```t-form-1.html
-// 	<input class="** c-label ** t-form-1">Label</label>
-// ```
-// 
-// ```t-form-2.html
-// 	<input class="** c-label ** t-form-2">Label</label>
-// 
-// ```
 
 .o-tabular {
 	@include suffixcate  {
