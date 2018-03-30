@@ -46,6 +46,23 @@ Add `position: absolute` to an element
 ```
 */
 
+/*
+---
+name: Position > Sticky
+category: 6. Trumps > Positioning
+---
+
+Add `position: sticky` to an element
+
+*  Contains [Suffixcate](/#suffixcate) option.
+
+```demo.html
+<div class="u-pos-sticky">
+</div>
+```
+*/
+
+
 
 /*
 ---
@@ -90,6 +107,12 @@ Variants:
 }
 
 .u-pos-a {
+	@include suffixcate {
+		position: absolute;
+	}
+}
+
+.u-pos-sticky {
 	@include suffixcate {
 		position: absolute;
 	}
