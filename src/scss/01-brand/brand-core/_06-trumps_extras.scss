@@ -1,0 +1,73 @@
+/*
+---
+name: Box-Shadow
+category: 6. Trumps > Extras
+---
+
+Adds `box-shadow`
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+```demo.html
+<div class="u-gutt-lg u-shadow">
+	<div class="o-media__asset">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-media__main">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+*/
+
+.u-shadow {
+	@include suffixcate {
+		box-shadow: 0 rem(1) rem(2) rgba(0,0,0,.075), 0 rem(-1) rem(2) rgba(255,255,255,.05);
+	}
+}
+
+
+/*
+---
+name: Border  Color
+category: 6. Trumps > Extras
+---
+
+Options for `border-color` CSS property, uses color from brand colors.
+
+* `u-border--primary`: Primary color
+* `u-border--primary-dark`: Primary color
+* `u-border--primary-light`: Primary color
+* `u-border--primary-accent`: Primary color
+* `u-border--secondary`: Primary color
+* `u-border--secondary-dark`: Primary color
+* `u-border--secondary-light`: Primary color
+* `u-border--secondary-accent`: Primary color
+* `u-border--accent`: Primary color
+* `u-border--accent-dark`: Primary color
+* `u-border--accent-light`: Primary color
+* `u-border--accent-accent`: Primary color
+* `u-border--dark`: Dark color
+* `u-border--dark-dark`: Dark color
+* `u-border--dark-light`: Dark color
+* `u-border--dark-accent`: Dark color
+* `u-border--light`: Light color
+* `u-border--light-dark`: Light color
+* `u-border--light-light`: Light color
+* `u-border--light-accent`: Light color
+
+*/
+
+
+.u-border {
+	@each $color, $values in $palette {
+		@include suffixcate {
+			&--#{$color} {
+				border-color: unquote(nth($values, 1));
+			}
+		}
+	}
+}
