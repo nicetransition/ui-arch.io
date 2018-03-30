@@ -1,3 +1,57 @@
+/*
+---
+name: Media Object
+category: 3. Objects > Patterns
+---
+
+Core of OOCSS, image on the left and content right
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+*  `.o-flag--full`: Expand full width of container, variation for suffixcate: `o-flag@small--full` and `o-flag@large--full`
+
+```demo.html
+<div class="o-media">
+	<div class="o-media__asset">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-media__main">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+
+```small.html
+<div class="o-media@small">
+	<div class="o-media@small__asset">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-media@small__main">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+```large.html
+<div class="o-media@large">
+	<div class="o-media@large__asset">
+		<img src="http://placehold.it/50x50?text=Image" alt="Image">
+	</div>
+	<div class="o-media@large__main">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+		</p>
+	</div>
+</div>
+```
+
+*/
+
 .u-text-shad {
 	text-shadow: 0 0 rem(50) rgba($color-secondary-dark,.6), 0 0 rem(5) rgba($color-secondary-dark,.2);
 }
