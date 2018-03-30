@@ -1,3 +1,78 @@
+.u-1 {
+	@include suffixcate {
+		top: 0;
+	}
+}
+
+.u-2 {
+	@include suffixcate {
+		right: 0;
+	}
+}
+
+.u-3 {
+	@include suffixcate {
+		bottom: 0;
+	}
+}
+.u-4 {
+	@include suffixcate {
+		left: 0;
+	}
+}
+
+
+.u-space-0-1 {
+	@include suffixcate {
+		padding-top: 0;
+	}
+}
+
+.u-space-0-1 {
+	@include suffixcate {
+		padding-right: 0;
+	}
+}
+
+.u-space-0-1 {
+	@include suffixcate {
+		padding-bottom: 0;
+	}
+}
+
+.u-space-0-1 {
+	@include suffixcate {
+		padding-left: 0;
+	}
+}
+
+.u-gutt-0-1 {
+	@include suffixcate {
+		margin-top: 0;
+	}
+}
+
+.u-gutt-0-1 {
+	@include suffixcate {
+		margin-right: 0;
+	}
+}
+
+.u-gutt-0-1 {
+	@include suffixcate {
+		margin-bottom: 0;
+	}
+}
+
+.u-gutt-0-1 {
+	@include suffixcate {
+		margin-left: 0;
+	}
+}
+
+
+
+
 .u-offset-fs {
 	&-6 {
 		@include suffixcate {
