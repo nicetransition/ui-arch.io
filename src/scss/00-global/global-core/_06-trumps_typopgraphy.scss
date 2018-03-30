@@ -1,53 +1,39 @@
 /*
 ---
-name: Media Object
-category: 3. Objects > Patterns
+name: Alignment
+category: 6. Trumps > Typography
 ---
 
-Core of OOCSS, image on the left and content right
+Text alignments with `text-align` helper classes
 
 Additional options:
 *  Contains [Suffixcate](/#suffixcate) options.
-*  `.o-flag--full`: Expand full width of container, variation for suffixcate: `o-flag@small--full` and `o-flag@large--full`
 
-```demo.html
-<div class="o-media">
-	<div class="o-media__asset">
-		<img src="http://placehold.it/50x50?text=Image" alt="Image">
-	</div>
-	<div class="o-media__main">
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
-		</p>
-	</div>
-</div>
+`.u-a-r`: Right align
+```uar.html
+<p class="u-a-r">
+	Lorem ipsum.
+</p>
 ```
 
-
-```small.html
-<div class="o-media@small">
-	<div class="o-media@small__asset">
-		<img src="http://placehold.it/50x50?text=Image" alt="Image">
-	</div>
-	<div class="o-media@small__main">
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
-		</p>
-	</div>
-</div>
+`.u-a-c`: Center align
+```uar.html
+<p class="u-a-c">
+	Lorem ipsum.
+</p>
 ```
 
-```large.html
-<div class="o-media@large">
-	<div class="o-media@large__asset">
-		<img src="http://placehold.it/50x50?text=Image" alt="Image">
-	</div>
-	<div class="o-media@large__main">
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
-		</p>
-	</div>
-</div>
+`.u-a-l`: Left align
+```ual.html
+<p class="u-a-l:>
+	Lorem ipsum.
+</p>
+```
+`.u-a-j`: Justifu align
+```uar.html
+<p class="u-a-r">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+</p>
 ```
 
 */
@@ -80,15 +66,53 @@ Additional options:
 	}
 }
 
-.u-emphasize {
+/*
+---
+name: Uppercase
+category: 6. Trumps > Typography
+---
+
+Text alignments with `text-transform` helper classes
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+* Variations can be used: `.u-emphasize` or `.u-upper`
+
+`.u-emphasize`: Uppercase
+```demo.html
+<p class="u-emphasize">
+	Lorem ipsum.
+</p>
+```
+
+
+*/
+
+.u-emphasize, .u-upper {
 	@include suffixcate {
 		text-transform: uppercase;
 	}
 }
 
-.u-strong, strong, b {
-	
-}
+
+/*
+---
+name: Italic
+category: 6. Trumps > Typography
+---
+
+Text alignments with `font-style: italic` helper classes
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+`.u-italic`: Uppercase
+```demo.html
+<p class="u-italic">
+	Lorem ipsum.
+</p>
+```
+*/
 
 .u-italic {
 	font-style: italic;
