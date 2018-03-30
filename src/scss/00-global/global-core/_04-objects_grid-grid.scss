@@ -1,4 +1,127 @@
-// coming soon....
+// coming soon.... still working on this! missing justify-content, justify-items, align-items, align-content
+
+.o-grid {
+	@include suffixcate {
+		display: grid;
+
+		&--column-gap, &--gap  {
+			@media screen and (min-width: $bp-space) {
+				grid-column-gap: $default-space;
+			}
+
+			@media screen and (max-width: $bp-space) {
+				grid-column-gap: $default-space / 2;
+			}
+		}
+
+		&--column-gap-fixed, &--gap-fixed  {
+			grid-column-gap: $default-space;
+		}
+
+		&--column-gap-lg, &--gap-lg  {
+			@media screen and (min-width: $bp-space) {
+				grid-column-gap: $default-space * 2;
+			}
+
+			@media screen and (max-width: $bp-space) {
+				grid-column-gap: $default-space;
+			}
+		}
+
+		&--column-gap-lg-fixed, &--gap-lg-fixed  {
+			grid-column-gap: $default-space * 2;
+		}
+
+		&--column-gap-sm, &--gap-sm {
+			grid-column-gap: $default-space / 2;
+		}
+
+		&--column-gap-sm, &--gap-sm {
+			grid-column-gap: $default-space / 4;
+		}
+
+		&--row-gap, &--gap  {
+			@media screen and (min-width: $bp-space) {
+				grid-row-gap: $default-space;
+			}
+
+			@media screen and (max-width: $bp-space) {
+				grid-row-gap: $default-space / 2;
+			}
+		}
+
+		&--row-gap-fixed, &--gap-fixed  {
+			grid-row-gap: $default-space;
+		}
+
+		&--row-gap-lg, &--gap-lg  {
+			@media screen and (min-width: $bp-space) {
+				grid-row-gap: $default-space * 2;
+			}
+
+			@media screen and (max-width: $bp-space) {
+				grid-row-gap: $default-space;
+			}
+		}
+
+		&--row-gap-lg-fixed, &--gap-lg-fixed  {
+			grid-row-gap: $default-space * 2;
+		}
+
+		&--row-gap-sm, &--gap-sm {
+			grid-row-gap: $default-space / 2;
+		}
+
+		&--1 {
+			grid-template-columns: 1fr;
+		}
+
+		&--2 {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		&--3 {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		&--4 {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+
+		&--5 {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		}
+
+		&--6 {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		}
+
+		&--7 {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		}
+
+		&--8 {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		}
+
+		&--9 {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		}
+
+		&--10 {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		}
+
+		&--11 {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		}
+
+		&--12 {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		}
+	}
+}
+
 
 /*
 ---
@@ -10,6 +133,10 @@ Applies `display: grid` to container. Don't know Grid? Check out [A Complete Gui
 
 Additional options:
 *  Contains [Suffixcate](/#suffixcate) options.
+
+
+Modifiers: 
+* `o-grid--1`-`o-grid--12`: Applies column `1fr` for `grid-template-columns`, for example `.o-grid--1` is equal to `grid-template-columns: 1fr;` and `.o-grid--4` is equal to `grid-template-columns: 1fr 1fr 1fr 1fr;`
 
 ```demo.html
 <div class="o-grid">
@@ -64,6 +191,487 @@ Additional options:
 ```
 */
 
-.o-grid {
-	display: grid;
-}
+
+
+/*
+---
+name: Grid > Template Columns
+category: 3. Objects > Grid
+---
+
+Applies `grid-template-columns` with `1fr` for identified quanitity, for example `.o-grid--2` is equal to `grid-template-columns: 1fr 1fr;` (2 column) and `.o-grid--4` is equal to `grid-template-columns: 1fr 1fr 1fr 1fr;` (4 column)
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+Classes
+* `o-grid--1`-`o-grid--12`: Applies column `1fr` for `grid-template-columns`, 
+
+
+
+```2.html
+<div class="o-grid o-grid--2">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+
+```4.html
+<div class="o-grid o-grid--4">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```12.html
+<div class="o-grid o-grid--12">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+
+/*
+---
+name: Grid >  Row Gap
+category: 3. Objects > Grid
+---
+
+Applies `grid-row-gap:` to container, requires `.o-grid`. Uses settings from `$default-space` from `_00-settings.scss`.
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+
+Default:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--column-gap">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+Fixed:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--column-gap-fixed">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+
+2x:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--column-gap-lg">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+2x fixed:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--column-gap-lg-fixed">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+Half:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--column-gap-lg-sm">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+
+Quarter:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--column-gap-lg-tiny">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+*/
+
+
+/*
+---
+name: Grid >  Row Gap
+category: 3. Objects > Grid
+---
+
+Applies `grid-row-gap:` to container, requires `.o-grid`. Uses settings from `$default-space` from `_00-settings.scss`.
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+
+Default:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--row-gap">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+Fixed:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--row-gap-fixed">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+
+2x:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--row-gap-lg">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+2x fixed:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--row-gap-lg-fixed">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+Half:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--row-gap-lg-sm">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+
+Quarter:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--row-gap-lg-tiny">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+*/
+
+
+
+
+/*
+---
+name: Grid >  Gap
+category: 3. Objects > Grid
+---
+
+Applies `grid-row-gap` `grid-column-gap` and to container, requires `.o-grid`. Uses settings from `$default-space` from `_00-settings.scss`.
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+
+Default:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--gap">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+Fixed:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--gap-fixed">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+
+2x:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--gap-lg">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+2x fixed:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--gap-lg-fixed">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+Half:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--gap-lg-sm">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+
+
+Quarter:
+```demo.html
+<div class="o-grid o-grid--2 o-grid--gap-lg-tiny">
+	<div class="u-primary-bg">
+		•••
+	</div>
+	<div class="u-secondary-bg">
+		•••
+	</div>
+	<div class="u-dark-bg">
+		•••
+	</div>
+	<div class="u-light-bg">
+		•••
+	</div>
+</div>
+```
+*/
+
+
+
+
