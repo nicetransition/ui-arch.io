@@ -1,15 +1,15 @@
-// coming soon.... still working on this! missing justify-content, justify-items, align-items, align-content
+// coming soon.... still working on this! missing justify-self, a solution for column-start/end/ row-start/end and area
 
 .o-grid {
 	@include suffixcate {
 		display: grid;
 
 		&--column-gap, &--gap  {
-			@media screen and (min-width: $bp-space) {
+			@media screen and (min-width: $bp-spaces) {
 				grid-column-gap: $default-space;
 			}
 
-			@media screen and (max-width: $bp-space) {
+			@media screen and (max-width: $bp-spaces) {
 				grid-column-gap: $default-space / 2;
 			}
 		}
@@ -19,11 +19,11 @@
 		}
 
 		&--column-gap-lg, &--gap-lg  {
-			@media screen and (min-width: $bp-space) {
+			@media screen and (min-width: $bp-spaces) {
 				grid-column-gap: $default-space * 2;
 			}
 
-			@media screen and (max-width: $bp-space) {
+			@media screen and (max-width: $bp-spaces) {
 				grid-column-gap: $default-space;
 			}
 		}
@@ -41,11 +41,11 @@
 		}
 
 		&--row-gap, &--gap  {
-			@media screen and (min-width: $bp-space) {
+			@media screen and (min-width: $bp-spaces) {
 				grid-row-gap: $default-space;
 			}
 
-			@media screen and (max-width: $bp-space) {
+			@media screen and (max-width: $bp-spaces) {
 				grid-row-gap: $default-space / 2;
 			}
 		}
@@ -55,11 +55,11 @@
 		}
 
 		&--row-gap-lg, &--gap-lg  {
-			@media screen and (min-width: $bp-space) {
+			@media screen and (min-width: $bp-spaces) {
 				grid-row-gap: $default-space * 2;
 			}
 
-			@media screen and (max-width: $bp-space) {
+			@media screen and (max-width: $bp-spaces) {
 				grid-row-gap: $default-space;
 			}
 		}
@@ -119,6 +119,90 @@
 		&--12 {
 			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 		}
+
+		&--justify-content-start {
+			justify-content: start;
+		}
+
+		&--justify-content-end {
+			justify-content: end;
+		}
+
+		&--justify-content-center {
+			justify-content: center;
+		}
+
+		&--justify-strech {
+			justify-content: stretch;
+		}
+
+		&--align-items-start {
+			align-items: start;
+		}
+
+		&--align-items-end {
+			align-items: end;
+		}
+
+		&--align-items-center {
+			align-items: center;
+		}
+
+		&--align-content-stretch {
+			align-content: stretch;
+		}
+
+
+		&--align-items-start {
+			align-items: flex-start;
+		}
+
+		&--align-items-end {
+			align-items: flex-end;
+		}
+
+		&--align-items-center {
+			align-items: center;
+		}
+
+		&--align-items-baseline {
+			align-items: baseline;
+		}
+
+		&--align-items-stretch {
+			align-items: stretch;
+		}
+
+		&--justify-content-start {
+			justify-content: start;
+		}
+
+		&--justify-content-end {
+			justify-content: end;
+		}
+
+		&--justify-content-center {
+			justify-content: center;
+		}
+
+		&--justify-content-between {
+			justify-content: space-between;
+		}
+
+		&--justify-content-around {
+			justify-content: space-around;
+		}
+
+		&--justify-content-evenly {
+			justify-content: space-evenly;
+		}
+
+		&--justify-content-stretch {
+			justify-content: stretch;
+		}
+
+
+
 	}
 }
 
@@ -673,5 +757,411 @@ Quarter:
 */
 
 
+/*
+---
+name: Grid > Justify
+category: 3. Objects > Grid
+---
+
+Applies `justify-items` property to flex, requires and extends `.o-grid`.
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+Options:
+* `.o-grid--justify-items-start`: `.o-grid@small--justify-items-start`, `.o-grid@large--justify-items-start`
+* `.o-grid--justify-items-end`: `.o-grid@small--justify-items-end`, `.o-grid@large--justify-items-end`
+* `.o-grid--justify-items-center`: `.o-grid@small--justify-items-center`, `.o-grid@large--justify-items-center`
+* `.o-grid--justify-items-around`: `.o-grid@small--justify-items-around`, `.o-grid@large--justify-items-around`
+
+
+```justify-items-start.html
+<div class="o-grid o-grid--3 o-grid--justify-items-start">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```justify-items-end.html
+<div class="o-grid o-grid--3 o-grid--justify-items-end">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```justify-items-center.html
+<div class="o-grid o-grid--3 o-grid--justify-items-center">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```justify-items-around.html
+<div class="o-grid o-grid--3 o-grid--justify-items-around">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+
+/*
+---
+name: Grid > Align Items
+category: 3. Objects > Grid
+---
+
+Applies `align-items` property to flex, requires and extends `.o-grid`.
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+Options:
+* `.o-grid--align-items-start`: `.o-grid@small--align-items-start`, `.o-grid@large--align-items-start`
+* `.o-grid--align-items-end`: `.o-grid@small--align-items-end`, `.o-grid@large--align-items-end`
+* `.o-grid--align-items-center`: `.o-grid@small--align-items-center`, `.o-grid@large--align-items-center`
+* `.o-grid--align-items-stetch`: `.o-grid@small--align-items-stetch`, `.o-grid@large--align-items-stetch`
+
+
+```align-items-start.html
+<div class="o-grid o-grid--3 o-grid--align-items-start">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-items-end.html
+<div class="o-grid o-grid--3 o-grid--align-items-end">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-items-center.html
+<div class="o-grid o-grid--3 o-grid--align-items-center">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-items-stretch.html
+<div class="o-grid o-grid--3 o-grid--align-items-stretch">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+
+/*
+---
+name: Grid > Justify Content
+category: 3. Objects > Grid
+---
+
+Applies `justify-content` property to flex, requires and extends `.o-grid`.
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+Options:
+* `.o-grid--justify-content-start`: `.o-grid@small--justify-content-start`, `.o-grid@large--justify-content-start`
+* `.o-grid--justify-content-end`: `.o-grid@small--justify-content-end`, `.o-grid@large--justify-content-end`
+* `.o-grid--justify-content-center`: `.o-grid@small--justify-content-center`, `.o-grid@large--justify-content-center`
+* `.o-grid--justify-content-stretch`: `.o-grid@small--justify-content-stretch`, `.o-grid@large--justify-content-stretch`
+* `.o-grid--justify-content-between`: `.o-grid@small--justify-content-between`, `.o-grid@large--justify-content-between`
+* `.o-grid--justify-content-around`: `.o-grid@small--justify-content-around`, `.o-grid@large--justify-content-around`
+* `.o-grid--justify-content-evenly`: `.o-grid@small--justify-content-evenly`, `.o-grid@large--justify-content-evenly`
+
+
+
+```justify-content-start.html
+<div class="o-grid o-grid--3 o-grid--justify-content-start">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```justify-content-end.html
+<div class="o-grid o-grid--3 o-grid--justify-content-end">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```justify-content-center.html
+<div class="o-grid o-grid--3 o-grid--justify-content-center">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```justify-content-between.html
+<div class="o-grid o-grid--3 o-grid--justify-content-between">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```justify-content-around.html
+<div class="o-grid o-grid--3 o-grid--justify-content-around">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+
+```justify-content-evenly.html
+<div class="o-grid o-grid--3 o-grid--justify-content-evenly">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
+
+
+/*
+---
+name: Grid > Align Content
+category: 3. Objects > Grid
+---
+
+Applies `align-content` property to grid, requires and extends `.o-grid`.
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+Options:
+* `.o-grid--align-content-start`: `.o-grid@small--align-content-start`, `.o-grid@large--align-content-start`
+* `.o-grid--align-content-end`: `.o-grid@small--align-content-end`, `.o-grid@large--align-content-end`
+* `.o-grid--align-content-center`: `.o-grid@small--align-content-center`, `.o-grid@large--align-content-center`
+* `.o-grid--align-content-baseline`: `.o-grid@small--align-content-baseline`, `.o-grid@large--align-content-baseline`
+* `.o-grid--align-content-stetch`: `.o-grid@small--align-content-stetch`, `.o-grid@large--align-content-stetch`
+* `.o-grid--align-content-space-around`: `.o-grid@small--align-content-space-around`, `.o-grid@large--align-content-space-around`
+* `.o-grid--align-content-space-between`: `.o-grid@small--align-content-space-between`, `.o-grid@large--align-content-space-between`
+* `.o-grid--align-content-space-evenly`: `.o-grid@small--align-content-space-evenly`, `.o-grid@large--align-content-space-evenly`
+
+
+```align-content-start.html
+<div class="o-grid o-grid--3 o-grid--align-content-start">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-content-end.html
+<div class="o-grid o-grid--3 o-grid--align-content-end">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-content-center.html
+<div class="o-grid o-grid--3 o-grid--align-content-center">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-content-baseline.html
+<div class="o-grid o-grid--3 o-grid--align-content-baseline">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+
+```align-content-stretch.html
+<div class="o-grid o-grid--3 o-grid--align-content-stretch">
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+	<div>
+		•••
+	</div>
+</div>
+```
+*/
 
 
