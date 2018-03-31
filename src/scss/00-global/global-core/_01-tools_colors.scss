@@ -1,0 +1,297 @@
+@mixin makeColorHelpers($color, $value, $contrast-value) {
+	$contrast-color: if($contrast-value = false, $contrast-value, true);
+
+	%u-#{$color} {
+		@include suffixcate {
+			color: unquote($value);
+		}
+    }
+
+	.u-#{$color}, .u-color-#{$color}, .u-#{$color}-before:before, .u-color-#{$color}-before:before, .u-#{$color}-after:after, .u-color-#{$color}-after:after {
+		@include suffixcate {
+			color: unquote($value);
+		}
+    }
+
+    %u-#{$color}-bg {
+    	@include suffixcate {
+			background-color: unquote($value);
+		}
+    }
+
+    .u-#{$color}-bg, .u-color-#{$color}-bg, .u-bg-#{$color}, .u-#{$color}-bg-before:before, .u-color-#{$color}-bg-before:before, .u-#{$color}-bg-after:after, .u-color-#{$color}-bg-after:after {
+    	@include suffixcate {
+	        background-color: unquote($value);
+		}
+    }
+
+    .u-#{$color}-bg {
+    	@include suffixcate {
+			@if ($contrast-color != false) {
+				color: unquote($contrast-color);
+			}
+		}
+    }
+
+
+    %u-#{$color}-reverse {
+		@include suffixcate {
+			@if ($contrast-color != false) {
+				color: unquote($contrast-color);
+			}
+		}
+    }
+
+	.u-#{$color}-reverse, .u-color-#{$color}-reverse, .u-#{$color}-before-reverse:before, .u-color-#{$color}-before-reverse:before, .u-#{$color}-after-reverse:after, .u-color-#{$color}-after-reverse:after {
+		@include suffixcate {
+			@if ($contrast-color != false) {
+				color: unquote($contrast-color);
+			}
+		}
+    }
+
+    %u-#{$color}-bg-reverse {
+    	@include suffixcate {
+			@if ($contrast-color != false) {
+				background-color: unquote($contrast-color);
+			}
+		}
+    }
+
+    .u-#{$color}-bg-reverse, .u-color-#{$color}-bg-reverse, .u-bg-#{$color}-reverse, .u-#{$color}-bg-before-reverse:before, .u-color-#{$color}-bg-before-reverse:before, .u-#{$color}-bg-after-reverse:after, .u-color-#{$color}-bg-after-reverse:after {
+    	@include suffixcate {
+			@if ($contrast-color != false) {
+				background-color: unquote($contrast-color);
+			}
+		}
+    }
+
+    .u-#{$color}-bg {
+    	@include suffixcate {
+			color: unquote($value);
+		}
+    }
+}
+
+@each $color, $values in $palette {
+	@if (length($values) > 1) {
+		@include makeColorHelpers($color, nth($values, 1), nth($values, 2));
+	} @else {
+		@include makeColorHelpers($color, nth($values, 1), false);
+	}
+}
+
+
+
+
+/*
+---
+name: Colors
+category: 6. Trumps > Color
+---
+
+Generates colors from `@mixin makeColorHelpers()` in `~/00-global/global-core/01-tools.scss`, follows [Naming Convention for Colors](https://codepen.io/nicetransition/pen/QjwbRg?editors=1100).
+
+
+Update colors in `~/01-brand/colors.json`
+
+All colors
+
+```
+<ul class="o-flex o-flex--wrap">
+	<li class="** u-primary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary dark
+	</li>
+
+	<li class="** u-primary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary 
+	</li>
+
+	<li class="** u-primary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary light
+	</li>
+
+	<li class="** u-primary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary accent
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-primary-bg-reverse ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary dark
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-primary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary 
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-primary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary light
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-primary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary accent
+		<span class="u-basis-100">reverse</span>
+	</li>
+</ul>
+
+
+<ul class="o-flex o-flex--wrap">
+	<li class="** u-primary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary dark
+	</li>
+
+	<li class="** u-primary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary 
+	</li>
+
+	<li class="** u-primary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary light
+	</li>
+
+	<li class="** u-primary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary accent
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-primary-bg-reverse ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary dark
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-primary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary 
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-primary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary light
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-primary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		primary accent
+		<span class="u-basis-100">reverse</span>
+	</li>
+</ul>
+
+<ul class="o-flex o-flex--wrap">
+	<li class="** u-secondary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		secondary dark
+	</li>
+
+	<li class="** u-secondary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		secondary 
+	</li>
+
+	<li class="** u-secondary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		secondary light
+	</li>
+
+	<li class="** u-secondary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		secondary accent
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-secondary-bg-reverse ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		secondary dark
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-secondary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		secondary 
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-secondary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		secondary light
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-secondary-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		secondary accent
+		<span class="u-basis-100">reverse</span>
+	</li>
+</ul>
+
+<ul class="o-flex o-flex--wrap">
+	<li class="** u-accent-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		accent dark
+	</li>
+
+	<li class="** u-accent-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		accent 
+	</li>
+
+	<li class="** u-accent-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		accent light
+	</li>
+
+	<li class="** u-accent-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		accent accent
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-accent-bg-reverse ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		accent dark
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-accent-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		accent 
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-accent-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		accent light
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-accent-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		accent accent
+		<span class="u-basis-100">reverse</span>
+	</li>
+</ul>
+
+<ul class="o-flex o-flex--wrap">
+	<li class="** u-light-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		light dark
+	</li>
+
+	<li class="** u-light-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		light 
+	</li>
+
+	<li class="** u-light-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		light light
+	</li>
+
+	<li class="** u-light-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		light accent
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-light-bg-reverse ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		light dark
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-light-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		light 
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-light-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		light light
+		<span class="u-basis-100">reverse</span>
+	</li>
+
+	<li class="** u-light-bg ** u-min-width-1-of-12 || u-space-1-3-lg-fixed || o-flex o-flex--justify-content o-flex--align-items-center || u-fs-6">
+		light accent
+		<span class="u-basis-100">reverse</span>
+	</li>
+</ul>
+```
+*/

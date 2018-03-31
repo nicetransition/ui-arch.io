@@ -1,5 +1,5 @@
 @mixin placeholder-styles-1 {
-	color: $color-placeholder;
+	color: $color-dark;
 	line-height: 1;
 	vertical-align: middle;
 }
@@ -176,17 +176,18 @@
 		color: $color-light-dark;
 	}
 
+	&.c-input {
+		text-indent: $default-space / 2;
+	}
+
+	&.c-textarea {
+		padding: $default-space / 2;
+	}
+
 	&.c-input, &.c-textarea {
 		@include placeholder-setup-2;
 	}
 
-	.c-input-search__btn {
-		box-shadow: rem(80) 0 0 rgba(0,0,0,.2) inset;
-
-		&:active, &:hover, &:focus {
-			box-shadow: none;
-		}
-	}
 
 	.c-field-toggle {
 		&__input {

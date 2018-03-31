@@ -41,7 +41,6 @@
 	@include animation-base($duration, $timing, $delay);
 	transition-property: $property;
 	will-change: $property;
-	//transition: if(($property == all),"", $property) if(($duration == 0),null, $duration) if(($delay == 0),null, $delay) if(($timing == ease),"", $timing);
 }
 
 @mixin title-setup {

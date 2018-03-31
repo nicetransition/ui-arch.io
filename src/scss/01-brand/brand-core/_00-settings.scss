@@ -12,6 +12,6 @@ $border-radius: 0;
 
 @import "../../00-global/global-core/00-settings_bps";
 @import "../../00-global/global-core/00-settings_unit-library";
-@import "00-settings_colors"; // generated from `gulp colors` task in `./gulpfile.js`
 @import "00-settings_typography";
 @import "../../00-global/global-core/_01-tools_type-rems-to-ems.scss"; // convert px to rem or em
+@import "00-settings_colors"; // generated from `gulp colors` task in `./gulpfile.js`

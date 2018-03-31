@@ -1,22 +1,3 @@
-
-
-@mixin anchor-states {
-	&:focus, &:hover {
-		color: $anchor-hover;
-	}
-
-	&:active {
-		color: $anchor-active;
-	}
-}
-
-%anchor-states {
-	@include suffixcate {
-		@include anchor-states;
-	}
-}
-
-
 /*
 ---
 name: Anchor
