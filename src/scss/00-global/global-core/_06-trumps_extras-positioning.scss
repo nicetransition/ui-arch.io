@@ -1,0 +1,49 @@
+/*
+---
+name: Position Alignment
+category: 6. Trumps > Extras
+---
+
+Options for `top`, `right`, `bottom`, `left` CSS properties being set to `0`
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+Options:
+* `.u-1` or `.u-top`: `top: 0;`
+* `.u-2` or `.u-right`: `right: 0;`
+* `.u-3` or `.u-bottom`: `bottom: 0;`
+* `.u-4` or `.u-left`: `left: 0;`
+
+
+```demo.html
+<div class="u-pos-r u-space-lg" style="height: 50px;">
+	<div class="u-pos-a u-2 u-4">
+		•••
+	</div>
+</div>
+```
+*/
+
+
+.u-1, .u-top {
+	@include suffixcate {
+		top: 0;
+	}
+}
+
+.u-2, .u-right {
+	@include suffixcate {
+		right: 0;
+	}
+}
+
+.u-3, .u-bottom {
+	@include suffixcate {
+		bottom: 0;
+	}
+}
+.u-4, .u-left {
+	@include suffixcate {
+		left: 0;
+	}
+}

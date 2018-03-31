@@ -1,0 +1,69 @@
+
+%clear-setup {
+	clear: both;
+}
+
+%clear-after-setup {
+	&:after {
+		@extend %clear-setup;
+		display: table;
+		content: "";
+	}
+}
+
+
+
+%f-r {
+	float: right;
+}
+
+/*
+---
+name: Float > Right
+category: 6. Trumps > Extras
+---
+
+Adds `float: right` properties with `.u-f-r` class, apply to children with `.u-f-r-children` 
+
+*/
+
+.u-f-r {
+	@extend %f-r;
+
+	&-children {
+		@extend %clear-after-setup;
+
+		> * {
+			@extend %f-r;
+		}
+	}
+}
+
+%f-l {
+	float: left;
+}
+
+/*
+---
+name: Float > Left
+category: 6. Trumps > Extras
+---
+
+Adds `float: right` properties with `.u-full` class
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+
+*/
+
+.u-f-l {
+	@extend %f-l;
+
+	&-children {
+		@extend %clear-after-setup;
+
+		> div, > li, > span {
+			@extend %f-l;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+/*
+---
+name: List > List
+category: 6. Trumps > Extras
+---
+
+Remove extra padding of a `<ul>`, `<ol>` and `<dl>` to be left aligned with content
+
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+
+```demo.html
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
+</p>
+<ul class="u-list">
+	<li>
+		•••
+	</li>
+	<li>
+		•••
+	</li>
+	<li>
+		•••
+	</li>
+	<li>
+		•••
+	</li>
+</ul>
+```
+*/
+
+
+.u-list {
+	@include suffixcate {
+		padding-left: 1rem;
+	}
+}
+
+
+/*
+---
+name: List > Unlist
+category: 6. Trumps > Extras
+---
+
+Resets list to remove styling and spacing (margin and padding)
+
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+
+```demo.html
+<span>pneumonoultramicroscopicsilicovolcanoconiosis</span>
+```
+*/
+.u-unlist {
+	@include suffixcate {
+		@include unlist;
+	}
+}

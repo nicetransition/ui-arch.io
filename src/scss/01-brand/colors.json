@@ -50,7 +50,7 @@
 		}, {
 			"name": "color-accent-light",
 			"value": "#99FAFB",
-			"palette": true
+			"palette": truew
 		}, {
 			"name": "color-accent-accent",
 			"value": "#13FCD9",
@@ -59,12 +59,12 @@
 		}, {
 			"name": "color-dark-dark",
 			"value": "#000",
-			"extended": ["color-primary-accent-contrast", "color-secondary-accent-contrast", "color-light-dark-contrast", "color-light-contrast", "color-light-light-contrast", "color-light-accent-contrast", "color-accent-contrast", "color-accent-light-contrast", "color-accent-accent-contrast"],
+			"extended": ["color-primary-light-contrast", "color-secondary-contrast", "color-secondary-light-contrast", "color-secondary-accent-contrast", "color-accent-dark-contrast", "color-accent-contrast", "color-accent-light-contrast", "color-accent-accent-contrast", "color-dark-accent-contrast", "color-dark-light-contrast", "color-light-dark-contrast", "color-light-contrast", "color-light-light-contrast", "color-light-accent-contrast", "color-light-light-contrast", "color-light-accent-contrast", "color-accent-contrast", "color-accent-light-contrast", "color-accent-accent-contrast", "color-alpha-90-contrast", "color-alpha-80-contrast", "color-alpha-75-contrast", "color-alpha-70-contrast", "color-alpha-60-contrast", "color-alpha-50-contrast", "color-alpha-40-contrast", "color-alpha-30-contrast", "color-alpha-20-contrast", "color-alpha-10-contrast"],
 			"palette": true
 		}, {
 			"name": "color-dark",
 			"value": "#31373E",
-			"extended": ["color-base", "color-label", "color-zone-accent-contrast", "color-primary-light-contrast", "color-alpha-90-contrast", "color-alpha-80-contrast", "color-alpha-75-contrast", "color-alpha-70-contrast", "color-alpha-60-contrast", "color-alpha-50-contrast", "color-alpha-40-contrast", "color-alpha-30-contrast", "color-alpha-20-contrast", "color-alpha-10-contrast"],
+			"extended": [],
 			"palette": true
 		}, {
 			"name": "color-dark-light",
@@ -88,7 +88,7 @@
 		}, {
 			"name": "color-light-light",
 			"value": "#FFF",
-			"extended": ["color-primary-contrast", "color-secondary-light-contrast", "anchor-hover",  "header-color", "color-dark-dark-contrast", "color-secondary-contrast", "color-secondary-dark-contrast", "color-dark-contrast", "color-dark-accent-contrast", "color-dark-light-contrast", "color-accent-dark-contrast", "light-gradient-dark-contrast", "color-alpha-dark-90-contrast", "color-alpha-dark-80-contrast", "color-alpha-dark-75-contrast", "color-alpha-dark-70-contrast", "color-alpha-dark-60-contrast", "color-alpha-dark-50-contrast", "color-alpha-dark-40-contrast", "color-alpha-dark-30-contrast", "color-alpha-dark-20-contrast", "color-alpha-dark-10-contrast"],
+			"extended": ["color-primary-dark-contrast", "color-primary-contrast", "color-primary-accent-contrast", "color-secondary-dark-contrast", "color-dark-dark-contrast", "color-dark-contrast", "light-gradient-dark-contrast", "color-alpha-dark-90-contrast", "color-alpha-dark-80-contrast", "color-alpha-dark-75-contrast", "color-alpha-dark-70-contrast", "color-alpha-dark-60-contrast", "color-alpha-dark-50-contrast", "color-alpha-dark-40-contrast", "color-alpha-dark-30-contrast", "color-alpha-dark-20-contrast", "color-alpha-dark-10-contrast"],
 			"palette": true
 		}, {
 			"name": "color-light-accent",

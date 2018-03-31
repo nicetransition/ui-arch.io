@@ -1,0 +1,126 @@
+
+/*
+---
+name: Padding Reset
+category: 6. Trumps > Extras
+---
+
+Options for `padding-top`, `padding-right`, `padding-bottom`, `padding-left` CSS properties being set to `0`
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+Options:
+* `.u-space-0-1` `padding-top: 0;`
+* `.u-space-0-2`: `padding-right: 0;`
+* `.u-space-0-3`: `padding-bottom: 0;`
+* `.u-space-0-4`: `padding-left: 0;`
+*/
+
+/*
+---
+name: Margin Reset
+category: 6. Trumps > Extras
+---
+
+Options for `margin-top`, `margin-right`, `margin-bottom`, `margin-left` CSS properties being set to `0`
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+Options:
+* `.u-gutt-0-1` `margin-top: 0;`
+* `.u-gutt-0-2`: `margin-right: 0;`
+* `.u-gutt-0-3`: `margin-bottom: 0;`
+* `.u-gutt-0-4`: `margin-left: 0;`
+*/
+
+
+
+.u-space-0-1 {
+	@include suffixcate {
+		padding-top: 0;
+	}
+}
+
+.u-space-0-1 {
+	@include suffixcate {
+		padding-right: 0;
+	}
+}
+
+.u-space-0-1 {
+	@include suffixcate {
+		padding-bottom: 0;
+	}
+}
+
+.u-space-0-1 {
+	@include suffixcate {
+		padding-left: 0;
+	}
+}
+
+.u-gutt-0-1 {
+	@include suffixcate {
+		margin-top: 0;
+	}
+}
+
+.u-gutt-0-1 {
+	@include suffixcate {
+		margin-right: 0;
+	}
+}
+
+.u-gutt-0-1 {
+	@include suffixcate {
+		margin-bottom: 0;
+	}
+}
+
+.u-gutt-0-1 {
+	@include suffixcate {
+		margin-left: 0;
+	}
+}
+
+
+/*
+---
+name: Margin Auto
+category: 6. Trumps > Extras
+---
+
+Options for `margin-top`, `margin-right`, `margin-bottom`, `margin-left` CSS properties being set to `auto`
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+Options:
+* `.u-auto-1`, `.u-auto-top` `margin-top: auto;`
+* `.u-auto-2`, `.u-auto-right`: `margin-right: auto;`
+* `.u-auto-3`, `.u-auto-bottom`: `margin-bottom: auto;`
+* `.u-auto-4`, `.u-auto-left`: `margin-left: auto;`
+*/
+
+.u-auto-1, .u-auto-top {
+	@include suffixcate {
+		margin-top: auto;
+	}
+}
+
+.u-auto-2, .u-auto-right {
+	@include suffixcate {
+		margin-right: auto;
+	}
+}
+
+.u-auto-3, .u-auto-bottom {
+	@include suffixcate {
+		margin-bottom: auto;
+	}
+}
+
+.u-auto-4, .u-auto-left {
+	@include suffixcate {
+		margin-left: auto;
+	}
+}

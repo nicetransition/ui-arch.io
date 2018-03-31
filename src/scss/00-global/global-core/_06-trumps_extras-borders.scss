@@ -1,0 +1,166 @@
+
+/*
+---
+name: Borders > Thin
+category: 6. Trumps > Extras
+---
+
+Options for `border`CSS property, inherits `color` value for border color
+
+*  Contains [Suffixcate](/#suffixcate) options
+* `.u-outline`: `border-top`, `border-right`, `border-bottom` and `border-left`,
+* `.u-outline-1`: `border-top`
+* `.u-outline-2`: `border-right`
+* `.u-outline-3`: `border-bottom`
+* `.u-outline-4`: `border-left`
+* `.u-outline-1-3`: `border-top` and `border-bottom`
+* `.u-outline-2-4`: `border-right` and `border-left`
+
+*/
+
+
+$u-outline-styles-base: 1px solid;
+$u-outline-styles: ($default-space / 2) solid;
+.u-outline {
+	&-1 {
+		@include suffixcate {
+			border-top: $u-outline-styles;
+		}
+	}
+
+	&-2 {
+		@include suffixcate {
+			border-right: $u-outline-styles;
+		}
+	}
+
+	&-3 {
+		@include suffixcate {
+			border-bottom: $u-outline-styles;
+		}
+	}
+
+	&-4 {
+		@include suffixcate {
+			border-left: $u-outline-styles;
+		}
+	}
+
+	@include suffixcateExtend((".u-outline-1", ".u-outline-2", ".u-outline-3", ".u-outline-4"));
+
+	&-1-3 {
+		@include suffixcateExtend((".u-outline-1", ".u-outline-3"));
+	}
+
+	&-2-4 {
+		@include suffixcateExtend((".u-outline-2", ".u-outline-4"));
+	}
+}
+
+
+%u-border-color {
+	@each $color, $values in $palette {
+		&--#{$color} {
+			@include suffixcate {
+				border-color: unquote(nth($values, 1));
+			}
+		}
+	}
+}
+
+%u-border-lg {
+	@include suffixcate {
+		@media screen and (min-width: $bp-spaces) {
+			border-width: rem(10) !important;
+		}
+
+		@media screen and (max-width: $bp-spaces) {
+			border-width: rem(5) !important;
+		}
+	}
+}
+
+/*
+---
+name: Borders > Thick
+category: 6. Trumps > Extras
+---
+
+Options for `border`CSS property, inherits `color` value for border color
+
+*  Contains [Suffixcate](/#suffixcate) options
+* `.u-border`: `border-top`, `border-right`, `border-bottom` and `border-left`
+* `.u-border-lg`: Thicker border
+* `.u-border-1`: `border-top`
+* `.u-border-1-lg`: Thicker border
+* `.u-border-2`: `border-right`
+* `.u-border-2-lg`: Thicker border
+* `.u-border-3`: `border-bottom`
+* `.u-border-3-lg`: Thicker border
+* `.u-border-4`: `border-left`
+* `.u-border-4-lg`: Thicker border
+* `.u-border-1-3`: `border-top` and `border-bottom`
+* `.u-border-1-3-lg`: Thicker border
+* `.u-border-2-4`: `border-right` and `border-left`
+* `.u-border-2-4-lg`: Thicker border
+
+* `.u-border-children`: add `border-top`, `border-right`, `border-bottom` and `border-left` to children
+
+*/
+
+
+.u-border {
+	&-1 {
+		@include suffixcate {
+			border-top: $u-outline-styles-base;
+		}
+
+		&-lg {
+			@include suffixcateExtend(('%u-border-lg'));
+		}
+	}
+
+	&-2 {
+		@include suffixcate {
+			border-right: $u-outline-styles-base;
+		}
+
+		&-lg {
+			@include suffixcateExtend(('%u-border-lg'));
+		}
+	}
+
+	&-3 {
+		@include suffixcate {
+			border-bottom: $u-outline-styles-base;
+		}
+
+		&-lg {
+			@include suffixcateExtend(('%u-border-lg'));
+		}
+	}
+
+	&-4 {
+		@include suffixcate {
+			border-left: $u-outline-styles-base;
+		}
+
+		&-lg {
+			@include suffixcateExtend(('%u-border-lg'));
+		}
+	}
+
+	@include suffixcateExtend((".u-border-1", ".u-border-2", ".u-border-3", ".u-border-4"));
+
+	&-1-3 {
+		@include suffixcateExtend((".u-border-1", ".u-border-3"));
+	}
+
+	&-2-4 {
+		@include suffixcateExtend((".u-border-2", ".u-border-4"));
+	}
+
+	&-lg {
+		@include suffixcateExtend((".u-border-1-lg", ".u-border-2-lg", ".u-border-3-lg", ".u-border-4-lg"));
+	}
+}

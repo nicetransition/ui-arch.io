@@ -1,0 +1,109 @@
+/*
+---
+name: Wordbreak
+category: 6. Trumps > Extras
+---
+
+Adds `word-break: break-all;`
+
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+
+*/
+
+
+.u-w {
+	@include suffixcate {
+		word-break: break-all;
+	}
+}
+
+/*
+---
+name: Wnite-space / Word Wrap
+category: 6. Trumps > Extras
+---
+
+Adds `white-space` properties, two options `nowrap` and `break-all`
+
+
+*  Contains [Suffixcate](/#suffixcate) options
+* `-children` Suffix: Add suffix to apply to all children
+
+`.u-nw` No Wrap
+```demo.html
+<span class="u-nw">pneumonoultramicroscopicsilicovolcanoconiosis</span>
+```
+
+`.u-nw-children` No Wrap Children
+```demo.html
+<ul class="u-list u-nw-children">
+	<li>
+		pneumonoultramicroscopicsilicovolcanoconiosis
+	</li>
+	<li>
+		pneumonoultramicroscopicsilicovolcanoconiosis
+	</li>
+	<li>
+		pneumonoultramicroscopicsilicovolcanoconiosis
+	</li>
+	<li>
+		pneumonoultramicroscopicsilicovolcanoconiosis
+	</li>
+</ul>
+```
+
+`.u-bw` Break Word
+```demo.html
+<span class="u-br">pneumonoultramicroscopicsilicovolcanoconiosis</span>
+```
+
+`.u-br-children` Break Word Children
+```demo.html
+<ul class="u-list u-br-children">
+	<li>
+		pneumonoultramicroscopicsilicovolcanoconiosis
+	</li>
+	<li>
+		pneumonoultramicroscopicsilicovolcanoconiosis
+	</li>
+	<li>
+		pneumonoultramicroscopicsilicovolcanoconiosis
+	</li>
+	<li>
+		pneumonoultramicroscopicsilicovolcanoconiosis
+	</li>
+</ul>
+```
+
+*/
+
+.u-nw {
+	@include suffixcate {
+		white-space: nowrap;
+	}
+
+	&-children {
+		@include suffixcate {
+			* {
+				white-space: nowrap;
+			}
+		}
+	}
+}
+
+.u-bw {
+	@include suffixcate {
+		word-break: break-all;
+	}
+
+	&-children {
+		@include suffixcate {
+			* {
+				word-break: break-all;
+			}
+		}
+	}
+}
+

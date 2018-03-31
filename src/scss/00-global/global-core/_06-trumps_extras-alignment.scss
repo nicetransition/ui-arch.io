@@ -1,0 +1,90 @@
+
+/*
+---
+name: Veritcal Alignment
+category: 6. Trumps > Extras
+---
+
+Adds `vertical-align` properties, two multiple options: `top`, `middle`, `bottom`
+
+
+*  Contains [Suffixcate](/#suffixcate) options
+* `-before` Suffix: Add suffix to apply to all children, applies alignment on `:before`
+* `-after` Suffix: Add suffix to apply to all children, applies alignment on `:after`
+* `.u-va-t`: Vertical align top
+* `.u-va-m`: Vertical align middle
+* `.u-va-b`: Vertical align bottom
+* `.u-va-t-before`: Vertical align top on `:before`
+* `.u-va-t-after`: Vertical align top on `:after`
+* `.u-va-m-before`: Vertical align tomiddlep on `:before`
+* `.u-va-m-after`: Vertical align middle on `:after`
+* `.u-va-b-before`: Vertical align bottom on `:before`
+* `.u-va-b-after`: Vertical align bottom on `:after`
+
+*/
+
+.u-va-t {
+	@include suffixcate {
+		vertical-align: top;
+	}
+
+	&-before {
+		@include suffixcate {
+			&:before {
+				vertical-align: top;
+			}
+		}
+	}
+
+	&-after {
+		@include suffixcate {
+			&:after {
+				vertical-align: top;
+			}
+		}
+	}
+}
+
+.u-va-m {
+	@include suffixcate {
+		vertical-align: middle;
+	}
+
+	&-before {
+		@include suffixcate {
+			&:before {
+				vertical-align: middle;
+			}
+		}
+	}
+
+	&-after {
+		@include suffixcate {
+			&:after {
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+.u-va-b {
+	@include suffixcate {
+		vertical-align: bottom;
+	}
+
+	&-before {
+		@include suffixcate {
+			&:before {
+				vertical-align: bottom;
+			}
+		}
+	}
+
+	&-after {
+		@include suffixcate {
+			&:after {
+				vertical-align: bottom;
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+%display-hidden {
+	@include suffixcate {
+		display: none;
+	}
+}
+
+%u-speak-none {
+	@include suffixcate {
+		speak: none;
+	}
+}
+
+/*
+---
+name: Speak None
+category: 6. Trumps > Extras
+---
+
+Adds `speak: none` properties with `.u-speak-none` class
+
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+
+*/
+
+.u-speak-none {
+	@extend %u-speak-none;
+
+	&\@large {
+		@extend %u-speak-none\@large !optional;
+	}
+
+	&\@small {
+		@extend %u-speak-none\@small !optional;
+	}
+}
+
+.u-dis-none {
+	@extend %u-speak-none;
+	@extend %display-hidden;
+
+	@include suffixcate {
+		speak: none;
+		display: none;
+	}
+}
+
+/*
+---
+name: Visually Hidden
+category: 6. Trumps > Extras
+---
+
+Hides content but makes it legible by screen readers (for accessibility), add `.u-vis-0`
+
+*  Contains [Suffixcate](/#suffixcate) options
+
+*/
+
+
+.u-vis-0 {
+	@include suffixcate {
+		position: absolute;
+		top: -3125rem;
+		left: -3125rem;
+		font-size: 0;
+		height: 0;
+		width: 0;
+		overflow: hidden;
+		visibility: none;
+	}
+}
+
