@@ -106,13 +106,13 @@
 		@include disable-select;
 		cursor: default;
 		cursor: not-allowed;
-		background-color: darken($color-disabled, 10);
+		background-color: darken($color-light-dark, 10);
 
 		opacity: .7;
 	}
 
 	& > .c-checkbox__input[disabled] + label:after, & > .c-radio__input[disabled] + label:after {
-		color: darken($color-disabled, 20);
+		color: darken($color-light-dark, 20);
 		text-shadow: 0 rem(1) 0 rgba(255,255,255,.1), 0 rem(-1) 0 rgba(0,0,0,.1);
 	}
 

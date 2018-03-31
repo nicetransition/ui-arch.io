@@ -654,15 +654,35 @@ category: 6. Trumps > Color
 
 Extended variables:
 
-* `$color-primary-accent-contrast`
+* `$color-primary-light-contrast`
+* `$color-secondary-contrast`
+* `$color-secondary-light-contrast`
 * `$color-secondary-accent-contrast`
+* `$color-accent-dark-contrast`
+* `$color-accent-contrast`
+* `$color-accent-light-contrast`
+* `$color-accent-accent-contrast`
+* `$color-dark-accent-contrast`
+* `$color-dark-light-contrast`
 * `$color-light-dark-contrast`
 * `$color-light-contrast`
+* `$color-light-light-contrast`
+* `$color-light-accent-contrast`
 * `$color-light-light-contrast`
 * `$color-light-accent-contrast`
 * `$color-accent-contrast`
 * `$color-accent-light-contrast`
 * `$color-accent-accent-contrast`
+* `$color-alpha-90-contrast`
+* `$color-alpha-80-contrast`
+* `$color-alpha-75-contrast`
+* `$color-alpha-70-contrast`
+* `$color-alpha-60-contrast`
+* `$color-alpha-50-contrast`
+* `$color-alpha-40-contrast`
+* `$color-alpha-30-contrast`
+* `$color-alpha-20-contrast`
+* `$color-alpha-10-contrast`
 
 Versions:
 
@@ -714,23 +734,6 @@ category: 6. Trumps > Color
 * Color: `#31373E`
 * Color variable: `$color-dark`
 * Contrast variable: `$color-dark-contrast`
-
-Extended variables:
-
-* `$color-base`
-* `$color-label`
-* `$color-zone-accent-contrast`
-* `$color-primary-light-contrast`
-* `$color-alpha-90-contrast`
-* `$color-alpha-80-contrast`
-* `$color-alpha-75-contrast`
-* `$color-alpha-70-contrast`
-* `$color-alpha-60-contrast`
-* `$color-alpha-50-contrast`
-* `$color-alpha-40-contrast`
-* `$color-alpha-30-contrast`
-* `$color-alpha-20-contrast`
-* `$color-alpha-10-contrast`
 
 Versions:
 
@@ -994,17 +997,12 @@ category: 6. Trumps > Color
 
 Extended variables:
 
+* `$color-primary-dark-contrast`
 * `$color-primary-contrast`
-* `$color-secondary-light-contrast`
-* `$anchor-hover`
-* `$header-color`
-* `$color-dark-dark-contrast`
-* `$color-secondary-contrast`
+* `$color-primary-accent-contrast`
 * `$color-secondary-dark-contrast`
+* `$color-dark-dark-contrast`
 * `$color-dark-contrast`
-* `$color-dark-accent-contrast`
-* `$color-dark-light-contrast`
-* `$color-accent-dark-contrast`
 * `$light-gradient-dark-contrast`
 * `$color-alpha-dark-90-contrast`
 * `$color-alpha-dark-80-contrast`
@@ -1386,57 +1384,6 @@ Versions:
 /*
 
 ---
-name: Color > Zone Accent
-category: 6. Trumps > Color
----
-
-* Color: `#E5EDF5`
-* Color variable: `$color-zone-accent`
-* Contrast variable: `$color-zone-accent-contrast`
-
-Versions:
-
-* Background class: `.u-zone-accent-bg`
-* Background class (no `color` property): `.u-color-zone-accent-bg`
-* Color: `.u-zone-accent`
-* Color `:before` class: `.u-zone-accent-before`
-* Color `:after` class: `.u-zone-accent-after`
-
-```bg.html
-	<span class="stylemark-demo-only-class--color-bg ** u-zone-accent-bg **">
-		zone-accent
-	</span>
-```
-
-```color-bg.html
-	<span class="stylemark-demo-only-class--color-bg ** u-color-zone-accent-bg **">
-		zone-accent
-	</span>
-```
-
-```color.html
-	<span class="stylemark-demo-only-class--color-bg ** u-zone-accent **">
-		zone-accent
-	</span>
-```
-
-```before.html
-	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-zone-accent-before **">
-		zone-accent
-	</span>
-```
-
-```after.html
-	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-zone-accent-after **">
-		zone-accent
-	</span>
-```
-
-*/
-			
-/*
-
----
 name: Color > Alpha 90
 category: 6. Trumps > Color
 ---
@@ -1696,7 +1643,7 @@ name: Color > Alpha 40
 category: 6. Trumps > Color
 ---
 
-* Color: `rgba(255, 255, 255, .3)`
+* Color: `rgba(255, 255, 255, .4)`
 * Color variable: `$color-alpha-40`
 * Contrast variable: `$color-alpha-40-contrast`
 
@@ -1951,7 +1898,7 @@ name: Color > Alpha Dark 80
 category: 6. Trumps > Color
 ---
 
-* Color: `rgba(0, 0, 0, .7)`
+* Color: `rgba(0, 0, 0, .8)`
 * Color variable: `$color-alpha-dark-80`
 * Contrast variable: `$color-alpha-dark-80-contrast`
 
@@ -2155,7 +2102,7 @@ name: Color > Alpha Dark 40
 category: 6. Trumps > Color
 ---
 
-* Color: `rgba(0, 0, 0, .3)`
+* Color: `rgba(0, 0, 0, .4)`
 * Color variable: `$color-alpha-dark-40`
 * Contrast variable: `$color-alpha-dark-40-contrast`
 

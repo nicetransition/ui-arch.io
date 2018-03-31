@@ -8,6 +8,2310 @@
 ////////////////////////////////////////////////////////////////////////
 
 
+
+/*
+
+---
+name: Color > Primary Dark
+category: 6. Trumps > Color
+---
+
+* Color: `#010144`
+* Color variable: `$color-primary-dark`
+* Contrast variable: `$color-primary-dark-contrast`
+
+Versions:
+
+* Background class: `.u-primary-dark-bg`
+* Background class (no `color` property): `.u-color-primary-dark-bg`
+* Color: `.u-primary-dark`
+* Color `:before` class: `.u-primary-dark-before`
+* Color `:after` class: `.u-primary-dark-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-primary-dark-bg **">
+		primary-dark
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-primary-dark-bg **">
+		primary-dark
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-primary-dark **">
+		primary-dark
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-primary-dark-before **">
+		primary-dark
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-primary-dark-after **">
+		primary-dark
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Primary
+category: 6. Trumps > Color
+---
+
+* Color: `#6350A1`
+* Color variable: `$color-primary`
+* Contrast variable: `$color-primary-contrast`
+
+Extended variables:
+
+* `$anchor-primary`
+* `$mobile-menu-bg`
+* `$anchor-tertiary-hover`
+
+Versions:
+
+* Background class: `.u-primary-bg`
+* Background class (no `color` property): `.u-color-primary-bg`
+* Color: `.u-primary`
+* Color `:before` class: `.u-primary-before`
+* Color `:after` class: `.u-primary-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-primary-bg **">
+		primary
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-primary-bg **">
+		primary
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-primary **">
+		primary
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-primary-before **">
+		primary
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-primary-after **">
+		primary
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Primary Light
+category: 6. Trumps > Color
+---
+
+* Color: `#CEAFFD`
+* Color variable: `$color-primary-light`
+* Contrast variable: `$color-primary-light-contrast`
+
+Versions:
+
+* Background class: `.u-primary-light-bg`
+* Background class (no `color` property): `.u-color-primary-light-bg`
+* Color: `.u-primary-light`
+* Color `:before` class: `.u-primary-light-before`
+* Color `:after` class: `.u-primary-light-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-primary-light-bg **">
+		primary-light
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-primary-light-bg **">
+		primary-light
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-primary-light **">
+		primary-light
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-primary-light-before **">
+		primary-light
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-primary-light-after **">
+		primary-light
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Primary Accent
+category: 6. Trumps > Color
+---
+
+* Color: `#4E1EE9`
+* Color variable: `$color-primary-accent`
+* Contrast variable: `$color-primary-accent-contrast`
+
+Extended variables:
+
+* `$anchor-tertiary`
+* `$anchor-active`
+
+Versions:
+
+* Background class: `.u-primary-accent-bg`
+* Background class (no `color` property): `.u-color-primary-accent-bg`
+* Color: `.u-primary-accent`
+* Color `:before` class: `.u-primary-accent-before`
+* Color `:after` class: `.u-primary-accent-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-primary-accent-bg **">
+		primary-accent
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-primary-accent-bg **">
+		primary-accent
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-primary-accent **">
+		primary-accent
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-primary-accent-before **">
+		primary-accent
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-primary-accent-after **">
+		primary-accent
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Secondary Dark
+category: 6. Trumps > Color
+---
+
+* Color: `#C30000`
+* Color variable: `$color-secondary-dark`
+* Contrast variable: `$color-secondary-dark-contrast`
+
+Extended variables:
+
+* `$color-error`
+
+Versions:
+
+* Background class: `.u-secondary-dark-bg`
+* Background class (no `color` property): `.u-color-secondary-dark-bg`
+* Color: `.u-secondary-dark`
+* Color `:before` class: `.u-secondary-dark-before`
+* Color `:after` class: `.u-secondary-dark-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-secondary-dark-bg **">
+		secondary-dark
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-secondary-dark-bg **">
+		secondary-dark
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-secondary-dark **">
+		secondary-dark
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-secondary-dark-before **">
+		secondary-dark
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-secondary-dark-after **">
+		secondary-dark
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Secondary
+category: 6. Trumps > Color
+---
+
+* Color: `#F05138`
+* Color variable: `$color-secondary`
+* Contrast variable: `$color-secondary-contrast`
+
+Extended variables:
+
+* `$anchor-secondary`
+* `$anchor-tertiary-active`
+
+Versions:
+
+* Background class: `.u-secondary-bg`
+* Background class (no `color` property): `.u-color-secondary-bg`
+* Color: `.u-secondary`
+* Color `:before` class: `.u-secondary-before`
+* Color `:after` class: `.u-secondary-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-secondary-bg **">
+		secondary
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-secondary-bg **">
+		secondary
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-secondary **">
+		secondary
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-secondary-before **">
+		secondary
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-secondary-after **">
+		secondary
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Secondary Light
+category: 6. Trumps > Color
+---
+
+* Color: `#FEB181`
+* Color variable: `$color-secondary-light`
+* Contrast variable: `$color-secondary-light-contrast`
+
+Versions:
+
+* Background class: `.u-secondary-light-bg`
+* Background class (no `color` property): `.u-color-secondary-light-bg`
+* Color: `.u-secondary-light`
+* Color `:before` class: `.u-secondary-light-before`
+* Color `:after` class: `.u-secondary-light-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-secondary-light-bg **">
+		secondary-light
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-secondary-light-bg **">
+		secondary-light
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-secondary-light **">
+		secondary-light
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-secondary-light-before **">
+		secondary-light
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-secondary-light-after **">
+		secondary-light
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Secondary Accent
+category: 6. Trumps > Color
+---
+
+* Color: `#FF2600`
+* Color variable: `$color-secondary-accent`
+* Contrast variable: `$color-secondary-accent-contrast`
+
+Versions:
+
+* Background class: `.u-secondary-accent-bg`
+* Background class (no `color` property): `.u-color-secondary-accent-bg`
+* Color: `.u-secondary-accent`
+* Color `:before` class: `.u-secondary-accent-before`
+* Color `:after` class: `.u-secondary-accent-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-secondary-accent-bg **">
+		secondary-accent
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-secondary-accent-bg **">
+		secondary-accent
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-secondary-accent **">
+		secondary-accent
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-secondary-accent-before **">
+		secondary-accent
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-secondary-accent-after **">
+		secondary-accent
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Accent Dark
+category: 6. Trumps > Color
+---
+
+* Color: `#1D8AAB`
+* Color variable: `$color-accent-dark`
+* Contrast variable: `$color-accent-dark-contrast`
+
+Versions:
+
+* Background class: `.u-accent-dark-bg`
+* Background class (no `color` property): `.u-color-accent-dark-bg`
+* Color: `.u-accent-dark`
+* Color `:before` class: `.u-accent-dark-before`
+* Color `:after` class: `.u-accent-dark-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-accent-dark-bg **">
+		accent-dark
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-accent-dark-bg **">
+		accent-dark
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-accent-dark **">
+		accent-dark
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-accent-dark-before **">
+		accent-dark
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-accent-dark-after **">
+		accent-dark
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Accent
+category: 6. Trumps > Color
+---
+
+* Color: `#00F0FF`
+* Color variable: `$color-accent`
+* Contrast variable: `$color-accent-contrast`
+
+Versions:
+
+* Background class: `.u-accent-bg`
+* Background class (no `color` property): `.u-color-accent-bg`
+* Color: `.u-accent`
+* Color `:before` class: `.u-accent-before`
+* Color `:after` class: `.u-accent-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-accent-bg **">
+		accent
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-accent-bg **">
+		accent
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-accent **">
+		accent
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-accent-before **">
+		accent
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-accent-after **">
+		accent
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Accent Light
+category: 6. Trumps > Color
+---
+
+* Color: `#99FAFB`
+* Color variable: `$color-accent-light`
+* Contrast variable: `$color-accent-light-contrast`
+
+Versions:
+
+* Background class: `.u-accent-light-bg`
+* Background class (no `color` property): `.u-color-accent-light-bg`
+* Color: `.u-accent-light`
+* Color `:before` class: `.u-accent-light-before`
+* Color `:after` class: `.u-accent-light-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-accent-light-bg **">
+		accent-light
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-accent-light-bg **">
+		accent-light
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-accent-light **">
+		accent-light
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-accent-light-before **">
+		accent-light
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-accent-light-after **">
+		accent-light
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Accent Accent
+category: 6. Trumps > Color
+---
+
+* Color: `#13FCD9`
+* Color variable: `$color-accent-accent`
+* Contrast variable: `$color-accent-accent-contrast`
+
+Versions:
+
+* Background class: `.u-accent-accent-bg`
+* Background class (no `color` property): `.u-color-accent-accent-bg`
+* Color: `.u-accent-accent`
+* Color `:before` class: `.u-accent-accent-before`
+* Color `:after` class: `.u-accent-accent-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-accent-accent-bg **">
+		accent-accent
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-accent-accent-bg **">
+		accent-accent
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-accent-accent **">
+		accent-accent
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-accent-accent-before **">
+		accent-accent
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-accent-accent-after **">
+		accent-accent
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Dark Dark
+category: 6. Trumps > Color
+---
+
+* Color: `#000`
+* Color variable: `$color-dark-dark`
+* Contrast variable: `$color-dark-dark-contrast`
+
+Extended variables:
+
+* `$color-primary-light-contrast`
+* `$color-secondary-contrast`
+* `$color-secondary-light-contrast`
+* `$color-secondary-accent-contrast`
+* `$color-accent-dark-contrast`
+* `$color-accent-contrast`
+* `$color-accent-light-contrast`
+* `$color-accent-accent-contrast`
+* `$color-dark-accent-contrast`
+* `$color-dark-light-contrast`
+* `$color-light-dark-contrast`
+* `$color-light-contrast`
+* `$color-light-light-contrast`
+* `$color-light-accent-contrast`
+* `$color-light-light-contrast`
+* `$color-light-accent-contrast`
+* `$color-accent-contrast`
+* `$color-accent-light-contrast`
+* `$color-accent-accent-contrast`
+* `$color-alpha-90-contrast`
+* `$color-alpha-80-contrast`
+* `$color-alpha-75-contrast`
+* `$color-alpha-70-contrast`
+* `$color-alpha-60-contrast`
+* `$color-alpha-50-contrast`
+* `$color-alpha-40-contrast`
+* `$color-alpha-30-contrast`
+* `$color-alpha-20-contrast`
+* `$color-alpha-10-contrast`
+
+Versions:
+
+* Background class: `.u-dark-dark-bg`
+* Background class (no `color` property): `.u-color-dark-dark-bg`
+* Color: `.u-dark-dark`
+* Color `:before` class: `.u-dark-dark-before`
+* Color `:after` class: `.u-dark-dark-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-dark-dark-bg **">
+		dark-dark
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-dark-dark-bg **">
+		dark-dark
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-dark-dark **">
+		dark-dark
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-dark-dark-before **">
+		dark-dark
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-dark-dark-after **">
+		dark-dark
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Dark
+category: 6. Trumps > Color
+---
+
+* Color: `#31373E`
+* Color variable: `$color-dark`
+* Contrast variable: `$color-dark-contrast`
+
+Versions:
+
+* Background class: `.u-dark-bg`
+* Background class (no `color` property): `.u-color-dark-bg`
+* Color: `.u-dark`
+* Color `:before` class: `.u-dark-before`
+* Color `:after` class: `.u-dark-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-dark-bg **">
+		dark
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-dark-bg **">
+		dark
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-dark **">
+		dark
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-dark-before **">
+		dark
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-dark-after **">
+		dark
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Dark Light
+category: 6. Trumps > Color
+---
+
+* Color: `#727F90`
+* Color variable: `$color-dark-light`
+* Contrast variable: `$color-dark-light-contrast`
+
+Versions:
+
+* Background class: `.u-dark-light-bg`
+* Background class (no `color` property): `.u-color-dark-light-bg`
+* Color: `.u-dark-light`
+* Color `:before` class: `.u-dark-light-before`
+* Color `:after` class: `.u-dark-light-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-dark-light-bg **">
+		dark-light
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-dark-light-bg **">
+		dark-light
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-dark-light **">
+		dark-light
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-dark-light-before **">
+		dark-light
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-dark-light-after **">
+		dark-light
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Dark Accent
+category: 6. Trumps > Color
+---
+
+* Color: `#26122B`
+* Color variable: `$color-dark-accent`
+* Contrast variable: `$color-dark-accent-contrast`
+
+Versions:
+
+* Background class: `.u-dark-accent-bg`
+* Background class (no `color` property): `.u-color-dark-accent-bg`
+* Color: `.u-dark-accent`
+* Color `:before` class: `.u-dark-accent-before`
+* Color `:after` class: `.u-dark-accent-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-dark-accent-bg **">
+		dark-accent
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-dark-accent-bg **">
+		dark-accent
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-dark-accent **">
+		dark-accent
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-dark-accent-before **">
+		dark-accent
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-dark-accent-after **">
+		dark-accent
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Light Dark
+category: 6. Trumps > Color
+---
+
+* Color: `#94A0AB`
+* Color variable: `$color-light-dark`
+* Contrast variable: `$color-light-dark-contrast`
+
+Versions:
+
+* Background class: `.u-light-dark-bg`
+* Background class (no `color` property): `.u-color-light-dark-bg`
+* Color: `.u-light-dark`
+* Color `:before` class: `.u-light-dark-before`
+* Color `:after` class: `.u-light-dark-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-dark-bg **">
+		light-dark
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-light-dark-bg **">
+		light-dark
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-dark **">
+		light-dark
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-light-dark-before **">
+		light-dark
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-light-dark-after **">
+		light-dark
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Light
+category: 6. Trumps > Color
+---
+
+* Color: `#E4E7EA`
+* Color variable: `$color-light`
+* Contrast variable: `$color-light-contrast`
+
+Extended variables:
+
+* `$color-disabled`
+* `$bg-content-zones`
+
+Versions:
+
+* Background class: `.u-light-bg`
+* Background class (no `color` property): `.u-color-light-bg`
+* Color: `.u-light`
+* Color `:before` class: `.u-light-before`
+* Color `:after` class: `.u-light-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-bg **">
+		light
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-light-bg **">
+		light
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light **">
+		light
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-light-before **">
+		light
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-light-after **">
+		light
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Light Light
+category: 6. Trumps > Color
+---
+
+* Color: `#FFF`
+* Color variable: `$color-light-light`
+* Contrast variable: `$color-light-light-contrast`
+
+Extended variables:
+
+* `$color-primary-dark-contrast`
+* `$color-primary-contrast`
+* `$color-primary-accent-contrast`
+* `$color-secondary-dark-contrast`
+* `$color-dark-dark-contrast`
+* `$color-dark-contrast`
+* `$light-gradient-dark-contrast`
+* `$color-alpha-dark-90-contrast`
+* `$color-alpha-dark-80-contrast`
+* `$color-alpha-dark-75-contrast`
+* `$color-alpha-dark-70-contrast`
+* `$color-alpha-dark-60-contrast`
+* `$color-alpha-dark-50-contrast`
+* `$color-alpha-dark-40-contrast`
+* `$color-alpha-dark-30-contrast`
+* `$color-alpha-dark-20-contrast`
+* `$color-alpha-dark-10-contrast`
+
+Versions:
+
+* Background class: `.u-light-light-bg`
+* Background class (no `color` property): `.u-color-light-light-bg`
+* Color: `.u-light-light`
+* Color `:before` class: `.u-light-light-before`
+* Color `:after` class: `.u-light-light-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-light-bg **">
+		light-light
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-light-light-bg **">
+		light-light
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-light **">
+		light-light
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-light-light-before **">
+		light-light
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-light-light-after **">
+		light-light
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Light Accent
+category: 6. Trumps > Color
+---
+
+* Color: `#FEFEFE`
+* Color variable: `$color-light-accent`
+* Contrast variable: `$color-light-accent-contrast`
+
+Extended variables:
+
+* `$color-primary-dark-contrast`
+
+Versions:
+
+* Background class: `.u-light-accent-bg`
+* Background class (no `color` property): `.u-color-light-accent-bg`
+* Color: `.u-light-accent`
+* Color `:before` class: `.u-light-accent-before`
+* Color `:after` class: `.u-light-accent-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-accent-bg **">
+		light-accent
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-light-accent-bg **">
+		light-accent
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-accent **">
+		light-accent
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-light-accent-before **">
+		light-accent
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-light-accent-after **">
+		light-accent
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Light Gradient Dark
+category: 6. Trumps > Color
+---
+
+* Color: `linear-gradient(to right, rgba(109,131,159,1) 0%, rgba(109,131,159,0.92) 40%, rgba(109,131,159,.1) 80%, rgba(109,131,159,0) 100%)`
+* Color variable: `$light-gradient-dark`
+* Contrast variable: `$light-gradient-dark-contrast`
+
+Extended variables:
+
+* `$page-intro-gradient`
+
+Versions:
+
+* Background class: `.u-light-gradient-dark-bg`
+* Background class (no `color` property): `.u-color-light-gradient-dark-bg`
+* Color: `.u-light-gradient-dark`
+* Color `:before` class: `.u-light-gradient-dark-before`
+* Color `:after` class: `.u-light-gradient-dark-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-gradient-dark-bg **">
+		light-gradient-dark
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-light-gradient-dark-bg **">
+		light-gradient-dark
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-gradient-dark **">
+		light-gradient-dark
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-light-gradient-dark-before **">
+		light-gradient-dark
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-light-gradient-dark-after **">
+		light-gradient-dark
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Light Gradient
+category: 6. Trumps > Color
+---
+
+* Color: `linear-gradient(to bottom, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.94) 100%)`
+* Color variable: `$light-gradient`
+* Contrast variable: `$light-gradient-contrast`
+
+Extended variables:
+
+* `$header-gradient-mobile`
+
+Versions:
+
+* Background class: `.u-light-gradient-bg`
+* Background class (no `color` property): `.u-color-light-gradient-bg`
+* Color: `.u-light-gradient`
+* Color `:before` class: `.u-light-gradient-before`
+* Color `:after` class: `.u-light-gradient-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-gradient-bg **">
+		light-gradient
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-light-gradient-bg **">
+		light-gradient
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-gradient **">
+		light-gradient
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-light-gradient-before **">
+		light-gradient
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-light-gradient-after **">
+		light-gradient
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Light Gradient Dark
+category: 6. Trumps > Color
+---
+
+* Color: `linear-gradient(to right, rgba(109,131,159,1) 0%, rgba(109,131,159,0.92) 40%, rgba(109,131,159,.1) 80%, rgba(109,131,159,0) 100%)`
+* Color variable: `$light-gradient-dark`
+* Contrast variable: `$light-gradient-dark-contrast`
+
+Extended variables:
+
+* `$page-intro-gradient`
+
+Versions:
+
+* Background class: `.u-light-gradient-dark-bg`
+* Background class (no `color` property): `.u-color-light-gradient-dark-bg`
+* Color: `.u-light-gradient-dark`
+* Color `:before` class: `.u-light-gradient-dark-before`
+* Color `:after` class: `.u-light-gradient-dark-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-gradient-dark-bg **">
+		light-gradient-dark
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-light-gradient-dark-bg **">
+		light-gradient-dark
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-gradient-dark **">
+		light-gradient-dark
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-light-gradient-dark-before **">
+		light-gradient-dark
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-light-gradient-dark-after **">
+		light-gradient-dark
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Light Gradient
+category: 6. Trumps > Color
+---
+
+* Color: `linear-gradient(to bottom, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.94) 100%)`
+* Color variable: `$light-gradient`
+* Contrast variable: `$light-gradient-contrast`
+
+Extended variables:
+
+* `$header-gradient-mobile`
+
+Versions:
+
+* Background class: `.u-light-gradient-bg`
+* Background class (no `color` property): `.u-color-light-gradient-bg`
+* Color: `.u-light-gradient`
+* Color `:before` class: `.u-light-gradient-before`
+* Color `:after` class: `.u-light-gradient-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-gradient-bg **">
+		light-gradient
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-light-gradient-bg **">
+		light-gradient
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-gradient **">
+		light-gradient
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-light-gradient-before **">
+		light-gradient
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-light-gradient-after **">
+		light-gradient
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Light Gradient Primary
+category: 6. Trumps > Color
+---
+
+* Color: `linear-gradient(to bottom, #00539F 0%, #003366 80%)`
+* Color variable: `$light-gradient-primary`
+* Contrast variable: `$light-gradient-primary-contrast`
+
+Versions:
+
+* Background class: `.u-light-gradient-primary-bg`
+* Background class (no `color` property): `.u-color-light-gradient-primary-bg`
+* Color: `.u-light-gradient-primary`
+* Color `:before` class: `.u-light-gradient-primary-before`
+* Color `:after` class: `.u-light-gradient-primary-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-gradient-primary-bg **">
+		light-gradient-primary
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-light-gradient-primary-bg **">
+		light-gradient-primary
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-light-gradient-primary **">
+		light-gradient-primary
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-light-gradient-primary-before **">
+		light-gradient-primary
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-light-gradient-primary-after **">
+		light-gradient-primary
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha 90
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(255, 255, 255, .9)`
+* Color variable: `$color-alpha-90`
+* Contrast variable: `$color-alpha-90-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-90-bg`
+* Background class (no `color` property): `.u-color-alpha-90-bg`
+* Color: `.u-alpha-90`
+* Color `:before` class: `.u-alpha-90-before`
+* Color `:after` class: `.u-alpha-90-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-90-bg **">
+		alpha-90
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-90-bg **">
+		alpha-90
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-90 **">
+		alpha-90
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-90-before **">
+		alpha-90
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-90-after **">
+		alpha-90
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha 80
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(255, 255, 255, .7)`
+* Color variable: `$color-alpha-80`
+* Contrast variable: `$color-alpha-80-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-80-bg`
+* Background class (no `color` property): `.u-color-alpha-80-bg`
+* Color: `.u-alpha-80`
+* Color `:before` class: `.u-alpha-80-before`
+* Color `:after` class: `.u-alpha-80-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-80-bg **">
+		alpha-80
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-80-bg **">
+		alpha-80
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-80 **">
+		alpha-80
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-80-before **">
+		alpha-80
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-80-after **">
+		alpha-80
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha 75
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(255, 255, 255, .75)`
+* Color variable: `$color-alpha-75`
+* Contrast variable: `$color-alpha-75-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-75-bg`
+* Background class (no `color` property): `.u-color-alpha-75-bg`
+* Color: `.u-alpha-75`
+* Color `:before` class: `.u-alpha-75-before`
+* Color `:after` class: `.u-alpha-75-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-75-bg **">
+		alpha-75
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-75-bg **">
+		alpha-75
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-75 **">
+		alpha-75
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-75-before **">
+		alpha-75
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-75-after **">
+		alpha-75
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha 70
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(255, 255, 255, .7)`
+* Color variable: `$color-alpha-70`
+* Contrast variable: `$color-alpha-70-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-70-bg`
+* Background class (no `color` property): `.u-color-alpha-70-bg`
+* Color: `.u-alpha-70`
+* Color `:before` class: `.u-alpha-70-before`
+* Color `:after` class: `.u-alpha-70-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-70-bg **">
+		alpha-70
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-70-bg **">
+		alpha-70
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-70 **">
+		alpha-70
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-70-before **">
+		alpha-70
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-70-after **">
+		alpha-70
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha 50
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(255, 255, 255, .5)`
+* Color variable: `$color-alpha-50`
+* Contrast variable: `$color-alpha-50-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-50-bg`
+* Background class (no `color` property): `.u-color-alpha-50-bg`
+* Color: `.u-alpha-50`
+* Color `:before` class: `.u-alpha-50-before`
+* Color `:after` class: `.u-alpha-50-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-50-bg **">
+		alpha-50
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-50-bg **">
+		alpha-50
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-50 **">
+		alpha-50
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-50-before **">
+		alpha-50
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-50-after **">
+		alpha-50
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha 40
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(255, 255, 255, .4)`
+* Color variable: `$color-alpha-40`
+* Contrast variable: `$color-alpha-40-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-40-bg`
+* Background class (no `color` property): `.u-color-alpha-40-bg`
+* Color: `.u-alpha-40`
+* Color `:before` class: `.u-alpha-40-before`
+* Color `:after` class: `.u-alpha-40-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-40-bg **">
+		alpha-40
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-40-bg **">
+		alpha-40
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-40 **">
+		alpha-40
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-40-before **">
+		alpha-40
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-40-after **">
+		alpha-40
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha 30
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(255, 255, 255, .3)`
+* Color variable: `$color-alpha-30`
+* Contrast variable: `$color-alpha-30-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-30-bg`
+* Background class (no `color` property): `.u-color-alpha-30-bg`
+* Color: `.u-alpha-30`
+* Color `:before` class: `.u-alpha-30-before`
+* Color `:after` class: `.u-alpha-30-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-30-bg **">
+		alpha-30
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-30-bg **">
+		alpha-30
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-30 **">
+		alpha-30
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-30-before **">
+		alpha-30
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-30-after **">
+		alpha-30
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha 20
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(255, 255, 255, .2)`
+* Color variable: `$color-alpha-20`
+* Contrast variable: `$color-alpha-20-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-20-bg`
+* Background class (no `color` property): `.u-color-alpha-20-bg`
+* Color: `.u-alpha-20`
+* Color `:before` class: `.u-alpha-20-before`
+* Color `:after` class: `.u-alpha-20-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-20-bg **">
+		alpha-20
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-20-bg **">
+		alpha-20
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-20 **">
+		alpha-20
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-20-before **">
+		alpha-20
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-20-after **">
+		alpha-20
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha 10
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(255, 255, 255, .1)`
+* Color variable: `$color-alpha-10`
+* Contrast variable: `$color-alpha-10-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-10-bg`
+* Background class (no `color` property): `.u-color-alpha-10-bg`
+* Color: `.u-alpha-10`
+* Color `:before` class: `.u-alpha-10-before`
+* Color `:after` class: `.u-alpha-10-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-10-bg **">
+		alpha-10
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-10-bg **">
+		alpha-10
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-10 **">
+		alpha-10
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-10-before **">
+		alpha-10
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-10-after **">
+		alpha-10
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha Dark 90
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(0, 0, 0, .9)`
+* Color variable: `$color-alpha-dark-90`
+* Contrast variable: `$color-alpha-dark-90-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-dark-90-bg`
+* Background class (no `color` property): `.u-color-alpha-dark-90-bg`
+* Color: `.u-alpha-dark-90`
+* Color `:before` class: `.u-alpha-dark-90-before`
+* Color `:after` class: `.u-alpha-dark-90-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-90-bg **">
+		alpha-dark-90
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-dark-90-bg **">
+		alpha-dark-90
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-90 **">
+		alpha-dark-90
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-dark-90-before **">
+		alpha-dark-90
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-dark-90-after **">
+		alpha-dark-90
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha Dark 80
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(0, 0, 0, .8)`
+* Color variable: `$color-alpha-dark-80`
+* Contrast variable: `$color-alpha-dark-80-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-dark-80-bg`
+* Background class (no `color` property): `.u-color-alpha-dark-80-bg`
+* Color: `.u-alpha-dark-80`
+* Color `:before` class: `.u-alpha-dark-80-before`
+* Color `:after` class: `.u-alpha-dark-80-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-80-bg **">
+		alpha-dark-80
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-dark-80-bg **">
+		alpha-dark-80
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-80 **">
+		alpha-dark-80
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-dark-80-before **">
+		alpha-dark-80
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-dark-80-after **">
+		alpha-dark-80
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha Dark 75
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(0, 0, 0, .75)`
+* Color variable: `$color-alpha-dark-75`
+* Contrast variable: `$color-alpha-dark-75-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-dark-75-bg`
+* Background class (no `color` property): `.u-color-alpha-dark-75-bg`
+* Color: `.u-alpha-dark-75`
+* Color `:before` class: `.u-alpha-dark-75-before`
+* Color `:after` class: `.u-alpha-dark-75-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-75-bg **">
+		alpha-dark-75
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-dark-75-bg **">
+		alpha-dark-75
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-75 **">
+		alpha-dark-75
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-dark-75-before **">
+		alpha-dark-75
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-dark-75-after **">
+		alpha-dark-75
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha Dark 70
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(0, 0, 0, .7)`
+* Color variable: `$color-alpha-dark-70`
+* Contrast variable: `$color-alpha-dark-70-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-dark-70-bg`
+* Background class (no `color` property): `.u-color-alpha-dark-70-bg`
+* Color: `.u-alpha-dark-70`
+* Color `:before` class: `.u-alpha-dark-70-before`
+* Color `:after` class: `.u-alpha-dark-70-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-70-bg **">
+		alpha-dark-70
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-dark-70-bg **">
+		alpha-dark-70
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-70 **">
+		alpha-dark-70
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-dark-70-before **">
+		alpha-dark-70
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-dark-70-after **">
+		alpha-dark-70
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha Dark 50
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(0, 0, 0, .5)`
+* Color variable: `$color-alpha-dark-50`
+* Contrast variable: `$color-alpha-dark-50-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-dark-50-bg`
+* Background class (no `color` property): `.u-color-alpha-dark-50-bg`
+* Color: `.u-alpha-dark-50`
+* Color `:before` class: `.u-alpha-dark-50-before`
+* Color `:after` class: `.u-alpha-dark-50-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-50-bg **">
+		alpha-dark-50
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-dark-50-bg **">
+		alpha-dark-50
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-50 **">
+		alpha-dark-50
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-dark-50-before **">
+		alpha-dark-50
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-dark-50-after **">
+		alpha-dark-50
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha Dark 40
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(0, 0, 0, .4)`
+* Color variable: `$color-alpha-dark-40`
+* Contrast variable: `$color-alpha-dark-40-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-dark-40-bg`
+* Background class (no `color` property): `.u-color-alpha-dark-40-bg`
+* Color: `.u-alpha-dark-40`
+* Color `:before` class: `.u-alpha-dark-40-before`
+* Color `:after` class: `.u-alpha-dark-40-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-40-bg **">
+		alpha-dark-40
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-dark-40-bg **">
+		alpha-dark-40
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-40 **">
+		alpha-dark-40
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-dark-40-before **">
+		alpha-dark-40
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-dark-40-after **">
+		alpha-dark-40
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha Dark 30
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(0, 0, 0, .3)`
+* Color variable: `$color-alpha-dark-30`
+* Contrast variable: `$color-alpha-dark-30-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-dark-30-bg`
+* Background class (no `color` property): `.u-color-alpha-dark-30-bg`
+* Color: `.u-alpha-dark-30`
+* Color `:before` class: `.u-alpha-dark-30-before`
+* Color `:after` class: `.u-alpha-dark-30-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-30-bg **">
+		alpha-dark-30
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-dark-30-bg **">
+		alpha-dark-30
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-30 **">
+		alpha-dark-30
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-dark-30-before **">
+		alpha-dark-30
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-dark-30-after **">
+		alpha-dark-30
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha Dark 20
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(0, 0, 0, .2)`
+* Color variable: `$color-alpha-dark-20`
+* Contrast variable: `$color-alpha-dark-20-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-dark-20-bg`
+* Background class (no `color` property): `.u-color-alpha-dark-20-bg`
+* Color: `.u-alpha-dark-20`
+* Color `:before` class: `.u-alpha-dark-20-before`
+* Color `:after` class: `.u-alpha-dark-20-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-20-bg **">
+		alpha-dark-20
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-dark-20-bg **">
+		alpha-dark-20
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-20 **">
+		alpha-dark-20
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-dark-20-before **">
+		alpha-dark-20
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-dark-20-after **">
+		alpha-dark-20
+	</span>
+```
+
+*/
+			
+/*
+
+---
+name: Color > Alpha Dark 10
+category: 6. Trumps > Color
+---
+
+* Color: `rgba(0, 0, 0, .1)`
+* Color variable: `$color-alpha-dark-10`
+* Contrast variable: `$color-alpha-dark-10-contrast`
+
+Versions:
+
+* Background class: `.u-alpha-dark-10-bg`
+* Background class (no `color` property): `.u-color-alpha-dark-10-bg`
+* Color: `.u-alpha-dark-10`
+* Color `:before` class: `.u-alpha-dark-10-before`
+* Color `:after` class: `.u-alpha-dark-10-after`
+
+```bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-10-bg **">
+		alpha-dark-10
+	</span>
+```
+
+```color-bg.html
+	<span class="stylemark-demo-only-class--color-bg ** u-color-alpha-dark-10-bg **">
+		alpha-dark-10
+	</span>
+```
+
+```color.html
+	<span class="stylemark-demo-only-class--color-bg ** u-alpha-dark-10 **">
+		alpha-dark-10
+	</span>
+```
+
+```before.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-alpha-dark-10-before **">
+		alpha-dark-10
+	</span>
+```
+
+```after.html
+	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-alpha-dark-10-after **">
+		alpha-dark-10
+	</span>
+```
+
+*/
+			
+
+
+
+////////////////////////////////////////////////////////////////////////
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!! WARNING !!!! 
+// THIS FILE (`./src/scss/01-brand/brand-core/_00-settings_colors.scss`)
+// IS GENERATED BY `./src/scss/01-brand/colors.json` DO NOT EDIT THIS FILE 
+// !!!! WARNING !!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+////////////////////////////////////////////////////////////////////////
+
+
 $color-primary-dark: #010144;
 
 $color-primary: #6350A1;
@@ -41,31 +2345,37 @@ $color-accent-light: #99FAFB;
 $color-accent-accent: #13FCD9;
 
 $color-dark-dark: #000;
-$color-primary-accent-contrast: $color-dark-dark;
+$color-primary-light-contrast: $color-dark-dark;
+$color-secondary-contrast: $color-dark-dark;
+$color-secondary-light-contrast: $color-dark-dark;
 $color-secondary-accent-contrast: $color-dark-dark;
+$color-accent-dark-contrast: $color-dark-dark;
+$color-accent-contrast: $color-dark-dark;
+$color-accent-light-contrast: $color-dark-dark;
+$color-accent-accent-contrast: $color-dark-dark;
+$color-dark-accent-contrast: $color-dark-dark;
+$color-dark-light-contrast: $color-dark-dark;
 $color-light-dark-contrast: $color-dark-dark;
 $color-light-contrast: $color-dark-dark;
+$color-light-light-contrast: $color-dark-dark;
+$color-light-accent-contrast: $color-dark-dark;
 $color-light-light-contrast: $color-dark-dark;
 $color-light-accent-contrast: $color-dark-dark;
 $color-accent-contrast: $color-dark-dark;
 $color-accent-light-contrast: $color-dark-dark;
 $color-accent-accent-contrast: $color-dark-dark;
+$color-alpha-90-contrast: $color-dark-dark;
+$color-alpha-80-contrast: $color-dark-dark;
+$color-alpha-75-contrast: $color-dark-dark;
+$color-alpha-70-contrast: $color-dark-dark;
+$color-alpha-60-contrast: $color-dark-dark;
+$color-alpha-50-contrast: $color-dark-dark;
+$color-alpha-40-contrast: $color-dark-dark;
+$color-alpha-30-contrast: $color-dark-dark;
+$color-alpha-20-contrast: $color-dark-dark;
+$color-alpha-10-contrast: $color-dark-dark;
 
 $color-dark: #31373E;
-$color-base: $color-dark;
-$color-label: $color-dark;
-$color-zone-accent-contrast: $color-dark;
-$color-primary-light-contrast: $color-dark;
-$color-alpha-90-contrast: $color-dark;
-$color-alpha-80-contrast: $color-dark;
-$color-alpha-75-contrast: $color-dark;
-$color-alpha-70-contrast: $color-dark;
-$color-alpha-60-contrast: $color-dark;
-$color-alpha-50-contrast: $color-dark;
-$color-alpha-40-contrast: $color-dark;
-$color-alpha-30-contrast: $color-dark;
-$color-alpha-20-contrast: $color-dark;
-$color-alpha-10-contrast: $color-dark;
 
 $color-dark-light: #727F90;
 
@@ -78,17 +2388,12 @@ $color-disabled: $color-light;
 $bg-content-zones: $color-light;
 
 $color-light-light: #FFF;
+$color-primary-dark-contrast: $color-light-light;
 $color-primary-contrast: $color-light-light;
-$color-secondary-light-contrast: $color-light-light;
-$anchor-hover: $color-light-light;
-$header-color: $color-light-light;
-$color-dark-dark-contrast: $color-light-light;
-$color-secondary-contrast: $color-light-light;
+$color-primary-accent-contrast: $color-light-light;
 $color-secondary-dark-contrast: $color-light-light;
+$color-dark-dark-contrast: $color-light-light;
 $color-dark-contrast: $color-light-light;
-$color-dark-accent-contrast: $color-light-light;
-$color-dark-light-contrast: $color-light-light;
-$color-accent-dark-contrast: $color-light-light;
 $light-gradient-dark-contrast: $color-light-light;
 $color-alpha-dark-90-contrast: $color-light-light;
 $color-alpha-dark-80-contrast: $color-light-light;
@@ -118,8 +2423,6 @@ $header-gradient-mobile: $light-gradient;
 
 $light-gradient-primary: linear-gradient(to bottom, #00539F 0%, #003366 80%);
 
-$color-zone-accent: #E5EDF5;
-
 $color-alpha-90: rgba(255, 255, 255, .9);
 
 $color-alpha-80: rgba(255, 255, 255, .7);
@@ -130,7 +2433,7 @@ $color-alpha-70: rgba(255, 255, 255, .7);
 
 $color-alpha-50: rgba(255, 255, 255, .5);
 
-$color-alpha-40: rgba(255, 255, 255, .3);
+$color-alpha-40: rgba(255, 255, 255, .4);
 
 $color-alpha-30: rgba(255, 255, 255, .3);
 
@@ -140,7 +2443,7 @@ $color-alpha-10: rgba(255, 255, 255, .1);
 
 $color-alpha-dark-90: rgba(0, 0, 0, .9);
 
-$color-alpha-dark-80: rgba(0, 0, 0, .7);
+$color-alpha-dark-80: rgba(0, 0, 0, .8);
 
 $color-alpha-dark-75: rgba(0, 0, 0, .75);
 
@@ -148,7 +2451,7 @@ $color-alpha-dark-70: rgba(0, 0, 0, .7);
 
 $color-alpha-dark-50: rgba(0, 0, 0, .5);
 
-$color-alpha-dark-40: rgba(0, 0, 0, .3);
+$color-alpha-dark-40: rgba(0, 0, 0, .4);
 
 $color-alpha-dark-30: rgba(0, 0, 0, .3);
 
@@ -181,7 +2484,6 @@ $palette: (
     "light-light": ("#{$color-light-light}", "#{$color-light-light-contrast}"), 
     "light-accent": ("#{$color-light-accent}", "#{$color-light-accent-contrast}"), 
     "light-gradient-dark": ("#{$light-gradient-dark}", "#{$light-gradient-dark-contrast}"), 
-    "zone-accent": ("#{$color-zone-accent}", "#{$color-zone-accent-contrast}"), 
     "alpha-90": ("#{$color-alpha-90}", "#{$color-alpha-90-contrast}"), 
     "alpha-80": ("#{$color-alpha-80}", "#{$color-alpha-80-contrast}"), 
     "alpha-75": ("#{$color-alpha-75}", "#{$color-alpha-75-contrast}"), 
