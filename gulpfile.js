@@ -245,19 +245,13 @@ gulp.task('fonts', function() {
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['fonts', 'stylemark', 'sass'], function() {
-
     browserSync.init({
         server: "./_dist"
     });
 
-
 	gulp.watch("src/**/*", ['stylemark']);
 
-
 	gulp.watch("./src/assets/fonts/**/*", ['fonts']);
-
-	// gulp.task('styles:static:watch', ['styles:static']);
-	// gulp.watch('src/assets/toolkit/styles/**/*.css', ['styles:static:watch']);
 
     gulp.watch("src/scss/**/*.scss", ['sass']);
     gulp.watch("dist/**/*.html").on('change', browserSync.reload);
