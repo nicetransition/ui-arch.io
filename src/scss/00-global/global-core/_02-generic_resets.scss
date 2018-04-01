@@ -194,10 +194,6 @@ category: 2. Generic
 		margin-right: 0;
 		margin-left: 0;
 		-webkit-overflow-scrolling: touch;
-
-		@if ($color-base != #000) {
-			color: $color-base;
-		}
 	}
 
 	/*
