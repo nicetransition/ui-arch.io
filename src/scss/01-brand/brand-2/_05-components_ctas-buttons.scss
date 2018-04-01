@@ -1,0 +1,357 @@
+// COMPONENTS: Designed components
+
+
+%button-disabled-state {
+	background-color: $color-dark-light !important;
+	border-color: $color-dark-light;
+	color: rgba($color-dark, .7) !important;
+	cursor: default;
+}
+
+%button-base {
+	font-family: $primary-font;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+}
+
+
+
+/*
+---
+name: Button Large
+category: 5. Component > Call to Actions
+---
+
+Styles for buttons at large screens Buttons can be used with `<a>`, `<button>`, and `<input>` elements. See [Suffixcate](/#suffixcate) for details.
+
+Can be applied to:
+- Default
+- Base
+- Primary
+- Secondary
+- Teritary
+- Dark
+- Light
+
+```base-and-default.html
+<button class="c-button@large c-button@large--default c-button@large--base">Button</button>
+```
+
+```primary.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--primary">Button</button>
+```
+
+```secondary.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--secondary">Button</button>
+```
+
+```tertiary.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--tertiary">Button</button>
+```
+
+```dark.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--dark">Button</button>
+```
+
+```light.html
+<button class="c-button@large c-button@large--default c-button@large--base c-button@large--light">Button</button>
+```
+
+*/
+
+/*
+---
+name: Button Small
+category: 5. Component > Call to Actions
+---
+
+Styles for buttons at small screens Buttons can be used with `<a>`, `<button>`, and `<input>` elements. See [Suffixcate](/#suffixcate) for details.
+
+Can be applied to:
+- Default
+- Base
+- Primary
+- Secondary
+- Teritary
+- Dark
+- Light
+
+```base-and-default.html
+<button class="c-button@small c-button@small--default c-button@small--base">Button</button>
+```
+
+```primary.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--primary">Button</button>
+```
+
+```secondary.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--secondary">Button</button>
+```
+
+```tertiary.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--tertiary">Button</button>
+```
+
+```dark.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--dark">Button</button>
+```
+
+```light.html
+<button class="c-button@small c-button@small--default c-button@small--base c-button@small--light">Button</button>
+```
+
+*/
+
+/*
+---
+name: Button > Primary
+category: 5. Component > Call to Actions
+---
+
+Types of primary buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--primary **" data-component="global.button-primary">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--primary **" data-component="global.button-primary">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+
+
+/*
+---
+name: Button > Secondary
+category: 5. Component > Call to Actions
+---
+
+Types of secondary buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--secondary **" data-component="global.button-secondary">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--secondary **" data-component="global.button-secondary">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+
+
+/*
+---
+name: Button > Tertiary
+category: 5. Component > Call to Actions
+---
+
+Types of tertiary buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--tertiary **" data-component="global.button-tertiary">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--tertiary **" data-component="global.button-tertiary">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+
+
+/*
+---
+name: Button > Dark
+category: 5. Component > Call to Actions
+---
+
+Types of dark buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--dark **" data-component="global.button-dark">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--dark **" data-component="global.button-dark">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+
+/*
+---
+name: Button > Light
+category: 5. Component > Call to Actions
+---
+
+Types of light buttons
+- Core: Base styles
+- Default: Spacing and alignment
+
+```core.html
+<button class="**-button c-button--light **" data-component="global.button-light">
+    <span>
+       Button
+    </span>
+</button>
+```
+
+```default.html
+<button class="** c-button  c-button--base c-button--default c-button--light **" data-component="global.button-light">
+    <span>
+        Button
+    </span>
+</button>
+```
+*/
+
+
+.c-button {
+	@extend %button-base;
+	border-radius: 0;
+
+	&[disabled] {
+		@extend %button-disabled-state;
+
+		&:hover, &:focus, &:active {
+			@extend %button-disabled-state;
+		}
+	}
+
+	&.-disabled {
+		@extend %button-disabled-state;
+	}
+
+	@include suffixcate {
+		
+		&--base {
+			border: rem(1) solid;
+		}
+
+
+		&--default {
+			> span {
+				font-family: $primary-font;
+				font-weight: bold;
+			}
+		}
+
+
+		&--primary {
+			background-color: $color-primary;
+			color: $color-primary-contrast;
+			border-color: $color-primary;
+
+			&:hover, &:focus {
+				background-color: $color-primary-dark;
+				color: $color-primary-dark-contrast;
+			}
+
+			&:active {
+				background-color: $color-primary-accent;
+				color: $color-primary-accent-contrast;
+			}
+		}
+
+
+		&--secondary {
+			background-color: $color-secondary;
+			color: $color-secondary-contrast;
+			border-color: $color-secondary;
+
+			&:hover, &:focus {
+				background-color: $color-secondary-dark;
+				color: $color-secondary-dark-contrast;
+			}
+
+			&:active {
+				background-color: $color-secondary-accent;
+				color: $color-secondary-accent-contrast;
+			}
+		}
+
+		&--tertiary {
+			background-color: $color-accent;
+			color: $color-accent-contrast;
+			border-color: $color-accent;
+
+			&:hover, &:focus {
+				background-color: $color-accent-dark;
+				color: $color-accent-dark-contrast;
+			}
+
+			&:active {
+				background-color: $color-accent-accent;
+				color: $color-accent-accent-contrast;
+			}
+		}
+
+		&--light {
+			background-color: $color-light;
+			color: $color-light-contrast;
+			border-color: $color-light;
+
+			&:hover, &:focus {
+				background-color: $color-light-light;
+				color: $color-light-light-contrast;
+			}
+
+			&:active {
+				background-color: $color-light-accent;
+				color: $color-light-accent-contrast;
+			}
+		}
+
+		&--dark {
+			background-color: $color-dark;
+			color: $color-dark-contrast;
+			border-color: $color-dark;
+
+			&:hover, &:focus {
+				background-color: $color-dark-dark;
+				color: $color-dark-dark-contrast;
+			}
+
+			&:active {
+				background-color: $color-dark-accent;
+				color: $color-dark-accent-contrast;
+			}
+		}
+	}
+}

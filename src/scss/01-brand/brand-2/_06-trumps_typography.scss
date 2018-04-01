@@ -1,0 +1,345 @@
+.u-font-primary {
+	font-family: $primary-font;
+}
+
+.u-seconary-font {
+	font-family: $seconary-font;
+}
+
+.u-b {
+	// &-light {
+	// 	@include suffixcate {
+	// 		
+	// 	}
+	// }
+
+	// &-normal {
+	// 	@include suffixcate {
+	// 		
+	// 	}
+	// }
+
+	// &-bold {
+	// 	@include suffixcate {
+	// 		
+	// 	}
+	// }
+
+	// &-ultra {
+	// 	@include suffixcate {
+	// 		font-weight: $weight-ultra;
+	// 	}
+	// }
+}
+
+.u-lh {
+	&-0 {
+		@include suffixcate {
+			line-height: 2em;
+		}
+	}
+
+	&-1 {
+		@include suffixcate {
+			line-height: 1.5em;
+		}
+	}
+
+	&-2 {
+		@include suffixcate {
+			line-height: 1em;
+		}
+	}
+
+	&-3 {
+		@include suffixcate {
+			line-height: .9em;
+		}
+	}
+
+	&-4 {
+		@include suffixcate {
+			line-height: .8em;
+		}
+	}
+
+	&-5 {
+		@include suffixcate {
+			line-height: .5em;
+		}
+	}
+}
+
+
+.u-fs {
+	&-1 {
+		@include suffixcate {
+			font-size: $h1;
+		}
+	}
+
+	&-2 {
+		@include suffixcate {
+			font-size: $h2;
+		}
+	}
+
+	&-3 {
+		@include suffixcate {
+			font-size: $h3;
+		}
+	}
+
+	&-4 {
+		@include suffixcate {
+			font-size: $h4;
+		}
+	}
+
+	&-5 {
+		@include suffixcate {
+			font-size: $h5;
+		}
+	}
+
+	&-6 {
+		@include suffixcate {
+			font-size: $h6;
+		}
+	}
+
+
+	&-1-alt {
+		@include suffixcate {
+			font-size: $em1;
+		}
+	}
+
+	&-2-alt {
+		@include suffixcate {
+			font-size: $em2;
+		}
+	}
+
+	&-3-alt {
+		@include suffixcate {
+			font-size: $em3;
+		}
+	}
+
+	&-4-alt {
+		@include suffixcate {
+			font-size: $em4;
+		}
+	}
+
+	&-5-alt {
+		@include suffixcate {
+			font-size: $em5;
+		}
+	}
+
+	&-6-alt {
+		@include suffixcate {
+			font-size: $em6;
+		}
+	}
+
+
+
+	&-before {
+		&-1 {
+			@include suffixcate {
+				&:before {
+					font-size: $h1;
+				}
+			}
+
+			&-alt {
+				@include suffixcate {
+					&:before {
+						font-size: $em1;
+					}
+				}
+			}
+		}
+
+		&-2 {
+			@include suffixcate {
+				&:before {
+					font-size: $h2;
+				}
+			}
+
+			&-alt {
+				@include suffixcate {
+					&:before {
+						font-size: $em2;
+					}
+				}
+			}
+		}
+
+		&-3 {
+			@include suffixcate {
+				&:before {
+					font-size: $h3;
+				}
+			}
+
+			&-alt {
+				@include suffixcate {
+					&:before {
+						font-size: $em3;
+					}
+				}
+			}
+		}
+
+		&-4 {
+			@include suffixcate {
+				&:before {
+					font-size: $h4;
+				}
+			}
+
+			&-alt {
+				@include suffixcate {
+					&:before {
+						font-size: $em4;
+					}
+				}
+			}
+		}
+
+		&-5 {
+			@include suffixcate {
+				&:before {
+					font-size: $h5;
+				}
+			}
+
+			&-alt {
+				@include suffixcate {
+					&:before {
+						font-size: $em5;
+					}
+				}
+			}
+		}
+
+		&-6 {
+			@include suffixcate {
+				&:before {
+					font-size: $h6;
+				}
+			}
+
+			&-alt {
+				@include suffixcate {
+					&:before {
+						font-size: $em6;
+					}
+				}
+			}
+		}
+	}
+
+	&-after {
+		&-1 {
+			@include suffixcate {
+				&:after {
+					font-size: $h1;
+				}
+			}
+
+			&-alt {
+				@include suffixcate {
+					&:after {
+						font-size: $em1;
+					}
+				}
+			}
+		}
+
+		&-2 {
+			@include suffixcate {
+				&:after {
+					font-size: $h2;
+				}
+			}
+
+			&-alt {
+				@include suffixcate {
+					&:after {
+						font-size: $em2;
+					}
+				}
+			}
+		}
+
+		&-3 {
+			@include suffixcate {
+				&:after {
+					font-size: $h3;
+				}
+			}
+
+			&-alt {
+				@include suffixcate {
+					&:after {
+						font-size: $em3;
+					}
+				}
+			}
+		}
+
+		&-4 {
+			@include suffixcate {
+				&:after {
+					font-size: $h4;
+				}
+			}
+
+			&-alt {
+				@include suffixcate {
+					&:after {
+						font-size: $em4;
+					}
+				}
+			}
+		}
+
+		&-5 {
+			@include suffixcate {
+				&:after {
+					font-size: $h5;
+				}
+			}
+
+			&-alt {
+				@include suffixcate {
+					&:after {
+						font-size: $em5;
+					}
+				}
+			}
+		}
+
+		&-6 {
+			@include suffixcate {
+				&:after {
+					font-size: $h6;
+				}
+			}
+
+			&-alt {
+				@include suffixcate {
+					&:after {
+						font-size: $em6;
+					}
+				}
+			}
+		}
+	}
+}

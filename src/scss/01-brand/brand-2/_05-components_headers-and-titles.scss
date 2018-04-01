@@ -1,0 +1,170 @@
+%header-font {
+	@include suffixcate {
+		font-family: $seconary-font;
+	}
+}
+
+%subheader-font {
+	@include suffixcate {
+		font-family: $primary-font;
+	}
+}
+
+
+%title-spacing-0 {
+	@include suffixcate {
+		letter-spacing: -0.022em;
+	}
+}
+
+%title-spacing-1 {
+	@include suffixcate {
+		letter-spacing: 0.167em;
+	}
+}
+
+%title-spacing-2 {
+	@include suffixcate {
+		letter-spacing: .125em;
+	}
+}
+
+%title-spacing-3 {
+	@include suffixcate {
+		letter-spacing: .26em;
+	}
+}
+
+%title-emphasized {
+	@include suffixcate {
+		text-transform: uppercase;
+	}
+}
+
+.c-page-header {
+	@include suffixcate {
+		font-family: $seconary-font;
+	}
+
+	@include suffixcate {
+		font-size: $h1;
+		line-height: 1;
+	}
+
+	@include suffixcate {
+		font-style: italic;
+	}
+
+	@include suffixcate {
+		font-weight: normal; // book
+	}
+}
+
+.c-page-subheader {
+	@include suffixcate {
+		font-family: $primary-font;
+	}
+
+	@include suffixcate {
+		font-size: $h2;
+	}
+
+	@include suffixcate {
+		font-weight: 300; // light
+	}
+}
+
+.c-section-header {
+	@include suffixcate {
+		font-family: $seconary-font;
+	}
+
+	@include suffixcate {
+		font-size: $h3;
+	}
+
+	@include suffixcate {
+		font-style: italic;
+	}
+
+	@include suffixcate {
+		font-weight: normal; // book
+	}
+
+	@include suffixcate {
+		text-transform: uppercase;
+	}
+}
+
+.c-section-subheader {
+	@include suffixcate {
+		font-family: $primary-font;
+	}
+
+	@include suffixcate {
+		font-size: $h4;
+	}
+
+	@include suffixcate {
+		font-weight: normal; // regular
+	}
+
+	@include suffixcate {
+		text-transform: uppercase;
+	}
+}
+
+.c-article-header {
+	@include suffixcate {
+		font-family: $primary-font;
+	}
+
+	@include suffixcate {
+		font-size: $h4;
+	}
+
+	@include suffixcate {
+		font-weight: normal; // regular
+	}
+}
+
+.c-article-subheader {
+	@include suffixcate {
+		font-family: $primary-font;
+	}
+
+	@include suffixcate {
+		font-size: $h5;
+	}
+
+	@include suffixcate {
+		font-weight: normal; // light
+	}
+}
+
+.c-paragraph-header {
+	@include suffixcate {
+		font-family: $primary-font;
+	}
+
+	@include suffixcate {
+		font-size: $h4;
+	}
+
+	@include suffixcate {
+		font-weight: 300; // light
+	}
+}
+
+
+.c-title-block {
+	&__header {
+		& + .c-title-block__subheader {
+			margin-top: $default-space / 2;
+		}
+	}
+
+	&__subheader {
+
+	}
+}

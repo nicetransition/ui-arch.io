@@ -1,0 +1,233 @@
+/*
+---
+name: Anchor
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+
+/*
+---
+name: Anchor > Primary
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+
+/*
+---
+name: Anchor > Secondary
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+
+/*
+---
+name: Anchor > Dark
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+/*
+---
+name: Anchor > Light
+category: 5. Component > Call to Actions
+---
+*/
+
+// Input can be used with `<input>` elements and all its types.
+// 
+// Types of labels:
+// - Default: No classes
+// - Disabled: No classes
+// - Base: `.c-input`
+// - Theme 1: `.t-form-1`
+// - Theme 2: `.t-form-2`
+// 
+// ```default.html
+// 	<label>Label</label>
+// ```
+// 
+// ```base.html
+// 	<label class="** c-label **">Label</label>
+// ```
+// 
+// ```t-form-1.html
+// 	<input class="** c-label ** t-form-1">Label</label>
+// ```
+// 
+// ```t-form-2.html
+// 	<input class="** c-label ** t-form-2">Label</label>
+// 
+// ```
+
+.c-anchor {
+	text-decoration: none;
+
+	@include suffixcate {
+		&--primary {
+			color: $color-primary;
+
+			&:focus, &:hover {
+				color: $color-primary-dark;
+			}
+
+			&:active {
+				color: $color-primary-accent;
+			}
+		}
+
+		&--secondary {
+			color: $color-secondary;
+
+			&:focus, &:hover {
+				color: $color-secondary-dark;
+			}
+
+			&:active {
+				color: $color-secondary-accent;
+			}
+		}
+
+		&--tertiary {
+			color: $color-accent;
+
+			&:focus, &:hover {
+				color: $color-accent-dark;
+			}
+
+			&:active {
+				color: $color-accent-accent;
+			}
+		}
+
+		&--dark {
+			color: $color-dark;
+
+			&:hover, &:active {
+				color: $color-dark-dark;
+			}
+
+			&:active {
+				color: $color-dark-accent;
+			}
+		}
+
+		&--light {
+			color: $color-light;
+
+			&:hover, &:active {
+				color: $color-light-dark;
+			}
+
+			&:active {
+				color: $color-light-accent;
+			}
+		}
+	}
+}
