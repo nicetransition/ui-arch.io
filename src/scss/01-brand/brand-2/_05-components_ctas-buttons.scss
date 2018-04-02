@@ -19,7 +19,8 @@
 
 /*
 ---
-name: Button Large
+headHtml: Button Large
+name: Button Large Demo
 category: 5. Component > Call to Actions
 ---
 
@@ -62,7 +63,10 @@ Can be applied to:
 
 /*
 ---
-name: Button Small
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Button Small Demo
 category: 5. Component > Call to Actions
 ---
 
@@ -105,7 +109,10 @@ Can be applied to:
 
 /*
 ---
-name: Button > Primary
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Button > Primary Demo
 category: 5. Component > Call to Actions
 ---
 
@@ -133,7 +140,10 @@ Types of primary buttons
 
 /*
 ---
-name: Button > Secondary
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Button > Secondary Demo
 category: 5. Component > Call to Actions
 ---
 
@@ -161,7 +171,10 @@ Types of secondary buttons
 
 /*
 ---
-name: Button > Tertiary
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Button > Tertiary Demo
 category: 5. Component > Call to Actions
 ---
 
@@ -189,7 +202,10 @@ Types of tertiary buttons
 
 /*
 ---
-name: Button > Dark
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Button > Dark Demo
 category: 5. Component > Call to Actions
 ---
 
@@ -216,7 +232,10 @@ Types of dark buttons
 
 /*
 ---
-name: Button > Light
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Button > Light Demo
 category: 5. Component > Call to Actions
 ---
 
