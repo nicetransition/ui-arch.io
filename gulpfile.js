@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 	prefix = require('gulp-autoprefixer'),
 	browserSync = require('browser-sync').create(),
 	exec = require('child_process').exec,
-	stylemark = require('stylemark');
+	stylemack = require('stylemack');
 // var exec = require('child_process').exec;
 // var replace = require('gulp-replace');
 // var cssimport = require("gulp-cssimport");
@@ -181,31 +181,31 @@ Versions:
 * Color `+"`"+`:after`+"`"+` class: `+"`"+`.u-`+nameOnly+`-after`+"`"+`
 
 `+"```"+`bg.html
-	<span class="stylemark-demo-only-class--color-bg ** u-`+nameOnly+`-bg **">
+	<span class="stylemack-demo-only-class--color-bg ** u-`+nameOnly+`-bg **">
 		`+ nameOnly +`
 	</span>
 `+"```"+`
 
 `+"```"+`color-bg.html
-	<span class="stylemark-demo-only-class--color-bg ** u-color-`+nameOnly+`-bg **">
+	<span class="stylemack-demo-only-class--color-bg ** u-color-`+nameOnly+`-bg **">
 		`+ nameOnly +`
 	</span>
 `+"```"+`
 
 `+"```"+`color.html
-	<span class="stylemark-demo-only-class--color-bg ** u-`+nameOnly+` **">
+	<span class="stylemack-demo-only-class--color-bg ** u-`+nameOnly+` **">
 		`+ nameOnly +`
 	</span>
 `+"```"+`
 
 `+"```"+`before.html
-	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-before ** u-`+nameOnly+`-before **">
+	<span data-icon="X" class="stylemack-demo-only-class--color-bg u-glyph-before ** u-`+nameOnly+`-before **">
 		`+ nameOnly +`
 	</span>
 `+"```"+`
 
 `+"```"+`after.html
-	<span data-icon="X" class="stylemark-demo-only-class--color-bg u-glyph-after ** u-`+nameOnly+`-after **">
+	<span data-icon="X" class="stylemack-demo-only-class--color-bg u-glyph-after ** u-`+nameOnly+`-after **">
 		`+ nameOnly +`
 	</span>
 `+"```"+`
@@ -225,11 +225,11 @@ Versions:
 });
 
 
-gulp.task('stylemark', function () {
-	stylemark({
+gulp.task('stylemack', function () {
+	stylemack({
 	    input: 'src/scss',
 	    output: '_dist',
-	    configPath: '.stylemark.yml',
+	    configPath: '.stylemack.yml',
 	});
 })
 
@@ -261,12 +261,12 @@ gulp.task('fonts', function() {
 
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['fonts', 'stylemark', 'sass'], function() {
+gulp.task('serve', ['fonts', 'stylemack', 'sass'], function() {
     browserSync.init({
         server: "./_dist"
     });
 
-	gulp.watch("src/**/*", ['stylemark']);
+	gulp.watch("src/**/*", ['stylemack']);
 
 	gulp.watch("./src/assets/fonts/**/*", ['fonts']);
 

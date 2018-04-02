@@ -8,7 +8,7 @@
 	"scripts": {
 		"gulp": "gulp",
 		"prestart": "npm install",
-		"start": "gulp --dev"
+		"start": "gulp"
 	},
 	"keywords": [
 		"styleguide",
@@ -41,6 +41,6 @@
 		"gulp-watch": "5.0.0"
 	},
 	"dependencies": {
-		"stylemark": "file:../stylemark"
+		"stylemack": "../stylemack"
 	}
 }
