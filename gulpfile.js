@@ -136,31 +136,30 @@ gulp.task('colors', function() {
 				brandName = brands[x].name,
 				folderName = brands[x].src;
 
-			for (var i = 0; i < colorlength; i++) {
-				var color = colors[i],
-					children = colors[i].extended,
+
+			for (var y = 0; y < colorlength; y++) {
+				var color = colors[y],
+					children = colors[y].extended,
 					childrenlength = (children) ? children.length : 0,
 					variablename = "",
 					nameOnly = color.name.replace("color-","");
 
 
+
 				obj = "";
 
-				if (childrenlength > 0) {
+				
 					obj += `
 	Extended variables:
 	`;
-					for (var x = 0; x < childrenlength; x++) {
+					for (var z = 0; z < childrenlength; z++) {
 						obj += `
-	* `+"`$" + children[x]+"`";
+	* `+"`$" + children[z]+"`";
 					}
 
 					obj += `
 	`;
-				}
-
-				 
-				documentation += `
+					documentation += `
 /*
 
 ---
@@ -213,7 +212,12 @@ Versions:
 */
 				`;
 
+
+				
+
+
 			}
+
 		}
 
 
