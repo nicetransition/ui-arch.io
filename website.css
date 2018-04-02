@@ -326,31 +326,36 @@ Usage:
 
 /*
 ---
-name: Anchor
+head: <link rel="stylesheet" href="website.css" />
+name: Anchor Core
 category: 5. Component > Call to Actions
 ---
 */
 /*
 ---
-name: Anchor > Primary
+head: <link rel="stylesheet" href="website.css" />
+name: Anchor > Primary Core
 category: 5. Component > Call to Actions
 ---
 */
 /*
 ---
-name: Anchor > Secondary
+head: <link rel="stylesheet" href="website.css" />
+name: Anchor > Secondary Core
 category: 5. Component > Call to Actions
 ---
 */
 /*
 ---
-name: Anchor > Dark
+head: <link rel="stylesheet" href="website.css" />
+name: Anchor > Dark Core
 category: 5. Component > Call to Actions
 ---
 */
 /*
 ---
-name: Anchor > Light
+head: <link rel="stylesheet" href="website.css" />
+name: Anchor > Light Core
 category: 5. Component > Call to Actions
 ---
 */
@@ -463,7 +468,8 @@ category: 5. Component > Call to Actions
 
 /*
 ---
-name: Button Large
+head: <link rel="stylesheet" href="website.css" />
+name: Button Large Core
 category: 5. Component > Call to Actions
 ---
 
@@ -505,7 +511,8 @@ Can be applied to:
 */
 /*
 ---
-name: Button Small
+head: <link rel="stylesheet" href="website.css" />
+name: Button Small Core
 category: 5. Component > Call to Actions
 ---
 
@@ -547,7 +554,8 @@ Can be applied to:
 */
 /*
 ---
-name: Button > Primary
+head: <link rel="stylesheet" href="website.css" />
+name: Button > Primary Core
 category: 5. Component > Call to Actions
 ---
 
@@ -573,7 +581,8 @@ Types of primary buttons
 */
 /*
 ---
-name: Button > Secondary
+head: <link rel="stylesheet" href="website.css" />
+name: Button > Secondary Core
 category: 5. Component > Call to Actions
 ---
 
@@ -599,7 +608,8 @@ Types of secondary buttons
 */
 /*
 ---
-name: Button > Tertiary
+head: <link rel="stylesheet" href="website.css" />
+name: Button > Tertiary Core
 category: 5. Component > Call to Actions
 ---
 
@@ -625,7 +635,8 @@ Types of tertiary buttons
 */
 /*
 ---
-name: Button > Dark
+head: <link rel="stylesheet" href="website.css" />
+name: Button > Dark Core
 category: 5. Component > Call to Actions
 ---
 
@@ -651,7 +662,8 @@ Types of dark buttons
 */
 /*
 ---
-name: Button > Light
+head: <link rel="stylesheet" href="website.css" />
+name: Button > Light Core
 category: 5. Component > Call to Actions
 ---
 
@@ -859,7 +871,8 @@ Types of light buttons
 
 /*
 ---
-name: Branded Label
+head: <link rel="stylesheet" href="website.css" />
+name: Branded Label Core
 category: 5. Component > Form
 ---
 
@@ -882,7 +895,8 @@ Types of labels:
 */
 /*
 ---
-name: Input
+head: <link rel="stylesheet" href="website.css" />
+name: Input Core
 category: 5. Component > Form
 ---
 
@@ -925,7 +939,8 @@ Types of inputs:
 */
 /*
 ---
-name: Textarea
+head: <link rel="stylesheet" href="website.css" />
+name: Textarea Core
 category: 5. Component > Form
 ---
 
@@ -976,7 +991,8 @@ Types of textarea:
 */
 /*
 ---
-name: Select
+head: <link rel="stylesheet" href="website.css" />
+name: Select Core
 category: 5. Component > Form
 ---
 
@@ -1119,7 +1135,8 @@ Types of selects:
 
 /*
 ---
-name: Radio > Toggle Field
+head: <link rel="stylesheet" href="website.css" />
+name: Radio > Toggle Field Core
 category: 5. Component > Form
 ---
 
@@ -1159,7 +1176,8 @@ Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is 
 
 /*
 ---
-name: Radio
+head: <link rel="stylesheet" href="website.css" />
+name: Radio Core
 category: 5. Component > Form
 ---
 
@@ -1290,7 +1308,8 @@ Types of radio:
 
 /*
 ---
-name: Checkbox
+head: <link rel="stylesheet" href="website.css" />
+name: Checkbox Core
 category: 5. Component > Form
 ---
 
@@ -1418,7 +1437,8 @@ Types of checkbox:
 
 /*
 ---
-name: Input > Placeholder Styles
+head: <link rel="stylesheet" href="website.css" />
+name: Input > Placeholder Styles Core
 category: 5. Component > Form
 ---
 
@@ -3556,7 +3576,8 @@ Types of placeholders:
 
 /*
 ---
-name: Core Colors
+head: <link rel="stylesheet" href="website.css" />
+name: Core Colors Core
 category: 6. Trumps > Color
 ---
 
@@ -3997,7 +4018,8 @@ Reverse colors
 
 /*
 ---
-name: Box-Shadow
+head: <link rel="stylesheet" href="website.css" />
+name: Box-Shadow Core
 category: 6. Trumps > Extras
 ---
 
@@ -4033,7 +4055,8 @@ Adds `box-shadow`
 
 /*
 ---
-name: Border Color
+head: <link rel="stylesheet" href="website.css" />
+name: Border Color Core
 category: 6. Trumps > Extras
 ---
 

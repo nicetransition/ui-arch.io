@@ -19,12 +19,12 @@
 		</style>
 
 		<script>
-			function findAndHandleStylemarkBlocks(languages, handler) {
-				var blocks = getStylemarkBlocks(languages);
-				handleStylemarkBlocks(blocks, handler);
+			function findAndHandleStylemackBlocks(languages, handler) {
+				var blocks = getStylemackBlocks(languages);
+				handleStylemackBlocks(blocks, handler);
 			}
 
-			function getStylemarkBlocks(languages) {
+			function getStylemackBlocks(languages) {
 				languages = typeof languages === 'string' ? [languages] : languages;
 
 				var selectors = [];
@@ -46,7 +46,7 @@
 				return blocks;
 			}
 
-			function handleStylemarkBlocks(blocks, handler) {
+			function handleStylemackBlocks(blocks, handler) {
 				for (var i = 0, length = blocks.length; i < length; i++) {
 					handler(blocks[i], i);
 				}
@@ -73,7 +73,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi
 </ul>
 
 
-			<script type="text/x-stylemark" data-language="html"><p>
+			<script type="text/x-stylemack" data-language="html"><p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi nulla praesentium, veniam eius. Laborum beatae quod nihil laboriosam.
 </p>
 <ul class="u-list">
@@ -96,7 +96,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi
 		-->
 
 		<script>
-			findAndHandleStylemarkBlocks('js', function(block) {
+			findAndHandleStylemackBlocks('js', function(block) {
 				eval(block);
 			});
 		</script>
@@ -112,7 +112,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi
 					return;
 				}
 
-				findAndHandleStylemarkBlocks('angularjs', function(block, index) {
+				findAndHandleStylemackBlocks('angularjs', function(block, index) {
 					var moduleElem = document.querySelector('[ng-app]');
 					var module;
 
@@ -122,10 +122,10 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-list-list-demo', []);
+						module = angular.module('stylemack-list-list-demo', []);
 					}
 
-					module.controller('stylemark-list-list-demo-' + index, function($scope) {
+					module.controller('stylemack-list-list-demo-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
@@ -143,8 +143,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi
 					return;
 				}
 
-				findAndHandleStylemarkBlocks('jsx', function(block, index) {
-					var rootNode = document.querySelectorAll('.stylemark-react-root')[index];
+				findAndHandleStylemackBlocks('jsx', function(block, index) {
+					var rootNode = document.querySelectorAll('.stylemack-react-root')[index];
 					var Component = eval(block);
 					ReactDOM.render(Component, rootNode);
 				});
@@ -162,14 +162,14 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi
 					return;
 				}
 
-				findAndHandleStylemarkBlocks(['handlebars', 'hbs'], function(block, index) {
+				findAndHandleStylemackBlocks(['handlebars', 'hbs'], function(block, index) {
 					var render = function() {
 						var app = window.noop
 						var container = app.__container__;
 						var renderer = container.lookup('renderer:-dom');
 						var template = Ember.HTMLBars.compile(block);
 
-						var jsBlocks = getStylemarkBlocks('js');
+						var jsBlocks = getStylemackBlocks('js');
 						var jsBlock = jsBlocks && jsBlocks[0] ? jsBlocks[0] : '{}';
 						var context;
 						eval('context = ' + jsBlock);
@@ -202,7 +202,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi
 						};
 
 						compile(container, template, context).then(function(elem) {
-							var node = document.querySelectorAll('.stylemark-ember-root')[index];
+							var node = document.querySelectorAll('.stylemack-ember-root')[index];
 							jQuery(node).append(elem);
 						});
 					};
@@ -227,6 +227,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis quasi
 			})(window.Ember);
 		</script>
 
-		<script src="stylemark/js/vendor/iframeResizer.contentWindow.min.js"></script>
+		<script src="stylemack-core/js/vendor/iframeResizer.contentWindow.min.js"></script>
 	</body>
 </html>

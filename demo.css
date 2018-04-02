@@ -326,31 +326,46 @@ Usage:
 
 /*
 ---
-name: Anchor
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Anchor Demo
 category: 5. Component > Call to Actions
 ---
 */
 /*
 ---
-name: Anchor > Primary
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Anchor > Primary Demo
 category: 5. Component > Call to Actions
 ---
 */
 /*
 ---
-name: Anchor > Secondary
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Anchor > Secondary Demo
 category: 5. Component > Call to Actions
 ---
 */
 /*
 ---
-name: Anchor > Dark
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Anchor > Dark Demo
 category: 5. Component > Call to Actions
 ---
 */
 /*
 ---
-name: Anchor > Light
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Anchor > Light Demo
 category: 5. Component > Call to Actions
 ---
 */
@@ -463,7 +478,8 @@ category: 5. Component > Call to Actions
 
 /*
 ---
-name: Button Large
+headHtml: Button Large
+name: Button Large Demo
 category: 5. Component > Call to Actions
 ---
 
@@ -505,7 +521,10 @@ Can be applied to:
 */
 /*
 ---
-name: Button Small
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Button Small Demo
 category: 5. Component > Call to Actions
 ---
 
@@ -547,7 +566,10 @@ Can be applied to:
 */
 /*
 ---
-name: Button > Primary
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Button > Primary Demo
 category: 5. Component > Call to Actions
 ---
 
@@ -573,7 +595,10 @@ Types of primary buttons
 */
 /*
 ---
-name: Button > Secondary
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Button > Secondary Demo
 category: 5. Component > Call to Actions
 ---
 
@@ -599,7 +624,10 @@ Types of secondary buttons
 */
 /*
 ---
-name: Button > Tertiary
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Button > Tertiary Demo
 category: 5. Component > Call to Actions
 ---
 
@@ -625,7 +653,10 @@ Types of tertiary buttons
 */
 /*
 ---
-name: Button > Dark
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Button > Dark Demo
 category: 5. Component > Call to Actions
 ---
 
@@ -651,7 +682,10 @@ Types of dark buttons
 */
 /*
 ---
-name: Button > Light
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Button > Light Demo
 category: 5. Component > Call to Actions
 ---
 
@@ -859,7 +893,10 @@ Types of light buttons
 
 /*
 ---
-name: Branded Label
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Branded Label Demo
 category: 5. Component > Form
 ---
 
@@ -882,7 +919,10 @@ Types of labels:
 */
 /*
 ---
-name: Input
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Input Demo
 category: 5. Component > Form
 ---
 
@@ -925,7 +965,10 @@ Types of inputs:
 */
 /*
 ---
-name: Textarea
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Textarea Demo
 category: 5. Component > Form
 ---
 
@@ -976,7 +1019,10 @@ Types of textarea:
 */
 /*
 ---
-name: Select
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Select Demo
 category: 5. Component > Form
 ---
 
@@ -1119,7 +1165,10 @@ Types of selects:
 
 /*
 ---
-name: Radio > Toggle Field
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Radio > Toggle Field Demo
 category: 5. Component > Form
 ---
 
@@ -1159,7 +1208,10 @@ Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is 
 
 /*
 ---
-name: Radio
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Radio Demo
 category: 5. Component > Form
 ---
 
@@ -1290,7 +1342,10 @@ Types of radio:
 
 /*
 ---
-name: Checkbox
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Checkbox Demo
 category: 5. Component > Form
 ---
 
@@ -1418,7 +1473,10 @@ Types of checkbox:
 
 /*
 ---
-name: Input > Placeholder Styles
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Input > Placeholder Styles Demo
 category: 5. Component > Form
 ---
 
@@ -3556,7 +3614,10 @@ Types of placeholders:
 
 /*
 ---
-name: Demo Colors
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Demo Colors Demo
 category: 6. Trumps > Color
 ---
 
@@ -3997,7 +4058,10 @@ Reverse colors
 
 /*
 ---
-name: Box-Shadow
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Box-Shadow Demo
 category: 6. Trumps > Extras
 ---
 
@@ -4033,7 +4097,10 @@ Adds `box-shadow`
 
 /*
 ---
-name: Border Color
+head: |
+  <link rel="stylesheet" href="ui-arch.css" />
+  <link rel="stylesheet" href="demo.css" />
+name: Border Color Demo
 category: 6. Trumps > Extras
 ---
 

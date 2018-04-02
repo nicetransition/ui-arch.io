@@ -19,12 +19,12 @@
 		</style>
 
 		<script>
-			function findAndHandleStylemarkBlocks(languages, handler) {
-				var blocks = getStylemarkBlocks(languages);
-				handleStylemarkBlocks(blocks, handler);
+			function findAndHandleStylemackBlocks(languages, handler) {
+				var blocks = getStylemackBlocks(languages);
+				handleStylemackBlocks(blocks, handler);
 			}
 
-			function getStylemarkBlocks(languages) {
+			function getStylemackBlocks(languages) {
 				languages = typeof languages === 'string' ? [languages] : languages;
 
 				var selectors = [];
@@ -46,7 +46,7 @@
 				return blocks;
 			}
 
-			function handleStylemarkBlocks(blocks, handler) {
+			function handleStylemackBlocks(blocks, handler) {
 				for (var i = 0, length = blocks.length; i < length; i++) {
 					handler(blocks[i], i);
 				}
@@ -72,7 +72,7 @@
 
 
 
-			<script type="text/x-stylemark" data-language="html"><div class="u-width-1-of-10">
+			<script type="text/x-stylemack" data-language="html"><div class="u-width-1-of-10">
     10%
 </div>
 
@@ -94,7 +94,7 @@
 		-->
 
 		<script>
-			findAndHandleStylemarkBlocks('js', function(block) {
+			findAndHandleStylemackBlocks('js', function(block) {
 				eval(block);
 			});
 		</script>
@@ -110,7 +110,7 @@
 					return;
 				}
 
-				findAndHandleStylemarkBlocks('angularjs', function(block, index) {
+				findAndHandleStylemackBlocks('angularjs', function(block, index) {
 					var moduleElem = document.querySelector('[ng-app]');
 					var module;
 
@@ -120,10 +120,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-width-percent-u-max-width-X-of-Y', []);
+						module = angular.module('stylemack-width-percent-u-max-width-X-of-Y', []);
 					}
 
-					module.controller('stylemark-width-percent-u-max-width-X-of-Y-' + index, function($scope) {
+					module.controller('stylemack-width-percent-u-max-width-X-of-Y-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
@@ -141,8 +141,8 @@
 					return;
 				}
 
-				findAndHandleStylemarkBlocks('jsx', function(block, index) {
-					var rootNode = document.querySelectorAll('.stylemark-react-root')[index];
+				findAndHandleStylemackBlocks('jsx', function(block, index) {
+					var rootNode = document.querySelectorAll('.stylemack-react-root')[index];
 					var Component = eval(block);
 					ReactDOM.render(Component, rootNode);
 				});
@@ -160,14 +160,14 @@
 					return;
 				}
 
-				findAndHandleStylemarkBlocks(['handlebars', 'hbs'], function(block, index) {
+				findAndHandleStylemackBlocks(['handlebars', 'hbs'], function(block, index) {
 					var render = function() {
 						var app = window.noop
 						var container = app.__container__;
 						var renderer = container.lookup('renderer:-dom');
 						var template = Ember.HTMLBars.compile(block);
 
-						var jsBlocks = getStylemarkBlocks('js');
+						var jsBlocks = getStylemackBlocks('js');
 						var jsBlock = jsBlocks && jsBlocks[0] ? jsBlocks[0] : '{}';
 						var context;
 						eval('context = ' + jsBlock);
@@ -200,7 +200,7 @@
 						};
 
 						compile(container, template, context).then(function(elem) {
-							var node = document.querySelectorAll('.stylemark-ember-root')[index];
+							var node = document.querySelectorAll('.stylemack-ember-root')[index];
 							jQuery(node).append(elem);
 						});
 					};
@@ -225,6 +225,6 @@
 			})(window.Ember);
 		</script>
 
-		<script src="stylemark/js/vendor/iframeResizer.contentWindow.min.js"></script>
+		<script src="stylemack-core/js/vendor/iframeResizer.contentWindow.min.js"></script>
 	</body>
 </html>
