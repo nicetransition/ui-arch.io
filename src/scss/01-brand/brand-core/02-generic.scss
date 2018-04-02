@@ -1,1 +1,13 @@
 // GENERIC: Ground-zero styles (normalize, resets, box-sizing)
+
+@mixin selection-styles {
+    background: rgba($color-secondary-dark, .5);
+}
+
+::-moz-selection {
+	@include selection-styles;
+}
+
+::selection {
+	@include selection-styles;
+}

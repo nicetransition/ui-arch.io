@@ -51,23 +51,7 @@ TODO:
 */
 
 
-// SETTINGS: Global variables, config switches
+// SETTINGS: Global variables, config switches\
 @import "global-core/00-settings";
-
-// TOOLS: Default mixin and functions
-@import "global-core/01-tools";
-
-// GENERIC: Ground-zero styles (normalize, resets, box-sizing)
-@import "global-core/02-generic";
-
-// ELEMENTS: Unclassed HTML elements (Type selectors)
-@import "global-core/03-elements";
-
-// OBJECTS: Cosmetic-free design patterns
-@import "global-core/04-objects";
-
-// COMPONENTS: Designed components
-@import "global-core/05-components";
-
-// TRUMPS: Helpers and overrides
-@import "global-core/06-trumps";
+@import "global-base";
+ 

@@ -40,16 +40,4 @@ category: 2. Generic
 // ```
 
 
-@mixin selection-styles {
-    background: rgba($color-secondary-dark, .5);
-}
-
-::-moz-selection {
-	@include selection-styles;
-}
-
-::selection {
-	@include selection-styles;
-}
-
 @import "02-generic_resets";

@@ -1,0 +1,25 @@
+// @import "00-global/_global-base"; // include global properties
+@import "01-brand/brand-2"; // update to align to branding
+
+/*! v0.0.0 || 2018-02-14 XX:XX */
+
+// SETTINGS: Global variables, config switches
+@import "02-application/application-demo/00-settings";
+
+// TOOLS: Default mixin and functions
+@import "02-application/application-demo/01-tools";
+
+// GENERIC: Ground-zero styles (normalize, resets, box-sizing)
+@import "02-application/application-demo/02-generic";
+
+// ELEMENTS: Unclassed HTML elements (Type selectors)
+@import "02-application/application-demo/03-elements";
+
+// OBJECTS: Cosmetic-free design patterns
+@import "02-application/application-demo/04-objects";
+
+// COMPONENTS: Designed components
+@import "02-application/application-demo/05-components";
+
+// TRUMPS: Helpers and overrides
+@import "02-application/application-demo/06-trumps";

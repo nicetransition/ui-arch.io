@@ -1,14 +1,4 @@
-// Basic configurations
-$includeResets: true;
-
-/// SETTINGS: Global variables, config switches
-$default-space: 1.250rem;
-$max-width: 90rem; // 1440
-$content-max-width: 53.75rem;// 860px
-$content-width: 49.875rem - ($default-space * 2);// 758px (iPad width - gutters)
-$min-width: 18.438rem;
-$border-radius: 0;
-
+@import "../_global-settings";
 
 @import "../../00-global/global-core/00-settings_bps";
 @import "../../00-global/global-core/00-settings_unit-library";

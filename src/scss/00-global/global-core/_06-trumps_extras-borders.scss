@@ -58,27 +58,6 @@ $u-outline-styles: ($default-space / 2) solid;
 }
 
 
-%u-border-color {
-	@each $color, $values in $palette {
-		&--#{$color} {
-			@include suffixcate {
-				border-color: unquote(nth($values, 1));
-			}
-		}
-	}
-}
-
-%u-border-lg {
-	@include suffixcate {
-		@media screen and (min-width: $bp-spaces) {
-			border-width: rem(10) !important;
-		}
-
-		@media screen and (max-width: $bp-spaces) {
-			border-width: rem(5) !important;
-		}
-	}
-}
 
 /*
 ---
