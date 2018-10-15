@@ -68,7 +68,7 @@ Hides content but makes it legible by screen readers (for accessibility), add `.
 		height: 0;
 		width: 0;
 		overflow: hidden;
-		visibility: none;
+		visibility: hidden;
 	}
 }
 
