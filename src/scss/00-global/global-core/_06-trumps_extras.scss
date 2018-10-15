@@ -4,7 +4,7 @@ name: Full Width
 category: 6. Trumps > Extras
 ---
 
-Adds `width: 100%` properties with `.u-f-r` class, apply to children with `.u-f-r-children` 
+Adds `width: 100%` properties with `.u-f-r` class, apply to children with `.u-f-r-children`
 
 Options:
 * `.u-full`: Full width with `width: 100%`
@@ -56,7 +56,7 @@ name: Round
 category: 6. Trumps > Extras
 ---
 
-Adds `border-radius: 50%` making element a circle with `.u-round` 
+Adds `border-radius: 50%` making element a circle with `.u-round`
 
 Options:
 
@@ -92,7 +92,6 @@ Options for `margin-right` and `margin-left` CSS properties being set to `auto` 
 	@include suffixcateExtend(('.u-auto-r'));
 	@include suffixcateExtend(('.u-auto-l'));
 }
-
 
 
 %u-char-glyph {
@@ -157,6 +156,24 @@ Remove select ability with `.u-disable-select`
 }
 
 
+
+/*
+---
+name: Circle
+category: 6. Trumps > Extras
+---
+
+Make element a circle add `.u-circle`
+
+*/
+
+
+.u-circle {
+	@include suffixcate {
+		border-radius: 100%;
+		overflow: hidden;
+	}
+}
 
 
 /*
@@ -229,13 +246,14 @@ Options:
 				order: -$i;
 			}
 		}
-		
+
 	}
 }
 
 
 
 @import "06-trumps_extras-positioning";
+@import "06-trumps_extras-heights";
 @import "06-trumps_extras-lists";
 @import "06-trumps_extras-wraps";
 @import "06-trumps_extras-alignment";

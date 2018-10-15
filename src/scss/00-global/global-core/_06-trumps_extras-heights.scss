@@ -1,0 +1,456 @@
+
+/*
+---
+name: Heights
+category: 6. Trumps > Extras
+---
+
+Sets `min-height` for elements
+
+*  Contains [Suffixcate](/#suffixcate) options available for all options and utility versions;
+
+Options:
+* `.u-min-height-40`: `min-height` of "40px"
+* `.u-min-height-300`: `min-height` of "300px"
+* `.u-min-height-600`: `min-height` of "600px"
+* `.u-min-height-900`: `min-height` of "900px"
+* `.u-min-height-quarter`: `min-height` of a quarter height of window
+* `.u-min-height-half`: `min-height` of half the vertical height of window
+* `.u-min-height-full`: `min-height` of the vertical height of window
+* `.u-min-height-full-half`: `min-height`  of 1.5x vertical height of window
+* `.u-min-height-full-full`: `min-height` of 2x vertical height of window
+
+
+```demo.html
+<ul class="u-unlist" id="heights">
+  <li>
+		<span class="u-dis-b u-width-4-max">
+			<span class="u-dis-b u-size-1 u-width-1-min">
+				<span class="u-dis-b || u-size-1 || c-intrinsic u-min-height-40 || u-dark-bg">
+					<span class="c-intrinsic__element || o-flex o-flex--align-items-center o-flex--justify-content-center || u-fs-5">
+						40
+					</span>
+				</span>
+			</span>
+			<b class="u-dis-b || u-emphasize || u-fs-6 || u-border u-border--dark-dark u-space-tiny">
+				40px tall
+			</b>
+		</span>
+		<ul class="o-tabular u-unlist">
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					All sizes:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-40</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell ||  u-fs-6">
+					Mobile Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-40@small</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					Desktop Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-40@large</pre>
+				</span>
+			</li>
+		</ul>
+	</li><li>
+		<span class="u-dis-b u-width-4-max">
+			<span class="u-dis-b u-size-1 u-width-1-min">
+				<span class="u-dis-b || u-size-1 || c-intrinsic u-min-height-300 || u-dark-bg">
+					<span class="c-intrinsic__element || o-flex o-flex--align-items-center o-flex--justify-content-center || u-fs-5">
+						300
+					</span>
+				</span>
+			</span>
+			<b class="u-dis-b || u-emphasize || u-fs-6 || u-border u-border--dark-dark u-space-tiny">
+				300px tall
+			</b>
+		</span>
+		<ul class="o-tabular u-unlist">
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					All sizes:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-300</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell ||  u-fs-6">
+					Mobile Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-300@small</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					Desktop Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-300@large</pre>
+				</span>
+			</li>
+		</ul>
+	</li><li>
+		<span class="u-dis-b u-width-4-max">
+			<span class="u-dis-b u-size-1 u-width-1-min">
+				<span class="u-dis-b || u-size-1 || c-intrinsic u-min-height-600 || u-dark-bg">
+					<span class="c-intrinsic__element || o-flex o-flex--align-items-center o-flex--justify-content-center || u-fs-5">
+						600
+					</span>
+				</span>
+			</span>
+			<b class="u-dis-b || u-emphasize || u-fs-6 || u-border u-border--dark-dark u-space-tiny">
+				600px tall
+			</b>
+		</span>
+		<ul class="o-tabular u-unlist">
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					All sizes:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-600</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell ||  u-fs-6">
+					Mobile Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-600@small</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					Desktop Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-600@large</pre>
+				</span>
+			</li>
+		</ul>
+	</li><li>
+		<span class="u-dis-b u-width-4-max">
+			<span class="u-dis-b u-size-1 u-width-1-min">
+				<span class="u-dis-b || u-size-1 || c-intrinsic u-min-height-900 || u-dark-bg">
+					<span class="c-intrinsic__element || o-flex o-flex--align-items-center o-flex--justify-content-center || u-fs-5">
+						900
+					</span>
+				</span>
+			</span>
+			<b class="u-dis-b || u-emphasize || u-fs-6 || u-border u-border--dark-dark u-space-tiny">
+				900px tall
+			</b>
+		</span>
+		<ul class="o-tabular u-unlist">
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					All sizes:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-900</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell ||  u-fs-6">
+					Mobile Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-900@small</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					Desktop Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-900@large</pre>
+				</span>
+			</li>
+		</ul>
+	</li><li>
+		<span class="u-dis-b u-width-4-max">
+			<span class="u-dis-b u-size-1 u-width-1-min">
+				<span class="u-dis-b || u-size-1 || c-intrinsic u-min-height-25vh || u-dark-bg">
+					<span class="c-intrinsic__element || o-flex o-flex--align-items-center o-flex--justify-content-center || u-fs-5">
+						quarter
+					</span>
+				</span>
+			</span>
+			<b class="u-dis-b || u-emphasize || u-fs-6 || u-border u-border--dark-dark u-space-tiny">
+				Quarter Vertical Height tall
+			</b>
+		</span>
+		<ul class="o-tabular u-unlist">
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					All sizes:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-25vh</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell ||  u-fs-6">
+					Mobile Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-25vh@small</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					Desktop Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-25vh@large</pre>
+				</span>
+			</li>
+		</ul>
+	</li><li>
+		<span class="u-dis-b u-width-4-max">
+			<span class="u-dis-b u-size-1 u-width-1-min">
+				<span class="u-dis-b || u-size-1 || c-intrinsic u-min-height-half || u-dark-bg">
+					<span class="c-intrinsic__element || o-flex o-flex--align-items-center o-flex--justify-content-center || u-fs-5">
+						50vh
+					</span>
+				</span>
+			</span>
+			<b class="u-dis-b || u-emphasize || u-fs-6 || u-border u-border--dark-dark u-space-tiny">
+				Half Vertical Height tall
+			</b>
+		</span>
+		<ul class="o-tabular u-unlist">
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					All sizes:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-half</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell ||  u-fs-6">
+					Mobile Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-half@small</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					Desktop Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-half@large</pre>
+				</span>
+			</li>
+		</ul>
+	</li><li>
+		<span class="u-dis-b u-width-4-max">
+			<span class="u-dis-b u-size-1 u-width-1-min">
+				<span class="u-dis-b || u-size-1 || c-intrinsic u-min-height-full || u-dark-bg">
+					<span class="c-intrinsic__element || o-flex o-flex--align-items-center o-flex--justify-content-center || u-fs-5">
+						100vh
+					</span>
+				</span>
+			</span>
+			<b class="u-dis-b || u-emphasize || u-fs-6 || u-border u-border--dark-dark u-space-tiny">
+				Vertical Height 100% tall
+			</b>
+		</span>
+		<ul class="o-tabular u-unlist">
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					All sizes:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-full</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell ||  u-fs-6">
+					Mobile Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-full@small</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					Desktop Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-full@large</pre>
+				</span>
+			</li>
+		</ul>
+	</li><li>
+		<span class="u-dis-b u-width-4-max">
+			<span class="u-dis-b u-size-1 u-width-1-min">
+				<span class="u-dis-b || u-size-1 || c-intrinsic u-min-height-full-half || u-dark-bg">
+					<span class="c-intrinsic__element || o-flex o-flex--align-items-center o-flex--justify-content-center || u-fs-5">
+						150v
+					</span>
+				</span>
+			</span>
+			<b class="u-dis-b || u-emphasize || u-fs-6 || u-border u-border--dark-dark u-space-tiny">
+				Vertical Height x1.5 tall
+			</b>
+		</span>
+		<ul class="o-tabular u-unlist">
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					All sizes:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-full-half</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell ||  u-fs-6">
+					Mobile Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-full-half@small</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					Desktop Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-full-half@large</pre>
+				</span>
+			</li>
+		</ul>
+	</li><li>
+		<span class="u-dis-b u-width-4-max">
+			<span class="u-dis-b u-size-1 u-width-1-min">
+				<span class="u-dis-b || u-size-1 || c-intrinsic u-min-height-full-full || u-dark-bg">
+					<span class="c-intrinsic__element || o-flex o-flex--align-items-center o-flex--justify-content-center || u-fs-5">
+						200vh
+					</span>
+				</span>
+			</span>
+			<b class="u-dis-b || u-emphasize || u-fs-6 || u-border u-border--dark-dark u-space-tiny">
+				Vertical Height x2 tall
+			</b>
+		</span>
+		<ul class="o-tabular u-unlist">
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					All sizes:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-full-full</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell ||  u-fs-6">
+					Mobile Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-full-full@small</pre>
+				</span>
+			</li>
+
+			<li class="o-tabular__row || u-space-children-sm">
+				<span class="o-tabular__cell || u-fs-6">
+					Desktop Only:
+				</span>
+				<span class="o-tabular__cell ">
+					<pre class="u-dis-b u-fs-6">.u-min-height-full-full@large</pre>
+				</span>
+			</li>
+		</ul>
+	</li>
+</ul>
+```
+
+*/
+
+
+.u-min-height {
+	&-40 {
+		@include suffixcate {
+			min-height: rem(40);
+		}
+	}
+
+	&-300 {
+		@include suffixcate {
+			min-height: rem(300);
+		}
+	}
+
+	&-600 {
+		@include suffixcate {
+			min-height: rem(600);
+		}
+	}
+
+	&-900 {
+		@include suffixcate {
+			min-height: rem(900);
+		}
+	}
+
+	&-quarter {
+		@include suffixcate {
+			min-height: 25vh;
+		}
+	}
+
+	&-half {
+		@include suffixcate {
+			min-height: 50vh;
+		}
+	}
+
+	&-full {
+		@include suffixcate {
+			min-height: 100vh;
+		}
+	}
+
+	&-full-half {
+		@include suffixcate {
+			min-height: 150vh;
+		}
+	}
+
+	&-full-full {
+		@include suffixcate {
+			min-height: 200vh;
+		}
+	}
+}
