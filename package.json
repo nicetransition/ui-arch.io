@@ -1,6 +1,6 @@
 {
 	"name": "uiarchio",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "",
 	"license": "MIT",
 	"homepage": "http://discreetaf.com",
@@ -22,7 +22,7 @@
 	"licenses": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/kevinmack18/uiarchio.git"
+		"url": "https://github.com/nicetransition/uiarchio.git"
 	},
 	"engines": {
 		"node": ">=0.12.0",
@@ -42,6 +42,6 @@
 		"gulp-watch": "5.0.0"
 	},
 	"dependencies": {
-		"stylemack": "../stylemack"
+		"stylemack": "git+https://git@github.com/nicetransition/stylemack.git"
 	}
 }
