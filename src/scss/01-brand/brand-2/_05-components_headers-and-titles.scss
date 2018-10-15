@@ -1,3 +1,241 @@
+/*
+---
+name: Font Sizes
+category: 6. Trumps > Typography
+---
+
+Alignment of header sizes 1-6
+
+Additional options:
+*  `.u-fs-1` - Largest font size
+*  `.u-fs-2` - 2nd larges font size
+*  `.u-fs-3` - Medium font size
+*  `.u-fs-4` - Root font size
+*  `.u-fs-5` - Step up from smallest font size
+*  `.u-fs-6` - Smallest font size
+
+Even more options:
+
+* Add `-alt` suffix: Change font size from `rem` to `em` version
+* Add `-before` suffix: Change font size for `:before` pseudo class
+* Add `-after` suffix: Change font size for `:after` pseudo class
+* Add `-scalable` suffix: To have font scale based on screen width
+
+
+```demo.html
+<p class="u-fs-5">
+	Lorem ipsum.
+</p>
+```
+*/
+
+.u-fs-1 {
+	@include suffixcate {
+		font-size: $h1;
+	}
+
+	&-alt {
+		@include suffixcate {
+			font-size: $em1;
+		}
+	}
+
+	&-before {
+		@include suffixcate {
+			&:before {
+				font-size: $h1;
+			}
+		}
+	}
+
+	&-after {
+		@include suffixcate {
+			&:after {
+				font-size: $h1;
+			}
+		}
+	}
+
+	&-scalable {
+		@include suffixcate {
+			@include scaleFontDown($bp-1, $h1, $h1-mobile);
+		}
+	}
+}
+
+.u-fs-2 {
+	@include suffixcate {
+		font-size: $h2;
+	}
+
+	&-alt {
+		@include suffixcate {
+			font-size: $em2;
+		}
+	}
+
+	&-before {
+		@include suffixcate {
+			&:before {
+				font-size: $h2;
+			}
+		}
+	}
+
+	&-after {
+		@include suffixcate {
+			&:after {
+				font-size: $h2;
+			}
+		}
+	}
+
+	&-scalable {
+		@include suffixcate {
+			@include scaleFontDown($bp-1, $h2, $h2-mobile);
+		}
+	}
+}
+
+.u-fs-3 {
+	@include suffixcate {
+		font-size: $h3;
+	}
+
+	&-alt {
+		@include suffixcate {
+			font-size: $em3;
+		}
+	}
+
+	&-before {
+		@include suffixcate {
+			&:before {
+				font-size: $h3;
+			}
+		}
+	}
+
+	&-after {
+		@include suffixcate {
+			&:after {
+				font-size: $h3;
+			}
+		}
+	}
+
+	&-scalable {
+		@include suffixcate {
+			@include scaleFontDown($bp-1, $h3, $h3-mobile);
+		}
+	}
+}
+
+
+.u-fs-4 {
+	@include suffixcate {
+		font-size: $h4;
+	}
+
+	&-alt {
+		@include suffixcate {
+			font-size: $em4;
+		}
+	}
+
+	&-before {
+		@include suffixcate {
+			&:before {
+				font-size: $h4;
+			}
+		}
+	}
+
+	&-after {
+		@include suffixcate {
+			&:after {
+				font-size: $h4;
+			}
+		}
+	}
+
+	&-scalable {
+		@include suffixcate {
+			@include scaleFontDown($bp-1, $h4, $h4-mobile);
+		}
+	}
+}
+
+.u-fs-5 {
+	@include suffixcate {
+		font-size: $h5;
+	}
+
+	&-alt {
+		@include suffixcate {
+			font-size: $em5;
+		}
+	}
+
+	&-before {
+		@include suffixcate {
+			&:before {
+				font-size: $h5;
+			}
+		}
+	}
+
+	&-after {
+		@include suffixcate {
+			&:after {
+				font-size: $h5;
+			}
+		}
+	}
+
+	&-scalable {
+		@include suffixcate {
+			@include scaleFontDown($bp-1, $h5, $h5-mobile);
+		}
+	}
+}
+
+.u-fs-6 {
+	@include suffixcate {
+		font-size: $h6;
+	}
+
+	&-alt {
+		@include suffixcate {
+			font-size: $em6;
+		}
+	}
+
+	&-before {
+		@include suffixcate {
+			&:before {
+				font-size: $h6;
+			}
+		}
+	}
+
+	&-after {
+		@include suffixcate {
+			&:after {
+				font-size: $h6;
+			}
+		}
+	}
+
+	&-scalable {
+		@include suffixcate {
+			@include scaleFontDown($bp-1, $h6, $h6-mobile);
+		}
+	}
+}
+
+
+
 %header-font {
 	@include suffixcate {
 		font-family: $secondary-font;
@@ -41,120 +279,321 @@
 	}
 }
 
+%title-setup {
+	@include suffixcate {
+		@include title-setup;
+	}
+}
+
+/*
+---
+name: Page Header (brand 2)
+category: 5. Component > Typography
+---
+
+* Add `-scalable` suffix: To have font scale based on screen width
+
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+
+```base.html
+	<h1 class="c-page-header">Title</h1>
+```
+*/
+
+.c-page-header, .c-page-header-scalable {
+	@include suffixcateExtend(('%title-setup'));
+
+	@include suffixcate {
+		@include page-header-core;
+	}
+}
+
+
 .c-page-header {
 	@include suffixcate {
-		font-family: $secondary-font;
-	}
-
-	@include suffixcate {
 		font-size: $h1;
-		line-height: 1;
 	}
 
-	@include suffixcate {
-		font-style: italic;
+	&-scalable {
+		@include suffixcateExtend(('.u-fs-1-scalable'));
 	}
+}
+
+/*
+---
+name: Page Subheader (brand 2)
+category: 5. Component > Typography
+---
+
+* Add `-scalable` suffix: To have font scale based on screen width
+
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+
+```base.html
+	<h1 class="c-page-subheader">Title</h1>
+```
+*/
+
+
+.c-page-subheader, .c-page-subheader-scalable {
+	@include suffixcateExtend(('%title-setup'));
 
 	@include suffixcate {
-		font-weight: normal; // book
+		@include page-subheader-core;
 	}
 }
 
 .c-page-subheader {
 	@include suffixcate {
-		font-family: $primary-font;
+		font-size: $h3;
 	}
 
-	@include suffixcate {
-		font-size: $h2;
+	&-scalable {
+		@include suffixcateExtend(('.u-fs-3-scalable'));
 	}
+}
+
+/*
+---
+name: Section Header (brand 2)
+category: 5. Component > Typography
+---
+
+* Add `-scalable` suffix: To have font scale based on screen width
+
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+
+```base.html
+	<h1 class="c-section-header">Title</h1>
+```
+*/
+
+.c-section-header, .c-section-header-scalable {
+	@include suffixcateExtend(('%title-setup'));
 
 	@include suffixcate {
-		font-weight: 300; // light
+		@include section-header-core;
 	}
 }
 
 .c-section-header {
 	@include suffixcate {
-		font-family: $secondary-font;
+		font-size: $h2;
 	}
 
-	@include suffixcate {
-		font-size: $h3;
+	&-scalable {
+		@include suffixcateExtend(('.u-fs-2-scalable'));
 	}
+}
+
+
+/*
+---
+name: Section Subheader (brand 2)
+category: 5. Component > Typography
+---
+
+* Add `-scalable` suffix: To have font scale based on screen width
+
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+
+```base.html
+	<h1 class="c-section-subheader">Title</h1>
+```
+*/
+
+.c-section-subheader, .c-section-subheader-scalable {
+	@include suffixcateExtend(('%title-setup'));
 
 	@include suffixcate {
-		font-style: italic;
-	}
-
-	@include suffixcate {
-		font-weight: normal; // book
-	}
-
-	@include suffixcate {
-		text-transform: uppercase;
+		@include section-subheader-core;
 	}
 }
 
 .c-section-subheader {
 	@include suffixcate {
-		font-family: $primary-font;
+		font-size: $h3;
 	}
 
-	@include suffixcate {
-		font-size: $h4;
+	&-scalable {
+		@include suffixcateExtend(('.u-fs-3-scalable'));
 	}
+}
+
+/*
+---
+name: Article Header (brand 2)
+category: 5. Component > Typography
+---
+
+* Add `-scalable` suffix: To have font scale based on screen width
+
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+
+```base.html
+	<h1 class="c-article-header">Title</h1>
+```
+*/
+
+
+.c-article-header, .c-article-header-scalable {
+	@include suffixcateExtend(('%title-setup'));
 
 	@include suffixcate {
-		font-weight: normal; // regular
-	}
-
-	@include suffixcate {
-		text-transform: uppercase;
+		@include article-header-core;
 	}
 }
 
 .c-article-header {
 	@include suffixcate {
-		font-family: $primary-font;
+		font-size: $h3;
 	}
 
-	@include suffixcate {
-		font-size: $h4;
+	&-scalable {
+		@include suffixcateExtend(('.u-fs-3-scalable'));
 	}
+}
+
+/*
+---
+name: Article Header (brand 2)
+category: 5. Component > Typography
+---
+
+* Add `-scalable` suffix: To have font scale based on screen width
+
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+
+```base.html
+	<h1 class="c-article-subheader">Title</h1>
+```
+*/
+
+.c-article-subheader, .c-article-subheader-scalable {
+	@include suffixcateExtend(('%title-setup'));
 
 	@include suffixcate {
-		font-weight: normal; // regular
+		@include article-subheader-core;
 	}
 }
 
 .c-article-subheader {
 	@include suffixcate {
-		font-family: $primary-font;
-	}
-
-	@include suffixcate {
 		font-size: $h5;
 	}
 
+	&-scalable {
+		@include suffixcateExtend(('.u-fs-5-scalable'));
+	}
+}
+
+
+
+/*
+---
+name: Paragraph Header (brand 2)
+category: 5. Component > Typography
+---
+
+* Add `-scalable` suffix: To have font scale based on screen width
+
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+
+```base.html
+	<h1 class="c-paragraph-header">Title</h1>
+```
+*/
+
+.c-paragraph-header, .c-paragraph-header-scalable {
+	@include suffixcateExtend(('%title-setup'));
+
 	@include suffixcate {
-		font-weight: normal; // light
+		@include paragraph-header-core;
 	}
 }
 
 .c-paragraph-header {
 	@include suffixcate {
-		font-family: $primary-font;
+		font-size: $h4;
 	}
 
+	&-scalable {
+		@include suffixcateExtend(('.u-fs-4-scalable'));
+	}
+}
+
+.c-paragraph-subheader, .c-paragraph-subheader-scalable {
+	@include suffixcateExtend(('%title-setup'));
+
+	@include suffixcate {
+		@include paragraph-subheader-core;
+	}
+}
+
+/*
+---
+name: Paragraph Subheader (brand 2)
+category: 5. Component > Typography
+---
+
+* Add `-scalable` suffix: To have font scale based on screen width
+
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+
+```base.html
+	<h1 class="c-paragraph-subheader">Title</h1>
+```
+*/
+
+.c-paragraph-subheader {
 	@include suffixcate {
 		font-size: $h4;
 	}
 
-	@include suffixcate {
-		font-weight: 300; // light
+	&-scalable {
+		@include suffixcateExtend(('.u-fs-4-scalable'));
 	}
 }
+
+
+/*
+---
+name: Title block (brand 2)
+category: 5. Component > Typography
+---
+
+
+```base.html
+	<hgroup class="c-title-block">
+		<h1 class="c-title-block__header">Title</h1>
+		<h2 class=".c-title-block__subheader">Subitle</h2>
+	</hgroup>
+```
+*/
 
 
 .c-title-block {
@@ -168,7 +607,6 @@
 
 	}
 }
-
 
 
 /*

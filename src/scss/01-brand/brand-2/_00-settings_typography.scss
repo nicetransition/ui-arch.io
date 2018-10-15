@@ -11,30 +11,37 @@ $secondary-normal: normal;
 $secondary-light: light;
 
 
-$h0: 3rem; // 42
-$em0: 3em;
+$h0: 3.111rem; // 56px > 48px
+$em0: 3.111em;
 $rem0: $h0;
+$h0-mobile: 2.667rem;
 
-$h1: 1.875rem; // 30px
-$em1: 1.875em;
+$h1: 2.667rem; // 48px > 32px
+$em1: 2.667em;
 $rem1: $h1;
+$h1-mobile: 1.778rem;
 
-$h2: 1.5rem; // 24px
-$em2: 1.5em;
+$h2: 2rem; // 36px > 26px
+$em2: 2em;
 $rem2: $h2;
+$h2-mobile: 1.444rem;
 
-$h3: 1.125rem; // 18px
-$em3: 1.125em;
+$h3: 1.556rem; // 28px > 22px
+$em3: 1.556em;
 $rem3: $h3;
+$h3-mobile: 1.222rem;
 
-$h4: 1rem; // 16px
+$h4: 1rem; // 18px > 17px
 $em4: 1em;
 $rem4: $h4;
+$h4-mobile: 0.944rem;
 
-$h5: 0.875rem; // 14px
-$em5: 0.875em;
+$h5: 0.889rem; // 16px > 14px
+$em5: 0.889em;
 $rem5: $h5;
+$h5-mobile: 0.778rem;
 
-$h6: 0.719rem; // 12px
-$em6: 0.719em;
+$h6: 0.778rem; // 14px > 12px
+$em6:0.778em;
 $rem6: $h6;
+$h6-mobile: 0.667rem;

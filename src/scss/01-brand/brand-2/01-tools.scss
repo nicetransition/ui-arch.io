@@ -2,5 +2,109 @@
 @import "../../00-global/global-core/01-tools";
 
 
+@mixin page-header-core {
+	font-family: $secondary-font;
+	font-weight: $secondary-bold;
+	line-height: 1.05;
+	text-transform: uppercase;
+	letter-spacing: -0.025em;
+}
+
+@mixin page-header {
+	@include page-header-core;
+	font-size: $h1;
+}
+
+@mixin page-subheader-core {
+	font-family: $primary-font;
+	font-weight: $primary-bold;
+	line-height: 1.25;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+}
+
+@mixin page-subheader {
+	@include page-subheader-core;
+	font-size: $h3;
+}
+
+@mixin section-header-core {
+	font-family: $secondary-font;
+	font-weight: $secondary-bold;
+	line-height: 1.25;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+}
+
+@mixin section-header {
+	@include section-header-core;
+	font-size: $h2;
+}
+
+@mixin section-subheader-core {
+	font-family: $primary-font;
+	font-weight: $primary-bold;
+	line-height: 1.25;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+}
+
+@mixin section-subheader {
+	@include section-subheader-core;
+	font-size: $h4;
+}
+
+@mixin article-header-core {
+	font-family: $secondary-font;
+	font-weight: $secondary-bold;
+	line-height: 1.25;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+}
+
+@mixin article-header {
+	@include article-header-core;
+	font-size: $h3;
+}
+
+
+@mixin article-subheader-core {
+	font-family: $primary-font;
+	font-weight: $primary-normal;
+	line-height: 1.05;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+}
+
+@mixin article-subheader {
+	@include article-subheader-core;
+	font-size: $h5;
+}
+
+
+@mixin paragraph-header-core {
+	font-family: $primary-font;
+	font-weight: $primary-light;
+	line-height: 1.5;
+	letter-spacing: -0.012em;
+}
+
+@mixin paragraph-header {
+	@include paragraph-header-core;
+	font-size: $h3;
+}
+
+
+@mixin paragraph-subheader-core {
+	font-family: $primary-font;
+	font-weight: $primary-light;
+	line-height: 1.333;
+	letter-spacing: 0;
+}
+
+@mixin paragraph-subheader {
+	@include paragraph-subheader-core;
+	font-size: $h6;
+}
 
 // add brand-specific tools here
