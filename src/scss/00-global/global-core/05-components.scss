@@ -47,7 +47,7 @@ A nice container for content
 	}
 
 	&__main {
-		// font-family: $seconary-font;
+		// font-family: $secondary-font;
 
 		p:not([class*="reset"]) {
 			@include title-setup;

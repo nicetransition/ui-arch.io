@@ -1,6 +1,6 @@
 %header-font {
 	@include suffixcate {
-		font-family: $seconary-font;
+		font-family: $secondary-font;
 	}
 }
 
@@ -43,7 +43,7 @@
 
 .c-page-header {
 	@include suffixcate {
-		font-family: $seconary-font;
+		font-family: $secondary-font;
 	}
 
 	@include suffixcate {
@@ -76,7 +76,7 @@
 
 .c-section-header {
 	@include suffixcate {
-		font-family: $seconary-font;
+		font-family: $secondary-font;
 	}
 
 	@include suffixcate {
@@ -167,4 +167,52 @@
 	&__subheader {
 
 	}
+}
+
+
+/*
+---
+name: Font Weights (brand core)
+category: 6. Trumps > Typography
+---
+
+Control/override font weights, uses SASS variables from `01-brand/brand-core/_00-settings_typography.scss`
+
+Additional options:
+*  Contains [Suffixcate](/#suffixcate) options.
+
+
+* Primary font bold: Apply `.u-bold`, `.u-b-bold`, `.u-bold-primary`, or `.u-bold-primary-bold` to make primary font bold weight
+* Primary font normal: Apply `.u-bold-primary-normal`, `.u-b-normal` to make primary font normal weight
+* Primary font light: Apply `.u-bold-primary-light`, `.u-b-light` to make primary font normal weight
+
+* Secondary font bold: Apply `.u-bold-secondary`, `.u-bold-secondary-bold` to make secondary font bold weight
+* Secondary font normal: Apply `.u-bold-secondary-normal` to make secondary font normal weight
+* Secondary font light: Apply `.u-bold-secondary-light` to make secondary font normal weight
+
+*/
+
+.u-bold, .u-b-bold, .u-bold-primary, .u-bold-primary-bold {
+	font-weight: $primary-bold;
+}
+
+.u-bold-primary-normal, .u-b-normal {
+	font-weight: $primary-normal;
+}
+
+.u-bold-primary-light, .u-b-light {
+	font-weight: $primary-light;
+}
+
+
+.u-bold-secondary, .u-bold-secondary-bold {
+	font-weight: $secondary-bold;
+}
+
+.u-bold-secondary-normal {
+	font-weight: $secondary-normal;
+}
+
+.u-bold-secondary-light {
+	font-weight: $secondary-light;
 }
