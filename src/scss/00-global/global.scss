@@ -1,4 +1,4 @@
-/*! v0.0.0 || 2018-02-14 XX:XX */
+/*! v0.0.1 || 2018-10-14 15:16 */
 
 /*
 ---
@@ -28,7 +28,7 @@ category: 0. Base
 ---
 * [OOCSS](https://code.tutsplus.com/tutorials/object-oriented-css-what-how-and-why--net-6986) - Object-oriented CSS
 * [Namespace](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/) - Prefix CSS classes for organization (o-, c-, u-, t-, _-, js-, qa-)
-* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM. 
+* [BEM](http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403) - Organize code into blocks, elements and rules for modifications. Helps relate CSS to DOM.
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) - Core methodology to organize the CSS code. See "[Sass structure](/#display-4)"
 * [BEMIT](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) - BEM + ITCSS
 * [Object-Oriented Typography](https://codepen.io/nicetransition/full/qbNbOE/) - Separate text-based elements by their structure, skin and context of text
@@ -54,4 +54,4 @@ TODO:
 // SETTINGS: Global variables, config switches\
 @import "global-core/00-settings";
 @import "global-base";
- 
+
