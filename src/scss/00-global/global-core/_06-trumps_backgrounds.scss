@@ -54,6 +54,15 @@ Add `object-fit` with:
 
 */
 
-.u-o-f, .u-of-cover, u-object-fit-cover {
+.u-o-f, .u-of-cover, .u-object-fit-cover {
 	object-fit: cover;
+}
+
+
+.u-of-fill, .u-object-fit-fill {
+	object-fit: fill;
+}
+
+.u-of-contain, .u-object-fit-contain {
+	object-fit: contain;
 }

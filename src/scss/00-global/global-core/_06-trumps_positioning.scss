@@ -121,6 +121,14 @@ Variants:
 
 @for $i from 0 through 12 {
 	.u-index-#{$i} {
-		z-index: $i;
+		@include suffixcate {
+			z-index: $i;
+		}
+	}
+
+	.u-index-#{$i}-neg {
+		@include suffixcate {
+			z-index: -$i;
+		}
 	}
 }

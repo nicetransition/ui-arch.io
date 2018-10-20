@@ -4,6 +4,7 @@
 
 .c-label {
 	@extend %label-shared;
+	display: block;
 }
 
 
@@ -15,9 +16,59 @@
 
 .c-input {
 	line-height: 1;
+
+	&--output {
+		@include disable-select;
+		position: relative;
+	}
+
+
+	&__alert {
+		position: absolute;
+		top: rem(-5);
+		right: 0;
+		z-index: 1;
+		width: rem(30);
+		min-height: rem(35) !important;
+		height: 100%;
+
+		& ~ .c-input--output {
+			padding-right: rem(20);
+			z-index: 0;
+		}
+	}
+}
+
+.c-label--output {
+	cursor: default;
+	@include disable-select;
+}
+
+.c-input-output {
+	position: relative;
+
+	&__alert {
+		@extend .c-input__alert;
+
+		&[aria-expanded="true"][aria-expanded].c-input-output__alert {
+			&:before {
+				content: "x";
+			}
+		}
+	}
+
+	&__details {
+		&:not([aria-hidden="false"]) {
+			display: none;
+			speak: none;
+		}
+	}
 }
 
 .c-select {
+
+
+
 	&:not(.u-char-before), &:not(.u-char-after) {
 		position: relative;
 	}
@@ -30,7 +81,7 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		right: 0;
+		right: rem(5);
 		z-index: 0;
 		text-align: center;
 		width: rem(40);
@@ -47,6 +98,16 @@
 		position: relative;
 		z-index: 1;
 		cursor: pointer;
+
+		&.u-a-c {
+			option {
+				text-align: center;
+			}
+		}
+
+		&.u-a-c, &.u-a-c option {
+			 text-align-last:center;
+		}
 
 		&::-ms-expand {
 			display: none;
@@ -219,9 +280,6 @@ Can be used with any structural element
 
 .c-form-item {
 	&__label {
-		position: relative;
-		margin-bottom: $default-space / -2;
-		z-index: 1;
 	}
 
 	&__field {

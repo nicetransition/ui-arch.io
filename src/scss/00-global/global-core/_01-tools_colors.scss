@@ -27,12 +27,17 @@
 
     .u-#{$color}-bg {
     	@include suffixcate {
+	        background-color: unquote($value);
+		}
+    }
+
+    .u-#{$color}-bg {
+    	@include suffixcate {
 			@if ($contrast-color != false) {
 				color: unquote($contrast-color);
 			}
 		}
     }
-
 
     %u-#{$color}-reverse {
 		@include suffixcate {

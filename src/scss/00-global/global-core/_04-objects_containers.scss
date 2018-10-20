@@ -15,7 +15,7 @@ Container for outer-most DOM element (root node), should be used on outside
 */
 
 .o-container-global {
-	overflow: hidden;
+// 	overflow: hidden;
 }
 
 
@@ -91,7 +91,7 @@ Options:
 <div class="o-container">
 	<div class="o-container__wrap">
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsum optio rem, quo veniam placeat, ducimus, illum voluptas quae quas harum. Labore magni odit possimus maiores suscipit voluptatum officia numquam.
-	
+
 		<div class="o-container__inner">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsum optio rem, quo veniam placeat, ducimus, illum voluptas quae quas harum. Labore magni odit possimus maiores suscipit voluptatum officia numquam.
 		</div>
@@ -119,17 +119,24 @@ Options:
 			}
 
 			@media screen and (max-width: $bp-1) {
-				margin-right: $default-space;
-				margin-left: $default-space;
+				@media screen and (min-width: $bp-spaces) {
+					margin-right: $default-space * 2;
+					margin-left: $default-space * 2;
+				}
+
+				@media screen and (max-width: $bp-spaces) {
+					margin-right: $default-space;
+					margin-left: $default-space;
+				}
 			}
 		}
-	}
 
-	&__inner {
-		max-width: $content-width;
-		
-		margin-right: auto;
-		margin-left: auto;
+		&__inner {
+			max-width: $content-width;
+
+			margin-right: auto;
+			margin-left: auto;
+		}
 	}
 }
 

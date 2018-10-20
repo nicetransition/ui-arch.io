@@ -84,9 +84,16 @@ Additional options:
 
 */
 
-.u-emphasize, .u-upper {
+.u-emphasize, .u-upper, .u-uppercase {
 	@include suffixcate {
 		text-transform: uppercase;
+	}
+}
+
+
+.u-capitalize {
+	@include suffixcate {
+		text-transform: capitalize;
 	}
 }
 
@@ -113,6 +120,3 @@ Additional options:
 .u-italic {
 	font-style: italic;
 }
-
-
-
