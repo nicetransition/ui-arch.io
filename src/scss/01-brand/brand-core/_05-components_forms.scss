@@ -345,7 +345,7 @@ Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is 
 <span class=" ** t-form-1 || u-dis-ib || c-field-toggle c-radio **  " data-component="global.radio">
 	<input class="c-field-toggle__input c-radio__input"  id="default" name="default" type="radio"  />
 	<label for="default" class="u-dis-ib c-field-toggle__text c-radio__text">
-		
+
 	</label>
 </span>
 ```
@@ -354,7 +354,7 @@ Intended to be used with `input[type="radio"]` and `input[type="checkbox"]`. Is 
 <span class=" ** t-form-1 || u-dis-ib || c-field-toggle c-radio **  " data-component="global.radio">
 	<input checked class="c-field-toggle__input c-radio__input"  id="default" name="default" type="radio"  />
 	<label for="default" class="u-dis-ib c-field-toggle__text c-radio__text">
-		
+
 	</label>
 </span>
 ```
@@ -667,6 +667,10 @@ Types of checkbox:
 		&:after {
 			content: "X";
 			width: rem(20);
+			height: rem(20);
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 }
