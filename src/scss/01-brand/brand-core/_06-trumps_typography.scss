@@ -1,35 +1,49 @@
-.u-font-primary {
+.u-primary-font, .u-font-primary {
 	font-family: $primary-font;
 }
 
-.u-seconary-font {
+.u-secondary-font, .u-font-secondary {
 	font-family: $secondary-font;
 }
 
-.u-b {
-	// &-light {
-	// 	@include suffixcate {
-	//
-	// 	}
-	// }
+.u-b, .u-primary-font, .u-font-primary {
+	&-light {
+		@include suffixcate {
+			font-weight: $primary-light;
+		}
+	}
 
-	// &-normal {
-	// 	@include suffixcate {
-	//
-	// 	}
-	// }
+	&-normal {
+		@include suffixcate {
+			font-weight: $primary-normal;
+		}
+	}
 
-	// &-bold {
-	// 	@include suffixcate {
-	//
-	// 	}
-	// }
+	&-bold {
+		@include suffixcate {
+			font-weight: $primary-bold;
+		}
+	}
+}
 
-	// &-ultra {
-	// 	@include suffixcate {
-	// 		font-weight: $weight-ultra;
-	// 	}
-	// }
+.u-secondary-font, .u-secondary-primary {
+	&-light {
+		@include suffixcate {
+			font-weight: $secondary-light;
+		}
+	}
+
+	&-normal {
+		@include suffixcate {
+			font-weight: $secondary-normal;
+		}
+	}
+
+	&-bold {
+		@include suffixcate {
+			font-weight: $secondary-bold;
+		}
+	}
 }
 
 .u-lh {
