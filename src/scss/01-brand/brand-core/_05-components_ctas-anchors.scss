@@ -172,67 +172,39 @@ category: 5. Component > Call to Actions
 // ```
 
 .c-anchor {
-	text-decoration: none;
-
-	@include suffixcate {
-		&--primary {
-			color: $color-primary;
-
-			&:focus, &:hover {
-				color: $color-primary-dark;
-			}
-
-			&:active {
-				color: $color-primary-accent;
-			}
+	&--base {
+		@include suffixcate {
+			@include anchor-base;
 		}
+	}
 
-		&--secondary {
-			color: $color-secondary;
-
-			&:focus, &:hover {
-				color: $color-secondary-dark;
-			}
-
-			&:active {
-				color: $color-secondary-accent;
-			}
+	&--default {
+		@include suffixcate {
+			@include anchor-default;
 		}
+	}
 
-		&--tertiary {
-			color: $color-accent;
-
-			&:focus, &:hover {
-				color: $color-accent-dark;
-			}
-
-			&:active {
-				color: $color-accent-accent;
-			}
+	&--primary {
+		@include suffixcate {
+			@include anchor-primary;
 		}
+	}
 
-		&--dark {
-			color: $color-dark;
-
-			&:hover, &:active {
-				color: $color-dark-dark;
-			}
-
-			&:active {
-				color: $color-dark-accent;
-			}
+	&--secondary {
+		@include suffixcate {
+			@include anchor-secondary;
 		}
+	}
 
-		&--light {
-			color: $color-light;
+	&--dark {
+		@include suffixcate {
+			@include anchor-dark;
+		}
+	}
 
-			&:hover, &:active {
-				color: $color-light-dark;
-			}
-
-			&:active {
-				color: $color-light-accent;
-			}
+	&--light {
+		@include suffixcate {
+			@include anchor-light;
 		}
 	}
 }
