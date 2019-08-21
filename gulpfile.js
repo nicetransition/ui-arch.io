@@ -113,7 +113,9 @@ gulp.task('colors', function() {
 			obj += "\n); \n\n\n\n" + intromsg;
 
 
-			fs.writeFile(config.src.colors.dist + folderName + '/_00-settings_colors.scss', obj);
+			fs.writeFile(config.src.colors.dist + folderName + '/_00-settings_colors.scss', obj, function() {
+
+			});
 
 			intromsg = startMessage;
 			obj = intromsg;
@@ -224,7 +226,9 @@ Versions:
 		obj =  intromsg + documentation + "\n\n\n\n" + intromsg;
 
 
-		fs.writeFile("./src/scss/_documentation-colors.scss", obj);
+		fs.writeFile("./src/scss/_documentation-colors.scss", obj, function() {
+				
+		});
 	});
 });
 
