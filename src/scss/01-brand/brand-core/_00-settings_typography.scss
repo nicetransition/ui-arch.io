@@ -1,25 +1,25 @@
 $rootFontSize: 16px;
 
-$primary-font: 'Arial', sans-serif;
-$primary-bold: bold;
-$primary-normal: normal;
-$primary-light: light;
+$primary-font: 'Cormorant Garamond', Georgia, serif;
+$primary-bold: 700;
+$primary-normal: 600;
+$primary-light: 500;
 
-$secondary-font: 'Georgia', serif;
-$secondary-bold: bold;
-$secondary-normal: normal;
-$secondary-light: light;
+$secondary-font: 'Raleway', Arial, sans-serif;;
+$secondary-bold: 900;
+$secondary-normal: 800;
+$secondary-light: 700;
 
 
-$h0: 3.111rem; // 56px > 48px
-$em0: 3.111em;
+$h0: 5.625rem; // 56px > 48px
+$em0: 5.625em;
 $rem0: $h0;
-$h0-mobile: 2.667rem;
+$h0-mobile: 3.125rem;
 
-$h1: 2.667rem; // 48px > 32px
-$em1: 2.667em;
+$h1: 3.125rem; // 48px > 32px
+$em1: 3.125em;
 $rem1: $h1;
-$h1-mobile: 1.778rem;
+$h1-mobile: 2.500rem;
 
 $h2: 2rem; // 36px > 26px
 $em2: 2em;
