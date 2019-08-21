@@ -1,5 +1,7 @@
-// @import "00-global/_global-base"; // include global properties
-@import "01-brand/brand-core"; // update to align to branding
+// SETTINGS: Global variables, config switches for brand (including overrides)
+@import "01-brand/brand-core/00-settings";
+// TOOLS: Default mixin and functions additions for a brand
+@import "01-brand/brand-core/01-tools";
 
 /*! v0.0.0 || 2018-02-14 XX:XX */
 
