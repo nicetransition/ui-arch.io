@@ -250,115 +250,39 @@ Types of light buttons
 
 
 .c-button {
-	@extend %button-base;
-	border-radius: 0;
-
-	&[disabled] {
-		@extend %button-disabled-state;
-
-		&:hover, &:focus, &:active {
-			@extend %button-disabled-state;
+	&--base {
+		@include suffixcate {
+			@include button-base;
 		}
 	}
 
-	&.-disabled {
-		@extend %button-disabled-state;
+	&--default {
+		@include suffixcate {
+			@include button-default;
+		}
 	}
 
-	@include suffixcate {
-		
-		&--base {
-			border: rem(1) solid;
+	&--primary {
+		@include suffixcate {
+			@include button-primary;
 		}
+	}
 
-
-		&--default {
-			> span {
-				font-family: $primary-font;
-				font-weight: bold;
-			}
+	&--secondary {
+		@include suffixcate {
+			@include button-secondary;
 		}
+	}
 
-
-		&--primary {
-			background-color: $color-primary;
-			color: $color-primary-contrast;
-			border-color: $color-primary;
-
-			&:hover, &:focus {
-				background-color: $color-primary-dark;
-				color: $color-primary-dark-contrast;
-			}
-
-			&:active {
-				background-color: $color-primary-accent;
-				color: $color-primary-accent-contrast;
-			}
+	&--tertiary {
+		@include suffixcate {
+			@include button-tertiary;
 		}
+	}
 
-
-		&--secondary {
-			background-color: $color-secondary;
-			color: $color-secondary-contrast;
-			border-color: $color-secondary;
-
-			&:hover, &:focus {
-				background-color: $color-secondary-dark;
-				color: $color-secondary-dark-contrast;
-			}
-
-			&:active {
-				background-color: $color-secondary-accent;
-				color: $color-secondary-accent-contrast;
-			}
-		}
-
-		&--tertiary {
-			background-color: $color-accent;
-			color: $color-accent-contrast;
-			border-color: $color-accent;
-
-			&:hover, &:focus {
-				background-color: $color-accent-dark;
-				color: $color-accent-dark-contrast;
-			}
-
-			&:active {
-				background-color: $color-accent-accent;
-				color: $color-accent-accent-contrast;
-			}
-		}
-
-		&--light {
-			background-color: $color-light;
-			color: $color-light-contrast;
-			border-color: $color-light;
-
-			&:hover, &:focus {
-				background-color: $color-light-light;
-				color: $color-light-light-contrast;
-			}
-
-			&:active {
-				background-color: $color-light-accent;
-				color: $color-light-accent-contrast;
-			}
-		}
-
-		&--dark {
-			background-color: $color-dark;
-			color: $color-dark-contrast;
-			border-color: $color-dark;
-
-			&:hover, &:focus {
-				background-color: $color-dark-dark;
-				color: $color-dark-dark-contrast;
-			}
-
-			&:active {
-				background-color: $color-dark-accent;
-				color: $color-dark-accent-contrast;
-			}
+	&--tertiary-reverse {
+		@include suffixcate {
+			@include button-tertiary-reverse;
 		}
 	}
 }

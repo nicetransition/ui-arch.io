@@ -1,0 +1,480 @@
+@mixin button-core { // `.c-button`
+	font-family: $primary-font;
+	font-size: 1rem;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	border-radius: 0;
+}
+
+
+@mixin button-base { // `.c-button--base`
+	border: rem(1) solid;
+	overflow: hidden;
+	outline: none;
+
+	> span {
+		line-height: 1;
+	}
+}
+
+
+@mixin button-default { // `.c-button--default`
+	@include title-setup;
+	@include article-header-core;
+	@include scaleFontDown($bp-1, $h3, $h3-mobile);
+
+	@include units($version: "half-sized", $variation: (top: true, bottom: true));
+	@include units( $variation: (right: true, left: true));
+
+	&:active {
+		> span {
+			transform: translate(#{rem(.5)}, #{rem(1.5)});
+		}
+	}
+}
+
+
+@mixin button-primary-core {
+	background-color: $color-primary;
+	color: $color-primary-contrast;
+}
+
+@mixin button-primary-hover {
+	background-color: $color-primary-dark;
+	color: $color-primary-dark-contrast;
+}
+
+@mixin button-primary-active {
+	background-color: $color-primary-accent;
+	color: $color-light-light;
+}
+
+@mixin button-primary-disabled {
+	background-color: lighten(desaturate($color-primary, 50%),20%) !important;
+	border-color: lighten(desaturate($color-primary, 50%),20%) !important;
+}
+
+
+@mixin button-primary($main: true, $hover: true, $active: true, $disabled: true, $core: false, $default: false, $base: false, $includePseudo: true) {
+	@if ($core) {
+		@include button-core;
+	}
+
+	@if ($default) {
+		@include button-default;
+	}
+
+	@if ($base) {
+		@include button-base;
+	}
+
+	@if ($main) {
+		@include button-primary-core;
+	}
+
+	@if ($hover) {
+		@if ($includePseudo) {
+			&:hover, &:focus {
+				@include button-primary-hover;
+			}
+		} @else {
+			@include button-primary-hover;
+		}
+	}
+
+	@if ($active) {
+		@if ($includePseudo) {
+			&:active {
+				@include button-primary-active;
+			}
+		} @else {
+			@include button-primary-active;
+		}
+	}
+
+	@if ($disabled) {
+		@if ($includePseudo) {
+			&[disabled],&[disabled]:hover, &[disabled]:focus, &[disabled]:active, &.-disabled {
+				@include button-primary-disabled;
+			}
+		} @else {
+			@include button-primary-disabled;
+		}
+	}
+}
+
+
+@mixin button-secondary-core {
+	background-color: $color-dark-accent;
+	color: $color-dark-accent-contrast;
+	border-color: $color-dark-accent;
+}
+
+@mixin button-secondary-hover {
+	background-color: $color-secondary-dark;
+	color: $color-secondary-contrast;
+}
+
+@mixin button-secondary-active {
+	background-color: $color-secondary-accent;
+	color: $color-light-light;
+}
+
+@mixin button-secondary-disabled {
+	background-color: lighten(desaturate($color-secondary, 50%),20%) !important;
+	border-color: lighten(desaturate($color-secondary, 50%),20%) !important;
+}
+
+
+@mixin button-secondary($main: true, $hover: true, $active: true, $disabled: true, $core: false, $default: false, $base: false, $includePseudo: true) {
+	@if ($core) {
+		@include button-core;
+	}
+
+	@if ($default) {
+		@include button-default;
+	}
+
+	@if ($base) {
+		@include button-base;
+	}
+
+	@if ($main) {
+		@include button-secondary-core;
+	}
+
+	@if ($hover) {
+		@if ($includePseudo) {
+			&:hover, &:focus {
+				@include button-secondary-hover;
+			}
+		} @else {
+			@include button-secondary-hover;
+		}
+	}
+
+	@if ($active) {
+		@if ($includePseudo) {
+			&:active {
+				@include button-secondary-active;
+			}
+		} @else {
+			@include button-secondary-active;
+		}
+	}
+
+	@if ($disabled) {
+		@if ($includePseudo) {
+			&[disabled],&[disabled]:hover, &[disabled]:focus, &[disabled]:active, &.-disabled {
+				@include button-secondary-disabled;
+			}
+		} @else {
+			@include button-secondary-disabled;
+		}
+	}
+}
+
+
+
+@mixin button-tertiary-core {
+	background-color: rgba(255, 255, 255, .85);
+	border-color: currentColor;
+}
+
+@mixin button-tertiary-hover {
+	background-color: currentColor;
+
+	> span {
+		color: #FFF;
+	}
+}
+
+@mixin button-tertiary-active {
+	@include button-tertiary-hover;
+}
+
+@mixin button-tertiary-disabled {
+	filter: opacity(20%) grayscale(70%);
+}
+
+
+@mixin button-tertiary($main: true, $hover: true, $active: true, $disabled: true, $core: false, $default: false, $base: false, $includePseudo: true) {
+	@if ($core) {
+		@include button-core;
+	}
+
+	@if ($default) {
+		@include button-default;
+	}
+
+	@if ($base) {
+		@include button-base;
+	}
+
+	@if ($main) {
+		@include button-tertiary-core;
+	}
+
+	@if ($hover) {
+		@if ($includePseudo) {
+			&:hover, &:focus {
+				@include button-tertiary-hover;
+			}
+		} @else {
+			@include button-tertiary-hover;
+		}
+	}
+
+	@if ($active) {
+		@if ($includePseudo) {
+			&:active {
+				@include button-tertiary-active;
+			}
+		} @else {
+			@include button-tertiary-active;
+		}
+	}
+
+	@if ($disabled) {
+		@if ($includePseudo) {
+			&[disabled],&[disabled]:hover, &[disabled]:focus, &[disabled]:active, &.-disabled {
+				@include button-tertiary-disabled;
+			}
+		} @else {
+			@include button-tertiary-disabled;
+		}
+	}
+}
+
+
+
+@mixin button-tertiary-reverse-core {
+	background-color: currentColor;
+
+	> span {
+		color: #FFF;
+	}
+}
+
+@mixin button-tertiary-reverse-hover {
+	background-color: rgba(255, 255, 255, .85);
+	border-color: currentColor;
+
+	> span {
+		color: currentColor;
+	}
+}
+
+@mixin button-tertiary-reverse-active {
+	@include button-tertiary-reverse-hover;
+}
+
+@mixin button-tertiary-reverse-disabled {
+	filter: opacity(20%) grayscale(70%);
+}
+
+
+@mixin button-tertiary-reverse($main: true, $hover: true, $active: true, $disabled: true, $core: false, $default: false, $base: false, $includePseudo: true) {
+	@if ($core) {
+		@include button-core;
+	}
+
+	@if ($default) {
+		@include button-default;
+	}
+
+	@if ($base) {
+		@include button-base;
+	}
+
+	@if ($main) {
+		@include button-tertiary-reverse-core;
+	}
+
+	@if ($hover) {
+		@if ($includePseudo) {
+			&:hover, &:focus {
+				@include button-tertiary-reverse-hover;
+			}
+		} @else {
+			@include button-tertiary-reverse-hover;
+		}
+	}
+
+	@if ($active) {
+		@if ($includePseudo) {
+			&:active {
+				@include button-tertiary-reverse-active;
+			}
+		} @else {
+			@include button-tertiary-reverse-active;
+		}
+	}
+
+	@if ($disabled) {
+		@if ($includePseudo) {
+			&[disabled],&[disabled]:hover, &[disabled]:focus, &[disabled]:active, &.-disabled {
+				@include button-tertiary-reverse-disabled;
+			}
+		} @else {
+			@include button-tertiary-reverse-disabled;
+		}
+	}
+}
+
+
+
+@mixin button-light-core {
+	background-color: rgba($color-primary-contrast, .9);
+	color: $color-primary;
+	border-color: $color-primary;
+}
+
+@mixin button-light-hover {
+	background-color: $color-primary-contrast;
+}
+
+@mixin button-light-active {
+	@include button-light-hover;
+}
+
+@mixin button-light-disabled {
+	filter: opacity(20%) grayscale(70%);
+}
+
+
+@mixin button-light($main: true, $hover: true, $active: true, $disabled: true, $core: false, $default: false, $base: false, $includePseudo: true) {
+	@if ($core) {
+		@include button-core;
+	}
+
+	@if ($default) {
+		@include button-default;
+	}
+
+	@if ($base) {
+		@include button-base;
+	}
+
+	@if ($main) {
+		@include button-light-core;
+	}
+
+	@if ($hover) {
+		@if ($includePseudo) {
+			&:hover, &:focus {
+				@include button-light-hover;
+			}
+		} @else {
+			@include button-light-hover;
+		}
+	}
+
+	@if ($active) {
+		@if ($includePseudo) {
+			&:active {
+				@include button-light-active;
+			}
+		} @else {
+			@include button-light-active;
+		}
+	}
+
+	@if ($disabled) {
+		@if ($includePseudo) {
+			&[disabled],&[disabled]:hover, &[disabled]:focus, &[disabled]:active, &.-disabled {
+				@include button-light-disabled;
+			}
+		} @else {
+			@include button-light-disabled;
+		}
+	}
+}
+
+
+@mixin button-dark-core {
+	background-color: rgba($color-dark-dark, .85);
+	color: $color-dark-dark-contrast;
+	border-color: $color-dark-dark;
+}
+
+@mixin button-dark-hover {
+	background-color: $color-dark-dark;
+}
+
+@mixin button-dark-active {
+	@include button-dark-hover;
+}
+
+@mixin button-dark-disabled {
+	filter: opacity(20%) grayscale(70%);
+}
+
+
+@mixin button-dark($main: true, $hover: true, $active: true, $disabled: true, $core: false, $default: false, $base: false, $includePseudo: true) {
+	@if ($core) {
+		@include button-core;
+	}
+
+	@if ($default) {
+		@include button-default;
+	}
+
+	@if ($base) {
+		@include button-base;
+	}
+
+	@if ($main) {
+		@include button-dark-core;
+	}
+
+	@if ($hover) {
+		@if ($includePseudo) {
+			&:hover, &:focus {
+				@include button-dark-hover;
+			}
+		} @else {
+			@include button-dark-hover;
+		}
+	}
+
+	@if ($active) {
+		@if ($includePseudo) {
+			&:active {
+				@include button-dark-active;
+			}
+		} @else {
+			@include button-dark-active;
+		}
+	}
+
+	@if ($disabled) {
+		@if ($includePseudo) {
+			&[disabled],&[disabled]:hover, &[disabled]:focus, &[disabled]:active, &.-disabled {
+				@include button-dark-disabled;
+			}
+		} @else {
+			@include button-dark-disabled;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

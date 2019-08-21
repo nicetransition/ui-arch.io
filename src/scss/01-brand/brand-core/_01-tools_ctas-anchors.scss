@@ -1,0 +1,248 @@
+@mixin anchor-core { // `.c-anchor`
+}
+
+@mixin anchor-base { // `.c-anchor--base`
+}
+
+@mixin anchor-default { // `.c-anchor--default`
+	text-decoration: none;
+}
+
+@mixin anchor-primary-core {
+	color: $color-primary;
+}
+
+@mixin anchor-primary-hover {
+	color: $color-primary-accent;
+}
+
+@mixin anchor-primary-active {
+	color: $color-primary-dark;
+}
+
+
+@mixin anchor-primary($main: true, $hover: true, $active: true, $disabled: true, $core: false, $default: false, $base: false, $includePseudo: true) {
+	@if ($core) {
+		@include anchor-core;
+	}
+
+	@if ($default) {
+		@include anchor-default;
+	}
+
+	@if ($main) {
+		@include anchor-primary-core;
+	}
+
+	@if ($hover) {
+		@if ($includePseudo) {
+			&:hover, &:focus {
+				@include anchor-primary-hover;
+			}
+		} @else {
+			@include anchor-primary-hover;
+		}
+	}
+
+	@if ($active) {
+		@if ($includePseudo) {
+			&:active {
+				@include anchor-primary-active;
+			}
+		} @else {
+			@include anchor-primary-active;
+		}
+	}
+}
+
+@mixin anchor-secondary-core {
+	color: $color-secondary;
+}
+
+@mixin anchor-secondary-hover {
+	color: $color-secondary-accent;
+}
+
+@mixin anchor-secondary-active {
+	color: $color-secondary-dark;
+}
+
+
+@mixin anchor-secondary($main: true, $hover: true, $active: true, $disabled: true, $core: false, $default: false, $base: false, $includePseudo: true) {
+	@if ($core) {
+		@include anchor-core;
+	}
+
+	@if ($default) {
+		@include anchor-default;
+	}
+
+	@if ($main) {
+		@include anchor-secondary-core;
+	}
+
+	@if ($hover) {
+		@if ($includePseudo) {
+			&:hover, &:focus {
+				@include anchor-secondary-hover;
+			}
+		} @else {
+			@include anchor-secondary-hover;
+		}
+	}
+
+	@if ($active) {
+		@if ($includePseudo) {
+			&:active {
+				@include anchor-secondary-active;
+			}
+		} @else {
+			@include anchor-secondary-active;
+		}
+	}
+}
+
+
+
+@mixin anchor-tertiary-core {
+	color: $color-accent-light;
+}
+
+@mixin anchor-tertiary-hover {
+	color: $color-secondary-accent;
+}
+
+@mixin anchor-tertiary-active {
+	color: $color-secondary-light;
+}
+
+
+@mixin anchor-tertiary($main: true, $hover: true, $active: true, $disabled: true, $core: false, $default: false, $base: false, $includePseudo: true) {
+	@if ($core) {
+		@include anchor-core;
+	}
+
+	@if ($default) {
+		@include anchor-default;
+	}
+
+	@if ($main) {
+		@include anchor-tertiary-core;
+	}
+
+	@if ($hover) {
+		@if ($includePseudo) {
+			&:hover, &:focus {
+				@include anchor-tertiary-hover;
+			}
+		} @else {
+			@include anchor-tertiary-hover;
+		}
+	}
+
+	@if ($active) {
+		@if ($includePseudo) {
+			&:active {
+				@include anchor-tertiary-active;
+			}
+		} @else {
+			@include anchor-tertiary-active;
+		}
+	}
+}
+
+
+@mixin anchor-light-core {
+	color: $color-light-light;
+}
+
+@mixin anchor-light-hover {
+	color: $color-light-accent;
+}
+
+@mixin anchor-light-active {
+	@include anchor-light-hover;
+}
+
+
+@mixin anchor-light($main: true, $hover: true, $active: true, $disabled: true, $core: false, $default: false, $base: false, $includePseudo: true) {
+	@if ($core) {
+		@include anchor-core;
+	}
+
+	@if ($default) {
+		@include anchor-default;
+	}
+
+	@if ($main) {
+		@include anchor-light-core;
+	}
+
+	@if ($hover) {
+		@if ($includePseudo) {
+			&:hover, &:focus {
+				@include anchor-light-hover;
+			}
+		} @else {
+			@include anchor-light-hover;
+		}
+	}
+
+	@if ($active) {
+		@if ($includePseudo) {
+			&:active {
+				@include anchor-light-active;
+			}
+		} @else {
+			@include anchor-light-active;
+		}
+	}
+}
+
+
+@mixin anchor-dark-core {
+	color: $color-dark;
+}
+
+@mixin anchor-dark-hover {
+	color: $color-dark-accent;
+}
+
+@mixin anchor-dark-active {
+	color: $color-dark-dark;
+}
+
+
+@mixin anchor-dark($main: true, $hover: true, $active: true, $disabled: true, $core: false, $default: false, $base: false, $includePseudo: true) {
+	@if ($core) {
+		@include anchor-core;
+	}
+
+	@if ($default) {
+		@include anchor-default;
+	}
+
+	@if ($main) {
+		@include anchor-dark-core;
+	}
+
+	@if ($hover) {
+		@if ($includePseudo) {
+			&:hover, &:focus {
+				@include anchor-dark-hover;
+			}
+		} @else {
+			@include anchor-dark-hover;
+		}
+	}
+
+	@if ($active) {
+		@if ($includePseudo) {
+			&:active {
+				@include anchor-dark-active;
+			}
+		} @else {
+			@include anchor-dark-active;
+		}
+	}
+}
